@@ -1,22 +1,22 @@
 const designPhotos={"도쿄": {"src": "images/skyline.webp", "alt": "도쿄 신주쿠 풍경"}, "신주쿠": {"src": "images/skyline.webp", "alt": "도쿄 신주쿠 풍경"}, "도쿄 타워": {"src": "images/tower.webp", "alt": "도쿄 타워 풍경"}, "도쿄타워·시바": {"src": "images/tower.webp", "alt": "도쿄 타워 풍경"}, "신주쿠교엔": {"src": "images/gyoen.webp", "alt": "신주쿠교엔의 정원"}, "센소지": {"src": "images/sensoji.webp", "alt": "센소지의 풍경"}, "아사쿠사·스미다": {"src": "images/sensoji.webp", "alt": "센소지의 풍경"}, "도쿄도청 전망실": {"src": "images/gov.webp", "alt": "도쿄도청의 풍경"}};
 const areaIntros={
-'도쿄':['TOKYO','전통과 현대가 만나는 도시. 골목과 정원, 새로운 풍경을 만나보세요.'],
-'신주쿠':['SHINJUKU','빌딩 사이의 정원, 탁 트인 전망. 낮과 밤이 다른 도쿄의 중심.'],
-'아사쿠사·스미다':['ASAKUSA · SUMIDA','오래된 거리와 강변 산책, 하늘로 이어지는 새로운 풍경.'],
-'우에노·야나카':['UENO · YANAKA','박물관과 공원, 오래된 골목을 천천히 걷는 하루.'],
-'시부야·하라주쿠':['SHIBUYA · HARAJUKU','활기찬 교차로에서 고요한 숲길까지. 도쿄의 서로 다른 얼굴.'],
-'고쿄·분쿄':['IMPERIAL PALACE · BUNKYO','물가와 정원을 따라 만나는 도심 속 여유.'],
-'도쿄타워·시바':['TOKYO TOWER · SHIBA','도쿄의 상징을 가까이에서. 공원 산책과 전망을 함께.'],
-'오다이바':['ODAIBA','바다와 도시가 만나는 도쿄만의 산책길.'],
-'기치조지·고엔지':['KICHIJOJI · KOENJI','연못 산책과 동네 구경, 계절마다 다른 거리의 표정.'],
-'다치카와':['TACHIKAWA','넓은 공원에서 만나는 계절의 꽃과 은행나무길.'],
-'다카오':['TAKAO','도심을 벗어나 숲길과 산 위의 풍경으로.'],
-'오쿠타마':['OKUTAMA','깊은 산과 호수. 자연을 위해 따로 비워두는 하루.'],
-'이즈 제도':['IZU ISLANDS','바다를 건너 만나는 화산과 섬의 풍경.'],
-'오가사와라':['OGASAWARA','긴 항해 끝에 만나는 섬. 교통과 숙박부터 계획해보세요.'],
-'간다·아키하바라':['KANDA · AKIHABARA','도심에서 만나는 전통의 축제.'],
-'아카사카':['AKASAKA','도시 한가운데 이어지는 신사의 전통.'],
-'에도가와':['EDOGAWA','강변에서 즐기는 한여름의 불꽃.']};
+'도쿄':['TOKYO','전통과 현대가 만나는 도시입니다. 골목과 정원, 새로운 풍경을 천천히 만나보세요.'],
+'신주쿠':['SHINJUKU','빌딩 사이의 정원과 탁 트인 전망을 함께 즐길 수 있는 도쿄의 중심 지역입니다.'],
+'아사쿠사·스미다':['ASAKUSA · SUMIDA','오래된 거리와 강변 산책, 높은 전망을 함께 즐길 수 있는 지역입니다.'],
+'우에노·야나카':['UENO · YANAKA','박물관과 공원, 오래된 골목을 천천히 둘러보기 좋은 지역입니다.'],
+'시부야·하라주쿠':['SHIBUYA · HARAJUKU','활기찬 교차로와 고요한 숲길을 함께 만날 수 있는 지역입니다.'],
+'고쿄·분쿄':['IMPERIAL PALACE · BUNKYO','물가와 정원을 따라 도심 속 여유를 즐길 수 있는 지역입니다.'],
+'도쿄타워·시바':['TOKYO TOWER · SHIBA','도쿄의 상징을 가까이에서 보고 공원 산책과 전망을 함께 즐길 수 있는 지역입니다.'],
+'오다이바':['ODAIBA','바다와 도시가 만나는 도쿄만의 풍경을 걸어서 즐길 수 있는 지역입니다.'],
+'기치조지·고엔지':['KICHIJOJI · KOENJI','연못 산책과 동네 구경을 함께 즐기며 계절마다 다른 거리의 분위기를 만날 수 있는 지역입니다.'],
+'다치카와':['TACHIKAWA','넓은 공원에서 계절의 꽃과 은행나무길을 즐길 수 있는 지역입니다.'],
+'다카오':['TAKAO','도심을 벗어나 숲길과 산 위의 풍경을 즐길 수 있는 지역입니다.'],
+'오쿠타마':['OKUTAMA','깊은 산과 호수를 중심으로 자연을 여유롭게 즐기기 좋은 지역입니다.'],
+'이즈 제도':['IZU ISLANDS','바다를 건너 화산과 섬의 풍경을 만날 수 있는 여행 지역입니다.'],
+'오가사와라':['OGASAWARA','긴 항해 끝에 만나는 섬 지역입니다. 교통과 숙박부터 먼저 계획해보세요.'],
+'간다·아키하바라':['KANDA · AKIHABARA','도심에서 전통 신앙과 축제 문화를 함께 만날 수 있는 지역입니다.'],
+'아카사카':['AKASAKA','도시 한가운데에서 신사의 전통을 만날 수 있는 지역입니다.'],
+'에도가와':['EDOGAWA','강변 산책과 한여름의 불꽃놀이를 함께 즐길 수 있는 지역입니다.']};
 const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINETSU','TOKAI','HOKURIKU','KINKI','SANIN · SANYO','SHIKOKU','KYUSHU','OKINAWA'];
 function photoForPlace(p){return tokyoPhotos[p.id]||designPhotos[p.name]||null}
 function photoForArea(a){return designPhotos[a]||tokyoPhotos[tokyoPlaces.find(p=>p.area===a)?.id]||null}
