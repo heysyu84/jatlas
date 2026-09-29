@@ -3,6 +3,7 @@ for(const r of regionalCatalog){
  Object.assign(spotFacts,r.facts);
  Object.assign(foodDetails,r.foodDetails);
  Object.assign(addedFoodPhotos,r.foodPhotos);
+ for(const [name,pic] of Object.entries(r.foodPhotos||{})){foodDetails[name]??={kind:"",taste:"",how:""};foodDetails[name].image=pic.src;}
  Object.assign(routePlanning,r.routePlanning);
  for(const route of r.routes){const photo=photoForPlace(r.places.find(p=>p.id===route.days[0].places[0]));route.image=photo?.src||'';route.imageAlt=photo?.alt||'';routeTemplates.push(route)}
 }
