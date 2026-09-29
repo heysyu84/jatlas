@@ -9,7 +9,7 @@ for(const r of regionalCatalog){
 }
 {
  const host=document.querySelector('#photoCreditList');
- const title=document.createElement('h3');title.textContent='수도권·도카이 사진 출처';host.append(title);
+ const title=document.createElement('h3');title.textContent='지역 사진 출처';host.append(title);
  for(const pic of regionalCatalog.flatMap(r=>r.credits)){
   const row=document.createElement('p');row.className='photoAttribution';
   const source=document.createElement('a');source.href=pic.source;source.target='_blank';source.rel='noopener';source.textContent=pic.label;
