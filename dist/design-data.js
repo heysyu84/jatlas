@@ -16,7 +16,11 @@ const areaIntros={
 '오가사와라':['OGASAWARA','긴 항해 끝에 만나는 섬 지역입니다. 교통과 숙박부터 먼저 계획해보세요.'],
 '간다·아키하바라':['KANDA · AKIHABARA','도심에서 전통 신앙과 축제 문화를 함께 만날 수 있는 지역입니다.'],
 '아카사카':['AKASAKA','도시 한가운데에서 신사의 전통을 만날 수 있는 지역입니다.'],
-'에도가와':['EDOGAWA','강변 산책과 한여름의 불꽃놀이를 함께 즐길 수 있는 지역입니다.']};
+'에도가와':['EDOGAWA','강변 산책과 한여름의 불꽃놀이를 함께 즐길 수 있는 지역입니다.'],
+'도쿄역·긴자·쓰키지':['TOKYO STATION · GINZA · TSUKIJI','붉은 벽돌의 도쿄역과 고쿄, 긴자의 도시 풍경, 쓰키지의 시장 문화를 함께 즐길 수 있는 도심 지역입니다.'],
+'료고쿠·스미다':['RYOGOKU · SUMIDA','에도의 도시 역사와 호쿠사이의 미술을 박물관에서 깊게 살펴볼 수 있는 동부 지역입니다.'],
+'도요스·쓰키시마':['TOYOSU · TSUKISHIMA','대형 수산시장과 디지털아트, 도쿄만 수변 풍경을 함께 즐길 수 있는 지역입니다.'],
+'아자부다이·롯폰기':['AZABUDAI · ROPPONGI','현대미술과 디지털아트, 고층 도시 풍경을 함께 즐길 수 있는 남부 문화 지역입니다.']};
 const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINETSU','TOKAI','HOKURIKU','KINKI','SANIN · SANYO','SHIKOKU','KYUSHU','OKINAWA'];
 function photoForPlace(p){return tokyoPhotos[p.id]||designPhotos[p.name]||null}
 function photoForArea(a){return designPhotos[a]||tokyoPhotos[tokyoPlaces.find(p=>p.area===a)?.id]||null}
