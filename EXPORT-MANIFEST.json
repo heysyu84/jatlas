@@ -1,0 +1,1077 @@
+{
+  "site": "Jatlas",
+  "version": 27,
+  "commit_sha": "025f6528043034b5ad21d9bf87128f83a74ba4db",
+  "files": [
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 88,
+      "sha256": "c8f047aca94c981e829614e6df10d63ba6953a4492074e1b1ee74b18b6cc35c4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3663,
+      "sha256": "05dab6bc9920a4dce4f006a713c74bc87d861808ec0d34646d4d15c481fb1afe"
+    },
+    {
+      "path": "dist/app.js",
+      "bytes": 16752,
+      "sha256": "0887eb3064a7c0d953fb4c93a98ef73ede5ee1e02b163ea8b608b3466b96eaf0"
+    },
+    {
+      "path": "dist/boundaries/1.js",
+      "bytes": 273274,
+      "sha256": "398717f940be49df61f176bed14bbbc228d1c7ddd4698faf30df102964b2075f"
+    },
+    {
+      "path": "dist/boundaries/10.js",
+      "bytes": 36114,
+      "sha256": "1d68aab472b4ba6a0111d431a6d045773a43731642c62d0f868675befcd0e5ad"
+    },
+    {
+      "path": "dist/boundaries/11.js",
+      "bytes": 45063,
+      "sha256": "576d47bc6786e03d52a51dd572816b5f8b5967d898001b0621233c38ca12183c"
+    },
+    {
+      "path": "dist/boundaries/12.js",
+      "bytes": 47515,
+      "sha256": "7cff72ec4e6c59ef701622353a5f26f784c3ae213accf6ea4943a4fb821e8c0e"
+    },
+    {
+      "path": "dist/boundaries/13.js",
+      "bytes": 33896,
+      "sha256": "4f183a55a267e2b754215a713f3fbf5692d4125304122801678860e21f776a91"
+    },
+    {
+      "path": "dist/boundaries/14.js",
+      "bytes": 32802,
+      "sha256": "8a9d5a680be9e1f3ce2fc6b3889c9b577fbc0f9cdebea2a30977c34c9cebc7d6"
+    },
+    {
+      "path": "dist/boundaries/15.js",
+      "bytes": 51340,
+      "sha256": "5713f3012e8301450a091ab934c5787c0487b7586815a947b3133d2e6571e5f3"
+    },
+    {
+      "path": "dist/boundaries/16.js",
+      "bytes": 18358,
+      "sha256": "fe7e2d2d19a4645b843c41f31bfa81deaeb5c2bf2fe7689343c70a5d714f7c2b"
+    },
+    {
+      "path": "dist/boundaries/17.js",
+      "bytes": 22267,
+      "sha256": "590564267d9b36bff86b326cc78833553f3c49fda25a1b03139fd9c60407de2d"
+    },
+    {
+      "path": "dist/boundaries/18.js",
+      "bytes": 23360,
+      "sha256": "9af13866d46155514803b2b3bca948a3428aa1c718d04a62ea86897f57721ba0"
+    },
+    {
+      "path": "dist/boundaries/19.js",
+      "bytes": 26985,
+      "sha256": "dd0e5e73e5104539acf42ed3b9e3f2173d8cfba7670faf7e8a4439701161722a"
+    },
+    {
+      "path": "dist/boundaries/2.js",
+      "bytes": 48657,
+      "sha256": "8a3cf6f0006a6fecba0f75c17def38d0501d3e8385a5c46c253e06763ad9e333"
+    },
+    {
+      "path": "dist/boundaries/20.js",
+      "bytes": 78332,
+      "sha256": "243231744722e00a1cfd5fa75c7bafc21674214c861b30028040b526e720db98"
+    },
+    {
+      "path": "dist/boundaries/21.js",
+      "bytes": 48461,
+      "sha256": "d313d94f0821b25dc77edf96f1e8ac0b686905907cbe9979b9896b1e6758ea95"
+    },
+    {
+      "path": "dist/boundaries/22.js",
+      "bytes": 42851,
+      "sha256": "9146b166aa31be0b1e76c4950bb5f3c9d189a4dde16936fc59d0cafdbcc8509d"
+    },
+    {
+      "path": "dist/boundaries/23.js",
+      "bytes": 45998,
+      "sha256": "aafdf6d1a2d4fbf324ff8dbb611721b288f2c93fc082127586a0d599381efbf2"
+    },
+    {
+      "path": "dist/boundaries/24.js",
+      "bytes": 34904,
+      "sha256": "9cdc06790e6489bdb0c13ff5c9598321ab95802e05a4d0a44df6131673844909"
+    },
+    {
+      "path": "dist/boundaries/25.js",
+      "bytes": 20076,
+      "sha256": "cd273597e9946f273fb7150a13433388cc6512c8680e65b52bcc51b02e5d71ee"
+    },
+    {
+      "path": "dist/boundaries/26.js",
+      "bytes": 31999,
+      "sha256": "6df6d426a52bd5ab0c9fb35abfef0ee003b3fb488e27ce372c248b24eb2318c5"
+    },
+    {
+      "path": "dist/boundaries/27.js",
+      "bytes": 35227,
+      "sha256": "8cdcd834e0a3b776c4e500f369d21eed576e0fb566faedabbd23749a6e39549c"
+    },
+    {
+      "path": "dist/boundaries/28.js",
+      "bytes": 50016,
+      "sha256": "8c6088e435f585d0326b3dc8cf7ec0d4030827280bd0aa2315723579e4cc5d3b"
+    },
+    {
+      "path": "dist/boundaries/29.js",
+      "bytes": 29109,
+      "sha256": "b7b19fd4d41373997a829598f50f9a737f76c2440c368ba528feca6e4075056c"
+    },
+    {
+      "path": "dist/boundaries/3.js",
+      "bytes": 54934,
+      "sha256": "f3e1bb0a2c5b5c159a3f77e9d3d584478d408606cdb0d96ae072fabdf3a6a8fa"
+    },
+    {
+      "path": "dist/boundaries/30.js",
+      "bytes": 31572,
+      "sha256": "fda07722afd8420bf64beda7a1df2a9a70708214d72440e5948f9d626b526ef2"
+    },
+    {
+      "path": "dist/boundaries/31.js",
+      "bytes": 19059,
+      "sha256": "5788d4780e91ca83d5da82af5d76f72ea92eb5991f9a11401bdd712d17309be7"
+    },
+    {
+      "path": "dist/boundaries/32.js",
+      "bytes": 27802,
+      "sha256": "0f4fda62e1a8096e54b209a067618b8b340e8e47b5ffbca11b70421bb8154d7b"
+    },
+    {
+      "path": "dist/boundaries/33.js",
+      "bytes": 38634,
+      "sha256": "d0d922e355ce7ae1bf492667a2c420b7114a7724ca57522426af06a3cc85455a"
+    },
+    {
+      "path": "dist/boundaries/34.js",
+      "bytes": 43974,
+      "sha256": "a4b34b6d0b41a561ab12c3e80dd94aae48b8380f4bc532e4eab86cfc2e253f96"
+    },
+    {
+      "path": "dist/boundaries/35.js",
+      "bytes": 32748,
+      "sha256": "151ab08380dcd8c364e5dcc544eecf087d590ce1c57a1af69697f8d28c04dc95"
+    },
+    {
+      "path": "dist/boundaries/36.js",
+      "bytes": 24385,
+      "sha256": "88cff6e3a7bbd4a8d53840db3fc4932dceafef23d10010ae1806e42e87fbcc9c"
+    },
+    {
+      "path": "dist/boundaries/37.js",
+      "bytes": 16420,
+      "sha256": "f1a1666cd5f39b3bf2ba86fabfa0b18d43d921bab37bd9fe78585a1d7b51eaf6"
+    },
+    {
+      "path": "dist/boundaries/38.js",
+      "bytes": 32574,
+      "sha256": "984119b9ffd14ea03c01d3271fb4fd42a01858b3287ed41c764b5bcb06e1a51a"
+    },
+    {
+      "path": "dist/boundaries/39.js",
+      "bytes": 39499,
+      "sha256": "792efad439c1c6ebd742404d0abea6881f0eb6be9efc0ddb9a39b51ed9ee4144"
+    },
+    {
+      "path": "dist/boundaries/4.js",
+      "bytes": 44442,
+      "sha256": "89f6bcd93a378cbe35508e7c26a30c670ea717a9328085afdd2cd5130477f991"
+    },
+    {
+      "path": "dist/boundaries/40.js",
+      "bytes": 50336,
+      "sha256": "f21335c65b5a2f7f733580d0b1d14a4c492a5d07e0f99c8397b4bdf7726a4634"
+    },
+    {
+      "path": "dist/boundaries/41.js",
+      "bytes": 18355,
+      "sha256": "4ce2bc14b92a9223877ea0bd413e8ac76f409b51e4718b14551f3b813f05d51a"
+    },
+    {
+      "path": "dist/boundaries/42.js",
+      "bytes": 36126,
+      "sha256": "16879540e9852bbc6c6a1c7cedc223d062402f5a5e5ebc5d8d687f03b51c6ebc"
+    },
+    {
+      "path": "dist/boundaries/43.js",
+      "bytes": 48333,
+      "sha256": "8b2d2faf4b8cac2033713687c56b35ed8100b5bb6bc75eefe40de27d44218d44"
+    },
+    {
+      "path": "dist/boundaries/44.js",
+      "bytes": 28477,
+      "sha256": "8b46663e1876eaf026aeb41d0cc177580d675f4b50c1702f5927864a391be868"
+    },
+    {
+      "path": "dist/boundaries/45.js",
+      "bytes": 33961,
+      "sha256": "8a5644d99bb5d06fcd3c012998e39b15f0d5456bea4b9d95fe41a6444543ad69"
+    },
+    {
+      "path": "dist/boundaries/46.js",
+      "bytes": 57479,
+      "sha256": "52606cd08c0fb340675bafcf4481a88105dbe2c8c4946296511edab991e0f482"
+    },
+    {
+      "path": "dist/boundaries/47.js",
+      "bytes": 28871,
+      "sha256": "eddb32ed3d5bd047ec37d50a9c9e96a00553544242d8d7d39a580c2180b31696"
+    },
+    {
+      "path": "dist/boundaries/5.js",
+      "bytes": 40967,
+      "sha256": "10d26310e47552d4e90fef9cf6b501f60800e8482fa69eefd8d0ec8e70e401c5"
+    },
+    {
+      "path": "dist/boundaries/6.js",
+      "bytes": 43985,
+      "sha256": "2315b84d6e395ebf34c4665928d10d24a351ee5b85bd387ebc178ea581f7d50e"
+    },
+    {
+      "path": "dist/boundaries/7.js",
+      "bytes": 68114,
+      "sha256": "096ddfccc79144abdc4eeb3edbb827f53b1c327bd404138ba3f50c9d9a94a519"
+    },
+    {
+      "path": "dist/boundaries/8.js",
+      "bytes": 39334,
+      "sha256": "4e291d0c2a778797835a2815c6cc3ed0e013604192b348f1704556d65eb519f6"
+    },
+    {
+      "path": "dist/boundaries/9.js",
+      "bytes": 30228,
+      "sha256": "78928ac5421e83fdb08f43c697860f08b33383d3c1c949fb48a3f9786c8b69a3"
+    },
+    {
+      "path": "dist/boundaries/LICENSE",
+      "bytes": 1087,
+      "sha256": "a84529bf37462a3159bcf0ea418e78cf451cf911eb6874e4384f766176980efd"
+    },
+    {
+      "path": "dist/boundaries/NAME-DATA-LICENSE",
+      "bytes": 1077,
+      "sha256": "25a2beca5bacbb8f319e1640fd4c301aef3a58a7f4a6379b277177e6f58edb44"
+    },
+    {
+      "path": "dist/boundaries/SOURCES.md",
+      "bytes": 4139,
+      "sha256": "d1d32914305d1db67d6d08164b3688eaaa8a2330939718251b442b3dc043f9ba"
+    },
+    {
+      "path": "dist/design-data.js",
+      "bytes": 4852,
+      "sha256": "c0473ca9ccbca46da8d16e82697d3ed1905006c233275ca75c725669590466f5"
+    },
+    {
+      "path": "dist/discovery.js",
+      "bytes": 14184,
+      "sha256": "4fdbb3e8acd12fa3b46a19e52cc4b7db55580f9f2c2d3488c58f5af706a99e7f"
+    },
+    {
+      "path": "dist/feature-locale.js",
+      "bytes": 25686,
+      "sha256": "a830054bea2c7ff26f2c22c8da8a6d51dcb713faec406916269491480fc006be"
+    },
+    {
+      "path": "dist/fonts/Nunito-LICENSE",
+      "bytes": 4491,
+      "sha256": "40991bfa02ac620aae16dc527f3c47765a25e43f270d4c301ee6ab663a8d9015"
+    },
+    {
+      "path": "dist/fonts/nunito-latin-600-normal.woff2",
+      "bytes": 16556,
+      "sha256": "45f437de32ff5973eb5616b43c1308bf9fe897442f3d78a603c4cd0a06d66573"
+    },
+    {
+      "path": "dist/food-photos.js",
+      "bytes": 28590,
+      "sha256": "47bc8444970201126f7579c9b9737c9f592861210f9da77ea2ba190a2d09110f"
+    },
+    {
+      "path": "dist/geography.js",
+      "bytes": 665817,
+      "sha256": "60c0665482dd4c6781ceab4093a5fb584c7fe50942ab30211336852105e7416a"
+    },
+    {
+      "path": "dist/images/external/0aae21a0fb65d0d6.jpg",
+      "bytes": 229686,
+      "sha256": "6e0095020fd10f81a21b4d0424191d78d24ef527771fc88586fe9bbb04338adf"
+    },
+    {
+      "path": "dist/images/external/0ab90755dade82b0.jpg",
+      "bytes": 32304,
+      "sha256": "a8f41439ac43c301feaea2f384a3173a52a21aa94542bd7e9ea8e2fc58be619b"
+    },
+    {
+      "path": "dist/images/external/36cc677b8a418ced.jpg",
+      "bytes": 30497,
+      "sha256": "7997137063c72f5a03f670d8f876f119d102280273f2885f151a6c389d03d5c4"
+    },
+    {
+      "path": "dist/images/external/3896f4a2d1c9e010.jpg",
+      "bytes": 85859,
+      "sha256": "2f46b5f14e885971162bbd279c05ed200018ee4b0fe4b0e86bb8ef9887b224df"
+    },
+    {
+      "path": "dist/images/external/3b0b92c4cb6b5de3.jpg",
+      "bytes": 829035,
+      "sha256": "0ee1510fa6c20d647e9bca79095976e40c7776b6f8912e8067dd11e2d6ce7458"
+    },
+    {
+      "path": "dist/images/external/517141cad378a5c3.jpg",
+      "bytes": 731543,
+      "sha256": "b802100719b19cdc948059624cde950d5e652a27af341e75636d8d606b57ca53"
+    },
+    {
+      "path": "dist/images/external/55dc22c013eded74.jpg",
+      "bytes": 47738,
+      "sha256": "061a6d8c1fb7bad1368c8330f45110055243308f0230149b91bef16e5f994fe4"
+    },
+    {
+      "path": "dist/images/external/645f3059d7b216ed.jpg",
+      "bytes": 665072,
+      "sha256": "3645cd34b75884999ce16a5f22cf58f82397c32c0ca4fb51a29c48be0dfb272b"
+    },
+    {
+      "path": "dist/images/external/6a7667710eb32c53.jpg",
+      "bytes": 90056,
+      "sha256": "133c6a78ce2ff0f38a08e9501e59c0ad3f11cd989d91233554b9ab3b80912468"
+    },
+    {
+      "path": "dist/images/external/6fc0727953ef97f3.jpg",
+      "bytes": 67331,
+      "sha256": "e8fab580eb5ff80a8c2e91203535ea67753243c874956a51b3be5736ca40a46a"
+    },
+    {
+      "path": "dist/images/external/7a74adcb02168134.jpg",
+      "bytes": 51193,
+      "sha256": "ae42afac356cd825306409475860cf9ce1454edc70245011fe417464d7fceddc"
+    },
+    {
+      "path": "dist/images/external/7da33945633480bd.jpg",
+      "bytes": 85443,
+      "sha256": "0bb670154fd7b771729a7cd8b8170d1303873c53f8dda8b46e95671572ddc01e"
+    },
+    {
+      "path": "dist/images/external/82056cde337432fd.jpg",
+      "bytes": 90412,
+      "sha256": "379967f9b89f048d520df6e6c91bdcbbee194d603214272c8dd5f114ca3d0518"
+    },
+    {
+      "path": "dist/images/external/9218a52bc0b414f5.jpg",
+      "bytes": 55831,
+      "sha256": "168f879f4c24fc4791643050f6a738effa79339268acf7068fe77bb7fba0a9f2"
+    },
+    {
+      "path": "dist/images/external/99d3629f388d31c7.jpg",
+      "bytes": 27730,
+      "sha256": "9215ad75eef99a95ef0e70c9cfee8d9032e97d4d9b0f551dee70608a5cb12174"
+    },
+    {
+      "path": "dist/images/external/aaf228d9fd59b691.jpg",
+      "bytes": 106218,
+      "sha256": "f93897496bc4c06e182e3c4b4738303571e8fb5430ea5d84159bb06fd4466a4c"
+    },
+    {
+      "path": "dist/images/external/abbd11946a4b7720.jpg",
+      "bytes": 27160,
+      "sha256": "00da3a34775879fab66b8d529adfc4500e8049022b0273fbe782c8b2aa105d6c"
+    },
+    {
+      "path": "dist/images/external/bc7a4bd7826cffc7.jpg",
+      "bytes": 41001,
+      "sha256": "d1c49fc76a7e6fcc0af1c90adcfe63ac8f2719c09dea322f2c9498362ff47be2"
+    },
+    {
+      "path": "dist/images/external/d75ce86b1a3bb888.jpg",
+      "bytes": 974411,
+      "sha256": "4487e56b6ba0420bc7c3c7c061564fbafc510bf9c3543920a7a7a161dcc2cc54"
+    },
+    {
+      "path": "dist/images/external/e8054ea757be0a28.jpg",
+      "bytes": 115332,
+      "sha256": "26240f0f6acab531b971ddd1299dc780e689715b0118dc3d4ae6f57f4a9f809f"
+    },
+    {
+      "path": "dist/images/external/ebdab90248fcb9fd.jpg",
+      "bytes": 67005,
+      "sha256": "98b03b476f456117a8a26a9a8eec094990b368af3bdeabf79e437d04e1c424f6"
+    },
+    {
+      "path": "dist/images/food-reference/food-0.webp",
+      "bytes": 166572,
+      "sha256": "3453a03e8e20577852582d019e672f89355b9ba0a2d342093b52716ee2c83d61"
+    },
+    {
+      "path": "dist/images/food-reference/food-1.webp",
+      "bytes": 149528,
+      "sha256": "b44ada81a8c88373cd15a1593a59eff5e156b5f4d6b3230f921cd1f607a3c627"
+    },
+    {
+      "path": "dist/images/food-reference/food-2.webp",
+      "bytes": 201952,
+      "sha256": "6d3ec7f7ba1928e975a6b17ee860597a571025dbb0723044a967db3b681738bb"
+    },
+    {
+      "path": "dist/images/food-reference/food-3.webp",
+      "bytes": 78404,
+      "sha256": "b8a0b3a687ecfe02e03ab1f65d27f63d2805aeba4b52cebdbbcf1d7d699adda7"
+    },
+    {
+      "path": "dist/images/food-reference/food-4.webp",
+      "bytes": 45308,
+      "sha256": "5efa65940e151921583e8164088c7cbacc8d6f9985a309c7e4c94284c930242a"
+    },
+    {
+      "path": "dist/images/food-reference/food-5.webp",
+      "bytes": 84532,
+      "sha256": "98ec6940746cd4f4a5086c312773cb16a0ffcb097623a46707ddd7923e068020"
+    },
+    {
+      "path": "dist/images/food-reference/food-6.webp",
+      "bytes": 161578,
+      "sha256": "5706cd61a07f548f034fe43412bc0a1740d755010407ea3e1c6c77df1e320b1a"
+    },
+    {
+      "path": "dist/images/food-reference/food-7.webp",
+      "bytes": 112152,
+      "sha256": "d918eb5eb5d6cbba7fcf5f8f47844d581b3aaef56818645ff90403bd241b8e4a"
+    },
+    {
+      "path": "dist/images/food-reference/food-8.webp",
+      "bytes": 170530,
+      "sha256": "4a29b5bf114e82f1c95aab29846908474fd16be5ee764b7e5d0f3ff729521c95"
+    },
+    {
+      "path": "dist/images/gov.webp",
+      "bytes": 324586,
+      "sha256": "0418b1a8f2254ef8a43d22dbdaf141271a9ac56b9d49297d0048b39282c73bfa"
+    },
+    {
+      "path": "dist/images/gyoen.webp",
+      "bytes": 119408,
+      "sha256": "747577395f97e0aacf4a33a1521c0231b7a599ad1609c9bdc8d55c4722c3d170"
+    },
+    {
+      "path": "dist/images/harajuku-crepe.webp",
+      "bytes": 96404,
+      "sha256": "77ea632af82280d289f77122cc7dac28399388e489491670b4f7fd25ee571ce0"
+    },
+    {
+      "path": "dist/images/japlan-logo.png",
+      "bytes": 451509,
+      "sha256": "451319be3a72c6e0521b8e6aa26ed49037aa0ac3279c7e459d7c731184f1934e"
+    },
+    {
+      "path": "dist/images/japlan-pin.png",
+      "bytes": 594506,
+      "sha256": "9dc85d3aa7b83a24039a14f0d7606428fa73df3b9a7590cf16e6265b5cb15e7c"
+    },
+    {
+      "path": "dist/images/jatlas-logo-original.png",
+      "bytes": 1552833,
+      "sha256": "75c5dae7ed2180847688bd4d80446c1c6725a0c02dc1f9f0988172d83d66f319"
+    },
+    {
+      "path": "dist/images/kichijoji-menchi-katsu.webp",
+      "bytes": 65124,
+      "sha256": "3828b68e72eb7720fc556909c2de9666d60c5988684d877288293989c43ce7e1"
+    },
+    {
+      "path": "dist/images/licensed-photo-credits.json",
+      "bytes": 27363,
+      "sha256": "ea520adc95589999d23dd8a92d4624fc1daec322d70c2d03ac8f39148833efc9"
+    },
+    {
+      "path": "dist/images/osaka/400.webp",
+      "bytes": 353208,
+      "sha256": "68e0ffed0a9ed6513dcf112bbe013d6bb36c50c5ad6240b6aa7d7ecb1032df4f"
+    },
+    {
+      "path": "dist/images/osaka/401.webp",
+      "bytes": 153986,
+      "sha256": "69fe9f35734b38f61548400f94500fbd4fed07a5ab9bbe4ed4bae964bb9fa439"
+    },
+    {
+      "path": "dist/images/osaka/402.webp",
+      "bytes": 348592,
+      "sha256": "d8523c89f7166d863870833ae99354bd8070e36598fb785d6a460b10698f727c"
+    },
+    {
+      "path": "dist/images/osaka/403.webp",
+      "bytes": 155442,
+      "sha256": "a9be18e7a8f5b6d4f571fd0930645e96b6145360a4fd4e0840790188c191f364"
+    },
+    {
+      "path": "dist/images/osaka/404.webp",
+      "bytes": 388926,
+      "sha256": "c7b9f9ab915c4868f200b495aa7a4615b085f3e94e18d09ca2ae8d7ab1a40eb9"
+    },
+    {
+      "path": "dist/images/osaka/405.webp",
+      "bytes": 293506,
+      "sha256": "748c25296eca6f55bcba7b7a8e07d27ad292359c6d1f278ecb2adaa07220c8c3"
+    },
+    {
+      "path": "dist/images/osaka/406.webp",
+      "bytes": 67314,
+      "sha256": "4ce761d9a2597a648053a9f435089f314eaa42c7160926e03f29f9d490182371"
+    },
+    {
+      "path": "dist/images/osaka/407.webp",
+      "bytes": 250708,
+      "sha256": "c9506f42c916c584091d8815bef057de5db8d72fd50963b5e6c950b12b8fbdc5"
+    },
+    {
+      "path": "dist/images/osaka/408.webp",
+      "bytes": 105818,
+      "sha256": "a3376a94a9d1e7018a63943c265b526ef8b1c6063a2c975a088151054aca4972"
+    },
+    {
+      "path": "dist/images/osaka/409.webp",
+      "bytes": 390292,
+      "sha256": "e718db4868c219500a1203dc114e3e56f17bd5cd74804d2a1f7cc2d6429041ca"
+    },
+    {
+      "path": "dist/images/osaka/410.webp",
+      "bytes": 174502,
+      "sha256": "5148b1e229e6d77066ec34545135fe7169923537eb5ccf9a6e7dc2cb37d35184"
+    },
+    {
+      "path": "dist/images/osaka/411.webp",
+      "bytes": 206488,
+      "sha256": "02b426058a8d084ee502275db6481105695560ed5ae3f803ca3c6f624eb67739"
+    },
+    {
+      "path": "dist/images/osaka/412.webp",
+      "bytes": 88598,
+      "sha256": "ede508edaaf8d0e71fdb127f8ee44a7595fa8913f3af9017fe4961d5a9074219"
+    },
+    {
+      "path": "dist/images/osaka/413.webp",
+      "bytes": 228080,
+      "sha256": "04537aa4cb94376bcdba8c6578d4bb2f00735cdcc006514f91a9d9158d7f38cc"
+    },
+    {
+      "path": "dist/images/osaka/414.webp",
+      "bytes": 370572,
+      "sha256": "a7149eababa503c5161b484a9b4ed24940bd5162cdd012e9e27c516f82a09c64"
+    },
+    {
+      "path": "dist/images/osaka/415.webp",
+      "bytes": 71234,
+      "sha256": "2eedb72774af54e3cfd47da26b68a63a7d07ac8ce35ff17cfbe74338ac0c389a"
+    },
+    {
+      "path": "dist/images/osaka/416.webp",
+      "bytes": 350190,
+      "sha256": "f4553f7e8ca125ffc594a7be160047811a6912d802ef68a59cab4e409cf2adb6"
+    },
+    {
+      "path": "dist/images/osaka/417.webp",
+      "bytes": 310958,
+      "sha256": "e825b8f0706a2ce90f0b28a6a0314561a4fdbfff840f9f7aee19b14f81a30d16"
+    },
+    {
+      "path": "dist/images/osaka/418.webp",
+      "bytes": 238478,
+      "sha256": "886fee5ae2ea411987b1ce03bb6246af8da906b4b33ac698711e5bb24b543d0c"
+    },
+    {
+      "path": "dist/images/osaka/419.webp",
+      "bytes": 326356,
+      "sha256": "8c26ec3865dd3a2b03925cc6173c379c8b6b5e213daf436388880f8eff0ecc57"
+    },
+    {
+      "path": "dist/images/regional/File-Atsuta-Shrine-jpg.webp",
+      "bytes": 218634,
+      "sha256": "c783ba0af051ef8f66b50d59221d4493e4412d162d012fe1d0c1cda2a9a1e95b"
+    },
+    {
+      "path": "dist/images/regional/File-Daijuji-sanmon-jpg.webp",
+      "bytes": 154810,
+      "sha256": "59fc0bac38d97eed38dca17be9664cb42cacc0a961d6f01f56262ec5b9a72017"
+    },
+    {
+      "path": "dist/images/regional/File-Gifu-Castle-jpg.webp",
+      "bytes": 175140,
+      "sha256": "a1a2e6488c559ec48632adbf7bf0aa4a978f08393141afa5cb76eccdc321e313"
+    },
+    {
+      "path": "dist/images/regional/File-Goheimochie-jpg.webp",
+      "bytes": 84888,
+      "sha256": "4b3bd6580bd0a05d2d9f791a83c971ab61b469cc7576412527b7a4c6a0ecd34d"
+    },
+    {
+      "path": "dist/images/regional/File-Hida-Folk-Village-jpg.webp",
+      "bytes": 35262,
+      "sha256": "4e8ada7adaebca9d7ed02c6224e3b7238ff1f1587aec119e049995e637ea15e5"
+    },
+    {
+      "path": "dist/images/regional/File-Hidakokubunji05ds3200-jpg.webp",
+      "bytes": 135512,
+      "sha256": "b2375d34ad1c57561c1c9490b85a537c15b9caf8a75a4ffdb3f259c2855cd0db"
+    },
+    {
+      "path": "dist/images/regional/File-Hitsumabushi1-jpg.webp",
+      "bytes": 180664,
+      "sha256": "7f41cab40a7ea4ab69046696098e99dc1a66423fe6ed565d292066485bb1bf05"
+    },
+    {
+      "path": "dist/images/regional/Inub-saki-Lighthouse.webp",
+      "bytes": 57314,
+      "sha256": "2eb4892ee2a41a4abc63900100dc8a7f121e7de06e020560e360d39995a01e97"
+    },
+    {
+      "path": "dist/images/regional/K-toku-in.webp",
+      "bytes": 369874,
+      "sha256": "05607ac4644dcba11ac164762ee7835effa17694a5aca12114db0cfdb35ba5d5"
+    },
+    {
+      "path": "dist/images/regional/Kawagoe-Castle.webp",
+      "bytes": 263372,
+      "sha256": "237332e33b3c8640a4c798c27603aa68dd39f7f63e06b972eead7d9fad860bfc"
+    },
+    {
+      "path": "dist/images/regional/Kita-in.webp",
+      "bytes": 143506,
+      "sha256": "4d02693a3efad58af29e28a67f0c7a49883c19869763e3d983f1986cfe55a208"
+    },
+    {
+      "path": "dist/images/regional/Lake-Ashi.webp",
+      "bytes": 233844,
+      "sha256": "e36ee0415b6e2e50e16d269d8b19de754b926f6d603fd1589df1c6250d6ed560"
+    },
+    {
+      "path": "dist/images/regional/Meoto-Iwa.webp",
+      "bytes": 222096,
+      "sha256": "48c61359c08e62dc08d2d955d2c9dc24a9b4e1ea609ee46ae015db8c07f5990a"
+    },
+    {
+      "path": "dist/images/regional/Narita-san.webp",
+      "bytes": 69878,
+      "sha256": "d79de3c1d1518e5d0eb9056b215654b382307d6d761307812aaeb0a36d4a5437"
+    },
+    {
+      "path": "dist/images/regional/Shiraito-Falls.webp",
+      "bytes": 282748,
+      "sha256": "490ad0bfba062678b418de090fcf62ed1415dbb3f66be3999606301dc18108de"
+    },
+    {
+      "path": "dist/images/regional/nagoya-castle.webp",
+      "bytes": 185352,
+      "sha256": "eff33eeae871cfbc793753e5b7e33e0d1e63010ff1f65124523d4e4377f207cf"
+    },
+    {
+      "path": "dist/images/regional/shirakawago.webp",
+      "bytes": 340528,
+      "sha256": "f9eaeab62d26e28a4f82ceb4cb9ddd5983038a5c8a1850c06a929703ee6b2c53"
+    },
+    {
+      "path": "dist/images/sensoji.webp",
+      "bytes": 91930,
+      "sha256": "6de41646f2b5e60c0f5d631e3a15ca4aa07c5e7a96cfbf646c7d4c511f0a92d1"
+    },
+    {
+      "path": "dist/images/skyline.webp",
+      "bytes": 276298,
+      "sha256": "942905a5fb94e483bb0a035623975430d7489043952fea5ec8c56dd5ee909a29"
+    },
+    {
+      "path": "dist/images/soba.webp",
+      "bytes": 107522,
+      "sha256": "7ee9f895ff9a137dd0c3d59fe352f169df1ac69623bddfa70bf0f3d5ab0b5e28"
+    },
+    {
+      "path": "dist/images/tokyo-100.webp",
+      "bytes": 76838,
+      "sha256": "9803daf4ff9683da2515ac19a18e8757d19f6b29ec7a903c5b4fba486f198d98"
+    },
+    {
+      "path": "dist/images/tokyo-101.webp",
+      "bytes": 71714,
+      "sha256": "e6d9cee99a8319b7296cdab82d594e060c1b5d083f2b7f188e4ffb146da02ed5"
+    },
+    {
+      "path": "dist/images/tokyo-102.webp",
+      "bytes": 112598,
+      "sha256": "8c735aacd7bfea06c64b06a05dcbaa18e4da1beace38f8f407a09851c9e8df8d"
+    },
+    {
+      "path": "dist/images/tokyo-103.webp",
+      "bytes": 89808,
+      "sha256": "9a8fc23f6fc72ebeb3b096e3163975c0ae6fb275ec7378458b627caddc14c678"
+    },
+    {
+      "path": "dist/images/tokyo-104.webp",
+      "bytes": 67142,
+      "sha256": "de74b0df7318015d980e6720172f23636c42c30660f07b7e97a672d08e4a6159"
+    },
+    {
+      "path": "dist/images/tokyo-105.webp",
+      "bytes": 126408,
+      "sha256": "bd3d0dcdabf963aa8ee134adf9e0cb12b0f4c1c3895a9bda0da4b466a272440b"
+    },
+    {
+      "path": "dist/images/tokyo-106.webp",
+      "bytes": 150676,
+      "sha256": "8c160955cc7393c1c2d8b1b51e20528c159b321fdebf02eb22b2a439aeb0ba82"
+    },
+    {
+      "path": "dist/images/tokyo-107.webp",
+      "bytes": 95436,
+      "sha256": "d2de78586013e6fe6e74232a1de2d3b3f4a0622dc9e3928630ed5ca33b3e4093"
+    },
+    {
+      "path": "dist/images/tokyo-108.webp",
+      "bytes": 92514,
+      "sha256": "7659cae14a03eec9c58cab8b83db0e9b7f204b05fa87b27654b1f3e584af94aa"
+    },
+    {
+      "path": "dist/images/tokyo-109.webp",
+      "bytes": 167042,
+      "sha256": "fca13acf26a0907a0c59fab68e2bd0ba729ae49107d712692f6b0c53b85a6dd3"
+    },
+    {
+      "path": "dist/images/tokyo-110.webp",
+      "bytes": 128506,
+      "sha256": "6cb0cc335a0adddad6913f020e0527de23569d4ab0c91257c780f366cac141d6"
+    },
+    {
+      "path": "dist/images/tokyo-111.webp",
+      "bytes": 69968,
+      "sha256": "8ee55b1ba291eee9f1126f03d7ee1c7c3020d5f9e10a99791e8cb68d0b67f8ed"
+    },
+    {
+      "path": "dist/images/tokyo-112.webp",
+      "bytes": 174200,
+      "sha256": "e97cbf6227a48997ccf72eb870113943430df7af54d518e8012520970f3a1a85"
+    },
+    {
+      "path": "dist/images/tokyo-113.webp",
+      "bytes": 69120,
+      "sha256": "b6c700a1c11f8709ef3a3a1af487dd3c8ef529bc4459c1aea1956fa6f6f3510f"
+    },
+    {
+      "path": "dist/images/tokyo-114.webp",
+      "bytes": 121514,
+      "sha256": "b30041a55a6e6f80b026a0b7bc0b287ec5f5d96e74d40dc0095db1c5afc98f0e"
+    },
+    {
+      "path": "dist/images/tokyo-115.webp",
+      "bytes": 130000,
+      "sha256": "d927434ba1c040e6d922b8daca503fd502093a322bc04ce9c50d5400c9e1f7a6"
+    },
+    {
+      "path": "dist/images/tokyo-116.webp",
+      "bytes": 198110,
+      "sha256": "0183d22cdf03a07653d7adeea188688fc5155bdc17f516178d7e543fa999cba6"
+    },
+    {
+      "path": "dist/images/tokyo-117.webp",
+      "bytes": 83462,
+      "sha256": "aa4fc883207b7182b173fb74cecf529f73e4a0914bd57c0040d6530d8b7fb9f4"
+    },
+    {
+      "path": "dist/images/tokyo-118.webp",
+      "bytes": 74698,
+      "sha256": "3c8392b74d266daeec213da4e93cea42737b7546ed5a2976d1e24b99e992969c"
+    },
+    {
+      "path": "dist/images/tokyo-119.webp",
+      "bytes": 86648,
+      "sha256": "22ddb0ff1291a7b28540741cf98acbc6b117a69547dea688bc785677c4e156d0"
+    },
+    {
+      "path": "dist/images/tokyo-200.webp",
+      "bytes": 69490,
+      "sha256": "897d9a0a2106c2dfeb2c65b520924bbb05fc37479559a240794068c289a5e2ad"
+    },
+    {
+      "path": "dist/images/tokyo-201.webp",
+      "bytes": 64790,
+      "sha256": "63af2735be220c7a554373e655ab9c8a82850bd1b78702364dea240828d89f61"
+    },
+    {
+      "path": "dist/images/tokyo-202.webp",
+      "bytes": 111804,
+      "sha256": "6eebad24d841ae6b4e1b3f15985570fdd47f81a55b0e00ce574302777ceb84d7"
+    },
+    {
+      "path": "dist/images/tokyo-203.webp",
+      "bytes": 40488,
+      "sha256": "43798131c27c5b87736f82c08d1bf2934c8fc1d6e5624f971e9d439e2b493fe7"
+    },
+    {
+      "path": "dist/images/tokyo-204.webp",
+      "bytes": 89664,
+      "sha256": "2ccaefc3b022eea100cb235d64f019d0174c39cfa15fc215fae5c25cbc5d1288"
+    },
+    {
+      "path": "dist/images/tokyo-205.webp",
+      "bytes": 93154,
+      "sha256": "148a878c68dccc5ab94c95bb39e98c98d8d51c5ed2e4385ca16c92748906db4d"
+    },
+    {
+      "path": "dist/images/tokyo-206.webp",
+      "bytes": 87340,
+      "sha256": "91a4fde88dd2fbb966dbaf7c906d2cdeeff087507e5f1a5aa664583bfbde3777"
+    },
+    {
+      "path": "dist/images/tokyo-207.webp",
+      "bytes": 144060,
+      "sha256": "f068dd1fb3d82cdb4cefc6ce9664c8754d8a4f852267c3c3e97275a94fc35c4c"
+    },
+    {
+      "path": "dist/images/tokyo-208.webp",
+      "bytes": 108256,
+      "sha256": "f3ef9c3651c81c7732eb51fb037dfe20eba9be075d51a5016c8571ccddc4f45a"
+    },
+    {
+      "path": "dist/images/tokyo-209.webp",
+      "bytes": 76646,
+      "sha256": "f5abb20c15e7c377c6231916ce863d5f57adfd8add0dfda6ab8f0918ccdbf160"
+    },
+    {
+      "path": "dist/images/tokyo-210.webp",
+      "bytes": 73440,
+      "sha256": "c342ed961693620f6349a94f6d8e0833cf04cc9244e18c042d0c358828db0ee2"
+    },
+    {
+      "path": "dist/images/tokyo-211.webp",
+      "bytes": 100398,
+      "sha256": "e2ff291586b3dda0726c848d5fafff26e1776d088017204775b326278eac686d"
+    },
+    {
+      "path": "dist/images/tokyo-212.webp",
+      "bytes": 86000,
+      "sha256": "95c2c315640f08162c45fdeb759b432d3aa801ec213cf49de060223134aa9eec"
+    },
+    {
+      "path": "dist/images/tokyo-213.webp",
+      "bytes": 86010,
+      "sha256": "4bd5fbe2f5acc97ccd1004d435aa591830018fd4eb9c0289d4cb64ef537099c2"
+    },
+    {
+      "path": "dist/images/tokyo-214.webp",
+      "bytes": 111628,
+      "sha256": "c0719bc8694334d95b634a747f7b6bc140389cbf504a0b5796421609ba80d6b8"
+    },
+    {
+      "path": "dist/images/tokyo-215.webp",
+      "bytes": 100488,
+      "sha256": "8ef26dec793f2cd666c18531ff5d4b8b17fd1dd6bb96a765ab94579161f06d52"
+    },
+    {
+      "path": "dist/images/tokyo-216.webp",
+      "bytes": 113518,
+      "sha256": "70a27d957fada0785ecb9d7a019ffc5612c061735601eab64b0536cd09c73785"
+    },
+    {
+      "path": "dist/images/tokyo-217.webp",
+      "bytes": 75052,
+      "sha256": "7804c7bcbeab37a3f3ee071939e9440037d98b3dfee85b026cf6b3155a08165b"
+    },
+    {
+      "path": "dist/images/tokyo-218.webp",
+      "bytes": 102496,
+      "sha256": "5e480321065ea4872c3349d1ecb4c2a139dfd50a1919ea9c1e34c57b08f7d824"
+    },
+    {
+      "path": "dist/images/tower.webp",
+      "bytes": 235872,
+      "sha256": "511e04ef09e2eb89054519b5d6b85ca6db4b69e8a776fc0a586dbee3c09d76c7"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 9679,
+      "sha256": "383ba41f317c997b6330b8479733fd4cbff71478c469691224b6609294747870"
+    },
+    {
+      "path": "dist/journeys.js",
+      "bytes": 26886,
+      "sha256": "7caba0778339d6a4cd13b8b75706f19d07882a6afb42211cfcc5a4dfb41600a7"
+    },
+    {
+      "path": "dist/locale.js",
+      "bytes": 32134,
+      "sha256": "90ee6a6806291575d428832068cf368865f0d68408168edf626722593b9cbfe8"
+    },
+    {
+      "path": "dist/map.js",
+      "bytes": 18433,
+      "sha256": "cd4df42f2a328405ee83103202cc3a00c76f795175aa6287198ddcf4ec3a9382"
+    },
+    {
+      "path": "dist/municipal-index.js",
+      "bytes": 159847,
+      "sha256": "5103b88c93b78182ce27d2b81f4c6a4465b45e3b3971588f4055a9a19e49beaf"
+    },
+    {
+      "path": "dist/municipal-maps.js",
+      "bytes": 10378,
+      "sha256": "fdb667f85a79705e0bd879ecb40107a56d72b655a03494c81912679751da7848"
+    },
+    {
+      "path": "dist/municipal-names.js",
+      "bytes": 97906,
+      "sha256": "af0eead2c58f27c762c32dc8131de4f2712d066b0996ace67dc5521954092481"
+    },
+    {
+      "path": "dist/osaka-data.js",
+      "bytes": 54761,
+      "sha256": "ec8264501bf565ad145068f5e9b73e71221b9516008042e927451dee90fcaf0c"
+    },
+    {
+      "path": "dist/osaka-photos.js",
+      "bytes": 5542,
+      "sha256": "01df90b507717af37ade11c7f541c779e3ff31e0d7bfd1c0fb9ac65f70687bae"
+    },
+    {
+      "path": "dist/osaka.js",
+      "bytes": 15054,
+      "sha256": "b79ffa8050b9ca2d1300cd28f9197d5723ed3369088068efd7b43e3413ed500b"
+    },
+    {
+      "path": "dist/regional-content.js",
+      "bytes": 1103,
+      "sha256": "24b1481c7a13aee91c616d1572bf94c135e46a87d4ae1f39322d03ba22f7bf93"
+    },
+    {
+      "path": "dist/regional-data.js",
+      "bytes": 191205,
+      "sha256": "31d2c7af62d29812ab2b30a1c4c74031c2b9408c1f35d1874e8608e593eb4e80"
+    },
+    {
+      "path": "dist/regional-features.js",
+      "bytes": 1205,
+      "sha256": "13a99c87f5c8c8a54ac84d41f1726dff8694fb45e53cd9135d2a994a5c568597"
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 41313,
+      "sha256": "ea1dc71f6ace9360a5b33a06cc04c1d678926d0d5f40e795b16d59adea090d4d"
+    },
+    {
+      "path": "dist/tokyo-complete.js",
+      "bytes": 5613,
+      "sha256": "51b5332c92169054dc616b1669fbf2d5c22bc3106fd88b75baac063fbcb94686"
+    },
+    {
+      "path": "dist/tokyo-expansion.js",
+      "bytes": 38758,
+      "sha256": "c01803ccc38157df47695c4ff28ae952cb4522465a678e575402477836114f22"
+    },
+    {
+      "path": "dist/tokyo.js",
+      "bytes": 18560,
+      "sha256": "ddc376728df74bb952e8af22224bcb0e3935c5ec45465fb1fb5a4ba773eedbef"
+    },
+    {
+      "path": "dist/vendor/Leaflet.VectorGrid.bundled.js",
+      "bytes": 105580,
+      "sha256": "144c59f4da8a82a8d85a9c18c1a8bb62fdaec26cb2f624228e7f70bcd61ba061"
+    },
+    {
+      "path": "dist/vendor/leaflet-LICENSE.txt",
+      "bytes": 1395,
+      "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+    },
+    {
+      "path": "dist/vendor/leaflet.css",
+      "bytes": 14806,
+      "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6"
+    },
+    {
+      "path": "dist/vendor/leaflet.js",
+      "bytes": 147552,
+      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+    },
+    {
+      "path": "dist/yamanashi-data.js",
+      "bytes": 48451,
+      "sha256": "ee5d365f4139c0b06db7aeafc4cf99a1837a51ee19a7d4fb9f626fc8f9e72543"
+    },
+    {
+      "path": "dist/yamanashi.js",
+      "bytes": 14166,
+      "sha256": "3ebfb76e58f882ed378c27ca7321a30188055286005d142e683eb5b5b1ba5cb3"
+    },
+    {
+      "path": "scripts/build-korean-names.py",
+      "bytes": 2920,
+      "sha256": "138e5e12538261e6f66551db9b3237afc6c884413efddffda8568b55491da134"
+    },
+    {
+      "path": "scripts/build-subdivisions.py",
+      "bytes": 1884,
+      "sha256": "c3256ec4e3345aeb4feee2d6bce162d815bf07c6ee9ed221f5cf7a5bb2ade639"
+    },
+    {
+      "path": "scripts/municipal-name-audit.json",
+      "bytes": 136102,
+      "sha256": "d54e04beba783bbfba2be5b58748d0d9f4f900b326526e4ab8ad6c39770f8622"
+    },
+    {
+      "path": "sources/export-image-manifest.json",
+      "bytes": 3654,
+      "sha256": "0d3c521e2a9529e06344e206626472dc3142ad08eaa2fe3d6367adf828eeced4"
+    },
+    {
+      "path": "sources/food-photo-sources.json",
+      "bytes": 1088,
+      "sha256": "5687bdf9aa9255b77da0899b674710e7dacf35d96a7267040a9414511d659d06"
+    },
+    {
+      "path": "sources/map-sources.json",
+      "bytes": 596,
+      "sha256": "8082ceefb1091896843c7ebd6916dae8aa61618043229b1828ed01f141522e91"
+    },
+    {
+      "path": "sources/prepare-map.py",
+      "bytes": 2217,
+      "sha256": "d0b230232225729b366c2696865abec9fda769e61a0d40dcf47b7df0e1b5c22b"
+    },
+    {
+      "path": "sources/regional/capital-research.json",
+      "bytes": 33647,
+      "sha256": "15d89f5f500997a194d94c804ede7f699d76d6d63a92c33958d298eda0384bdb"
+    },
+    {
+      "path": "sources/regional/coast-final.json",
+      "bytes": 19625,
+      "sha256": "ce58338a68134e34d30e7a65f25ecaf4ed79348a2fb31748d48ee783e76d127b"
+    },
+    {
+      "path": "sources/regional/photo-credits.json",
+      "bytes": 5281,
+      "sha256": "b24cb3e409e5b614dddb0cfe7b446f639cba292da61364c87d2789c1f1aff233"
+    },
+    {
+      "path": "sources/regional/tokai-final.json",
+      "bytes": 49762,
+      "sha256": "6875fc5cf89c2e6c2708439fe65f298cbc8a7e5bd1ce7e7f89c9b480ec037e6d"
+    },
+    {
+      "path": "sources/tokyo-expansion-sources.json",
+      "bytes": 20444,
+      "sha256": "c2f5af1f6753e1d687a66ab87ca4451bcc27d5bedf67fb7e3a251c2d0b5155a7"
+    },
+    {
+      "path": "sources/tokyo-photo-sources.json",
+      "bytes": 6655,
+      "sha256": "0b2bc72bf08a451b7a14d0266cdd29662e31cac4043d749b98b8f267bcf2ac92"
+    }
+  ]
+}

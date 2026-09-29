@@ -1,0 +1,35 @@
+[
+  {
+    "file": "harajuku-crepe.webp",
+    "image_url": "https://www.marion.co.jp/wp-content/themes/marion/img/top/slide03_new.jpg.webp",
+    "source_url": "https://www.marion.co.jp/",
+    "credit": "Marion Crepes",
+    "description": "Marion Crepes, Harajuku-origin crepe specialist; official crepe photograph",
+    "dimensions": [
+      1120,
+      760
+    ]
+  },
+  {
+    "file": "soba.webp",
+    "image_url": "https://www.yabusoba.net/menu/images/seiro.jpg",
+    "source_url": "https://www.yabusoba.net/menu/",
+    "credit": "Kanda Yabusoba",
+    "description": "Seiro soba noodles from official restaurant menu",
+    "dimensions": [
+      850,
+      614
+    ]
+  },
+  {
+    "file": "kichijoji-menchi-katsu.webp",
+    "image_url": "https://www.gotokyo.org/en/story/guide/japanese-comfort-food/images/sub003.jpg",
+    "source_url": "https://www.gotokyo.org/en/story/guide/japanese-comfort-food/index.html",
+    "credit": "GO TOKYO / Tokyo Convention & Visitors Bureau",
+    "description": "Kichijoji Satou Maru Menchi beef cutlets",
+    "dimensions": [
+      853,
+      572
+    ]
+  }
+]

@@ -1,0 +1,1184 @@
+{
+  "prefectures": [
+    {
+      "name_ko": "시즈오카",
+      "name_ja": "静岡県",
+      "areas": [
+        {
+          "name_ko": "후지산 기슭",
+          "name_ja": "富士山麓",
+          "description_ko": "후지산 신앙과 용천수가 만든 경관.",
+          "description_ja": "富士山信仰と湧水の風景を巡る。"
+        },
+        {
+          "name_ko": "시즈오카·시미즈",
+          "name_ja": "静岡・清水",
+          "description_ko": "스루가만과 후지산 전망을 잇는 지역.",
+          "description_ja": "駿河湾と富士山の眺望を結ぶ地域。"
+        },
+        {
+          "name_ko": "이즈",
+          "name_ja": "伊豆",
+          "description_ko": "온천 마을과 화산 해안을 천천히 여행.",
+          "description_ja": "温泉街と火山の海岸をゆっくり巡る。"
+        },
+        {
+          "name_ko": "하마마쓰·가케가와",
+          "name_ja": "浜松・掛川",
+          "description_ko": "성곽과 하마나호를 즐기는 서부 지역.",
+          "description_ja": "城と浜名湖を楽しむ西部エリア。"
+        }
+      ],
+      "spots": [
+        {
+          "name_ko": "시라이토 폭포",
+          "name_ja": "白糸ノ滝",
+          "area_ko": "후지산 기슭",
+          "town_ko": "후지노미야",
+          "town_ja": "富士宮市",
+          "description_ko": "후지산 용천수가 넓은 절벽을 따라 흘러내리는 폭포.",
+          "description_ja": "富士山の湧水が広い岩壁から流れ落ちる滝。",
+          "activity_ko": "폭포 전망대와 산책로 걷기",
+          "activity_ja": "滝の展望と遊歩道散策",
+          "access_ko": "후지노미야역에서 버스 이용",
+          "access_ja": "富士宮駅からバス利用",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1439",
+          "photo": null
+        },
+        {
+          "name_ko": "후지산 혼구 센겐타이샤",
+          "name_ja": "富士山本宮浅間大社",
+          "area_ko": "후지산 기슭",
+          "town_ko": "후지노미야",
+          "town_ja": "富士宮市",
+          "description_ko": "후지산을 신체로 모시는 아사마 신사의 총본궁.",
+          "description_ja": "富士山をご神体とする浅間神社の総本宮。",
+          "activity_ko": "참배와 경내 용천수 감상",
+          "activity_ja": "参拝と境内の湧水鑑賞",
+          "access_ko": "후지노미야역에서 도보",
+          "access_ja": "富士宮駅から徒歩",
+          "duration": "1h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1391",
+          "photo": null
+        },
+        {
+          "name_ko": "미호노마쓰바라",
+          "name_ja": "三保松原",
+          "area_ko": "시즈오카·시미즈",
+          "town_ko": "시즈오카",
+          "town_ja": "静岡市",
+          "description_ko": "소나무 숲과 바다 너머 후지산이 어우러지는 해안.",
+          "description_ja": "松林と海越しの富士山が調和する海岸。",
+          "activity_ko": "소나무 길과 해변 산책",
+          "activity_ja": "松並木と海岸の散策",
+          "access_ko": "시미즈역에서 버스 후 도보",
+          "access_ja": "清水駅からバスと徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1465",
+          "photo": null
+        },
+        {
+          "name_ko": "니혼다이라 유메테라스",
+          "name_ja": "日本平夢テラス",
+          "area_ko": "시즈오카·시미즈",
+          "town_ko": "시즈오카",
+          "town_ja": "静岡市",
+          "description_ko": "후지산과 시미즈항을 내려다보는 전망 시설.",
+          "description_ja": "富士山や清水港を見渡す展望施設。",
+          "activity_ko": "전망 회랑에서 풍경 감상",
+          "activity_ja": "展望回廊から景色を楽しむ",
+          "access_ko": "시즈오카역에서 니혼다이라 방면 버스",
+          "access_ja": "静岡駅から日本平方面のバス",
+          "duration": "1h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1350",
+          "photo": null
+        },
+        {
+          "name_ko": "도가시마 덴소도",
+          "name_ja": "堂ヶ島天窓洞",
+          "area_ko": "이즈",
+          "town_ko": "니시이즈",
+          "town_ja": "西伊豆町",
+          "description_ko": "파도가 깎은 해식동굴에 천창이 열려 있다.",
+          "description_ja": "波が削った海食洞に天窓が開く。",
+          "activity_ko": "운항일에 유람선 탑승·해안 산책",
+          "activity_ja": "運航日に遊覧船乗船・海岸散策",
+          "access_ko": "슈젠지역에서 도가시마행 버스",
+          "access_ja": "修善寺駅から堂ヶ島方面のバス",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1425",
+          "photo": null
+        },
+        {
+          "name_ko": "하마마쓰성",
+          "name_ja": "浜松城",
+          "area_ko": "하마마쓰·가케가와",
+          "town_ko": "하마마쓰",
+          "town_ja": "浜松市",
+          "description_ko": "도쿠가와 이에야스와 연관 깊은 성과 공원.",
+          "description_ja": "徳川家康ゆかりの城と公園。",
+          "activity_ko": "천수 전시와 공원 산책",
+          "activity_ja": "天守展示と公園散策",
+          "access_ko": "하마마쓰역에서 버스 또는 도보",
+          "access_ja": "浜松駅からバスまたは徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1393",
+          "photo": null
+        },
+        {
+          "name_ko": "가케가와성",
+          "name_ja": "掛川城",
+          "area_ko": "하마마쓰·가케가와",
+          "town_ko": "가케가와",
+          "town_ja": "掛川市",
+          "description_ko": "목조로 복원된 천수와 성곽의 역사를 만나는 곳.",
+          "description_ja": "木造復元天守と城の歴史に触れる場所。",
+          "activity_ko": "천수와 주변 성곽 유적 관람",
+          "activity_ja": "天守と周辺の城跡を見学",
+          "access_ko": "가케가와역에서 도보",
+          "access_ja": "掛川駅から徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1415",
+          "photo": null
+        },
+        {
+          "name_ko": "간잔지 로프웨이",
+          "name_ja": "かんざんじロープウェイ",
+          "area_ko": "하마마쓰·가케가와",
+          "town_ko": "하마마쓰",
+          "town_ja": "浜松市",
+          "description_ko": "하마나호 위를 건너 오쿠사야마 전망으로 이어진다.",
+          "description_ja": "浜名湖の上を渡り大草山の眺望へつながる。",
+          "activity_ko": "호수 전망과 로프웨이 탑승",
+          "activity_ja": "湖の眺望とロープウェイ乗車",
+          "access_ko": "하마마쓰역에서 간잔지 방면 버스",
+          "access_ja": "浜松駅から舘山寺方面のバス",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://hellonavi.jp/spot/1447",
+          "photo": null
+        },
+        {
+          "name_ko": "슈젠지 온천",
+          "name_ja": "修善寺温泉",
+          "area_ko": "이즈",
+          "town_ko": "이즈",
+          "town_ja": "伊豆市",
+          "description_ko": "가쓰라강과 사찰을 중심으로 이어지는 온천 마을.",
+          "description_ja": "桂川と寺を中心に広がる温泉街。",
+          "activity_ko": "대나무 길 산책과 온천 숙박",
+          "activity_ja": "竹林散策と温泉宿泊",
+          "access_ko": "슈젠지역에서 온천장행 버스",
+          "access_ja": "修善寺駅から温泉場方面のバス",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.japan.travel/en/spot/2040/",
+          "photo": null
+        }
+      ],
+      "foods": [
+        {
+          "name_ko": "시즈오카 오뎅",
+          "name_ja": "静岡おでん",
+          "area_ko": "시즈오카·시미즈",
+          "description_ko": "다시 가루를 뿌려 먹는 지역식 오뎅.",
+          "description_ja": "だし粉をかけて味わう地元のおでん。",
+          "source": "https://hellonavi.jp/feature/food"
+        },
+        {
+          "name_ko": "하마마쓰 교자",
+          "name_ja": "浜松餃子",
+          "area_ko": "하마마쓰·가케가와",
+          "description_ko": "채소가 풍부하고 비교적 담백한 군만두.",
+          "description_ja": "野菜が多くあっさりした味わいの焼き餃子。",
+          "source": "https://hellonavi.jp/feature/food"
+        },
+        {
+          "name_ko": "후지노미야 야키소바",
+          "name_ja": "富士宮やきそば",
+          "area_ko": "후지산 기슭",
+          "description_ko": "탄력 있는 면과 생선 가루가 특징인 볶음면.",
+          "description_ja": "コシのある麺と削り粉が特徴の焼きそば。",
+          "source": "https://hellonavi.jp/feature/food"
+        }
+      ],
+      "events": [
+        {
+          "name_ko": "가와즈 벚꽃 시즌",
+          "name_ja": "河津桜の季節",
+          "area_ko": "이즈",
+          "months": [
+            2,
+            3
+          ],
+          "timing_ko": "예년 2월~3월 초, 개화에 따라 변동",
+          "timing_ja": "例年2月～3月上旬、開花状況による",
+          "type_ko": "꽃·계절",
+          "type_ja": "花・季節",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "가와즈강 주변에서 이른 봄의 분홍 벚꽃을 감상.",
+          "description_ja": "河津川周辺で早春の濃いピンクの桜を楽しむ。",
+          "source": "https://exploreshizuoka.jp/kr/area/izu-area/"
+        },
+        {
+          "name_ko": "하마마쓰 축제",
+          "name_ja": "浜松まつり",
+          "area_ko": "하마마쓰·가케가와",
+          "months": [
+            5
+          ],
+          "timing_ko": "예년 5월, 해당 연도 일정 확인",
+          "timing_ja": "例年5月、当年の日程を確認",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "낮의 연날리기와 밤의 화려한 수레가 대표적.",
+          "description_ja": "昼の凧揚げと夜の華やかな御殿屋台が見どころ。",
+          "source": "https://hellonavi.jp/spot/1354"
+        },
+        {
+          "name_ko": "아타미 해상 불꽃놀이",
+          "name_ja": "熱海海上花火大会",
+          "area_ko": "이즈",
+          "months": [],
+          "timing_ko": "연중 지정일, 공식 개최일 확인 필수",
+          "timing_ja": "年間の指定日、公式開催日の確認が必要",
+          "type_ko": "불꽃놀이",
+          "type_ja": "花火",
+          "scheduleType_ko": "지정일 개최",
+          "scheduleType_ja": "指定日開催",
+          "description_ko": "산으로 둘러싸인 아타미만에서 즐기는 불꽃놀이.",
+          "description_ja": "山に囲まれた熱海湾で楽しむ花火。",
+          "source": "https://ataminews.gr.jp/event/8"
+        }
+      ],
+      "day_routes": [
+        {
+          "name_ko": "후지노미야의 신앙과 폭포",
+          "name_ja": "富士宮の信仰と滝",
+          "spot_indexes": [
+            1,
+            0
+          ]
+        },
+        {
+          "name_ko": "시미즈·니혼다이라 전망",
+          "name_ja": "清水・日本平の眺望",
+          "spot_indexes": [
+            2,
+            3
+          ]
+        },
+        {
+          "name_ko": "하마마쓰 성과 호수",
+          "name_ja": "浜松の城と湖",
+          "spot_indexes": [
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "name_ko": "기후",
+      "name_ja": "岐阜県",
+      "areas": [
+        {
+          "name_ko": "히다·다카야마",
+          "name_ja": "飛騨・高山",
+          "description_ko": "산속의 옛 거리와 전통 민가.",
+          "description_ja": "山間の古い町並みと伝統民家。"
+        },
+        {
+          "name_ko": "게로",
+          "name_ja": "下呂",
+          "description_ko": "히다강을 따라 쉬어 가는 온천 지역.",
+          "description_ja": "飛騨川沿いでくつろぐ温泉地域。"
+        },
+        {
+          "name_ko": "기후·구조",
+          "name_ja": "岐阜・郡上",
+          "description_ko": "성하마을과 나가라강 문화.",
+          "description_ja": "城下町と長良川の文化。"
+        },
+        {
+          "name_ko": "도노·나카쓰가와",
+          "name_ja": "東濃・中津川",
+          "description_ko": "나카센도 역참과 산성 유적.",
+          "description_ja": "中山道の宿場と山城跡。"
+        }
+      ],
+      "spots": [
+        {
+          "name_ko": "다카야마 옛 거리",
+          "name_ja": "高山市三町伝統的建造物群保存地区",
+          "area_ko": "히다·다카야마",
+          "town_ko": "다카야마",
+          "town_ja": "高山市",
+          "description_ko": "상가 건축과 양조장이 이어지는 산마치 거리.",
+          "description_ja": "商家建築や酒蔵が並ぶ三町の町並み。",
+          "activity_ko": "옛 거리 산책과 지역 먹거리",
+          "activity_ja": "町並み散策と郷土の味",
+          "access_ko": "다카야마역에서 도보",
+          "access_ja": "高山駅から徒歩",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/takayama-historic-district/",
+          "photo": null
+        },
+        {
+          "name_ko": "다카야마 진야",
+          "name_ja": "高山陣屋",
+          "area_ko": "히다·다카야마",
+          "town_ko": "다카야마",
+          "town_ja": "高山市",
+          "description_ko": "에도 시대 관청의 공간과 행정을 살펴보는 유적.",
+          "description_ja": "江戸時代の役所の空間と行政を学ぶ史跡。",
+          "activity_ko": "관청 내부와 자료 관람",
+          "activity_ja": "役所内部と資料の見学",
+          "access_ko": "다카야마역에서 도보",
+          "access_ja": "高山駅から徒歩",
+          "duration": "1h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/takayama-jinya/",
+          "photo": null
+        },
+        {
+          "name_ko": "히다 민속촌 히다노사토",
+          "name_ja": "飛騨民俗村・飛騨の里",
+          "area_ko": "히다·다카야마",
+          "town_ko": "다카야마",
+          "town_ja": "高山市",
+          "description_ko": "히다의 전통 민가를 모아 보존한 야외박물관.",
+          "description_ja": "飛騨の伝統民家を移築保存した野外博物館。",
+          "activity_ko": "민가와 생활도구 관람",
+          "activity_ja": "民家と生活道具の見学",
+          "access_ko": "다카야마역에서 버스",
+          "access_ja": "高山駅からバス",
+          "duration": "2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/hida-folk-village/",
+          "photo": null
+        },
+        {
+          "name_ko": "히다후루카와 세토가와·흰 벽 창고 거리",
+          "name_ja": "飛騨古川 瀬戸川と白壁土蔵街",
+          "area_ko": "히다·다카야마",
+          "town_ko": "히다",
+          "town_ja": "飛騨市",
+          "description_ko": "흰 벽 창고와 수로가 이어지는 조용한 거리.",
+          "description_ja": "白壁の土蔵と水路が続く静かな町並み。",
+          "activity_ko": "수로를 따라 걷기",
+          "activity_ja": "水路沿いの散策",
+          "access_ko": "히다후루카와역에서 도보",
+          "access_ja": "飛騨古川駅から徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/hida-furukawa-town-of-white-walled-storehouses-along-the-seto-river/",
+          "photo": null
+        },
+        {
+          "name_ko": "시라카와고 오기마치 갓쇼즈쿠리 마을",
+          "name_ja": "白川郷荻町合掌造り集落",
+          "area_ko": "히다·다카야마",
+          "town_ko": "시라카와",
+          "town_ja": "白川村",
+          "description_ko": "가파른 초가지붕 민가가 남은 세계유산 마을.",
+          "description_ja": "急勾配の茅葺き民家が残る世界遺産の集落。",
+          "activity_ko": "마을 산책과 공개 민가 관람",
+          "activity_ja": "集落散策と公開民家見学",
+          "access_ko": "다카야마에서 고속버스, 예약 확인",
+          "access_ja": "高山から高速バス、予約を確認",
+          "duration": "3–4h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/unesco-world-heritage-site-shirakawa-go/",
+          "photo": null
+        },
+        {
+          "name_ko": "게로 온천",
+          "name_ja": "下呂温泉",
+          "area_ko": "게로",
+          "town_ko": "게로",
+          "town_ja": "下呂市",
+          "description_ko": "히다강 주변에 료칸과 온천 거리가 펼쳐진다.",
+          "description_ja": "飛騨川の周辺に旅館と温泉街が広がる。",
+          "activity_ko": "족욕·온천 숙박",
+          "activity_ja": "足湯・温泉宿泊",
+          "access_ko": "JR 게로역에서 도보",
+          "access_ja": "JR下呂駅から徒歩",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/gero-hot-springs/",
+          "photo": null
+        },
+        {
+          "name_ko": "구조하치만성",
+          "name_ja": "郡上八幡城",
+          "area_ko": "기후·구조",
+          "town_ko": "구조",
+          "town_ja": "郡上市",
+          "description_ko": "산 위에서 구조하치만의 마을을 조망하는 성.",
+          "description_ja": "山上から郡上八幡の町を望む城。",
+          "activity_ko": "천수 관람과 성하마을 산책",
+          "activity_ja": "天守見学と城下町散策",
+          "access_ko": "구조하치만 시내에서 오르막 도보",
+          "access_ja": "郡上八幡市街から坂道を徒歩",
+          "duration": "2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/gujo-hachiman-castle/",
+          "photo": null
+        },
+        {
+          "name_ko": "마고메주쿠",
+          "name_ja": "馬籠宿",
+          "area_ko": "도노·나카쓰가와",
+          "town_ko": "나카쓰가와",
+          "town_ja": "中津川市",
+          "description_ko": "돌길 언덕에 옛 역참 분위기가 남아 있다.",
+          "description_ja": "石畳の坂道に宿場町の面影が残る。",
+          "activity_ko": "역참 거리와 주변 전망 감상",
+          "activity_ja": "宿場散策と周辺の眺望",
+          "access_ko": "나카쓰가와역에서 버스",
+          "access_ja": "中津川駅からバス",
+          "duration": "2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://visitgifu.com/see-do/magome-juku-historic-post-town/",
+          "photo": null
+        },
+        {
+          "name_ko": "기후성 천수·자료관 (휴관)",
+          "name_ja": "岐阜城天守閣・資料館（休館中）",
+          "area_ko": "기후·구조",
+          "town_ko": "기후",
+          "town_ja": "岐阜市",
+          "description_ko": "개수 공사로 휴관 중이며 2027년 11월 재개관 예정.",
+          "description_ja": "改修工事で休館中。2027年11月の再開予定。",
+          "activity_ko": "내부 관람 불가, 방문 전 공사 안내 확인",
+          "activity_ja": "内部見学不可。訪問前に工事案内を確認",
+          "access_ko": "기후역에서 기후공원 방면 버스",
+          "access_ja": "岐阜駅から岐阜公園方面のバス",
+          "duration": "—",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.city.gifu.lg.jp/kankoubunka/kankou/1013051/1005097/1005098.html",
+          "photo": null
+        }
+      ],
+      "foods": [
+        {
+          "name_ko": "히다규",
+          "name_ja": "飛騨牛",
+          "area_ko": "히다·다카야마",
+          "description_ko": "기후에서 사육되는 브랜드 와규를 구이 등으로 즐긴다.",
+          "description_ja": "岐阜で育つブランド和牛を焼肉などで味わう。",
+          "source": "https://visitgifu.com/specials-of-gifu/food-drink/"
+        },
+        {
+          "name_ko": "호바미소",
+          "name_ja": "朴葉味噌",
+          "area_ko": "히다·다카야마",
+          "description_ko": "목련 잎 위에서 된장과 채소 등을 구워 먹는 향토식.",
+          "description_ja": "朴葉の上で味噌や野菜などを焼く郷土料理。",
+          "source": "https://visitgifu.com/specials-of-gifu/food-drink/"
+        },
+        {
+          "name_ko": "고헤이모치",
+          "name_ja": "五平餅",
+          "area_ko": "도노·나카쓰가와",
+          "description_ko": "으깬 쌀을 꼬치에 붙여 양념장을 발라 굽는다.",
+          "description_ja": "つぶした米を串につけ、たれを塗って焼く。",
+          "source": "https://visitgifu.com/specials-of-gifu/food-drink/"
+        }
+      ],
+      "events": [
+        {
+          "name_ko": "다카야마 축제",
+          "name_ja": "高山祭",
+          "area_ko": "히다·다카야마",
+          "months": [
+            4,
+            10
+          ],
+          "timing_ko": "예년 봄 4월 14~15일·가을 10월 9~10일",
+          "timing_ja": "例年春4月14～15日・秋10月9～10日",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "정교한 수레가 다카야마의 거리를 장식한다.",
+          "description_ja": "精巧な屋台が高山の町を彩る。",
+          "source": "https://visitgifu.com/specials-of-gifu/feel-japanese-festivals-matsuri/"
+        },
+        {
+          "name_ko": "구조 오도리",
+          "name_ja": "郡上おどり",
+          "area_ko": "기후·구조",
+          "months": [
+            7,
+            8,
+            9
+          ],
+          "timing_ko": "예년 7~9월 지정일",
+          "timing_ja": "例年7～9月の指定日",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "방문객도 함께 참여하는 전통 여름 춤.",
+          "description_ja": "訪れた人も輪に加われる夏の伝統踊り。",
+          "source": "https://visitgifu.com/see-do/gujo-dance/"
+        },
+        {
+          "name_ko": "나가라강 가마우지 낚시",
+          "name_ja": "ぎふ長良川の鵜飼",
+          "area_ko": "기후·구조",
+          "months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "timing_ko": "예년 5월 11일~10월 15일, 휴어일·수위 확인",
+          "timing_ja": "例年5月11日～10月15日、休漁日・水位を確認",
+          "type_ko": "전통 체험",
+          "type_ja": "伝統体験",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "강 위의 전통 어로를 관람하는 계절 체험.",
+          "description_ja": "川の上の伝統漁を観覧する季節体験。",
+          "source": "https://visitgifu.com/see-do/nagara-river-ukai-museum/"
+        }
+      ],
+      "day_routes": [
+        {
+          "name_ko": "다카야마 역사 산책",
+          "name_ja": "高山歴史散策",
+          "spot_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "name_ko": "히다후루카와와 다카야마",
+          "name_ja": "飛騨古川と高山",
+          "spot_indexes": [
+            3,
+            0
+          ]
+        },
+        {
+          "name_ko": "시라카와고 하루",
+          "name_ja": "白川郷の一日",
+          "spot_indexes": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "name_ko": "아이치",
+      "name_ja": "愛知県",
+      "areas": [
+        {
+          "name_ko": "나고야",
+          "name_ja": "名古屋",
+          "description_ko": "도시 관광과 도쿠가와 역사, 산업 박물관.",
+          "description_ja": "都市観光と徳川の歴史、産業博物館。"
+        },
+        {
+          "name_ko": "오와리",
+          "name_ja": "尾張",
+          "description_ko": "이누야마의 성과 옛 거리.",
+          "description_ja": "犬山の城と古い町並み。"
+        },
+        {
+          "name_ko": "지타",
+          "name_ja": "知多",
+          "description_ko": "도자기 마을과 바닷가를 여행.",
+          "description_ja": "焼き物の町と海辺を巡る。"
+        },
+        {
+          "name_ko": "미카와",
+          "name_ja": "三河",
+          "description_ko": "사찰과 산간 계곡의 풍경.",
+          "description_ja": "寺院と山間の渓谷風景。"
+        }
+      ],
+      "spots": [
+        {
+          "name_ko": "나고야성·혼마루 어전",
+          "name_ja": "名古屋城・本丸御殿",
+          "area_ko": "나고야",
+          "town_ko": "나고야",
+          "town_ja": "名古屋市",
+          "description_ko": "오와리 도쿠가와의 성과 복원된 어전. 천수 내부는 관람 대상에서 제외하고 계획.",
+          "description_ja": "尾張徳川家の城と復元御殿。天守内部を含めずに計画。",
+          "activity_ko": "혼마루 어전과 성곽 구역 관람",
+          "activity_ja": "本丸御殿と城内散策",
+          "access_ko": "지하철 나고야조역에서 도보",
+          "access_ja": "地下鉄名古屋城駅から徒歩",
+          "duration": "2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/17/",
+          "photo": null
+        },
+        {
+          "name_ko": "아쓰타 신궁",
+          "name_ja": "熱田神宮",
+          "area_ko": "나고야",
+          "town_ko": "나고야",
+          "town_ja": "名古屋市",
+          "description_ko": "울창한 숲 속 참배길이 이어지는 유서 깊은 신궁.",
+          "description_ja": "深い森の参道が続く由緒ある神宮。",
+          "activity_ko": "참배와 경내 산책",
+          "activity_ja": "参拝と境内散策",
+          "access_ko": "진구마에역 또는 아쓰타진구텐마초역에서 도보",
+          "access_ja": "神宮前駅または熱田神宮伝馬町駅から徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/10/",
+          "photo": null
+        },
+        {
+          "name_ko": "도요타 산업기술기념관",
+          "name_ja": "トヨタ産業技術記念館",
+          "area_ko": "나고야",
+          "town_ko": "나고야",
+          "town_ja": "名古屋市",
+          "description_ko": "섬유 기계에서 자동차까지 제조 기술의 발전을 보여준다.",
+          "description_ja": "繊維機械から自動車まで製造技術の歩みを紹介。",
+          "activity_ko": "기계 전시와 시연 관람",
+          "activity_ja": "機械展示と実演見学",
+          "access_ko": "사코역에서 도보",
+          "access_ja": "栄生駅から徒歩",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/11/",
+          "photo": null
+        },
+        {
+          "name_ko": "국보 이누야마성",
+          "name_ja": "国宝 犬山城",
+          "area_ko": "오와리",
+          "town_ko": "이누야마",
+          "town_ja": "犬山市",
+          "description_ko": "기소강 위 언덕에 남은 역사적 목조 천수.",
+          "description_ja": "木曽川沿いの丘に立つ歴史ある木造天守。",
+          "activity_ko": "천수 관람과 강 전망",
+          "activity_ja": "天守見学と川の眺望",
+          "access_ko": "이누야마역 또는 이누야마유엔역에서 도보",
+          "access_ja": "犬山駅または犬山遊園駅から徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/20/",
+          "photo": null
+        },
+        {
+          "name_ko": "이누야마 성하마을",
+          "name_ja": "犬山城下町",
+          "area_ko": "오와리",
+          "town_ko": "이누야마",
+          "town_ja": "犬山市",
+          "description_ko": "성으로 이어지는 옛 상가 거리와 먹거리.",
+          "description_ja": "城へ続く商家の町並みと食べ歩き。",
+          "activity_ko": "전통 거리와 작은 가게 둘러보기",
+          "activity_ja": "町並みと小さな店を巡る",
+          "access_ko": "이누야마역에서 도보",
+          "access_ja": "犬山駅から徒歩",
+          "duration": "2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/176/",
+          "photo": null
+        },
+        {
+          "name_ko": "도코나메 도자기 산책길",
+          "name_ja": "常滑やきもの散歩道",
+          "area_ko": "지타",
+          "town_ko": "도코나메",
+          "town_ja": "常滑市",
+          "description_ko": "도자기 흔적과 공방이 이어지는 언덕 마을.",
+          "description_ja": "焼き物の痕跡と工房が続く坂の町。",
+          "activity_ko": "산책길 걷기와 도자기 가게 방문",
+          "activity_ja": "散歩道歩きと陶器店巡り",
+          "access_ko": "도코나메역에서 도보",
+          "access_ja": "常滑駅から徒歩",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/33/",
+          "photo": null
+        },
+        {
+          "name_ko": "고란케이",
+          "name_ja": "香嵐渓",
+          "area_ko": "미카와",
+          "town_ko": "도요타",
+          "town_ja": "豊田市",
+          "description_ko": "강과 숲이 만나는 계곡으로 가을 단풍이 유명하다.",
+          "description_ja": "川と森が出会う渓谷で秋の紅葉が有名。",
+          "activity_ko": "계곡 산책과 아스케 거리 방문",
+          "activity_ja": "渓谷散策と足助の町並み巡り",
+          "access_ko": "도요타시역 등에서 버스, 계절 교통 확인",
+          "access_ja": "豊田市駅などからバス、季節の交通を確認",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/1021/",
+          "photo": null
+        },
+        {
+          "name_ko": "도요카와 이나리 묘곤지",
+          "name_ja": "豊川稲荷（豊川閣妙厳寺）",
+          "area_ko": "미카와",
+          "town_ko": "도요카와",
+          "town_ja": "豊川市",
+          "description_ko": "도요카와 이나리로 알려진 조동종 사찰.",
+          "description_ja": "豊川稲荷の名で知られる曹洞宗の寺院。",
+          "activity_ko": "경내 참배와 문전 거리 산책",
+          "activity_ja": "境内参拝と門前散策",
+          "access_ko": "도요카와역·도요카와이나리역에서 도보",
+          "access_ja": "豊川駅・豊川稲荷駅から徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://aichinow.pref.aichi.jp/en/spots/detail/44/",
+          "photo": null
+        }
+      ],
+      "foods": [
+        {
+          "name_ko": "히쓰마부시",
+          "name_ja": "ひつまぶし",
+          "area_ko": "나고야",
+          "description_ko": "잘게 썬 장어구이 덮밥을 양념·육수와 단계적으로 즐긴다.",
+          "description_ja": "刻んだうなぎの蒲焼ご飯を薬味やだしで味わう。",
+          "source": "https://aichinow.pref.aichi.jp/search_foods/"
+        },
+        {
+          "name_ko": "미소카쓰",
+          "name_ja": "味噌カツ",
+          "area_ko": "나고야",
+          "description_ko": "돈가스에 진한 된장 소스를 얹는 나고야 명물.",
+          "description_ja": "とんかつに濃厚な味噌だれをかける名古屋名物。",
+          "source": "https://aichinow.pref.aichi.jp/search_foods/"
+        },
+        {
+          "name_ko": "기시멘",
+          "name_ja": "きしめん",
+          "area_ko": "나고야",
+          "description_ko": "넓고 납작한 면이 특징인 지역 면요리.",
+          "description_ja": "幅広く平たい麺が特徴の郷土の麺料理。",
+          "source": "https://aichinow.pref.aichi.jp/search_foods/"
+        }
+      ],
+      "events": [
+        {
+          "name_ko": "이누야마 축제",
+          "name_ja": "犬山祭",
+          "area_ko": "오와리",
+          "months": [
+            4
+          ],
+          "timing_ko": "예년 4월, 해당 연도 일정 확인",
+          "timing_ja": "例年4月、当年の日程を確認",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "카라쿠리 인형을 갖춘 수레가 성하마을을 지난다.",
+          "description_ja": "からくり人形を備えた車山が城下町を進む。",
+          "source": "https://www.aichinow.pref.aichi.jp/events/detail/67/"
+        },
+        {
+          "name_ko": "오와리 쓰시마 덴노 축제",
+          "name_ja": "尾張津島天王祭",
+          "area_ko": "오와리",
+          "months": [
+            7
+          ],
+          "timing_ko": "예년 7월, 해당 연도 일정 확인",
+          "timing_ja": "例年7月、当年の日程を確認",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "등불로 장식한 배가 여름밤의 강을 밝힌다.",
+          "description_ja": "提灯で飾った船が夏の夜の川を照らす。",
+          "source": "https://aichinow.pref.aichi.jp/events/detail/320/"
+        },
+        {
+          "name_ko": "고란케이 단풍 축제",
+          "name_ja": "香嵐渓もみじまつり",
+          "area_ko": "미카와",
+          "months": [
+            11
+          ],
+          "timing_ko": "예년 11월, 단풍과 조명 일정 확인",
+          "timing_ja": "例年11月、紅葉とライトアップ日程を確認",
+          "type_ko": "단풍·계절",
+          "type_ja": "紅葉・季節",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "계곡의 단풍과 야간 조명을 함께 즐긴다.",
+          "description_ja": "渓谷の紅葉と夜のライトアップを楽しむ。",
+          "source": "https://aichinow.pref.aichi.jp/events/detail/131/"
+        }
+      ],
+      "day_routes": [
+        {
+          "name_ko": "나고야 역사와 산업",
+          "name_ja": "名古屋の歴史と産業",
+          "spot_indexes": [
+            0,
+            2
+          ]
+        },
+        {
+          "name_ko": "이누야마 성과 거리",
+          "name_ja": "犬山の城と町",
+          "spot_indexes": [
+            3,
+            4
+          ]
+        },
+        {
+          "name_ko": "아쓰타와 도코나메",
+          "name_ja": "熱田と常滑",
+          "spot_indexes": [
+            1,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name_ko": "미에",
+      "name_ja": "三重県",
+      "areas": [
+        {
+          "name_ko": "이세·도바·시마",
+          "name_ja": "伊勢・鳥羽・志摩",
+          "description_ko": "신궁 참배와 리아스식 해안 여행.",
+          "description_ja": "神宮参拝とリアス海岸の旅。"
+        },
+        {
+          "name_ko": "이가·나바리",
+          "name_ja": "伊賀・名張",
+          "description_ko": "닌자 문화와 숲속 폭포.",
+          "description_ja": "忍者文化と森の滝。"
+        },
+        {
+          "name_ko": "호쿠세이",
+          "name_ja": "北勢",
+          "description_ko": "구와나를 거점으로 즐기는 정원과 계절 행사.",
+          "description_ja": "桑名を拠点に庭園や季節行事を楽しむ。"
+        },
+        {
+          "name_ko": "히가시키슈",
+          "name_ja": "東紀州",
+          "description_ko": "구마노 고도와 바다의 기암 풍경.",
+          "description_ja": "熊野古道と海の奇岩風景。"
+        },
+        {
+          "name_ko": "마쓰사카",
+          "name_ja": "松阪",
+          "description_ko": "성하마을의 역사와 소고기 식문화.",
+          "description_ja": "城下町の歴史と牛肉の食文化。"
+        }
+      ],
+      "spots": [
+        {
+          "name_ko": "이세 신궁 내궁 고타이진구",
+          "name_ja": "伊勢神宮 内宮（皇大神宮）",
+          "area_ko": "이세·도바·시마",
+          "town_ko": "이세",
+          "town_ja": "伊勢市",
+          "description_ko": "이스즈강과 숲에 둘러싸인 아마테라스 신앙의 중심.",
+          "description_ja": "五十鈴川と森に囲まれた天照大御神を祀る宮。",
+          "activity_ko": "우지교를 건너 참배",
+          "activity_ja": "宇治橋を渡り参拝",
+          "access_ko": "이세시역·우지야마다역에서 버스",
+          "access_ja": "伊勢市駅・宇治山田駅からバス",
+          "duration": "2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/2937",
+          "photo": null
+        },
+        {
+          "name_ko": "도바 수족관",
+          "name_ja": "鳥羽水族館",
+          "area_ko": "이세·도바·시마",
+          "town_ko": "도바",
+          "town_ja": "鳥羽市",
+          "description_ko": "바다와 강의 다양한 생물을 관찰하는 수족관.",
+          "description_ja": "海や川の多彩な生きものを観察する水族館。",
+          "activity_ko": "수조와 생태 전시 관람",
+          "activity_ja": "水槽と生態展示を見学",
+          "access_ko": "도바역에서 도보 약 10분",
+          "access_ja": "鳥羽駅から徒歩約10分",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/3116.html",
+          "photo": null
+        },
+        {
+          "name_ko": "요코야마 전망대",
+          "name_ja": "横山展望台（横山天空カフェテラス）",
+          "area_ko": "이세·도바·시마",
+          "town_ko": "시마",
+          "town_ja": "志摩市",
+          "description_ko": "아고만의 섬과 해안선을 내려다보는 전망대.",
+          "description_ja": "英虞湾の島々と海岸線を見下ろす展望台。",
+          "activity_ko": "전망 테라스와 숲길 걷기",
+          "activity_ja": "展望テラスと森の散策",
+          "access_ko": "우가타역에서 택시. 2026.11.24~2027.3.1 접근로 공사 예정, 우회 보도 확인",
+          "access_ja": "鵜方駅からタクシー。2026年11月24日～2027年3月1日アクセス道工事予定、迂回歩道を確認",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/2307",
+          "photo": null
+        },
+        {
+          "name_ko": "아카메 48폭포",
+          "name_ja": "赤目四十八滝",
+          "area_ko": "이가·나바리",
+          "town_ko": "나바리",
+          "town_ja": "名張市",
+          "description_ko": "숲과 계곡을 따라 여러 폭포가 이어진다.",
+          "description_ja": "森と渓谷に沿って多くの滝が連なる。",
+          "activity_ko": "체력에 맞는 폭포 산책 코스 선택",
+          "activity_ja": "体力に合う滝巡りコースを選ぶ",
+          "access_ko": "아카메구치역에서 버스",
+          "access_ja": "赤目口駅からバス",
+          "duration": "2–4h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/1687",
+          "photo": null
+        },
+        {
+          "name_ko": "이가류 닌자박물관",
+          "name_ja": "伊賀流忍者博物館",
+          "area_ko": "이가·나바리",
+          "town_ko": "이가",
+          "town_ja": "伊賀市",
+          "description_ko": "닌자 도구와 장치가 있는 가옥을 살펴보는 박물관.",
+          "description_ja": "忍者道具や仕掛けのある屋敷を見学する博物館。",
+          "activity_ko": "닌자 전시 관람, 공연일 확인",
+          "activity_ja": "忍者展示見学、実演開催日を確認",
+          "access_ko": "우에노시역에서 우에노공원 방향 도보",
+          "access_ja": "上野市駅から上野公園方面へ徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/3157.html",
+          "photo": null
+        },
+        {
+          "name_ko": "오니가조",
+          "name_ja": "鬼ヶ城",
+          "area_ko": "히가시키슈",
+          "town_ko": "구마노",
+          "town_ja": "熊野市",
+          "description_ko": "파도와 융기가 만든 거대한 해안 암벽.",
+          "description_ja": "波の浸食や隆起が生んだ大きな海岸岩壁。",
+          "activity_ko": "개방된 해안 산책로에서 기암 감상",
+          "activity_ja": "開放中の海岸遊歩道で奇岩鑑賞",
+          "access_ko": "구마노시역에서 버스 후 도보",
+          "access_ja": "熊野市駅からバスと徒歩",
+          "duration": "1–2h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/2235.html",
+          "photo": null
+        },
+        {
+          "name_ko": "구마노 고도 이세지 마고세 고개",
+          "name_ja": "熊野古道伊勢路 馬越峠",
+          "area_ko": "히가시키슈",
+          "town_ko": "기호쿠·오와세",
+          "town_ja": "紀北町・尾鷲市",
+          "description_ko": "편백 숲 사이로 옛 돌길이 남은 순례 고개.",
+          "description_ja": "ヒノキ林に古い石畳が残る巡礼の峠。",
+          "activity_ko": "돌길 하이킹, 비 온 뒤 미끄럼 주의",
+          "activity_ja": "石畳のハイキング、雨後の滑りに注意",
+          "access_ko": "오와세역에서 버스 등으로 등산로 접근",
+          "access_ja": "尾鷲駅からバスなどで登山口へ",
+          "duration": "3–4h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/spot/21629.html",
+          "photo": null
+        },
+        {
+          "name_ko": "나바나노사토",
+          "name_ja": "なばなの里",
+          "area_ko": "호쿠세이",
+          "town_ko": "구와나",
+          "town_ja": "桑名市",
+          "description_ko": "계절 꽃과 야간 조명으로 알려진 정원 시설.",
+          "description_ja": "季節の花と夜のイルミネーションで知られる庭園施設。",
+          "activity_ko": "꽃밭·베고니아 정원, 지정일 야간 조명",
+          "activity_ja": "花畑・ベゴニアガーデン、指定日の夜間照明",
+          "access_ko": "계절에 따라 긴테쓰나가시마역 또는 구와나역에서 버스",
+          "access_ja": "季節により近鉄長島駅または桑名駅からバス",
+          "duration": "2–3h",
+          "lat": null,
+          "lon": null,
+          "source": "https://www.kankomie.or.jp/report/2130",
+          "photo": null
+        }
+      ],
+      "foods": [
+        {
+          "name_ko": "이세 우동",
+          "name_ja": "伊勢うどん",
+          "area_ko": "이세·도바·시마",
+          "description_ko": "굵고 부드러운 면에 진한 간장 양념을 비빈다.",
+          "description_ja": "太く柔らかい麺に濃いたれを絡める。",
+          "source": "https://www.kankomie.or.jp/season/gourmet/index"
+        },
+        {
+          "name_ko": "데코네즈시",
+          "name_ja": "てこね寿司",
+          "area_ko": "이세·도바·시마",
+          "description_ko": "간장에 절인 생선과 초밥을 섞은 시마 향토식.",
+          "description_ja": "醤油漬けの魚と酢飯を合わせる志摩の郷土料理。",
+          "source": "https://www.kankomie.or.jp/season/gourmet/index"
+        },
+        {
+          "name_ko": "마쓰사카규",
+          "name_ja": "松阪牛",
+          "area_ko": "마쓰사카",
+          "description_ko": "마쓰사카 지역을 대표하는 브랜드 소고기.",
+          "description_ja": "松阪地域を代表するブランド牛肉。",
+          "source": "https://www.kankomie.or.jp/season/gourmet/index"
+        }
+      ],
+      "events": [
+        {
+          "name_ko": "구와나 이시도리 축제",
+          "name_ja": "桑名石取祭",
+          "area_ko": "호쿠세이",
+          "months": [
+            8
+          ],
+          "timing_ko": "예년 8월 첫째 일요일과 전날",
+          "timing_ja": "例年8月第1日曜日と前日",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "북과 징 소리 속에 장식 수레가 모인다.",
+          "description_ja": "太鼓や鉦の音の中に祭車が集まる。",
+          "source": "https://www.kankomie.or.jp/event/35039"
+        },
+        {
+          "name_ko": "우에노 덴진 축제",
+          "name_ja": "上野天神祭",
+          "area_ko": "이가·나바리",
+          "months": [
+            10
+          ],
+          "timing_ko": "2026년 10월 23~25일",
+          "timing_ja": "2026年10月23～25日",
+          "type_ko": "축제",
+          "type_ja": "祭り",
+          "scheduleType_ko": "2026년 발표 일정",
+          "scheduleType_ja": "2026年発表日程",
+          "description_ko": "도깨비 행렬과 단지리가 이가우에노를 지난다.",
+          "description_ja": "鬼行列とだんじりが伊賀上野を巡る。",
+          "source": "https://www.kankomie.or.jp/event/5285"
+        },
+        {
+          "name_ko": "나바나노사토 일루미네이션",
+          "name_ja": "なばなの里イルミネーション",
+          "area_ko": "호쿠세이",
+          "months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "timing_ko": "예년 가을~봄, 시즌별 개최 기간 확인",
+          "timing_ja": "例年秋～春、シーズンごとの開催期間を確認",
+          "type_ko": "일루미네이션",
+          "type_ja": "イルミネーション",
+          "scheduleType_ko": "예년 기준",
+          "scheduleType_ja": "例年の目安",
+          "description_ko": "빛의 터널과 대형 테마 전시를 즐기는 야간 행사.",
+          "description_ja": "光のトンネルと大型テーマ展示を楽しむ夜の催し。",
+          "source": "https://www.nagashima-onsen.co.jp/nabana/illumination/index.html"
+        }
+      ],
+      "day_routes": [
+        {
+          "name_ko": "이세 참배와 도바",
+          "name_ja": "伊勢参拝と鳥羽",
+          "spot_indexes": [
+            0,
+            1
+          ]
+        },
+        {
+          "name_ko": "시마 전망과 도바",
+          "name_ja": "志摩の眺望と鳥羽",
+          "spot_indexes": [
+            2,
+            1
+          ]
+        },
+        {
+          "name_ko": "이가와 아카메 폭포",
+          "name_ja": "伊賀と赤目の滝",
+          "spot_indexes": [
+            4,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

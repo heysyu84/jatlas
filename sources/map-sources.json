@@ -1,0 +1,18 @@
+{
+  "boundaries": "https://github.com/dataofjapan/land",
+  "boundary_original": "地球地図日本（国土地理院）",
+  "tiles": "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
+  "notes": "Simplified prefecture outlines. Hida sample markers represent approximate town centers, not verified attraction entrances.",
+  "boundary_corrections": [
+    {
+      "area": "Dokdo",
+      "action": "Excluded three source rings from Shimane prefecture; mainland and Oki Islands preserved.",
+      "bounds": [
+        131.85,
+        37.23,
+        131.88,
+        37.26
+      ]
+    }
+  ]
+}
