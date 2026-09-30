@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 verified source cleanup v7
+# Migration revision: 2026-10-01 verified source cleanup v8
 #!/usr/bin/env python3
 from __future__ import annotations
 
