@@ -1,19 +1,12 @@
 {
   "commons_candidates": 633,
-  "localized": 632,
-  "downloaded_now": 43,
-  "reused_existing": 589,
-  "failed_count": 1,
-  "failed": [
-    {
-      "file": "2023-04-15 Awaji Hanasajiki,淡路花桟 DSCF0924.jpg",
-      "reason": "Commons file not found"
-    }
-  ],
+  "localized": 633,
+  "downloaded_now": 1,
+  "reused_existing": 632,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {},
-  "changed_js_files": [
-    "regional-data.js"
-  ],
+  "changed_js_files": [],
   "remaining_external_src_count": 3,
   "remaining_external_srcs": {
     "food-photos.js": [
