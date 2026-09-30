@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 conservative fallback search v6
+# Migration revision: 2026-10-01 verified source cleanup v7
 #!/usr/bin/env python3
 from __future__ import annotations
 
@@ -35,7 +35,8 @@ def normal_file_name(name: str) -> str:
     return name.replace("_", " ") if "/" not in name else name
 
 def _quoted_values(text: str):
-    pat = re.compile(r"'((?:\\\\.|[^'\\\\])*)'|\"((?:\\\\.|[^\"\\\\])*)\"", re.S)
+    # JS single/double quoted strings, preserving one-character escape sequences.
+    pat = re.compile(r"'((?:\\.|[^'\\])*)'|\"((?:\\.|[^\"\\])*)\"", re.S)
     for m in pat.finditer(text):
         value = m.group(1) if m.group(1) is not None else m.group(2)
         yield normal_file_name(value)
@@ -317,7 +318,9 @@ def rewrite_explicit_src_from_source(text: str, mapping: dict[str, str]) -> str:
 
 def external_srcs(text: str) -> list[str]:
     urls = []
-    for value in _quoted_values(text):
+    pat = re.compile(r"""(?:["']?src["']?\s*:\s*)(["'])((?:\\.|(?!\1).)*)\1""", re.S)
+    for m in pat.finditer(text):
+        value = normal_file_name(m.group(2))
         if value.startswith(("http://", "https://")):
             urls.append(value)
     return urls
