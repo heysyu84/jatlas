@@ -1,28 +1,91 @@
 {
-  "commons_candidates": 669,
-  "localized": 669,
-  "downloaded_now": 0,
+  "commons_candidates": 705,
+  "localized": 695,
+  "downloaded_now": 26,
   "reused_existing": 669,
-  "failed_count": 0,
-  "failed": [],
+  "failed_count": 10,
+  "failed": [
+    {
+      "file": "Ao no Domon Yabakei.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bungo beef.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukiji Temple Oita.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "JR Oita City 201504.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Jigoku mushi Beppu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kannawa onsen area Beppu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kitsuki samurai district.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Seki aji sashimi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yukemuri Observatory Beppu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yunotsubo Kaido Yufuin.jpg",
+      "reason": "Commons file not found"
+    }
+  ],
   "fallback_aliases": {
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Aso Nakadake crater.jpg": "Mt. Aso nakadake crater 阿蘇中岳火口 (456731526).jpg",
+    "Beppu Jigoku Umi-jigoku.jpg": "Beppu Umi-jigoku04n4272.jpg",
+    "Beppu Ropeway.jpg": "Beppu Ropeway.JPG",
+    "Beppu reimen.jpg": "Beppu Reimen (Naengmyeon of Beppu, Oita).jpg",
+    "Bungotakada Showa no Machi.jpg": "Bungotakada showa no machi.JPG",
     "Daikanbo Aso.jpg": "A view of the five mountains of Aso from Daikanbo viewpoint.jpg",
+    "Harajiri Falls.jpg": "Harajiri Falls in Bungoono City Oita Prefecture.jpg",
+    "Hita yakisoba.jpg": "Hita Yakisoba.JPG",
     "Kamishikimi Kumanoimasu Shrine.jpg": "Kamishikimi Kumanoimasu Shrine 001.jpg",
     "Karashi renkon.jpg": "Karashi-Renkon.jpg",
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
+    "Kinrinko Lake Yufuin.jpg": "Stream near Tenso Shrine and Lake Kinrinko.JPG",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-4.jpg",
+    "Kuju Flower Park.jpg": "Kuju Flower Park(3553982332).jpg",
     "Kuma River Hitoyoshi.jpg": "Kuma River in Hitoyoshi.jpg",
     "Kumamoto Castle 2019.jpg": "Kumamoto Castle, Kumamoto; April 2010.jpg",
     "Kusasenri Aso.jpg": "Aso Kusasenri horses (52133462269).jpg",
+    "Mameda-machi Hita.jpg": "Mameda-machi, Hita 02.jpg",
     "Misumi West Port.jpg": "Misumi-west port 1.jpg",
-    "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (02).jpg",
+    "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
+    "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
+    "Oita Marine Palace Aquarium Umitamago.jpg": "Marine Palace UmiTamago.jpg",
+    "Oita Prefectural Art Museum OPAM.jpg": "Boating on the Ina-gawa by Tanomura Chikuden (Oita Prefectural Art Museum).jpg",
+    "Oka Castle ruins Oita.jpg": "Cherryblossoms at oka-castle1.jpg",
+    "Ontayaki village.jpg": "Onta Pottery Village 03.jpg",
+    "Ryukyu Oita cuisine.jpg": "Oita ryukyu.jpg",
     "SAKURA MACHI Kumamoto.jpg": "SAKURA-MACHI-Kumamoto.jpg",
     "Sakuranobaba Josaien.jpg": "Sakuranobaba-Josaien Museum near Kumamoto Castle.JPG",
     "Sashimi platter.jpg": "Deluxe sashimi platter 01.jpg",
     "Shirakawa Suigen.jpg": "Shirakawa Suigenn.JPG",
+    "Tadewara Wetland.jpg": "Tadewara Wetlands (52133306063).jpg",
     "Taipien.jpg": "Taipien at Kumamoto Station.JPG",
-    "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG"
+    "Takasakiyama Natural Zoological Garden.jpg": "Macaca fuscata in Takasakiyama Natural Zoological Garden 2011-03-20.jpg",
+    "Toriten.jpg": "Toriten.JPG",
+    "Usa Jingu.jpg": "Usa Jingu-235.jpg",
+    "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
+    "Yaseuma.jpg": "Yaseuma.JPG",
+    "Yufuin Onsen.jpg": "Yufuin Onsen -Musōen.jpg"
   },
   "changed_js_files": [],
   "remaining_external_src_count": 0,
