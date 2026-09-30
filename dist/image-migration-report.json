@@ -1,27 +1,10 @@
 {
   "commons_candidates": 669,
-  "localized": 665,
-  "downloaded_now": 9,
-  "reused_existing": 656,
-  "failed_count": 4,
-  "failed": [
-    {
-      "file": "Akaushi don.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Ayu salt grilled.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Dago jiru.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Ikinari dango.jpg",
-      "reason": "Commons file not found"
-    }
-  ],
+  "localized": 669,
+  "downloaded_now": 4,
+  "reused_existing": 665,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Aso Nakadake crater.jpg": "Mt. Aso nakadake crater 阿蘇中岳火口 (456731526).jpg",
