@@ -45,7 +45,7 @@ function drawRegionLabels(map,layer){
  for(const [name,center] of Object.entries(regionCenters).sort(([a],[b])=>(a==='고신에쓰')-(b==='고신에쓰'))){
   const origin=map.latLngToContainerPoint(center);if(origin.x<0||origin.y<0||origin.x>size.x||origin.y>size.y)continue;
   let chosen=null;
-  let candidates=name==='산인·산요'&&!isMobile()?offsets.map(([x,y])=>[x,y-6]):offsets;
+  let candidates=name==='산인·산요'&&!isMobile()?offsets.map(([x,y])=>[x,y-16]):offsets;
   if(name==='규슈'&&isMobile())candidates=offsets.map(([x,y])=>[x+10,y-8]);
   if(name==='고신에쓰'&&placed['도호쿠']&&placed['호쿠리쿠']){const a=placed['도호쿠'],b=placed['호쿠리쿠'],x=(a.x+b.x)/2,y=(a.y+b.y)/2;candidates=[];for(const ratio of [.5,.4,.6,.3,.7])for(const dx of [0,18,-18,36,-36,54,-54,72,-72,96,-96,120,-120,150,-150,180,-180])candidates.push([x-origin.x+dx,a.y+(b.y-a.y)*ratio-origin.y]);}
   for(const [dx,dy] of candidates){const box={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};if(!occupied.some(b=>box.x<b.x+b.w+4&&box.x+box.w+4>b.x&&box.y<b.y+b.h+3&&box.y+box.h+3>b.y)){chosen=box;break}}
