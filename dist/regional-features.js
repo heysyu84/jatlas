@@ -10,11 +10,16 @@ for(const r of regionalCatalog){
 {
  const host=document.querySelector('#photoCreditList');
  const title=document.createElement('h3');title.textContent='지역 사진 출처';host.append(title);
+ const sourceName=url=>{
+  if(url?.includes('commons.wikimedia.org'))return 'Wikimedia Commons';
+  try{return new URL(url).hostname.replace(/^www\./,'')}catch{return '사진 출처'}
+ };
  for(const pic of regionalCatalog.flatMap(r=>r.credits)){
   const row=document.createElement('p');row.className='photoAttribution';
-  const source=document.createElement('a');source.href=pic.source;source.target='_blank';source.rel='noopener';source.textContent=pic.label;
-  row.append(source,' — '+pic.author+' · ');
-  const license=document.createElement('a');license.href=pic.licenseUrl||pic.source;license.target='_blank';license.rel='noopener';license.textContent=pic.license;row.append(license);host.append(row);
+  const source=document.createElement('a');source.href=pic.source;source.target='_blank';source.rel='noopener';
+  source.textContent=sourceName(pic.source)+' · '+pic.label;
+  if(pic.author||pic.license)source.title=[pic.author,pic.license].filter(Boolean).join(' · ');
+  row.append(source);host.append(row);
  }
 }
 render();
