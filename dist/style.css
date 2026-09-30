@@ -209,3 +209,6 @@
  filter:saturate(.35);
 }
 #areas button.noContent,#towns button.noContent,#municipalChoices button.noContent{color:#8c99a8}
+
+/* Post-render municipality availability: text only; does not affect map/layout/weather. */
+.municipalLabel span.noContent{color:#9da9b5!important;background:#f7f9fa!important;opacity:.42;filter:saturate(.3)}
