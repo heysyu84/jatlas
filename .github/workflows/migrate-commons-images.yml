@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: jatlas-commons-image-migration
+  group: jatlas-commons-image-migration-v2
   cancel-in-progress: true
 
 jobs:
