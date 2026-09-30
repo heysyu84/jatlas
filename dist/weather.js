@@ -43,7 +43,7 @@ function renderWeatherData(host,data,point){
  const currentButton=document.createElement('button');
  currentButton.type='button';currentButton.className='weatherCurrent';currentButton.setAttribute('aria-expanded',String(weatherExpanded));
  currentButton.setAttribute('aria-label',scope+' '+weatherText('현재 날씨'));
- currentButton.innerHTML='<span class="weatherCompactPlace">'+scope+'</span><span class="weatherCompactIcon">'+current[0]+'</span><strong class="weatherCompactTemp">'+weatherRound(c.temperature_2m,1)+'°</strong><span class="weatherCompactText">'+weatherText(current[1])+'</span><span class="weatherChevron">⌄</span>';
+ currentButton.innerHTML='<span class="weatherCompactIcon">'+current[0]+'</span><strong class="weatherCompactTemp">'+weatherRound(c.temperature_2m,1)+'°</strong><span class="weatherCompactText">'+weatherText(current[1])+'</span><span class="weatherChevron">⌄</span>';
  currentButton.onclick=e=>{e.stopPropagation();setWeatherExpanded(!weatherExpanded)};
 
  const popover=document.createElement('div');popover.className='weatherPopover';popover.hidden=!weatherExpanded;
