@@ -35,6 +35,13 @@ function weatherAverage(points,name){
  if(!valid.length)return null;
  return {lat:valid.reduce((a,p)=>a+p.lat,0)/valid.length,lon:valid.reduce((a,p)=>a+p.lon,0)/valid.length,name};
 }
+function weatherAreaBoxCenter(pref,area){
+ if(!area||area==='전체'||typeof areaBoxes==='undefined')return null;
+ const box=areaBoxes[pref+'|'+area];
+ if(!Array.isArray(box)||box.length<2)return null;
+ const c=weatherBoundsCenter(box);
+ return c?{...c,name:area}:null;
+}
 function weatherPrefCenter(pref){
  if(typeof municipalIndex!=='undefined'&&typeof prefNames!=='undefined'){
   const list=municipalIndex[prefNames.indexOf(pref)]||[],c=list[0]&&weatherBoundsCenter(list[0].bounds);
@@ -61,6 +68,7 @@ function weatherPoint(){
  }
  const scoped=samples.filter(p=>p.pref===pref&&(area==='전체'||p.area===area));
  if(area==='전체')return weatherPrefCenter(pref);
+ const boxed=weatherAreaBoxCenter(pref,area);if(boxed)return boxed;
  const townCenters=[...new Set(scoped.map(p=>p.town).filter(Boolean))].map(t=>weatherMunicipalityCenter(pref,t));
  const areaCenter=weatherAverage(townCenters,area);
  if(areaCenter)return areaCenter;
