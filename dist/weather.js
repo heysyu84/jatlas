@@ -28,9 +28,11 @@ function weatherDateLabel(date,index){
  try{return new Intl.DateTimeFormat(locale,{month:'numeric',day:'numeric',weekday:'short'}).format(new Date(date+'T12:00:00'))}catch{return date}
 }
 function weatherRound(v,digits=0){const n=Number(v);return Number.isFinite(n)?n.toFixed(digits):'–'}
+function weatherHost(){return window.matchMedia('(max-width:760px)').matches?$('#weatherPanel'):$('#weatherDesktopPanel')}
+function weatherHosts(){return [$('#weatherPanel'),$('#weatherDesktopPanel')].filter(Boolean)}
 function setWeatherExpanded(value){
  weatherExpanded=!!value;
- const host=$('#weatherPanel'),button=host?.querySelector('.weatherCurrent'),popover=host?.querySelector('.weatherPopover');
+ const host=weatherHost(),button=host?.querySelector('.weatherCurrent'),popover=host?.querySelector('.weatherPopover');
  if(button)button.setAttribute('aria-expanded',String(weatherExpanded));
  if(popover)popover.hidden=!weatherExpanded;
 }
@@ -72,7 +74,8 @@ function renderWeatherError(host,key){
  host.querySelector('.weatherError').append(retry);host.hidden=false;
 }
 async function renderWeatherPanel(force=false){
- const host=$('#weatherPanel');if(!host)return;
+ const host=weatherHost();if(!host)return;
+ for(const other of weatherHosts())if(other!==host){other.hidden=true;other.dataset.weatherKey=''}
  if(state.view!=='explore'){host.hidden=true;host.dataset.weatherKey='';return}
  const point=weatherPoint();if(!point){host.hidden=true;return}
  const key=point.lat.toFixed(3)+','+point.lon.toFixed(3),cached=weatherCache.get(key);
@@ -97,4 +100,5 @@ const weatherPreviousRender=render;
 render=function(){weatherPreviousRender();renderWeatherPanel()};
 document.addEventListener('click',e=>{if(!e.target.closest?.('#weatherPanel'))setWeatherExpanded(false);if(e.target.closest?.('#langKo,#langJa,.language button'))queueMicrotask(()=>renderWeatherPanel())});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')setWeatherExpanded(false)});
+window.matchMedia('(max-width:760px)').addEventListener?.('change',()=>{weatherExpanded=false;renderWeatherPanel()});
 renderWeatherPanel();
