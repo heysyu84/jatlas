@@ -8,7 +8,8 @@ if(ky){
  {id:1520,pref:'교토',area:'구라마·기부네',town:'교토시',name:'구라마데라',tag:'사찰·산·산책',description:'구라마산 숲속에 자리한 오래된 산악 사찰로, 본전과 삼나무 숲길에서 북부 산지의 분위기와 전망을 함께 즐길 수 있습니다.',activity:'니오몬에서 본전까지 산길을 따라 올라가며 숲과 전각을 둘러보세요. 계단과 경사가 있으므로 날씨와 이동수단을 확인하세요.',checked:'2026.09.30',lat:35.118061,lon:135.770742,source:'https://kyoto.travel/en/destinations/kuramadera-temple/',note,mapQuery:'京都 鞍馬寺'},
  {id:1521,pref:'교토',area:'오하라',town:'교토시',name:'산젠인',tag:'사찰·이끼정원·단풍',description:'오하라 산골에 자리한 사찰로, 삼나무 사이의 이끼 정원과 아미타삼존상, 계절마다 달라지는 정원 풍경으로 유명합니다.',activity:'유세이엔의 이끼 정원과 왕생극락원 주변을 천천히 걸어보세요. 단풍철에는 혼잡을 고려해 이른 시간 방문을 권합니다.',checked:'2026.09.30',lat:35.119722,lon:135.834444,source:'https://kyoto.travel/en/destinations/sanzenin-temple/',note,mapQuery:'京都 大原 三千院'},
  {id:1522,pref:'교토',area:'우지',town:'우지시',name:'우지가미 신사',tag:'세계유산·신사·역사',description:'현존하는 일본 신사 건축 가운데 가장 오래된 것으로 알려진 세계유산 신사로, 우지강 동쪽의 조용한 숲에 자리합니다.',activity:'배전과 본전의 고건축을 둘러보고 우지 신사와 강변 산책을 함께 이어보세요.',checked:'2026.09.30',lat:34.892111,lon:135.8115,source:'https://kyoto.travel/en/shrine_temple/194.html',note,mapQuery:'京都 宇治上神社'}
- ];
+ ,
+ {id:1523,pref:'교토',area:'교토 도심',town:'교토시',name:'니시키시장',tag:'쇼핑·시장·먹거리',description:'테라마치에서 다카쿠라까지 약 400m 이어지는 아케이드 시장으로, 130곳이 넘는 점포에서 생선·교토 채소·유바·반찬·과자 등 교토 식문화를 만날 수 있어 ‘교토의 부엌’으로 불립니다.',activity:'시장 안을 천천히 걸으며 교토 식재료와 기념품을 둘러보세요. 혼잡한 통로에서 걸어 다니며 먹는 것은 피하고 구입한 가게 앞이나 지정 공간에서 먹는 예절을 지켜주세요.',checked:'2026.10.01',lat:35.0050,lon:135.7654,source:'https://kyoto.travel/en/destinations/kyoto-nishiki-food-market/',note,mapQuery:'京都 錦市場'}];
  for(const p of add){p.mapUrl=map(p.mapQuery);if(!ky.places.some(x=>x.id===p.id))ky.places.push(p)}
  Object.assign(ky.guides,{
   '1518':{access:'게이한 시치조역에서 도보로 이동하거나 교토역에서 시내버스를 이용하세요.',duration:'1~1시간 30분'},
@@ -16,7 +17,7 @@ if(ky){
   '1520':{access:'에이잔전철 구라마역에서 니오몬까지 도보로 이동하세요.',duration:'2~3시간'},
   '1521':{access:'교토버스 오하라 정류장에서 산젠인까지 도보 약 10분입니다.',duration:'1시간 30분~2시간'},
   '1522':{access:'게이한 우지역에서 도보 약 10분, JR 우지역에서 도보 약 20분입니다.',duration:'45~75분'}
- });
+ ,'1523':{access:'지하철 시조역에서 도보 약 7분, 한큐 가라스마역·교토가와라마치역에서 도보 약 5분입니다.',duration:'1시간 30분~3시간'}});
  for(const p of add)ky.facts[String(p.id)]=[ky.guides[String(p.id)].duration];
  const pf={
  1518:'Sanjūsangen-dō extérieur5720.jpg',
@@ -24,7 +25,8 @@ if(ky){
  1520:'Kuramadera.jpg',
  1521:'Sanzenin.jpg',
  1522:'Ujigami shrine.jpg'
- };
+,
+ 1523:'Nishiki Market, Kyoto (53970899359).jpg' };
  for(const [id,file] of Object.entries(pf)){const p=ky.places.find(x=>String(x.id)===id);ky.photos[id]={src:cf(file),alt:p.name,source:cp(file)}}
  const credits=[
   {label:'산주산겐도',source:cp(pf[1518]),author:'Hyppolyte de Saint-Rambert',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},
@@ -32,7 +34,8 @@ if(ky){
   {label:'구라마데라',source:cp(pf[1520]),author:'Fg2',license:'Public domain',licenseUrl:cp(pf[1520])},
   {label:'산젠인',source:cp(pf[1521]),author:'Fg2',license:'Public domain',licenseUrl:cp(pf[1521])},
   {label:'우지가미 신사',source:cp(pf[1522]),author:'Ctny',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'}
- ];
+,
+  {label:'니시키시장',source:cp(pf[1523]),author:'Sergiy Galyonkin',license:'CC BY-SA 2.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/2.0/'} ];
  for(const x of credits)if(!ky.credits.some(c=>c.source===x.source))ky.credits.push(x);
  Object.assign(ky.intros,{
   '오하라':['','교토 북쪽 산골에서 이끼 정원과 오래된 사찰, 계절 단풍을 여유롭게 즐길 수 있는 전원 지역입니다.'],
@@ -110,7 +113,7 @@ if(na){
  });
 }
 
-Object.assign(regionalJapanese,{
+Object.assign(regionalJapanese,{'니시키시장':'錦市場','쇼핑·시장·먹거리':'ショッピング・市場・グルメ','테라마치에서 다카쿠라까지 약 400m 이어지는 아케이드 시장으로, 130곳이 넘는 점포에서 생선·교토 채소·유바·반찬·과자 등 교토 식문화를 만날 수 있어 ‘교토의 부엌’으로 불립니다.':'寺町から高倉まで約400m続くアーケード市場で、130店を超える店舗に鮮魚、京野菜、湯葉、惣菜、菓子など京都の食文化が集まり、「京の台所」と呼ばれています。','시장 안을 천천히 걸으며 교토 식재료와 기념품을 둘러보세요. 혼잡한 통로에서 걸어 다니며 먹는 것은 피하고 구입한 가게 앞이나 지정 공간에서 먹는 예절을 지켜주세요.':'市場内をゆっくり歩き、京都の食材やお土産を見て回ってください。混雑した通路での食べ歩きは避け、購入した店の前や指定スペースで食べるマナーを守ってください。','지하철 시조역에서 도보 약 7분, 한큐 가라스마역·교토가와라마치역에서 도보 약 5분입니다.':'地下鉄四条駅から徒歩約7分、阪急烏丸駅・京都河原町駅から徒歩約5分です。',
 '금각사':'金閣寺','기온 하나미코지':'祇園花見小路',
 '45~75분':'45〜75分','1~1시간 30분':'1〜1時間30分','1시간 30분~3시간':'1時間30分〜3時間','1시간 30분~2시간':'1時間30分〜2時間','30~60분':'30〜60分','3~5시간':'3〜5時間',
 '야외 일정은 날씨에 맞춰 줄이고 실내 관람을 늘리세요.':'屋外の予定は天候に合わせて短くし、屋内見学を増やしてください。','야외 일정은 날씨에 맞춰 줄이고 실내 시설 관람을 늘리세요.':'屋外の予定は天候に合わせて短くし、屋内施設の見学を増やしてください。','시간이 부족하면 마지막 장소를 다음 일정으로 미루세요.':'時間が足りなければ、最後のスポットは次の予定に回してください。',
