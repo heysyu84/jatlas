@@ -153,3 +153,18 @@
  #weatherPanel .weatherError button{display:none}
 }
 
+
+/* Stable explore heading and safe mobile top controls. */
+#explore>.sectionhead{align-items:flex-start!important}
+#explore>.sectionhead>div:first-child{align-self:flex-start!important}
+.mobilePrefSwitch{display:none}
+@media(max-width:760px){
+ #prefSwitchDesktop{display:none!important}
+ .searchTopRow{display:flex!important;align-items:stretch!important;gap:6px!important;max-width:none!important}
+ .searchCluster{flex:1 1 0!important;min-width:0!important;max-width:none!important}
+ .searchwrap{padding:0 9px!important}
+ .searchwrap>span{font-size:21px!important}
+ .searchwrap input{min-width:0!important;font-size:12px!important}
+ .mobilePrefSwitch:not([hidden]){display:block!important;flex:0 0 86px!important;width:86px!important;min-width:86px!important;max-width:86px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0 22px 0 9px!important;border:1px solid #dbe7f1!important;border-radius:23px!important;background:#fff!important;color:#25486e!important;font-size:12px!important}
+ #weatherPanel:not([hidden]){flex:0 0 104px!important;width:104px!important}
+}
