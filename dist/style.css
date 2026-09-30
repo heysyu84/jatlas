@@ -89,30 +89,67 @@
 
 .photoAttribution{font-size:.75rem;line-height:1.6;overflow-wrap:anywhere;color:var(--muted,#657b91);margin:.5rem 0}.foodCard .photoAttribution{padding:0 .1rem}
 
-/* Compact weather next to the regional search. */
-.weatherPanel{position:relative;flex:0 0 275px;margin:0;z-index:710}.weatherPanel[hidden]{display:none}.weatherCurrent{width:100%;height:48px;display:flex;align-items:center;gap:8px;padding:0 13px;border:1px solid #dce8f2;border-radius:24px;background:#fff;box-shadow:var(--shadow);color:#344b67;text-align:left}.weatherCurrent:hover{background:#f7fbfe}.weatherCompactPlace{max-width:92px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#71869c}.weatherCompactIcon{font-size:23px;line-height:1}.weatherCompactTemp{font-size:18px;font-weight:800;white-space:nowrap}.weatherCompactText{font-size:12px;color:#60768f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.weatherChevron{margin-left:auto;font-size:11px;color:#8293a7;transition:transform .15s}.weatherCurrent[aria-expanded="true"] .weatherChevron{transform:rotate(180deg)}.weatherPopover{position:absolute;top:56px;right:0;width:560px;padding:15px;border:1px solid #dce8f2;border-radius:18px;background:#fff;box-shadow:0 14px 38px #203a5a29;z-index:900}.weatherPopover[hidden]{display:none}.weatherPopoverHead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}.weatherPopoverHead h2{font-size:17px;margin:0}.weatherPopoverHead p{font-size:11px;color:#74879d;margin:4px 0 0}.weatherNowDetail{font-size:12px;color:#60758d;white-space:nowrap}.weatherDays{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.weatherDay{padding:9px 7px;border:1px solid #e1eaf3;border-radius:12px;background:#fbfdff;text-align:center}.weatherDay strong{display:block;font-size:12px}.weatherDay .weatherIcon{display:block;font-size:21px;margin:4px 0}.weatherDay span{display:block;font-size:11px;color:#60758d}.weatherDay small{display:block;margin-top:4px;font-size:10px;color:#8190a0}.weatherCredit{margin:8px 0 0;font-size:10px;color:#8594a4}.weatherCredit a{color:inherit}.weatherError{height:48px;display:flex;align-items:center;gap:6px;padding:0 12px;border:1px solid #dce8f2;border-radius:24px;background:#fff;box-shadow:var(--shadow);font-size:12px;color:#6c7f93}.weatherError button{padding:5px 8px;min-height:32px;font-size:11px}
+/* Weather: compact trigger, expandable detail. */
+.weatherPanel{position:relative;margin:0;z-index:710}
+.weatherPanel[hidden]{display:none}
+.weatherCurrent{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:auto;min-width:0;height:32px;padding:0 9px;border:1px solid #dce8f2;border-radius:16px;background:#fff;color:#344b67;white-space:nowrap;text-align:left}
+.weatherCurrent:hover{background:#f7fbfe}
+.weatherCompactIcon{font-size:17px;line-height:1}
+.weatherCompactTemp{font-size:14px;font-weight:800;white-space:nowrap}
+.weatherCompactText{font-size:11px;color:#60768f;white-space:nowrap}
+.weatherChevron{font-size:9px;color:#8293a7;transition:transform .15s}
+.weatherCurrent[aria-expanded="true"] .weatherChevron{transform:rotate(180deg)}
+.weatherPopover{position:absolute;padding:14px;border:1px solid #dce8f2;border-radius:18px;background:#fff;box-shadow:0 14px 38px #203a5a29;z-index:900}
+.weatherPopover[hidden]{display:none}
+.weatherPopoverHead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.weatherPopoverHead h2{font-size:16px;margin:0}
+.weatherNowDetail{font-size:11px;color:#60758d;white-space:nowrap}
+.weatherDays{display:grid;gap:7px}
+.weatherDay{min-width:0;padding:9px 7px;border:1px solid #e1eaf3;border-radius:12px;background:#fbfdff;text-align:center}
+.weatherDay strong{display:block;font-size:12px}
+.weatherDay .weatherIcon{display:block;font-size:21px;margin:4px 0}
+.weatherDay span{display:block;font-size:11px;color:#60758d}
+.weatherDay small{display:block;margin-top:4px;font-size:10px;color:#8190a0}
+.weatherCredit{margin:8px 0 0;font-size:10px;color:#8594a4}
+.weatherCredit a{color:inherit}
+.weatherError{display:flex;align-items:center;gap:6px;height:32px;padding:0 9px;border:1px solid #dce8f2;border-radius:16px;background:#fff;font-size:11px;color:#6c7f93}
+.weatherError button{padding:5px 8px;min-height:28px;font-size:10px}
 .mobileDetailMap{display:none}
-@media(max-width:760px){.weatherPanel{padding:14px;margin:12px 0 16px}.weatherHead{align-items:flex-start;flex-direction:column}.weatherNow{width:100%}.weatherDays{display:flex;overflow-x:auto;gap:8px;padding-bottom:4px;scroll-snap-type:x proximity}.weatherDay{flex:0 0 104px;scroll-snap-align:start}.mobileDetailMap{display:block;margin:16px 0 20px}.mobileDetailMap h3{margin:0 0 9px}.mobileDetailMap iframe{display:block;width:100%;height:250px;border:0;border-radius:14px;background:#edf3f8}.mobileDetailMap a{display:inline-block;margin-top:9px;font-size:13px}}
 
-@media(max-width:760px){.searchbar{padding:14px 18px 0;max-width:none}.searchTopRow{max-width:none;gap:7px}.searchCluster{flex:1 1 auto;min-width:0}#searchResults:not(:empty){left:0;right:0;top:55px}.weatherPanel{flex:0 0 104px;padding:0;margin:0}.weatherCurrent{height:46px;padding:0 9px;justify-content:center;gap:5px}.weatherCompactPlace,.weatherCompactText{display:none}.weatherCompactIcon{font-size:21px}.weatherCompactTemp{font-size:17px}.weatherChevron{margin-left:1px}.weatherPopover{top:53px;right:0;width:min(340px,calc(100vw - 36px));padding:13px;border-radius:16px}.weatherPopoverHead{margin-bottom:9px;align-items:flex-start;flex-direction:row}.weatherPopoverHead h2{font-size:16px}.weatherNowDetail{font-size:11px;white-space:normal;text-align:right}.weatherDays{display:grid;overflow:visible;padding-bottom:0;scroll-snap-type:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.weatherDay{flex:unset;padding:8px 6px;scroll-snap-align:none}.weatherError{height:46px;padding:0 8px;margin:0;font-size:11px;overflow:hidden}.weatherError button{display:none}}
-
-/* Desktop weather sits beside the main prefecture/area title. */
 @media(min-width:761px){
  #weatherPanel{display:none!important}
- .titleWeatherRow{display:flex;align-items:center;gap:18px;min-height:64px;position:relative}
- .titleWeatherRow #title{margin-right:0}
- .weatherDesktopPanel{display:block;flex:0 0 auto;z-index:710}
- .weatherDesktopPanel[hidden]{display:none}
- .weatherDesktopPanel .weatherCurrent{width:auto;height:30px;gap:5px;padding:0 8px;border-radius:15px;background:#f7fafc;box-shadow:none}
- .weatherDesktopPanel .weatherCompactIcon{font-size:16px}
- .weatherDesktopPanel .weatherCompactTemp{font-size:13px}
- .weatherDesktopPanel .weatherCompactText{font-size:11px;max-width:72px}
- .weatherDesktopPanel .weatherChevron{font-size:9px;margin-left:1px}
- .weatherDesktopPanel .weatherPopover{top:36px;left:0;right:auto;width:520px}
- .weatherDesktopPanel .weatherError{height:30px;padding:0 8px;border-radius:15px;box-shadow:none;font-size:11px}
+ .titleWeatherRow{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;width:min(100%,560px)!important;min-width:0;position:relative}
+ .titleWeatherRow #title{flex:0 0 auto!important;width:auto!important}
+ .weatherDesktopPanel{display:inline-block!important;flex:0 0 auto!important;width:auto!important;max-width:max-content;margin-left:auto;margin-bottom:8px;z-index:710}
+ .weatherDesktopPanel[hidden]{display:none!important}
+ .weatherDesktopPanel .weatherCurrent{width:auto!important;max-width:max-content;height:32px}
+ .weatherDesktopPanel .weatherPopover{top:39px;right:0;left:auto;width:520px}
+ .weatherDesktopPanel .weatherDays{grid-template-columns:repeat(6,minmax(0,1fr))}
  .searchTopRow{max-width:560px}
 }
+
 @media(max-width:760px){
+ .mobileDetailMap{display:block;margin:16px 0 20px}
+ .mobileDetailMap h3{margin:0 0 9px}
+ .mobileDetailMap iframe{display:block;width:100%;height:250px;border:0;border-radius:14px;background:#edf3f8}
+ .mobileDetailMap a{display:inline-block;margin-top:9px;font-size:13px}
+ .titleWeatherRow{display:block}
  .weatherDesktopPanel{display:none!important}
- #weatherPanel:not([hidden]){display:block}
+ .searchbar{padding:14px 18px 0;max-width:none}
+ .searchTopRow{display:flex;max-width:none;gap:7px;align-items:stretch}
+ .searchCluster{flex:1 1 auto;min-width:0}
+ #searchResults:not(:empty){left:0;right:0;top:55px}
+ #weatherPanel:not([hidden]){display:block!important;flex:0 0 104px!important;width:104px!important;padding:0!important;margin:0!important}
+ #weatherPanel .weatherCurrent{width:104px!important;height:46px!important;padding:0 8px!important;gap:5px!important}
+ #weatherPanel .weatherCompactText{display:none!important}
+ #weatherPanel .weatherCompactIcon{font-size:21px}
+ #weatherPanel .weatherCompactTemp{font-size:17px}
+ #weatherPanel .weatherPopover{top:53px;right:0;left:auto;width:min(340px,calc(100vw - 36px));padding:13px;border-radius:16px}
+ #weatherPanel .weatherPopoverHead{margin-bottom:9px}
+ #weatherPanel .weatherNowDetail{font-size:11px;white-space:normal;text-align:right}
+ #weatherPanel .weatherDays{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(3,auto)!important;grid-auto-flow:row!important;gap:7px!important;overflow:visible!important;padding:0!important}
+ #weatherPanel .weatherDay{display:block!important;grid-column:auto!important;grid-row:auto!important;width:auto!important;min-width:0!important;max-width:none!important;flex:none!important;padding:8px 6px!important}
+ #weatherPanel .weatherError{width:104px;height:46px;padding:0 8px;overflow:hidden}
+ #weatherPanel .weatherError button{display:none}
 }
+
