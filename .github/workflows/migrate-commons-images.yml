@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'tools/migrate_commons_images.py'
+      - 'dist/*-expansion.js'
+      - 'dist/*-data.js'
+      - '.github/workflows/migrate-commons-images.yml'
   workflow_dispatch:
 
 permissions:
