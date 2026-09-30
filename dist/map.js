@@ -74,8 +74,14 @@ function drawRegionLabels(map,layer){
    const preferred=name==='산인·산요'?[0,-10]:[0,0];
    candidates=offsets.map(([x,y])=>[x+preferred[0],y+preferred[1]]);
    if(name==='고신에쓰'&&placed['도호쿠']&&placed['호쿠리쿠']){
-    const a=placed['도호쿠'],b=placed['호쿠리쿠'],x=(a.x+b.x)/2,y=(a.y+b.y)/2;candidates=[];
-    for(const ratio of [.5,.4,.6,.3,.7])for(const dx of [0,18,-18,36,-36,54,-54,72,-72,96,-96,120,-120,150,-150,180,-180])candidates.push([x-origin.x+dx,a.y+(b.y-a.y)*ratio-origin.y]);
+    if(size.x<980){
+     // On a narrow desktop map, keep Koshinetsu near its real geographic center.
+     // The wide-map interpolation below can otherwise push the label far east.
+     candidates=[[28,0],[0,0],[28,-28],[28,28],[-28,0],[56,0],[-56,0],[0,-28],[0,28],[56,-28],[-56,-28],[56,28],[-56,28]];
+    }else{
+     const a=placed['도호쿠'],b=placed['호쿠리쿠'],x=(a.x+b.x)/2,y=(a.y+b.y)/2;candidates=[];
+     for(const ratio of [.5,.4,.6,.3,.7])for(const dx of [0,18,-18,36,-36,54,-54,72,-72,96,-96,120,-120,150,-150,180,-180])candidates.push([x-origin.x+dx,a.y+(b.y-a.y)*ratio-origin.y]);
+    }
    }
   }
   if(mobile&&(name==='시코쿠'||name==='규슈')){
@@ -90,6 +96,10 @@ function drawRegionLabels(map,layer){
     }
     if(!occupied.some(b=>boxesOverlap(box,b))){chosen=box;break}
    }
+  }
+  if(!chosen&&name==='고신에쓰'&&!mobile&&size.x<980){
+   const dx=28,dy=0;
+   chosen={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
   }
   if(!chosen)continue;
   occupied.push(chosen);placed[name]={x:chosen.x+w/2,y:chosen.y+h/2};
