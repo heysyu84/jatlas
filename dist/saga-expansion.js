@@ -58,8 +58,8 @@ const photos={
 '3013':{src:cf('Sacred tree "Takeo no Okusu" of Takeo Shrine 5.jpg'),alt:T('다케오 신사의 대녹나무','武雄神社の大楠'),source:cp('Sacred tree "Takeo no Okusu" of Takeo Shrine 5.jpg')},
 '3014':{src:cf('Ureshino onsen.jpg'),alt:T('우레시노 온천가','嬉野温泉街'),source:cp('Ureshino onsen.jpg')},
 '3015':{src:cf('Yutoku inari Shrine-b.jpg'),alt:T('유토쿠 이나리 신사','祐徳稲荷神社'),source:cp('Yutoku inari Shrine-b.jpg')},
-'3016':{src:cf('Yano Shuzo in Kashima.jpg'),alt:T('가시마의 사케 양조장','鹿島の酒蔵'),source:cp('Yano Shuzo in Kashima.jpg')},
-'3017':{src:cf('Oura rice terrace and Imari bay 2009-04.jpg'),alt:T('사가현 해안 농촌 풍경','佐賀県の海岸農村景観'),source:cp('Oura rice terrace and Imari bay 2009-04.jpg')}
+'3016':{src:cf('Hamanamkamachi Hachihongi-jyuku street 2.JPG'),alt:T('히젠하마슈쿠 전통거리','肥前浜宿の伝統的町並み'),source:cp('Hamanamkamachi Hachihongi-jyuku street 2.JPG')},
+'3017':{src:cf('Oouo Jinja kaichu torii.jpg'),alt:T('오우오 신사 해중 도리이','大魚神社の海中鳥居'),source:cp('Oouo Jinja kaichu torii.jpg')}
 };
 const foods=[
 {name:T('사가규','佐賀牛'),area:A.saga,kind:T('브랜드 와규·한 끼','ブランド和牛・一食'),where:T('사가현 전역','佐賀県全域'),description:T('섬세한 마블링과 부드러운 육질로 알려진 사가의 대표 브랜드 와규로, 스테이크·야키니쿠·샤부샤부 등으로 즐깁니다.','きめ細かな霜降りと柔らかな肉質で知られる佐賀を代表するブランド和牛で、ステーキ、焼肉、しゃぶしゃぶなどで味わいます。'),source:'https://www.asobo-saga.jp/'},
@@ -80,10 +80,10 @@ const foodDetails={
 const foodPhotos={
 '사가규':{src:cf('Saga beef.jpg'),source:cp('Saga beef.jpg')},
 '요부코 오징어 활어회':{src:cf('Yobuko Squid Drying - Aug 22, 2009 (1).jpg'),source:cp('Yobuko Squid Drying - Aug 22, 2009 (1).jpg')},
-'시시리안 라이스':{src:cf('Sicilian rice.jpg'),source:cp('Sicilian rice.jpg')},
+'시시리안 라이스':{src:cf('Sicilian rice saga.jpg'),source:cp('Sicilian rice saga.jpg')},
 '우레시노 온천유두부':{src:cf('Ureshino Onsen Tofu.jpg'),source:cp('Ureshino Onsen Tofu.jpg')},
 '우레시노차':{src:cf('Monument of Birthplace of Ureshino Tea.jpg'),source:cp('Monument of Birthplace of Ureshino Tea.jpg')},
-'다케자키 게':{src:cf('Portunus trituberculatus.jpg'),source:cp('Portunus trituberculatus.jpg')}
+'다케자키 게':{src:cf('Takezaki Kani.jpg'),source:cp('Takezaki Kani.jpg')}
 };
 const events=[
 {id:'sg-balloon',pref:P,name:T('사가 인터내셔널 벌룬 페스타','佐賀インターナショナルバルーンフェスタ'),area:A.saga,months:[10,11],timing:T('예년 10월 말~11월 초','例年10月末〜11月初旬'),scheduleType:T('매년 일정 발표','毎年日程発表'),type:T('열기구·국제대회','熱気球・国際大会'),description:T('사가시 가세가와 강변을 수많은 열기구가 채우는 아시아 최대급 열기구 행사로, 이른 아침 경기비행과 야간 벌룬 판타지아가 대표 볼거리입니다.','佐賀市の嘉瀬川河川敷を多数の熱気球が彩るアジア最大級の熱気球イベントで、早朝の競技飛行や夜のバルーンファンタジアが代表的な見どころです。'),source:'https://www.asobo-saga.jp/'},
