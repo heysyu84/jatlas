@@ -36,6 +36,10 @@ function weatherAverage(points,name){
  return {lat:valid.reduce((a,p)=>a+p.lat,0)/valid.length,lon:valid.reduce((a,p)=>a+p.lon,0)/valid.length,name};
 }
 function weatherPrefCenter(pref){
+ if(typeof municipalIndex!=='undefined'&&typeof prefNames!=='undefined'){
+  const list=municipalIndex[prefNames.indexOf(pref)]||[],c=list[0]&&weatherBoundsCenter(list[0].bounds);
+  if(c)return{...c,name:pref};
+ }
  if(typeof geography!=='undefined'&&typeof prefNames!=='undefined'){
   const f=geography.find(x=>prefNames[x.id]===pref);
   if(f){
@@ -56,8 +60,9 @@ function weatherPoint(){
   if(c)return{...c,name:weatherMunicipalName(m)};
  }
  const scoped=samples.filter(p=>p.pref===pref&&(area==='전체'||p.area===area));
+ if(area==='전체')return weatherPrefCenter(pref);
  const townCenters=[...new Set(scoped.map(p=>p.town).filter(Boolean))].map(t=>weatherMunicipalityCenter(pref,t));
- const areaCenter=weatherAverage(townCenters,area==='전체'?pref:area);
+ const areaCenter=weatherAverage(townCenters,area);
  if(areaCenter)return areaCenter;
  for(const p of scoped){
   const loc=pointLocations[p.id]||(Number.isFinite(p.lat)&&Number.isFinite(p.lon)?{lat:p.lat,lon:p.lon}:null);
