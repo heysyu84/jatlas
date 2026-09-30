@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 Oita batch
+# Migration revision: 2026-10-01 Oita fixes
 #!/usr/bin/env python3
 from __future__ import annotations
 
