@@ -33,6 +33,7 @@ Object.assign(jaDictionary,{
 Object.assign(jaDictionary,{
  "위치 지도":"位置マップ",
  " 위치 지도":" 位置マップ",
+ "날씨":"天気",
  "현재 날씨":"現在の天気",
  "대표 지점":"代表地点",
  "오늘":"今日",
