@@ -5,6 +5,7 @@ import hashlib
 import json
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -172,7 +173,6 @@ def main() -> None:
             file_to_filenames[path] = names
             all_files.update(names)
 
-    session = requests.Session()
     mapping: dict[str, str] = {}
     failed: list[dict] = []
     downloaded = 0
@@ -180,33 +180,38 @@ def main() -> None:
 
     OUT.mkdir(parents=True, exist_ok=True)
 
-    for idx, filename in enumerate(sorted(all_files)):
+    def process_one(filename: str):
         rel = local_name(filename)
         dest = DIST / rel
         if dest.exists() and dest.stat().st_size > 100:
-            mapping[filename] = rel
-            reused += 1
-            continue
-
+            return ("reused", filename, rel, None)
+        session = requests.Session()
         info = commons_info(session, filename)
         if not info:
-            failed.append({"file": filename, "reason": "Commons file not found"})
-            continue
-
+            return ("failed", filename, None, "Commons file not found")
         url = info.get("thumburl") or info.get("url")
         if not url:
-            failed.append({"file": filename, "reason": "No downloadable URL"})
-            continue
-
+            return ("failed", filename, None, "No downloadable URL")
         ok, err = save_webp(session, url, dest)
         if ok:
-            mapping[filename] = rel
-            downloaded += 1
-        else:
-            failed.append({"file": filename, "reason": err or "download/convert failed"})
+            return ("downloaded", filename, rel, None)
+        return ("failed", filename, None, err or "download/convert failed")
 
-        if idx % 20 == 0:
-            time.sleep(0.15)
+    names = sorted(all_files)
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures = [pool.submit(process_one, filename) for filename in names]
+        for idx, future in enumerate(as_completed(futures), 1):
+            status, filename, rel, err = future.result()
+            if status == "reused":
+                mapping[filename] = rel
+                reused += 1
+            elif status == "downloaded":
+                mapping[filename] = rel
+                downloaded += 1
+            else:
+                failed.append({"file": filename, "reason": err})
+            if idx % 50 == 0 or idx == len(names):
+                print(f"processed {idx}/{len(names)}; localized={len(mapping)} failed={len(failed)}", flush=True)
 
     # Also allow underscore spellings to resolve to the same local file.
     manifest_map: dict[str, str] = {}
