@@ -30,6 +30,21 @@ Object.assign(jaDictionary,{
  "도시 한가운데에서 신사의 전통을 만날 수 있는 지역입니다.":"街の中心で神社の伝統に触れられる地域です。",
  "강변 산책과 한여름의 불꽃놀이를 함께 즐길 수 있는 지역입니다.":"川沿いの散策と真夏の花火を一緒に楽しめる地域です。"
 });
+Object.assign(jaDictionary,{
+ "관광지도":"観光マップ",
+ "도쿄 관광지도":"東京観光マップ",
+ "주요 명소의 위치 관계를 한눈에 보는 개략도입니다. 점을 누르면 장소 정보를 볼 수 있습니다.":"主要スポットの位置関係をひと目で見るための概略図です。ポイントを押すとスポット情報を確認できます。",
+ "도쿄 주요 관광지 위치 개략도":"東京主要観光スポットの位置概略図",
+ "서부 산지":"西部の山地",
+ "도심":"都心",
+ "도쿄만":"東京湾",
+ "시부야":"渋谷",
+ "스카이트리":"スカイツリー",
+ "도쿄의 섬은 별도 일정으로 보기":"東京の島は別日程で見る",
+ "이즈 제도 보기":"伊豆諸島を見る",
+ "오가사와라 보기":"小笠原を見る",
+ "관광 동선 파악용 개략도 · 정확한 경계와 이동 거리는 상세 지도에서 확인하세요.":"観光動線を把握するための概略図です。正確な境界や移動距離は詳細地図でご確認ください。"
+});
 const localeKeys=Object.keys(jaDictionary).sort((a,b)=>b.length-a.length);
 const localePattern=new RegExp(localeKeys.map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 function translateText(text,force=false){if(language!=='ja'&&!force)return text;return jaDictionary[text]||text.replace(localePattern,s=>jaDictionary[s]);}
