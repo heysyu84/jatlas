@@ -200,3 +200,12 @@
 .municipalLabel.noContent span,
 .leaflet-tooltip .noContent{color:#aab4bf!important;background:#f7f9fa!important;border-color:#e8edf1!important}
 .municipalLabel.noContent{opacity:.72}
+
+/* Completed regions: visually distinguish municipalities/scopes with no content in the active section. */
+#areas button.noContent,#towns button.noContent,#municipalChoices button.noContent,
+.municipalLabel.noContent,.leaflet-tooltip .noContent,
+#title.noContent,#mapTitle.noContent,#crumb .noContent{
+ opacity:.38;
+ filter:saturate(.35);
+}
+#areas button.noContent,#towns button.noContent,#municipalChoices button.noContent{color:#8c99a8}
