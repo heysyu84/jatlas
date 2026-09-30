@@ -41,8 +41,14 @@ function drawMunicipalities(map,pref){
 function attachMunicipalities(map,pref){const id=prefNames.indexOf(pref);if(municipalGeometry[id]){drawMunicipalities(map,pref);return}$('#mapNote').textContent='시구정촌 경계를 불러오는 중입니다';loadMunicipalities(id).then(()=>{if(mapInstances.get('regionalMap')===map&&state.pref===pref&&state.area==='전체')drawMunicipalities(map,pref);if(state.pref===pref&&selectedMunicipality()){mapKey='';render()}}).catch(()=>{if(mapInstances.get('regionalMap')!==map)return;$('#mapNote').replaceChildren(document.createTextNode('지도를 불러오지 못했습니다 '),button('다시 불러오기',()=>attachMunicipalities(map,pref)));if(typeof localize==='function')localize()})}
 function stampMunicipalHeadings(){
  const m=state.view==='explore'?selectedMunicipality():null;
- for(const id of ['title','mapTitle']){const el=document.getElementById(id);delete el.dataset.municipalityId;delete el.dataset.municipalityPrefix;if(m){el.dataset.municipalityId=m.id;if(id==='mapTitle')el.dataset.municipalityPrefix=state.pref+' · '}}
- for(const el of document.querySelectorAll('#crumb button,#crumb [aria-current]'))if(m&&el.textContent===municipalName(m))el.dataset.municipalityId=m.id;
+ for(const id of ['title','mapTitle']){
+  const el=document.getElementById(id);delete el.dataset.municipalityId;delete el.dataset.municipalityPrefix;el.classList.remove('noContent');
+  if(m){el.dataset.municipalityId=m.id;if(id==='mapTitle')el.dataset.municipalityPrefix=state.pref+' · ';markMunicipalityContent(el,state.pref,m)}
+ }
+ for(const el of document.querySelectorAll('#crumb button,#crumb [aria-current]')){
+  el.classList.remove('noContent');
+  if(m&&el.textContent===municipalName(m)){el.dataset.municipalityId=m.id;markMunicipalityContent(el,state.pref,m)}
+ }
 }
 function localizeMunicipalLabels(){
  const lang=language==='ja'?'ja':'ko';
