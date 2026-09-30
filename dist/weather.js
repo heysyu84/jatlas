@@ -1,6 +1,7 @@
 /* Compact current weather + 5-day forecast for regional travel planning. */
 const weatherCache=new Map();
 const WEATHER_TTL=30*60*1000;
+let weatherExpanded=false;
 const weatherCodes={
  0:['☀️','맑음'],1:['🌤️','대체로 맑음'],2:['⛅','구름 조금'],3:['☁️','흐림'],
  45:['🌫️','안개'],48:['🌫️','이슬 안개'],
@@ -27,14 +28,28 @@ function weatherDateLabel(date,index){
  try{return new Intl.DateTimeFormat(locale,{month:'numeric',day:'numeric',weekday:'short'}).format(new Date(date+'T12:00:00'))}catch{return date}
 }
 function weatherRound(v,digits=0){const n=Number(v);return Number.isFinite(n)?n.toFixed(digits):'–'}
+function setWeatherExpanded(value){
+ weatherExpanded=!!value;
+ const host=$('#weatherPanel'),button=host?.querySelector('.weatherCurrent'),popover=host?.querySelector('.weatherPopover');
+ if(button)button.setAttribute('aria-expanded',String(weatherExpanded));
+ if(popover)popover.hidden=!weatherExpanded;
+}
 function renderWeatherData(host,data,point){
  const c=data.current||{},d=data.daily||{},current=weatherCondition(c.weather_code),scope=state.area==='전체'?state.pref:state.area;
  host.innerHTML='';
- const head=document.createElement('div');head.className='weatherHead';
+
+ const currentButton=document.createElement('button');
+ currentButton.type='button';currentButton.className='weatherCurrent';currentButton.setAttribute('aria-expanded',String(weatherExpanded));
+ currentButton.setAttribute('aria-label',scope+' '+weatherText('현재 날씨'));
+ currentButton.innerHTML='<span class="weatherCompactPlace">'+scope+'</span><span class="weatherCompactIcon">'+current[0]+'</span><strong class="weatherCompactTemp">'+weatherRound(c.temperature_2m,1)+'°</strong><span class="weatherCompactText">'+weatherText(current[1])+'</span><span class="weatherChevron">⌄</span>';
+ currentButton.onclick=e=>{e.stopPropagation();setWeatherExpanded(!weatherExpanded)};
+
+ const popover=document.createElement('div');popover.className='weatherPopover';popover.hidden=!weatherExpanded;
+ const head=document.createElement('div');head.className='weatherPopoverHead';
  const title=document.createElement('div');title.innerHTML='<h2>'+weatherText('현재 날씨')+'</h2><p>'+scope+' · '+weatherText('대표 지점')+' '+point.name+'</p>';
- const now=document.createElement('div');now.className='weatherNow';
- now.innerHTML='<span class="weatherNowIcon">'+current[0]+'</span><div><div class="weatherNowTemp">'+weatherRound(c.temperature_2m,1)+'°</div><div class="weatherNowText">'+weatherText(current[1])+' · '+weatherText('체감')+' '+weatherRound(c.apparent_temperature,1)+'°</div></div>';
- head.append(title,now);host.append(head);
+ const now=document.createElement('div');now.className='weatherNowDetail';now.textContent=current[0]+' '+weatherRound(c.temperature_2m,1)+'° · '+weatherText(current[1])+' · '+weatherText('체감')+' '+weatherRound(c.apparent_temperature,1)+'°';
+ head.append(title,now);popover.append(head);
+
  const days=document.createElement('div');days.className='weatherDays';
  const times=d.time||[];
  for(let i=0;i<Math.min(5,times.length);i++){
@@ -43,10 +58,12 @@ function renderWeatherData(host,data,point){
   card.innerHTML='<strong>'+weatherDateLabel(times[i],i)+'</strong><span class="weatherIcon">'+cond[0]+'</span><span>'+weatherText(cond[1])+'</span><span>'+weatherRound(d.temperature_2m_max?.[i])+'° / '+weatherRound(d.temperature_2m_min?.[i])+'°</span><small>'+weatherText('강수확률')+' '+(Number.isFinite(rain)?Math.round(rain)+'%':'–')+'</small>';
   days.append(card);
  }
- host.append(days);
+ popover.append(days);
  const credit=document.createElement('p');credit.className='weatherCredit';credit.append(weatherText('예보는 여행 참고용입니다.')+' · ');
- const link=document.createElement('a');link.href='https://open-meteo.com/';link.target='_blank';link.rel='noopener';link.textContent=weatherText('데이터: Open-Meteo');credit.append(link);host.append(credit);
- host.hidden=false;
+ const link=document.createElement('a');link.href='https://open-meteo.com/';link.target='_blank';link.rel='noopener';link.textContent=weatherText('데이터: Open-Meteo');credit.append(link);popover.append(credit);
+ popover.addEventListener('click',e=>e.stopPropagation());
+
+ host.append(currentButton,popover);host.hidden=false;
 }
 function renderWeatherError(host,key){
  if(host.dataset.weatherKey!==key)return;
@@ -59,6 +76,7 @@ async function renderWeatherPanel(force=false){
  if(state.view!=='explore'){host.hidden=true;host.dataset.weatherKey='';return}
  const point=weatherPoint();if(!point){host.hidden=true;return}
  const key=point.lat.toFixed(3)+','+point.lon.toFixed(3),cached=weatherCache.get(key);
+ if(host.dataset.weatherKey&&host.dataset.weatherKey!==key)weatherExpanded=false;
  host.dataset.weatherKey=key;
  if(!force&&cached&&Date.now()-cached.time<WEATHER_TTL){renderWeatherData(host,cached.data,point);return}
  host.hidden=false;host.innerHTML='<div class="weatherError">'+weatherText('날씨 정보를 불러오는 중입니다.')+'</div>';
@@ -77,5 +95,6 @@ async function renderWeatherPanel(force=false){
 }
 const weatherPreviousRender=render;
 render=function(){weatherPreviousRender();renderWeatherPanel()};
-document.addEventListener('click',e=>{if(e.target.closest?.('#langKo,#langJa,.language button'))queueMicrotask(()=>renderWeatherPanel())});
+document.addEventListener('click',e=>{if(!e.target.closest?.('#weatherPanel'))setWeatherExpanded(false);if(e.target.closest?.('#langKo,#langJa,.language button'))queueMicrotask(()=>renderWeatherPanel())});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')setWeatherExpanded(false)});
 renderWeatherPanel();
