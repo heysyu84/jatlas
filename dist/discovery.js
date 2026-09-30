@@ -2,14 +2,63 @@
 const spotFacts={
 100:['1~2시간','야외',''],101:['1~2시간','실내','티켓 확인'],102:['1~2시간','야외',''],103:['2~3시간','실내','휴관일 확인'],104:['45~90분','야외',''],105:['45~90분','야외',''],106:['1~2시간','야외','휴원일 확인'],107:['1시간 30분~3시간','야외','입장 조건 확인'],108:['45~90분','실내','운영 확인'],109:['20~40분','야외',''],110:['1~2시간','야외',''],111:['1~2시간','실내·야외','예약 확인'],112:['1~2시간','실내','티켓 확인'],113:['1~2시간','야외',''],114:['1~2시간','야외',''],115:['2~4시간','야외',''],116:['반나절~1일','야외','산행 준비'],117:['반나절~1일','야외','버스 확인'],118:['반나절','야외','섬 이동 별도'],119:['1~2시간','야외','섬 이동 별도'],
 200:['2~3시간','실내','특별전 확인'],201:['행사별 상이','실내','행사·입장권 확인'],202:['1~2시간','실내·야외',''],203:['2~4시간','실내','이용 조건 확인'],204:['30~60분','야외','저녁 방문'],205:['45~90분','실내·야외',''],206:['2~3시간','실내','휴관일 확인'],207:['1~2시간','실내·야외','전시 일정 확인'],208:['45~90분','야외',''],209:['45~90분','야외',''],210:['2~3시간','실내·야외','사전 예약 필수'],211:['1~2시간','동굴','교통 확인'],212:['1~2시간','야외','섬 이동 별도'],213:['1~2시간','야외','섬 이동 별도'],214:['45~90분','야외','산행 안에 포함'],215:['30~60분','야외',''],216:['30~60분','야외',''],217:['2~3시간','야외',''],218:['2~3시간','실내·야외','시설별 확인']};
-const firstPicks={'전체':[100,107,109],'오다이바':[200,113,202],'신주쿠':[107,108,205],'우에노·야나카':[103,102,104],'시부야·하라주쿠':[110,109,111]};
+const firstPicks={'전체':[100,107,109,112],'오다이바':[200,113,202,203],'신주쿠':[107,108,204,205],'우에노·야나카':[103,102,104,206],'시부야·하라주쿠':[110,109,111,208]};
+
+const tokyoTourOutline=[
+ [138.943,35.860],[139.050,35.879],[139.160,35.850],[139.330,35.794],[139.595,35.779],
+ [139.697,35.799],[139.821,35.815],[139.894,35.783],[139.918,35.698],[139.887,35.656],
+ [139.845,35.656],[139.817,35.610],[139.809,35.539],[139.739,35.545],[139.703,35.537],
+ [139.655,35.590],[139.484,35.504],[139.458,35.528],[139.269,35.609],[139.161,35.668],
+ [139.012,35.739]
+];
+const tokyoTourMapPoints=[
+ {id:117,dx:18,dy:-14,anchor:'start'},
+ {id:116,dx:18,dy:27,anchor:'start'},
+ {id:115,dx:16,dy:-18,anchor:'start'},
+ {id:114,dx:-18,dy:-18,anchor:'end'},
+ {id:107,dx:-20,dy:-30,anchor:'end'},
+ {id:110,dx:-58,dy:26,anchor:'end'},
+ {id:109,label:'시부야',dx:-44,dy:46,anchor:'end'},
+ {id:112,dx:18,dy:34,anchor:'start'},
+ {id:102,dx:-18,dy:-38,anchor:'end'},
+ {id:100,dx:18,dy:-16,anchor:'start'},
+ {id:101,label:'스카이트리',dx:18,dy:25,anchor:'start'},
+ {id:113,dx:18,dy:34,anchor:'start'}
+];
+function renderTokyoTourMap(host){
+ if(!host)return;
+ const W=1040,H=560,pad=44,minLon=138.90,maxLon=139.96,minLat=35.45,maxLat=35.93;
+ const project=(lon,lat)=>[pad+(lon-minLon)/(maxLon-minLon)*(W-pad*2),pad+(maxLat-lat)/(maxLat-minLat)*(H-pad*2)];
+ const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const outline=tokyoTourOutline.map(([lon,lat])=>project(lon,lat).map(v=>v.toFixed(1)).join(',')).join(' ');
+ const pointMarkup=tokyoTourMapPoints.map(meta=>{
+  const p=samples.find(q=>q.id===meta.id);if(!p||!Number.isFinite(p.lat)||!Number.isFinite(p.lon))return '';
+  const [x,y]=project(p.lon,p.lat),lx=x+meta.dx,ly=y+meta.dy,anchor=meta.anchor||'start';
+  const lineEndX=lx+(anchor==='end'?5:-5),label=meta.label||p.name;
+  const match=state.area!=='전체'&&p.area===state.area?' isAreaMatch':'';
+  return `<g class="tourMapPoint${match}" data-tour-place="${p.id}" role="button" tabindex="0" aria-label="${esc(p.name)}"><line x1="${x.toFixed(1)}" y1="${y.toFixed(1)}" x2="${lineEndX.toFixed(1)}" y2="${(ly-4).toFixed(1)}"></line><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8"></circle><text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}">${esc(label)}</text></g>`;
+ }).join('');
+ const [cityX,cityY]=project(139.70,35.69),[bayX,bayY]=project(139.78,35.59),[westX,westY]=project(139.18,35.78);
+ host.innerHTML=`<div class="tourMapHead"><p class="eyebrow">TOKYO ORIENTATION</p><h2>도쿄 관광지도</h2><p>주요 명소의 위치 관계를 한눈에 보는 개략도입니다. 점을 누르면 장소 정보를 볼 수 있습니다.</p></div><div class="tourMapCanvas"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="도쿄 주요 관광지 위치 개략도"><defs><linearGradient id="tourMapLandGradient" x1="0" x2="1"><stop offset="0" stop-color="#eef4eb"></stop><stop offset=".55" stop-color="#fffdf7"></stop><stop offset="1" stop-color="#fff8f3"></stop></linearGradient><pattern id="tourMapMountainPattern" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M2 23 L10 10 L16 19 L21 12 L27 23" fill="none" stroke="#b9cdb7" stroke-width="2" opacity=".5"></path></pattern></defs><rect width="${W}" height="${H}" class="tourMapSea"></rect><path class="tourMapBay" d="M760 390 C835 355 950 365 1040 420 L1040 560 L750 560 C790 500 785 447 760 390 Z"></path><polygon class="tourMapLand" points="${outline}"></polygon><path class="tourMapMountains" d="M40 45 H430 V455 C330 490 210 510 75 480 Z"></path><text class="tourMapZone" x="${westX.toFixed(1)}" y="${westY.toFixed(1)}">서부 산지</text><text class="tourMapZone" x="${cityX.toFixed(1)}" y="${cityY.toFixed(1)}">도심</text><text class="tourMapZone" x="${bayX.toFixed(1)}" y="${bayY.toFixed(1)}">도쿄만</text>${pointMarkup}</svg></div><div class="tourIslandLinks"><span>도쿄의 섬은 별도 일정으로 보기</span></div><p class="mapcredit">관광 동선 파악용 개략도 · 정확한 경계와 이동 거리는 상세 지도에서 확인하세요.</p>`;
+ const islandLinks=host.querySelector('.tourIslandLinks');
+ islandLinks.append(
+  button('이즈 제도 보기',()=>{contentTab='places';go('도쿄','이즈 제도')}),
+  button('오가사와라 보기',()=>{contentTab='places';go('도쿄','오가사와라')})
+ );
+ host.querySelectorAll('[data-tour-place]').forEach(el=>{
+  const open=()=>{const p=samples.find(q=>q.id===Number(el.dataset.tourPlace));if(p)openDetail(p)};
+  el.addEventListener('click',open);
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+ });
+}
+
 let mobileMapView='list',detailOrigin=null,detailOpening=false;
 function toggleSavedPlace(p){saved=saved.includes(p.id)?saved.filter(id=>id!==p.id):[...saved,p.id];try{localStorage.setItem('atlas-saved',JSON.stringify(saved))}catch{toast('저장 공간을 사용할 수 없습니다. 파일로 내보내 주세요.')}$('#count').textContent=saved.length;document.querySelectorAll('[data-save-place]').forEach(b=>{const on=saved.includes(Number(b.dataset.savePlace));b.textContent=on?'♥':'♡';b.setAttribute('aria-pressed',String(on))});if(selected?.id===p.id)updateSave()}
 card=function(p){const root=document.createElement('article');root.className='card';root.dataset.place=p.id;const main=button('',()=>openDetail(p),'cardMain'),photo=photoForPlace(p),facts=spotFacts[p.id];main.innerHTML=`${photo?`<img class="placePhoto" src="${photo.src}" alt="${photo.alt}" width="320" height="210" loading="lazy">`:''}<small>${p.area} · ${p.town}</small><strong>${p.name}</strong><span>${p.tag}</span>${facts?`<span class="spotFacts">${facts.filter(Boolean).map(f=>`<span>${f}</span>`).join('')}</span>`:''}<em>장소 살펴보기 ↗</em>`;const save=button(saved.includes(p.id)?'♥':'♡',()=>toggleSavedPlace(p),'cardSave');save.dataset.savePlace=p.id;save.setAttribute('aria-label',p.name+' · 관심 장소');save.setAttribute('aria-pressed',String(saved.includes(p.id)));root.append(main,save);return root};
 function setMobileMapView(value){mobileMapView=value;$('#placePanel').dataset.mobileView=value;document.querySelectorAll('#mapListSwitch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===value)));for(const map of mapInstances.values())map.invalidateSize({pan:false})}
 function renderDiscovery(){if(state.view==='explore'&&state.area==='전체'&&!samples.some(p=>p.pref===state.pref))mobileMapView='map';const panel=$('#placePanel');panel.dataset.mobileView=mobileMapView;const control=$('#mapListSwitch');control.hidden=state.view!=='explore'||contentTab!=='places';for(const b of control.querySelectorAll('button'))b.setAttribute('aria-pressed',String(b.dataset.mode===mobileMapView));
  const host=$('#featuredPlaces');host.replaceChildren();host.hidden=true;if(state.view!=='explore'||!completePrefs.includes(state.pref)||contentTab!=='places'||state.town!=='전체'||placeTheme!=='전체')return;
- const scoped=samples.filter(p=>p.pref===state.pref&&placeInScope(p));const ids=(state.pref==='도쿄'?firstPicks[state.area]:state.pref==='야마나시'?yamanashiPicks[state.area]:state.pref==='오사카'&&state.area==='전체'?[400,406,411]:null)||scoped.slice(0,3).map(p=>p.id);const picks=ids.map(id=>scoped.find(p=>p.id===id)).filter(Boolean);if(!picks.length)return;
+ const scoped=samples.filter(p=>p.pref===state.pref&&placeInScope(p));let ids=(state.pref==='도쿄'?firstPicks[state.area]:state.pref==='야마나시'?yamanashiPicks[state.area]:state.pref==='오사카'&&state.area==='전체'?[400,406,411]:null)||scoped.slice(0,4).map(p=>p.id);if(ids.length%2){const extra=scoped.find(p=>!ids.includes(p.id));if(extra)ids=[...ids,extra.id]}const picks=ids.map(id=>scoped.find(p=>p.id===id)).filter(Boolean);if(!picks.length)return;
  host.hidden=false;const heading=document.createElement('h2');heading.textContent='처음이라면 여기부터';const sub=document.createElement('p');sub.className='muted';sub.textContent=state.area==='전체'?'서로 다른 권역의 대표 명소입니다. 한 번에 모두 묶기보다 권역별로 나눠보세요.':'지역의 특징을 느끼기 좋은 선택지입니다. 모두 방문할 필요는 없습니다.';const grid=document.createElement('div');grid.className='cards featuredCards';grid.append(...picks.map(card));host.append(heading,sub,grid);for(const id of ids)$('#cards').querySelector(`[data-place="${id}"]`)?.remove();$('#resultTitle').textContent='더 둘러볼 장소';$('#resultTitle').parentElement.hidden=!$('#cards').children.length;
 }
 const discoveryRenderDesign=renderDesign;renderDesign=function(){discoveryRenderDesign();$('#resultTitle').parentElement.hidden=false;renderDiscovery()};
