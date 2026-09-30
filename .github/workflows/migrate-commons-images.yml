@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: jatlas-commons-image-migration-v2
@@ -42,3 +43,9 @@ jobs:
           git commit -m "Localize reusable travel images"
           git pull --rebase origin main
           git push
+
+
+      - name: Deploy latest main after image migration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
