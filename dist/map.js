@@ -4,7 +4,7 @@ const pointLocations={3:{lon:137.257,lat:36.142,note:'다카야마 중심부 기
 const mapInstances=new Map(),markerInstances=new Map();let mapKey='',nationalRegion='';
 const prefectureFeatures=geography.map(f=>({type:'Feature',properties:{name:prefNames[f.id],id:f.id},geometry:{type:'MultiPolygon',coordinates:f.rings.map(r=>[[...r,r[0]]])}}));
 const areaBoxes={'기후|히다':[[36.00,136.96],[36.40,137.52]],'기후|기후·나가라가와':[[35.39,136.72],[35.47,136.82]]};
-const regionCenters={"홋카이도": [43.4, 142.3], "도호쿠": [39.4, 140.6], "북간토": [36.9, 140.5], "수도권": [35.2, 140.6], "고신에쓰": [37.7, 138.3], "도카이": [34.5, 137.5], "호쿠리쿠": [36.6, 135.7], "긴키": [34.6, 135.2], "산인·산요": [35.0, 132.3], "시코쿠": [33.2, 133.6], "규슈": [32.3, 130.5]};
+const regionCenters={"홋카이도": [43.4, 142.3], "도호쿠": [39.4, 140.6], "북간토": [36.9, 140.5], "수도권": [35.2, 140.6], "고신에쓰": [37.7, 138.3], "도카이": [34.5, 137.5], "호쿠리쿠": [36.6, 135.7], "긴키": [34.6, 135.2], "산인·산요": [34.9, 133.0], "시코쿠": [33.2, 133.6], "규슈": [32.3, 130.5]};
 function isMobile(){return window.matchMedia('(max-width: 760px)').matches}
 function regionFor(pref){return regions.find(r=>r[1].split(' ').includes(pref))?.[0]||''}
 function geographicBounds(names,mainland=true){if(mainland&&names.length===1&&names[0]==='오키나와'){const rings=geography.find(f=>f.id===47).rings;const area=r=>(Math.max(...r.map(p=>p[0]))-Math.min(...r.map(p=>p[0])))*(Math.max(...r.map(p=>p[1]))-Math.min(...r.map(p=>p[1])));const main=rings.reduce((a,b)=>area(a)>area(b)?a:b);return L.latLngBounds(main.map(p=>[p[1],p[0]])).pad(.06)}const pts=geography.filter(f=>names.includes(prefNames[f.id])).flatMap(f=>f.rings.flat().filter(p=>!mainland||f.id!==13||p[1]>35));return L.latLngBounds(pts.map(p=>[p[1],p[0]]))}
@@ -39,18 +39,45 @@ function createMap(id,bounds,{detailed=false,mode='pref',only=null,features=null
  return map;
 }
 // Keep the denser travel-region labels distinct even on a narrow screen.
+const mobileRegionOffsets={
+ '홋카이도':[0,0],
+ '도호쿠':[8,-2],
+ '북간토':[20,-5],
+ '수도권':[24,10],
+ '고신에쓰':[-28,-8],
+ '도카이':[-10,18],
+ '호쿠리쿠':[-12,12],
+ '긴키':[0,10],
+ '산인·산요':[-14,-8],
+ '시코쿠':[4,12],
+ '규슈':[12,-8]
+};
+const mobileLabelNudges=[[0,0],[0,-10],[0,10],[-12,0],[12,0],[-12,-10],[12,-10],[-12,10],[12,10],[-24,0],[24,0]];
 function drawRegionLabels(map,layer){
- layer.clearLayers();const size=map.getSize(),w=isMobile()?72:86,h=30,occupied=[],placed={};
+ layer.clearLayers();const mobile=isMobile(),size=map.getSize(),w=mobile?72:86,h=30,occupied=[],placed={};
  const offsets=[[0,0]];for(const r of [1,2,3,4,5])offsets.push([0,-r*34],[0,r*34],[-r*38,0],[r*38,0],[-r*38,-r*34],[r*38,r*34],[-r*38,r*34],[r*38,-r*34]);
  for(const [name,center] of Object.entries(regionCenters).sort(([a],[b])=>(a==='고신에쓰')-(b==='고신에쓰'))){
   const origin=map.latLngToContainerPoint(center);if(origin.x<0||origin.y<0||origin.x>size.x||origin.y>size.y)continue;
-  let chosen=null;
-  let candidates=name==='산인·산요'&&!isMobile()?offsets.map(([x,y])=>[x,y-16]):offsets;
-  if(name==='규슈'&&isMobile())candidates=offsets.map(([x,y])=>[x+10,y-8]);
-  if(name==='고신에쓰'&&placed['도호쿠']&&placed['호쿠리쿠']){const a=placed['도호쿠'],b=placed['호쿠리쿠'],x=(a.x+b.x)/2,y=(a.y+b.y)/2;candidates=[];for(const ratio of [.5,.4,.6,.3,.7])for(const dx of [0,18,-18,36,-36,54,-54,72,-72,96,-96,120,-120,150,-150,180,-180])candidates.push([x-origin.x+dx,a.y+(b.y-a.y)*ratio-origin.y]);}
-  for(const [dx,dy] of candidates){const box={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};if(!occupied.some(b=>box.x<b.x+b.w+4&&box.x+box.w+4>b.x&&box.y<b.y+b.h+3&&box.y+box.h+3>b.y)){chosen=box;break}}
-  if(!chosen)continue;occupied.push(chosen);placed[name]={x:chosen.x+w/2,y:chosen.y+h/2};const anchor=map.containerPointToLatLng([chosen.x+w/2,chosen.y+h/2]);
-  if(Math.hypot(chosen.x+w/2-origin.x,chosen.y+h/2-origin.y)>18)L.polyline([center,anchor],{color:'#8ba3b7',weight:1,opacity:.7,interactive:false}).addTo(layer);
+  let chosen=null,candidates;
+  if(mobile){
+   const preferred=mobileRegionOffsets[name]||[0,0];
+   candidates=mobileLabelNudges.map(([x,y])=>[preferred[0]+x,preferred[1]+y]);
+  }else{
+   const preferred=name==='산인·산요'?[0,-10]:[0,0];
+   candidates=offsets.map(([x,y])=>[x+preferred[0],y+preferred[1]]);
+   if(name==='고신에쓰'&&placed['도호쿠']&&placed['호쿠리쿠']){
+    const a=placed['도호쿠'],b=placed['호쿠리쿠'],x=(a.x+b.x)/2,y=(a.y+b.y)/2;candidates=[];
+    for(const ratio of [.5,.4,.6,.3,.7])for(const dx of [0,18,-18,36,-36,54,-54,72,-72,96,-96,120,-120,150,-150,180,-180])candidates.push([x-origin.x+dx,a.y+(b.y-a.y)*ratio-origin.y]);
+   }
+  }
+  for(const [dx,dy] of candidates){
+   const box={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
+   if(!occupied.some(b=>box.x<b.x+b.w+4&&box.x+box.w+4>b.x&&box.y<b.y+b.h+3&&box.y+box.h+3>b.y)){chosen=box;break}
+  }
+  if(!chosen)continue;
+  occupied.push(chosen);placed[name]={x:chosen.x+w/2,y:chosen.y+h/2};
+  const anchor=map.containerPointToLatLng([chosen.x+w/2,chosen.y+h/2]);
+  if(!mobile&&Math.hypot(chosen.x+w/2-origin.x,chosen.y+h/2-origin.y)>18)L.polyline([center,anchor],{color:'#8ba3b7',weight:1,opacity:.7,interactive:false}).addTo(layer);
   L.marker(anchor,{icon:L.divIcon({className:'regionMapLabel',html:`<span>${name}</span>`,iconSize:[w,h],iconAnchor:[w/2,h/2]}),keyboard:true,title:name}).addTo(layer).on('click',()=>selectRegion(name));
  }
  if(typeof localize==='function')localize();
