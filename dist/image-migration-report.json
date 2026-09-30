@@ -1,31 +1,13 @@
 {
   "commons_candidates": 737,
-  "localized": 733,
-  "downloaded_now": 29,
-  "reused_existing": 704,
-  "failed_count": 4,
-  "failed": [
-    {
-      "file": "Cheese manju.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Hiyajiru.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Miyazaki Jidori charcoal grill.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Sun Messe Nichinan.jpg",
-      "reason": "Commons file not found"
-    }
-  ],
+  "localized": 737,
+  "downloaded_now": 10,
+  "reused_existing": 727,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Amanoiwato Shrine.jpg": "Amanoiwato-east-shrine.jpg",
-    "Aoshima Shrine Miyazaki.jpg": "Stone sign of Aoshima Shrine, Miyazaki - Dec 7, 2015.jpg",
     "Aso Nakadake crater.jpg": "Mt. Aso nakadake crater 阿蘇中岳火口 (456731526).jpg",
     "Aya Teruha Suspension Bridge.jpg": "Aya Teruha Suspension Bridge4.jpg",
     "Beppu Jigoku Umi-jigoku.jpg": "Beppu Umi-jigoku04n4272.jpg",
@@ -42,18 +24,15 @@
     "Karashi renkon.jpg": "Karashi-Renkon.jpg",
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
     "Kinrinko Lake Yufuin.jpg": "Stream near Tenso Shrine and Lake Kinrinko.JPG",
-    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-4.jpg",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-3.jpg",
     "Kuju Flower Park.jpg": "Kuju Flower Park(3553982332).jpg",
     "Kuma River Hitoyoshi.jpg": "Kuma River in Hitoyoshi.jpg",
     "Kumamoto Castle 2019.jpg": "Kumamoto Castle, Kumamoto; April 2010.jpg",
     "Kunimigaoka Takachiho.jpg": "Kunimigaoka, Takachiho-1.jpg",
     "Kusasenri Aso.jpg": "Aso Kusasenri horses (52133462269).jpg",
-    "Lettuce roll sushi.jpg": "Sushi planet mango roll.jpg",
     "Mameda-machi Hita.jpg": "Mameda-machi, Hita 02.jpg",
     "Michi-no-Eki Nango Miyazaki.jpg": "Michinoeki Nango Miyazaki 200809.jpg",
     "Misumi West Port.jpg": "Misumi-west port 1.jpg",
-    "Miyazaki City Japan.jpg": "Miyazaki Montage.jpg",
-    "Miyazaki Jingu.jpg": "Miyazaki-Jingu Station 20170319.jpg",
     "Miyazaki Karamen.jpg": "NGO Kita Machikado-ya Miyazaki Karamen 20221016-01.jpg",
     "Miyazaki beef.jpg": "Miyazaki Beef rib.jpg",
     "Miyazaki mango.jpg": "Cut Miyazaki mango.jpg",
@@ -77,10 +56,8 @@
     "Tadewara Wetland.jpg": "Tadewara Wetlands (52133306063).jpg",
     "Taipien.jpg": "Taipien at Kumamoto Station.JPG",
     "Takachiho Farm Miyazaki.jpg": "Takachiho Farm.jpg",
-    "Takachiho Shrine.jpg": "Takachiho-jinja, Auxiliary Aratate Shrine 01.jpg",
     "Takasakiyama Natural Zoological Garden.jpg": "Macaca fuscata in Takasakiyama Natural Zoological Garden 2011-03-20.jpg",
     "Toriten.jpg": "Toriten.JPG",
-    "Udo Jingu.jpg": "Udo Jingu Undama.jpg",
     "Umagase Hyuga.jpg": "Umagase Hyuga 2010.JPG",
     "Usa Jingu.jpg": "Usa Jingu-235.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
