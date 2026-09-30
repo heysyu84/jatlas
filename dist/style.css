@@ -168,3 +168,24 @@
  .mobilePrefSwitch:not([hidden]){display:block!important;flex:0 0 86px!important;width:86px!important;min-width:86px!important;max-width:86px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0 22px 0 9px!important;border:1px solid #dbe7f1!important;border-radius:23px!important;background:#fff!important;color:#25486e!important;font-size:12px!important}
  #weatherPanel:not([hidden]){flex:0 0 104px!important;width:104px!important}
 }
+
+/* Nationwide-first seasons & events hub. */
+.nationalSeasonGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 30px}
+.nationalSeasonGrid article{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.nationalSeasonGrid strong{display:block;margin-bottom:7px;color:var(--blue);font-size:17px}
+.nationalSeasonGrid span{display:block;color:#6b7f97;font-size:14px;line-height:1.65}
+.eventRegionTitle{margin:8px 0 16px;font-size:22px}
+.eventRegionDirectory h3{margin:0 0 12px;color:#304f74;font-size:17px}
+.eventSchedule{margin-top:26px}
+.eventSchedule>h2{margin:0 0 16px}
+.seasonCardEmpty{border:1px solid var(--line);background:#fff}
+@media(max-width:760px){
+ .nationalSeasonGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:14px 0 24px}
+ .nationalSeasonGrid article{padding:14px}
+ .nationalSeasonGrid strong{font-size:15px}
+ .nationalSeasonGrid span{font-size:12px}
+ .eventRegionTitle{font-size:20px}
+ .eventRegionDirectory>section{padding:16px}
+ .eventRegionDirectory .chiprow{gap:6px}
+ .eventRegionDirectory .chiprow button{font-size:13px;padding:8px 10px}
+}
