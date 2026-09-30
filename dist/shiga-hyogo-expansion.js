@@ -1,0 +1,176 @@
+(()=>{const cf=f=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960';const cp=f=>'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_');const map=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);const note='공식 관광 안내의 명칭과 위치를 기준으로 등록했습니다. 방문 전 운영·교통 안내를 확인하세요.';
+
+if(!regionalCatalog.some(x=>x.pref==='시가')){
+ const places=[
+ {id:1800,pref:'시가',area:'히코네·고토',town:'히코네시',name:'히코네성',tag:'국보·성·역사',description:'에도 시대 천수를 지금까지 보존한 일본의 현존 천수 성곽으로, 국보 천수와 성문·망루, 비와호 전망을 함께 즐길 수 있습니다.',activity:'천수와 성곽 내부를 둘러보고 높은 곳에서 비와호 방향의 풍경을 감상해보세요. 급한 계단이 많아 이동에 주의하세요.',checked:'2026.09.30',lat:35.2765,lon:136.2518,source:'https://www.biwako-visitors.jp/spot/detail/838/',note,mapQuery:'滋賀 彦根城'},
+ {id:1801,pref:'시가',area:'히코네·고토',town:'히코네시',name:'겐큐엔',tag:'정원·성곽·산책',description:'히코네성 북동쪽에 조성된 옛 다이묘 정원으로, 연못과 섬·다리 너머로 성의 풍경이 겹치는 회유식 정원입니다.',activity:'연못을 한 바퀴 돌며 여러 각도에서 히코네성과 정원 풍경을 감상해보세요.',checked:'2026.09.30',lat:35.2782,lon:136.2527,source:'https://global.biwako-visitors.jp/about-shiga/',note,mapQuery:'滋賀 玄宮園'},
+ {id:1802,pref:'시가',area:'오쓰·히에이잔',town:'오쓰시',name:'히에이잔 엔랴쿠지',tag:'세계유산·사찰·산악',description:'히에이산 전체에 여러 당우가 흩어진 천태종 총본산으로, 교토와 시가의 불교사에 큰 영향을 준 세계유산 사찰입니다.',activity:'도도·사이토 등 주요 구역을 이동하며 당우와 산의 분위기를 둘러보세요. 산 위 이동과 교통 시간을 넉넉히 잡으세요.',checked:'2026.09.30',lat:35.0704,lon:135.8410,source:'https://www.hieizan.or.jp/',note,mapQuery:'滋賀 比叡山 延暦寺'},
+ {id:1803,pref:'시가',area:'오쓰·히에이잔',town:'오쓰시',name:'이시야마데라',tag:'사찰·문학·정원',description:'세타강 서쪽 바위 지형 위에 자리한 고찰로, 무라사키 시키부와 겐지모노가타리의 전승, 계절 꽃으로 알려져 있습니다.',activity:'본당과 규회석 지형, 경내 정원을 둘러보세요. 봄꽃과 단풍 시기에는 여유 있게 이동하세요.',checked:'2026.09.30',lat:34.9607,lon:135.9052,source:'https://www.ishiyamadera.or.jp/',note,mapQuery:'滋賀 石山寺'},
+ {id:1804,pref:'시가',area:'오쓰·히에이잔',town:'오쓰시',name:'미이데라(온조지)',tag:'사찰·역사·벚꽃',description:'비와호를 바라보는 오쓰의 대형 고찰로, 국보·중요문화재 전각과 범종, 봄 벚꽃으로 유명합니다.',activity:'금당과 주요 전각을 둘러보고 높은 곳에서 오쓰와 비와호 방향의 풍경을 감상해보세요.',checked:'2026.09.30',lat:35.0139,lon:135.8535,source:'https://miidera1200.jp/',note,mapQuery:'滋賀 三井寺 園城寺'},
+ {id:1805,pref:'시가',area:'오쓰·히에이잔',town:'오쓰시',name:'비와코 밸리',tag:'산·전망·로프웨이',description:'비와호 서쪽 산 위에서 호수를 넓게 내려다볼 수 있는 전망·레저 지역으로, 로프웨이와 계절별 야외 시설이 운영됩니다.',activity:'로프웨이를 타고 산 위 전망을 즐겨보세요. 강풍이나 계절 정비에 따른 운휴 여부를 확인하세요.',checked:'2026.09.30',lat:35.20294,lon:135.90706,source:'https://www.biwako-valley.com/',note,mapQuery:'滋賀 びわ湖バレイ'},
+ {id:1806,pref:'시가',area:'비와호 남부',town:'구사쓰시',name:'비와호 박물관',tag:'박물관·자연·수족전시',description:'비와호의 형성과 생태, 사람들의 생활문화를 대형 전시와 수족 전시로 소개하는 호숫가 박물관입니다.',activity:'호수의 역사·생태 전시와 수족 전시를 차례로 둘러보세요. 전시 개편이나 휴관일을 확인하세요.',checked:'2026.09.30',lat:35.0740,lon:135.9345,source:'https://www.biwahaku.jp/',note,mapQuery:'滋賀 琵琶湖博物館'},
+ {id:1807,pref:'시가',area:'오미하치만·아즈치',town:'오미하치만시',name:'하치만보리',tag:'수로·옛 거리·산책',description:'오미 상인의 도시 오미하치만에 남은 옛 수로로, 돌담과 흰 벽 창고, 버드나무가 이어지는 역사 경관을 즐길 수 있습니다.',activity:'수로를 따라 천천히 걷고 옛 상가 거리와 히무레하치만궁 주변까지 함께 둘러보세요.',checked:'2026.09.30',lat:35.1380,lon:136.0890,source:'https://global.biwako-visitors.jp/travel-stories/20926/',note,mapQuery:'滋賀 八幡堀'},
+ {id:1808,pref:'시가',area:'오미하치만·아즈치',town:'오미하치만시',name:'라 코리나 오미하치만',tag:'건축·카페·쇼핑',description:'초록 지붕의 독특한 건축과 제과 매장·카페가 어우러진 복합 공간으로, 오미하치만의 현대적인 인기 방문지입니다.',activity:'메인숍과 건축 공간을 둘러보고 현장에서 디저트와 기념품을 골라보세요. 주말에는 대기시간을 고려하세요.',checked:'2026.09.30',lat:35.148694,lon:136.092500,source:'https://taneya.jp/la_collina/',note,mapQuery:'滋賀 ラ コリーナ近江八幡'},
+ {id:1809,pref:'시가',area:'오미하치만·아즈치',town:'오미하치만시',name:'아즈치성터',tag:'성터·전국시대·등산',description:'오다 노부나가가 축성한 아즈치성의 돌계단과 석축이 산 위에 남아 있어 전국시대 성곽의 규모를 체감할 수 있는 유적입니다.',activity:'오테미치 돌계단을 따라 성터를 올라가며 석축과 유구를 살펴보세요. 경사가 있어 편한 신발을 준비하세요.',checked:'2026.09.30',lat:35.153769,lon:136.139053,source:'https://global.biwako-visitors.jp/about-shiga/',note,mapQuery:'滋賀 安土城跡'},
+ {id:1810,pref:'시가',area:'고호쿠·나가하마',town:'나가하마시',name:'구로카베 스퀘어',tag:'옛 거리·유리공예·쇼핑',description:'옛 은행 건물을 활용한 유리관을 중심으로 전통 건축과 공방·상점·카페가 모인 나가하마의 대표 거리입니다.',activity:'구로카베 유리관과 주변 상점가를 걸으며 공예품과 카페를 둘러보세요.',checked:'2026.09.30',lat:35.380650,lon:136.267102,source:'https://www.kurokabe.co.jp/',note,mapQuery:'滋賀 黒壁スクエア'},
+ {id:1811,pref:'시가',area:'고호쿠·나가하마',town:'나가하마시',name:'치쿠부시마',tag:'섬·사찰·신사·유람선',description:'비와호 북부에 떠 있는 작은 섬으로, 급한 계단 위에 호곤지와 쓰쿠부스마 신사가 자리한 신앙의 섬입니다.',activity:'나가하마나 이마즈에서 배편을 확인해 입도한 뒤 사찰과 신사, 호수 전망을 둘러보세요.',checked:'2026.09.30',lat:35.4218,lon:136.1436,source:'https://global.biwako-visitors.jp/travel-stories/20926/',note,mapQuery:'滋賀 竹生島'},
+ {id:1812,pref:'시가',area:'고세이·다카시마',town:'다카시마시',name:'시라히게 신사',tag:'신사·비와호·전망',description:'비와호 물 위에 서 있는 붉은 대도리이로 유명한 오래된 신사로, 호수와 신사 풍경이 어우러지는 다카시마의 대표 명소입니다.',activity:'신사 경내를 참배하고 호수 쪽 대도리이를 감상하세요. 국도 횡단은 위험하므로 지정된 안전 안내를 반드시 따르세요.',checked:'2026.09.30',lat:null,lon:null,source:'https://www.biwako-visitors.jp/spot/detail/390/',note,mapQuery:'滋賀 白鬚神社'},
+ {id:1813,pref:'시가',area:'고세이·다카시마',town:'다카시마시',name:'메타세쿼이아 가로수길',tag:'가로수·드라이브·계절',description:'약 500그루의 메타세쿼이아가 약 2.4km에 걸쳐 이어지는 도로로, 신록·단풍·설경이 계절마다 다른 풍경을 만듭니다.',activity:'차량과 보행 안전에 주의하며 가로수 풍경을 감상하세요. 도로 위 정차나 촬영은 피하고 지정 주차장을 이용하세요.',checked:'2026.09.30',lat:null,lon:null,source:'https://global.biwako-visitors.jp/things-to-do/22149/',note,mapQuery:'滋賀 メタセコイア並木'},
+ {id:1814,pref:'시가',area:'고카·시가라키',town:'고카시',name:'고카노사토 닌자술촌',tag:'닌자·체험·박물관',description:'고카 닌자 문화를 주제로 자료관과 가라쿠리 저택, 수리검 등 체험 시설을 갖춘 야외형 테마 공간입니다.',activity:'닌자 자료 전시를 보고 체력에 맞춰 수리검과 수련 체험을 골라보세요. 운영 프로그램과 휴무일을 확인하세요.',checked:'2026.09.30',lat:null,lon:null,source:'https://global.biwako-visitors.jp/things-to-do/22002/',note,mapQuery:'滋賀 甲賀の里 忍術村'},
+ {id:1815,pref:'시가',area:'고카·시가라키',town:'고카시',name:'MIHO MUSEUM',tag:'미술관·건축·자연',description:'I. M. 페이가 설계한 산속 미술관으로, 터널과 다리를 지나 만나는 건축 공간과 고대 미술 컬렉션이 특징입니다.',activity:'진입 터널과 건축을 감상한 뒤 기획전과 상설 소장품을 둘러보세요. 전시 교체 휴관 기간을 방문 전에 확인하세요.',checked:'2026.09.30',lat:34.914866,lon:136.013590,source:'https://global.biwako-visitors.jp/things-to-do/22004/',note,mapQuery:'滋賀 MIHO MUSEUM'}
+ ];
+ for(const p of places)p.mapUrl=map(p.mapQuery);
+ const guides={
+ '1800':{access:'JR 히코네역에서 성 입구까지 도보 약 15분입니다.',duration:'2~3시간'},
+ '1801':{access:'히코네성 천수에서 북쪽 정원 방향으로 도보 이동하세요.',duration:'45~75분'},
+ '1802':{access:'JR 히에이잔사카모토역·게이한 사카모토히에이잔구치역에서 케이블카와 버스를 조합해 이동하세요.',duration:'3~5시간'},
+ '1803':{access:'게이한 이시야마사카모토선 이시야마데라역에서 도보 약 10분입니다.',duration:'1시간 30분~2시간'},
+ '1804':{access:'게이한 미이데라역에서 도보 약 10분입니다.',duration:'1시간 30분~2시간'},
+ '1805':{access:'JR 시가역에서 버스로 로프웨이 산로쿠역까지 이동하세요.',duration:'3~5시간'},
+ '1806':{access:'JR 구사쓰역에서 오미철도 버스를 이용하세요.',duration:'2~3시간'},
+ '1807':{access:'JR 오미하치만역에서 버스로 오스기초·하치만보리 주변까지 이동하세요.',duration:'1~2시간'},
+ '1808':{access:'JR 오미하치만역에서 버스로 기타노쇼 라 코리나마에 정류장까지 이동하세요.',duration:'1시간 30분~3시간'},
+ '1809':{access:'JR 아즈치역에서 성터 입구까지 도보 또는 택시를 이용하세요.',duration:'2~3시간'},
+ '1810':{access:'JR 나가하마역에서 구로카베 스퀘어까지 도보 약 5분입니다.',duration:'1시간 30분~3시간'},
+ '1811':{access:'나가하마항 또는 이마즈항 등에서 운항일의 유람선 시간표를 확인해 입도하세요.',duration:'2~4시간 · 배 이동 별도'},
+ '1812':{access:'JR 오미타카시마역에서 택시 또는 도보로 이동하세요. 국도 횡단 안전 안내를 확인하세요.',duration:'45~75분'},
+ '1813':{access:'JR 마키노역에서 버스 또는 자전거·택시를 이용해 마키노 픽랜드 방면으로 이동하세요.',duration:'1~2시간'},
+ '1814':{access:'JR 고카역에서 운영일 셔틀버스 여부를 확인해 이동하세요.',duration:'2~4시간'},
+ '1815':{access:'JR 이시야마역에서 미술관행 버스 운행일과 시각을 확인하세요.',duration:'2~3시간'}
+ };
+ const photos={
+ '1800':{src:cf('Hikone Castle (2094996482).jpg'),alt:'히코네성',source:cp('Hikone Castle (2094996482).jpg')},
+ '1801':{src:cf('Genkyuen08s3200.jpg'),alt:'겐큐엔',source:cp('Genkyuen08s3200.jpg')},
+ '1802':{src:cf('Mt Hiei Enryakuji temple , 比叡山 延暦寺 - panoramio (12).jpg'),alt:'히에이잔 엔랴쿠지',source:cp('Mt Hiei Enryakuji temple , 比叡山 延暦寺 - panoramio (12).jpg')},
+ '1803':{src:cf('Shrine above torii - Ishiyamadera - Otsu, Shiga - DSC07501.JPG'),alt:'이시야마데라',source:cp('Shrine above torii - Ishiyamadera - Otsu, Shiga - DSC07501.JPG')},
+ '1804':{src:cf('Mii-dera Otsu Shiga pref05n4500.jpg'),alt:'미이데라',source:cp('Mii-dera Otsu Shiga pref05n4500.jpg')},
+ '1805':{src:cf('Biwako valley23n.jpg'),alt:'비와코 밸리',source:cp('Biwako valley23n.jpg')},
+ '1806':{src:cf('Lake Biwa Museum 20201024 35.jpg'),alt:'비와호 박물관',source:cp('Lake Biwa Museum 20201024 35.jpg')},
+ '1807':{src:cf('Shiga Hachimanbori.jpg'),alt:'하치만보리',source:cp('Shiga Hachimanbori.jpg')},
+ '1808':{src:cf('La Collina OMIHACHIMAN 01.jpg'),alt:'라 코리나 오미하치만',source:cp('La Collina OMIHACHIMAN 01.jpg')},
+ '1809':{src:cf('Azuchi-Castle.jpg'),alt:'아즈치성터',source:cp('Azuchi-Castle.jpg')},
+ '1810':{src:cf('211021 Kurokabe Square Nagahama Shiga prefecture Japan01s3.jpg'),alt:'구로카베 스퀘어',source:cp('211021 Kurokabe Square Nagahama Shiga prefecture Japan01s3.jpg')},
+ '1811':{src:cf('Chikubushima enkei-2.JPG'),alt:'치쿠부시마',source:cp('Chikubushima enkei-2.JPG')},
+ '1812':{src:cf('Shirahige jinja (Takashima, Shiga) hdsr Shrine S5 05.jpg'),alt:'시라히게 신사',source:cp('Shirahige jinja (Takashima, Shiga) hdsr Shrine S5 05.jpg')},
+ '1813':{src:cf('Makino Metasequoia.JPG'),alt:'메타세쿼이아 가로수길',source:cp('Makino Metasequoia.JPG')},
+ '1814':{src:cf('Koga-no-sato Ninja village , 甲賀の里 忍術村 - panoramio (3).jpg'),alt:'고카노사토 닌자술촌',source:cp('Koga-no-sato Ninja village , 甲賀の里 忍術村 - panoramio (3).jpg')},
+ '1815':{src:cf('241119 MIHO MUSEUM Koga Shiga pref Japan06s3.jpg'),alt:'MIHO MUSEUM',source:cp('241119 MIHO MUSEUM Koga Shiga pref Japan06s3.jpg')}
+ };
+ const intros={
+ '시가':['','일본 최대의 호수 비와호를 중심으로 국보 성곽과 세계유산 사찰, 오미 상인 마을, 닌자 문화와 산악 풍경이 이어지는 여행지입니다.'],
+ '히코네·고토':['','국보 히코네성과 다이묘 정원을 중심으로 비와호 동쪽의 성곽 역사와 옛 도시 풍경을 즐길 수 있는 지역입니다.'],
+ '오쓰·히에이잔':['','교토와 가까운 비와호 남서쪽에서 오래된 사찰과 산악 신앙, 호수 전망을 함께 즐길 수 있는 지역입니다.'],
+ '비와호 남부':['','비와호의 자연과 생활문화를 박물관과 호숫가 풍경을 통해 이해하기 좋은 남부 지역입니다.'],
+ '오미하치만·아즈치':['','오미 상인의 수로 마을과 전국시대 성터, 현대적인 건축·디저트 명소를 함께 즐길 수 있는 지역입니다.'],
+ '고호쿠·나가하마':['','나가하마의 옛 상가와 비와호 북부의 섬 신앙을 함께 즐길 수 있는 호북 지역입니다.'],
+ '고세이·다카시마':['','비와호 서안의 신사와 가로수길, 산과 호수가 만드는 계절 풍경을 즐길 수 있는 지역입니다.'],
+ '고카·시가라키':['','고카 닌자 문화와 시가라키 산중의 현대 건축·미술을 함께 만날 수 있는 시가 남동부 지역입니다.']
+ };
+ const foods=[
+ {name:'오미규',area:'시가 전역',kind:'지역 특산',where:'시가 전역',description:'시가에서 오래 사육해 온 브랜드 와규로, 섬세한 마블링과 부드러운 식감이 특징입니다.',source:'https://global.biwako-visitors.jp/'},
+ {name:'후나즈시',area:'시가 전역',kind:'향토·발효음식',where:'비와호 주변',description:'붕어를 소금과 밥으로 장기간 발효시킨 비와호의 전통 나레즈시로, 강한 향과 산미가 특징입니다.',source:'https://global.biwako-visitors.jp/'},
+ {name:'사바 소멘',area:'고호쿠·나가하마',kind:'향토·지역 대표',where:'나가하마시',description:'달콤짭짤하게 조린 고등어와 소면을 함께 먹는 나가하마의 향토 음식입니다.',source:'https://global.biwako-visitors.jp/'},
+ {name:'오미 짬뽕',area:'히코네·고토',kind:'향토·지역 대표',where:'히코네시',description:'맑은 일본식 육수에 채소를 듬뿍 올리는 히코네 발상의 면 요리로, 식초를 더해 맛을 바꾸어 먹기도 합니다.',source:'https://global.biwako-visitors.jp/'},
+ {name:'비와마스 요리',area:'고호쿠·나가하마',kind:'호수 생선',where:'비와호 주변',description:'비와호 고유 아종인 비와마스를 회·구이·밥 등으로 즐기는 호수 지역의 계절 음식입니다.',source:'https://global.biwako-visitors.jp/'},
+ {name:'아카콘냐쿠',area:'오미하치만·아즈치',kind:'지역 특산',where:'오미하치만시',description:'선명한 붉은색이 특징인 오미하치만의 곤약으로, 조림이나 반찬으로 자주 사용됩니다.',source:'https://global.biwako-visitors.jp/'}
+ ];
+ const foodDetails={
+ '오미규':{kind:'한 끼',taste:'부드러운 육질과 풍부한 지방의 감칠맛',how:'스테이크·스키야키·샤부샤부 등 조리법과 예산에 맞춰 골라보세요.'},
+ '후나즈시':{kind:'발효음식·기념품',taste:'강한 발효향과 산미, 짭짤한 감칠맛',how:'처음이라면 소량으로 맛보고 향이 강한 전통식품이라는 점을 고려하세요.'},
+ '사바 소멘':{kind:'한 끼',taste:'고등어 조림의 단짠맛과 부드러운 소면',how:'나가하마 구로카베 주변의 향토음식점에서 한 끼로 즐겨보세요.'},
+ '오미 짬뽕':{kind:'한 끼',taste:'맑은 육수와 채소의 단맛',how:'기본 국물을 맛본 뒤 현지식으로 식초를 조금 더해 변화를 비교해보세요.'},
+ '비와마스 요리':{kind:'계절 해산물',taste:'담백한 지방과 은은한 단맛',how:'제철과 취급 여부를 확인해 회·구이·비와마스밥 등으로 맛보세요.'},
+ '아카콘냐쿠':{kind:'반찬·기념품',taste:'담백하고 탄력 있는 식감',how:'조림 반찬으로 맛보거나 진공 포장 제품을 기념품으로 골라보세요.'}
+ };
+ const foodPhotos={
+ '오미규':{src:cf('Omi Beef Rice & Matsusaka Beef Hamburg Steak Bento.jpg'),source:cp('Omi Beef Rice & Matsusaka Beef Hamburg Steak Bento.jpg')},
+ '후나즈시':{src:cf('Funazushi.jpg'),source:cp('Funazushi.jpg')},
+ '사바 소멘':{src:cf('Saba-Sōmen Nagahama City Shiga Prefecture 2023-9-26.jpg'),source:cp('Saba-Sōmen Nagahama City Shiga Prefecture 2023-9-26.jpg')},
+ '오미 짬뽕':{src:cf('Oumi champon 002.jpg'),source:cp('Oumi champon 002.jpg')},
+ '비와마스 요리':{src:cf('Biwa Trout(Lake Biwa-JP).jpg'),source:cp('Biwa Trout(Lake Biwa-JP).jpg')},
+ '아카콘냐쿠':{src:cf('Akakonnyaku.jpg'),source:cp('Akakonnyaku.jpg')}
+ };
+ const events=[
+ {id:'s-hikone-sakura',pref:'시가',name:'히코네성 벚꽃 시즌',area:'히코네·고토',months:[3,4],timing:'예년 3월 하순~4월 중순 · 개화에 따라 변동',scheduleType:'예년 시기 · 개화 확인',type:'벚꽃·계절',description:'히코네성의 해자와 성곽 주변을 벚꽃이 둘러싸는 봄철 대표 방문 시기입니다. 야간 조명 여부는 해당 연도 안내를 확인하세요.',source:'https://www.biwako-visitors.jp/spot/detail/838/'},
+ {id:'s-nagahama-hikiyama',pref:'시가',name:'나가하마 히키야마 마쓰리',area:'고호쿠·나가하마',months:[4],timing:'예년 4월 중순',scheduleType:'매년 일정 발표',type:'마쓰리·전통행사',description:'화려한 수레 위에서 어린이 가부키가 공연되는 나가하마의 대표 봄 축제로, 중심 시가지에서 수레와 전통 공연을 볼 수 있습니다.',source:'https://www.biwako-visitors.jp/'},
+ {id:'s-biwako-fireworks',pref:'시가',name:'비와호 대불꽃놀이',area:'오쓰·히에이잔',months:[8],timing:'예년 8월 초',scheduleType:'매년 일정 발표',type:'불꽃놀이',description:'오쓰항 앞 비와호 수면을 배경으로 대형 불꽃이 펼쳐지는 시가의 대표 여름 행사입니다. 유료석과 교통 통제를 확인하세요.',source:'https://www.biwako-visitors.jp/'},
+ {id:'s-otsu-festival',pref:'시가',name:'오쓰 마쓰리',area:'오쓰·히에이잔',months:[10],timing:'예년 10월 초~중순',scheduleType:'매년 일정 발표',type:'마쓰리·수레',description:'가라쿠리 장치를 갖춘 화려한 히키야마 수레가 오쓰 도심을 순행하는 전통 가을 축제입니다.',source:'https://www.biwako-visitors.jp/'},
+ {id:'s-hachiman-sagicho',pref:'시가',name:'오미하치만 사기초 마쓰리',area:'오미하치만·아즈치',months:[3],timing:'예년 3월 중순',scheduleType:'매년 일정 발표',type:'마쓰리·불축제',description:'화려하게 장식한 사기초를 거리에 내고 마지막에 불태우는 오미하치만의 전통 봄 축제입니다.',source:'https://www.biwako-visitors.jp/'}
+ ];
+ const routes=[
+ {id:'r-1800-0',pref:'시가',areas:['히코네·고토'],title:'히코네성과 겐큐엔 하루',duration:'1일',intro:'국보 성곽과 다이묘 정원을 한 권역에서 여유롭게 둘러보는 히코네 대표 일정입니다.',note:'천수 내부 계단이 가파르므로 관람시간을 넉넉히 잡고 정원 산책을 뒤에 두세요.',days:[{label:'히코네·고토',places:[1800,1801],schedule:[[1800,'09:30',places.find(p=>p.id===1800).activity],[null,'12:30','히코네성 주변에서 점심·휴식'],[1801,'14:00',places.find(p=>p.id===1801).activity]]}],image:''},
+ {id:'r-1800-1',pref:'시가',areas:['오쓰·히에이잔'],title:'이시야마데라와 미이데라 하루',duration:'1일',intro:'오쓰의 두 고찰을 철도와 시내 이동으로 이어보는 역사·정원 일정입니다.',note:'두 사찰 사이 거리가 있어 게이한선과 도보 이동 시간을 따로 잡으세요.',days:[{label:'오쓰·히에이잔',places:[1803,1804],schedule:[[1803,'09:30',places.find(p=>p.id===1803).activity],[null,'12:00','오쓰 시내 이동·점심'],[1804,'13:30',places.find(p=>p.id===1804).activity]]}],image:''},
+ {id:'r-1800-2',pref:'시가',areas:['오쓰·히에이잔'],title:'히에이잔 엔랴쿠지 하루',duration:'1일',intro:'히에이산의 여러 사찰 구역을 하루에 나누어 둘러보는 산악 역사 일정입니다.',note:'구역 간 이동과 케이블·버스 운행시간을 먼저 확인하고 하산편을 놓치지 않도록 계획하세요.',days:[{label:'오쓰·히에이잔',places:[1802],schedule:[[1802,'10:00',places.find(p=>p.id===1802).activity],[null,'13:00','산 위에서 점심·휴식 및 다른 구역 이동']]}],image:''},
+ {id:'r-1800-3',pref:'시가',areas:['오쓰·히에이잔'],title:'비와코 밸리 전망 반나절',duration:'반나절',intro:'로프웨이로 산 위에 올라 비와호 전경을 즐기는 자연 전망 일정입니다.',note:'강풍·정비로 로프웨이가 운휴할 수 있으므로 출발 전에 운영 여부를 확인하세요.',days:[{label:'오쓰·히에이잔',places:[1805],schedule:[[1805,'10:00',places.find(p=>p.id===1805).activity],[null,'13:00','산 위 또는 하산 후 점심·휴식']]}],image:''},
+ {id:'r-1800-4',pref:'시가',areas:['오미하치만·아즈치'],title:'하치만보리와 라 코리나 하루',duration:'1일',intro:'오미 상인의 옛 수로 거리와 현대적인 건축·디저트 명소를 함께 즐기는 일정입니다.',note:'주말 라 코리나는 대기시간이 길 수 있어 오전과 오후 순서를 혼잡도에 맞춰 바꿔도 좋습니다.',days:[{label:'오미하치만·아즈치',places:[1807,1808],schedule:[[1807,'09:30',places.find(p=>p.id===1807).activity],[null,'12:00','오미하치만에서 점심·이동'],[1808,'13:30',places.find(p=>p.id===1808).activity]]}],image:''},
+ {id:'r-1800-5',pref:'시가',areas:['오미하치만·아즈치'],title:'아즈치성터와 하치만보리 하루',duration:'1일',intro:'전국시대 성터 산책과 오미 상인 마을의 수로 풍경을 이어보는 역사 일정입니다.',note:'아즈치성터는 계단과 경사가 많으므로 체력을 고려하고 이후 평지 일정으로 이어가세요.',days:[{label:'오미하치만·아즈치',places:[1809,1807],schedule:[[1809,'09:30',places.find(p=>p.id===1809).activity],[null,'12:30','아즈치·오미하치만 이동 및 점심'],[1807,'14:00',places.find(p=>p.id===1807).activity]]}],image:''},
+ {id:'r-1800-6',pref:'시가',areas:['고호쿠·나가하마'],title:'치쿠부시마와 구로카베 하루',duration:'1일',intro:'비와호 북부의 섬 신앙과 나가하마 옛 상가를 하루에 이어보는 일정입니다.',note:'배편 시각이 일정의 기준이므로 치쿠부시마 유람선 시간을 먼저 고정한 뒤 구로카베 방문을 배치하세요.',days:[{label:'고호쿠·나가하마',places:[1811,1810],schedule:[[1811,'09:00',places.find(p=>p.id===1811).activity],[null,'13:00','나가하마항 귀환·점심'],[1810,'14:30',places.find(p=>p.id===1810).activity]]}],image:''},
+ {id:'r-1800-7',pref:'시가',areas:['고세이·다카시마'],title:'시라히게 신사와 메타세쿼이아 하루',duration:'1일',intro:'비와호의 물가 신사와 다카시마의 긴 가로수 풍경을 함께 즐기는 드라이브·자연 일정입니다.',note:'대중교통만으로 두 장소를 잇기 불편할 수 있어 버스 시간이나 렌터카·택시 이용을 확인하세요.',days:[{label:'고세이·다카시마',places:[1812,1813],schedule:[[1812,'09:30',places.find(p=>p.id===1812).activity],[null,'11:30','다카시마 북쪽으로 이동·점심'],[1813,'13:30',places.find(p=>p.id===1813).activity]]}],image:''},
+ {id:'r-1800-8',pref:'시가',areas:['고카·시가라키'],title:'고카 닌자와 MIHO MUSEUM 하루',duration:'1일',intro:'고카의 닌자 문화 체험과 산중 현대 미술관을 하루에 나누어 보는 일정입니다.',note:'두 시설 모두 철도역에서 거리가 있으므로 셔틀·버스 운행일과 시간을 반드시 확인하세요.',days:[{label:'고카·시가라키',places:[1814,1815],schedule:[[1814,'10:00',places.find(p=>p.id===1814).activity],[null,'12:30','고카·시가라키 이동 및 점심'],[1815,'14:00',places.find(p=>p.id===1815).activity]]}],image:''},
+ {id:'r-1800-9',pref:'시가',areas:['비와호 남부'],title:'비와호 박물관 반나절',duration:'반나절',intro:'비와호의 자연과 사람의 생활을 실내 전시로 깊게 살펴보는 일정입니다.',note:'전시 규모가 커서 관심 분야에 따라 관람 시간이 길어질 수 있습니다.',days:[{label:'비와호 남부',places:[1806],schedule:[[1806,'10:00',places.find(p=>p.id===1806).activity],[null,'13:00','박물관 주변에서 점심·호숫가 산책']]}],image:''}
+ ];
+ const routePlanning={};
+ for(const r of routes){const day=r.days[0];routePlanning[r.id]={start:places.find(p=>p.id===day.places[0])?.name||'',end:places.find(p=>p.id===day.places.at(-1))?.name||'',move:'구간별 길찾기로 도보·대중교통을 선택하세요.',meal:day.schedule.find(x=>x[0]===null)?.[2]||'일정 중간에 식사·휴식',rain:'야외 일정은 날씨에 맞춰 줄이고 실내 시설 관람을 늘리세요.',skip:'시간이 부족하면 마지막 장소를 다음 일정으로 미루세요.',warning:r.note,schedule:day.schedule}}
+ const facts=Object.fromEntries(places.map(p=>[String(p.id),[guides[String(p.id)].duration]]));
+ const credits=[
+ {label:'히코네성',source:photos['1800'].source,author:'Arian Zwegers',license:'CC BY 2.0',licenseUrl:'https://creativecommons.org/licenses/by/2.0/'},
+ {label:'겐큐엔',source:photos['1801'].source,author:'663highland',license:'CC BY-SA / GFDL',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'},
+ {label:'하치만보리',source:photos['1807'].source,author:'Yusuke.ogawa',license:'Public domain',licenseUrl:photos['1807'].source},
+ {label:'라 코리나 오미하치만',source:photos['1808'].source,author:'Tawashi2006',license:'CC BY 3.0',licenseUrl:'https://creativecommons.org/licenses/by/3.0/'},
+ {label:'구로카베 스퀘어',source:photos['1810'].source,author:'663highland',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},
+ {label:'메타세쿼이아 가로수길',source:photos['1813'].source,author:'Opqr',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},
+ {label:'MIHO MUSEUM',source:photos['1815'].source,author:'663highland',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'}
+ ];
+ regionalCatalog.push({pref:'시가',places,events,foods,photos,guides,intros,heroes:{'히코네·고토':1800,'오쓰·히에이잔':1802,'비와호 남부':1806,'오미하치만·아즈치':1807,'고호쿠·나가하마':1811,'고세이·다카시마':1812,'고카·시가라키':1815},facts,foodDetails,foodPhotos,routePlanning,routes,credits,hero:photos['1800']});
+}
+
+const hy=regionalCatalog.find(x=>x.pref==='효고');
+if(hy){
+ const add=[
+ {id:1718,pref:'효고',area:'단바사사야마',town:'단바사사야마시',name:'사사야마성 오쇼인',tag:'성터·역사·성하마을',description:'도쿠가와 이에야스의 명으로 축성된 사사야마성의 역사를 전하는 대서원으로, 해자와 석축, 복원 건축과 전시를 함께 볼 수 있습니다.',activity:'오쇼인 내부 전시를 관람한 뒤 해자와 성터, 주변 성하마을까지 천천히 걸어보세요.',checked:'2026.09.30',lat:null,lon:null,source:'https://www.hyogo-tourism.jp/world/spot/detail_1077.html',note,mapQuery:'兵庫 篠山城大書院'},
+ {id:1719,pref:'효고',area:'아카시',town:'아카시시',name:'아카시성',tag:'성터·망루·공원',description:'에도 초기 축성된 성으로 천수는 없지만 두 개의 현존 망루와 높은 석벽이 남아 아카시공원 풍경과 함께 즐길 수 있습니다.',activity:'공원에서 두 망루와 석벽을 바라보고 성터 산책로를 걸어보세요. 공개일에는 망루 내부 관람 여부도 확인하세요.',checked:'2026.09.30',lat:34.6525,lon:134.9911,source:'https://www.hyogo-tourism.jp/world/feature/detail_21.html',note,mapQuery:'兵庫 明石城'},
+ {id:1720,pref:'효고',area:'아코',town:'아코시',name:'아코성터',tag:'성터·역사·정원',description:'아코 사건과 47인의 낭인 이야기로 널리 알려진 아코번의 성터로, 복원 성문과 석벽, 정원 유적이 남아 있습니다.',activity:'오테몬과 혼마루 주변을 걸으며 성터를 둘러보고 오이시 신사 등 인근 충신 관련 장소와 함께 계획해보세요.',checked:'2026.09.30',lat:null,lon:null,source:'https://www.hyogo-tourism.jp/world/feature/detail_119.html',note,mapQuery:'兵庫 赤穂城跡'},
+ {id:1721,pref:'효고',area:'한신·다카라즈카',town:'다카라즈카시',name:'다카라즈카 대극장',tag:'공연·극장·문화',description:'여성 배우로 구성된 다카라즈카 가극의 본거지로, 화려한 무대공연과 전용 극장 공간을 경험할 수 있는 문화 명소입니다.',activity:'공연 일정을 확인해 좌석을 예매하고 극장 주변과 기념품 숍을 함께 둘러보세요.',checked:'2026.09.30',lat:null,lon:null,source:'https://kageki.hankyu.co.jp/english/',note,mapQuery:'兵庫 宝塚大劇場'},
+ {id:1722,pref:'효고',area:'고베 중심',town:'고베시',name:'고베 포트타워',tag:'전망·항구·랜드마크',description:'고베항을 상징하는 붉은 격자 구조의 전망 타워로, 항구와 롯코산·도시 풍경을 높은 곳에서 조망할 수 있습니다.',activity:'전망층에서 고베항과 도심을 바라보고 메리켄 파크·하버랜드 야경과 함께 둘러보세요.',checked:'2026.09.30',lat:34.6826,lon:135.1867,source:'https://www.kobe-port-tower.com/',note,mapQuery:'兵庫 神戸ポートタワー'}
+ ];
+ for(const p of add){p.mapUrl=map(p.mapQuery);if(!hy.places.some(x=>x.id===p.id))hy.places.push(p)}
+ Object.assign(hy.guides,{
+ '1718':{access:'JR 사사야마구치역에서 버스로 니카이마치 정류장까지 이동한 뒤 도보 약 5분입니다.',duration:'1시간 30분~2시간'},
+ '1719':{access:'JR·산요 아카시역에서 도보 약 5분입니다.',duration:'1~1시간 30분'},
+ '1720':{access:'JR 반슈아코역에서 도보 약 15분입니다.',duration:'1~2시간'},
+ '1721':{access:'한큐·JR 다카라즈카역에서 도보로 이동하세요.',duration:'공연 포함 3~4시간'},
+ '1722':{access:'JR·한신 모토마치역에서 도보 약 15분 또는 지하철 미나토모토마치역에서 도보로 이동하세요.',duration:'45~90분'}
+ });
+ for(const p of add)hy.facts[String(p.id)]=[hy.guides[String(p.id)].duration];
+ const pf={1718:'Sasayama Castle07st3200.jpg',1719:'Akashi Castle39nt3200.jpg',1720:'141115 Ako Castle Ako Hyogo pref Japan02s3.jpg',1721:'Takarazuka Grand Theater05s4s3104.jpg',1722:'Kobe port tower11s3200.jpg'};
+ for(const [id,file] of Object.entries(pf)){const p=hy.places.find(x=>String(x.id)===id);hy.photos[id]={src:cf(file),alt:p.name,source:cp(file)}}
+ Object.assign(hy.intros,{
+ '단바사사야마':['','사사야마성을 중심으로 무가저택과 상가, 단바의 먹거리가 이어지는 역사 깊은 성하마을 지역입니다.'],
+ '아카시':['','세토내해와 아카시해협을 바라보며 성터와 항구 도시의 일상을 함께 즐길 수 있는 지역입니다.'],
+ '아코':['','47인의 낭인 이야기로 알려진 성터 역사와 세토내해의 바다 풍경을 함께 만날 수 있는 서부 하리마 지역입니다.'],
+ '한신·다카라즈카':['','다카라즈카 가극을 비롯한 공연 문화와 한신권의 도시 여행을 즐길 수 있는 효고 동부 지역입니다.']
+ });
+ Object.assign(hy.heroes,{'단바사사야마':1718,'아카시':1719,'아코':1720,'한신·다카라즈카':1721});
+ const ev=[
+ {id:'h-ako-gishi',pref:'효고',name:'아코 의사제',area:'아코',months:[12],timing:'매년 12월 14일',scheduleType:'고정 날짜',type:'역사행렬·마쓰리',description:'아코 사건의 47인을 기리는 전통 행사로, 아코성터와 시내에서 의사 행렬과 다양한 공연이 이어집니다.',source:'https://www.hyogo-tourism.jp/world/feature/detail_119.html'},
+ {id:'h-kobe-festival',pref:'효고',name:'고베 마쓰리',area:'고베 중심',months:[5],timing:'예년 5월',scheduleType:'매년 일정 발표',type:'도시축제·퍼레이드',description:'고베 중심가에서 퍼레이드와 무대 공연이 이어지는 시민 축제로, 개최일과 교통 통제를 해당 연도에 확인하세요.',source:'https://www.hyogo-tourism.jp/'},
+ {id:'h-himeji-yukata',pref:'효고',name:'히메지 유카타 마쓰리',area:'히메지',months:[6],timing:'예년 6월 하순',scheduleType:'매년 일정 발표',type:'마쓰리·여름행사',description:'히메지 오사카베 신사 주변에서 유카타 차림의 방문객과 노점, 지역 행사가 어우러지는 초여름 축제입니다.',source:'https://www.hyogo-tourism.jp/'}
+ ];
+ for(const e of ev)if(!hy.events.some(x=>x.id===e.id))hy.events.push(e);
+ const r6=hy.routes.find(x=>x.id==='r-1700-6');if(r6){r6.title='난킨마치와 고베항 전망 하루';r6.intro='차이나타운에서 항구 공원과 포트타워, 하버랜드까지 걸어서 이어보는 고베 중심 일정입니다.';r6.days=[{label:'고베 중심',places:[1710,1700,1722,1711],schedule:[[1710,'10:00',hy.places.find(p=>p.id===1710)?.activity||'난킨마치를 둘러보세요.'],[null,'12:00','난킨마치·모토마치에서 점심'],[1700,'13:30',hy.places.find(p=>p.id===1700)?.activity||'메리켄 파크를 산책해보세요.'],[1722,'15:00',hy.places.find(p=>p.id===1722).activity],[1711,'17:00',hy.places.find(p=>p.id===1711)?.activity||'하버랜드 야경을 즐겨보세요.']]}];hy.routePlanning[r6.id]={start:'난킨마치',end:'고베 하버랜드',move:'대부분 도보로 이어지며 필요하면 시내 지하철·버스를 이용하세요.',meal:'난킨마치·모토마치에서 점심',rain:'비가 오면 포트타워와 쇼핑시설 중심으로 실내 일정을 늘리세요.',skip:'시간이 부족하면 하버랜드 야경을 별도 일정으로 두세요.',warning:'포트타워 입장 시간과 메리켄 파크 행사 여부를 확인하세요.',schedule:r6.days[0].schedule}}
+ const nr=[
+ {id:'r-1700-13',pref:'효고',areas:['단바사사야마'],title:'사사야마성하마을 하루',duration:'1일',intro:'사사야마성 오쇼인에서 시작해 성하마을과 전통 상가를 천천히 걷는 일정입니다.',note:'상점 휴무일과 버스 시간을 확인하고 검은콩·밤 등 단바 먹거리 시간을 따로 두세요.',days:[{label:'단바사사야마',places:[1718],schedule:[[1718,'10:00',hy.places.find(p=>p.id===1718).activity],[null,'12:00','사사야마 성하마을에서 점심·산책'],[1718,'14:00','성 주변 무가저택·상가 거리까지 범위를 넓혀 걸어보세요.']]}],image:''},
+ {id:'r-1700-14',pref:'효고',areas:['아카시','고베 서부·마이코'],title:'아카시성과 마이코 해협 하루',duration:'1일',intro:'아카시의 성터와 세토내해 해협 전망을 철도로 짧게 이어보는 일정입니다.',note:'아카시역과 마이코역 사이 JR 이동이 간단해 두 지역을 하루에 묶기 좋습니다.',days:[{label:'아카시·마이코',places:[1719,1713],schedule:[[1719,'10:00',hy.places.find(p=>p.id===1719).activity],[null,'12:00','아카시에서 점심·JR 이동'],[1713,'13:30',hy.places.find(p=>p.id===1713)?.activity||'아카시해협대교와 마이코 해상산책로를 둘러보세요.']]}],image:''},
+ {id:'r-1700-15',pref:'효고',areas:['아코'],title:'아코성 역사 반나절',duration:'반나절',intro:'아코성터와 47인 관련 역사 장소를 걸어서 연결하는 하리마 서부 일정입니다.',note:'역사 시설의 휴관일을 확인하고 시간이 남으면 아코 온천이나 해안 일정과 나눠보세요.',days:[{label:'아코',places:[1720],schedule:[[1720,'10:00',hy.places.find(p=>p.id===1720).activity],[null,'12:30','반슈아코역·성터 주변에서 점심·휴식']]}],image:''},
+ {id:'r-1700-16',pref:'효고',areas:['한신·다카라즈카'],title:'다카라즈카 가극 관람 하루',duration:'1일',intro:'공연 시간을 중심으로 극장과 다카라즈카 시내 산책을 구성하는 문화 일정입니다.',note:'티켓 예매가 일정의 핵심이므로 공연 날짜와 입장 시간을 먼저 확정하세요.',days:[{label:'한신·다카라즈카',places:[1721],schedule:[[1721,'11:00','극장 주변과 기념품 숍을 둘러본 뒤 예매한 공연 시간에 맞춰 입장하세요.'],[null,'15:00','공연 종료 후 다카라즈카역 주변에서 식사·산책']]}],image:''}
+ ];
+ for(const rr of nr)if(!hy.routes.some(x=>x.id===rr.id))hy.routes.push(rr);
+ Object.assign(hy.routePlanning,{
+ 'r-1700-13':{start:'사사야마성 오쇼인',end:'사사야마성 오쇼인',move:'사사야마구치역에서 버스로 성하마을에 들어간 뒤 도보로 둘러보세요.',meal:'사사야마 성하마을에서 점심·산책',rain:'비가 오면 오쇼인과 실내 역사시설 비중을 늘리세요.',skip:'시간이 부족하면 외곽 상가 산책을 줄이세요.',warning:nr[0].note,schedule:nr[0].days[0].schedule},
+ 'r-1700-14':{start:'아카시성',end:'아카시해협대교·마이코 해상산책로',move:'JR 아카시역에서 마이코역까지 철도로 이동하세요.',meal:'아카시에서 점심·JR 이동',rain:'비가 오면 성터 산책을 줄이고 마이코 해상산책로 실내 구간을 중심으로 둘러보세요.',skip:'시간이 부족하면 아카시성 공원 산책 시간을 줄이세요.',warning:nr[1].note,schedule:nr[1].days[0].schedule},
+ 'r-1700-15':{start:'아코성터',end:'아코성터',move:'반슈아코역과 성터 주변은 도보 또는 시내 교통을 이용하세요.',meal:'반슈아코역·성터 주변에서 점심·휴식',rain:'비가 오면 야외 성터 산책을 줄이고 역사 전시시설 중심으로 조정하세요.',skip:'시간이 부족하면 외곽 정원 산책을 줄이세요.',warning:nr[2].note,schedule:nr[2].days[0].schedule},
+ 'r-1700-16':{start:'다카라즈카 대극장',end:'다카라즈카 대극장',move:'한큐·JR 다카라즈카역에서 도보로 이동하세요.',meal:'공연 전후 다카라즈카역 주변에서 식사',rain:'극장 중심 일정이므로 날씨 영향이 적지만 역에서 이동 시 우산을 준비하세요.',skip:'공연 외 시내 산책은 선택 일정입니다.',warning:nr[3].note,schedule:nr[3].days[0].schedule}
+ });
+ for(const x of [{label:'사사야마성 오쇼인',id:1718,author:'663highland',license:'CC BY-SA 3.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'},{label:'아카시성',id:1719,author:'663highland',license:'CC BY-SA 3.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'},{label:'아코성터',id:1720,author:'663highland',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},{label:'다카라즈카 대극장',id:1721,author:'663highland',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},{label:'고베 포트타워',id:1722,author:'663highland',license:'CC BY-SA 3.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'}]){const src=hy.photos[String(x.id)]?.source;if(src&&!hy.credits.some(c=>c.source===src))hy.credits.push({label:x.label,source:src,author:x.author,license:x.license,licenseUrl:x.licenseUrl})}
+}
+})();
