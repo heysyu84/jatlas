@@ -48,7 +48,7 @@ function renderWeatherData(host,data,point){
 
  const popover=document.createElement('div');popover.className='weatherPopover';popover.hidden=!weatherExpanded;
  const head=document.createElement('div');head.className='weatherPopoverHead';
- const title=document.createElement('div');title.innerHTML='<h2>'+weatherText('현재 날씨')+'</h2><p>'+scope+' · '+weatherText('대표 지점')+' '+point.name+'</p>';
+ const title=document.createElement('div');title.innerHTML='<h2>'+weatherText('현재 날씨')+'</h2>';
  const now=document.createElement('div');now.className='weatherNowDetail';now.textContent=current[0]+' '+weatherRound(c.temperature_2m,1)+'° · '+weatherText(current[1])+' · '+weatherText('체감')+' '+weatherRound(c.apparent_temperature,1)+'°';
  head.append(title,now);popover.append(head);
 
