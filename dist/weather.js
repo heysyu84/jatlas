@@ -53,6 +53,9 @@ function renderWeatherData(host,data,point){
  head.append(title,now);popover.append(head);
 
  const days=document.createElement('div');days.className='weatherDays';
+ const currentCard=document.createElement('article');currentCard.className='weatherDay weatherDayCurrent';
+ currentCard.innerHTML='<strong>'+weatherText('현재 날씨')+'</strong><span class="weatherIcon">'+current[0]+'</span><span>'+weatherText(current[1])+'</span><span>'+weatherRound(c.temperature_2m,1)+'°</span><small>'+weatherText('체감')+' '+weatherRound(c.apparent_temperature,1)+'°</small>';
+ days.append(currentCard);
  const times=d.time||[];
  for(let i=0;i<Math.min(5,times.length);i++){
   const cond=weatherCondition(d.weather_code?.[i]),card=document.createElement('article');card.className='weatherDay';
