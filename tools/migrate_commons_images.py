@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 complete local src verification v9
+# Migration revision: 2026-10-01 Oita batch
 #!/usr/bin/env python3
 from __future__ import annotations
 
