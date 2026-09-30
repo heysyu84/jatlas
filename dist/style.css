@@ -189,3 +189,14 @@
  .eventRegionDirectory .chiprow{gap:6px}
  .eventRegionDirectory .chiprow button{font-size:13px;padding:8px 10px}
 }
+
+/* Municipalities in completed prefectures with no registered travel content. */
+#municipalChoices button.noContent,
+.searchhit.noContent,
+#crumb .noContent,
+#title.noContent,
+#mapTitle.noContent{color:#a7b2be!important}
+#municipalChoices button.noContent{background:#fafbfc!important;border-color:#edf1f4!important}
+.municipalLabel.noContent span,
+.leaflet-tooltip .noContent{color:#aab4bf!important;background:#f7f9fa!important;border-color:#e8edf1!important}
+.municipalLabel.noContent{opacity:.72}
