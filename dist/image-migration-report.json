@@ -1,51 +1,10 @@
 {
   "commons_candidates": 778,
-  "localized": 768,
-  "downloaded_now": 31,
-  "reused_existing": 737,
-  "failed_count": 10,
-  "failed": [
-    {
-      "file": "Ayamaru Cape Amami.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Chikura Cavern Tanegashima.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Flying fish dish Yakushima.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Honohoshi Coast Amami.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Izumi Crane Observation Center.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Izumi Fumoto Samurai Residences.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Kagoshima kurobuta tonkatsu.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Kirishima Onsen Market.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Lava Nagisa Park footbath Sakurajima.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Shirokuma shaved ice Kagoshima.jpg",
-      "reason": "Commons file not found"
-    }
-  ],
+  "localized": 778,
+  "downloaded_now": 11,
+  "reused_existing": 767,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Amanoiwato Shrine.jpg": "Amanoiwato-east-shrine.jpg",
@@ -63,7 +22,7 @@
     "Chiran Samurai Residence.jpg": "Chiran Samurai Residence01.jpg",
     "Chiran tea.jpg": "Tea Plantation in Chiran 01.jpg",
     "Daikanbo Aso.jpg": "A view of the five mountains of Aso from Daikanbo viewpoint.jpg",
-    "Harajiri Falls.jpg": "Harajiri Falls 2025.jpg",
+    "Harajiri Falls.jpg": "Harajiri Falls in Bungoono City Oita Prefecture.jpg",
     "Hita yakisoba.jpg": "Hita Yakisoba.JPG",
     "Horikiri Pass Miyazaki.jpg": "Horikiri Pass Miyazaki 2016.JPG",
     "Ibusuki sand bath.jpg": "Ibusuki-Sand-Bath.JPG",
@@ -80,13 +39,12 @@
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
     "Kinrinko Lake Yufuin.jpg": "Stream near Tenso Shrine and Lake Kinrinko.JPG",
     "Kinsakubaru Amami.jpg": "Kinsakubaru wildwood.jpg",
-    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-1.jpg",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-3.jpg",
     "Kuju Flower Park.jpg": "Kuju Flower Park(3553982332).jpg",
     "Kuma River Hitoyoshi.jpg": "Kuma River in Hitoyoshi.jpg",
     "Kumamoto Castle 2019.jpg": "Kumamoto Castle, Kumamoto; April 2010.jpg",
     "Kunimigaoka Takachiho.jpg": "Kunimigaoka, Takachiho-1.jpg",
     "Kusasenri Aso.jpg": "Aso Kusasenri horses (52133462269).jpg",
-    "Lake Ikeda Kaimondake.jpg": "Map of Kaimondake and Lake Ikeda.png",
     "Mameda-machi Hita.jpg": "Mameda-machi, Hita 02.jpg",
     "Mangrove Park Amami.jpg": "Mangrove park1.JPG",
     "Maruo Falls.jpg": "Maruo Fall 01.jpg",
@@ -129,10 +87,11 @@
     "Usa Jingu.jpg": "Usa Jingu-235.jpg",
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
-    "Yakusugi Land.jpg": "Yakusugi Land 27.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
     "Yaseuma.jpg": "Yaseuma.JPG",
     "Yufuin Onsen.jpg": "Yufuin Onsen -Musōen.jpg",
-    "Yunohira Observatory Sakurajima.jpg": "Sakurajima seen from Yunohira Observatory.jpg"
+    "Yunohira Observatory Sakurajima.jpg": "Sakurajima seen from Yunohira Observatory.jpg",
+    "あやまる岬.jpg": "あやまる岬公園 - panoramio.jpg"
   },
   "changed_js_files": [],
   "remaining_external_src_count": 0,
