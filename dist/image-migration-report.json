@@ -1,39 +1,10 @@
 {
   "commons_candidates": 826,
-  "localized": 819,
-  "downloaded_now": 41,
-  "reused_existing": 778,
-  "failed_count": 7,
-  "failed": [
-    {
-      "file": "Koza Gate Street Okinawa.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Shuri Castle Seiden 2026.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Taketomi Island traditional village.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Tamatorizaki Observatory.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Toriike Miyakojima.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Umibudo sea grapes.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Zakimi Castle Ruins.jpg",
-      "reason": "Commons file not found"
-    }
-  ],
+  "localized": 826,
+  "downloaded_now": 7,
+  "reused_existing": 819,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
@@ -83,7 +54,7 @@
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
     "Kinrinko Lake Yufuin.jpg": "Stream near Tenso Shrine and Lake Kinrinko.JPG",
     "Kinsakubaru Amami.jpg": "Kinsakubaru wildwood.jpg",
-    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-3.jpg",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-1.jpg",
     "Kokusai Dori Naha.jpg": "Kokusai-dori08s3s4440.jpg",
     "Kouri Bridge.jpg": "Kouri Bridge 202006.jpg",
     "Kuju Flower Park.jpg": "Kuju Flower Park(3553982332).jpg",
@@ -102,7 +73,7 @@
     "Miyazaki Karamen.jpg": "NGO Kita Machikado-ya Miyazaki Karamen 20221016-01.jpg",
     "Miyazaki beef.jpg": "Miyazaki Beef rib.jpg",
     "Miyazaki mango.jpg": "Cut Miyazaki mango.jpg",
-    "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
+    "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (02).jpg",
     "Nakagusuku Castle.jpg": "Nakagusuku Castle04n3104.jpg",
     "Nakijin Castle.jpg": "Nakijin Castle 20221229.jpg",
     "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
@@ -119,7 +90,7 @@
     "Ontayaki village.jpg": "Onta Pottery Village 03.jpg",
     "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 07.jpg",
     "Pinaisara Falls.jpg": "Pinaisara Falls (52117077706).jpg",
-    "Rafute.jpg": "Okinawan Rafute.jpg",
+    "Rafute.jpg": "Rafute in Waikiki by takaokun.jpg",
     "Ryukyu Oita cuisine.jpg": "Oita ryukyu.jpg",
     "SAKURA MACHI Kumamoto.jpg": "SAKURA-MACHI-Kumamoto.jpg",
     "Saitobaru Kofungun.jpg": "Saitobaru Kofungun air.jpg",
@@ -148,7 +119,7 @@
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 25.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 27.jpg",
     "Yaseuma.jpg": "Yaseuma.JPG",
     "Yonaha Maehama Beach.jpg": "Yonaha Beach (51924567580).jpg",
     "Yubu Island water buffalo.jpg": "Water buffalo cart Yubu Island 01.jpg",
