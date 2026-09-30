@@ -8,6 +8,11 @@ for(const r of regionalCatalog){
  Object.assign(tokyoVisitGuides,r.guides);
  Object.assign(areaIntros,r.intros);
  for(const [area,id] of Object.entries(r.heroes)){if(r.photos[id])designPhotos[area]=r.photos[id]}
+ for(const area of Object.keys(r.intros||{})){
+  if(area===r.pref||designPhotos[area])continue;
+  const p=r.places.find(x=>x.area===area&&r.photos[x.id]);
+  if(p)designPhotos[area]=r.photos[p.id];
+ }
  for(const p of r.places){if(Number.isFinite(p.lat)&&Number.isFinite(p.lon))pointLocations[p.id]={lat:p.lat,lon:p.lon,note:p.note,source:p.coordinateSource||p.source};}
 }
 const previousRegionalEvents=eventsForPref;eventsForPref=p=>regionalByPref.get(p)?.events||previousRegionalEvents(p);
