@@ -5,9 +5,10 @@ import hashlib
 import json
 import re
 import time
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, quote
 
 import requests
 from PIL import Image, ImageOps
@@ -44,7 +45,7 @@ def collect_filenames(text: str) -> set[str]:
 
     # Static image filenames used by cf()/photoFiles/pf maps.
     if "commons.wikimedia.org" in text or "Special:FilePath" in text or "const cf=" in text:
-        for m in re.finditer(r"(['\"])([^'\"\n]+?\.(?:jpe?g|png|webp))\1", text, re.I):
+        for m in re.finditer(r"(['\"])([^'\"\n]+?\.(?:jpe?g|png))\1", text, re.I):
             value = m.group(2).strip()
             if value.startswith(("http://", "https://", "images/")):
                 continue
@@ -54,50 +55,55 @@ def collect_filenames(text: str) -> set[str]:
 
     return {x for x in out if EXT_RE.search(x)}
 
-def commons_info(session: requests.Session, filename: str) -> dict | None:
-    params = {
-        "action": "query",
-        "format": "json",
-        "prop": "imageinfo",
-        "iiprop": "url|mime|size",
-        "iiurlwidth": "1400",
-        "titles": "File:" + filename,
-        "formatversion": "2",
-    }
-    try:
-        r = session.get(API, params=params, headers=HEADERS, timeout=25)
-        r.raise_for_status()
-        data = r.json()
-        pages = data.get("query", {}).get("pages", [])
-        if not pages or pages[0].get("missing"):
-            return None
-        ii = (pages[0].get("imageinfo") or [None])[0]
-        if not ii:
-            return None
-        return ii
-    except Exception:
-        return None
+_rate_lock = threading.Lock()
+_last_request = 0.0
+_MIN_INTERVAL = 0.28
 
-def save_webp(session: requests.Session, url: str, path: Path) -> tuple[bool, str | None]:
+def _throttle() -> None:
+    global _last_request
+    with _rate_lock:
+        now = time.monotonic()
+        wait = _MIN_INTERVAL - (now - _last_request)
+        if wait > 0:
+            time.sleep(wait)
+        _last_request = time.monotonic()
+
+def save_commons_webp(filename: str, path: Path) -> tuple[bool, str | None]:
     tmp = path.with_suffix(".download")
-    try:
-        r = session.get(url, headers=HEADERS, timeout=60)
-        r.raise_for_status()
-        tmp.write_bytes(r.content)
-        with Image.open(tmp) as im:
-            im = ImageOps.exif_transpose(im)
-            if getattr(im, "is_animated", False):
-                im.seek(0)
-            if im.mode not in ("RGB", "RGBA"):
-                im = im.convert("RGBA" if "A" in im.getbands() else "RGB")
-            im.thumbnail((1400, 1400), Image.Resampling.LANCZOS)
-            path.parent.mkdir(parents=True, exist_ok=True)
-            im.save(path, "WEBP", quality=82, method=6)
-        tmp.unlink(missing_ok=True)
-        return True, None
-    except Exception as e:
-        tmp.unlink(missing_ok=True)
-        return False, str(e)
+    url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + quote(filename, safe="") + "?width=1200"
+    session = requests.Session()
+    for attempt in range(7):
+        try:
+            _throttle()
+            r = session.get(url, headers=HEADERS, timeout=60, allow_redirects=True)
+            if r.status_code in (429, 502, 503, 504):
+                retry = r.headers.get("Retry-After")
+                delay = float(retry) if retry and retry.isdigit() else min(30.0, 1.5 * (2 ** attempt))
+                time.sleep(delay)
+                continue
+            r.raise_for_status()
+            ctype = (r.headers.get("Content-Type") or "").lower()
+            if "image/" not in ctype:
+                return False, f"not an image ({r.status_code}, {ctype or 'unknown content-type'})"
+            tmp.write_bytes(r.content)
+            with Image.open(tmp) as im:
+                im = ImageOps.exif_transpose(im)
+                if getattr(im, "is_animated", False):
+                    im.seek(0)
+                if im.mode not in ("RGB", "RGBA"):
+                    im = im.convert("RGBA" if "A" in im.getbands() else "RGB")
+                im.thumbnail((1400, 1400), Image.Resampling.LANCZOS)
+                path.parent.mkdir(parents=True, exist_ok=True)
+                im.save(path, "WEBP", quality=82, method=6)
+            tmp.unlink(missing_ok=True)
+            return True, None
+        except Exception as e:
+            if attempt == 6:
+                tmp.unlink(missing_ok=True)
+                return False, str(e)
+            time.sleep(min(30.0, 1.5 * (2 ** attempt)))
+    tmp.unlink(missing_ok=True)
+    return False, "retry limit reached"
 
 def local_name(filename: str) -> str:
     digest = hashlib.sha1(filename.encode("utf-8")).hexdigest()[:16]
@@ -185,20 +191,13 @@ def main() -> None:
         dest = DIST / rel
         if dest.exists() and dest.stat().st_size > 100:
             return ("reused", filename, rel, None)
-        session = requests.Session()
-        info = commons_info(session, filename)
-        if not info:
-            return ("failed", filename, None, "Commons file not found")
-        url = info.get("thumburl") or info.get("url")
-        if not url:
-            return ("failed", filename, None, "No downloadable URL")
-        ok, err = save_webp(session, url, dest)
+        ok, err = save_commons_webp(filename, dest)
         if ok:
             return ("downloaded", filename, rel, None)
         return ("failed", filename, None, err or "download/convert failed")
 
     names = sorted(all_files)
-    with ThreadPoolExecutor(max_workers=10) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         futures = [pool.submit(process_one, filename) for filename in names]
         for idx, future in enumerate(as_completed(futures), 1):
             status, filename, rel, err = future.result()
@@ -265,7 +264,7 @@ def main() -> None:
         "changed_js_files": sorted(changed_files),
         "remaining_external_src_count": sum(len(v) for v in unresolved_external.values()),
         "remaining_external_srcs": unresolved_external,
-        "policy_note": "Only reusable Commons images are automatically copied. Other external images require separate license review or a Commons replacement.",
+        "policy_note": "Commons images are copied locally with throttled retries. Other external images require separate license review or a Commons replacement.",
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
