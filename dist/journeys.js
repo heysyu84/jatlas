@@ -13,6 +13,14 @@ routeTemplates.push(
  {id:'akihabara-kanda',pref:'도쿄',areas:['간다·아키하바라'],title:'아키하바라와 간다 반나절',duration:'반나절',image:tokyoPhotos[230]?.src||'',intro:'아키하바라 전기 상점가와 간다묘진을 함께 둘러보는 도심 반나절 일정입니다.',note:'쇼핑 시간이 길어질 수 있으므로 관심 분야를 먼저 정하세요. 일요일 보행자 천국은 날씨와 운영 공지를 확인하세요.',days:[{label:'아키하바라 → 간다묘진',places:[230,215]}]},
  {id:'yanaka-nezu-walk',pref:'도쿄',areas:['우에노·야나카'],title:'야나카와 네즈 골목 산책',duration:'반나절',image:tokyoPhotos[225]?.src||'',intro:'야나카 긴자와 네즈 신사를 이어 걷는 옛 동네 반나절 일정입니다.',note:'상점가의 개별 영업시간은 서로 다릅니다. 우에노 박물관 일정과 같은 날에 넣을 경우 체류시간을 줄여보세요.',days:[{label:'야나카 → 네즈',places:[225,104]}]},
  {id:'bunkyo-two-gardens',pref:'도쿄',areas:['고쿄·분쿄'],title:'분쿄의 두 정원',duration:'1일',image:tokyoPhotos[224]?.src||'',intro:'리쿠기엔과 고이시카와 고라쿠엔을 나누어 둘러보는 정원 중심 하루 일정입니다.',note:'두 정원 사이에는 철도 이동이 필요합니다. 봄·가을 특별 관람과 입장 마감 시간을 먼저 확인하세요.',days:[{label:'리쿠기엔 → 고이시카와 고라쿠엔',places:[224,106]}]}
+
+,
+ {id:'odaiba-science-bay',pref:'도쿄',areas:['오다이바'],title:'오다이바 과학과 바다 하루',duration:'1일',image:tokyoPhotos[200]?.src||'',intro:'일본과학미래관에서 시작해 다이버시티를 거쳐 오다이바 해변공원에서 마무리하는 하루 일정입니다.',note:'과학관 관람 시간이 길어질 수 있습니다. 다이버시티 쇼핑을 줄이면 조이폴리스 같은 실내 시설을 선택 일정으로 넣을 수 있습니다.',days:[{label:'미래관 → 다이버시티 → 해변공원',places:[200,202,113]}]},
+ {id:'shiba-temple-tower',pref:'도쿄',areas:['도쿄타워·시바'],title:'조조지와 도쿄타워 반나절',duration:'반나절',image:tokyoPhotos[209]?.src||'',intro:'조조지 경내와 시바공원을 걷고 도쿄타워 전망으로 이어지는 가까운 동선입니다.',note:'전망대는 날씨와 예약 상황을 확인하세요. 야경을 원하면 오후 늦게 시작해도 좋습니다.',days:[{label:'조조지 → 도쿄타워',places:[209,112]}]},
+ {id:'kichijoji-ghibli',pref:'도쿄',areas:['기치조지·고엔지'],title:'이노카시라 공원과 지브리',duration:'반나절~1일',image:tokyoPhotos[210]?.src||'',intro:'기치조지의 이노카시라 공원을 산책하고 예약한 시간에 지브리 미술관을 방문하는 일정입니다.',note:'지브리 미술관은 사전 예약이 필요합니다. 예약이 없으면 공원과 기치조지 상점가 중심으로 바꾸세요.',days:[{label:'이노카시라 공원 → 지브리 미술관',places:[114,210]}]},
+ {id:'takao-temple-hike',pref:'도쿄',areas:['다카오'],title:'다카오산 산행과 야쿠오인',duration:'1일',image:tokyoPhotos[214]?.src||'',intro:'다카오산 등산로와 야쿠오인을 한 번의 산행 안에서 둘러보는 자연·역사 일정입니다.',note:'등산로 난이도와 케이블카·리프트 운영을 확인하세요. 정상까지 걷는 시간을 포함해 귀환 시간을 여유 있게 잡으세요.',days:[{label:'야쿠오인 → 다카오산',places:[214,116]}]},
+ {id:'izu-oshima-volcano-port',pref:'도쿄',areas:['이즈 제도'],title:'이즈 오시마 화산과 항구',duration:'1일',image:tokyoPhotos[118]?.src||'',intro:'미하라산 화산 지형과 하부항의 옛 항구 풍경을 하루에 나누어 보는 이즈 오시마 일정입니다.',note:'도쿄 본토에서 섬까지의 배·항공편과 섬 내 버스 또는 차량 이동은 별도로 계획하세요. 날씨에 따라 산행을 우선 조정하세요.',days:[{label:'미하라산 → 하부항',places:[118,212]}]},
+ {id:'ogasawara-chichijima',pref:'도쿄',areas:['오가사와라'],title:'지치지마 전망과 해변',duration:'1일',image:tokyoPhotos[119]?.src||'',intro:'오가미야마 공원의 전망과 고미나토 해변을 묶어 지치지마의 산과 바다를 보는 일정입니다.',note:'오가사와라는 본토에서 장거리 선박 이동이 필요한 별도 여행입니다. 현지 교통과 해변 이용 조건을 숙박 일정에 맞춰 확인하세요.',days:[{label:'오가미야마 공원 → 고미나토 해변',places:[119,213]}]}
 );
 let plans=[],activePlanId='',selectedRoute='',hubPref='전체',pendingPlace=null,lastDeleted=null;
 const uid=()=>globalThis.crypto?.randomUUID?.()||'p'+Date.now().toString(36)+Math.random().toString(36).slice(2);
