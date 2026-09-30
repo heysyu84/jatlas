@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 content-audit batch v2
+# Migration revision: 2026-10-01 Commons API batch v3
 #!/usr/bin/env python3
 from __future__ import annotations
 
@@ -58,7 +58,7 @@ def collect_filenames(text: str) -> set[str]:
 
 _rate_lock = threading.Lock()
 _last_request = 0.0
-_MIN_INTERVAL = 1.10
+_MIN_INTERVAL = 0.45
 
 def _throttle() -> None:
     global _last_request
@@ -69,17 +69,89 @@ def _throttle() -> None:
             time.sleep(wait)
         _last_request = time.monotonic()
 
-def save_commons_webp(filename: str, path: Path) -> tuple[bool, str | None]:
+def resolve_commons_urls(filenames: list[str]) -> tuple[dict[str, str], list[dict]]:
+    """Resolve Commons filenames to 1200px thumbnail URLs in small API batches."""
+    resolved: dict[str, str] = {}
+    failed: list[dict] = []
+    api = requests.Session()
+    batch_size = 40
+    for offset in range(0, len(filenames), batch_size):
+        batch = filenames[offset:offset + batch_size]
+        params = {
+            "action": "query",
+            "format": "json",
+            "formatversion": "2",
+            "redirects": "1",
+            "prop": "imageinfo",
+            "iiprop": "url",
+            "iiurlwidth": "1200",
+            "titles": "|".join("File:" + name for name in batch),
+        }
+        data = None
+        for attempt in range(6):
+            try:
+                _throttle()
+                r = api.get(API, params=params, headers=HEADERS, timeout=60)
+                if r.status_code in (429, 502, 503, 504):
+                    retry = r.headers.get("Retry-After")
+                    delay = float(retry) if retry and retry.isdigit() else min(20.0, 1.2 * (2 ** attempt))
+                    time.sleep(delay)
+                    continue
+                r.raise_for_status()
+                data = r.json()
+                break
+            except Exception:
+                if attempt == 5:
+                    data = None
+                    break
+                time.sleep(min(20.0, 1.2 * (2 ** attempt)))
+
+        if not data:
+            failed.extend({"file": name, "reason": "Commons API lookup failed"} for name in batch)
+            continue
+
+        aliases = {}
+        for row in data.get("query", {}).get("normalized", []):
+            aliases[normal_file_name(row.get("to", ""))] = normal_file_name(row.get("from", ""))
+        for row in data.get("query", {}).get("redirects", []):
+            aliases[normal_file_name(row.get("to", ""))] = normal_file_name(row.get("from", ""))
+
+        pages = data.get("query", {}).get("pages", [])
+        seen = set()
+        for page in pages:
+            title = normal_file_name(page.get("title", ""))
+            info = (page.get("imageinfo") or [{}])[0]
+            url = info.get("thumburl") or info.get("url")
+            requested = aliases.get(title, title)
+            if url:
+                resolved[requested] = url
+                resolved[title] = url
+                seen.add(requested)
+                seen.add(title)
+
+        for name in batch:
+            if name in resolved:
+                continue
+            # API title normalization can change underscores/spaces/case; compare case-insensitively.
+            hit = next((url for key, url in resolved.items() if key.casefold() == name.casefold()), None)
+            if hit:
+                resolved[name] = hit
+            else:
+                failed.append({"file": name, "reason": "Commons file not found"})
+        print(f"resolved {min(offset + batch_size, len(filenames))}/{len(filenames)} filenames", flush=True)
+        time.sleep(0.35)
+    return resolved, failed
+
+def save_commons_webp(url: str, path: Path) -> tuple[bool, str | None]:
     tmp = path.with_suffix(".download")
-    url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + quote(filename, safe="") + "?width=1200"
     session = requests.Session()
-    for attempt in range(7):
+    for attempt in range(5):
         try:
             _throttle()
             r = session.get(url, headers=HEADERS, timeout=60, allow_redirects=True)
             if r.status_code in (429, 502, 503, 504):
                 retry = r.headers.get("Retry-After")
-                delay = float(retry) if retry and retry.isdigit() else min(30.0, 1.5 * (2 ** attempt))
+                delay = float(retry) if retry and retry.isdigit() else min(20.0, 1.2 * (2 ** attempt))
                 time.sleep(delay)
                 continue
             r.raise_for_status()
@@ -99,10 +171,10 @@ def save_commons_webp(filename: str, path: Path) -> tuple[bool, str | None]:
             tmp.unlink(missing_ok=True)
             return True, None
         except Exception as e:
-            if attempt == 6:
+            if attempt == 4:
                 tmp.unlink(missing_ok=True)
                 return False, str(e)
-            time.sleep(min(30.0, 1.5 * (2 ** attempt)))
+            time.sleep(min(20.0, 1.2 * (2 ** attempt)))
     tmp.unlink(missing_ok=True)
     return False, "retry limit reached"
 
@@ -192,13 +264,16 @@ def main() -> None:
         dest = DIST / rel
         if dest.exists() and dest.stat().st_size > 100:
             return ("reused", filename, rel, None)
-        ok, err = save_commons_webp(filename, dest)
+        ok, err = save_commons_webp(resolved_urls[filename], dest)
         if ok:
             return ("downloaded", filename, rel, None)
         return ("failed", filename, None, err or "download/convert failed")
 
     names = sorted(all_files)
-    with ThreadPoolExecutor(max_workers=1) as pool:
+    resolved_urls, lookup_failed = resolve_commons_urls(names)
+    failed.extend(lookup_failed)
+    names = [name for name in names if name in resolved_urls]
+    with ThreadPoolExecutor(max_workers=3) as pool:
         futures = [pool.submit(process_one, filename) for filename in names]
         for idx, future in enumerate(as_completed(futures), 1):
             status, filename, rel, err = future.result()
