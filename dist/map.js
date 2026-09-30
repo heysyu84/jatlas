@@ -50,9 +50,9 @@ const mobileRegionOffsets={
  '긴키':[-12,8],
  '산인·산요':[-18,-12],
  '시코쿠':[12,14],
- '규슈':[28,-6]
+ '규슈':[4,-6]
 };
-const mobileRegionOrder=['홋카이도','도호쿠','북간토','수도권','도카이','호쿠리쿠','긴키','산인·산요','규슈','시코쿠','고신에쓰'];
+const mobileRegionOrder=['홋카이도','도호쿠','북간토','수도권','도카이','호쿠리쿠','긴키','산인·산요','시코쿠','규슈','고신에쓰'];
 const mobileLabelNudges=(()=>{const a=[];for(let y=-40;y<=40;y+=8)for(let x=-48;x<=48;x+=8)a.push([x,y]);return a.sort((p,q)=>(p[0]*p[0]+p[1]*p[1])-(q[0]*q[0]+q[1]*q[1]))})();
 function regionLabelWidth(name,mobile){return mobile?Math.min(76,Math.max(50,32+[...name].length*8)):86}
 function boxesOverlap(a,b){return a.x<b.x+b.w+4&&a.x+a.w+4>b.x&&a.y<b.y+b.h+3&&a.y+a.h+3>b.y}
