@@ -37,18 +37,18 @@ def collect_filenames(text: str) -> set[str]:
     out: set[str] = set()
 
     # Commons file-page references are authoritative.
-    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/File:([^'\"<>\\s]+)", text):
+    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/File:([^'\"<>\s]+)", text):
         out.add(normal_file_name(m.group(1)))
 
     # Explicit Special:FilePath URLs.
-    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/([^?'\"<>\\s]+)", text):
+    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/([^?'\"<>\s]+)", text):
         out.add(normal_file_name(m.group(1)))
 
     # Static filename maps used by expansion files. Do not scan arbitrary local .webp names.
     for var in ("photoFiles", "foodPhotoFiles"):
-        for m in re.finditer(rf"const\\s+{var}\\s*=\\s*(\\{{.*?\\}});", text, re.S):
+        for m in re.finditer(rf"const\s+{var}\s*=\s*(\{{.*?\}});", text, re.S):
             body = m.group(1)
-            for q in re.finditer(r"['\"]([^'\"\\n]+?\\.(?:jpe?g|png))['\"]", body, re.I):
+            for q in re.finditer(r"['\"]([^'\"\n]+?\.(?:jpe?g|png))['\"]", body, re.I):
                 value = q.group(1).strip().replace("\\'", "'")
                 if value.startswith(("http://", "https://", "images/")):
                     continue
