@@ -48,18 +48,17 @@ function regionLabelWidth(name){return Math.min(86,Math.max(58,38+[...name].leng
 function drawRegionLabels(map,layer){
  layer.clearLayers();
  const size=map.getSize();
- const scale=Math.max(.76,Math.min(1,size.x/760,size.y/500));
+ const spacingScale=Math.max(.76,Math.min(1,size.x/760,size.y/500));
  for(const [name,center] of Object.entries(regionCenters)){
   const origin=map.latLngToContainerPoint(center);
   const [baseDx,baseDy]=regionLabelOffsets[name]||[0,0];
-  const dx=baseDx*scale,dy=baseDy*scale;
-  const w=regionLabelWidth(name)*scale,h=30*scale;
+  const dx=baseDx*spacingScale,dy=baseDy*spacingScale;
+  const w=regionLabelWidth(name),h=30;
   const x=Math.max(5+w/2,Math.min(size.x-5-w/2,origin.x+dx));
   const y=Math.max(5+h/2,Math.min(size.y-24-h/2,origin.y+dy));
   const anchor=map.containerPointToLatLng([x,y]);
-  if(Math.hypot(dx,dy)>18*scale)L.polyline([center,anchor],{color:'#8ba3b7',weight:1,opacity:.62,interactive:false}).addTo(layer);
-  const spanStyle=`font-size:${13*scale}px;padding:${7*scale}px ${9*scale}px;min-height:${38*scale}px`;
-  L.marker(anchor,{icon:L.divIcon({className:'regionMapLabel',html:`<span style="${spanStyle}">${name}</span>`,iconSize:[w,h],iconAnchor:[w/2,h/2]}),keyboard:true,title:name}).addTo(layer).on('click',()=>selectRegion(name));
+  if(Math.hypot(dx,dy)>18*spacingScale)L.polyline([center,anchor],{color:'#8ba3b7',weight:1,opacity:.62,interactive:false}).addTo(layer);
+  L.marker(anchor,{icon:L.divIcon({className:'regionMapLabel',html:`<span>${name}</span>`,iconSize:[w,h],iconAnchor:[w/2,h/2]}),keyboard:true,title:name}).addTo(layer).on('click',()=>selectRegion(name));
  }
  if(typeof localize==='function')localize();
 }
