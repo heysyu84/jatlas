@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 Commons API batch v4
+# Migration revision: 2026-10-01 escaped-quote parser v5
 #!/usr/bin/env python3
 from __future__ import annotations
 
@@ -29,30 +29,35 @@ EXT_RE = re.compile(r"\.(?:jpe?g|png|webp)$", re.I)
 
 def normal_file_name(name: str) -> str:
     name = unquote(name).strip()
+    name = name.replace("\\'", "'").replace('\\"', '"').replace("\\\\", "\\")
     if name.lower().startswith("file:"):
         name = name[5:]
     return name.replace("_", " ") if "/" not in name else name
 
+def _quoted_values(text: str):
+    pat = re.compile(r"'((?:\\\\.|[^'\\\\])*)'|\"((?:\\\\.|[^\"\\\\])*)\"", re.S)
+    for m in pat.finditer(text):
+        value = m.group(1) if m.group(1) is not None else m.group(2)
+        yield normal_file_name(value)
+
 def collect_filenames(text: str) -> set[str]:
     out: set[str] = set()
 
-    # Commons file-page references are authoritative.
-    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/File:([^'\"<>\s]+)", text):
-        out.add(normal_file_name(m.group(1)))
-
-    # Explicit Special:FilePath URLs.
-    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/([^?'\"<>\s]+)", text):
-        out.add(normal_file_name(m.group(1)))
+    # Parse quoted JS strings so escaped apostrophes such as Kan\'onji are preserved.
+    for value in _quoted_values(text):
+        if value.startswith("https://commons.wikimedia.org/wiki/File:"):
+            out.add(normal_file_name(value.split("File:", 1)[1].split("?", 1)[0]))
+        elif value.startswith("https://commons.wikimedia.org/wiki/Special:FilePath/"):
+            out.add(normal_file_name(value.split("Special:FilePath/", 1)[1].split("?", 1)[0]))
 
     # Static filename maps used by expansion files. Do not scan arbitrary local .webp names.
     for var in ("photoFiles", "foodPhotoFiles"):
         for m in re.finditer(rf"const\s+{var}\s*=\s*(\{{.*?\}});", text, re.S):
-            body = m.group(1)
-            for q in re.finditer(r"['\"]([^'\"\n]+?\.(?:jpe?g|png))['\"]", body, re.I):
-                value = q.group(1).strip().replace("\\'", "'")
+            for value in _quoted_values(m.group(1)):
                 if value.startswith(("http://", "https://", "images/")):
                     continue
-                out.add(normal_file_name(value))
+                if EXT_RE.search(value):
+                    out.add(normal_file_name(value))
 
     return {x for x in out if EXT_RE.search(x)}
 
@@ -183,11 +188,11 @@ def local_name(filename: str) -> str:
     return f"images/commons/{digest}.webp"
 
 def replace_special_urls(text: str, mapping: dict[str, str]) -> str:
-    pat = re.compile(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/([^?'\"<>\s]+)(?:\?width=\d+)?")
-    def repl(m):
+    pat = re.compile(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/((?:\\\\.|[^?'\"<>\\s])+)(?:\\?width=\\d+)?")
+    def sub(m):
         fn = normal_file_name(m.group(1))
         return mapping.get(fn, m.group(0))
-    return pat.sub(repl, text)
+    return pat.sub(sub, text)
 
 def rewrite_cf(text: str) -> str:
     # Keep an online fallback only for files which could not be localized.
@@ -236,8 +241,9 @@ def rewrite_explicit_src_from_source(text: str, mapping: dict[str, str]) -> str:
 
 def external_srcs(text: str) -> list[str]:
     urls = []
-    for m in re.finditer(r"(?:[\"']?src[\"']?\s*:\s*)[\"'](https?://[^\"']+)[\"']", text):
-        urls.append(m.group(1))
+    for value in _quoted_values(text):
+        if value.startswith(("http://", "https://")):
+            urls.append(value)
     return urls
 
 def main() -> None:
