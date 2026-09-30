@@ -153,3 +153,26 @@
  #weatherPanel .weatherError button{display:none}
 }
 
+
+/* Stable region heading position and mobile top controls. */
+#explore>.sectionhead{align-items:flex-start!important}
+#explore>.sectionhead>div:first-child{align-self:flex-start!important}
+.mobilePrefSwitchHost{display:none}
+
+@media(min-width:761px){
+ .titleWeatherRow{align-items:center!important}
+ .weatherDesktopPanel{margin-left:18px!important;margin-bottom:0!important}
+}
+
+@media(max-width:760px){
+ .searchTopRow{display:flex!important;align-items:stretch!important;gap:6px!important}
+ .searchCluster{flex:1 1 0!important;min-width:0!important;max-width:none!important}
+ .searchwrap{padding:0 10px!important}
+ .searchwrap>span{font-size:22px!important}
+ .searchwrap input{min-width:0!important;font-size:13px!important}
+ .mobilePrefSwitchHost{display:flex!important;flex:0 0 86px!important;min-width:0!important}
+ .mobilePrefSwitchHost #prefSwitch{position:static!important;inset:auto!important;display:block!important;width:86px!important;max-width:86px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0 24px 0 9px!important;border:1px solid #dbe7f1!important;border-radius:23px!important;background:#fff!important;font-size:12px!important}
+ #weatherPanel:not([hidden]){flex:0 0 104px!important;width:104px!important}
+ #explore>.sectionhead{align-items:flex-start!important}
+ #explore>.sectionhead>div:first-child{align-self:flex-start!important}
+}
