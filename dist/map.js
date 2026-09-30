@@ -49,8 +49,8 @@ const mobileRegionOffsets={
  '호쿠리쿠':[-8,10],
  '긴키':[-12,8],
  '산인·산요':[-18,-12],
- '시코쿠':[0,-12],
- '규슈':[-8,-6]
+ '시코쿠':[6,-4],
+ '규슈':[-12,-6]
 };
 const mobileRegionOrder=['홋카이도','도호쿠','북간토','수도권','도카이','호쿠리쿠','긴키','산인·산요','시코쿠','규슈','고신에쓰'];
 const mobileLabelNudges=(()=>{const a=[];for(let y=-40;y<=40;y+=8)for(let x=-48;x<=48;x+=8)a.push([x,y]);return a.sort((p,q)=>(p[0]*p[0]+p[1]*p[1])-(q[0]*q[0]+q[1]*q[1]))})();
@@ -78,13 +78,18 @@ function drawRegionLabels(map,layer){
     for(const ratio of [.5,.4,.6,.3,.7])for(const dx of [0,18,-18,36,-36,54,-54,72,-72,96,-96,120,-120,150,-150,180,-180])candidates.push([x-origin.x+dx,a.y+(b.y-a.y)*ratio-origin.y]);
    }
   }
-  for(const [dx,dy] of candidates){
-   const box={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
-   if(mobile){
-    const zoom={x:5,y:Math.max(0,size.y-118),w:58,h:98};
-    if(boxesOverlap(box,zoom))continue;
+  if(mobile&&(name==='시코쿠'||name==='규슈')){
+   const [dx,dy]=mobileRegionOffsets[name];
+   chosen={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
+  }else{
+   for(const [dx,dy] of candidates){
+    const box={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
+    if(mobile){
+     const zoom={x:5,y:Math.max(0,size.y-118),w:58,h:98};
+     if(boxesOverlap(box,zoom))continue;
+    }
+    if(!occupied.some(b=>boxesOverlap(box,b))){chosen=box;break}
    }
-   if(!occupied.some(b=>boxesOverlap(box,b))){chosen=box;break}
   }
   if(!chosen)continue;
   occupied.push(chosen);placed[name]={x:chosen.x+w/2,y:chosen.y+h/2};
