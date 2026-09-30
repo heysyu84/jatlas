@@ -96,14 +96,14 @@
 
 @media(max-width:760px){.searchbar{padding:14px 18px 0;max-width:none}.searchTopRow{max-width:none;gap:7px}.searchCluster{flex:1 1 auto;min-width:0}#searchResults:not(:empty){left:0;right:0;top:55px}.weatherPanel{flex:0 0 104px;padding:0;margin:0}.weatherCurrent{height:46px;padding:0 9px;justify-content:center;gap:5px}.weatherCompactPlace,.weatherCompactText{display:none}.weatherCompactIcon{font-size:21px}.weatherCompactTemp{font-size:17px}.weatherChevron{margin-left:1px}.weatherPopover{top:53px;right:0;width:min(340px,calc(100vw - 36px));padding:13px;border-radius:16px}.weatherPopoverHead{margin-bottom:9px;align-items:flex-start;flex-direction:row}.weatherPopoverHead h2{font-size:16px}.weatherNowDetail{font-size:11px;white-space:normal;text-align:right}.weatherDays{display:grid;overflow:visible;padding-bottom:0;scroll-snap-type:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.weatherDay{flex:unset;padding:8px 6px;scroll-snap-align:none}.weatherError{height:46px;padding:0 8px;margin:0;font-size:11px;overflow:hidden}.weatherError button{display:none}}
 
-/* Desktop weather belongs beside the current location, not beside search. */
+/* Desktop weather sits beside the main prefecture/area title. */
 @media(min-width:761px){
  #weatherPanel{display:none!important}
- .location{display:flex;align-items:center;gap:7px;position:relative}
+ .titleWeatherRow{display:flex;align-items:center;gap:18px;min-height:64px;position:relative}
+ .titleWeatherRow #title{margin-right:0}
  .weatherDesktopPanel{display:block;flex:0 0 auto;z-index:710}
  .weatherDesktopPanel[hidden]{display:none}
  .weatherDesktopPanel .weatherCurrent{width:auto;height:30px;gap:5px;padding:0 8px;border-radius:15px;background:#f7fafc;box-shadow:none}
- .weatherDesktopPanel .weatherCompactPlace{display:none}
  .weatherDesktopPanel .weatherCompactIcon{font-size:16px}
  .weatherDesktopPanel .weatherCompactTemp{font-size:13px}
  .weatherDesktopPanel .weatherCompactText{font-size:11px;max-width:72px}
