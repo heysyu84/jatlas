@@ -37,13 +37,69 @@ function showEvents(){hubPref='전체';eventMonth=0;state.view='events';close();
 function showRoutes(){selectedRoute='';hubPref='전체';routeLength='전체';state.view='routes';close();render();window.scrollTo?.({top:0,behavior:'smooth'})}
 function showPlans(){state.view='plans';close();render();window.scrollTo?.({top:0,behavior:'smooth'})}
 function scopeSelect(value,onchange){const select=document.createElement('select');select.setAttribute('aria-label','지역 선택');for(const pref of ['전체',...allPrefs])select.append(new Option(pref,pref));select.value=value;select.onchange=e=>onchange(e.target.value);return select}
-function renderEventHub(){const host=$('#eventHub');host.innerHTML='<p class="eyebrow">SEASONS & EVENTS</p><h1>계절·행사</h1><p class="sectionIntro">지역과 월로 골라보세요. 각 지역의 대표 행사와 계절 풍경을 모았습니다.</p><div class="hubControls"></div><div class="eventCards"></div>';
- if(hubPref==='전체'||hubPref==='도쿄')renderSeasonReferences(host);host.querySelector('.hubControls').append(scopeSelect(hubPref,p=>{hubPref=p;renderEventHub()}));const months=document.createElement('div');months.className='chiprow';months.append(...Array.from({length:13},(_,m)=>button(m?m+'월':'모든 달',()=>{eventMonth=m;renderEventHub()},eventMonth===m?'active':'')));host.querySelector('.hubControls').append(months);
- const entries=allEvents().filter(e=>hubPref==='전체'||e.pref===hubPref).filter(e=>!eventMonth||e.months.includes(eventMonth));const grid=host.querySelector('.eventCards');
- for(const e of entries){const card=document.createElement('article');card.className='eventCard';card.innerHTML=`<div class="eventTags"><span>${e.type}</span><span>${e.scheduleType}</span></div><small>${e.pref} · ${e.area}</small><h3>${e.name}</h3><strong>${e.timing}</strong><p>${e.description}</p><a href="${e.source}" target="_blank" rel="noopener">공식 일정·안내 확인 ↗</a>`;card.append(button('지역에서 보기',()=>{contentTab='events';go(e.pref,e.area.endsWith('전역')?'전체':e.area)}));grid.append(card)}
- if(!entries.length)grid.innerHTML='<div class="empty">선택한 범위의 행사 정보는 준비 중입니다. 지역이나 월을 바꿔보세요.</div>';if(typeof localize==='function')localize();
+function eventHubImage(pref,event){
+ const area=event?.area&&!event.area.endsWith('전역')?event.area:pref;
+ const byArea=typeof photoForArea==='function'?photoForArea(area):null;
+ if(byArea)return byArea;
+ const place=samples.find(p=>p.pref===pref&&(area===pref||p.area===area)&&photoForPlace(p));
+ return place?photoForPlace(place):(designPhotos[pref]||null);
 }
-function renderSeasonReferences(host){const section=document.createElement('section');section.className='seasonReferences';section.innerHTML='<h2>도쿄의 사계절 · 참고 가이드</h2><p>아래는 계절과 행사 예시입니다. 개최 확정일은 각 행사의 공식 안내에서 확인하세요.</p>';const grid=document.createElement('div');grid.className='seasonGrid';for(const [title,month,image,description]of [['봄 · 벚꽃',3,'images/gyoen.webp','신주쿠교엔 · 예년 3월 하순~4월 초'],['여름 · 마쓰리와 불꽃',7,'images/tokyo-101.webp','스미다가와 불꽃놀이 · 예년 7월 하순'],['가을 · 단풍 산책',11,'images/tokyo-115.webp','도심 단풍·은행나무 · 예년 11월~12월 초'],['겨울 · 전통 시장',12,'images/sensoji.webp','센소지 하고이타 시장 · 매년 12월 17~19일']]){const card=button('',()=>{hubPref='도쿄';eventMonth=month;renderEventHub();host.querySelector('.eventCards')?.scrollIntoView?.({block:'start',behavior:'smooth'})},'seasonCard');card.innerHTML=`<img src="${image}" alt="도쿄 장소 참고 사진" width="320" height="180"><strong>${title}</strong><span>${description}</span><small>대표 장소 사진 · 행사 현장 사진 아님</small>`;grid.append(card)}section.append(grid);host.querySelector('.hubControls').before(section)}
+function renderEventNationwide(host){
+ host.innerHTML='<p class="eyebrow">SEASONS & EVENTS</p><h1>일본의 계절·행사</h1><p class="sectionIntro">일본은 남북으로 길어 같은 계절에도 꽃·단풍·설경과 행사의 시기가 지역마다 크게 다릅니다. 지역을 선택하면 그 지역의 사계절과 행사 일정을 볼 수 있습니다.</p>';
+ const seasons=document.createElement('div');seasons.className='nationalSeasonGrid';
+ for(const [title,text] of [['봄','벚꽃과 신록이 이어지는 계절'],['여름','마쓰리와 불꽃놀이가 많은 계절'],['가을','단풍과 지역 축제를 즐기기 좋은 계절'],['겨울','설경과 전통 행사·일루미네이션의 계절']]){
+  const card=document.createElement('article');card.innerHTML='<strong>'+title+'</strong><span>'+text+'</span>';seasons.append(card);
+ }
+ host.append(seasons);
+ const heading=document.createElement('h2');heading.className='eventRegionTitle';heading.textContent='지역을 선택하세요';host.append(heading);
+ const directory=document.createElement('div');directory.className='regionDirectory eventRegionDirectory';
+ for(const [name,prefs] of regions){
+  const section=document.createElement('section');const h=document.createElement('h3');h.textContent=name;section.append(h);
+  const list=document.createElement('div');list.className='chiprow';
+  for(const pref of prefs.split(' '))list.append(button(pref,()=>{hubPref=pref;eventMonth=0;renderEventHub();window.scrollTo?.({top:0,behavior:'smooth'})}));
+  section.append(list);directory.append(section);
+ }
+ host.append(directory);
+}
+function renderEventHub(){
+ const host=$('#eventHub');
+ if(hubPref==='전체'){renderEventNationwide(host);if(typeof localize==='function')localize();return}
+ host.innerHTML='<p class="eyebrow">SEASONS & EVENTS</p><h1>'+hubPref+'의 계절·행사</h1><p class="sectionIntro">사계절의 대표 풍경과 행사 예시를 보고, 월별 행사 일정을 확인하세요. 개최일과 운영 여부는 방문 연도의 공식 안내를 확인해야 합니다.</p><div class="hubControls"></div><section class="eventSchedule"><h2>'+hubPref+' 행사 일정</h2><div class="eventCards"></div></section>';
+ renderSeasonReferences(host,hubPref);
+ const controls=host.querySelector('.hubControls');
+ controls.append(button('← 전국 계절·행사',()=>{hubPref='전체';eventMonth=0;renderEventHub()}));
+ controls.append(scopeSelect(hubPref,p=>{hubPref=p;eventMonth=0;renderEventHub()}));
+ const months=document.createElement('div');months.className='chiprow';
+ months.append(...Array.from({length:13},(_,m)=>button(m?m+'월':'모든 달',()=>{eventMonth=m;renderEventHub()},eventMonth===m?'active':'')));
+ controls.append(months);
+ const entries=allEvents().filter(e=>e.pref===hubPref).filter(e=>!eventMonth||e.months.includes(eventMonth)),grid=host.querySelector('.eventCards');
+ for(const e of entries){
+  const card=document.createElement('article');card.className='eventCard';
+  card.innerHTML=`<div class="eventTags"><span>${e.type}</span><span>${e.scheduleType}</span></div><small>${e.pref} · ${e.area}</small><h3>${e.name}</h3><strong>${e.timing}</strong><p>${e.description}</p><a href="${e.source}" target="_blank" rel="noopener">공식 일정·안내 확인 ↗</a>`;
+  card.append(button('지역에서 보기',()=>{contentTab='events';go(e.pref,e.area.endsWith('전역')?'전체':e.area)}));grid.append(card);
+ }
+ if(!entries.length)grid.innerHTML='<div class="empty">선택한 월의 행사 정보는 아직 준비 중입니다. 다른 달을 선택해보세요.</div>';
+ if(typeof localize==='function')localize();
+}
+function renderSeasonReferences(host,pref){
+ const section=document.createElement('section');section.className='seasonReferences';
+ section.innerHTML='<h2>'+pref+'의 사계절</h2><p>현재 등록된 대표 행사를 계절별로 보여줍니다. 행사 시기는 해마다 달라질 수 있습니다.</p>';
+ const grid=document.createElement('div');grid.className='seasonGrid';
+ const prefEvents=allEvents().filter(e=>e.pref===pref);
+ const defs=[['봄',[3,4,5],4],['여름',[6,7,8],7],['가을',[9,10,11],10],['겨울',[12,1,2],12]];
+ for(const [title,months,fallbackMonth] of defs){
+  const event=prefEvents.find(e=>(e.months||[]).some(m=>months.includes(m))),pic=eventHubImage(pref,event);
+  if(event){
+   const month=(event.months||[]).find(m=>months.includes(m))||fallbackMonth;
+   const card=button('',()=>{eventMonth=month;renderEventHub();document.querySelector('.eventSchedule')?.scrollIntoView?.({block:'start',behavior:'smooth'})},'seasonCard');
+   card.innerHTML=`${pic?`<img src="${pic.src}" alt="${pic.alt||pref+' 대표 장소'}" width="320" height="180" loading="lazy">`:''}<strong>${title}</strong><span>${event.name} · ${event.timing}</span><small>대표 행사 · 날짜는 공식 안내 확인</small>`;grid.append(card);
+  }else{
+   const card=document.createElement('article');card.className='seasonCard seasonCardEmpty';
+   card.innerHTML=`${pic?`<img src="${pic.src}" alt="${pic.alt||pref+' 대표 장소'}" width="320" height="180" loading="lazy">`:''}<strong>${title}</strong><span>이 계절의 대표 행사 정보는 준비 중입니다.</span><small>${pref} 계절 정보</small>`;grid.append(card);
+  }
+ }
+ section.append(grid);host.querySelector('.hubControls').before(section);
+}
 function routeDirections(a,b){const query=p=>Number.isFinite(p.lat)&&Number.isFinite(p.lon)?p.lat+','+p.lon:(p.mapQuery||p.name+' '+p.pref);return 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(query(a))+'&destination='+encodeURIComponent(query(b))+'&travelmode='+(a.pref==='야마나시'?'driving':'transit')}
 function routeCard(route){const card=document.createElement('article');card.className='routeCard';card.innerHTML=`${route.image?`<img src="${route.image}" alt="${route.imageAlt||route.areas[0]}" width="350" height="220" loading="lazy">`:""}<div><small>${route.pref} · ${route.duration}</small><h3>${route.title}</h3><p>${route.intro}</p></div>`;card.append(button('일정 보기',()=>{selectedRoute=route.id;renderJourneys();document.querySelector('.routeDetail')?.scrollIntoView({block:'nearest',behavior:'smooth'})}));card.append(button('＋ 내 계획에 담기',()=>newPlan(route),'primary'));return card}
 let routeLength='전체';
