@@ -4,54 +4,31 @@ const spotFacts={
 200:['2~3시간','실내','특별전 확인'],201:['행사별 상이','실내','행사·입장권 확인'],202:['1~2시간','실내·야외',''],203:['2~4시간','실내','이용 조건 확인'],204:['30~60분','야외','저녁 방문'],205:['45~90분','실내·야외',''],206:['2~3시간','실내','휴관일 확인'],207:['1~2시간','실내·야외','전시 일정 확인'],208:['45~90분','야외',''],209:['45~90분','야외',''],210:['2~3시간','실내·야외','사전 예약 필수'],211:['1~2시간','동굴','교통 확인'],212:['1~2시간','야외','섬 이동 별도'],213:['1~2시간','야외','섬 이동 별도'],214:['45~90분','야외','산행 안에 포함'],215:['30~60분','야외',''],216:['30~60분','야외',''],217:['2~3시간','야외',''],218:['2~3시간','실내·야외','시설별 확인']};
 const firstPicks={'전체':[100,107,109,112],'오다이바':[200,113,202,203],'신주쿠':[107,108,204,205],'우에노·야나카':[103,102,104,206],'시부야·하라주쿠':[110,109,111,208]};
 
-const tokyoTourOutline=[
- [138.943,35.860],[139.050,35.879],[139.160,35.850],[139.330,35.794],[139.595,35.779],
- [139.697,35.799],[139.821,35.815],[139.894,35.783],[139.918,35.698],[139.887,35.656],
- [139.845,35.656],[139.817,35.610],[139.809,35.539],[139.739,35.545],[139.703,35.537],
- [139.655,35.590],[139.484,35.504],[139.458,35.528],[139.269,35.609],[139.161,35.668],
- [139.012,35.739]
-];
-const tokyoTourMapPoints=[
- {id:117,dx:18,dy:-14,anchor:'start'},
- {id:116,dx:18,dy:27,anchor:'start'},
- {id:115,dx:16,dy:-18,anchor:'start'},
- {id:114,dx:-18,dy:-18,anchor:'end'},
- {id:107,dx:-20,dy:-30,anchor:'end'},
- {id:110,dx:-58,dy:26,anchor:'end'},
- {id:109,label:'시부야',dx:-44,dy:46,anchor:'end'},
- {id:112,dx:18,dy:34,anchor:'start'},
- {id:102,dx:-18,dy:-38,anchor:'end'},
- {id:100,dx:18,dy:-16,anchor:'start'},
- {id:101,label:'스카이트리',dx:18,dy:25,anchor:'start'},
- {id:113,dx:18,dy:34,anchor:'start'}
-];
-function renderTokyoTourMap(host){
- if(!host)return;
- const W=1040,H=560,pad=44,minLon=138.90,maxLon=139.96,minLat=35.45,maxLat=35.93;
- const project=(lon,lat)=>[pad+(lon-minLon)/(maxLon-minLon)*(W-pad*2),pad+(maxLat-lat)/(maxLat-minLat)*(H-pad*2)];
- const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
- const outline=tokyoTourOutline.map(([lon,lat])=>project(lon,lat).map(v=>v.toFixed(1)).join(',')).join(' ');
- const pointMarkup=tokyoTourMapPoints.map(meta=>{
-  const p=samples.find(q=>q.id===meta.id);if(!p||!Number.isFinite(p.lat)||!Number.isFinite(p.lon))return '';
-  const [x,y]=project(p.lon,p.lat),lx=x+meta.dx,ly=y+meta.dy,anchor=meta.anchor||'start';
-  const lineEndX=lx+(anchor==='end'?5:-5),label=meta.label||p.name;
-  const match=state.area!=='전체'&&p.area===state.area?' isAreaMatch':'';
-  return `<g class="tourMapPoint${match}" data-tour-place="${p.id}" role="button" tabindex="0" aria-label="${esc(p.name)}"><line x1="${x.toFixed(1)}" y1="${y.toFixed(1)}" x2="${lineEndX.toFixed(1)}" y2="${(ly-4).toFixed(1)}"></line><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8"></circle><text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}">${esc(label)}</text></g>`;
- }).join('');
- const [cityX,cityY]=project(139.70,35.69),[bayX,bayY]=project(139.78,35.59),[westX,westY]=project(139.18,35.78);
- host.innerHTML=`<div class="tourMapHead"><p class="eyebrow">TOKYO ORIENTATION</p><h2>도쿄 관광지도</h2><p>주요 명소의 위치 관계를 한눈에 보는 개략도입니다. 점을 누르면 장소 정보를 볼 수 있습니다.</p></div><div class="tourMapCanvas"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="도쿄 주요 관광지 위치 개략도"><defs><linearGradient id="tourMapLandGradient" x1="0" x2="1"><stop offset="0" stop-color="#eef4eb"></stop><stop offset=".55" stop-color="#fffdf7"></stop><stop offset="1" stop-color="#fff8f3"></stop></linearGradient><pattern id="tourMapMountainPattern" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M2 23 L10 10 L16 19 L21 12 L27 23" fill="none" stroke="#b9cdb7" stroke-width="2" opacity=".5"></path></pattern></defs><rect width="${W}" height="${H}" class="tourMapSea"></rect><path class="tourMapBay" d="M760 390 C835 355 950 365 1040 420 L1040 560 L750 560 C790 500 785 447 760 390 Z"></path><polygon class="tourMapLand" points="${outline}"></polygon><path class="tourMapMountains" d="M40 45 H430 V455 C330 490 210 510 75 480 Z"></path><text class="tourMapZone" x="${westX.toFixed(1)}" y="${westY.toFixed(1)}">서부 산지</text><text class="tourMapZone" x="${cityX.toFixed(1)}" y="${cityY.toFixed(1)}">도심</text><text class="tourMapZone" x="${bayX.toFixed(1)}" y="${bayY.toFixed(1)}">도쿄만</text>${pointMarkup}</svg></div><div class="tourIslandLinks"><span>도쿄의 섬은 별도 일정으로 보기</span></div><p class="mapcredit">관광 동선 파악용 개략도 · 정확한 경계와 이동 거리는 상세 지도에서 확인하세요.</p>`;
- const islandLinks=host.querySelector('.tourIslandLinks');
- islandLinks.append(
-  button('이즈 제도 보기',()=>{contentTab='places';go('도쿄','이즈 제도')}),
-  button('오가사와라 보기',()=>{contentTab='places';go('도쿄','오가사와라')})
- );
- host.querySelectorAll('[data-tour-place]').forEach(el=>{
-  const open=()=>{const p=samples.find(q=>q.id===Number(el.dataset.tourPlace));if(p)openDetail(p)};
-  el.addEventListener('click',open);
-  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
- });
+function mobileDetailMapURL(p,embed=true){
+ const params=new URLSearchParams({hl:localStorage.getItem('japlan-language')==='ja'?'ja':'ko',gl:'kr'});
+ if(embed)params.set('output','embed');
+ let cid='',query='';
+ try{if(p.mapUrl){const u=new URL(p.mapUrl,location.href);cid=u.searchParams.get('cid')||'';query=u.searchParams.get('query')||''}}catch{}
+ const loc=pointLocations[p.id];
+ if(cid)params.set('cid',cid);
+ else if(loc)params.set('q',loc.lat+','+loc.lon);
+ else params.set('q',p.mapQuery||query||p.pref+' '+p.name);
+ params.set('z','16');
+ return 'https://www.google.com/maps?'+params.toString();
 }
-
+function renderMobileDetailMap(p){
+ if(!window.matchMedia('(max-width:760px)').matches)return;
+ if(!(pointLocations[p.id]||p.mapUrl||p.mapQuery))return;
+ const body=$('#detailBody');if(!body)return;
+ const box=document.createElement('section');box.className='mobileDetailMap';
+ const title=document.createElement('h3');title.textContent='위치 지도';
+ const frame=document.createElement('iframe');frame.title=p.name+' 위치 지도';frame.src=mobileDetailMapURL(p,true);frame.setAttribute('loading','lazy');frame.setAttribute('allowfullscreen','');frame.setAttribute('referrerpolicy','no-referrer-when-downgrade');
+ const link=document.createElement('a');link.href=mobileDetailMapURL(p,false);link.target='_blank';link.rel='noopener';link.textContent='Google Maps에서 크게 보기 ↗';
+ box.append(title,frame,link);
+ const anchor=body.querySelector('.detailPhoto')||body.querySelector('.visitFacts')||body.querySelector('.locationstatus')||body.querySelector('h2');
+ anchor?.after(box);
+ if(typeof localize==='function')localize();
+}
 let mobileMapView='list',detailOrigin=null,detailOpening=false;
 function toggleSavedPlace(p){saved=saved.includes(p.id)?saved.filter(id=>id!==p.id):[...saved,p.id];try{localStorage.setItem('atlas-saved',JSON.stringify(saved))}catch{toast('저장 공간을 사용할 수 없습니다. 파일로 내보내 주세요.')}$('#count').textContent=saved.length;document.querySelectorAll('[data-save-place]').forEach(b=>{const on=saved.includes(Number(b.dataset.savePlace));b.textContent=on?'♥':'♡';b.setAttribute('aria-pressed',String(on))});if(selected?.id===p.id)updateSave()}
 card=function(p){const root=document.createElement('article');root.className='card';root.dataset.place=p.id;const main=button('',()=>openDetail(p),'cardMain'),photo=photoForPlace(p),facts=spotFacts[p.id];main.innerHTML=`${photo?`<img class="placePhoto" src="${photo.src}" alt="${photo.alt}" width="320" height="210" loading="lazy">`:''}<small>${p.area} · ${p.town}</small><strong>${p.name}</strong><span>${p.tag}</span>${facts?`<span class="spotFacts">${facts.filter(Boolean).map(f=>`<span>${f}</span>`).join('')}</span>`:''}<em>장소 살펴보기 ↗</em>`;const save=button(saved.includes(p.id)?'♥':'♡',()=>toggleSavedPlace(p),'cardSave');save.dataset.savePlace=p.id;save.setAttribute('aria-label',p.name+' · 관심 장소');save.setAttribute('aria-pressed',String(saved.includes(p.id)));root.append(main,save);return root};
@@ -63,7 +40,7 @@ function renderDiscovery(){if(state.view==='explore'&&state.area==='전체'&&!sa
 }
 const discoveryRenderDesign=renderDesign;renderDesign=function(){discoveryRenderDesign();$('#resultTitle').parentElement.hidden=false;renderDiscovery()};
 const discoveryClose=close;close=function(){const detail=$('#detail');if(detail.open)detail.close();document.body.classList.remove('detailModalOpen');const t=$('#appToast');if(t.parentElement===detail)document.body.append(t);discoveryClose()};
-const discoveryOpenDetail=openDetail;openDetail=function(p){const mobile=window.matchMedia('(max-width:760px)').matches;if(mobile&&!$('#detail').open){detailOrigin={state:{...state},tab:contentTab,scroll:window.scrollY||0,focus:document.activeElement};}detailOpening=true;discoveryOpenDetail(p);detailOpening=false;const detail=$('#detail');if(mobile){if(detail.open)detail.close();detail.showModal();document.body.classList.add('detailModalOpen');detail.scrollTop=0;}else detail.setAttribute('open','');};
+const discoveryOpenDetail=openDetail;openDetail=function(p){const mobile=window.matchMedia('(max-width:760px)').matches;if(mobile&&!$('#detail').open){detailOrigin={state:{...state},tab:contentTab,scroll:window.scrollY||0,focus:document.activeElement};}detailOpening=true;discoveryOpenDetail(p);detailOpening=false;if(mobile)renderMobileDetailMap(p);const detail=$('#detail');if(mobile){if(detail.open)detail.close();detail.showModal();document.body.classList.add('detailModalOpen');detail.scrollTop=0;}else detail.setAttribute('open','');};
 function dismissDetail(){const origin=detailOrigin;detailOrigin=null;close();if(origin){state={...origin.state};contentTab=origin.tab;render();window.scrollTo?.({top:origin.scroll,behavior:'instant'});origin.focus?.isConnected&&origin.focus.focus?.({preventScroll:true})}}
 $('#closeDetail').onclick=dismissDetail;$('#detail').addEventListener('cancel',e=>{e.preventDefault();dismissDetail()});$('#detail').addEventListener('click',e=>{if(e.target===$('#detail'))dismissDetail()});
 function showPlanAdded(planId,day,duplicate){const msg=duplicate?'이미 이 날짜에 추가된 장소입니다.':'DAY '+(day+1)+'에 추가했습니다.';toast(msg);const box=$('#appToast');box.append(button('계획 보기',()=>{activePlanId=planId;detailOrigin=null;showPlans();box.hidden=true}));if($('#detail').open&&window.matchMedia('(max-width:760px)').matches)$('#detail').append(box);if(typeof localize==='function')localize()}
