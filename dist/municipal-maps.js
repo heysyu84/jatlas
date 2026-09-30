@@ -8,17 +8,46 @@ function municipalName(m){return municipalNames[m.id].ko}
 function selectedMunicipality(pref=state.pref,area=state.area){return municipalities(pref).find(m=>municipalName(m)===area)}
 function placeInScope(p){if(state.area==='전체'||p.area===state.area)return true;const m=selectedMunicipality();if(!m)return false;const loc=pointLocations[p.id]||p;const geo=municipalGeometry[prefNames.indexOf(state.pref)]?.find(f=>f.properties.id===m.id);if(geo&&Number.isFinite(loc.lon)&&Number.isFinite(loc.lat))return geo.geometry.coordinates.some(poly=>insidePolygon(loc.lon,loc.lat,poly[0])&&!poly.slice(1).some(r=>insidePolygon(loc.lon,loc.lat,r)));return p.town===municipalName(m)||p.town===m.name}
 function loadMunicipalities(id){if(municipalGeometry[id])return Promise.resolve();if(municipalLoads.has(id))return municipalLoads.get(id);const promise=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='boundaries/'+id+'.js';script.onload=()=>municipalGeometry[id]?resolve():reject(Error('Empty geometry'));script.onerror=()=>{script.remove();municipalLoads.delete(id);reject(Error('Boundary load failed'))};document.head.append(script)});municipalLoads.set(id,promise);return promise}
+function municipalityHasAnyTravelContent(pref,m){
+ if(typeof completePrefs==='undefined'||!completePrefs.includes(pref))return true;
+ const name=municipalName(m),ja=String(m?.name||''),stem=String(name||'').replace(/(시|구|정|촌)$/,'');
+ const textMatch=v=>{const t=String(v||'').replace(/\s+/g,'');return t===name||t===ja||(stem.length>=2&&t.includes(stem))};
+ const pointMatch=p=>{
+  if(!p||p.pref!==pref)return false;
+  if(textMatch(p.town)||textMatch(p.area))return true;
+  const loc=(typeof pointLocations!=='undefined'&&pointLocations[p.id])||p;
+  const b=m?.bounds;
+  return Array.isArray(b)&&b.length>=2&&Number.isFinite(loc?.lat)&&Number.isFinite(loc?.lon)&&
+   loc.lat>=Number(b[0]?.[0])&&loc.lat<=Number(b[1]?.[0])&&loc.lon>=Number(b[0]?.[1])&&loc.lon<=Number(b[1]?.[1]);
+ };
+ if(typeof samples!=='undefined'&&samples.some(pointMatch))return true;
+ if(typeof eventsForPref==='function'&&(eventsForPref(pref)||[]).some(e=>textMatch(e.area)||textMatch(e.town)||textMatch(e.where)))return true;
+ if(typeof foodsForPref==='function'&&(foodsForPref(pref)||[]).some(x=>textMatch(x.area)||textMatch(x.town)||textMatch(x.where)))return true;
+ return false;
+}
+function applyMunicipalityAvailability(pref=typeof state!=='undefined'?state.pref:''){
+ if(!pref||typeof municipalities!=='function')return;
+ const complete=typeof completePrefs!=='undefined'&&completePrefs.includes(pref);
+ for(const el of document.querySelectorAll('[data-municipality-id]')){
+  const m=municipalities(pref).find(x=>String(x.id)===String(el.dataset.municipalityId));
+  if(!m)continue;
+  const empty=complete&&!municipalityHasAnyTravelContent(pref,m);
+  el.classList.toggle('noContent',empty);
+  if(empty){el.dataset.contentEmpty='true';el.setAttribute('aria-description','등록된 관광·음식·계절행사 정보 없음')}
+  else{delete el.dataset.contentEmpty;el.removeAttribute('aria-description')}
+ }
+}
 function renderMunicipalPicker(){
  let box=document.getElementById('municipalPicker');if(!box){box=document.createElement('details');box.id='municipalPicker';box.className='municipalPicker';box.innerHTML='<summary>시구정촌으로 선택</summary><label for="municipalSearch">시구정촌 이름 검색</label><input id="municipalSearch" type="search" placeholder="시구정촌 이름 검색"><div id="municipalChoices" role="group" aria-label="선택할 수 있는 지역"></div>';document.querySelector('#towns').parentElement.after(box)}
  box.hidden=state.view!=='explore'||contentTab!=='places';const input=box.querySelector('input');if(box.dataset.pref!==state.pref){input.value='';box.dataset.pref=state.pref;box.open=false}
- const fill=()=>{const q=input.value.trim().toLowerCase();const items=municipalities(state.pref).filter(m=>(m.name+' '+municipalName(m)).toLowerCase().includes(q));const list=box.querySelector('#municipalChoices');list.replaceChildren(...items.map(m=>{const b=button(municipalName(m),()=>{contentTab='places';go(state.pref,municipalName(m));setMobileMapView?.('map')},state.area===municipalName(m)?'active':'');b.title=municipalName(m);b.dataset.municipalityId=m.id;return b}));if(!items.length)list.textContent='일치하는 지명이 없습니다';if(typeof localize==='function')localize()};input.oninput=fill;fill();stampMunicipalHeadings();
+ const fill=()=>{const q=input.value.trim().toLowerCase();const items=municipalities(state.pref).filter(m=>(m.name+' '+municipalName(m)).toLowerCase().includes(q));const list=box.querySelector('#municipalChoices');list.replaceChildren(...items.map(m=>{const b=button(municipalName(m),()=>{contentTab='places';go(state.pref,municipalName(m));setMobileMapView?.('map')},state.area===municipalName(m)?'active':'');b.title=municipalName(m);b.dataset.municipalityId=m.id;return b}));if(!items.length)list.textContent='일치하는 지명이 없습니다';if(typeof localize==='function')localize();applyMunicipalityAvailability(state.pref)};input.oninput=fill;fill();stampMunicipalHeadings();applyMunicipalityAvailability(state.pref);
  document.querySelector('#areas').parentElement.hidden=document.querySelector('#areas').children.length<=1;document.querySelector('#towns').parentElement.hidden=document.querySelector('#towns').children.length<=1;
 }
 function drawMunicipalities(map,pref){
  const id=prefNames.indexOf(pref);const geometry=municipalGeometry[id];if(!geometry)return;
  const style=f=>({color:'#fff',weight:1.5,fillColor:cutoutColors[Number(f.properties.id)%cutoutColors.length],fillOpacity:1,lineJoin:'round'});
  const layer=L.geoJSON(geometry,{style,onEachFeature:(f,l)=>{const m=municipalities(pref).find(m=>m.id===f.properties.id);const name=municipalName(m);const enter=()=>{contentTab='places';go(pref,name)};l.bindTooltip('<span data-municipality-id="'+m.id+'">'+name+'</span>',{sticky:true});l.on('tooltipopen',()=>{if(typeof localize==='function')localize()});l.on('click',enter);l.on('mouseover',()=>{l.bringToFront();l.setStyle({color:'#315987',weight:2.5})});l.on('mouseout',()=>l.setStyle(style(f)));l.on('add',()=>{const path=l.getElement();if(path){path.setAttribute('tabindex','0');path.setAttribute('role','button');path.setAttribute('aria-label',name);path.dataset.municipalityAria=m.id;path.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();enter()}})}})}}).addTo(map);
- const labels=L.layerGroup().addTo(map);const redraw=()=>{labels.clearLayers();const occupied=[];const view=map.getBounds();for(const f of geometry){const anchor=labelAnchor(f,view);if(!anchor)continue;const m=municipalities(pref).find(m=>m.id===f.properties.id);const point=map.latLngToContainerPoint(anchor),name=municipalName(m);const width=Math.min(160,Math.max(64,name.length*12));const rect=[point.x-width/2,point.y-15,point.x+width/2,point.y+15];if(occupied.some(r=>rect[0]<r[2]&&rect[2]>r[0]&&rect[1]<r[3]&&rect[3]>r[1]))continue;occupied.push(rect);L.marker(anchor,{icon:L.divIcon({className:'municipalLabel',html:'<span data-municipality-id="'+m.id+'">'+name+'</span>',iconSize:[width,30],iconAnchor:[width/2,15]}),title:name,keyboard:true}).on('add',function(){this.getElement().dataset.municipalityAria=m.id}).addTo(labels).on('click',()=>go(pref,name))}if(typeof localize==='function')localize()};map.on('moveend',redraw);redraw();
+ const labels=L.layerGroup().addTo(map);const redraw=()=>{labels.clearLayers();const occupied=[];const view=map.getBounds();for(const f of geometry){const anchor=labelAnchor(f,view);if(!anchor)continue;const m=municipalities(pref).find(m=>m.id===f.properties.id);const point=map.latLngToContainerPoint(anchor),name=municipalName(m);const width=Math.min(160,Math.max(64,name.length*12));const rect=[point.x-width/2,point.y-15,point.x+width/2,point.y+15];if(occupied.some(r=>rect[0]<r[2]&&rect[2]>r[0]&&rect[1]<r[3]&&rect[3]>r[1]))continue;occupied.push(rect);L.marker(anchor,{icon:L.divIcon({className:'municipalLabel',html:'<span data-municipality-id="'+m.id+'">'+name+'</span>',iconSize:[width,30],iconAnchor:[width/2,15]}),title:name,keyboard:true}).on('add',function(){this.getElement().dataset.municipalityAria=m.id}).addTo(labels).on('click',()=>go(pref,name))}if(typeof localize==='function')localize();applyMunicipalityAvailability(pref)};map.on('moveend',redraw);redraw();
  map.attributionControl.addAttribution('<a href="https://nlftp.mlit.go.jp/ksj/index.html" target="_blank" rel="noopener">국토수치정보 · MLIT 2021</a>');
  $('#mapNote').textContent='행정구역 경계 · 2021년 자료를 단순화 · 확대하면 작은 지역의 이름이 표시됩니다.';
 }
