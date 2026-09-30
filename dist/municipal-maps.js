@@ -22,8 +22,10 @@ function markMunicipalityContent(el,pref,m,tab=typeof contentTab!=='undefined'?c
  if(!el)return el;
  const empty=typeof completePrefs!=='undefined'&&completePrefs.includes(pref)&&!municipalityHasRegisteredContent(pref,m,tab);
  el.classList.toggle('noContent',empty);
- if(empty){el.dataset.contentEmpty='true';el.setAttribute('aria-description','현재 메뉴에 등록된 내용 없음')}
- else{delete el.dataset.contentEmpty;el.removeAttribute('aria-description')}
+ if(empty){
+  const label=tab==='events'?'등록된 계절·행사 없음':tab==='foods'?'등록된 음식 정보 없음':'등록된 관광지 없음';
+  el.dataset.contentEmpty='true';el.setAttribute('aria-description',label);el.dataset.emptyLabel=label;
+ }else{delete el.dataset.contentEmpty;delete el.dataset.emptyLabel;el.removeAttribute('aria-description')}
  return el;
 }
 function renderMunicipalPicker(){
