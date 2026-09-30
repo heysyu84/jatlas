@@ -4,7 +4,7 @@ const pointLocations={3:{lon:137.257,lat:36.142,note:'다카야마 중심부 기
 const mapInstances=new Map(),markerInstances=new Map();let mapKey='',nationalRegion='';
 const prefectureFeatures=geography.map(f=>({type:'Feature',properties:{name:prefNames[f.id],id:f.id},geometry:{type:'MultiPolygon',coordinates:f.rings.map(r=>[[...r,r[0]]])}}));
 const areaBoxes={'기후|히다':[[36.00,136.96],[36.40,137.52]],'기후|기후·나가라가와':[[35.39,136.72],[35.47,136.82]]};
-const regionCenters={"홋카이도": [43.4, 142.3], "도호쿠": [39.4, 140.6], "북간토": [36.9, 140.5], "수도권": [35.2, 140.6], "고신에쓰": [37.7, 138.3], "도카이": [34.5, 137.5], "호쿠리쿠": [36.6, 135.7], "긴키": [34.6, 135.2], "산인·산요": [34.9, 133.0], "시코쿠": [33.7, 133.6], "규슈": [32.6, 131.0]};
+const regionCenters={"홋카이도": [43.4, 142.3], "도호쿠": [39.4, 140.6], "북간토": [36.9, 140.5], "수도권": [35.2, 140.6], "고신에쓰": [37.7, 138.3], "도카이": [34.5, 137.5], "호쿠리쿠": [36.6, 135.7], "긴키": [34.6, 135.2], "산인·산요": [34.9, 133.0], "시코쿠": [33.7, 133.6], "규슈": [32.6, 130.5]};
 function isMobile(){return window.matchMedia('(max-width: 760px)').matches}
 function regionFor(pref){return regions.find(r=>r[1].split(' ').includes(pref))?.[0]||''}
 function geographicBounds(names,mainland=true){if(mainland&&names.length===1&&names[0]==='오키나와'){const rings=geography.find(f=>f.id===47).rings;const area=r=>(Math.max(...r.map(p=>p[0]))-Math.min(...r.map(p=>p[0])))*(Math.max(...r.map(p=>p[1]))-Math.min(...r.map(p=>p[1])));const main=rings.reduce((a,b)=>area(a)>area(b)?a:b);return L.latLngBounds(main.map(p=>[p[1],p[0]])).pad(.06)}const pts=geography.filter(f=>names.includes(prefNames[f.id])).flatMap(f=>f.rings.flat().filter(p=>!mainland||f.id!==13||p[1]>35));return L.latLngBounds(pts.map(p=>[p[1],p[0]]))}
@@ -49,8 +49,8 @@ const mobileRegionOffsets={
  '호쿠리쿠':[-8,10],
  '긴키':[-12,8],
  '산인·산요':[-18,-12],
- '시코쿠':[12,14],
- '규슈':[4,-6]
+ '시코쿠':[0,-12],
+ '규슈':[-8,-6]
 };
 const mobileRegionOrder=['홋카이도','도호쿠','북간토','수도권','도카이','호쿠리쿠','긴키','산인·산요','시코쿠','규슈','고신에쓰'];
 const mobileLabelNudges=(()=>{const a=[];for(let y=-40;y<=40;y+=8)for(let x=-48;x<=48;x+=8)a.push([x,y]);return a.sort((p,q)=>(p[0]*p[0]+p[1]*p[1])-(q[0]*q[0]+q[1]*q[1]))})();
@@ -68,7 +68,8 @@ function drawRegionLabels(map,layer){
   let chosen=null,candidates;
   if(mobile){
    const preferred=mobileRegionOffsets[name]||[0,0];
-   candidates=mobileLabelNudges.map(([x,y])=>[preferred[0]+x,preferred[1]+y]);
+   const localNudges=(name==='시코쿠'||name==='규슈')?mobileLabelNudges.filter(([x,y])=>Math.abs(x)<=16&&Math.abs(y)<=16):mobileLabelNudges;
+   candidates=localNudges.map(([x,y])=>[preferred[0]+x,preferred[1]+y]);
   }else{
    const preferred=name==='산인·산요'?[0,-10]:[0,0];
    candidates=offsets.map(([x,y])=>[x+preferred[0],y+preferred[1]]);
