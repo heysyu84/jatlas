@@ -1,4 +1,4 @@
-# Migration revision: 2026-10-01 escaped-quote parser v5
+# Migration revision: 2026-10-01 conservative fallback search v6
 #!/usr/bin/env python3
 from __future__ import annotations
 
@@ -147,6 +147,82 @@ def resolve_commons_urls(filenames: list[str]) -> tuple[dict[str, str], list[dic
         time.sleep(0.35)
     return resolved, failed
 
+_SEARCH_STOP = {"file","image","photo","japan","japanese","pref","prefecture","city","the","of","in","at","and","various","jpg","jpeg","png"}
+
+def _name_tokens(name: str) -> list[str]:
+    stem = re.sub(r"\.(?:jpe?g|png)$", "", name, flags=re.I)
+    tokens = [x.lower() for x in re.findall(r"[A-Za-z]{3,}|[ぁ-んァ-ヶ一-龯]{2,}", stem)]
+    return [x for x in tokens if x not in _SEARCH_STOP]
+
+def _fallback_score(original: str, candidate: str) -> float:
+    q = set(_name_tokens(original))
+    c = set(_name_tokens(candidate))
+    if not q or not c:
+        return 0.0
+    overlap = len(q & c)
+    ratio = overlap / len(q)
+    qcompact = "".join(sorted(q))
+    ccompact = "".join(sorted(c))
+    compact_hit = any(tok in re.sub(r"[^a-z0-9ぁ-んァ-ヶ一-龯]", "", candidate.lower()) for tok in q if len(tok) >= 5)
+    if len(q) == 1:
+        return 1.0 if overlap == 1 or compact_hit else 0.0
+    if overlap >= 2 and ratio >= 0.5:
+        return ratio + overlap * 0.05
+    if compact_hit and overlap >= 1 and ratio >= 0.34:
+        return ratio
+    return 0.0
+
+def search_commons_fallbacks(missing: list[str]) -> tuple[dict[str, str], list[dict]]:
+    aliases: dict[str, str] = {}
+    unresolved: list[dict] = []
+    api = requests.Session()
+    for idx, original in enumerate(missing, 1):
+        query = re.sub(r"\.(?:jpe?g|png)$", "", original, flags=re.I)
+        params = {
+            "action": "query",
+            "format": "json",
+            "formatversion": "2",
+            "list": "search",
+            "srnamespace": "6",
+            "srlimit": "8",
+            "srsearch": query,
+        }
+        data = None
+        for attempt in range(5):
+            try:
+                _throttle()
+                r = api.get(API, params=params, headers=HEADERS, timeout=45)
+                if r.status_code in (429, 502, 503, 504):
+                    time.sleep(min(12.0, 1.0 * (2 ** attempt)))
+                    continue
+                r.raise_for_status()
+                data = r.json()
+                break
+            except Exception:
+                if attempt == 4:
+                    data = None
+                    break
+                time.sleep(min(12.0, 1.0 * (2 ** attempt)))
+        if not data:
+            unresolved.append({"file": original, "reason": "Commons fallback search failed"})
+            continue
+        scored = []
+        for row in data.get("query", {}).get("search", []):
+            title = normal_file_name(row.get("title", ""))
+            if not EXT_RE.search(title):
+                continue
+            score = _fallback_score(original, title)
+            if score > 0:
+                scored.append((score, title))
+        scored.sort(key=lambda x: (-x[0], len(x[1])))
+        if scored:
+            aliases[original] = scored[0][1]
+        else:
+            unresolved.append({"file": original, "reason": "Commons file not found"})
+        if idx % 10 == 0 or idx == len(missing):
+            print(f"fallback searched {idx}/{len(missing)}; matched={len(aliases)}", flush=True)
+    return aliases, unresolved
+
 def save_commons_webp(url: str, path: Path) -> tuple[bool, str | None]:
     tmp = path.with_suffix(".download")
     session = requests.Session()
@@ -277,7 +353,22 @@ def main() -> None:
 
     names = sorted(all_files)
     resolved_urls, lookup_failed = resolve_commons_urls(names)
-    failed.extend(lookup_failed)
+    exact_missing = [x["file"] for x in lookup_failed if x.get("reason") == "Commons file not found"]
+    failed.extend(x for x in lookup_failed if x.get("reason") != "Commons file not found")
+
+    fallback_aliases, fallback_unresolved = search_commons_fallbacks(exact_missing)
+    failed.extend(fallback_unresolved)
+    if fallback_aliases:
+        fallback_targets = sorted(set(fallback_aliases.values()))
+        fallback_urls, fallback_lookup_failed = resolve_commons_urls(fallback_targets)
+        failed.extend(fallback_lookup_failed)
+        for original, target in fallback_aliases.items():
+            url = fallback_urls.get(target)
+            if url:
+                resolved_urls[original] = url
+            else:
+                failed.append({"file": original, "reason": "Fallback image URL could not be resolved"})
+
     names = [name for name in names if name in resolved_urls]
     with ThreadPoolExecutor(max_workers=3) as pool:
         futures = [pool.submit(process_one, filename) for filename in names]
@@ -343,6 +434,7 @@ def main() -> None:
         "reused_existing": reused,
         "failed_count": len(failed),
         "failed": failed,
+        "fallback_aliases": fallback_aliases,
         "changed_js_files": sorted(changed_files),
         "remaining_external_src_count": sum(len(v) for v in unresolved_external.values()),
         "remaining_external_srcs": unresolved_external,
