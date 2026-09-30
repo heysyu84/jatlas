@@ -4,7 +4,10 @@ const pointLocations={3:{lon:137.257,lat:36.142,note:'다카야마 중심부 기
 const mapInstances=new Map(),markerInstances=new Map();let mapKey='',nationalRegion='';
 const prefectureFeatures=geography.map(f=>({type:'Feature',properties:{name:prefNames[f.id],id:f.id},geometry:{type:'MultiPolygon',coordinates:f.rings.map(r=>[[...r,r[0]]])}}));
 const areaBoxes={'기후|히다':[[36.00,136.96],[36.40,137.52]],'기후|기후·나가라가와':[[35.39,136.72],[35.47,136.82]]};
-const regionCenters={"홋카이도": [43.4, 142.3], "도호쿠": [39.4, 140.6], "북간토": [36.9, 140.5], "수도권": [35.2, 140.6], "고신에쓰": [36.85, 138.4], "도카이": [34.5, 137.5], "호쿠리쿠": [36.6, 135.7], "긴키": [34.6, 135.2], "산인·산요": [34.9, 133.0], "시코쿠": [33.7, 133.6], "규슈": [32.6, 130.5]};
+const regionCenters={"홋카이도":[43.4,142.3],"도호쿠":[39.4,140.6],"북간토":[36.6,139.8],"수도권":[35.55,139.95],"고신에쓰":[36.85,138.15],"도카이":[34.85,137.45],"호쿠리쿠":[36.65,136.15],"긴키":[34.65,135.2],"산인·산요":[34.55,132.75],"시코쿠":[33.65,133.65],"규슈":[32.55,130.55]};
+// Fixed geographic label anchors. These never move to resolve collisions;
+// resizing only changes the map scale, so every label remains tied to the same place.
+const regionLabelAnchors={"홋카이도":[43.45,142.45],"도호쿠":[39.25,140.75],"고신에쓰":[36.95,138.25],"호쿠리쿠":[36.7,136.05],"북간토":[36.35,140.1],"수도권":[35.45,140.15],"도카이":[34.75,137.45],"긴키":[34.45,135.25],"산인·산요":[34.45,132.65],"시코쿠":[33.45,133.7],"규슈":[32.45,130.55]};
 function isMobile(){return window.matchMedia('(max-width: 760px)').matches}
 function regionFor(pref){return regions.find(r=>r[1].split(' ').includes(pref))?.[0]||''}
 function geographicBounds(names,mainland=true){if(mainland&&names.length===1&&names[0]==='오키나와'){const rings=geography.find(f=>f.id===47).rings;const area=r=>(Math.max(...r.map(p=>p[0]))-Math.min(...r.map(p=>p[0])))*(Math.max(...r.map(p=>p[1]))-Math.min(...r.map(p=>p[1])));const main=rings.reduce((a,b)=>area(a)>area(b)?a:b);return L.latLngBounds(main.map(p=>[p[1],p[0]])).pad(.06)}const pts=geography.filter(f=>names.includes(prefNames[f.id])).flatMap(f=>f.rings.flat().filter(p=>!mainland||f.id!==13||p[1]>35));return L.latLngBounds(pts.map(p=>[p[1],p[0]]))}
@@ -38,65 +41,15 @@ function createMap(id,bounds,{detailed=false,mode='pref',only=null,features=null
  map.on('dragstart',()=>host.classList.add('dragging'));map.on('dragend',()=>host.classList.remove('dragging'));
  return map;
 }
-// Keep the denser travel-region labels distinct even on a narrow screen.
-const mobileRegionOffsets={
- '홋카이도':[0,0],
- '도호쿠':[4,-2],
- '북간토':[12,-6],
- '수도권':[16,10],
- '고신에쓰':[-20,-8],
- '도카이':[-6,16],
- '호쿠리쿠':[-8,10],
- '긴키':[-12,8],
- '산인·산요':[-18,-12],
- '시코쿠':[-14,26],
- '규슈':[-12,-6]
-};
-const mobileRegionOrder=['홋카이도','도호쿠','북간토','수도권','도카이','호쿠리쿠','긴키','산인·산요','시코쿠','규슈','고신에쓰'];
-const mobileLabelNudges=(()=>{const a=[];for(let y=-40;y<=40;y+=8)for(let x=-48;x<=48;x+=8)a.push([x,y]);return a.sort((p,q)=>(p[0]*p[0]+p[1]*p[1])-(q[0]*q[0]+q[1]*q[1]))})();
+// Nationwide labels use fixed geographic anchors so viewport size never changes their placement.
 function regionLabelWidth(name,mobile){return mobile?Math.min(76,Math.max(50,32+[...name].length*8)):86}
-function boxesOverlap(a,b){return a.x<b.x+b.w+4&&a.x+a.w+4>b.x&&a.y<b.y+b.h+3&&a.y+a.h+3>b.y}
 function drawRegionLabels(map,layer){
- layer.clearLayers();const mobile=isMobile(),size=map.getSize(),h=30,occupied=[],placed={};
- const offsets=[[0,0]];for(const r of [1,2,3,4,5])offsets.push([0,-r*34],[0,r*34],[-r*38,0],[r*38,0],[-r*38,-r*34],[r*38,r*34],[-r*38,r*34],[r*38,-r*34]);
- let entries=Object.entries(regionCenters);
- // Koshinetsu is anchored first so surrounding labels avoid it, rather than moving it around.
- entries.sort(([a],[b])=>{
-  if(a==='고신에쓰')return -1;if(b==='고신에쓰')return 1;
-  return mobile?mobileRegionOrder.indexOf(a)-mobileRegionOrder.indexOf(b):0;
- });
- for(const [name,center] of entries){
-  const w=regionLabelWidth(name,mobile),origin=map.latLngToContainerPoint(center);
-  if(origin.x<0||origin.y<0||origin.x>size.x||origin.y>size.y)continue;
-  let chosen=null,candidates=[];
-  if(name==='고신에쓰'){
-   // Keep this label tied to one geographic point at every viewport size.
-   chosen={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2)),w,h};
-  }else if(mobile){
-   const preferred=mobileRegionOffsets[name]||[0,0];
-   const localNudges=(name==='시코쿠'||name==='규슈')?mobileLabelNudges.filter(([x,y])=>Math.abs(x)<=16&&Math.abs(y)<=16):mobileLabelNudges;
-   candidates=localNudges.map(([x,y])=>[preferred[0]+x,preferred[1]+y]);
-  }else{
-   const preferred=name==='산인·산요'?[0,-10]:[0,0];
-   candidates=offsets.map(([x,y])=>[x+preferred[0],y+preferred[1]]);
-  }
-  if(!chosen&&mobile&&(name==='시코쿠'||name==='규슈')){
-   const [dx,dy]=mobileRegionOffsets[name];
-   chosen={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
-  }else if(!chosen){
-   for(const [dx,dy] of candidates){
-    const box={x:Math.max(5,Math.min(size.x-w-5,origin.x-w/2+dx)),y:Math.max(5,Math.min(size.y-h-24,origin.y-h/2+dy)),w,h};
-    if(mobile){
-     const zoom={x:5,y:Math.max(0,size.y-118),w:58,h:98};
-     if(boxesOverlap(box,zoom))continue;
-    }
-    if(!occupied.some(b=>boxesOverlap(box,b))){chosen=box;break}
-   }
-  }
-  if(!chosen)continue;
-  occupied.push(chosen);placed[name]={x:chosen.x+w/2,y:chosen.y+h/2};
-  const anchor=map.containerPointToLatLng([chosen.x+w/2,chosen.y+h/2]);
-  if(!mobile&&Math.hypot(chosen.x+w/2-origin.x,chosen.y+h/2-origin.y)>18)L.polyline([center,anchor],{color:'#8ba3b7',weight:1,opacity:.7,interactive:false}).addTo(layer);
+ layer.clearLayers();
+ const mobile=isMobile(),size=map.getSize(),h=30;
+ for(const [name,center] of Object.entries(regionCenters)){
+  const anchor=regionLabelAnchors[name]||center;
+  const p=map.latLngToContainerPoint(anchor),w=regionLabelWidth(name,mobile);
+  if(p.x<-w||p.y<-h||p.x>size.x+w||p.y>size.y+h)continue;
   L.marker(anchor,{icon:L.divIcon({className:'regionMapLabel',html:`<span>${name}</span>`,iconSize:[w,h],iconAnchor:[w/2,h/2]}),keyboard:true,title:name}).addTo(layer).on('click',()=>selectRegion(name));
  }
  if(typeof localize==='function')localize();
