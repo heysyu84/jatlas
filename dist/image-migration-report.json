@@ -1,21 +1,13 @@
 {
   "commons_candidates": 633,
   "localized": 633,
-  "downloaded_now": 1,
-  "reused_existing": 632,
+  "downloaded_now": 0,
+  "reused_existing": 633,
   "failed_count": 0,
   "failed": [],
   "fallback_aliases": {},
   "changed_js_files": [],
-  "remaining_external_src_count": 3,
-  "remaining_external_srcs": {
-    "food-photos.js": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Japan's Kyoho Grapes.jpg?width=960"
-    ],
-    "regional-data.js": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Deer's Spa, Nasu-Yumoto.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Tetsugaku-no-michi - Philosopher's Walk - Kyoto.jpg?width=960"
-    ]
-  },
+  "remaining_external_src_count": 0,
+  "remaining_external_srcs": {},
   "policy_note": "Only reusable Wikimedia Commons sources are copied locally. Existing local files are ignored; other external images require separate license review or a Commons replacement."
 }
