@@ -1,0 +1,3489 @@
+{
+  "commons_candidates": 814,
+  "localized": 40,
+  "downloaded_now": 40,
+  "reused_existing": 0,
+  "failed_count": 774,
+  "failed": [
+    {
+      "file": "01-dotonbori.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "03-hozenji-yokocho.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "05-nakanoshima-park.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "01-.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "06-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "04-.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "02-.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "04-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "02-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "07-osaka-museum-of-history.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "11-abeno-harukas.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "09-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "08-osaka-tenmangu.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "13-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "10-shinsekai-tsutenkaku.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "12-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "03-.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "14-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "15-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "16-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "17-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "18-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "19-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "20-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "2010-06-17 Isuien Nara Japan06s3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "21-kitsune-udon.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "22-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "23-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "24-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "25-selected.webp",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Akafuku mochi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Akame 48 Waterfalls, Fudo Falls.jpg",
+      "reason": "429 Client Error: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81) for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Akame_48_Waterfalls%2C_Fudo_Falls.jpg/1920px-Akame_48_Waterfalls%2C_Fudo_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "file": "Akiyoshidai.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Akizuki Castle Nagayamon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Akihabara Electric Town, Tokyo, 20240823 1617 5580.jpg",
+      "reason": "429 Client Error: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81) for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Akihabara_Electric_Town%2C_Tokyo%2C_20240823_1617_5580.jpg/1920px-Akihabara_Electric_Town%2C_Tokyo%2C_20240823_1617_5580.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "file": "Amanohashidate.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Angel Road Shodoshima Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Angelica keiskei.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Akashiyaki Tamagoyaki.JPG",
+      "reason": "429 Client Error: Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81) for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Akashiyaki_Tamagoyaki.JPG/1920px-Akashiyaki_Tamagoyaki.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "file": "Aqua World.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ankou-nabe.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Arashiyama Bamboo Grove.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Arimatsu Historic Townscape, Midori Ward Nagoya 2014.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Arimaonsen07s1920.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Asahi Melons, Hokota, Ibaraki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Art house project in Naoshima, Kadoya(角屋、直島 家プロジェクト) PC182309.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ashikaga Flower Park 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ashizuri Aquarium SATOUMI.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Atsuta Shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ashikaga school historic site.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Atomic Bomb Dome in the Hiroshima Peace Memorial Park.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Asuka-dera Asuka Nara pref10s3600.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awa Jurobe Yashiki (46044265632).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awa-odori Chicken Katsu Curry 02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awa-odori in Naruto City.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awaji Hanasajiki.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awabi no nigai 2015.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awaji Onion Tempura ac.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Azuchi-Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Awaji yumebutai12s3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Banshū-ramen Apr 2026 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bansuiso,Matsuyama-city,Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Battlefield of Sekigahara (decisive battle site), Gifu, Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Battleship Mikasa in Yokosuka harbour 10.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Big rolled sushi,Hutomakizushi,Katori-city,Chiba,Japan.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bitchu-Takamatsu Castle ruins.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bitchu Matsuyama Castle 02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Biwa Trout(Lake Biwa-JP).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bitchu Kokubunji in Soja Okayama pref Japan01s3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Biwako valley23n.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bizen Osafune Japanese Sword Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Bizan Tokushima01s3872.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Boiled big peanuts & normal peanuts, Katori City, Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Buddhist vegetarian food, Shukubo of Kongosanmaiin - May 3, 2011.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Broad beans.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Butaman by hirotomo in Osaka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Canal City Hakata.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "CASTLE IN TOKYO DISNEYLAND.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Byobugaura 21.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Byōdō-in.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Cape Ashizuri.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Cape Shionomisaki, Wakayama - 52630088313.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Central grounds of Ishite-Ji (6453774277).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chankonabe.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Cherry blossoms at Yoshinoyama 09.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Cherry blossoms - Sakura - 桜 - Flickr - TANAKA Juuyoh (田中十洋).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chichu art museum01s2560.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chiba Port Tower (29395363324).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chiba-jinja Haupthalle 2.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chiba of Nokogiriyama top view.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chikurinji Kochi03n3872.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chikubushima enkei-2.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chichibu-jinja Haiden.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chimura Tofu Chikuwa no Sato.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Chuo-dori Ginza.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Citrus unshiu 20101118 a.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Climbing kiln Mashiko.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Crepe in Harajuku.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Cupnoodles museum yokohama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Daigo-ji National Treasure World heritage Kyoto 国宝・世界遺産 醍醐寺 京都110.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Danjogaran Koyasan12n3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Daijuji sanmon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Daisen in Autumn.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Daisho-in temple-06.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Dazaifu Tenmangu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Deer in Nara Park.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Demi-katsudon in Okayama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Dejima Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Dochū-Kōtsu Prefectural Natural Park 土柱高越県立自然公園.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Dogo-onsen Honkan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Doteyaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Dozaki Church Goto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Driedniboshi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Dotonbori Canal 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Edo Wonderland Nikko Edomura 01.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Eboshidake Observatory Tsushima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Edo tokyo museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ena Kawakamiya Kurikinton ac.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Engaku-ji Temple @ Kita-Kamakura (9399407409).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Engyoji05s4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Enoshima Island.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Entrance to MOA Museum of Art.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "EnoshimaSeaCandle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Expo Memorial Park (Japanese garden)1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Exterior of the Teshima Art Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fruit dessert.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fuji-Q Highland (49321868041).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fugu sashimi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fujisan Hongū Sengen Taisha.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fujinomiya-yakisoba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fujisan World heritage Center, Yamanashi 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukiya Furusato Village.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukiware Falls.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukuoka Castle 20221231.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukue Castle Ishida Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukuoka Tower.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Fukuyama Castle, Hiroshima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Funabashi-Andersen-Park 26.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Funaya in Ine Town, Yosa District, Kyoto Prefecture 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Funazushi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "FukurodaFalls.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gate, Kochi Castle - Apr 13, 2023 (2).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Garyusanso.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Genji-maki, sweet in Tsuwano - September 2005.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gero Onsen Gassho-mura 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Genkyuen08s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gero OnsenTown.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gifu Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ginkakuji, Kyoto (49073313412).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gifu Sekigahara Battlefield Memorial Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Glover Garden Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gomasaba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Goheimochie.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gohei-mochi 301.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gosho Aoyama Manga Factory.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Goto udon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gozaisho Ropeway and Fujimi-iwa.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gongendo no sakura1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gujo Hachiman castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Grilled oysters Food in Miyajima - DSC02189.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gujo from Gujo Hachiman castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gyoda Sakitama Kofun Park Lawn Field 1.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gyokuro tea.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gyoda Zeri Fry.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gyukotsu miso ramen 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Gyōza 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hagi Castle and Mount Shizuki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Haisho of Daisen Kofun, Mozu Kofun Group, Sakai, Osaka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hakata ramen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hakone Shrine 2025.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hakone Checkpoint.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hakone black egg dsc05310.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hamamatsu Castle, tenshu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hama-rikyu garden in Tokyo 2.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hakutojinja -01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hamamatsu Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hamamatsu flower park01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hamamatsu Gyōza 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hananuki Gorge (51847182208).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hamanamkamachi Hachihongi-jyuku street 2.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hana no Iwaya Shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Harahoge Jizo.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hashiguiiwa Rock Kushimoto Town.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hario Radio Towers.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hashima Nagasaki Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hasedera Sakurai Nara pref58s5s4272.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hetsu-gu of Munakata-taisha-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Heijo Palace in Nara.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hikone Castle (2094996482).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hida-Takayama Miyagawa Morning Market (15668520238).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hida Folk Village.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hidakokubunji05ds3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hirado Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Himeji castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hirome Market 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hiroshima Peace Memorial Museum, August 6, 2026.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hiroshima Shukkeien hdsr Garden S5 13.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hirado Xavier Memorial Church.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "HiroshimaCastle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hiruzen yakisoba.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hiruzen Plateau.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hishio-no-sato Shodo Island Kagawa pref Japan21s3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hitachi Seaside Park.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hitachi Beef on the dish.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hitsumabushi1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hodosan-Shrine.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hiwasa Chelonian Museum Caretta 2025.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hofu-tenmangu1.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hokokuji Bamboo Forest Kamakura.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Horikawa Sightseeing Boat, Matsue - Apr 11, 2026.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Horyu-ji01s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Honetsukidori Marugame.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Houbamiso.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Houtou.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Hozenji (Osaka Chuo-ku) Temple hdsr S5 30.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Huis Ten Bosch Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ibaraki Flower Park 20160507.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Iga Ueno Castle ac.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ikaho Onsen Stone Steps.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ikaho Onsen bridge.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Imabari Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ikayaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Imo kenpi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Imaicho Kashihara.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Imokoi 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Imperial Palace East Garden.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inside the Kumano Hongu Taisha.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inside of the Oya History Museum 20251012d.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inasa no hama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Interior of the Tenjinbashisuji Shopping Street.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inujima Seirensho Art Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inubozaki lighthouse 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inuyama castle1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ise Udon Yamaguchiya ac (2).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Inuyamajouka1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ise-Shrine Naiku-Ujibashi-Torii.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Itsukushima Shinto Shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ito Jogasaki-Küste 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ishibutai-kofun Asuka Nara pref03n4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "IwakuniSushiCut01C.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Iwami Ginzan Silver Mine, Shimizudani Refinery Ruins 001.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Iwami Ginzan Silver Mine, Ryugenji Mabu Mine Shaft 001.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Iya Valley (6551525965).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Iya vine bridge-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Izu city, Ikadaba, Wasabi fields 20111002 C.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Iya vine bridge-3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Izushi Soba.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Izumo soba.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Izumo taisha.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Izushi castle03st3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "JP-Kagawa-Kotohira-gū(Shrine)-Main-Shrine.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "JP 日本 Japan 京都 Kyoto 宇治城 Uji-shi Uji Myouraku shop Nakamura Tokichi Honten Tea House cafe 綠茶甜品 Matcha cream June 2026 N13P 06.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "JP-kyoto-ryoanji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "JR Central SCMAGLEV and Railway Park.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japan National Route 363 at Iwamura town, Ena city.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japan Tottori MitokuSan Nageiredo DSC01248.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japanese anagomeshi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japanese spiny lobster.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japanese beef steak.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japanese tea tray with two cups of matcha along with some sweets during a tea ceremony.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Joren Falls (28892387935).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Joto district Tsuyama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Japanese traditional style shops 和風建築(わふうけんちく) (5395325824).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "KUROMON MARKET OSAKA (54676620980).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kadokawa Culture Museum at Tokorozawa Sakura Town (50608208297).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kaike onsen05s3648.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kairakuen Mito.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kakegawa Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kakinoha (persimmon leaf) sushi in Nara.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kakioko.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kamakura Hasedera Kannondou.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kamikura-jinja, shaden.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kamogawa sea world.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kanamaruza.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kankakei01s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kanzanji ropeway.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Karato market, Shimonoseki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "KaratsuCastle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kasama Inari shrine 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kashima-jingu romon gate.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kashiwajima Island, Otsuki, Kochi Prefecture, as viewed from a nearby observation deck. August 2013.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kashiya yokocho -02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kasugayama Forest.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kasuga Taisha.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Katori Katori-jingu Haupthalle 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Katsuoji-daruma.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Katsuo no tataki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Katsurahama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Katsuura Morning Market ac (1).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawachi Pass Hirado.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawagoe Hikawa shrine 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawachi wisteria garden 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawagoe Kitain Tahoto 202011.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawagoe Toki no Kane 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawagoejou.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawara soba by woinary in Moji, Fukuoka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawaramachi Gifu Japan01-r.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawazu Seven Falls - 2024 Nov 4 various 17 43 29 101000.jpeg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kawasaki Daishi Main Hall.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Keichan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kegon Falls 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kencho-ji Temple @ Kamakura (13897782171).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Keya no Oto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kimiidera (Wakayama-shi) Temple hdsr S5 xw03.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kibitsu-jinja Honden-Haiden 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kinosaki onsen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kinkaku-ji, Kyoto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kinosaki ropeway01n2610.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kintaikyo in Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kinugawa Onsen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kishimen by Ms. President in Nagoya.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kishiwada Castle Kishiwada Osaka pref Japan01n.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kitano-cho open space Kobe Japan01s3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kitsune Udon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kiyoken factory tasting.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kobe Animal Kingdom, Kobe, Japan (17388125591).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kobe Harborland Centar Building.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kobe Nankinmachi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kobe beef meal served in a steakhouse in Kobe.jpeg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kobe port tower11s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kobe-meriken-park.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kochi Castle 2025.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kochi Prefectural Makino Botanical Garden01s3872.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kofu torimotsuni.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kodokan, Mito, 2020.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kokura Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Koga-no-sato Ninja village , 甲賀の里 忍術村 - panoramio (3).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Koko-en, Himeji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kongobuji Koyasan07n3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Korankei-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kosanji Hondo.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kujukushima Islands from sightseeing boat.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "KumanoNachiTaisha.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kuramadera.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kumanohayatama-taisha11s4s4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kurashiki Ivy Square01s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kurashiki Bikan Historical Quarter.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kurayoshi Utsubuki-Tamagawa27n4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kurume kourataisha.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kusatsu Yumomi, Gunma 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kushida Shrine, Fukuoka, Japan, November 25, 2025.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kyoto Fushimi Inari-taisha Sembon-Torii.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kushikatsu - Shinsekai (28289215848).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kyoto Morning Yudofu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kyoto Imperial Palace (Kyoto-Gosho) Kogosho (52980159201).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kyoto To-ji Pagode 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "La Collina OMIHACHIMAN 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kyushu National Museum (19544806984).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Kyoto, Kiyomizu-dera Temple (6172864288).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "LaLaport Fukuoka FlowerPark Entrance.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "La Villa Española de Shima, Parque España - Avenida de España.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lake Biwa Museum 20201024 35.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lake Haruna 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lake Yunoko 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lemon steak Sasebo.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lake chuzenji Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lemon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Magome-juku.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Maguro-don.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Lycoris radiata - Kinchakuda 2018 - 3.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Magose pass.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Main Hall of Nanzoin Temple in Sasaguri, Kasuya, Fukuoka.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Makino Metasequoia.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Marine Tower @ Yokohama (9052369711).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Marugame Castle 001.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Main building of Daruma-ji (Takasaki) 2010-04-01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Maruyama Senmaida(34665016140).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matengai Cliff at Kuniga coast, Nishinoshima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matsuba Crab (51242431199).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matsue castle02s4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matsusaka Castle, Tenshudai.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matsusaka Castle, Honmaru.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mehari zushi with anago by woinary in Osaka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Megane Bridge Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matsusaka beef and Korean barbeque.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Matsuyama Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Meijimura1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Menchi (minced pork) katsu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Meoto Iwa Mie.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mentaiko.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Meoto-iwa.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Meotoiwa.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Merchant's Houses (Boso no mura) 01.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mihamaen20110828.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Metropolitan Area Outer Underground Discharge Channel (10886015096).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mifuneyama-rakuen 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miho-no Matsubara.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mii-dera Otsu Shiga pref05n4500.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mikimoto Pearl Island.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mikimoto pearl islands.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mikurodo cave, Muroto city 02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Minobusan-Ropeway-200806.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Minoh Falls Minoh Osaka pref Japan02s5.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miso Katsu by jetalone in Nagoya.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mishima sky walk.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Misasa onsen01bs3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miso konnyaku by nyaa birdies perch in Nakanojo, Gunma.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miso soup of shizimi(corbicula japonica) 2014.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miso nikomi udon 1 naotakem.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miso-Potato Chichibu.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mitaki-dera - main.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Miyajidake shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mitsumine-jinja, Haiden.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mizuki Shigeru Road -03.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mizutaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mizusawa Udon, Tamaruya, Ikaho - Nov 14, 2009.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mojiko station.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Monet-Marumottan-mizu02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Momiji manju of Fujiiya.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Monument of Birthplace of Ureshino Tea.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Monjayaki-2006-06-25.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mother farm 2018.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mori Art Museum -----.png",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Motonosumi Shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mount Ishizuchi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Motsunabe.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mount Kasagi from Ena Gorge.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mount Tanigawa (51982858582).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mount Misen (Miyajima) - DSC02043.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mt Fuji at Nihondaira.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mt Hiei Enryakuji temple , 比叡山 延暦寺 - panoramio (12).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mt. Fuji Panoramic Ropeway.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mt. wakakusa overlooking Nara.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Mt.Tsukuba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Musashino udon 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Murouji Temple Five-storied Pagoda.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Muroto Cape.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Museum of Housing and Living (Osaka Kita-ku) hdsr S5 23.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nabana no Sato Chapel Illumination.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nabeyaki ramen 02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Naegi Castle and Mount Ena.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nachi Falls002.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagasaki Atomic Bomb Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagasaki Castella.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagasaki Peace Park Statue.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagasaki Shinchi Chinatown.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagasaki champon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagasaki night view from Mount Inasa.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagashima Spa Land.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagoya Castle Saga Prefecture 2026-09.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagatoro Iwadatami in April 2024 2.png",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagoya Castle 7.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nagoya-City-Science-Museum-2.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nakaminato Osakana Market ac.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nakanoshima Museum of Art, Osaka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Namba Yasaka jinja (Osaka Naniwa-ku) Shrine hdsr S5 12.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Namerou 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nanatsugama from view place 2016-09-06 02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Naoshima New Museum of Art 2025.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nara Cha-meshi 奈良茶飯 茶亭有翠 Jan 10, 2010.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "NaraKofukuji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nara-miwa somen-m.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "NaraTodaiji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Naramachi NigiwainoIe Nara.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Naritasan-Shinshoji-Temple.Great-Main-Hall.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "National Museum of Japanese History 2008.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Natto for sale in Ibaraki Apr 30 2019 04-26PM.jpeg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Naruto Kintoki.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Night view from Sarakurayama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "New Enoshima Aquarium.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Night view from Yamanashi Fuefukigawa Fruit Park.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nigiri.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nihonbashi 2018.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nihondaira Digital Tower (2).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Niji no matsubara.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nijo Castle, Kyoto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nikko Futarasan shrine (52786784770).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nikko toshogu torii and yomeimon gate.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nikkosan Rinnoji Temple, Nikko, Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nikobuti04.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nishin Soba at Honke Owariya.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ninja MUSEUM of Igaryu , 伊賀流忍者博物館 - panoramio (1).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nodoguro (26323999913).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nunobiki herb garden02s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Nojimazaki Lighthouse 2017-09.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oarai isozaki shrine,Oarai isozaki jinjya haiden,oarai-town,japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Obama Onsen Hot Foot 105.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Obanzai-kyotofood-2018-12-30.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Observatory in Mt. Kirosan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oboke Bridge over the Yoshino River.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Observing Naruto whirlpools.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ochiai Village 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Odawara Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Odawarakamaboko.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ohana Yanagawa01n3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ogi Shirakawa-gō, Gifu, Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ohara Museum of Art01bs3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okage Yokocho 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ohori Park, Fukuoka.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okage Yokocho01.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okawachiyama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okayama Castle 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okayama Korakuen Garden01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okirikomi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okayama barazushi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okazaki-Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okonomiyaki by S e i in Osaka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okuboji 08.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okunoin, Koyasan - figure d.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Okonomiyaki of Hiroshima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Omi Beef Rice & Matsusaka Beef Hamburg Steak Bento.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Old Ito Den-emon Residence.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Omijima20090301.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Omotesando to Naritasan Shinshoji Temple @ Narita (15265627342).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Omori shimogawara hukuya ato.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Omiwa Shrine Worship Hall.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Onomichi from Senko-ji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Onigajo Seaside.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "One Fukuoka Bldg the NW side Tenjin 1-chōme Chūō-ku Fukuoka 20250429 144243.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Onomichi ramen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oouo Jinja kaichu torii.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Osaka Museum of History and NHK Osaka Broadcasting Center Building.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Osaka Tenmangu01n3390.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Osezaki Lighthouse Goto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "OsakaCastle-MainTower02.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oshi Castle, yagura-2.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oumi champon 002.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oura Church Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oyster.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oyaji Temple.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oyunohara banner.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oyama Senmaida (43073498032).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Oze 20181006 143304.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ozu Castle 20241206 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Peach fruit.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Perry Road, Shimoda, Shizuoka, Japan.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Photos at teamlab planets tokyo.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Pink roses, Nakanoshima Park, Osaka.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Rabbit on Okunoshima Island 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Port of Nagoya Public Aquarium1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Porto Europe - Kuroshio-Ichiba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Railway Museum in Saitama, Japan (3601420888).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ramen Bowl.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Reverberatory furnace of Nirayama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Rinku park08s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Rikugien Gardens - Flickr - dalecruse.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Risyonomori1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ripe sudachi fruit.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Rokko garden terrace03s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ritsurin Garden.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Rousoku Iwa.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Rurikoji (Yamaguchi), tou-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ryujin big suspension bridge.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ryuzu waterfall (10375267036).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saba-Sōmen Nagahama City Shiga Prefecture 2023-9-26.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saga Balloon Museum 20171112.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saga Castle History Museum 20171112-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saga beef.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saijyo uchinuki1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saitama Municipal Omiya Bonsai Art Museum.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sakura Samurai Residences 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sakura Shrimp Kakiage Donburi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sakurai Futamigaura.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sandanbeki.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sandankyo (9876774124).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sankeien.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sanjūsangen-dō extérieur5720.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sanuki Udon (55127743184).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sano ramen 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sanzenin.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sara udon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Saruiwa Iki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sarushima Yokosuka 211016g.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sasebo burger.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sasayama Castle07st3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "SawachiDish Sushi and Tataki01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Serving jakoten in Dogo.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Senjogahara Marsh @ Nikko (9821666933).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Senjokaku.jpeg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shiga Hachimanbori.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Setogawa River flowing near Hida-Furukawa Festival Hall.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shima Onsen Gunma 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimabara Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimane Aquarium AQUAS beluga pool.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimagawa Dam lake.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimanami Kaido.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimanto River And Iwama Bridge 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimanto sada chinkabashi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shimonada Station.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shinhotaka Ropeway and Mount Kasa.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shine Muscat grapes.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shingenmochi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shinkyo Bridge over the Daiya River at Nikko, Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shinsaibashi Suji Shopping Street Osaka Japan by Don Ramey Logan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shinsekai and Tsutenkaku Tower.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shippoku cuisine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shirahige jinja (Takashima, Shiga) hdsr Shrine S5 05.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shiraito Falls (34257542610).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shirasu-Don.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shizuoka bancha.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shizoka oden 1 20151022.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shizutani School Lecture Hall.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shitennoji pagoda 2021-05-26.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shodoshima Greek Windmill.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shokasonjuku.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shrine above torii - Ishiyamadera - Otsu, Shiga - DSC07501.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Shuzenji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sicilian rice saga.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Somen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Space Dome, Tsukuba Space Center.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Squid sashimi (26498395600).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Stele of Hagi Castle Town.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Store of Himeji oden May 2026.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Store of the godown style,Kawagoe-city,Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sunpu castle park.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sumiyoshi-taisha, Sorihashi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Taimeshi 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Sushi, Hida Beef.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Taishakukyo, Onbashi-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tairyuji 06.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takahama Beach Goto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takamatsu pano from Yashima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takamatsu-Castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takarazuka Grand Theater05s4s3104.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takayama Jinya.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takasaki Kannon 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takayama Old Town (Sanmachi Suji) (35819349621).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takeda castle.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takehara Historic District.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takeo Onsen Motoyu and Shinkan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takeshima Bridge.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takezaki Kani.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Takoyaki cooked by Wanaka Dotonbori Shop.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tamatsukuri onsen01st3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tateyama Castle, tenshu.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tamozawa Imperial Villa , Nikko, Japan (52088179521).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tatsukushi 01.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tebasaki karaage by kawanet in Kanayama, Nagoya.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "TeamLab Borderless Azabudai Hills.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tekone-zushi 01.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tempura soba of Fuji-soba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tempozan Ferris wheel in 20110507.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tempozan Market Place Building and Osaka Aquarium \"Kaiyukan\".jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tenjin-underground-mall.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tenkaiho Kujukushima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tenmusu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tenryu-ji Temple in Kyoto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tenshaen Garden, Uwajima city, Ehime pref japan(33509246241).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tensodo.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "The Kyushu Ceramic Museum - 52125287598.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Titibugahama 20200404 03.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "The Otsuka Museum of Art15s3872a.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toba Aquarium.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Togetsukyō Bridge.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "TobuDobutsuKoenIriguchi2004-9-18.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokaido Seki Juku Kameyama City Mie JPN 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokoname Yakimono Sanpomichi 2020 ac (3).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokorozawa Aviation Commemorative Park.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokugawa Art Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokushima ramen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokyo German Village.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokyo Station . (42455223202).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tokyo Disney Sea.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tororo Soba at Ajiyoshi Restaurant, Horokanai (15889012202).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tomioka Silk Mill Main Building.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toshodaiji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tomonoura -01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tottori Hanakairo-Flower Park.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tottori Nijisseiki Pear Museum03s4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tottori Nijisseiki Pear Museum01n4592.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tottori Sand Museum.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tottori-Sakyu Tottori Japan.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toya Nasu ropeway gondola.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toyokawa Inari.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toyota APM Catbus.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toyosu Market.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toyota Automobile Museum, Nagakute, Aichi (8555304598).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Toyota Commemorative Museum of Industry and Technology.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tozan Shrine01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsukemono by Ms. President in Kyoto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsukemono shop by Gavin Anderson in Nishiki Ichiba, Kyoto.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsukiji Outer Market.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsukubasan Shrine (42322630934).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsunoshima Bridge (32994549311).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "TsuwanoJP.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsurugaoka Hachimangu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsuwano castle a site of Sanjukkendai.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsurugiyama.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsuyama Castle01s5s3200.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "TunaSushi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Tsuyama hormone udon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Twenty Six Martyrs Monument Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Turkish rice Nagasaki.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Uiro pack.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ujigami shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Umeboshi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Umeda Sky Building seen from Lucua at night.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Umihotaru Parking Area.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Unadon うな丼.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Unagi Hamamatsu.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Unagi seiro-mushi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Universal Studios Japan entrance.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Unaju by Kawatoyo Honten.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Unzen Ropeway.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Unzen Jigoku.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Uradome Coast Sengan-Matsushima.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Urayasu City Folk Museum 01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ureshino Onsen Tofu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ushiku Daibutsu - Great Buddha in Japan.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ureshino onsen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Ushimado Olive Garden.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Uwajima Castle, tenshu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Uwajima Taimeshi.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Uwazima tougyuuzyou.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "View in Oyamazumi Shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "View of Abeno Harukas and Shitennō-ji five-storied pagoda at dusk, January 2024 (clone version) - 9978.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "View in Sumpu Castle Park 2.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "View of Taikodani Inari Shrine.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "View of sando of Munakata Grand Shrine (Nakatsu Shrine).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wagyu beef.jpeg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wakayama-Mount Arida mandarin orange-xl.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wakayama Castle, tenshu-1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wakimachi Minami-machi in Mima Tokushima pref01.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wakayamaramen2.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wall and Natsumikan in Hagi Castle Town - June 5, 2005.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Wasanbon.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Watatsumi Shrine Tsushima.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Warajikatsu.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yaki curry.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yakimanju.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yakuoji 02.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yakitori.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yakitori 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yakushiji.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yamaguchi-White Wall Of The Town-m.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yamashita Park @ Yokohama (9054589904).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yamato Museum and Kure Central Pier from Yamato Wharf.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yame-fukushima fukuoka japan.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yanaka Ginza (53149736031).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yanagawa cruise ac (4).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yatsuhashi (347613370).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yasaka Shrine @ Kyoto (13310608263).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yawatahama Maruyama Chanpon Tokusei Chanpon 20170506-001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yobuko Asa-ichi (Yobuko, Karatsu, Saga, Japan).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yokaichi Gokoku 10.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yobuko Squid Drying - Aug 22, 2009 (1).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yokohama Chinatown Zenrimon Gate 1.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yokohama Hakkeijima Sea Paradise.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yokosuka Navy Curry DSCN2599 20111026.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yokohama Red Brick Warehouse.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yokoyama Viewpoint 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yomogi mochi.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yoro Keikoku 02.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yoro-waterfall.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yoshida udon 001.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yubara Onsen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yoshinogari Yayoi Village a003.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yubatake (Kusatsu Onsen).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yumoto onsen.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yunomachi-dori Street in Yuda Hot Spring Area.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Zaru Soba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Yutoku inari Shrine-b.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "ZaruSoba.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Zenigata sunae.jpeg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "とちおとめ 2017 (33281580752).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "Zentsu-ji in Zentsu-ji City Kagawa pref16s5s4020.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "onji Kagawa - 2021 March 31 various 04.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "ぴーなっつ最中20250615-P1069281.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "ゆば御膳（和風喫茶さんフィールド）.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "モーニング名古屋セットの小倉トースト (8923375578).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "中津渓谷（雨竜の滝）.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "今治焼鳥.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "土佐あかうしの放牧.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "勝浦タンタンメン（御食事処いしい）20230211-P1022627.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "奈良漬 (33123893341).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "榛名神社 Haruna shrine - panoramio.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "横浜家系ラーメン 山崎家 2026年1月25日の横浜 202601251524 IMG 4748.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "貴船神社 Kibune Jinja (KYOTO-JAPAN) (4950778051).jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "氷川神社（大宮） Omiya Hikawa shrine - panoramio.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "芝桜の丘（羊山公園）.JPG",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "遊子水荷浦の段畑.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "郡山駅で販売されている「豚みそ丼」 Pcs34560 IMG3984.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "龍河洞 - panoramio.jpg",
+      "reason": "Commons file not found"
+    },
+    {
+      "file": "飛龍の滝 - panoramio.jpg",
+      "reason": "Commons file not found"
+    }
+  ],
+  "changed_js_files": [
+    "ehime-expansion.js",
+    "fukuoka-expansion.js",
+    "hiroshima-expansion.js",
+    "index.html",
+    "kagawa-expansion.js",
+    "kochi-expansion.js",
+    "kyoto-nara-expansion.js",
+    "nagasaki-expansion.js",
+    "okayama-expansion.js",
+    "osaka-photos.js",
+    "regional-data.js",
+    "saga-expansion.js",
+    "shiga-hyogo-expansion.js",
+    "shimane-expansion.js",
+    "shizuoka-expansion.js",
+    "tokushima-expansion.js",
+    "tokyo-expansion.js",
+    "tottori-expansion.js",
+    "wakayama-expansion.js",
+    "yamaguchi-expansion.js"
+  ],
+  "remaining_external_src_count": 348,
+  "remaining_external_srcs": {
+    "food-photos.js": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Angelica%20keiskei.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Awabi%20no%20nigai%202015.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Crepe%20in%20Harajuku.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Doteyaki.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Fruit%20dessert.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ikayaki.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Japan",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese%20tea%20tray%20with%20two%20cups%20of%20matcha%20along%20with%20some%20sweets%20during%20a%20tea%20ceremony.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kofu%20torimotsuni.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Menchi%20(minced%20pork)%20katsu.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nigiri.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Peach%20fruit.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ramen%20Bowl.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shingenmochi.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tempura%20soba%20of%20Fuji-soba.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yakitori%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yoshida%20udon%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Zaru%20Soba.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/ZaruSoba.jpg?width=960"
+    ],
+    "osaka-photos.js": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Interior%20of%20the%20Tenjinbashisuji%20Shopping%20Street.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Museum%20of%20Housing%20and%20Living%20(Osaka%20Kita-ku)%20hdsr%20S5%2023.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nakanoshima%20Museum%20of%20Art%2C%20Osaka.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Namba%20Yasaka%20jinja%20(Osaka%20Naniwa-ku)%20Shrine%20hdsr%20S5%2012.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Risyonomori1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shinsaibashi%20Suji%20Shopping%20Street%20Osaka%20Japan%20by%20Don%20Ramey%20Logan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tempozan%20Ferris%20wheel%20in%2020110507.jpg?width=960"
+    ],
+    "regional-data.js": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%81%A8%E3%81%A1%E3%81%8A%E3%81%A8%E3%82%81%202017%20(33281580752).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%81%B4%E3%83%BC%E3%81%AA%E3%81%A3%E3%81%A4%E6%9C%80%E4%B8%AD20250615-P1069281.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%82%86%E3%81%B0%E5%BE%A1%E8%86%B3%EF%BC%88%E5%92%8C%E9%A2%A8%E5%96%AB%E8%8C%B6%E3%81%95%E3%82%93%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%EF%BC%89.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%90%8D%E5%8F%A4%E5%B1%8B%E3%82%BB%E3%83%83%E3%83%88%E3%81%AE%E5%B0%8F%E5%80%89%E3%83%88%E3%83%BC%E3%82%B9%E3%83%88%20(8923375578).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E5%8B%9D%E6%B5%A6%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3%E3%83%A1%E3%83%B3%EF%BC%88%E5%BE%A1%E9%A3%9F%E4%BA%8B%E5%87%A6%E3%81%84%E3%81%97%E3%81%84%EF%BC%8920230211-P1022627.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E5%A5%88%E8%89%AF%E6%BC%AC%20(33123893341).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%A6%9B%E5%90%8D%E7%A5%9E%E7%A4%BE%20Haruna%20shrine%20-%20panoramio.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%A8%AA%E6%B5%9C%E5%AE%B6%E7%B3%BB%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E5%B1%B1%E5%B4%8E%E5%AE%B6%202026%E5%B9%B41%E6%9C%8825%E6%97%A5%E3%81%AE%E6%A8%AA%E6%B5%9C%20202601251524%20IMG%204748.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%B0%B7%E5%B7%9D%E7%A5%9E%E7%A4%BE%EF%BC%88%E5%A4%A7%E5%AE%AE%EF%BC%89%20Omiya%20Hikawa%20shrine%20-%20panoramio.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E8%8A%9D%E6%A1%9C%E3%81%AE%E4%B8%98%EF%BC%88%E7%BE%8A%E5%B1%B1%E5%85%AC%E5%9C%92%EF%BC%89.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E8%B2%B4%E8%88%B9%E7%A5%9E%E7%A4%BE%20Kibune%20Jinja%20(KYOTO-JAPAN)%20(4950778051).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E9%83%A1%E5%B1%B1%E9%A7%85%E3%81%A7%E8%B2%A9%E5%A3%B2%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%8C%E8%B1%9A%E3%81%BF%E3%81%9D%E4%B8%BC%E3%80%8D%20Pcs34560%20IMG3984.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2010-06-17%20Isuien%20Nara%20Japan06s3.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Akafuku%20mochi.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Akame%2048%20Waterfalls%2C%20Fudo%20Falls.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Akashiyaki%20Tamagoyaki.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Amanohashidate.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ankou-nabe.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Aqua%20World.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Arashiyama%20Bamboo%20Grove.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Arimaonsen07s1920.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Arimatsu%20Historic%20Townscape%2C%20Midori%20Ward%20Nagoya%202014.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Asahi%20Melons%2C%20Hokota%2C%20Ibaraki.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ashikaga%20Flower%20Park%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ashikaga%20school%20historic%20site.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Asuka-dera%20Asuka%20Nara%20pref10s3600.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Awaji%20Hanasajiki.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Awaji%20Onion%20Tempura%20ac.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Awaji%20yumebutai12s3.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bansh%C5%AB-ramen%20Apr%202026%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Battlefield%20of%20Sekigahara%20(decisive%20battle%20site)%2C%20Gifu%2C%20Japan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Battleship%20Mikasa%20in%20Yokosuka%20harbour%2010.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Big%20rolled%20sushi%2CHutomakizushi%2CKatori-city%2CChiba%2CJapan.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Boiled%20big%20peanuts%20%26%20normal%20peanuts%2C%20Katori%20City%2C%20Japan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/By%C5%8Dd%C5%8D-in.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Byobugaura%2021.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/CASTLE%20IN%20TOKYO%20DISNEYLAND.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cherry%20blossoms%20-%20Sakura%20-%20%E6%A1%9C%20-%20Flickr%20-%20TANAKA%20Juuyoh%20(%E7%94%B0%E4%B8%AD%E5%8D%81%E6%B4%8B).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cherry%20blossoms%20at%20Yoshinoyama%2009.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chiba%20Port%20Tower%20(29395363324).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chiba%20of%20Nokogiriyama%20top%20view.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chiba-jinja%20Haupthalle%202.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chichibu-jinja%20Haiden.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Climbing%20kiln%20Mashiko.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cupnoodles%20museum%20yokohama.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Deer",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Deer%20in%20Nara%20Park.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Edo%20Wonderland%20Nikko%20Edomura%2001.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ena%20Kawakamiya%20Kurikinton%20ac.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Engaku-ji%20Temple%20%40%20Kita-Kamakura%20(9399407409).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Engyoji05s4592.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Enoshima%20Island.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/EnoshimaSeaCandle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Fujinomiya-yakisoba.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Fujisan%20Hong%C5%AB%20Sengen%20Taisha.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Fukiware%20Falls.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/FukurodaFalls.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Funabashi-Andersen-Park%2026.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Funaya%20in%20Ine%20Town%2C%20Yosa%20District%2C%20Kyoto%20Prefecture%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gero%20Onsen%20Gassho-mura%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gero%20OnsenTown.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gifu%20Sekigahara%20Battlefield%20Memorial%20Museum.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ginkakuji%2C%20Kyoto%20(49073313412).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gohei-mochi%20301.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gongendo%20no%20sakura1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gozaisho%20Ropeway%20and%20Fujimi-iwa.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gujo%20Hachiman%20castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gujo%20from%20Gujo%20Hachiman%20castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gy%C5%8Dza%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gyoda%20Sakitama%20Kofun%20Park%20Lawn%20Field%201.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gyoda%20Zeri%20Fry.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hakone%20Checkpoint.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hakone%20Shrine%202025.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hakone%20black%20egg%20dsc05310.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hamamatsu%20Castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hamamatsu%20Gy%C5%8Dza%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hamamatsu%20flower%20park01.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hana%20no%20Iwaya%20Shrine.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hananuki%20Gorge%20(51847182208).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hasedera%20Sakurai%20Nara%20pref58s5s4272.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Heijo%20Palace%20in%20Nara.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hida-Takayama%20Miyagawa%20Morning%20Market%20(15668520238).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Himeji%20castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hitachi%20Beef%20on%20the%20dish.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hitachi%20Seaside%20Park.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hodosan-Shrine.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hokokuji%20Bamboo%20Forest%20Kamakura.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Horyu-ji01s3200.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Houbamiso.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ibaraki%20Flower%20Park%2020160507.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Iga%20Ueno%20Castle%20ac.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ikaho%20Onsen%20Stone%20Steps.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ikaho%20Onsen%20bridge.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Imaicho%20Kashihara.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Imokoi%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Inside%20of%20the%20Oya%20History%20Museum%2020251012d.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Inuyama%20castle1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Inuyamajouka1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ise%20Udon%20Yamaguchiya%20ac%20(2).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ise-Shrine%20Naiku-Ujibashi-Torii.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ishibutai-kofun%20Asuka%20Nara%20pref03n4592.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ito%20Jogasaki-K%C3%BCste%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Izushi%20Soba.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Izushi%20castle03st3200.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/JP%20%E6%97%A5%E6%9C%AC%20Japan%20%E4%BA%AC%E9%83%BD%20Kyoto%20%E5%AE%87%E6%B2%BB%E5%9F%8E%20Uji-shi%20Uji%20Myouraku%20shop%20Nakamura%20Tokichi%20Honten%20Tea%20House%20cafe%20%E7%B6%A0%E8%8C%B6%E7%94%9C%E5%93%81%20Matcha%20cream%20June%202026%20N13P%2006.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/JP-kyoto-ryoanji.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/JR%20Central%20SCMAGLEV%20and%20Railway%20Park.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Japan%20National%20Route%20363%20at%20Iwamura%20town%2C%20Ena%20city.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese%20spiny%20lobster.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese%20traditional%20style%20shops%20%E5%92%8C%E9%A2%A8%E5%BB%BA%E7%AF%89(%E3%82%8F%E3%81%B5%E3%81%86%E3%81%91%E3%82%93%E3%81%A1%E3%81%8F)%20(5395325824).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kadokawa%20Culture%20Museum%20at%20Tokorozawa%20Sakura%20Town%20(50608208297).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kairakuen%20Mito.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kakegawa%20Castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kakinoha%20(persimmon%20leaf)%20sushi%20in%20Nara.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kamakura%20Hasedera%20Kannondou.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kamogawa%20sea%20world.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kanzanji%20ropeway.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kasama%20Inari%20shrine%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kashima-jingu%20romon%20gate.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kashiya%20yokocho%20-02.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kasuga%20Taisha.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Katori%20Katori-jingu%20Haupthalle%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Katsuura%20Morning%20Market%20ac%20(1).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kawagoe%20Hikawa%20shrine%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kawagoe%20Toki%20no%20Kane%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kawaramachi%20Gifu%20Japan01-r.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kawasaki%20Daishi%20Main%20Hall.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kegon%20Falls%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Keichan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kencho-ji%20Temple%20%40%20Kamakura%20(13897782171).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kinkaku-ji%2C%20Kyoto.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kinosaki%20onsen.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kinosaki%20ropeway01n2610.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kinugawa%20Onsen.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kishimen%20by%20Ms.%20President%20in%20Nagoya.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kitano-cho%20open%20space%20Kobe%20Japan01s3.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kiyoken%20factory%20tasting.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20Animal%20Kingdom%2C%20Kobe%2C%20Japan%20(17388125591).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20Harborland%20Centar%20Building.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20Nankinmachi.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20beef%20meal%20served%20in%20a%20steakhouse%20in%20Kobe.jpeg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe-meriken-park.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kodokan%2C%20Mito%2C%202020.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Koko-en%2C%20Himeji.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Korankei-1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kusatsu%20Yumomi%2C%20Gunma%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%20Fushimi%20Inari-taisha%20Sembon-Torii.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%20Imperial%20Palace%20(Kyoto-Gosho)%20Kogosho%20(52980159201).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%20Morning%20Yudofu.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%20To-ji%20Pagode%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%2C%20Kiyomizu-dera%20Temple%20(6172864288).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Villa%20Espa%C3%B1ola%20de%20Shima%2C%20Parque%20Espa%C3%B1a%20-%20Avenida%20de%20Espa%C3%B1a.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Haruna%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Yunoko%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20chuzenji%20Japan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lycoris%20radiata%20-%20Kinchakuda%202018%20-%203.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Magome-juku.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Magose%20pass.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Maguro-don.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Main%20building%20of%20Daruma-ji%20(Takasaki)%202010-04-01.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Marine%20Tower%20%40%20Yokohama%20(9052369711).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Maruyama%20Senmaida(34665016140).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Matsusaka%20Castle%2C%20Honmaru.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Matsusaka%20Castle%2C%20Tenshudai.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Matsusaka%20beef%20and%20Korean%20barbeque.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Meijimura1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Meoto%20Iwa%20Mie.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Meoto-iwa.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Merchant%27s%20Houses%20%28Boso%20no%20mura%29%2001.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Metropolitan%20Area%20Outer%20Underground%20Discharge%20Channel%20(10886015096).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mihamaen20110828.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Miho-no%20Matsubara.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mikimoto%20Pearl%20Island.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mikimoto%20pearl%20islands.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Miso%20Katsu%20by%20jetalone%20in%20Nagoya.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Miso%20konnyaku%20by%20nyaa%20birdies%20perch%20in%20Nakanojo%2C%20Gunma.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Miso%20nikomi%20udon%201%20naotakem.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Miso-Potato%20Chichibu.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mitsumine-jinja%2C%20Haiden.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mizusawa%20Udon%2C%20Tamaruya%2C%20Ikaho%20-%20Nov%2014%2C%202009.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20farm%202018.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Kasagi%20from%20Ena%20Gorge.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Tanigawa%20(51982858582).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Fuji%20at%20Nihondaira.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20wakakusa%20overlooking%20Nara.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mt.Tsukuba.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Musashino%20udon%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nabana%20no%20Sato%20Chapel%20Illumination.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Naegi%20Castle%20and%20Mount%20Ena.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nagashima%20Spa%20Land.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nagatoro%20Iwadatami%20in%20April%202024%202.png?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya-City-Science-Museum-2.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nakaminato%20Osakana%20Market%20ac.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Namerou%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nara%20Cha-meshi%20%E5%A5%88%E8%89%AF%E8%8C%B6%E9%A3%AF%20%E8%8C%B6%E4%BA%AD%E6%9C%89%E7%BF%A0%20Jan%2010%2C%202010.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nara-miwa%20somen-m.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/NaraKofukuji.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/NaraTodaiji.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Naramachi%20NigiwainoIe%20Nara.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20Japanese%20History%202008.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Natto%20for%20sale%20in%20Ibaraki%20Apr%2030%202019%2004-26PM.jpeg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/New%20Enoshima%20Aquarium.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nijo%20Castle%2C%20Kyoto.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nikko%20Futarasan%20shrine%20(52786784770).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nikko%20toshogu%20torii%20and%20yomeimon%20gate.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nikkosan%20Rinnoji%20Temple%2C%20Nikko%2C%20Japan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ninja%20MUSEUM%20of%20Igaryu%20%2C%20%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8%20-%20panoramio%20(1).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nishin%20Soba%20at%20Honke%20Owariya.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nojimazaki%20Lighthouse%202017-09.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nunobiki%20herb%20garden02s3200.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Oarai%20isozaki%20shrine%2COarai%20isozaki%20jinjya%20haiden%2Coarai-town%2Cjapan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Obanzai-kyotofood-2018-12-30.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Odawara%20Castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Odawarakamaboko.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Okage%20Yokocho%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Okage%20Yokocho01.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Okazaki-Castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Okirikomi.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Omotesando%20to%20Naritasan%20Shinshoji%20Temple%20%40%20Narita%20(15265627342).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Onigajo%20Seaside.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Oshi%20Castle%2C%20yagura-2.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Oyaji%20Temple.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Oyama%20Senmaida%20(43073498032).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Oyster.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Oze%2020181006%20143304.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Perry%20Road%2C%20Shimoda%2C%20Shizuoka%2C%20Japan.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Port%20of%20Nagoya%20Public%20Aquarium1.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Railway%20Museum%20in%20Saitama%2C%20Japan%20(3601420888).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rokko%20garden%20terrace03s3200.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ryujin%20big%20suspension%20bridge.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ryuzu%20waterfall%20(10375267036).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Saitama%20Municipal%20Omiya%20Bonsai%20Art%20Museum.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sakura%20Samurai%20Residences%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sankeien.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sano%20ramen%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sarushima%20Yokosuka%20211016g.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Senjogahara%20Marsh%20%40%20Nikko%20(9821666933).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Setogawa%20River%20flowing%20near%20Hida-Furukawa%20Festival%20Hall.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shima%20Onsen%20Gunma%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shimagawa%20Dam%20lake.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shinhotaka%20Ropeway%20and%20Mount%20Kasa.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shinkyo%20Bridge%20over%20the%20Daiya%20River%20at%20Nikko%2C%20Japan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shirasu-Don.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shizoka%20oden%201%2020151022.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Space%20Dome%2C%20Tsukuba%20Space%20Center.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20of%20Himeji%20oden%20May%202026.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20of%20the%20godown%20style%2CKawagoe-city%2CJapan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sunpu%20castle%20park.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sushi%2C%20Hida%20Beef.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Takasaki%20Kannon%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Takayama%20Jinya.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Takayama%20Old%20Town%20(Sanmachi%20Suji)%20(35819349621).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Takeda%20castle.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Takeshima%20Bridge.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tamozawa%20Imperial%20Villa%20%2C%20Nikko%2C%20Japan%20(52088179521).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tateyama%20Castle%2C%20tenshu.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tebasaki%20karaage%20by%20kawanet%20in%20Kanayama%2C%20Nagoya.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tekone-zushi%2001.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tenmusu.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tenryu-ji%20Temple%20in%20Kyoto.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tensodo.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tetsugaku-no-michi%20-%20Philosopher",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toba%20Aquarium.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/TobuDobutsuKoenIriguchi2004-9-18.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Togetsuky%C5%8D%20Bridge.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokaido%20Seki%20Juku%20Kameyama%20City%20Mie%20JPN%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokoname%20Yakimono%20Sanpomichi%202020%20ac%20(3).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokorozawa%20Aviation%20Commemorative%20Park.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokugawa%20Art%20Museum.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Disney%20Sea.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20German%20Village.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tomioka%20Silk%20Mill%20Main%20Building.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toshodaiji.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toya%20Nasu%20ropeway%20gondola.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyokawa%20Inari.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20APM%20Catbus.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20Automobile%20Museum%2C%20Nagakute%2C%20Aichi%20(8555304598).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20Commemorative%20Museum%20of%20Industry%20and%20Technology.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tsukemono%20by%20Ms.%20President%20in%20Kyoto.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tsukemono%20shop%20by%20Gavin%20Anderson%20in%20Nishiki%20Ichiba%2C%20Kyoto.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tsukubasan%20Shrine%20(42322630934).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tsurugaoka%20Hachimangu.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Umihotaru%20Parking%20Area.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Unagi%20Hamamatsu.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Unaju%20by%20Kawatoyo%20Honten.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Urayasu%20City%20Folk%20Museum%2001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ushiku%20Daibutsu%20-%20Great%20Buddha%20in%20Japan.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Warajikatsu.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yakimanju.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yakushiji.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yamashita%20Park%20%40%20Yokohama%20(9054589904).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yasaka%20Shrine%20%40%20Kyoto%20(13310608263).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yatsuhashi%20(347613370).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yokohama%20Chinatown%20Zenrimon%20Gate%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yokohama%20Hakkeijima%20Sea%20Paradise.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yokohama%20Red%20Brick%20Warehouse.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yokosuka%20Navy%20Curry%20DSCN2599%2020111026.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yokoyama%20Viewpoint%20001.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yomogi%20mochi.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yoro%20Keikoku%2002.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yoro-waterfall.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yubatake%20(Kusatsu%20Onsen).jpg?width=960",
+      "https://maruchiba.jp/lsc/upfile/articleDetail/0000/0883/883_3_l.jpg"
+    ],
+    "tokyo-expansion.js": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Akihabara%20Electric%20Town%2C%20Tokyo%2C%2020240823%201617%205580.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chuo-dori%20Ginza.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Edo%20tokyo%20museum.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hama-rikyu%20garden%20in%20Tokyo%202.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial%20Palace%20East%20Garden.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mori%20Art%20Museum%20-----.png?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nihonbashi%202018.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Photos%20at%20teamlab%20planets%20tokyo.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rikugien%20Gardens%20-%20Flickr%20-%20dalecruse.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/TeamLab%20Borderless%20Azabudai%20Hills.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Station%20.%20(42455223202).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyosu%20Market.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tsukiji%20Outer%20Market.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yanaka%20Ginza%20(53149736031).jpg?width=960"
+    ],
+    "yamanashi-data.js": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Fuji-Q%20Highland%20(49321868041).jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Fujisan%20World%20heritage%20Center%2C%20Yamanashi%201.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Minobusan-Ropeway-200806.JPG?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Fuji%20Panoramic%20Ropeway.jpg?width=960",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Night%20view%20from%20Yamanashi%20Fuefukigawa%20Fruit%20Park.jpg?width=960"
+    ]
+  },
+  "policy_note": "Only reusable Commons images are automatically copied. Other external images require separate license review or a Commons replacement."
+}

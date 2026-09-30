@@ -1,6 +1,6 @@
 (()=>{const r=regionalCatalog.find(x=>x.pref==='시즈오카');if(!r)return;
 const map=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
-const cf=f=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960';
+const cf=f=>(globalThis.JATLAS_COMMONS_LOCAL&&globalThis.JATLAS_COMMONS_LOCAL[f])||('https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960');
 const cp=f=>'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_');
 const note='공식 관광 안내의 명칭과 위치를 기준으로 등록했습니다. 방문 전 운영·교통 안내를 확인하세요.';
 const add=[
