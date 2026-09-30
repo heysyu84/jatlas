@@ -1,0 +1,35 @@
+name: Migrate Commons images locally
+
+on:
+  push:
+    paths:
+      - 'tools/migrate_commons_images.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Download, optimize and rewrite image references
+        run: python tools/migrate_commons_images.py
+      - name: Commit localized images
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist
+          git commit -m "Localize reusable travel images"
+          git push
