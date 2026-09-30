@@ -1,51 +1,10 @@
 {
-  "commons_candidates": 705,
-  "localized": 695,
-  "downloaded_now": 26,
-  "reused_existing": 669,
-  "failed_count": 10,
-  "failed": [
-    {
-      "file": "Ao no Domon Yabakei.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Bungo beef.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Fukiji Temple Oita.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "JR Oita City 201504.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Jigoku mushi Beppu.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Kannawa onsen area Beppu.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Kitsuki samurai district.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Seki aji sashimi.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Yukemuri Observatory Beppu.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Yunotsubo Kaido Yufuin.jpg",
-      "reason": "Commons file not found"
-    }
-  ],
+  "commons_candidates": 704,
+  "localized": 704,
+  "downloaded_now": 9,
+  "reused_existing": 695,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Aso Nakadake crater.jpg": "Mt. Aso nakadake crater 阿蘇中岳火口 (456731526).jpg",
@@ -60,7 +19,7 @@
     "Karashi renkon.jpg": "Karashi-Renkon.jpg",
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
     "Kinrinko Lake Yufuin.jpg": "Stream near Tenso Shrine and Lake Kinrinko.JPG",
-    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-4.jpg",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-3.jpg",
     "Kuju Flower Park.jpg": "Kuju Flower Park(3553982332).jpg",
     "Kuma River Hitoyoshi.jpg": "Kuma River in Hitoyoshi.jpg",
     "Kumamoto Castle 2019.jpg": "Kumamoto Castle, Kumamoto; April 2010.jpg",
