@@ -5,9 +5,10 @@ const mapInstances=new Map(),markerInstances=new Map();let mapKey='',nationalReg
 const prefectureFeatures=geography.map(f=>({type:'Feature',properties:{name:prefNames[f.id],id:f.id},geometry:{type:'MultiPolygon',coordinates:f.rings.map(r=>[[...r,r[0]]])}}));
 const areaBoxes={'기후|히다':[[36.00,136.96],[36.40,137.52]],'기후|기후·나가라가와':[[35.39,136.72],[35.47,136.82]]};
 const regionCenters={"홋카이도":[43.4,142.3],"도호쿠":[39.4,140.6],"북간토":[36.6,139.8],"수도권":[35.55,139.95],"고신에쓰":[36.85,138.15],"도카이":[34.85,137.45],"호쿠리쿠":[36.65,136.15],"긴키":[34.65,135.2],"산인·산요":[34.55,132.75],"시코쿠":[33.65,133.65],"규슈":[32.55,130.55]};
-// Fixed geographic label anchors. These never move to resolve collisions;
-// resizing only changes the map scale, so every label remains tied to the same place.
-const regionLabelAnchors={"홋카이도":[43.45,142.45],"도호쿠":[39.25,140.75],"고신에쓰":[36.95,138.25],"호쿠리쿠":[36.7,136.05],"북간토":[36.35,140.1],"수도권":[35.45,140.15],"도카이":[34.75,137.45],"긴키":[34.45,135.25],"산인·산요":[34.45,132.65],"시코쿠":[33.45,133.7],"규슈":[32.45,130.55]};
+// Fixed screen offsets from each region's geographic center.
+// They never change in response to collisions, so labels stay predictable while
+// the crowded central regions remain visually separated at every desktop aspect ratio.
+const regionLabelOffsets={"홋카이도":[0,0],"도호쿠":[0,0],"고신에쓰":[6,-30],"호쿠리쿠":[-24,-6],"북간토":[58,-8],"수도권":[62,34],"도카이":[22,38],"긴키":[-18,46],"산인·산요":[-34,8],"시코쿠":[-12,54],"규슈":[-18,18]};
 function isMobile(){return window.matchMedia('(max-width: 760px)').matches}
 function regionFor(pref){return regions.find(r=>r[1].split(' ').includes(pref))?.[0]||''}
 function geographicBounds(names,mainland=true){if(mainland&&names.length===1&&names[0]==='오키나와'){const rings=geography.find(f=>f.id===47).rings;const area=r=>(Math.max(...r.map(p=>p[0]))-Math.min(...r.map(p=>p[0])))*(Math.max(...r.map(p=>p[1]))-Math.min(...r.map(p=>p[1])));const main=rings.reduce((a,b)=>area(a)>area(b)?a:b);return L.latLngBounds(main.map(p=>[p[1],p[0]])).pad(.06)}const pts=geography.filter(f=>names.includes(prefNames[f.id])).flatMap(f=>f.rings.flat().filter(p=>!mainland||f.id!==13||p[1]>35));return L.latLngBounds(pts.map(p=>[p[1],p[0]]))}
@@ -41,16 +42,24 @@ function createMap(id,bounds,{detailed=false,mode='pref',only=null,features=null
  map.on('dragstart',()=>host.classList.add('dragging'));map.on('dragend',()=>host.classList.remove('dragging'));
  return map;
 }
-// Nationwide labels use fixed geographic anchors so viewport size never changes their placement.
-function regionLabelWidth(name,mobile){return mobile?Math.min(76,Math.max(50,32+[...name].length*8)):86}
+// Nationwide labels keep one deterministic offset from each geographic center.
+// No collision solver is used: resizing cannot send a label to a different side of Japan.
+function regionLabelWidth(name){return Math.min(86,Math.max(58,38+[...name].length*10))}
 function drawRegionLabels(map,layer){
  layer.clearLayers();
- const mobile=isMobile(),size=map.getSize(),h=30;
+ const size=map.getSize();
+ const scale=Math.max(.76,Math.min(1,size.x/760,size.y/500));
  for(const [name,center] of Object.entries(regionCenters)){
-  const anchor=regionLabelAnchors[name]||center;
-  const p=map.latLngToContainerPoint(anchor),w=regionLabelWidth(name,mobile);
-  if(p.x<-w||p.y<-h||p.x>size.x+w||p.y>size.y+h)continue;
-  L.marker(anchor,{icon:L.divIcon({className:'regionMapLabel',html:`<span>${name}</span>`,iconSize:[w,h],iconAnchor:[w/2,h/2]}),keyboard:true,title:name}).addTo(layer).on('click',()=>selectRegion(name));
+  const origin=map.latLngToContainerPoint(center);
+  const [baseDx,baseDy]=regionLabelOffsets[name]||[0,0];
+  const dx=baseDx*scale,dy=baseDy*scale;
+  const w=regionLabelWidth(name)*scale,h=30*scale;
+  const x=Math.max(5+w/2,Math.min(size.x-5-w/2,origin.x+dx));
+  const y=Math.max(5+h/2,Math.min(size.y-24-h/2,origin.y+dy));
+  const anchor=map.containerPointToLatLng([x,y]);
+  if(Math.hypot(dx,dy)>18*scale)L.polyline([center,anchor],{color:'#8ba3b7',weight:1,opacity:.62,interactive:false}).addTo(layer);
+  const spanStyle=`font-size:${13*scale}px;padding:${7*scale}px ${9*scale}px;min-height:${38*scale}px`;
+  L.marker(anchor,{icon:L.divIcon({className:'regionMapLabel',html:`<span style="${spanStyle}">${name}</span>`,iconSize:[w,h],iconAnchor:[w/2,h/2]}),keyboard:true,title:name}).addTo(layer).on('click',()=>selectRegion(name));
  }
  if(typeof localize==='function')localize();
 }
