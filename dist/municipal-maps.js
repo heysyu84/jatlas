@@ -8,51 +8,25 @@ function municipalName(m){return municipalNames[m.id].ko}
 function selectedMunicipality(pref=state.pref,area=state.area){return municipalities(pref).find(m=>municipalName(m)===area)}
 function placeInScope(p){if(state.area==='전체'||p.area===state.area)return true;const m=selectedMunicipality();if(!m)return false;const loc=pointLocations[p.id]||p;const geo=municipalGeometry[prefNames.indexOf(state.pref)]?.find(f=>f.properties.id===m.id);if(geo&&Number.isFinite(loc.lon)&&Number.isFinite(loc.lat))return geo.geometry.coordinates.some(poly=>insidePolygon(loc.lon,loc.lat,poly[0])&&!poly.slice(1).some(r=>insidePolygon(loc.lon,loc.lat,r)));return p.town===municipalName(m)||p.town===m.name}
 function loadMunicipalities(id){if(municipalGeometry[id])return Promise.resolve();if(municipalLoads.has(id))return municipalLoads.get(id);const promise=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='boundaries/'+id+'.js';script.onload=()=>municipalGeometry[id]?resolve():reject(Error('Empty geometry'));script.onerror=()=>{script.remove();municipalLoads.delete(id);reject(Error('Boundary load failed'))};document.head.append(script)});municipalLoads.set(id,promise);return promise}
-function municipalityHasRegisteredContent(pref,m,tab=typeof contentTab!=='undefined'?contentTab:'places'){
- if(typeof completePrefs==='undefined'||!completePrefs.includes(pref))return true;
- const name=municipalName(m),stem=String(name||'').replace(/(시|구|정|촌)$/,'');
- const matchText=v=>{v=String(v||'');return v===name||(stem.length>=2&&v.includes(stem))};
- if(tab==='places')return typeof samples!=='undefined'&&samples.some(p=>p.pref===pref&&placeInMunicipality(p,m));
- if(tab==='events')return typeof eventsForPref==='function'&&(eventsForPref(pref)||[]).some(e=>matchText(e.area)||matchText(e.town));
- if(tab==='foods')return typeof foodsForPref==='function'&&(foodsForPref(pref)||[]).some(x=>matchText(x.area)||matchText(x.where)||matchText(x.town));
- if(tab==='routes'&&typeof routesForPref==='function')return (routesForPref(pref)||[]).some(r=>matchText(r.area)||matchText(r.town)||matchText(r.where));
- return true;
-}
-function markMunicipalityContent(el,pref,m,tab=typeof contentTab!=='undefined'?contentTab:'places'){
- if(!el)return el;
- const empty=typeof completePrefs!=='undefined'&&completePrefs.includes(pref)&&!municipalityHasRegisteredContent(pref,m,tab);
- el.classList.toggle('noContent',empty);
- if(empty){
-  const label=tab==='events'?'등록된 계절·행사 없음':tab==='foods'?'등록된 음식 정보 없음':'등록된 관광지 없음';
-  el.dataset.contentEmpty='true';el.setAttribute('aria-description',label);el.dataset.emptyLabel=label;
- }else{delete el.dataset.contentEmpty;delete el.dataset.emptyLabel;el.removeAttribute('aria-description')}
- return el;
-}
 function renderMunicipalPicker(){
  let box=document.getElementById('municipalPicker');if(!box){box=document.createElement('details');box.id='municipalPicker';box.className='municipalPicker';box.innerHTML='<summary>시구정촌으로 선택</summary><label for="municipalSearch">시구정촌 이름 검색</label><input id="municipalSearch" type="search" placeholder="시구정촌 이름 검색"><div id="municipalChoices" role="group" aria-label="선택할 수 있는 지역"></div>';document.querySelector('#towns').parentElement.after(box)}
- box.hidden=state.view!=='explore'||!['places','events','foods'].includes(contentTab);const input=box.querySelector('input');if(box.dataset.pref!==state.pref){input.value='';box.dataset.pref=state.pref;box.open=false}
- const fill=()=>{const q=input.value.trim().toLowerCase();const items=municipalities(state.pref).filter(m=>(m.name+' '+municipalName(m)).toLowerCase().includes(q));const list=box.querySelector('#municipalChoices');list.replaceChildren(...items.map(m=>{const b=button(municipalName(m),()=>{const tab=contentTab;go(state.pref,municipalName(m));contentTab=tab;render();setMobileMapView?.('map')},state.area===municipalName(m)?'active':'');b.title=municipalName(m);b.dataset.municipalityId=m.id;markMunicipalityContent(b,state.pref,m);return b}));if(!items.length)list.textContent='일치하는 지명이 없습니다';if(typeof localize==='function')localize()};input.oninput=fill;fill();stampMunicipalHeadings();
+ box.hidden=state.view!=='explore'||contentTab!=='places';const input=box.querySelector('input');if(box.dataset.pref!==state.pref){input.value='';box.dataset.pref=state.pref;box.open=false}
+ const fill=()=>{const q=input.value.trim().toLowerCase();const items=municipalities(state.pref).filter(m=>(m.name+' '+municipalName(m)).toLowerCase().includes(q));const list=box.querySelector('#municipalChoices');list.replaceChildren(...items.map(m=>{const b=button(municipalName(m),()=>{contentTab='places';go(state.pref,municipalName(m));setMobileMapView?.('map')},state.area===municipalName(m)?'active':'');b.title=municipalName(m);b.dataset.municipalityId=m.id;return b}));if(!items.length)list.textContent='일치하는 지명이 없습니다';if(typeof localize==='function')localize()};input.oninput=fill;fill();stampMunicipalHeadings();
  document.querySelector('#areas').parentElement.hidden=document.querySelector('#areas').children.length<=1;document.querySelector('#towns').parentElement.hidden=document.querySelector('#towns').children.length<=1;
 }
 function drawMunicipalities(map,pref){
  const id=prefNames.indexOf(pref);const geometry=municipalGeometry[id];if(!geometry)return;
  const style=f=>({color:'#fff',weight:1.5,fillColor:cutoutColors[Number(f.properties.id)%cutoutColors.length],fillOpacity:1,lineJoin:'round'});
- const layer=L.geoJSON(geometry,{style,onEachFeature:(f,l)=>{const m=municipalities(pref).find(m=>m.id===f.properties.id);const name=municipalName(m),empty=!municipalityHasRegisteredContent(pref,m,'places');const enter=()=>{contentTab='places';go(pref,name)};l.bindTooltip('<span class="'+(empty?'noContent':'')+'" data-municipality-id="'+m.id+'">'+name+'</span>',{sticky:true});l.on('tooltipopen',()=>{if(typeof localize==='function')localize()});l.on('click',enter);l.on('mouseover',()=>{l.bringToFront();l.setStyle({color:'#315987',weight:2.5})});l.on('mouseout',()=>l.setStyle(style(f)));l.on('add',()=>{const path=l.getElement();if(path){path.setAttribute('tabindex','0');path.setAttribute('role','button');path.setAttribute('aria-label',name);path.dataset.municipalityAria=m.id;path.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();enter()}})}})}}).addTo(map);
- const labels=L.layerGroup().addTo(map);const redraw=()=>{labels.clearLayers();const occupied=[];const view=map.getBounds();for(const f of geometry){const anchor=labelAnchor(f,view);if(!anchor)continue;const m=municipalities(pref).find(m=>m.id===f.properties.id);const point=map.latLngToContainerPoint(anchor),name=municipalName(m);const width=Math.min(160,Math.max(64,name.length*12));const rect=[point.x-width/2,point.y-15,point.x+width/2,point.y+15];if(occupied.some(r=>rect[0]<r[2]&&rect[2]>r[0]&&rect[1]<r[3]&&rect[3]>r[1]))continue;occupied.push(rect);L.marker(anchor,{icon:L.divIcon({className:'municipalLabel'+(municipalityHasRegisteredContent(pref,m,'places')?'':' noContent'),html:'<span data-municipality-id="'+m.id+'">'+name+'</span>',iconSize:[width,30],iconAnchor:[width/2,15]}),title:name,keyboard:true}).on('add',function(){this.getElement().dataset.municipalityAria=m.id}).addTo(labels).on('click',()=>{const tab=contentTab;go(pref,name);contentTab=tab;render()})}if(typeof localize==='function')localize()};map.on('moveend',redraw);redraw();
+ const layer=L.geoJSON(geometry,{style,onEachFeature:(f,l)=>{const m=municipalities(pref).find(m=>m.id===f.properties.id);const name=municipalName(m);const enter=()=>{contentTab='places';go(pref,name)};l.bindTooltip('<span data-municipality-id="'+m.id+'">'+name+'</span>',{sticky:true});l.on('tooltipopen',()=>{if(typeof localize==='function')localize()});l.on('click',enter);l.on('mouseover',()=>{l.bringToFront();l.setStyle({color:'#315987',weight:2.5})});l.on('mouseout',()=>l.setStyle(style(f)));l.on('add',()=>{const path=l.getElement();if(path){path.setAttribute('tabindex','0');path.setAttribute('role','button');path.setAttribute('aria-label',name);path.dataset.municipalityAria=m.id;path.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();enter()}})}})}}).addTo(map);
+ const labels=L.layerGroup().addTo(map);const redraw=()=>{labels.clearLayers();const occupied=[];const view=map.getBounds();for(const f of geometry){const anchor=labelAnchor(f,view);if(!anchor)continue;const m=municipalities(pref).find(m=>m.id===f.properties.id);const point=map.latLngToContainerPoint(anchor),name=municipalName(m);const width=Math.min(160,Math.max(64,name.length*12));const rect=[point.x-width/2,point.y-15,point.x+width/2,point.y+15];if(occupied.some(r=>rect[0]<r[2]&&rect[2]>r[0]&&rect[1]<r[3]&&rect[3]>r[1]))continue;occupied.push(rect);L.marker(anchor,{icon:L.divIcon({className:'municipalLabel',html:'<span data-municipality-id="'+m.id+'">'+name+'</span>',iconSize:[width,30],iconAnchor:[width/2,15]}),title:name,keyboard:true}).on('add',function(){this.getElement().dataset.municipalityAria=m.id}).addTo(labels).on('click',()=>go(pref,name))}if(typeof localize==='function')localize()};map.on('moveend',redraw);redraw();
  map.attributionControl.addAttribution('<a href="https://nlftp.mlit.go.jp/ksj/index.html" target="_blank" rel="noopener">국토수치정보 · MLIT 2021</a>');
  $('#mapNote').textContent='행정구역 경계 · 2021년 자료를 단순화 · 확대하면 작은 지역의 이름이 표시됩니다.';
 }
 function attachMunicipalities(map,pref){const id=prefNames.indexOf(pref);if(municipalGeometry[id]){drawMunicipalities(map,pref);return}$('#mapNote').textContent='시구정촌 경계를 불러오는 중입니다';loadMunicipalities(id).then(()=>{if(mapInstances.get('regionalMap')===map&&state.pref===pref&&state.area==='전체')drawMunicipalities(map,pref);if(state.pref===pref&&selectedMunicipality()){mapKey='';render()}}).catch(()=>{if(mapInstances.get('regionalMap')!==map)return;$('#mapNote').replaceChildren(document.createTextNode('지도를 불러오지 못했습니다 '),button('다시 불러오기',()=>attachMunicipalities(map,pref)));if(typeof localize==='function')localize()})}
 function stampMunicipalHeadings(){
  const m=state.view==='explore'?selectedMunicipality():null;
- for(const id of ['title','mapTitle']){
-  const el=document.getElementById(id);delete el.dataset.municipalityId;delete el.dataset.municipalityPrefix;el.classList.remove('noContent');
-  if(m){el.dataset.municipalityId=m.id;if(id==='mapTitle')el.dataset.municipalityPrefix=state.pref+' · ';markMunicipalityContent(el,state.pref,m)}
- }
- for(const el of document.querySelectorAll('#crumb button,#crumb [aria-current]')){
-  el.classList.remove('noContent');
-  if(m&&el.textContent===municipalName(m)){el.dataset.municipalityId=m.id;markMunicipalityContent(el,state.pref,m)}
- }
+ for(const id of ['title','mapTitle']){const el=document.getElementById(id);delete el.dataset.municipalityId;delete el.dataset.municipalityPrefix;if(m){el.dataset.municipalityId=m.id;if(id==='mapTitle')el.dataset.municipalityPrefix=state.pref+' · '}}
+ for(const el of document.querySelectorAll('#crumb button,#crumb [aria-current]'))if(m&&el.textContent===municipalName(m))el.dataset.municipalityId=m.id;
 }
 function localizeMunicipalLabels(){
  const lang=language==='ja'?'ja':'ko';
