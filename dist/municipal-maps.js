@@ -16,9 +16,13 @@ function municipalityHasAnyTravelContent(pref,m){
   if(!p||p.pref!==pref)return false;
   if(textMatch(p.town)||textMatch(p.area))return true;
   const loc=(typeof pointLocations!=='undefined'&&pointLocations[p.id])||p;
+  if(!Number.isFinite(loc?.lat)||!Number.isFinite(loc?.lon))return false;
+  const geo=typeof municipalGeometry!=='undefined'?municipalGeometry[prefNames.indexOf(pref)]?.find(f=>f.properties.id===m.id):null;
+  if(geo&&typeof insidePolygon==='function'){
+   return geo.geometry.coordinates.some(poly=>insidePolygon(loc.lon,loc.lat,poly[0])&&!poly.slice(1).some(r=>insidePolygon(loc.lon,loc.lat,r)));
+  }
   const b=m?.bounds;
-  return Array.isArray(b)&&b.length>=2&&Number.isFinite(loc?.lat)&&Number.isFinite(loc?.lon)&&
-   loc.lat>=Number(b[0]?.[0])&&loc.lat<=Number(b[1]?.[0])&&loc.lon>=Number(b[0]?.[1])&&loc.lon<=Number(b[1]?.[1]);
+  return Array.isArray(b)&&b.length>=2&&loc.lat>=Number(b[0]?.[0])&&loc.lat<=Number(b[1]?.[0])&&loc.lon>=Number(b[0]?.[1])&&loc.lon<=Number(b[1]?.[1]);
  };
  if(typeof samples!=='undefined'&&samples.some(pointMatch))return true;
  if(typeof eventsForPref==='function'&&(eventsForPref(pref)||[]).some(e=>textMatch(e.area)||textMatch(e.town)||textMatch(e.where)))return true;
