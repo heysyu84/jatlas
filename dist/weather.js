@@ -77,4 +77,5 @@ async function renderWeatherPanel(force=false){
 }
 const weatherPreviousRender=render;
 render=function(){weatherPreviousRender();renderWeatherPanel()};
+document.addEventListener('click',e=>{if(e.target.closest?.('#langKo,#langJa,.language button'))queueMicrotask(()=>renderWeatherPanel())});
 renderWeatherPanel();
