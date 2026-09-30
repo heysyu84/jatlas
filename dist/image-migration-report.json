@@ -1,9 +1,9 @@
 {
   "commons_candidates": 669,
-  "localized": 660,
-  "downloaded_now": 27,
-  "reused_existing": 633,
-  "failed_count": 9,
+  "localized": 665,
+  "downloaded_now": 9,
+  "reused_existing": 656,
+  "failed_count": 4,
   "failed": [
     {
       "file": "Akaushi don.jpg",
@@ -18,50 +18,26 @@
       "reason": "Commons file not found"
     },
     {
-      "file": "Dolphin watching Amakusa.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Hitoyoshi Castle ruins.jpg",
-      "reason": "Commons file not found"
-    },
-    {
       "file": "Ikinari dango.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Kumamon Square 2019.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Sakitsu Church and village.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Shimotori Shopping Arcade Kumamoto.jpg",
       "reason": "Commons file not found"
     }
   ],
   "fallback_aliases": {
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Aso Nakadake crater.jpg": "Mt. Aso nakadake crater 阿蘇中岳火口 (456731526).jpg",
-    "Aso Shrine Romon.jpg": "Romon Gate of Aoi Aso Shrine.jpg",
     "Daikanbo Aso.jpg": "A view of the five mountains of Aso from Daikanbo viewpoint.jpg",
     "Kamishikimi Kumanoimasu Shrine.jpg": "Kamishikimi Kumanoimasu Shrine 001.jpg",
     "Karashi renkon.jpg": "Karashi-Renkon.jpg",
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
     "Kuma River Hitoyoshi.jpg": "Kuma River in Hitoyoshi.jpg",
     "Kumamoto Castle 2019.jpg": "Kumamoto Castle, Kumamoto; April 2010.jpg",
-    "Kurokawa Onsen Kumamoto.jpg": "2014-08-08 Bathing token at Kurokawa Onsen (Kumamoto).jpg",
     "Kusasenri Aso.jpg": "Aso Kusasenri horses (52133462269).jpg",
     "Misumi West Port.jpg": "Misumi-west port 1.jpg",
     "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
-    "Reigando Kumamoto.jpg": "Fontaine Reigando, Kumamoto, Japon.jpg",
     "SAKURA MACHI Kumamoto.jpg": "SAKURA-MACHI-Kumamoto.jpg",
     "Sakuranobaba Josaien.jpg": "Sakuranobaba-Josaien Museum near Kumamoto Castle.JPG",
     "Sashimi platter.jpg": "Deluxe sashimi platter 01.jpg",
     "Shirakawa Suigen.jpg": "Shirakawa Suigenn.JPG",
-    "Suizenji Jojuen 2018.jpg": "NDL-DC 762376 0323 0013crd-Suizenji Jojuen.jpg",
     "Taipien.jpg": "Taipien at Kumamoto Station.JPG",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG"
   },
