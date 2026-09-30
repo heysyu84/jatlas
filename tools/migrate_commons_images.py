@@ -35,29 +35,29 @@ def normal_file_name(name: str) -> str:
 def collect_filenames(text: str) -> set[str]:
     out: set[str] = set()
 
-    # Commons file-page references are the most authoritative source.
-    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/File:([^'\"<>\s]+)", text):
+    # Commons file-page references are authoritative.
+    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/File:([^'\"<>\\s]+)", text):
         out.add(normal_file_name(m.group(1)))
 
-    # Explicit Special:FilePath image URLs.
-    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/([^?'\"<>\s]+)", text):
+    # Explicit Special:FilePath URLs.
+    for m in re.finditer(r"https://commons\.wikimedia\.org/wiki/Special:FilePath/([^?'\"<>\\s]+)", text):
         out.add(normal_file_name(m.group(1)))
 
-    # Static image filenames used by cf()/photoFiles/pf maps.
-    if "commons.wikimedia.org" in text or "Special:FilePath" in text or "const cf=" in text:
-        for m in re.finditer(r"(['\"])([^'\"\n]+?\.(?:jpe?g|png))\1", text, re.I):
-            value = m.group(2).strip()
-            if value.startswith(("http://", "https://", "images/")):
-                continue
-            if "/" in value and not value.startswith("./"):
-                continue
-            out.add(normal_file_name(value))
+    # Static filename maps used by expansion files. Do not scan arbitrary local .webp names.
+    for var in ("photoFiles", "foodPhotoFiles"):
+        for m in re.finditer(rf"const\\s+{var}\\s*=\\s*(\\{{.*?\\}});", text, re.S):
+            body = m.group(1)
+            for q in re.finditer(r"['\"]([^'\"\\n]+?\\.(?:jpe?g|png))['\"]", body, re.I):
+                value = q.group(1).strip().replace("\\'", "'")
+                if value.startswith(("http://", "https://", "images/")):
+                    continue
+                out.add(normal_file_name(value))
 
     return {x for x in out if EXT_RE.search(x)}
 
 _rate_lock = threading.Lock()
 _last_request = 0.0
-_MIN_INTERVAL = 0.28
+_MIN_INTERVAL = 1.10
 
 def _throttle() -> None:
     global _last_request
@@ -197,7 +197,7 @@ def main() -> None:
         return ("failed", filename, None, err or "download/convert failed")
 
     names = sorted(all_files)
-    with ThreadPoolExecutor(max_workers=2) as pool:
+    with ThreadPoolExecutor(max_workers=1) as pool:
         futures = [pool.submit(process_one, filename) for filename in names]
         for idx, future in enumerate(as_completed(futures), 1):
             status, filename, rel, err = future.result()
@@ -264,7 +264,7 @@ def main() -> None:
         "changed_js_files": sorted(changed_files),
         "remaining_external_src_count": sum(len(v) for v in unresolved_external.values()),
         "remaining_external_srcs": unresolved_external,
-        "policy_note": "Commons images are copied locally with throttled retries. Other external images require separate license review or a Commons replacement.",
+        "policy_note": "Only reusable Wikimedia Commons sources are copied locally. Existing local files are ignored; other external images require separate license review or a Commons replacement.",
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
