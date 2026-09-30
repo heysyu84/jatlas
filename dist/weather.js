@@ -13,11 +13,57 @@ const weatherCodes={
 };
 function weatherText(text){return typeof translateText==='function'?translateText(text):text}
 function weatherLang(){try{return localStorage.getItem('japlan-language')==='ja'?'ja':'ko'}catch{return 'ko'}}
+function weatherMunicipalName(m){
+ const n=typeof municipalNames!=='undefined'?municipalNames[m.id]:null;
+ return n?.ko||(typeof municipalName==='function'?municipalName(m):m.name);
+}
+function weatherBoundsCenter(bounds){
+ if(!Array.isArray(bounds)||bounds.length<2)return null;
+ const a=bounds[0],b=bounds[1],lat=(Number(a?.[0])+Number(b?.[0]))/2,lon=(Number(a?.[1])+Number(b?.[1]))/2;
+ return Number.isFinite(lat)&&Number.isFinite(lon)?{lat,lon}:null;
+}
+function weatherMunicipalityCenter(pref,name){
+ if(!name||name==='전체'||typeof municipalIndex==='undefined'||typeof prefNames==='undefined')return null;
+ const list=municipalIndex[prefNames.indexOf(pref)]||[];
+ const target=String(name).replace(/\s+/g,'');
+ const m=list.find(x=>String(weatherMunicipalName(x)||'').replace(/\s+/g,'')===target);
+ const c=m&&weatherBoundsCenter(m.bounds);
+ return c?{...c,name:weatherMunicipalName(m)}:null;
+}
+function weatherAverage(points,name){
+ const valid=points.filter(p=>p&&Number.isFinite(p.lat)&&Number.isFinite(p.lon));
+ if(!valid.length)return null;
+ return {lat:valid.reduce((a,p)=>a+p.lat,0)/valid.length,lon:valid.reduce((a,p)=>a+p.lon,0)/valid.length,name};
+}
+function weatherPrefCenter(pref){
+ if(typeof geography!=='undefined'&&typeof prefNames!=='undefined'){
+  const f=geography.find(x=>prefNames[x.id]===pref);
+  if(f){
+   let minLat=Infinity,maxLat=-Infinity,minLon=Infinity,maxLon=-Infinity;
+   for(const ring of f.rings||[])for(const p of ring||[]){const lon=Number(p?.[0]),lat=Number(p?.[1]);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;minLat=Math.min(minLat,lat);maxLat=Math.max(maxLat,lat);minLon=Math.min(minLon,lon);maxLon=Math.max(maxLon,lon)}
+   if(Number.isFinite(minLat))return{lat:(minLat+maxLat)/2,lon:(minLon+maxLon)/2,name:pref};
+  }
+ }
+ return null;
+}
 function weatherPoint(){
  if(state.view!=='explore')return null;
- const candidates=samples.filter(p=>p.pref===state.pref&&(state.area==='전체'||p.area===state.area)&&(state.town==='전체'||p.town===state.town));
- for(const p of candidates){const loc=pointLocations[p.id]||(Number.isFinite(p.lat)&&Number.isFinite(p.lon)?{lat:p.lat,lon:p.lon}:null);if(loc)return{lat:loc.lat,lon:loc.lon,name:p.name}}
- return null;
+ const pref=state.pref,area=state.area,town=state.town;
+ const exactTown=weatherMunicipalityCenter(pref,town);
+ if(exactTown)return exactTown;
+ if(typeof selectedMunicipality==='function'){
+  const m=selectedMunicipality(pref,area),c=m&&weatherBoundsCenter(m.bounds);
+  if(c)return{...c,name:weatherMunicipalName(m)};
+ }
+ const scoped=samples.filter(p=>p.pref===pref&&(area==='전체'||p.area===area));
+ const townCenters=[...new Set(scoped.map(p=>p.town).filter(Boolean))].map(t=>weatherMunicipalityCenter(pref,t));
+ const areaCenter=weatherAverage(townCenters,area==='전체'?pref:area);
+ if(areaCenter)return areaCenter;
+ for(const p of scoped){
+  const loc=pointLocations[p.id]||(Number.isFinite(p.lat)&&Number.isFinite(p.lon)?{lat:p.lat,lon:p.lon}:null);
+  if(loc)return{lat:loc.lat,lon:loc.lon,name:p.name};
+ }
+ return weatherPrefCenter(pref);
 }
 function weatherCondition(code){return weatherCodes[Number(code)]||['🌡️','현재 날씨']}
 function weatherDateLabel(date,index){
@@ -48,7 +94,7 @@ function renderWeatherData(host,data,point){
 
  const popover=document.createElement('div');popover.className='weatherPopover';popover.hidden=!weatherExpanded;
  const head=document.createElement('div');head.className='weatherPopoverHead';
- const title=document.createElement('div');title.innerHTML='<h2>'+weatherText('현재 날씨')+'</h2>';
+ const title=document.createElement('div');title.innerHTML='<h2>'+weatherText('날씨')+'</h2>';
  head.append(title);popover.append(head);
 
  const days=document.createElement('div');days.className='weatherDays';
