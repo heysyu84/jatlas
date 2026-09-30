@@ -1,28 +1,12 @@
 {
   "commons_candidates": 635,
-  "localized": 589,
-  "downloaded_now": 3,
-  "reused_existing": 586,
-  "failed_count": 46,
+  "localized": 625,
+  "downloaded_now": 36,
+  "reused_existing": 589,
+  "failed_count": 10,
   "failed": [
     {
       "file": "2010-06-17 Isuien Nara Japan06s3.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Akafuku mochi.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Awaji Hanasajiki.JPG",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Dejima Nagasaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Dozaki Church Goto.jpg",
       "reason": "Commons file not found"
     },
     {
@@ -30,55 +14,11 @@
       "reason": "Commons file not found"
     },
     {
-      "file": "Fukue Castle Ishida Castle.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Glover Garden Nagasaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
       "file": "Gomasaba.jpg",
       "reason": "Commons file not found"
     },
     {
-      "file": "Goto udon.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Gyokuro tea.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Hakata ramen.jpg",
-      "reason": "Commons file not found"
-    },
-    {
       "file": "Hana no Iwaya Shrine.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Harahoge Jizo.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Hario Radio Towers.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Hirado Castle.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Hirado Xavier Memorial Church.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Japanese beef steak.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Japanese spiny lobster.jpg",
       "reason": "Commons file not found"
     },
     {
@@ -90,67 +30,7 @@
       "reason": "Commons file not found"
     },
     {
-      "file": "Lemon steak Sasebo.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Megane Bridge Nagasaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
       "file": "Mizutaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Nagasaki Atomic Bomb Museum.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Nagasaki Peace Park Statue.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Nagasaki champon.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Nagasaki night view from Mount Inasa.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Nojimazaki Lighthouse 2017-09.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Obama Onsen Hot Foot 105.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Osezaki Lighthouse Goto.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Oura Church Nagasaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Sara udon.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Saruiwa Iki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Sasebo burger.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Shippoku cuisine.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Takahama Beach Goto.jpg",
       "reason": "Commons file not found"
     },
     {
@@ -158,31 +38,7 @@
       "reason": "Commons file not found"
     },
     {
-      "file": "Tenmusu.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Turkish rice Nagasaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Twenty Six Martyrs Monument Nagasaki.jpg",
-      "reason": "Commons file not found"
-    },
-    {
       "file": "Unagi seiro-mushi.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Unzen Jigoku.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Ushiku Daibutsu - Great Buddha in Japan.jpg",
-      "reason": "Commons file not found"
-    },
-    {
-      "file": "Watatsumi Shrine Tsushima.jpg",
       "reason": "Commons file not found"
     },
     {
@@ -190,8 +46,48 @@
       "reason": "Commons file not found"
     }
   ],
-  "changed_js_files": [],
-  "remaining_external_src_count": 1795,
+  "fallback_aliases": {
+    "Akafuku mochi.jpg": "Akafuku Mochi.jpg",
+    "Awaji Hanasajiki.JPG": "2023-04-15 Awaji Hanasajiki,淡路花桟敷 DSCF0924.jpg",
+    "Dejima Nagasaki.jpg": "Nagasaki Dejima 2.jpg",
+    "Dozaki Church Goto.jpg": "Religious woodblock print from Uragashira Church (Dozaki Church Goto).jpg",
+    "Fukue Castle Ishida Castle.jpg": "2013-06-19-Gotoh-Fukue-Ishida-Castle.jpg",
+    "Glover Garden Nagasaki.jpg": "Nagasaki-Glover-Garden-5415.jpg",
+    "Goto udon.jpg": "Boiled Goto Udon.jpg",
+    "Gyokuro tea.jpg": "Steeped-gyokuro.jpg",
+    "Hakata ramen.jpg": "Tonkotsu Miso Ramen, Hakata Choten, Paris 002.jpg",
+    "Harahoge Jizo.jpg": "Harahoge-jizo Iki-Ashibe.jpg",
+    "Hario Radio Towers.jpg": "Hario radio towers.JPG",
+    "Hirado Castle.jpg": "Hirado Castle air.jpg",
+    "Hirado Xavier Memorial Church.jpg": "Xaviel Memorial Church.jpg",
+    "Japanese beef steak.jpg": "Beef Steak in Japan.jpg",
+    "Japanese spiny lobster.jpg": "Caught Japanese spiny lobster,Chiba pref.,Japan.jpg",
+    "Lemon steak Sasebo.jpg": "Lemon steak at Hachinoya Sasebo.jpg",
+    "Megane Bridge Nagasaki.jpg": "Megane Bridge, Nagasaki 04.jpg",
+    "Nagasaki Atomic Bomb Museum.jpg": "Nagasaki Atomic Bomb Museum Library ac (4).jpg",
+    "Nagasaki Peace Park Statue.jpg": "20190202 Nagasaki Peace Park Peace Statue-3.jpg",
+    "Nagasaki champon.jpg": "Champon in Nagasaki 01.jpg",
+    "Nagasaki night view from Mount Inasa.jpg": "Nagasaki City View from Mount Inasa, Nagasaki 2014.jpg",
+    "Nojimazaki Lighthouse 2017-09.jpg": "Nojimasaki Lighthouse 2017-09.jpg",
+    "Obama Onsen Hot Foot 105.jpg": "Obama-Onsen 2026-07 ac (3).jpg",
+    "Osezaki Lighthouse Goto.jpg": "Osezaki lighthouse.jpg",
+    "Oura Church Nagasaki.jpg": "Oura Church Nagasaki Japan06s5.jpg",
+    "Sara udon.jpg": "Sara udon in Kyoto.jpg",
+    "Saruiwa Iki.jpg": "Saruiwa of Iki island 2007.JPG",
+    "Sasebo burger.jpg": "Sasebo-Burger.jpg",
+    "Shippoku cuisine.jpg": "Shippoku hadosi.jpg",
+    "Takahama Beach Goto.jpg": "Takahama-beach.jpg",
+    "Tenmusu.jpg": "Ten-Musu.JPG",
+    "Turkish rice Nagasaki.jpg": "Nagasaki style Toruko rice.JPG",
+    "Twenty Six Martyrs Monument Nagasaki.jpg": "Twenty-Six Martyrs Museum and Monument March 27 2022 various 17 36 35 129000.jpeg",
+    "Unzen Jigoku.jpg": "Unzen jigoku 03.JPG",
+    "Ushiku Daibutsu - Great Buddha in Japan.jpg": "Ushiku Buddha Statue Parking Area.jpg",
+    "Watatsumi Shrine Tsushima.jpg": "Watatsumi shrine.JPG"
+  },
+  "changed_js_files": [
+    "regional-data.js"
+  ],
+  "remaining_external_src_count": 1789,
   "remaining_external_srcs": {
     "discovery.js": [
       "https://www.google.com/maps?",
@@ -972,15 +868,9 @@
       "https://commons.wikimedia.org/wiki/File:貴船神社_Kibune_Jinja_(KYOTO-JAPAN)_(4950778051).jpg",
       "https://commons.wikimedia.org/wiki/File:郡山駅で販売されている「豚みそ丼」_Pcs34560_IMG3984.jpg",
       "https://commons.wikimedia.org/wiki/Special:FilePath/2010-06-17 Isuien Nara Japan06s3.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Akafuku mochi.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Awaji Hanasajiki.JPG?width=960",
       "https://commons.wikimedia.org/wiki/Special:FilePath/Deer's Spa, Nasu-Yumoto.jpg?width=960",
       "https://commons.wikimedia.org/wiki/Special:FilePath/Hana no Iwaya Shrine.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese spiny lobster.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Nojimazaki Lighthouse 2017-09.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Tenmusu.jpg?width=960",
       "https://commons.wikimedia.org/wiki/Special:FilePath/Tetsugaku-no-michi - Philosopher's Walk - Kyoto.jpg?width=960",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Ushiku Daibutsu - Great Buddha in Japan.jpg?width=960",
       "https://creativecommons.org/licenses/by-sa/2.0",
       "https://creativecommons.org/licenses/by-sa/2.5",
       "https://creativecommons.org/licenses/by-sa/3.0",
