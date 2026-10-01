@@ -20,3 +20,5 @@ for key,q in Q.items():
  report[str(key)]={'title':x['title'].replace('File:',''),'source':'https://commons.wikimedia.org/wiki/'+urllib.parse.quote(x['title'].replace(' ','_'),safe=':_()')}
  print('OK',key,x['title'])
 json.dump(report,open('dist/images/hokkaido/credits.json','w'),ensure_ascii=False,indent=2)
+
+# trigger image collection
