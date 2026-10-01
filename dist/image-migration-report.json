@@ -1,8 +1,8 @@
 {
-  "commons_candidates": 867,
-  "localized": 867,
+  "commons_candidates": 868,
+  "localized": 868,
   "downloaded_now": 0,
-  "reused_existing": 867,
+  "reused_existing": 868,
   "failed_count": 0,
   "failed": [],
   "fallback_aliases": {
@@ -30,7 +30,7 @@
     "Furuzamami Beach.jpg": "JAP Zamami Furuzamami Beach.jpg",
     "Gojoban Yashiki Matsusaka.jpg": "Gojoban Yashiki.jpg",
     "Goya champuru.jpg": "Goya Champuru 1.jpg",
-    "Gyokusendo Okinawa.jpg": "Gyokusendo Nanjo Okinawa Japan04s3104.jpg",
+    "Gyokusendo Okinawa.jpg": "Gyokusendo Nanjo Okinawa Japan23s3104.jpg",
     "Harajiri Falls.jpg": "Harajiri Falls in Bungoono City Oita Prefecture.jpg",
     "Higashi-Hennazaki.jpg": "Miyako higashi hennazaki.JPG",
     "Hiji Falls Okinawa.jpg": "Hiji Falls.JPG",
@@ -62,7 +62,7 @@
     "Kikuchi Gorge.jpg": "Kumamoto-Kikuchi Gorge-xl.jpg",
     "Kinrinko Lake Yufuin.jpg": "Stream near Tenso Shrine and Lake Kinrinko.JPG",
     "Kinsakubaru Amami.jpg": "Kinsakubaru wildwood.jpg",
-    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-3.jpg",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-4.jpg",
     "Kokusai Dori Naha.jpg": "Kokusai-dori08s3s4440.jpg",
     "Kouri Bridge.jpg": "Kouri Bridge 202006.jpg",
     "Kuju Flower Park.jpg": "Kuju Flower Park(3553982332).jpg",
@@ -87,10 +87,11 @@
     "Miyazaki mango.jpg": "Cut Miyazaki mango.jpg",
     "Nabana no Sato illumination.jpg": "Nabana no Sato Illumination.jpg",
     "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
-    "Nakagusuku Castle.jpg": "Nakagusuku Castle04n3104.jpg",
+    "Nakagusuku Castle.jpg": "Nakagusuku Castle40n3104.jpg",
     "Nakijin Castle.jpg": "Nakijin Castle 20221229.jpg",
     "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
     "Nishihama Hateruma.jpg": "Hateruma nishihama 1.jpg",
+    "Nojimazaki Lighthouse 2017-09.jpg": "Nojimasaki Lighthouse 2017-09.jpg",
     "Obi Castle Miyazaki.jpg": "Obi Castle air.jpg",
     "Obiten.jpg": "Obiten shop.JPG",
     "Ogawa Falls Kagoshima.jpg": "Ogawa falls Nejime 01.JPG",
@@ -142,7 +143,7 @@
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 23.jpg",
     "Yaseuma.jpg": "Yaseuma.JPG",
     "Yokkaichi tonteki.jpg": "Yokkaichi-Tonteki.jpg",
     "Yonaha Maehama Beach.jpg": "Yonaha Beach (51924567580).jpg",
@@ -152,7 +153,7 @@
     "あやまる岬.jpg": "あやまる岬公園 - panoramio.jpg"
   },
   "changed_js_files": [
-    "saitama-expansion.js"
+    "chiba-expansion.js"
   ],
   "remaining_external_src_count": 0,
   "remaining_external_srcs": {},
