@@ -6,7 +6,7 @@
   "failed_count": 0,
   "failed": [],
   "fallback_aliases": {
-    "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7384).jpg",
+    "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
     "Akame 48 Waterfalls.jpg": "Akame 48 Waterfalls-Reijataki.jpg",
     "Amakusa Five Bridges.jpg": "Five Bridges of Amakusa,four bridges Southern side Aerial photograph.1974.jpg",
     "Amanoiwato Shrine.jpg": "Amanoiwato-east-shrine.jpg",
@@ -103,7 +103,7 @@
     "Omi Shrine Hyuga.jpg": "Ohmi Shrine Hyuga 2009 001.JPG",
     "Onigajo Mie.jpg": "Onigajo Seaside.jpg",
     "Ontayaki village.jpg": "Onta Pottery Village 03.jpg",
-    "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 06.jpg",
+    "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 07.jpg",
     "Pinaisara Falls.jpg": "Pinaisara Falls (52117077706).jpg",
     "Rafute.jpg": "Rafute in Waikiki by takaokun.jpg",
     "Ryukyu Oita cuisine.jpg": "Oita ryukyu.jpg",
@@ -143,7 +143,7 @@
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 25.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 27.jpg",
     "Yaseuma.jpg": "Yaseuma.JPG",
     "Yokkaichi tonteki.jpg": "Yokkaichi-Tonteki.jpg",
     "Yonaha Maehama Beach.jpg": "Yonaha Beach (51924567580).jpg",
@@ -152,9 +152,7 @@
     "Yunohira Observatory Sakurajima.jpg": "Sakurajima seen from Yunohira Observatory.jpg",
     "あやまる岬.jpg": "あやまる岬公園 - panoramio.jpg"
   },
-  "changed_js_files": [
-    "gunma-expansion.js"
-  ],
+  "changed_js_files": [],
   "remaining_external_src_count": 1,
   "remaining_external_srcs": {
     "tochigi-expansion.js": [
