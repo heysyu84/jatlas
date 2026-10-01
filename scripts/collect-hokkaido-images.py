@@ -4,21 +4,25 @@ Q={"2000":"Odori Park Sapporo","2001":"Sapporo TV Tower","2002":"Mount Moiwa Sap
 api='https://commons.wikimedia.org/w/api.php'
 os.makedirs('dist/images/hokkaido',exist_ok=True)
 report={}
-used=set()\nfor key,q in Q.items():
+used=set()
+for key,q in Q.items():
  p={'action':'query','generator':'search','gsrsearch':q,'gsrnamespace':'6','gsrlimit':'5','prop':'imageinfo','iiprop':'url|mime','iiurlwidth':'1280','format':'json','origin':'*'}
  req=urllib.request.Request(api+'?'+urllib.parse.urlencode(p),headers={'User-Agent':'JatlasImageCollector/1.0'})
  data=json.load(urllib.request.urlopen(req,timeout=30)); pages=list(data.get('query',{}).get('pages',{}).values())
  chosen=None
  for x in pages:
   ii=(x.get('imageinfo') or [{}])[0]
-  if ii.get('mime','').startswith('image/') and ii.get('thumburl'):
+  if ii.get('mime','').startswith('image/') and ii.get('thumburl') and x.get('title') not in used:
    chosen=(x,ii);break
  if not chosen: print('MISS',key,q);continue
  x,ii=chosen
+ used.add(x['title'])
  req=urllib.request.Request(ii['thumburl'],headers={'User-Agent':'JatlasImageCollector/1.0'})
  raw=urllib.request.urlopen(req,timeout=45).read(); im=Image.open(io.BytesIO(raw)).convert('RGB'); im.thumbnail((1280,960)); path=f'dist/images/hokkaido/{key}.webp'; im.save(path,'WEBP',quality=82,method=6)
  report[str(key)]={'title':x['title'].replace('File:',''),'source':'https://commons.wikimedia.org/wiki/'+urllib.parse.quote(x['title'].replace(' ','_'),safe=':_()')}
  print('OK',key,x['title'])
-if len(report) != len(Q): raise RuntimeError(f'Only {len(report)}/{len(Q)} images collected')\nif len({v['title'] for v in report.values()}) != len(report): raise RuntimeError('Duplicate Commons files detected')\njson.dump(report,open('dist/images/hokkaido/credits.json','w'),ensure_ascii=False,indent=2)
+if len(report) != len(Q): raise RuntimeError(f'Only {len(report)}/{len(Q)} images collected')
+if len({v['title'] for v in report.values()}) != len(report): raise RuntimeError('Duplicate Commons files detected')
+json.dump(report,open('dist/images/hokkaido/credits.json','w'),ensure_ascii=False,indent=2)
 
 # trigger image collection
