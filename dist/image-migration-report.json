@@ -1,9 +1,9 @@
 {
   "commons_candidates": 1289,
-  "localized": 1254,
-  "downloaded_now": 123,
-  "reused_existing": 1131,
-  "failed_count": 35,
+  "localized": 1279,
+  "downloaded_now": 25,
+  "reused_existing": 1254,
+  "failed_count": 10,
   "failed": [
     {
       "file": "Arakurayama Sengen Park Chureito.jpg",
@@ -18,47 +18,7 @@
       "reason": "Commons file not found or duplicate fallback"
     },
     {
-      "file": "Fugu sashimi Wajima.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Fukube Otaki.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Fukui mizu yokan.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hakusan Dinosaur Park Shiramine.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hakusan Shirakawago White Road.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Heshiko mackerel.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
       "file": "Hoto Yamanashi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kaga bocha.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kaga cuisine.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kaisendon Kanazawa.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kanazawa Castle Ishikawamon.jpg",
       "reason": "Commons file not found or duplicate fallback"
     },
     {
@@ -66,19 +26,7 @@
       "reason": "Commons file not found or duplicate fallback"
     },
     {
-      "file": "Kirigamine Highlands.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
       "file": "Kiyosato Terrace.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Koi koku.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Konka zuke.jpg",
       "reason": "Commons file not found or duplicate fallback"
     },
     {
@@ -90,59 +38,11 @@
       "reason": "Commons file not found or duplicate fallback"
     },
     {
-      "file": "Mount Ontake Otaki trailhead.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Nozawana pickles.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Obama Fish Center Fukui.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Ogizawa Station Tateyama Kurobe Alpine Route.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
       "file": "Oishi Park Kawaguchiko.jpg",
       "reason": "Commons file not found or duplicate fallback"
     },
     {
-      "file": "Ono spring water Fukui.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Seiko crab Fukui.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Shichiken Morning Market Ono.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Shinshu salmon sashimi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
       "file": "Shosenkyo Gorge.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Togakushi Shrine Okusha cedar avenue.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Wakasa beef.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Yakisaba sushi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Yamanaka Onsen Koorogi Bridge.jpg",
       "reason": "Commons file not found or duplicate fallback"
     }
   ],
@@ -151,7 +51,7 @@
     "A-FACTORY Aomori.jpg": "A-FACTORY 02.jpg",
     "Abashiri Prison Museum Hokkaido.jpg": "130713 Abashiri Prison Museum Abashiri Hokkaido Japan08n.jpg",
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
-    "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 19.jpg",
+    "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 09.jpg",
     "Akakura Onsen Niigata.jpg": "Akakura Onsen in Niigata - 2022-04.jpg",
     "Akame 48 Waterfalls.jpg": "Akame 48 Waterfalls-Reijataki.jpg",
     "Akita Furusato Village.jpg": "Akita Furusato Village - panoramio.jpg",
@@ -182,11 +82,11 @@
     "Chiran Peace Museum for Kamikaze Pilots.jpg": "Chiran Peace Museum01.jpg",
     "Chiran Samurai Residence.jpg": "Chiran Samurai Residence01.jpg",
     "Chiran tea.jpg": "Tea Plantation in Chiran 01.jpg",
-    "Chokaisan Omonoimi Shrine Fukura.jpg": "Fukura-kuchinomiya, Chokaisan Omonoimi Shrine-49.jpg",
+    "Chokaisan Omonoimi Shrine Fukura.jpg": "Fukura-kuchinomiya, Chokaisan Omonoimi Shrine-08.jpg",
     "Chusonji Konjikido Iwate.jpg": "Konjikido shelter hall - Chusonji, Hiraizumi, Iwate - DSC04951.jpg",
     "Daikanbo Aso.jpg": "A view of the five mountains of Aso from Daikanbo viewpoint.jpg",
     "Daio Wasabi Farm.jpg": "Daio wasabi farm02c.jpg",
-    "Dakigaeri Gorge.jpg": "Miko-ishi, Dakigaeri Gorge.jpg",
+    "Dakigaeri Gorge.jpg": "Dakigaeri Gorge - panoramio.jpg",
     "Denshoen Tono.jpg": "Denshoen04s3872.jpg",
     "Echigo Yuzawa Onsen.jpg": "Echigo Yuzawa onsen- 湯元温泉分湯場.jpg",
     "Echizen crab.jpg": "Boiled Echizen crab (snow crab) male and female.jpg",
@@ -212,11 +112,11 @@
     "Hachimantai Dragon Eye.jpg": "Akita-Hachimantai Dragon Eye -xl.jpg",
     "Hachimantai Hachiman-numa.jpg": "Hachiman-numa chitou.jpg",
     "Haguro Five-story Pagoda.jpg": "Snow scene of jiji Sugi and Haguro-san Five-story Pagoda.jpg",
-    "Hakkoda Ropeway Aomori.jpg": "Hakkoda Ropeway 2019.jpg",
+    "Hakkoda Ropeway Aomori.jpg": "Hakkoda Ropeway.jpg",
     "Hakodate Hachimanzaka Motomachi.jpg": "Hakodate Hachimanzaka, Motomachi, Hakodate, Hokkaido, Japan, 八幡坂, 元町, 函館, 北海道, 日本, はこだてし, ほっかいどう, にっぽん, にほん (16720590581).jpg",
     "Hanamaki Onsen Iwate.jpg": "Ooedo Onsen Monogatari Premium Iwate-Hanamaki (Watari Onsen).jpg",
     "Happo Pond Hakuba.jpg": "Happo Pond 2022-08-09.jpg",
-    "Harajiri Falls.jpg": "Harajiri Falls 2025.jpg",
+    "Harajiri Falls.jpg": "Harajiri Falls in Bungoono City Oita Prefecture.jpg",
     "Hatahata fish.jpg": "Hatahata.JPG",
     "Hatahata-kan Akita.jpg": "Hatahata-kan.jpg",
     "Hegi soba.jpg": "Hegi soba by k14.jpg",
@@ -228,10 +128,10 @@
     "Hirosaki apple pie.jpg": "2m apple pie.jpg",
     "Hita yakisoba.jpg": "Hita Yakisoba.JPG",
     "Hittsumi Iwate.jpg": "Hittsumi.jpg",
-    "Hoonji Temple Morioka.jpg": "171104 Hoonji Morioka Iwate pref Japan03s3.jpg",
+    "Hoonji Temple Morioka.jpg": "171104 Hoonji Morioka Iwate pref Japan06s3.jpg",
     "Horikiri Pass Miyazaki.jpg": "Horikiri Pass Miyazaki 2016.JPG",
     "Hoshitoge Rice Terraces.jpg": "Hoshitoge Rice Terraces 2.jpg",
-    "Hotaka Shrine Azumino.jpg": "Hotaka Shrine in Azumino, Nagano-2.jpg",
+    "Hotaka Shrine Azumino.jpg": "Hotaka Shrine in Azumino, Nagano-7.jpg",
     "Hotaruika Museum.jpg": "Hotaruika Museum, Toyama, Japan.jpg",
     "Hotokegaura Aomori.jpg": "Hotokegaura (Aomori).jpg",
     "Ibusuki sand bath.jpg": "Ibusuki-Sand-Bath.JPG",
@@ -255,7 +155,7 @@
     "Jigokudani Monkey Park hot spring.jpg": "Snow Monkey at Jigokudani Monkey Park.jpg",
     "Jimami tofu.jpg": "Jimami Tofu 001.jpg",
     "Jingisukan Hokkaido.jpg": "Jingisukan Nabe (IH).jpg",
-    "Jodogahama Iwate.jpg": "Jodogahama Beach (51969977762).jpg",
+    "Jodogahama Iwate.jpg": "Jodogahama Beach (51971544590).jpg",
     "Jogakura Bridge Aomori.jpg": "Jogakura Bridge in Aomori.jpg",
     "Jozankei Onsen Hokkaido.jpg": "Jozankei Onsen, Sapporo, Hokkaido Prefecture; January 2018 (22).jpg",
     "Junsai.jpg": "Junsai held above Soup.jpg",
@@ -273,7 +173,7 @@
     "Kamo Aquarium jellyfish.jpg": "Kamo Aquarium Jellyfish Dream Theater.jpg",
     "Kanoya Rose Garden.jpg": "Kanoya Rose Garden 001.JPG",
     "Karashi renkon.jpg": "Karashi-Renkon.jpg",
-    "Karuizawa Taliesin.jpg": "Flowers at English Garden in Taliesin 6.jpg",
+    "Karuizawa Taliesin.jpg": "Flowers at English Garden in Taliesin 4.jpg",
     "Karukan.jpg": "Karukan01.JPG",
     "Katsuo tataki.jpg": "Katsuo no tataki don.jpg",
     "Katsuren Castle.jpg": "Katsuren Castle ruins.jpg",
@@ -293,13 +193,13 @@
     "Kitakami Tenshochi.jpg": "Kitakami Tenshochi (2621671261).jpg",
     "Kitayamazaki Iwate.jpg": "Kitayamazaki in Tanohata, Iwate Ishikawa prefecture Wikivoyage banner.jpg",
     "Kitazawa Flotation Plant.jpg": "Kitazawa Flotation Plant ac (1).jpg",
-    "Kiyosato Highlands Yamanashi.jpg": "160826 In front of Kiyosato Station Hokuto Yamanashi pref Japan05s3.jpg",
+    "Kiyosato Highlands Yamanashi.jpg": "160826 In front of Kiyosato Station Hokuto Yamanashi pref Japan06s3.jpg",
     "Kiyotsu Gorge Tunnel.jpg": "Find47 Niigata-Kiyotsu Gorge Tunnel-m.jpg",
     "Kobujime sashimi.jpg": "Kobu Jime (Sashimi Marinated on Kombu Seaweed) (5095532256).jpg",
     "Koiwai Farm Iwate.jpg": "Koiwai farm.jpg",
-    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-3.jpg",
+    "Kokonoe Yume Otsurihashi.jpg": "Kokonoe-Yume-Otsurihashi-4.jpg",
     "Kokusai Dori Naha.jpg": "Kokusai-dori08s3s4440.jpg",
-    "Komoro Castle Kaikoen.jpg": "Komoro Castle Ruins ”KAIKOEN” (51981560650).jpg",
+    "Komoro Castle Kaikoen.jpg": "Komoro Castle Ruins ”KAIKOEN” (51981077428).jpg",
     "Koshu Yume Koji.jpg": "Koshu yume-koji and Kofu Station.jpg",
     "Kouri Bridge.jpg": "Kouri Bridge 202006.jpg",
     "Kuji Amber Museum.jpg": "Amber museumu, Kuji.jpg",
@@ -334,7 +234,7 @@
     "Michi-no-Eki Nango Miyazaki.jpg": "Michinoeki Nango Miyazaki 200809.jpg",
     "Mie Kumano Kodo Center.jpg": "Mie Prefecture Kumano Kodo Center.jpg",
     "Mie oysters.jpg": "Baked oysters. 焼き牡蠣の食べ放題 - panoramio.jpg",
-    "Mihama American Village Okinawa.jpg": "P 日本 Japan 沖繩 OKINAWA Mihama the Beach Tower Hotel room balcony view Vessel Hotel n 美國村 American Village night January 2025 R12S 05.jpg",
+    "Mihama American Village Okinawa.jpg": "P 日本 Japan 沖繩 OKINAWA Mihama the Beach Tower Hotel room balcony view Vessel Hotel n 美國村 American Village night January 2025 R12S 01.jpg",
     "Mikata Five Lakes.jpg": "Mikata Five Lakes ac.jpg",
     "Minobusan Ropeway.jpg": "Minobusan-Ropeway.jpg",
     "Miracle Pine Rikuzentakata.jpg": "Rikuzentakata Youth Hostel (Earthquake ruin) and Miracle Pine Tree 2023 above.jpg",
@@ -374,22 +274,22 @@
     "Niigata City History Museum Minatopia.jpg": "160716 Niigata City History Museum Main Building Niigata Japan01bs5.jpg",
     "Ningle Terrace Furano.jpg": "130503 Ningle Terrace Furano Hokkaido Japan02s.jpg",
     "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
-    "Nishihama Hateruma.jpg": "Hateruma nishihama 1.jpg",
-    "Noboribetsu Jigokudani Hokkaido.jpg": "Jigokudani (Hell Valley), Noboribetsu Onsen, Hokkaido, April 2023 14.jpg",
+    "Nishihama Hateruma.jpg": "Hateruma nishihama 2.jpg",
+    "Noboribetsu Jigokudani Hokkaido.jpg": "Jigokudani (Hell Valley), Noboribetsu Onsen, Hokkaido, April 2023 09.jpg",
     "Nodoguro grilled.jpg": "Nodoguro grilled with salt, Kappo Uosen, Nagaoka 02.jpg",
     "Noppe Niigata.jpg": "Noppe.jpg",
-    "Notojima Aquarium.jpg": "Rhincodon typus Notojima Aquarium 5.jpg",
+    "Notojima Aquarium.jpg": "Rhincodon typus Notojima Aquarium 3.jpg",
     "Nyuto Onsen Tsuru no Yu.jpg": "Nyuto Onsen - NyutoOnsen7047.jpg",
-    "Obama Nishigumi Fukui.jpg": "150725 Obama-Nishigumi Obama Fukui pref Japan01n.jpg",
+    "Obama Nishigumi Fukui.jpg": "150725 Obama-Nishigumi Obama Fukui pref Japan02n.jpg",
     "Obi Castle Miyazaki.jpg": "Obi Castle air.jpg",
     "Obihiro butadon.jpg": "Butadon of Pancho.jpg",
     "Obiten.jpg": "Obiten shop.JPG",
     "Ogawa Falls Kagoshima.jpg": "Ogawa falls Nejime 01.JPG",
-    "Oirase Stream Aomori.jpg": "Oirase Mountain Stream - Towada, Aomori - DSC01252.jpg",
+    "Oirase Stream Aomori.jpg": "Oirase Mountain Stream - Towada, Aomori - DSC01188.jpg",
     "Oita Marine Palace Aquarium Umitamago.jpg": "Marine Palace UmiTamago.jpg",
     "Oita Prefectural Art Museum OPAM.jpg": "Boating on the Ina-gawa by Tanomura Chikuden (Oita Prefectural Art Museum).jpg",
     "Oka Castle ruins Oita.jpg": "Cherryblossoms at oka-castle1.jpg",
-    "Okage Yokocho Ise.jpg": "Ise Mie Okage Yokocho 19.jpg",
+    "Okage Yokocho Ise.jpg": "Ise Mie Okage Yokocho 26.jpg",
     "Okinawa soba.jpg": "Okinawa Soba Yanbaru.jpg",
     "Oko no Taki Yakushima.jpg": "Oko no Taki fall Yakushima.jpg",
     "Old Karuizawa Ginza.jpg": "Old Karuizawa ginza06n3872.jpg",
@@ -399,15 +299,15 @@
     "Onigajo Mie.jpg": "Onigajo Seaside.jpg",
     "Ontayaki village.jpg": "Onta Pottery Village 03.jpg",
     "Oshima Sakai Fukui.jpg": "Sakai Oshima 04.jpg",
-    "Oshinkoshin Falls Hokkaido.jpg": "Oshinkoshin Falls - Mar 14, 2009 (1).jpg",
+    "Oshinkoshin Falls Hokkaido.jpg": "Oshinkoshin Falls - Mar 14, 2009 (3).jpg",
     "Oshino Hakkai Mount Fuji.jpg": "080103 hakkai fuji.jpg",
     "Osorezan Aomori.jpg": "Osorezan Aomori 01.jpg",
     "Oyaki Nagano.jpg": "Nozawana-Oyaki-Nagano.JPG",
     "Oyashirazu cliffs.jpg": "Oyashirazu-1.JPG",
     "Patchwork Road Biei Hokkaido.jpg": "140724 Biei Hokkaido Japan01s8.jpg",
-    "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 06.jpg",
+    "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 07.jpg",
     "Pinaisara Falls.jpg": "Pinaisara Falls (52117077706).jpg",
-    "Rafute.jpg": "Rafute in Waikiki by takaokun.jpg",
+    "Rafute.jpg": "Okinawan Rafute.jpg",
     "Rainbow Line Summit Park Fukui.jpg": "Lainbow Line Summit Park ac (1).jpg",
     "Rebun Island Hokkaido.jpg": "130726 Cape Gorota in Rebun Island Hokkaido Japan01s5.jpg",
     "Rishiri Island Mount Rishiri Hokkaido.jpg": "130726 Mount Rishiri view from Oshidomari Port in Rishiri Island Hokkaido Japan03s3.jpg",
@@ -440,7 +340,7 @@
     "Shirakawa Suigen.jpg": "Shirakawa Suigenn.JPG",
     "Shiratani Unsuikyo.jpg": "Shiratani Unsuikyo (4196797010).jpg",
     "Shirayama Hime Shrine.jpg": "Honden shirayama hime shrine ishikawa.jpg",
-    "Shiretoko Five Lakes Hokkaido.jpg": "Shiretoko Five Lakes, Hokkaido; October 2018 (09).jpg",
+    "Shiretoko Five Lakes Hokkaido.jpg": "Shiretoko Five Lakes, Hokkaido; October 2018 (02).jpg",
     "Shirogane Falls Ginzan.jpg": "Shirogane-no-Taki Falls, Ginzan Onsen.jpg",
     "Shiroyone Senmaida.jpg": "Night Shiroyone Senmaida.jpg",
     "Shomyo Falls Toyama.jpg": "Shomyo Falls.JPG",
@@ -471,7 +371,7 @@
     "Toba Observatory.jpg": "Toba Observatory Osukuni-Kuraoh.jpg",
     "Tochio aburaage.jpg": "Michinoeki R290 Tochio Aburaage Shop.jpg",
     "Togakushi Ninja Museum.jpg": "Togakushi Folk Museum, Togakushi Ninja Museum, Ninja Trick Mansion.jpg",
-    "Tojinbo Fukui.jpg": "Tojinbo cliffs, Fukui Prefecture; September 2019 (03).jpg",
+    "Tojinbo Fukui.jpg": "Tojinbo cliffs, Fukui Prefecture; September 2019 (01).jpg",
     "Toki Forest Park.jpg": "Cass Saddle, Craigieburn Forest Park, New Zealand.jpg",
     "Toki Messe Niigata.jpg": "What's Niigata and Toki Messe Sep2021.jpg",
     "Tono Furusato Village.jpg": "Tono Furusato Village , 遠野 ふるさと村 - panoramio.jpg",
@@ -493,13 +393,13 @@
     "Ushiku Daibutsu - Great Buddha in Japan.jpg": "Ushiku Buddha Statue Parking Area.jpg",
     "VISON Mie.jpg": "VISON HOTELS 002.jpg",
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
-    "Wajima Morning Market.jpg": "Wajima morning market 2024-02-17(2) as.jpg",
+    "Wajima Morning Market.jpg": "Wajima morning market 2024-02-17(1) as.jpg",
     "Wakasa Mikata Jomon Museum.jpg": "Wakasa Mikata Jomon Museum exterior view.jpg",
     "Wakura Onsen.jpg": "Wakura Onsen 200906-2.jpg",
     "Wanko soba Iwate.jpg": "Wanko soba.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 25.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
     "Yamagata Prefectural Museum.jpg": "Yamagata Prefectural Museum 01.JPG",
     "Yamagata soba.jpg": "Nagashi-soba in Yamagata Japan.jpg",
     "Yamanashi grapes.jpg": "Koshu Grapes.jpg",
