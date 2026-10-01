@@ -149,6 +149,15 @@ def resolve_commons_urls(filenames: list[str]) -> tuple[dict[str, str], list[dic
     return resolved, failed
 
 _SEARCH_STOP = {"file","image","photo","japan","japanese","pref","prefecture","city","the","of","in","at","and","various","jpg","jpeg","png"}
+_FALLBACK_BLOCK_TOKENS = {"map", "banner", "diagram", "locator", "aerial", "air", "cadastral", "schematic"}
+
+def _bad_fallback_candidate(name: str) -> bool:
+    stem = re.sub(r"\.(?:jpe?g|png)$", "", name, flags=re.I).lower()
+    tokens = set(re.findall(r"[a-z0-9]+", stem))
+    if tokens & _FALLBACK_BLOCK_TOKENS:
+        return True
+    compact = re.sub(r"[^a-z0-9]+", " ", stem)
+    return any(x in compact for x in ("location map", "route map", "site plan", "floor plan"))
 
 def _name_tokens(name: str) -> list[str]:
     stem = re.sub(r"\.(?:jpe?g|png)$", "", name, flags=re.I)
@@ -211,7 +220,7 @@ def search_commons_fallbacks(missing: list[str]) -> tuple[dict[str, str], list[d
         scored = []
         for row in data.get("query", {}).get("search", []):
             title = normal_file_name(row.get("title", ""))
-            if not EXT_RE.search(title):
+            if not EXT_RE.search(title) or _bad_fallback_candidate(title):
                 continue
             score = _fallback_score(original, title)
             if score > 0:
@@ -328,6 +337,37 @@ def external_srcs(text: str) -> list[str]:
             urls.append(value)
     return urls
 
+def audit_image_quality(mapping: dict[str, str], fallback_aliases: dict[str, str], js_files: list[Path]) -> tuple[list[dict], list[dict]]:
+    warnings: list[dict] = []
+    for filename, rel in sorted(mapping.items()):
+        path = DIST / rel
+        try:
+            with Image.open(path) as im:
+                w, h = im.size
+            ratio = max(w / max(h, 1), h / max(w, 1))
+            if ratio >= 2.25:
+                warnings.append({"file": filename, "type": "extreme_aspect_ratio", "width": w, "height": h, "ratio": round(ratio, 3)})
+            if min(w, h) < 500 or max(w, h) < 900:
+                warnings.append({"file": filename, "type": "low_resolution", "width": w, "height": h})
+        except Exception as e:
+            warnings.append({"file": filename, "type": "audit_read_failed", "reason": str(e)})
+        alias = fallback_aliases.get(filename)
+        if alias:
+            warnings.append({"file": filename, "type": "fallback_requires_review", "fallback": alias})
+
+    refs: dict[str, list[str]] = {}
+    for path in js_files:
+        text = path.read_text(encoding="utf-8")
+        for m in re.finditer(r"const\s+photoFiles\s*=\s*(\{.*?\});", text, re.S):
+            for value in _quoted_values(m.group(1)):
+                if EXT_RE.search(value) and not value.startswith(("http://", "https://", "images/")):
+                    refs.setdefault(normal_file_name(value), []).append(path.name)
+    duplicates = [
+        {"file": filename, "reference_count": len(paths), "files": paths}
+        for filename, paths in sorted(refs.items()) if len(paths) > 1
+    ]
+    return warnings, duplicates
+
 def main() -> None:
     js_files = sorted(DIST.glob("*.js"))
     file_to_filenames: dict[Path, set[str]] = {}
@@ -433,6 +473,7 @@ def main() -> None:
         INDEX.write_text(index_text, encoding="utf-8")
         changed_files.append("index.html")
 
+    quality_warnings, duplicate_place_photo_refs = audit_image_quality(mapping, fallback_aliases, js_files)
     report = {
         "commons_candidates": len(all_files),
         "localized": len(mapping),
@@ -441,6 +482,10 @@ def main() -> None:
         "failed_count": len(failed),
         "failed": failed,
         "fallback_aliases": fallback_aliases,
+        "quality_warning_count": len(quality_warnings),
+        "quality_warnings": quality_warnings,
+        "duplicate_place_photo_ref_count": len(duplicate_place_photo_refs),
+        "duplicate_place_photo_refs": duplicate_place_photo_refs,
         "changed_js_files": sorted(changed_files),
         "remaining_external_src_count": sum(len(v) for v in unresolved_external.values()),
         "remaining_external_srcs": unresolved_external,
