@@ -176,6 +176,7 @@ def _fallback_score(original: str, candidate: str) -> float:
 def search_commons_fallbacks(missing: list[str]) -> tuple[dict[str, str], list[dict]]:
     aliases: dict[str, str] = {}
     unresolved: list[dict] = []
+    used_targets: set[str] = set()
     api = requests.Session()
     for idx, original in enumerate(missing, 1):
         query = re.sub(r"\.(?:jpe?g|png)$", "", original, flags=re.I)
@@ -216,10 +217,12 @@ def search_commons_fallbacks(missing: list[str]) -> tuple[dict[str, str], list[d
             if score > 0:
                 scored.append((score, title))
         scored.sort(key=lambda x: (-x[0], len(x[1])))
-        if scored:
-            aliases[original] = scored[0][1]
+        unique_scored = [item for item in scored if item[1] not in used_targets]
+        if unique_scored:
+            aliases[original] = unique_scored[0][1]
+            used_targets.add(unique_scored[0][1])
         else:
-            unresolved.append({"file": original, "reason": "Commons file not found"})
+            unresolved.append({"file": original, "reason": "Commons file not found or duplicate fallback"})
         if idx % 10 == 0 or idx == len(missing):
             print(f"fallback searched {idx}/{len(missing)}; matched={len(aliases)}", flush=True)
     return aliases, unresolved
