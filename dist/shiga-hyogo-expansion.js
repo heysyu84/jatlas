@@ -349,3 +349,11 @@ if(hy){
 '아코성 역사 반나절':'赤穂城歴史 半日','아코성터와 47인 관련 역사 장소를 걸어서 연결하는 하리마 서부 일정입니다.':'赤穂城跡と四十七士ゆかりの歴史スポットを徒歩でつなぐ西播磨のコースです。',
 '다카라즈카 가극 관람 하루':'宝塚歌劇観劇 1日','공연 시간을 중심으로 극장과 다카라즈카 시내 산책을 구성하는 문화 일정입니다.':'公演時間を中心に劇場と宝塚市内散策を組み立てる文化コースです。'
 });})();
+;(()=>{/* JATLAS_KOBE_PHOTO_QA_20261001 */
+const r=regionalCatalog.find(x=>x.pref==='효고');if(!r)return;
+const cf=f=>(globalThis.JATLAS_COMMONS_LOCAL&&globalThis.JATLAS_COMMONS_LOCAL[f])||('https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960');
+const cp=f=>'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_');
+const set=(test,file)=>{const p=r.places.find(test);if(p)r.photos[String(p.id)]={src:cf(file),alt:p.name,source:cp(file)}};
+set(p=>String(p.name).includes('동물왕국'),'Ailurus fulgens (Red panda) Animal Kingdom Kobe hdsr S5 05.jpg');
+set(p=>String(p.name).includes('하버랜드'),'Kobe Port Tower and Harborland at night 20190202-2.jpg');
+})();
