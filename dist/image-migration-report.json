@@ -1,57 +1,16 @@
 {
-  "commons_candidates": 1289,
-  "localized": 1279,
-  "downloaded_now": 25,
-  "reused_existing": 1254,
-  "failed_count": 10,
-  "failed": [
-    {
-      "file": "Arakurayama Sengen Park Chureito.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Chateau Mercian Katsunuma Winery.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Erinji Temple Yamanashi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hoto Yamanashi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Katsunuma vineyards Yamanashi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kiyosato Terrace.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Koshu wine beef.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kuonji Minobusan.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Oishi Park Kawaguchiko.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Shosenkyo Gorge.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    }
-  ],
+  "commons_candidates": 1288,
+  "localized": 1288,
+  "downloaded_now": 9,
+  "reused_existing": 1279,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "21st Century Museum of Contemporary Art Kanazawa.jpg": "21st Century Museum of Contemporary Art, Kanazawa011.jpg",
     "A-FACTORY Aomori.jpg": "A-FACTORY 02.jpg",
     "Abashiri Prison Museum Hokkaido.jpg": "130713 Abashiri Prison Museum Abashiri Hokkaido Japan08n.jpg",
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
-    "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 09.jpg",
+    "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 16.jpg",
     "Akakura Onsen Niigata.jpg": "Akakura Onsen in Niigata - 2022-04.jpg",
     "Akame 48 Waterfalls.jpg": "Akame 48 Waterfalls-Reijataki.jpg",
     "Akita Furusato Village.jpg": "Akita Furusato Village - panoramio.jpg",
@@ -130,7 +89,7 @@
     "Hittsumi Iwate.jpg": "Hittsumi.jpg",
     "Hoonji Temple Morioka.jpg": "171104 Hoonji Morioka Iwate pref Japan06s3.jpg",
     "Horikiri Pass Miyazaki.jpg": "Horikiri Pass Miyazaki 2016.JPG",
-    "Hoshitoge Rice Terraces.jpg": "Hoshitoge Rice Terraces 2.jpg",
+    "Hoshitoge Rice Terraces.jpg": "Hoshitoge Rice Terraces 1.jpg",
     "Hotaka Shrine Azumino.jpg": "Hotaka Shrine in Azumino, Nagano-7.jpg",
     "Hotaruika Museum.jpg": "Hotaruika Museum, Toyama, Japan.jpg",
     "Hotokegaura Aomori.jpg": "Hotokegaura (Aomori).jpg",
@@ -263,7 +222,7 @@
     "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
     "Nagamachi Samurai District Kanazawa.jpg": "Nagamachi samurai district.jpg",
     "Nagano apples.jpg": "Industrial site covered with apples brought by the flood.jpg",
-    "Nakagusuku Castle.jpg": "Nakagusuku Castle04n3104.jpg",
+    "Nakagusuku Castle.jpg": "Nakagusuku Castle40n3104.jpg",
     "Nakijin Castle.jpg": "Nakijin Castle 20221229.jpg",
     "Namahage Museum.jpg": "NAMAHAGE Museum - panoramio.jpg",
     "Narada Onsen Yamanashi.jpg": "Narada Onsen Shiranekan.jpg",
@@ -274,7 +233,7 @@
     "Niigata City History Museum Minatopia.jpg": "160716 Niigata City History Museum Main Building Niigata Japan01bs5.jpg",
     "Ningle Terrace Furano.jpg": "130503 Ningle Terrace Furano Hokkaido Japan02s.jpg",
     "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
-    "Nishihama Hateruma.jpg": "Hateruma nishihama 2.jpg",
+    "Nishihama Hateruma.jpg": "Hateruma nishihama 1.jpg",
     "Noboribetsu Jigokudani Hokkaido.jpg": "Jigokudani (Hell Valley), Noboribetsu Onsen, Hokkaido, April 2023 09.jpg",
     "Nodoguro grilled.jpg": "Nodoguro grilled with salt, Kappo Uosen, Nagaoka 02.jpg",
     "Noppe Niigata.jpg": "Noppe.jpg",
@@ -352,7 +311,7 @@
     "Suganuma Gokayama.jpg": "Gokayama suganuma (cropped).JPG",
     "Sukayu Onsen Aomori.jpg": "Sukayu Onsen Aomori Prif Jp IMG 9533 stitch8.jpg",
     "Sunayama Beach.jpg": "Sunayama-beach.jpg",
-    "Suwa Taisha Kamisha Honmiya.jpg": "Suwa-taisha, Kamisha Honmiya, gokenrou.jpg",
+    "Suwa Taisha Kamisha Honmiya.jpg": "Suwa-taisha, Kamisha Honmiya, youhaijo.jpg",
     "Suzuka Circuit.jpg": "Suzuka Circuit Pit Building.jpg",
     "Taco rice Okinawa.jpg": "Taco Rice.jpg",
     "Tadewara Wetland.jpg": "Tadewara Wetlands (52133306063).jpg",
@@ -371,7 +330,7 @@
     "Toba Observatory.jpg": "Toba Observatory Osukuni-Kuraoh.jpg",
     "Tochio aburaage.jpg": "Michinoeki R290 Tochio Aburaage Shop.jpg",
     "Togakushi Ninja Museum.jpg": "Togakushi Folk Museum, Togakushi Ninja Museum, Ninja Trick Mansion.jpg",
-    "Tojinbo Fukui.jpg": "Tojinbo cliffs, Fukui Prefecture; September 2019 (01).jpg",
+    "Tojinbo Fukui.jpg": "Tojinbo cliffs, Fukui Prefecture; September 2019 (03).jpg",
     "Toki Forest Park.jpg": "Cass Saddle, Craigieburn Forest Park, New Zealand.jpg",
     "Toki Messe Niigata.jpg": "What's Niigata and Toki Messe Sep2021.jpg",
     "Tono Furusato Village.jpg": "Tono Furusato Village , 遠野 ふるさと村 - panoramio.jpg",
