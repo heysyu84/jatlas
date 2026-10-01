@@ -1,35 +1,10 @@
 {
   "commons_candidates": 920,
-  "localized": 914,
-  "downloaded_now": 46,
-  "reused_existing": 868,
-  "failed_count": 6,
-  "failed": [
-    {
-      "file": "Abashiri Aurora drift ice breaker.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Banei horse racing Obihiro Hokkaido.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hakodate squid sashimi.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hokkaido crab salmon seafood.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Mount Usu Ropeway Hokkaido.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Otaru cheesecake Hokkaido.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    }
-  ],
+  "localized": 920,
+  "downloaded_now": 12,
+  "reused_existing": 908,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "Abashiri Prison Museum Hokkaido.jpg": "130713 Abashiri Prison Museum Abashiri Hokkaido Japan08n.jpg",
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
@@ -46,7 +21,6 @@
     "Bungotakada Showa no Machi.jpg": "Bungotakada showa no machi.JPG",
     "Cape Nagasakibana Kagoshima.jpg": "Kagoshima-nagasakibana.JPG",
     "Cape Sata Kagoshima.jpg": "Cape Sata (52018967919).jpg",
-    "Cape Soya Hokkaido.jpg": "Hokkaido-wakkanai-Cape-Soya-1977.jpg",
     "Cape Toi Miyazaki.jpg": "Kushima, Miyazaki banner (Misaki uma, Cape Toi).jpg",
     "Cape Zanpa.jpg": "Zanpa-Misaki Cape.jpg",
     "Chiran Peace Museum for Kamikaze Pilots.jpg": "Chiran Peace Museum01.jpg",
@@ -64,8 +38,6 @@
     "Higashi-Hennazaki.jpg": "Miyako higashi hennazaki.JPG",
     "Hiji Falls Okinawa.jpg": "Hiji Falls.JPG",
     "Hita yakisoba.jpg": "Hita Yakisoba.JPG",
-    "Hokkaido Shrine Sapporo.jpg": "Sapporo Shrine, later Hokkaido-jingu.png",
-    "Hokkaido soft serve ice cream.jpg": "SAKURAKO - Soft serve ice cream. (6363487301).jpg",
     "Horikiri Pass Miyazaki.jpg": "Horikiri Pass Miyazaki 2016.JPG",
     "Ibusuki sand bath.jpg": "Ibusuki-Sand-Bath.JPG",
     "Iga Ueno Castle.jpg": "Iga Ueno Castle stone wall.jpg",
@@ -105,7 +77,6 @@
     "Kumano Kodo Magose Pass.jpg": "Kumano Kodo (Magose pass route).JPG",
     "Kunimigaoka Takachiho.jpg": "Kunimigaoka, Takachiho-1.jpg",
     "Kusasenri Aso.jpg": "Aso Kusasenri horses (52133462269).jpg",
-    "Kushiro Shitsugen Hokkaido.jpg": "Popplio in Kushiro, Hokkaido 56 (Kushiro-Shitsugen National Park).jpg",
     "Lake Akan Hokkaido.jpg": "Lake Akan Kushiro Hokkaido Japan11n.jpg",
     "Lake Kussharo Hokkaido.jpg": "130713 Lake Kussharo Teshikaga Hokkaido Japan01s5.jpg",
     "Lake Mashu Hokkaido.jpg": "Lake Mashu.jpg",
@@ -129,11 +100,11 @@
     "Mount Yotei Hokkaido.jpg": "Japan Hokkaido, Yotei-san (mount Yotei) 02.jpg",
     "Nabana no Sato illumination.jpg": "Nabana no Sato Illumination.jpg",
     "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
-    "Nakagusuku Castle.jpg": "Nakagusuku Castle40n3104.jpg",
+    "Nakagusuku Castle.jpg": "Nakagusuku Castle04n3104.jpg",
     "Nakijin Castle.jpg": "Nakijin Castle 20221229.jpg",
     "Ningle Terrace Furano.jpg": "130503 Ningle Terrace Furano Hokkaido Japan02s.jpg",
     "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
-    "Nishihama Hateruma.jpg": "Hateruma nishihama 2.jpg",
+    "Nishihama Hateruma.jpg": "Hateruma nishihama 1.jpg",
     "Noboribetsu Jigokudani Hokkaido.jpg": "Jigokudani (Hell Valley), Noboribetsu Onsen, Hokkaido, April 2023 09.jpg",
     "Obi Castle Miyazaki.jpg": "Obi Castle air.jpg",
     "Obihiro butadon.jpg": "Butadon of Pancho.jpg",
@@ -142,15 +113,13 @@
     "Oita Marine Palace Aquarium Umitamago.jpg": "Marine Palace UmiTamago.jpg",
     "Oita Prefectural Art Museum OPAM.jpg": "Boating on the Ina-gawa by Tanomura Chikuden (Oita Prefectural Art Museum).jpg",
     "Oka Castle ruins Oita.jpg": "Cherryblossoms at oka-castle1.jpg",
-    "Okage Yokocho Ise.jpg": "Ise Mie Okage Yokocho 19.jpg",
+    "Okage Yokocho Ise.jpg": "Ise Mie Okage Yokocho 26.jpg",
     "Okinawa soba.jpg": "Okinawa Soba Yanbaru.jpg",
     "Oko no Taki Yakushima.jpg": "Oko no Taki fall Yakushima.jpg",
     "Omi Shrine Hyuga.jpg": "Ohmi Shrine Hyuga 2009 001.JPG",
     "Onigajo Mie.jpg": "Onigajo Seaside.jpg",
     "Ontayaki village.jpg": "Onta Pottery Village 03.jpg",
-    "Onuma Quasi National Park Hokkaido.jpg": "JP Hokkaido Onuma Quasi-National Park Location.PNG",
     "Oshinkoshin Falls Hokkaido.jpg": "Oshinkoshin Falls - Mar 14, 2009 (3).jpg",
-    "Otaru Music Box Museum Hokkaido.jpg": "Sakaimachi street Otaru Hokkaido10n.jpg",
     "Patchwork Road Biei Hokkaido.jpg": "140724 Biei Hokkaido Japan01s8.jpg",
     "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 07.jpg",
     "Pinaisara Falls.jpg": "Pinaisara Falls (52117077706).jpg",
@@ -197,7 +166,7 @@
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 23.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
     "Yaseuma.jpg": "Yaseuma.JPG",
     "Yokkaichi tonteki.jpg": "Yokkaichi-Tonteki.jpg",
     "Yonaha Maehama Beach.jpg": "Yonaha Beach (51924567580).jpg",
