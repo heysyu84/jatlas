@@ -116,10 +116,13 @@ function googleDetailURL(place,embed=true){
  if(embed)params.set('output','embed');
  if(place){
   const cid=place.mapUrl?new URL(place.mapUrl).searchParams.get('cid'):null;
+  const mapUrlQuery=place.mapUrl?new URL(place.mapUrl).searchParams.get('query'):null;
+  const query=place.mapQuery||mapUrlQuery;
   const loc=pointLocations[place.id];
   if(cid)params.set('cid',cid);
+  else if(query)params.set('q',query);
   else if(loc)params.set('q',`${loc.lat},${loc.lon}`);
-  else params.set('q',place.mapQuery||new URL(place.mapUrl).searchParams.get('query')||place.pref+' '+place.name);
+  else params.set('q',place.pref+' '+place.name);
   params.set('z','16');
  }else{params.set('ll',`${ctx.center.lat},${ctx.center.lng}`);params.set('z',String(ctx.zoom));}
  return 'https://www.google.com/maps?'+params.toString();
@@ -130,7 +133,7 @@ function renderGoogleDetail(pts,bounds){
  googleDetailContext={pts,center,zoom:Math.max(5,Math.min(14,Math.floor(Math.log2(280/Math.max(span,.02))))),scope:[state.pref,state.area,state.town].join('|')};
  const frame=document.createElement('iframe');frame.id='googleDetailFrame';frame.title='Google Maps';frame.setAttribute('allowfullscreen','');frame.setAttribute('referrerpolicy','no-referrer-when-downgrade');host.append(frame);
  let controls=$('#googleMapPlaces');if(!controls){controls=document.createElement('div');controls.id='googleMapPlaces';controls.className='chiprow googleMapPlaces';host.after(controls)}
- controls.replaceChildren(button('권역 전체',()=>{selected=null;syncGoogleDetail()}),...pts.filter(p=>pointLocations[p.id]||p.mapUrl).map(p=>{const b=button(p.name,()=>openDetail(p));b.dataset.googlePlace=p.id;return b}));controls.hidden=false;
+ controls.replaceChildren(button('권역 전체',()=>{selected=null;syncGoogleDetail()}),...pts.filter(p=>pointLocations[p.id]||p.mapUrl||p.mapQuery).map(p=>{const b=button(p.name,()=>openDetail(p));b.dataset.googlePlace=p.id;return b}));controls.hidden=false;
  let link=$('#googleMapExternal');if(!link){link=document.createElement('a');link.id='googleMapExternal';link.target='_blank';link.rel='noopener';link.className='googleMapExternal';controls.after(link)}link.hidden=false;link.textContent='Google Maps에서 크게 보기 ↗';
  $('#mapTitle').textContent=state.pref+' · '+state.area;
  $('#mapNote').textContent='장소 버튼을 누르면 해당 위치를 보여줍니다. 지도 안에서 확대·축소할 수 있습니다.';
@@ -141,7 +144,7 @@ function syncGoogleDetail(){
  for(const id of ['googleMapPlaces','googleMapExternal']){const el=$('#'+id);if(el)el.hidden=!active}
  const frame=$('#googleDetailFrame');if(!active||!frame||!googleDetailContext)return;
  if(googleDetailContext.scope!==[state.pref,state.area,state.town].join('|'))return;
- const place=googleDetailContext.pts.find(p=>p.id===selected?.id&&(pointLocations[p.id]||p.mapUrl));
+ const place=googleDetailContext.pts.find(p=>p.id===selected?.id&&(pointLocations[p.id]||p.mapUrl||p.mapQuery));
  const displayed=place||(!googleDetailContext.pts.some(p=>pointLocations[p.id])?googleDetailContext.pts.find(p=>p.mapUrl):null);const url=googleDetailURL(displayed);if(frame.getAttribute('src')!==url)frame.setAttribute('src',url);
  $('#googleMapExternal').href=googleDetailURL(displayed,false);
  document.querySelectorAll('#googleMapPlaces button').forEach((b,i)=>{const active=place?Number(b.dataset.googlePlace)===place.id:i===0;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
