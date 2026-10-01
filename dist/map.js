@@ -120,6 +120,7 @@ function googleDetailURL(place,embed=true){
   const query=place.mapQuery||mapUrlQuery;
   const loc=pointLocations[place.id];
   if(cid)params.set('cid',cid);
+  else if(place.googlePlaceId)params.set('q','place_id:'+place.googlePlaceId);
   else if(query)params.set('q',query);
   else if(loc)params.set('q',`${loc.lat},${loc.lon}`);
   else params.set('q',place.pref+' '+place.name);
