@@ -172,3 +172,10 @@ Object.assign(regionalJapanese,{'쇼핑·시장·먹거리':'ショッピング�
 '일몰 후 어두운 구간이 있으므로 하산 시간을 먼저 정하세요.':'日没後に暗くなる区間があるため、下山時刻を先に決めてください。'
 });})();
 ;(()=>{regionalJapanese['구라마·기부네 이동 및 점심']='鞍馬・貴船の移動・昼食';})();
+;(()=>{/* JATLAS_FUSHIMI_PHOTO_QA_20261001 */
+const r=regionalCatalog.find(x=>x.pref==='교토');if(!r)return;
+const p=r.places.find(x=>/후시미.*이나리/.test(String(x.name)));if(!p)return;
+const f='Fushimi Inari Senbon Torii.jpg';
+const src=(globalThis.JATLAS_COMMONS_LOCAL&&globalThis.JATLAS_COMMONS_LOCAL[f])||('https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960');
+r.photos[String(p.id)]={src,alt:p.name,source:'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_')};
+})();
