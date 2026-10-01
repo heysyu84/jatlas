@@ -1,50 +1,12 @@
 {
   "commons_candidates": 960,
-  "localized": 951,
-  "downloaded_now": 0,
-  "reused_existing": 951,
-  "failed_count": 9,
-  "failed": [
-    {
-      "file": "Goshogawara Tachineputa Museum.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hachinohe mackerel.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Hirosaki Apple Park.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Ichigoni Aomori.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Kaiyaki miso Aomori.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Nokke don Aomori.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Senbei jiru Hachinohe.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Tatehana Wharf Morning Market Hachinohe.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    },
-    {
-      "file": "Tsuru no Mai Bridge Aomori.jpg",
-      "reason": "Commons file not found or duplicate fallback"
-    }
-  ],
+  "localized": 960,
+  "downloaded_now": 14,
+  "reused_existing": 946,
+  "failed_count": 0,
+  "failed": [],
   "fallback_aliases": {
     "A-FACTORY Aomori.jpg": "A-FACTORY 02.jpg",
-    "ASPAM Aomori.jpg": "Aomori Tourist Information Center seen from the ASPAM Street 20200621.jpg",
     "Abashiri Prison Museum Hokkaido.jpg": "130713 Abashiri Prison Museum Abashiri Hokkaido Japan08n.jpg",
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
     "Akame 48 Waterfalls.jpg": "Akame 48 Waterfalls-Reijataki.jpg",
@@ -53,7 +15,6 @@
     "Aoike Juniko Aomori.jpg": "Aoike (the Blue Lake) in Juniko, Fukaura Town, Aomori Prefecture, Japan 20200607a.jpg",
     "Arahira Tenjin.jpg": "Arahira Tenjin shrine, Kanoya - May 22, 2009.jpg",
     "Asamushi Onsen Aomori.jpg": "Aomori Bay Asamushi Onsen Japan01n.jpg",
-    "Ashino Park Aomori.jpg": "Tsugaru Railway Series 21 rail bus Aomori Ashino Park 2009-8-24.jpg",
     "Aso Nakadake crater.jpg": "Mt. Aso nakadake crater 阿蘇中岳火口 (456731526).jpg",
     "Aya Teruha Suspension Bridge.jpg": "Aya Teruha Suspension Bridge4.jpg",
     "Beppu Jigoku Umi-jigoku.jpg": "Beppu Umi-jigoku04n4272.jpg",
@@ -132,7 +93,6 @@
     "Lake Akan Hokkaido.jpg": "Lake Akan Kushiro Hokkaido Japan11n.jpg",
     "Lake Kussharo Hokkaido.jpg": "130713 Lake Kussharo Teshikaga Hokkaido Japan01s5.jpg",
     "Lake Mashu Hokkaido.jpg": "Lake Mashu.jpg",
-    "Lake Towada Aomori.jpg": "Manhole cover - Lake Towada, Aomori - DSC01032.jpg",
     "Lake Toya Hokkaido.jpg": "Hokkaido-Toya Lake-xl.jpg",
     "Makishi Public Market.jpg": "Makishi First Public Market.JPG",
     "Mameda-machi Hita.jpg": "Mameda-machi, Hita 02.jpg",
@@ -155,7 +115,7 @@
     "Mount Yotei Hokkaido.jpg": "Japan Hokkaido, Yotei-san (mount Yotei) 02.jpg",
     "Nabana no Sato illumination.jpg": "Nabana no Sato Illumination.jpg",
     "Nabegataki Falls.jpg": "Nabegataki Falls, Kumamoto, Japan; July 2018 (01).jpg",
-    "Nakagusuku Castle.jpg": "Nakagusuku Castle04n3104.jpg",
+    "Nakagusuku Castle.jpg": "Nakagusuku Castle40n3104.jpg",
     "Nakijin Castle.jpg": "Nakijin Castle 20221229.jpg",
     "Nebuta Museum Wa Rasse Aomori.jpg": "Nebuta Museum Wa Rasse 20200621.jpg",
     "Ningle Terrace Furano.jpg": "130503 Ningle Terrace Furano Hokkaido Japan02s.jpg",
@@ -170,7 +130,7 @@
     "Oita Marine Palace Aquarium Umitamago.jpg": "Marine Palace UmiTamago.jpg",
     "Oita Prefectural Art Museum OPAM.jpg": "Boating on the Ina-gawa by Tanomura Chikuden (Oita Prefectural Art Museum).jpg",
     "Oka Castle ruins Oita.jpg": "Cherryblossoms at oka-castle1.jpg",
-    "Okage Yokocho Ise.jpg": "Ise Mie Okage Yokocho 26.jpg",
+    "Okage Yokocho Ise.jpg": "Ise Mie Okage Yokocho 19.jpg",
     "Okinawa soba.jpg": "Okinawa Soba Yanbaru.jpg",
     "Oko no Taki Yakushima.jpg": "Oko no Taki fall Yakushima.jpg",
     "Oma tuna Aomori.jpg": "Aomori-Ohma Tuna-xl.jpg",
@@ -202,7 +162,6 @@
     "Senjojiki Coast Aomori.jpg": "Senjojiki Coast 20190908c.jpg",
     "Shichiri Mihama.jpg": "Shichiri-Mihama in Atawa.jpg",
     "Shikina-en.jpg": "Naha Shikinaen17n4272.jpg",
-    "Shirakami Sanchi Aomori.jpg": "Shirakami-sanchi World Heritage Conservation Center in Nishimeya, Aomori.jpg",
     "Shirakawa Suigen.jpg": "Shirakawa Suigenn.JPG",
     "Shiratani Unsuikyo.jpg": "Shiratani Unsuikyo (4196797010).jpg",
     "Shiretoko Five Lakes Hokkaido.jpg": "Shiretoko Five Lakes, Hokkaido; October 2018 (02).jpg",
@@ -218,7 +177,6 @@
     "Takachiho-gawara Kagoshima.jpg": "Takachiho-gawara Kirishima City Kagoshima Pref04n4050.jpg",
     "Takasakiyama Natural Zoological Garden.jpg": "Macaca fuscata in Takasakiyama Natural Zoological Garden 2011-03-20.jpg",
     "Takayama Inari Shrine Aomori.jpg": "Aomori- Inari at Takayama Inari Shrine-m.jpg",
-    "Tanesashi Coast Aomori.jpg": "The Tanesashi Coast Information Center.jpg",
     "Tekone sushi.jpg": "Tekone-zushi 02.JPG",
     "Tenmonkan Kagoshima.jpg": "Tenmonkan G3 Kagoshima Japan.jpg",
     "Toba Observatory.jpg": "Toba Observatory Osukuni-Kuraoh.jpg",
