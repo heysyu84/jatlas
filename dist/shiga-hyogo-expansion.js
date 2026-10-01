@@ -354,6 +354,6 @@ const r=regionalCatalog.find(x=>x.pref==='효고');if(!r)return;
 const cf=f=>(globalThis.JATLAS_COMMONS_LOCAL&&globalThis.JATLAS_COMMONS_LOCAL[f])||('https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960');
 const cp=f=>'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_');
 const set=(test,file)=>{const p=r.places.find(test);if(p)r.photos[String(p.id)]={src:cf(file),alt:p.name,source:cp(file)}};
-set(p=>String(p.name).includes('동물왕국'),'Ailurus fulgens (Red panda) Animal Kingdom Kobe hdsr S5 05.jpg');
+set(p=>String(p.name).includes('동물왕국'),'Ailurus fulgens (Red panda) Animal Kingdom Kobe hdsr S5 01.jpg');
 set(p=>String(p.name).includes('하버랜드'),'Kobe Port Tower and Harborland at night 20190202-2.jpg');
 })();
