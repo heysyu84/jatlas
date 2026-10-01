@@ -179,3 +179,11 @@ const f='Fushimi Inari Senbon Torii.jpg';
 const src=(globalThis.JATLAS_COMMONS_LOCAL&&globalThis.JATLAS_COMMONS_LOCAL[f])||('https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960');
 r.photos[String(p.id)]={src,alt:p.name,source:'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_')};
 })();
+
+;(()=>{/* JATLAS_AMANOHASHIDATE_PHOTO_QA_20261001 */
+const r=regionalCatalog.find(x=>x.pref==='교토');if(!r)return;
+const p=r.places.find(x=>String(x.name).includes('아마노하시다테'));if(!p)return;
+const f='Amanohashidate view from Mt Moju02s3s4592.jpg';
+const src=(globalThis.JATLAS_COMMONS_LOCAL&&globalThis.JATLAS_COMMONS_LOCAL[f])||('https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=960');
+r.photos[String(p.id)]={src,alt:p.name,source:'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f).replace(/%20/g,'_')};
+})();
