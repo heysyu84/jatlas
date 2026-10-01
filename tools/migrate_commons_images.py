@@ -152,6 +152,8 @@ _SEARCH_STOP = {"file","image","photo","japan","japanese","pref","prefecture","c
 _FALLBACK_BLOCK_TOKENS = {"map", "banner", "diagram", "locator", "aerial", "air", "cadastral", "schematic"}
 
 def _bad_fallback_candidate(name: str) -> bool:
+    if name.lower().endswith('.png'):
+        return True
     stem = re.sub(r"\.(?:jpe?g|png)$", "", name, flags=re.I).lower()
     tokens = set(re.findall(r"[a-z0-9]+", stem))
     if tokens & _FALLBACK_BLOCK_TOKENS:
