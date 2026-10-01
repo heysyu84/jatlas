@@ -1,0 +1,27 @@
+name: Collect Hokkaido images
+on:
+  push:
+    paths:
+      - 'scripts/collect-hokkaido-images.py'
+      - '.github/workflows/collect-hokkaido-images.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - run: python scripts/collect-hokkaido-images.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/images/hokkaido
+          if ! git diff --cached --quiet; then
+            git commit -m "Add local Hokkaido travel images"
+            git push
+          fi
