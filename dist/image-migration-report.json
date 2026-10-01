@@ -90,8 +90,7 @@
     "Nakagusuku Castle.jpg": "Nakagusuku Castle40n3104.jpg",
     "Nakijin Castle.jpg": "Nakijin Castle 20221229.jpg",
     "Nioza Usuki.jpg": "Nioza Historical Road 01.jpg",
-    "Nishihama Hateruma.jpg": "Hateruma nishihama 1.jpg",
-    "Nojimazaki Lighthouse 2017-09.jpg": "Nojimasaki Lighthouse 2017-09.jpg",
+    "Nishihama Hateruma.jpg": "Hateruma nishihama 2.jpg",
     "Obi Castle Miyazaki.jpg": "Obi Castle air.jpg",
     "Obiten.jpg": "Obiten shop.JPG",
     "Ogawa Falls Kagoshima.jpg": "Ogawa falls Nejime 01.JPG",
@@ -104,7 +103,7 @@
     "Omi Shrine Hyuga.jpg": "Ohmi Shrine Hyuga 2009 001.JPG",
     "Onigajo Mie.jpg": "Onigajo Seaside.jpg",
     "Ontayaki village.jpg": "Onta Pottery Village 03.jpg",
-    "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 06.jpg",
+    "Peace Memorial Park Okinawa.jpg": "Okinawa Itoman Peace Hill Heiwakinen Memorial park hdsr VLux5 07.jpg",
     "Pinaisara Falls.jpg": "Pinaisara Falls (52117077706).jpg",
     "Rafute.jpg": "Okinawan Rafute.jpg",
     "Ryukyu Oita cuisine.jpg": "Oita ryukyu.jpg",
@@ -139,11 +138,12 @@
     "Tsu gyoza.jpg": "Tsu-gyoza (2011.09.25).jpg",
     "Umagase Hyuga.jpg": "Umagase Hyuga 2010.JPG",
     "Usa Jingu.jpg": "Usa Jingu-235.jpg",
+    "Ushiku Daibutsu - Great Buddha in Japan.jpg": "Ushiku Buddha Statue Parking Area.jpg",
     "VISON Mie.jpg": "VISON HOTELS 002.jpg",
     "View from Shiroyama Kagoshima.jpg": "View of Kagoshima from Shiroyama.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 23.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
     "Yaseuma.jpg": "Yaseuma.JPG",
     "Yokkaichi tonteki.jpg": "Yokkaichi-Tonteki.jpg",
     "Yonaha Maehama Beach.jpg": "Yonaha Beach (51924567580).jpg",
@@ -153,9 +153,15 @@
     "あやまる岬.jpg": "あやまる岬公園 - panoramio.jpg"
   },
   "changed_js_files": [
-    "chiba-expansion.js"
+    "ibaraki-expansion.js",
+    "kanagawa-expansion.js",
+    "tochigi-expansion.js"
   ],
-  "remaining_external_src_count": 0,
-  "remaining_external_srcs": {},
+  "remaining_external_src_count": 1,
+  "remaining_external_srcs": {
+    "tochigi-expansion.js": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Deer's Spa, Nasu-Yumoto.jpg?width=960"
+    ]
+  },
   "policy_note": "Only reusable Wikimedia Commons sources are copied locally. Existing local files are ignored; other external images require separate license review or a Commons replacement."
 }
