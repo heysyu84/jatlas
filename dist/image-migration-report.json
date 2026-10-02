@@ -1,15 +1,15 @@
 {
-  "commons_candidates": 1322,
-  "localized": 1322,
-  "downloaded_now": 0,
-  "reused_existing": 1322,
+  "commons_candidates": 1469,
+  "localized": 1469,
+  "downloaded_now": 136,
+  "reused_existing": 1333,
   "failed_count": 0,
   "failed": [],
   "fallback_aliases": {
     "21st Century Museum of Contemporary Art Kanazawa.jpg": "21st Century Museum of Contemporary Art, Kanazawa011.jpg",
     "A-FACTORY Aomori.jpg": "A-FACTORY 02.jpg",
     "Abashiri Prison Museum Hokkaido.jpg": "130713 Abashiri Prison Museum Abashiri Hokkaido Japan08n.jpg",
-    "Abukuma Cave Fukushima.jpg": "Abukuma Cave 04.jpg",
+    "Abukuma Cave Fukushima.jpg": "Abukuma Cave 07.jpg",
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
     "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 09.jpg",
     "Akakura Onsen Niigata.jpg": "Akakura Onsen in Niigata - 2022-04.jpg",
@@ -89,7 +89,7 @@
     "Hittsumi Iwate.jpg": "Hittsumi.jpg",
     "Hoonji Temple Morioka.jpg": "171104 Hoonji Morioka Iwate pref Japan06s3.jpg",
     "Horikiri Pass Miyazaki.jpg": "Horikiri Pass Miyazaki 2016.JPG",
-    "Hoshitoge Rice Terraces.jpg": "Hoshitoge Rice Terraces 2.jpg",
+    "Hoshitoge Rice Terraces.jpg": "Hoshitoge Rice Terraces 1.jpg",
     "Hotaka Shrine Azumino.jpg": "Hotaka Shrine in Azumino, Nagano-7.jpg",
     "Hotaruika Museum.jpg": "Hotaruika Museum, Toyama, Japan.jpg",
     "Hotokegaura Aomori.jpg": "Hotokegaura (Aomori).jpg",
@@ -115,7 +115,7 @@
     "Jigokudani Monkey Park hot spring.jpg": "Snow Monkey at Jigokudani Monkey Park.jpg",
     "Jimami tofu.jpg": "Jimami Tofu 001.jpg",
     "Jingisukan Hokkaido.jpg": "Jingisukan Nabe (IH).jpg",
-    "Jodogahama Iwate.jpg": "Jodogahama Beach (51971544590).jpg",
+    "Jodogahama Iwate.jpg": "Jodogahama Beach (51969977762).jpg",
     "Jogakura Bridge Aomori.jpg": "Jogakura Bridge in Aomori.jpg",
     "Jozankei Onsen Hokkaido.jpg": "Jozankei Onsen, Sapporo, Hokkaido Prefecture; January 2018 (22).jpg",
     "Junsai.jpg": "Junsai held above Soup.jpg",
@@ -152,7 +152,7 @@
     "Kitakami Tenshochi.jpg": "Kitakami Tenshochi (2621671261).jpg",
     "Kitakata ramen.jpg": "Kitakata ramen by clanchou.jpg",
     "Kitazawa Flotation Plant.jpg": "Kitazawa Flotation Plant ac (1).jpg",
-    "Kiyosato Highlands Yamanashi.jpg": "160826 In front of Kiyosato Station Hokuto Yamanashi pref Japan07s3.jpg",
+    "Kiyosato Highlands Yamanashi.jpg": "160826 In front of Kiyosato Station Hokuto Yamanashi pref Japan05s3.jpg",
     "Kiyotsu Gorge Tunnel.jpg": "Find47 Niigata-Kiyotsu Gorge Tunnel-m.jpg",
     "Kobujime sashimi.jpg": "Kobu Jime (Sashimi Marinated on Kombu Seaweed) (5095532256).jpg",
     "Koiwai Farm Iwate.jpg": "Koiwai farm.jpg",
@@ -316,7 +316,7 @@
     "Suganuma Gokayama.jpg": "Gokayama suganuma (cropped).JPG",
     "Sukayu Onsen Aomori.jpg": "Sukayu Onsen Aomori Prif Jp IMG 9533 stitch8.jpg",
     "Sunayama Beach.jpg": "Sunayama-beach.jpg",
-    "Suwa Taisha Kamisha Honmiya.jpg": "Suwa-taisha, Kamisha Honmiya, gokenrou.jpg",
+    "Suwa Taisha Kamisha Honmiya.jpg": "Suwa-taisha, Kamisha Honmiya, haisho.jpg",
     "Suzuka Circuit.jpg": "Suzuka Circuit Pit Building.jpg",
     "Taco rice Okinawa.jpg": "Taco Rice.jpg",
     "Tadewara Wetland.jpg": "Tadewara Wetlands (52133306063).jpg",
@@ -363,7 +363,7 @@
     "Wanko soba Iwate.jpg": "Wanko soba.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 23.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
     "Yamagata Prefectural Museum.jpg": "Yamagata Prefectural Museum 01.JPG",
     "Yamagata soba.jpg": "Nagashi-soba in Yamagata Japan.jpg",
     "Yamanashi grapes.jpg": "Koshu Grapes.jpg",
@@ -391,7 +391,7 @@
     "函館朝市.jpg": "Hakodate Morning Market 函館朝市 - panoramio.jpg",
     "小樽 三角市場.jpg": "三角市場, 小樽, 北海道, 日本, Otaru, Hokkaido, Japan, おたるし, ほっかいどう, にっぽん, にほん (47763328802).jpg"
   },
-  "quality_warning_count": 518,
+  "quality_warning_count": 530,
   "quality_warnings": [
     {
       "file": "2023-04-15 Awaji Hanasajiki,淡路花桟敷 DSCF0924.jpg",
@@ -424,7 +424,20 @@
     {
       "file": "Abukuma Cave Fukushima.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Abukuma Cave 04.jpg"
+      "fallback": "Abukuma Cave 07.jpg"
+    },
+    {
+      "file": "Adachi Museum of Art Garden.jpg",
+      "type": "extreme_aspect_ratio",
+      "width": 1400,
+      "height": 425,
+      "ratio": 3.294
+    },
+    {
+      "file": "Adachi Museum of Art Garden.jpg",
+      "type": "low_resolution",
+      "width": 1400,
+      "height": 425
     },
     {
       "file": "Aharen Beach Tokashiki.jpg",
@@ -795,6 +808,12 @@
       "fallback": "JAP Zamami Furuzamami Beach.jpg"
     },
     {
+      "file": "Genji-maki, sweet in Tsuwano - September 2005.jpg",
+      "type": "low_resolution",
+      "width": 640,
+      "height": 480
+    },
+    {
       "file": "Gero OnsenTown.JPG",
       "type": "low_resolution",
       "width": 800,
@@ -1015,7 +1034,7 @@
     {
       "file": "Hoshitoge Rice Terraces.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Hoshitoge Rice Terraces 2.jpg"
+      "fallback": "Hoshitoge Rice Terraces 1.jpg"
     },
     {
       "file": "Hotaka Shrine Azumino.jpg",
@@ -1187,7 +1206,7 @@
     {
       "file": "Jodogahama Iwate.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Jodogahama Beach (51971544590).jpg"
+      "fallback": "Jodogahama Beach (51969977762).jpg"
     },
     {
       "file": "Jogakura Bridge Aomori.jpg",
@@ -1274,6 +1293,12 @@
       "type": "low_resolution",
       "width": 436,
       "height": 654
+    },
+    {
+      "file": "KaratsuCastle.jpg",
+      "type": "low_resolution",
+      "width": 640,
+      "height": 521
     },
     {
       "file": "Karuizawa Taliesin.jpg",
@@ -1408,7 +1433,7 @@
     {
       "file": "Kiyosato Highlands Yamanashi.jpg",
       "type": "fallback_requires_review",
-      "fallback": "160826 In front of Kiyosato Station Hokuto Yamanashi pref Japan07s3.jpg"
+      "fallback": "160826 In front of Kiyosato Station Hokuto Yamanashi pref Japan05s3.jpg"
     },
     {
       "file": "Kiyotsu Gorge Tunnel.jpg",
@@ -1492,6 +1517,12 @@
       "file": "Kumano Kodo Magose Pass.jpg",
       "type": "fallback_requires_review",
       "fallback": "Kumano Kodo (Magose pass route).JPG"
+    },
+    {
+      "file": "KumanoNachiTaisha.jpg",
+      "type": "low_resolution",
+      "width": 640,
+      "height": 402
     },
     {
       "file": "Kunimigaoka Takachiho.jpg",
@@ -2023,6 +2054,19 @@
       "fallback": "160716 Niigata City History Museum Main Building Niigata Japan01bs5.jpg"
     },
     {
+      "file": "Niji no matsubara.jpg",
+      "type": "extreme_aspect_ratio",
+      "width": 1280,
+      "height": 427,
+      "ratio": 2.998
+    },
+    {
+      "file": "Niji no matsubara.jpg",
+      "type": "low_resolution",
+      "width": 1280,
+      "height": 427
+    },
+    {
       "file": "Ningle Terrace Furano.jpg",
       "type": "fallback_requires_review",
       "fallback": "130503 Ningle Terrace Furano Hokkaido Japan02s.jpg"
@@ -2231,6 +2275,19 @@
       "file": "Oyashirazu cliffs.jpg",
       "type": "fallback_requires_review",
       "fallback": "Oyashirazu-1.JPG"
+    },
+    {
+      "file": "Oyunohara banner.jpg",
+      "type": "extreme_aspect_ratio",
+      "width": 1280,
+      "height": 183,
+      "ratio": 6.995
+    },
+    {
+      "file": "Oyunohara banner.jpg",
+      "type": "low_resolution",
+      "width": 1280,
+      "height": 183
     },
     {
       "file": "Patchwork Road Biei Hokkaido.jpg",
@@ -2601,7 +2658,7 @@
     {
       "file": "Suwa Taisha Kamisha Honmiya.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Suwa-taisha, Kamisha Honmiya, gokenrou.jpg"
+      "fallback": "Suwa-taisha, Kamisha Honmiya, haisho.jpg"
     },
     {
       "file": "Suzuka Circuit.jpg",
@@ -2832,6 +2889,18 @@
       "fallback": "Tsuruga red brick warehouse02s3200.jpg"
     },
     {
+      "file": "TsuwanoJP.jpg",
+      "type": "low_resolution",
+      "width": 750,
+      "height": 529
+    },
+    {
+      "file": "TunaSushi.jpg",
+      "type": "low_resolution",
+      "width": 640,
+      "height": 480
+    },
+    {
       "file": "Twenty-Six Martyrs Museum and Monument March 27 2022 various 17 36 35 129000.jpeg",
       "type": "extreme_aspect_ratio",
       "width": 1280,
@@ -2972,7 +3041,7 @@
     {
       "file": "Yakusugi Land.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Yakusugi Land 23.jpg"
+      "fallback": "Yakusugi Land 30.jpg"
     },
     {
       "file": "Yamagata Prefectural Museum.jpg",
@@ -3124,6 +3193,12 @@
       "fallback": "Hakodate Morning Market 函館朝市 - panoramio.jpg"
     },
     {
+      "file": "大須新天地商店街.jpg",
+      "type": "low_resolution",
+      "width": 467,
+      "height": 432
+    },
+    {
       "file": "宮崎マンゴーを包んだチーズ饅頭.jpg",
       "type": "low_resolution",
       "width": 600,
@@ -3146,9 +3221,7 @@
       ]
     }
   ],
-  "changed_js_files": [
-    "index.html"
-  ],
+  "changed_js_files": [],
   "remaining_external_src_count": 1,
   "remaining_external_srcs": {
     "tochigi-expansion.js": [
