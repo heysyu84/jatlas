@@ -2,6 +2,11 @@
 import json
 from pathlib import Path
 root=Path(__file__).resolve().parents[1];out=root/'audits';dist=root/'dist'
+# Retain explicit visual review overrides when exact-source data is regenerated.
+review_marker='/* Nagoya photo report: actual subject and composition checked before intermediate publication. */'
+previous=(dist/'photo-qa-review.js').read_text() if (dist/'photo-qa-review.js').exists() else ''
+reviewed_tail=review_marker+previous.split(review_marker,1)[1] if review_marker in previous else ''
+
 localized=json.loads((out/'localized-photos.json').read_text());localized={k:v for k,v in localized.items() if 'error' not in v and (dist/v['src']).is_file()}
 aliases=json.loads((dist/'image-migration-report.json').read_text())['fallback_aliases']
 metrics=json.loads((out/'photo-audit.json').read_text())['entries']
@@ -50,5 +55,5 @@ renderFoods=function(){photoQaRenderFoods();for(const card of document.querySele
  }
 }
 '''
-(dist/'photo-qa-review.js').write_text(s)
+(dist/'photo-qa-review.js').write_text(s+'\n'+reviewed_tail)
 print('Generated photo module',len(localized),'exact localizations')

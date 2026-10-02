@@ -20,11 +20,11 @@ for(const m of html.matchAll(/<script[^>]+src="([^"?]+)(?:\?[^"]*)?"/g)){
 let navigation=0,details=0,languages=0;
 for(const viewport of [1280,390]){
  width=viewport;
- for(const pref of ['도쿄','구마모토','후쿠이','도야마','미야자키','오카야마']){
+ for(const pref of ['아이치','돗토리','지바','오카야마']){
   run(`contentTab='places';go(${JSON.stringify(pref)})`);assert.ok(w.document.querySelectorAll('#cards .card').length);navigation++;
   for(const tab of ['foods','events','routes'])run(`contentTab='${tab}';close();render()`);
  }
- for(const id of [3200,4902,4704,3409,3419,1208,2906,3203]){
+ for(const id of [601,2010,2011,2202,2203,2204,2205,2206,2207,2208,2209,2210,2211,2212,2213,2214,2215,2216,2217,1002,1003,1010,1011,1013,1017]){
   run(`openDetail(samples.find(p=>p.id===${id}))`);details++;
   assert.ok(w.document.querySelector('#detailBody .visitFacts'));
   assert.ok(w.document.querySelector('#detailBody .detailPhoto, #detailBody .photoPending'));

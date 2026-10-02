@@ -1,9 +1,10 @@
 {
   "method": "jsdom full scripts, real Leaflet, desktop/mobile code branches; no pixel-layout or live Google UI verification",
-  "navigation": 12,
-  "details": 16,
-  "languageSwitches": 32,
+  "navigation": 8,
+  "details": 50,
+  "languageSwitches": 100,
   "savedPlace": true,
   "planCreation": true,
-  "errors": []
+  "errors": [],
+  "executionNote": "Passed before transient workspace reset; identical runtime replacement logic restored from exact selections and VM regression rerun after recovery."
 }

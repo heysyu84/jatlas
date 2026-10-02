@@ -1,6 +1,6 @@
 {
   "method": "VM data and generated HTML/URL assertions; no browser layout verification",
-  "checks": 8105,
+  "checks": 8121,
   "places": 1160,
   "errors": []
 }
