@@ -1,0 +1,114 @@
+{
+  "reviewedAt": "2026-10-03",
+  "policy": "Landscape sources only, 1.25–1.85 ratio. Subject, location metadata and 16:9 center crop inspected. Portraits, panoramas, collages, maps and unrelated subjects rejected.",
+  "places": {
+    "501": {
+      "filename": "Kawagoe Kitain Main Hall 202011.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Kawagoe_Kitain_Main_Hall_202011.jpg",
+      "width": 1280,
+      "height": 853,
+      "description": "Jie-dō (Main hall) of Kita-in temple in Kawagoe, Saitama Prefecture",
+      "categories": "GFDL|License migration redundant|Self-published work|Files with coordinates missing SDC location of creation|Photographs taken on 2020-11-23|Jiedō, Kitain",
+      "author": "tak1701d",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "src": "images/qa/616ff8ae71a835e38473.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "508": {
+      "filename": "Front shrine of the Hikawa shrine.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Front_shrine_of_the_Hikawa_shrine.jpg",
+      "width": 1280,
+      "height": 850,
+      "description": "front shrine of the Hikawa shrine",
+      "categories": "Taken with Nikon D5000|Self-published work|Japan photographs taken on 2012-06-18|June 2012 in Saitama|Haiden, Hikawa-jinja, Omiya",
+      "author": "Ocdp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "src": "images/qa/f51d509b0263207cf8c8.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "520": {
+      "filename": "Sakura in Omiya Park 20090409-2.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sakura_in_Omiya_Park_20090409-2.jpg",
+      "width": 1280,
+      "height": 960,
+      "description": "大宮公園のサクラ",
+      "categories": "Omiya Park|Self-published work|Files with coordinates missing SDC location of creation|Japan photographs taken on 2009-04-09|April 2009 in Saitama|2009 photographs of Saitama, Saitama taken by User:掬茶|Sakura in Saitama, Saitama",
+      "author": "掬茶",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "src": "images/qa/2f6c58e90470b84c197b.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "613": {
+      "filename": "Tokyo DisneySea Mediterranean Harbour View1 201306.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tokyo_DisneySea_Mediterranean_Harbour_View1_201306.jpg",
+      "width": 1280,
+      "height": 960,
+      "description": "Tokyo DisneySea Mediterranean Harbour",
+      "categories": "Taken with Canon PowerShot G11|Tokyo DisneySea Hotel MiraCosta|Self-published work|Tokyo Disney Resort in 2013|Mediterranean Harbor",
+      "author": "Wing1990hk",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "src": "images/qa/297ea368943d9bc9fefa.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "614": {
+      "filename": "Naritasan Omotesando seen from in front of Umeya Ryokan - Mar 21, 2014.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Naritasan_Omotesando_seen_from_in_front_of_Umeya_Ryokan_-_Mar_21,_2014.jpg",
+      "width": 1280,
+      "height": 854,
+      "description": "Naritasan Omotesando seen from in front of Umeya Ryokan, Narita, Chiba prefecture, Japan",
+      "categories": "March 2014 in Chiba prefecture|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Japan photographs taken on 2014-03-21|Naritasan Omotesando|Flickr images missing SDC published in",
+      "author": "Kunitaka NIIDATE",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "src": "images/qa/33c232f4dc1a5db28562.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "622": {
+      "filename": "Landscape seen from Umihotaru 12.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Landscape_seen_from_Umihotaru_12.jpg",
+      "width": 1275,
+      "height": 960,
+      "description": "Landscape seen from Umihotaru ",
+      "categories": "CC-Zero|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Japan photographs taken on 2024-05-03|Views from the Umihotaru Parking Area",
+      "author": "Syced",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "src": "images/qa/3cf3bbfb4accaf7438ae.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "1207": {
+      "filename": "Kasama Inari Shrine 02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Kasama_Inari_Shrine_02.jpg",
+      "width": 1280,
+      "height": 853,
+      "description": "Kasama Inari Shrine, Kasama City, Ibaraki Pref., Japan",
+      "categories": "GFDL|License migration redundant|Self-published work|Haiden, Kasama Inari-jinja",
+      "author": "Σ64",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "src": "images/qa/ff983684227e20d83694.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    },
+    "1212": {
+      "filename": "Artefacts at Tsukuba Space Center exhibition hall.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Artefacts_at_Tsukuba_Space_Center_exhibition_hall.jpg",
+      "width": 1275,
+      "height": 960,
+      "description": "Artefacts at Tsukuba Space Center exhibition hall ",
+      "categories": "CC-Zero|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Japan photographs taken on 2024-02-10|Models of Kibo (ISS module)|Space Dome (Tsukuba Space Center)",
+      "author": "Syced",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "src": "images/qa/85fea7b124be9bebc46d.webp",
+      "review": "visual-subject-and-landscape-reviewed"
+    }
+  },
+  "pending": {
+    "507": "Saitama candidate carriage interiors too dark; Kyoto museum and pre-museum Omiya workshop candidates rejected.",
+    "518": "Dark interior candidates and composite image rejected; sole-shaft image insufficient for main hall."
+  }
+}
