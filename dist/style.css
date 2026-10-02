@@ -212,3 +212,7 @@
 
 /* Post-render municipality availability: text only; does not affect map/layout/weather. */
 .municipalLabel span.noContent{color:#9da9b5!important;background:#f7f9fa!important;opacity:.42;filter:saturate(.3)}
+
+/* Preserve complete subjects in unusually tall/wide photographs. */
+img[data-photo-fit="contain"]{object-fit:contain!important;background:#eaf0f4}
+.photoPending{min-height:170px;display:grid;place-items:center;background:#eaf0f4;color:#52616c;border-radius:12px}
