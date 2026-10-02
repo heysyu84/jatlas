@@ -9,9 +9,9 @@
     "21st Century Museum of Contemporary Art Kanazawa.jpg": "21st Century Museum of Contemporary Art, Kanazawa011.jpg",
     "A-FACTORY Aomori.jpg": "A-FACTORY 02.jpg",
     "Abashiri Prison Museum Hokkaido.jpg": "130713 Abashiri Prison Museum Abashiri Hokkaido Japan08n.jpg",
-    "Abukuma Cave Fukushima.jpg": "Abukuma Cave 07.jpg",
+    "Abukuma Cave Fukushima.jpg": "Abukuma Cave 04.jpg",
     "Aharen Beach Tokashiki.jpg": "Aharen Beach On Tokashiki Island 2009 (7373).JPG",
-    "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 04.jpg",
+    "Ainokura Gassho village.jpg": "Gokayama Ainokura Gassho-zukuri 09.jpg",
     "Akakura Onsen Niigata.jpg": "Akakura Onsen in Niigata - 2022-04.jpg",
     "Akame 48 Waterfalls.jpg": "Akame 48 Waterfalls-Reijataki.jpg",
     "Akita Furusato Village.jpg": "Akita Furusato Village - panoramio.jpg",
@@ -52,7 +52,7 @@
     "Euglena Mall Ishigaki.jpg": "Ishigaki euglena mall 2011.jpg",
     "Fossa Magna Museum.jpg": "Fossa Magna Museum.JPG",
     "Fuefukigawa Fruit Park.jpg": "Night view from Yamanashi Fuefukigawa Fruit Park.jpg",
-    "Fugan Canal Kansui Park.jpg": "Fugan Canal Kansui Park 260123 19.jpg",
+    "Fugan Canal Kansui Park.jpg": "Fugan Canal Kansui Park 260123 08.jpg",
     "Fujita Memorial Garden Hirosaki.jpg": "Fujita Memorial Japanese Garden - panoramio.jpg",
     "Fukui Castle ruins.jpg": "Fukui Castle Ruins-daimyomachi station.jpg",
     "Fukui Prefectural Museum of Cultural History.jpg": "Fukui prefectural museum of cultural history.jpg",
@@ -87,7 +87,7 @@
     "Hirosaki apple pie.jpg": "2m apple pie.jpg",
     "Hita yakisoba.jpg": "Hita Yakisoba.JPG",
     "Hittsumi Iwate.jpg": "Hittsumi.jpg",
-    "Hoonji Temple Morioka.jpg": "171104 Hoonji Morioka Iwate pref Japan03s3.jpg",
+    "Hoonji Temple Morioka.jpg": "171104 Hoonji Morioka Iwate pref Japan06s3.jpg",
     "Horikiri Pass Miyazaki.jpg": "Horikiri Pass Miyazaki 2016.JPG",
     "Hoshitoge Rice Terraces.jpg": "Hoshitoge Rice Terraces 2.jpg",
     "Hotaka Shrine Azumino.jpg": "Hotaka Shrine in Azumino, Nagano-7.jpg",
@@ -171,7 +171,7 @@
     "Kusasenri Aso.jpg": "Aso Kusasenri horses (52133462269).jpg",
     "Lake Akan Hokkaido.jpg": "Lake Akan Kushiro Hokkaido Japan11n.jpg",
     "Lake Inawashiro Mount Bandai.jpg": "Lake Inawashiro from Mt.Bandai 01.jpg",
-    "Lake Kawaguchi Mount Fuji.jpg": "Mount Fuji from Lake Kawaguchi 20170206.jpg",
+    "Lake Kawaguchi Mount Fuji.jpg": "Mount Fuji from Lake Kawaguchi.jpg",
     "Lake Kizaki.jpg": "Lake Kizaki-2.jpg",
     "Lake Kussharo Hokkaido.jpg": "130713 Lake Kussharo Teshikaga Hokkaido Japan01s5.jpg",
     "Lake Mashu Hokkaido.jpg": "Lake Mashu.jpg",
@@ -335,7 +335,7 @@
     "Toba Observatory.jpg": "Toba Observatory Osukuni-Kuraoh.jpg",
     "Tochio aburaage.jpg": "Michinoeki R290 Tochio Aburaage Shop.jpg",
     "Togakushi Ninja Museum.jpg": "Togakushi Folk Museum, Togakushi Ninja Museum, Ninja Trick Mansion.jpg",
-    "Tojinbo Fukui.jpg": "Tojinbo cliffs, Fukui Prefecture; September 2019 (03).jpg",
+    "Tojinbo Fukui.jpg": "Tojinbo cliffs, Fukui Prefecture; September 2019 (01).jpg",
     "Toki Messe Niigata.jpg": "What's Niigata and Toki Messe Sep2021.jpg",
     "Tono Furusato Village.jpg": "Tono Furusato Village , 遠野 ふるさと村 - panoramio.jpg",
     "Toriten.jpg": "Toriten.JPG",
@@ -363,7 +363,7 @@
     "Wanko soba Iwate.jpg": "Wanko soba.jpg",
     "Yachiyoza Yamaga.jpg": "Yamaga Yachiyoza.JPG",
     "Yaeyama soba.jpg": "Yaeyama soba02.jpg",
-    "Yakusugi Land.jpg": "Yakusugi Land 30.jpg",
+    "Yakusugi Land.jpg": "Yakusugi Land 23.jpg",
     "Yamagata Prefectural Museum.jpg": "Yamagata Prefectural Museum 01.JPG",
     "Yamagata soba.jpg": "Nagashi-soba in Yamagata Japan.jpg",
     "Yamanashi grapes.jpg": "Koshu Grapes.jpg",
@@ -424,7 +424,7 @@
     {
       "file": "Abukuma Cave Fukushima.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Abukuma Cave 07.jpg"
+      "fallback": "Abukuma Cave 04.jpg"
     },
     {
       "file": "Aharen Beach Tokashiki.jpg",
@@ -440,7 +440,7 @@
     {
       "file": "Ainokura Gassho village.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Gokayama Ainokura Gassho-zukuri 04.jpg"
+      "fallback": "Gokayama Ainokura Gassho-zukuri 09.jpg"
     },
     {
       "file": "Akakura Onsen Niigata.jpg",
@@ -750,7 +750,7 @@
     {
       "file": "Fugan Canal Kansui Park.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Fugan Canal Kansui Park 260123 19.jpg"
+      "fallback": "Fugan Canal Kansui Park 260123 08.jpg"
     },
     {
       "file": "Fugu sashimi.jpg",
@@ -1005,7 +1005,7 @@
     {
       "file": "Hoonji Temple Morioka.jpg",
       "type": "fallback_requires_review",
-      "fallback": "171104 Hoonji Morioka Iwate pref Japan03s3.jpg"
+      "fallback": "171104 Hoonji Morioka Iwate pref Japan06s3.jpg"
     },
     {
       "file": "Horikiri Pass Miyazaki.jpg",
@@ -1521,7 +1521,7 @@
     {
       "file": "Lake Kawaguchi Mount Fuji.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Mount Fuji from Lake Kawaguchi 20170206.jpg"
+      "fallback": "Mount Fuji from Lake Kawaguchi.jpg"
     },
     {
       "file": "Lake Kizaki.jpg",
@@ -2751,7 +2751,7 @@
     {
       "file": "Tojinbo Fukui.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Tojinbo cliffs, Fukui Prefecture; September 2019 (03).jpg"
+      "fallback": "Tojinbo cliffs, Fukui Prefecture; September 2019 (01).jpg"
     },
     {
       "file": "Toki Messe Niigata.jpg",
@@ -2972,7 +2972,7 @@
     {
       "file": "Yakusugi Land.jpg",
       "type": "fallback_requires_review",
-      "fallback": "Yakusugi Land 30.jpg"
+      "fallback": "Yakusugi Land 23.jpg"
     },
     {
       "file": "Yamagata Prefectural Museum.jpg",
@@ -3146,7 +3146,9 @@
       ]
     }
   ],
-  "changed_js_files": [],
+  "changed_js_files": [
+    "index.html"
+  ],
   "remaining_external_src_count": 1,
   "remaining_external_srcs": {
     "tochigi-expansion.js": [
