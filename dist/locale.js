@@ -64,6 +64,7 @@ Object.assign(jaDictionary,{
  "데이터: Open-Meteo":"データ: Open-Meteo"
 });
 if(typeof photoQaJapanese!=='undefined')Object.assign(jaDictionary,photoQaJapanese);
+if(typeof mapQaJapanese!=='undefined')Object.assign(jaDictionary,mapQaJapanese);
 const localeKeys=Object.keys(jaDictionary).sort((a,b)=>b.length-a.length);
 const localePattern=new RegExp(localeKeys.map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 function translateText(text,force=false){if(language!=='ja'&&!force)return text;return jaDictionary[text]||text.replace(localePattern,s=>jaDictionary[s]);}

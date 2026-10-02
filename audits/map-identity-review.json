@@ -1,0 +1,306 @@
+{
+  "2116": {
+    "status": "name-address-reviewed",
+    "name": "촛불섬(로소쿠지마)",
+    "officialSource": "https://www.e-oki.net/spots/5999/",
+    "evidence": "Google named island result in Shiro, Okinoshima matches official 島根県隠岐郡隠岐の島町代. Corrected regional pin by 19.376 km; island pin is not the cruise boarding point.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2715": {
+    "status": "official-map-identity-reviewed",
+    "name": "유스미즈가우라 계단밭",
+    "officialSource": "https://www.uwajima.org/spot/index8.html",
+    "evidence": "Official address 2323-3 Yusu and embedded Google CID 0x3a58d030a8554f55 match named result CID 4204339159551528789. Corrected regional pin by 8.586 km.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2811": {
+    "status": "name-address-reviewed",
+    "name": "사다 침하교",
+    "officialSource": "https://www.shimanto-kankou.com/travel",
+    "evidence": "Tourism association explicitly identifies 今成橋 as 佐田沈下橋. Google result is in Sada, Shimanto. Corrected regional pin by 5.890 km.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3419": {
+    "status": "live-map-and-photo-reviewed",
+    "name": "아야 데루하 대현수교",
+    "evidence": "Deployed desktop detail page displayed the suspension bridge photo and Google map labeled 綾の照葉大吊橋 at 32.0286342,131.1944103. Checked in browser after commit 46b2a0d.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3326": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://nakatsuyaba.com/pages/114/",
+    "resolvedName": "아오노도몬",
+    "resolvedAddress": "아오노도몬 Honyabakeimachi Sogi, Nakatsu, Oita 871-0202 일본",
+    "lat": 33.4987788,
+    "lon": 131.1730998,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3324": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://oita-tourism.com/zh-TW/attractions/detail_1025.html",
+    "resolvedName": "온타 도자기마을",
+    "resolvedAddress": "온타 도자기마을 234 Ono, Hita, Oita 877-1241 일본",
+    "lat": 33.42774,
+    "lon": 130.9110508,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3313": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://kuju-flower-park.com/access/",
+    "resolvedName": "쿠쥬하나코엔",
+    "resolvedAddress": "쿠쥬하나코엔 4050 Kujumachi Oaza Kuju, Taketa, Oita 878-0201 일본",
+    "lat": 33.0482542,
+    "lon": 131.243794,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3210": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://www.mt-torokko.com/sightseeing/shirakawa-suigen/",
+    "resolvedName": "시라카와 수원",
+    "resolvedAddress": "시라카와 수원 2040 Shirakawa, Minamiaso, Aso District, Kumamoto 869-1502 일본",
+    "lat": 32.8253719,
+    "lon": 131.0953099,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3317": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://sekibutsu.com/access/",
+    "resolvedName": "우스키 석불",
+    "resolvedAddress": "우스키 석불 804-1 Fukata, Usuki, Oita 875-0064 일본",
+    "lat": 33.0915527,
+    "lon": 131.7623068,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3524": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://yakukan.jp/spot/6999.html",
+    "resolvedName": "오코노타키 폭포",
+    "resolvedAddress": "오코노타키 폭포 Kurio, Yakushima, Kumage District, Kagoshima 891-4409 일본",
+    "lat": 30.2998495,
+    "lon": 130.4137052,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2806": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://www.inofan.jp/spot/recommended/n497/",
+    "resolvedName": "Nikobuchi Deep pool",
+    "resolvedAddress": "Nikobuchi Deep pool, 2976-11 Kiyomizukamibun, Ino, Agawa District, Kochi 781-2511 일본",
+    "lat": 33.7050909,
+    "lon": 133.3411744,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "4912": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://www.city.ono.fukui.jp/kanko/kanko-joho/guide/yusuichi/oshozu.html",
+    "resolvedName": "Oshozu",
+    "resolvedAddress": "Oshozu, 4-4 Izumicho, Ono, Fukui 912-0086 일본",
+    "lat": 35.9828643,
+    "lon": 136.4864263,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "4812": {
+    "status": "official-name-address-reviewed",
+    "officialSource": "https://asaichi.info/",
+    "resolvedName": "Power City",
+    "resolvedAddress": "Power City, ４１ Takudamachi, Wajima, Ishikawa 928-0022 일본",
+    "lat": 37.3866121,
+    "lon": 136.9041941,
+    "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "602": {
+    "status": "official-map-identity-reviewed",
+    "name": "국립역사민속박물관",
+    "officialSource": "https://www.visitchiba.jp/spot/national-museum-of-japanese-history/",
+    "resolvedName": "국립역사민속박물관",
+    "resolvedAddress": "국립역사민속박물관 117 Jonaicho, Sakura, Chiba 285-0017 일본",
+    "lat": 35.7243611,
+    "lon": 140.2191306,
+    "evidence": "Official address 117 Jonaicho, Sakura and embedded CID 0x1913f2f18e96dbea match Google entity 1807054994798992362. Original pin was north of the museum.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2114": {
+    "status": "official-map-identity-reviewed",
+    "name": "시마네 해양관 AQUAS",
+    "officialSource": "https://aquas.or.jp/",
+    "resolvedName": "Shimane Aquarium - Aquas",
+    "resolvedAddress": "Shimane Aquarium - Aquas, 1117-2 Kushirocho, Hamada, Shimane 697-0004 일본",
+    "lat": 34.9594578,
+    "lon": 132.1446342,
+    "evidence": "Official AQUAS address 1117-2 Kushiro, Hamada matches named aquarium result.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2314": {
+    "status": "official-map-identity-reviewed",
+    "name": "시마나미카이도",
+    "officialSource": "https://dive-hiroshima.com/explore/2084/",
+    "resolvedName": "Innoshima Bridge",
+    "resolvedAddress": "Innoshima Bridge, Onomichi, Hiroshima 722-0071 일본",
+    "lat": 34.3574151,
+    "lon": 133.1804458,
+    "evidence": "Innoshima Bridge is the Hiroshima-side bridge on the Shimanami route. Regional overview pin represents this named bridge, rather than the entire long cycling route.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2317": {
+    "status": "official-map-identity-reviewed",
+    "name": "산단쿄",
+    "officialSource": "https://dive-hiroshima.com/explore/46/",
+    "resolvedName": "Sandan-kyō",
+    "resolvedAddress": "일본 〒731-3813 히로시마현 Yamagata District, 아키오타조 시와기 Sandan-kyō",
+    "lat": 34.6001379,
+    "lon": 132.2076084,
+    "evidence": "Named Sandankyo entry result in Shiwagi. Aligned representative entrance pin; the 16 km gorge has multiple access points and previous point was within the broader gorge.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2318": {
+    "status": "official-map-identity-reviewed",
+    "name": "다이샤쿠쿄",
+    "officialSource": "https://dive-hiroshima.com/explore/106/",
+    "resolvedName": "Taishaku Gorge",
+    "resolvedAddress": "Taishaku Gorge, Tojocho Taishakumido, Shobara, Hiroshima 729-5244 일본",
+    "lat": 34.8624942,
+    "lon": 133.2062795,
+    "evidence": "Upper Taishaku district result matches official map point 34.862512790264,133.20627760846 to within 3 m. Long gorge has several entrances.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2508": {
+    "status": "official-map-identity-reviewed",
+    "name": "아와노도추",
+    "officialSource": "https://www.awanavi.jp/archives/spot/19024",
+    "resolvedName": "Awa Sand Pillars",
+    "resolvedAddress": "Awa Sand Pillars, 540 Awacho Kitayama, Awa, Tokushima 771-1705 일본",
+    "lat": 34.0927703,
+    "lon": 134.2072155,
+    "evidence": "Official Awa earth pillars address Kitayama 540 matches named Google destination.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2511": {
+    "status": "official-map-identity-reviewed",
+    "name": "이야계곡·오줌싸개 동상",
+    "officialSource": "https://miyoshi-tourism.jp/en/spot/65/",
+    "resolvedName": "이야계곡의 오줌싸개 동상",
+    "resolvedAddress": "이야계곡의 오줌싸개 동상 松尾 池田町 Miyoshi, Tokushima 778-0165 일본",
+    "lat": 33.9235531,
+    "lon": 133.8184591,
+    "evidence": "Official Peeing Boy destination in Matsuo, Ikedacho matches named Iya statue. Replaced previous source 53, which described Oboke instead.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2607": {
+    "status": "official-map-identity-reviewed",
+    "name": "치치부가하마",
+    "officialSource": "https://www.mitoyo-kanko.com/chichibugahama/",
+    "resolvedName": "치치부가하마",
+    "resolvedAddress": "치치부가하마 Otsu-273-1 Niocho Nio, Mitoyo, Kagawa 769-1404 일본",
+    "lat": 34.1909187,
+    "lon": 133.6488583,
+    "evidence": "Named beach result in Nio Otsu matches official 1 km beach. Official 203-3 and named result 273-1 describe the same shoreline; aligned representative beach pin.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2608": {
+    "status": "official-map-identity-reviewed",
+    "name": "다카야 신사·천공의 도리이",
+    "officialSource": "https://www.city.kanonji.kagawa.jp/soshiki/21/13387.html",
+    "resolvedName": "Gate in the Sky",
+    "resolvedAddress": "Gate in the Sky, 2800 Takayacho, Kanonji, Kagawa 768-0001 일본",
+    "lat": 34.1603942,
+    "lon": 133.6548423,
+    "evidence": "Sky Torii is at the summit Takaya shrine, distinct from lower shrine. Official summit address Takayacho 2800; road closure 2026-09-28 through 2026-12-25 requires walking from lower shrine.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2808": {
+    "status": "official-map-identity-reviewed",
+    "name": "나카쓰계곡",
+    "officialSource": "https://shikoku-tourism.com/spot/13567",
+    "resolvedName": "Nakatsu Gorge",
+    "resolvedAddress": "Nakatsu Gorge, Takeyashiki, Niyodogawa, Agawa District, Kochi 781-1742 일본",
+    "lat": 33.5609852,
+    "lon": 133.1296943,
+    "evidence": "Official embedded map explicitly points to 33.560985,133.129694; matches named Nakatsu Gorge result. Gorge spans a 2.3 km trail.",
+    "reviewedAt": "2026-10-02"
+  },
+  "2809": {
+    "status": "official-map-identity-reviewed",
+    "name": "무로토곶",
+    "officialSource": "https://www.city.muroto.kochi.jp/pages/page0298.php",
+    "resolvedName": "무로토미사키초",
+    "resolvedAddress": "일본 〒781-7101 고치현 무로토시 무로토미사키초",
+    "lat": 33.2476582,
+    "lon": 134.1731605,
+    "evidence": "Bare query 室戸岬 resolved to inland town center. 室戸岬 海岸 遊歩道 resolves to the western cape coastal path, part of the official cape walking route.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3010": {
+    "status": "official-map-identity-reviewed",
+    "name": "오카와치야마",
+    "officialSource": "https://imari-ookawachiyama.com/",
+    "resolvedName": "오카와치야마",
+    "resolvedAddress": "오카와치야마 Otsu-1848 Okawachicho, Imari, Saga 848-0025 일본",
+    "lat": 33.2347871,
+    "lon": 129.8933866,
+    "evidence": "Official pottery village cooperative address 1806 and named result 1848 are in Okawachichootsu, Imari. Represents village center rather than a specific individual kiln.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3126": {
+    "status": "official-map-identity-reviewed",
+    "name": "하라호게 지조",
+    "officialSource": "https://www.ikikankou.com/spot/10097",
+    "resolvedName": "하라호게 지조 (Harahoge Jizo)",
+    "resolvedAddress": "하라호게 지조 (Harahoge Jizo) 1342-102 Ashibecho Moroyoshihonmurafure, Iki, Nagasaki 811-5311 일본",
+    "lat": 33.7840762,
+    "lon": 129.7874337,
+    "evidence": "Official Harahoge Jizo address Moroyoshihonmurafure 1342, Iki matches named result 1342-102.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3219": {
+    "status": "official-map-identity-reviewed",
+    "name": "아마쿠사 돌고래워칭",
+    "officialSource": "https://www.amakusa-dolphin.jp/",
+    "resolvedName": "미치노에키 아마쿠사시 돌고래 센터",
+    "resolvedAddress": "미치노에키 아마쿠사시 돌고래 센터 4689-20 Itsuwamachi Futae, Amakusa, Kumamoto 863-2421 일본",
+    "lat": 32.5454877,
+    "lon": 130.1306939,
+    "evidence": "Official Amakusa Dolphin Center address Futae 4689-20 matches named result. Pin represents departure/booking center, not offshore dolphins.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3408": {
+    "status": "official-map-identity-reviewed",
+    "name": "미치노에키 난고·자카란다 숲",
+    "officialSource": "https://www.michinoeki-nango.jp/",
+    "resolvedName": "Roadside rest area Nangō.",
+    "resolvedAddress": "Roadside rest area Nangō., 3220-24 Nangocho Nienami, Nichinan, Miyazaki 889-3211 일본",
+    "lat": 31.5031645,
+    "lon": 131.3789331,
+    "evidence": "Official Nango address Nienami 3220-24, Nichinan, Miyazaki matches named result. Explicitly excludes the Aomori homonym.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3518": {
+    "status": "official-map-identity-reviewed",
+    "name": "오가와노타키",
+    "officialSource": "https://minamiosumi-tourism.com/guide/ogawa-no-taki/",
+    "resolvedName": "Ogawa Falls",
+    "resolvedAddress": "Ogawa Falls, 다시로카와하라 긴코조 Kimotsuki District, 가고시마현 893-2402 일본",
+    "lat": 31.2000204,
+    "lon": 130.8257426,
+    "evidence": "Named waterfall point is within 52 m of official map 31.200293,130.82529. Access to the pool is from downstream parking (31.2044043,130.8158277) and 1.2 km trail; pin is the fall, not parking or upper viewpoint.",
+    "reviewedAt": "2026-10-02"
+  },
+  "3525": {
+    "status": "official-map-identity-reviewed",
+    "name": "야쿠스기랜드",
+    "officialSource": "https://yakukan.jp/spot/6986.html",
+    "resolvedName": "Yakusugi Land",
+    "resolvedAddress": "Yakusugi Land, 0 Anbo, Yakushima, Kumage District, Kagoshima 891-4311 일본",
+    "lat": 30.3047864,
+    "lon": 130.5752613,
+    "evidence": "Official Yakushima Tourism embedded map gives 30.304786,130.575261 and entity 0x590d81d30f0a788d, matching named Yakusugi Land destination in Anbo forest.",
+    "reviewedAt": "2026-10-02"
+  }
+}

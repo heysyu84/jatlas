@@ -1,4 +1,125 @@
 /* Named destinations disambiguated during nationwide QA. */
+// Regional pins verified against the named Google result and official tourism identity.
+// Detail/external maps continue to use mapQuery, not these coordinates.
+const mapQaVerifiedPins={
+ "2116": {
+  "lat": 36.3124156,
+  "lon": 133.2096663
+ },
+ "2715": {
+  "lat": 33.2068134,
+  "lon": 132.4553448
+ },
+ "2811": {
+  "lat": 33.0153881,
+  "lon": 132.8855292
+ },
+ "3326": {
+  "lat": 33.4987788,
+  "lon": 131.1730998
+ },
+ "3324": {
+  "lat": 33.42774,
+  "lon": 130.9110508
+ },
+ "3313": {
+  "lat": 33.0482542,
+  "lon": 131.243794
+ },
+ "3210": {
+  "lat": 32.8253719,
+  "lon": 131.0953099
+ },
+ "3317": {
+  "lat": 33.0915527,
+  "lon": 131.7623068
+ },
+ "3524": {
+  "lat": 30.2998495,
+  "lon": 130.4137052
+ },
+ "2806": {
+  "lat": 33.7050909,
+  "lon": 133.3411744
+ },
+ "4912": {
+  "lat": 35.9828643,
+  "lon": 136.4864263
+ },
+ "4812": {
+  "lat": 37.3866121,
+  "lon": 136.9041941
+ },
+ "602": {
+  "lat": 35.7243611,
+  "lon": 140.2191306
+ },
+ "2114": {
+  "lat": 34.9594578,
+  "lon": 132.1446342
+ },
+ "2314": {
+  "lat": 34.3574151,
+  "lon": 133.1804458
+ },
+ "2317": {
+  "lat": 34.6001379,
+  "lon": 132.2076084
+ },
+ "2318": {
+  "lat": 34.8624942,
+  "lon": 133.2062795
+ },
+ "2508": {
+  "lat": 34.0927703,
+  "lon": 134.2072155
+ },
+ "2511": {
+  "lat": 33.9235531,
+  "lon": 133.8184591
+ },
+ "2607": {
+  "lat": 34.1909187,
+  "lon": 133.6488583
+ },
+ "2608": {
+  "lat": 34.1603942,
+  "lon": 133.6548423
+ },
+ "2808": {
+  "lat": 33.5609852,
+  "lon": 133.1296943
+ },
+ "2809": {
+  "lat": 33.2476582,
+  "lon": 134.1731605
+ },
+ "3010": {
+  "lat": 33.2347871,
+  "lon": 129.8933866
+ },
+ "3126": {
+  "lat": 33.7840762,
+  "lon": 129.7874337
+ },
+ "3219": {
+  "lat": 32.5454877,
+  "lon": 130.1306939
+ },
+ "3408": {
+  "lat": 31.5031645,
+  "lon": 131.3789331
+ },
+ "3518": {
+  "lat": 31.2000204,
+  "lon": 130.8257426
+ },
+ "3525": {
+  "lat": 30.3047864,
+  "lon": 130.5752613
+ }
+};
+Object.assign(pointLocations,mapQaVerifiedPins);
 const mapQaQueries={
   "2009": "鳥取 大山 弥山",
   "4902": "曹洞宗 大本山 永平寺",
@@ -10,7 +131,8 @@ const mapQaQueries={
   "4405": "寒風山回転展望台",
   "2402": "関門トンネル人道入口 下関",
   "2314": "因島大橋",
-  "2704": "来島海峡大橋"
+  "2704": "来島海峡大橋",
+  "2809": "室戸岬 海岸 遊歩道"
 };
 for(const p of samples){if(mapQaQueries[p.id])p.mapQuery=mapQaQueries[p.id]}
 
@@ -124,3 +246,59 @@ const mapQaNamedDefaults={
   "428": "大阪 愛染堂勝鬘院"
 };
 for(const p of samples){if(!p.mapQuery&&mapQaNamedDefaults[p.id])p.mapQuery=mapQaNamedDefaults[p.id]}
+
+// These names and operational destinations were checked against the official publisher.
+const mapQaContentCorrections={
+ "4912":{
+  name:'오쇼즈 용천수',tag:'용천수·산책',mapQuery:'御清水',
+  description:'오노 시내의 용천수로, 일본 명수백선에 선정된 맑은 물과 오래된 생활용수 문화를 만날 수 있습니다.',
+  activity:'용천지와 주변 옛 거리를 함께 걸으며 물의 고장 오노의 풍경을 둘러보세요.',
+  source:'https://www.city.ono.fukui.jp/kanko/kanko-joho/guide/yusuichi/oshozu.html'
+ },
+ "4812":{
+  name:'와지마 아침시장(임시 상설시장)',mapQuery:'パワーシティ輪島ワイプラザ',
+  description:'노토반도 지진 이후 와지마 와이플라자 안의 임시 상설시장과 각지의 출장시장으로 이어지고 있는 전통시장입니다.',
+  activity:'와지마 와이플라자 안의 상설시장을 방문하세요. 방문 전 공식 안내에서 당일 영업과 출장시장 일정을 확인하세요.',
+  source:'https://asaichi.info/'
+ }
+};
+for(const [id,patch] of Object.entries(mapQaContentCorrections)){
+ const place=samples.find(p=>String(p.id)===id);if(place)Object.assign(place,patch);
+}
+Object.assign(tokyoVisitGuides,{
+ "4912":{access:'JR 에치젠오노역에서 도보 약 15분',duration:'30분'},
+ "4812":{access:'와지마 와이플라자 내 임시 상설시장. 방문일의 버스·렌터카 동선을 확인하세요.',duration:'30분~1시간'}
+});
+const mapQaJapanese={
+ '오쇼즈 용천수':'御清水',
+ '용천수·산책':'湧水・散策',
+ '오노 시내의 용천수로, 일본 명수백선에 선정된 맑은 물과 오래된 생활용수 문화를 만날 수 있습니다.':'大野市内の湧水地です。名水百選に選ばれた清らかな水と、昔から受け継がれる生活用水の文化に触れられます。',
+ '용천지와 주변 옛 거리를 함께 걸으며 물의 고장 오노의 풍경을 둘러보세요.':'湧水地と周辺の古い町並みを歩き、水のまち大野の風景を楽しみましょう。',
+ 'JR 에치젠오노역에서 도보 약 15분':'JR越前大野駅から徒歩約15分',
+ '와지마 아침시장(임시 상설시장)':'輪島朝市（出張朝市・常設会場）',
+ '노토반도 지진 이후 와지마 와이플라자 안의 임시 상설시장과 각지의 출장시장으로 이어지고 있는 전통시장입니다.':'能登半島地震後、輪島ワイプラザ内の常設会場や各地の出張朝市で続いている伝統の市場です。',
+ '와지마 와이플라자 안의 상설시장을 방문하세요. 방문 전 공식 안내에서 당일 영업과 출장시장 일정을 확인하세요.':'輪島ワイプラザ内の常設会場を訪ねましょう。訪問前に公式案内で当日の営業と出張朝市の日程を確認してください。',
+ '와지마 와이플라자 내 임시 상설시장. 방문일의 버스·렌터카 동선을 확인하세요.':'輪島ワイプラザ内の常設会場です。訪問日のバス・レンタカーの経路を確認してください。',
+ '30분':'30分','30분~1시간':'30分〜1時間'
+};
+
+// Official access and identity corrections accompany the reviewed regional pins.
+for(const [id,source] of Object.entries({"602": "https://www.visitchiba.jp/spot/national-museum-of-japanese-history/", "2114": "https://aquas.or.jp/", "2314": "https://dive-hiroshima.com/explore/2084/", "2317": "https://dive-hiroshima.com/explore/46/", "2318": "https://dive-hiroshima.com/explore/106/", "2508": "https://www.awanavi.jp/archives/spot/19024", "2511": "https://miyoshi-tourism.jp/en/spot/65/", "2607": "https://www.mitoyo-kanko.com/chichibugahama/", "2608": "https://www.city.kanonji.kagawa.jp/soshiki/21/13387.html", "2808": "https://shikoku-tourism.com/spot/13567", "2809": "https://www.city.muroto.kochi.jp/pages/page0298.php", "3010": "https://imari-ookawachiyama.com/", "3126": "https://www.ikikankou.com/spot/10097", "3219": "https://www.amakusa-dolphin.jp/", "3408": "https://www.michinoeki-nango.jp/", "3518": "https://minamiosumi-tourism.com/guide/ogawa-no-taki/", "3525": "https://yakukan.jp/spot/6986.html"})){const place=samples.find(p=>String(p.id)===id);if(place)place.source=source}
+Object.assign(tokyoVisitGuides,{"2608": {"access": "다카야 신사 하궁에서 본궁까지 도보 약 50분. 2026년 9월 28일~12월 25일에는 진입로 공사로 차량·셔틀 이용이 불가합니다. 방문 전 공식 통제 안내를 확인하세요.", "duration": "2시간~3시간"}, "3518": {"access": "하류 주차장에서 폭포 아래까지 약 1.2km 산책로를 이용하세요. 상류 전망대와 접근로가 다릅니다.", "duration": "1시간~2시간"}});
+Object.assign(mapQaJapanese,{"다카야 신사 하궁에서 본궁까지 도보 약 50분. 2026년 9월 28일~12월 25일에는 진입로 공사로 차량·셔틀 이용이 불가합니다. 방문 전 공식 통제 안내를 확인하세요.": "高屋神社下宮から本宮まで徒歩約50分。2026年9月28日〜12月25日は林道工事のため車・シャトルバスでは行けません。訪問前に公式の通行規制をご確認ください。", "하류 주차장에서 폭포 아래까지 약 1.2km 산책로를 이용하세요. 상류 전망대와 접근로가 다릅니다.": "下流側駐車場から滝壺まで約1.2kmの遊歩道を歩きます。上流展望所とはアクセス経路が異なります。", "2시간~3시간": "2時間〜3時間", "1시간~2시간": "1時間〜2時間"});
+
+// Three Aichi guides had been assigned to neighbouring attraction IDs.
+const aichiAccessQa={
+ "1011":{access:'JR 주오선 오조네역 남쪽 출구에서 도보 약 10분입니다.',duration:'1시간~2시간',source:'https://www.aichinow.pref.aichi.jp/en/spots/detail/9/'},
+ "1012":{access:'지하철 가미마에즈역 8·12번 출구에서 도보 약 2분, 또는 오스칸논역 2번 출구에서 도보 약 3분입니다.',source:'https://www.nagoya-info.jp/spot/detail/19/'},
+ "1013":{access:'지하철 메이코선 나고야코역 3번 출구에서 도보 약 5분입니다.',source:'https://nagoyaaqua.jp/access/'}
+};
+for(const [id,{source,...guide}] of Object.entries(aichiAccessQa)){
+ Object.assign(tokyoVisitGuides[id],guide);
+ const place=samples.find(p=>String(p.id)===id);if(place)place.source=source;
+}
+Object.assign(mapQaJapanese,{
+ 'JR 주오선 오조네역 남쪽 출구에서 도보 약 10분입니다.':'JR中央本線大曽根駅の南口から徒歩約10分です。',
+ '지하철 가미마에즈역 8·12번 출구에서 도보 약 2분, 또는 오스칸논역 2번 출구에서 도보 약 3분입니다.':'地下鉄上前津駅の8・12番出口から徒歩約2分、または大須観音駅の2番出口から徒歩約3分です。',
+ '지하철 메이코선 나고야코역 3번 출구에서 도보 약 5분입니다.':'地下鉄名港線名古屋港駅の3番出口から徒歩約5分です。'
+});
