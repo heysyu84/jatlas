@@ -63,13 +63,14 @@ Object.assign(jaDictionary,{
  "예보는 여행 참고용입니다.":"予報は旅行の参考用です。",
  "데이터: Open-Meteo":"データ: Open-Meteo"
 });
+if(typeof photoQaJapanese!=='undefined')Object.assign(jaDictionary,photoQaJapanese);
 const localeKeys=Object.keys(jaDictionary).sort((a,b)=>b.length-a.length);
 const localePattern=new RegExp(localeKeys.map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 function translateText(text,force=false){if(language!=='ja'&&!force)return text;return jaDictionary[text]||text.replace(localePattern,s=>jaDictionary[s]);}
 function localize(){
  const walk=document.createTreeWalker(document.body,4);let node;
  while(node=walk.nextNode()){
-  if(node.parentElement?.closest('script,style,.language,[data-user-content],[data-municipality-id],textarea'))continue;
+  if(node.parentElement?.closest('script,style,.language,[translate="no"],[data-user-content],[data-municipality-id],textarea'))continue;
   const old=localeNodes.get(node);const original=old&&node.nodeValue===old.last?old.original:node.nodeValue;
   const value=translateText(original);if(node.nodeValue!==value)node.nodeValue=value;localeNodes.set(node,{original,last:value});
  }
@@ -82,7 +83,7 @@ function localize(){
  document.documentElement.lang=language;document.title=language==='ja'?'Jatlas · 日本':'Jatlas · 일본';
  for(const [id,l]of [['langKo','ko'],['langJa','ja']]){const el=document.getElementById(id);el.classList.toggle('active',language===l);el.setAttribute('aria-pressed',String(language===l))}
 }
-function setLanguage(value){language=value;try{localStorage.setItem('japlan-language',value)}catch{}localize();syncGoogleDetail()}
+function setLanguage(value){language=value;try{localStorage.setItem('japlan-language',value)}catch{}localize();syncGoogleDetail();if(selected){const frame=document.querySelector('.mobileDetailMap iframe');if(frame)frame.src=googlePlaceMapURL(selected,true);for(const link of document.querySelectorAll('.mobileDetailMap a,#detailBody .officialLinks a:last-child'))link.href=googlePlaceMapURL(selected,false)}}
 localize();
 for(const event of ['click','input','change'])document.addEventListener(event,()=>queueMicrotask(localize));
 document.addEventListener('DOMContentLoaded',localize);

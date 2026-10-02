@@ -4,18 +4,7 @@ const spotFacts={
 200:['2~3시간','실내','특별전 확인'],201:['행사별 상이','실내','행사·입장권 확인'],202:['1~2시간','실내·야외',''],203:['2~4시간','실내','이용 조건 확인'],204:['30~60분','야외','저녁 방문'],205:['45~90분','실내·야외',''],206:['2~3시간','실내','휴관일 확인'],207:['1~2시간','실내·야외','전시 일정 확인'],208:['45~90분','야외',''],209:['45~90분','야외',''],210:['2~3시간','실내·야외','사전 예약 필수'],211:['1~2시간','동굴','교통 확인'],212:['1~2시간','야외','섬 이동 별도'],213:['1~2시간','야외','섬 이동 별도'],214:['45~90분','야외','산행 안에 포함'],215:['30~60분','야외',''],216:['30~60분','야외',''],217:['2~3시간','야외',''],218:['2~3시간','실내·야외','시설별 확인']};
 const firstPicks={'전체':[100,107,109,112],'오다이바':[200,113,202,203],'신주쿠':[107,108,204,205],'우에노·야나카':[103,102,104,206],'시부야·하라주쿠':[110,109,111,208]};
 
-function mobileDetailMapURL(p,embed=true){
- const params=new URLSearchParams({hl:localStorage.getItem('japlan-language')==='ja'?'ja':'ko',gl:'kr'});
- if(embed)params.set('output','embed');
- let cid='',query='';
- try{if(p.mapUrl){const u=new URL(p.mapUrl,location.href);cid=u.searchParams.get('cid')||'';query=u.searchParams.get('query')||''}}catch{}
- const loc=pointLocations[p.id];
- if(cid)params.set('cid',cid);
- else if(loc)params.set('q',loc.lat+','+loc.lon);
- else params.set('q',p.mapQuery||query||p.pref+' '+p.name);
- params.set('z','16');
- return 'https://www.google.com/maps?'+params.toString();
-}
+function mobileDetailMapURL(p,embed=true){return googlePlaceMapURL(p,embed)}
 function renderMobileDetailMap(p){
  if(!window.matchMedia('(max-width:760px)').matches)return;
  if(!(pointLocations[p.id]||p.mapUrl||p.mapQuery))return;

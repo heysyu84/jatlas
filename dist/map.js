@@ -108,25 +108,29 @@ window.addEventListener('resize',()=>{for(const map of mapInstances.values())map
 // Basic Google Maps iframe: no Maps JavaScript API or billable service is loaded.
 let googleDetailContext=null;
 function googleMapLanguage(){return localStorage.getItem('japlan-language')==='ja'?'ja':'ko'}
-function googleDetailURL(place,embed=true){
- const ctx=googleDetailContext;if(!ctx)return '';
- // Request Korea as the region independently of UI language.
- // Basic embed may ignore gl; this is not a guarantee of a particular label.
+// Use one destination resolver for desktop, mobile and external links.
+function googlePlaceMapURL(place,embed=true){
  const params=new URLSearchParams({hl:googleMapLanguage(),gl:'kr'});
  if(embed)params.set('output','embed');
- if(place){
-  const cid=place.mapUrl?new URL(place.mapUrl).searchParams.get('cid'):null;
-  const mapUrlQuery=place.mapUrl?new URL(place.mapUrl).searchParams.get('query'):null;
-  const query=place.mapQuery||mapUrlQuery;
-  const loc=pointLocations[place.id];
-  if(cid)params.set('cid',cid);
-  else if(query)params.set('q',query);
-  else if(loc)params.set('q',`${loc.lat},${loc.lon}`);
-  else params.set('q',place.pref+' '+place.name);
-  params.set('z','16');
- }else{params.set('ll',`${ctx.center.lat},${ctx.center.lng}`);params.set('z',String(ctx.zoom));}
+ let cid='',urlQuery='';
+ try{const u=new URL(place.mapUrl||'',location.href);cid=u.searchParams.get('cid')||'';urlQuery=u.searchParams.get('query')||u.searchParams.get('q')||''}catch{}
+ const loc=pointLocations[place.id];
+ if(place.mapMode==='coordinates'&&Number.isFinite(loc?.lat)&&Number.isFinite(loc?.lon)&&Math.abs(loc.lat)<=90&&Math.abs(loc.lon)<=180)params.set('q',`${loc.lat},${loc.lon}`);
+ else if(place.mapQuery?.trim())params.set('q',place.mapQuery.trim());
+ else if(/^\d+$/.test(cid))params.set('cid',cid);
+ else if(urlQuery)params.set('q',urlQuery);
+ else params.set('q',typeof translateText==='function'?translateText(place.pref+' '+place.name,true):place.pref+' '+place.name);
+ params.set('z','16');
  return 'https://www.google.com/maps?'+params.toString();
 }
+function googleDetailURL(place,embed=true){
+ if(place)return googlePlaceMapURL(place,embed);
+ const ctx=googleDetailContext;if(!ctx)return '';
+ const params=new URLSearchParams({hl:googleMapLanguage(),gl:'kr',q:`${ctx.center.lat},${ctx.center.lng}`,z:String(ctx.zoom)});
+ if(embed)params.set('output','embed');
+ return 'https://www.google.com/maps?'+params.toString();
+}
+
 function renderGoogleDetail(pts,bounds){
  disposeMap('regionalMap');const host=$('#regionalMap');host.replaceChildren();host.classList.remove('boundary-view','cutoutMap');host.classList.add('detail-view','googleDetail');
  const center=bounds.getCenter();const span=Math.max(bounds.getNorth()-bounds.getSouth(),(bounds.getEast()-bounds.getWest())*.8);
