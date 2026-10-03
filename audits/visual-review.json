@@ -74,6 +74,7 @@
     "2717": "wash basin rather than shrine",
     "2802": "stone sign obscures beach",
     "2805": "sign rather than cave",
+    "2807": "wrong waterfall identity review",
     "2906": "temple exterior lacks reclining Buddha",
     "2911": "dark forest instead of shrine",
     "3101": "spire crop",
@@ -131,6 +132,7 @@
     "4123": "port parking lot rather than morning market",
     "4126": "storefront rather than district",
     "4207": "road infrastructure dominates",
+    "4217": "station rather than intended landmark review",
     "4220": "sign rather than village",
     "4221": "small figure rather than pond",
     "4224": "stone sign rather than cave",
@@ -204,5 +206,5 @@
     "요코하마 이에케이 라멘": "shop facade rather than ramen"
   },
   "sheetsReviewedThrough": 47,
-  "note": "Contact sheet composition screening only; external-image tiles remain unreviewed until local download. All identity decisions require source checks. Resolved 2026-10-04 user-approved priority replacements: 2807, 4417, 4217."
+  "note": "Contact sheet composition screening only; external-image tiles remain unreviewed until local download. All identity decisions require source checks. Priority round 1: 4417 resolved; 2807 and 4217 remain pending because approved sources require login/registration."
 }
