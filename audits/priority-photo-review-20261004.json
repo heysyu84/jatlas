@@ -1,0 +1,37 @@
+{
+  "reviewedAt": "2026-10-04",
+  "policy": "Priority round 1: correct identity mismatches first; user approved each candidate before application.",
+  "places": {
+    "2807": {
+      "filename": "【高知】安居渓谷の風景",
+      "src": "images/licensed/kochi-yasui-gorge-31857729.webp",
+      "source": "https://www.photo-ac.com/main/detail/31857729",
+      "author": "Travel_photo",
+      "license": "写真AC フリー素材利用規約",
+      "licenseUrl": "https://www.photo-ac.com/main/guide/m.photo-ac.com/premium/campaign?target=premium_sozai",
+      "description": "User-approved Yasui Gorge / Suishobuchi Niyodo Blue landscape.",
+      "review": "user-approved-identity-and-representative-view"
+    },
+    "4217": {
+      "filename": "宮沢賢治記念館３",
+      "src": "images/official/iwate-miyazawa-kenji-museum-3.webp",
+      "source": "https://iwatetabi.jp/downloadimage/page/51/",
+      "author": "公益財団法人 岩手県観光協会 / 写真素材提供者",
+      "license": "岩手県観光PR用写真素材利用規約",
+      "licenseUrl": "https://iwatetabi.jp/usage/",
+      "description": "User-approved official tourism photo of Miyazawa Kenji Museum in Hanamaki.",
+      "review": "user-approved-official-museum-photo"
+    },
+    "4417": {
+      "filename": "Akita-Inu-Kaikan 110827.jpg",
+      "src": "images/licensed/akita-inu-kaikan-4417.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Akita-Inu-Kaikan_110827.jpg",
+      "author": "Yauchi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Front view of Akita Inu Kaikan in Odate, Akita.",
+      "review": "user-approved-identity-and-license-reviewed"
+    }
+  },
+  "note": "Do not re-search these three unless the deployed image is broken, materially mismatched, or the source/license changes."
+}

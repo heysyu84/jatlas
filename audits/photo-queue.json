@@ -3,13 +3,13 @@
   "method": "Union of historical visual/quality candidates plus current missing photos and still-matching historical duplicate groups, minus explicitly reviewed current photo mappings. Fukushima excluded. This is a tracked review backlog, not confirmed defects or a fresh nationwide audit.",
   "summary": {
     "trackedUniqueCandidates": 278,
-    "remainingCandidates": 233,
-    "remainingPlaces": 185,
+    "remainingCandidates": 230,
+    "remainingPlaces": 182,
     "remainingFoods": 48,
     "missingPhotos": 0,
-    "resolvedTrackedCandidates": 38,
+    "resolvedTrackedCandidates": 41,
     "outsideScope": 7,
-    "currentReviewedItems": 71,
+    "currentReviewedItems": 74,
     "historicalDuplicateGroupsStillMatching": 16
   },
   "duplicateGroups": [
@@ -462,12 +462,10 @@
       "key": "place:2807",
       "name": "야스이계곡",
       "pref": "고치",
-      "src": "images/commons/2786d1425799d7aa.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: wrong waterfall identity review"
-      ],
-      "review": null
+      "src": "images/licensed/kochi-yasui-gorge-31857729.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "priority-photo-review-20261004.json"
     },
     {
       "key": "place:1511",
@@ -1727,12 +1725,10 @@
       "key": "place:4417",
       "name": "아키타견 회관",
       "pref": "아키타",
-      "src": "images/commons/0834fec534b951ea.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: temple rather than intended museum review"
-      ],
-      "review": null
+      "src": "images/licensed/akita-inu-kaikan-4417.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "priority-photo-review-20261004.json"
     },
     {
       "key": "place:4420",
@@ -2472,12 +2468,10 @@
       "key": "place:4217",
       "name": "미야자와 겐지 기념관",
       "pref": "이와테",
-      "src": "images/commons/42b9713af137dfe9.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: station rather than intended landmark review"
-      ],
-      "review": null
+      "src": "images/official/iwate-miyazawa-kenji-museum-3.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "priority-photo-review-20261004.json"
     },
     {
       "key": "place:4220",

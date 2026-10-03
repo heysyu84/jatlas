@@ -155,6 +155,40 @@
       "output": "images/licensed/saga-yobuko-ika-sashi.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Ika-sashi_01.JPG",
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 2807,
+      "imagePage": "https://www.photo-ac.com/main/detail/31857729",
+      "imageAltContains": "安居渓谷の風景",
+      "allowUnpinned": true,
+      "cropRatio": 1.5,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "minWidth": 600,
+      "minHeight": 400,
+      "output": "images/licensed/kochi-yasui-gorge-31857729.webp",
+      "source": "https://www.photo-ac.com/main/detail/31857729",
+      "terms": "https://www.photo-ac.com/main/guide/m.photo-ac.com/premium/campaign?target=premium_sozai"
+    },
+    {
+      "placeId": 4417,
+      "commonsFilename": "Akita-Inu-Kaikan 110827.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/akita-inu-kaikan-4417.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Akita-Inu-Kaikan_110827.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 4217,
+      "download": "https://iwatetabi.jp/wp/wp-content/uploads/2024/03/00000942_s_mark.jpg",
+      "allowUnpinned": true,
+      "minWidth": 600,
+      "minHeight": 400,
+      "output": "images/official/iwate-miyazawa-kenji-museum-3.webp",
+      "source": "https://iwatetabi.jp/downloadimage/page/51/",
+      "terms": "https://iwatetabi.jp/usage/"
     }
   ]
 }
