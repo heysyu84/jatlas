@@ -111,12 +111,11 @@
     },
     {
       "foodName": "이모니",
-      "imagePage": "https://yamagatakanko.com/photos/detail_154.html",
-      "imageAltContains": "芋煮会",
       "allowUnpinned": true,
       "output": "images/official/yamagata-imoni-154.webp",
       "source": "https://yamagatakanko.com/photos/detail_154.html",
-      "terms": "https://yamagatakanko.com/photos/detail_154.html"
+      "terms": "https://yamagatakanko.com/photos/detail_154.html",
+      "download": "https://yamagatakanko.com/lsc/api/photo/download.php?id=154&type=5"
     },
     {
       "foodName": "오시마 우유·아시타바 간식",
