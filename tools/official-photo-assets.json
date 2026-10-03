@@ -131,7 +131,8 @@
       "output": "images/official/tokyo-oshima-milk-soft.webp",
       "source": "https://oshima-photo.com/type_library/20240313-2/",
       "terms": "https://oshima-photo.com/",
-      "minHeight": 500
+      "minHeight": 400,
+      "minWidth": 600
     },
     {
       "foodName": "도사 아카우시",
