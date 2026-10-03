@@ -48,7 +48,13 @@ def resolve_download(photo):
     image_url = metadata.get('url') or metadata.get('thumbnail_url')
     if not image_url:
         raise ValueError(f"Flickr oEmbed returned no image URL: {photo['source']}")
-    return image_url
+    parsed = urllib.parse.urlsplit(image_url)
+    stem, dot, extension = parsed.path.rpartition('.')
+    size_codes = {'s', 'q', 't', 'm', 'n', 'w', 'z', 'c', 'b', 'h', 'k'}
+    head, separator, tail = stem.rpartition('_')
+    large_stem = head + '_b' if separator and tail in size_codes else stem + '_b'
+    large_path = large_stem + (dot + extension if dot else '')
+    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, large_path, parsed.query, parsed.fragment))
 
 
 def prepare():
