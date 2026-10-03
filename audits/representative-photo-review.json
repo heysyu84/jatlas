@@ -1,0 +1,232 @@
+{
+  "reviewedAt": "2026-10-03",
+  "policy": "Reject source ratios outside 1.25–1.85 or below 900x600 before viewing. Accept first suitable candidate; inspect at most three per search, one follow-up search. Only selected files verified; no nationwide visual re-audit.",
+  "places": {
+    "2903": {
+      "filename": "Fukuoka .jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_.jpg",
+      "width": 1280,
+      "height": 720,
+      "description": "",
+      "categories": "Fukuoka Tower|Media lacking a description|Seaside Momochi|May 2017 in Fukuoka|Seaside Momochi Seaside Park|Self-published work|Uploaded with Mobile/Android|Uploaded with Mobile/Android (Jul 2016 - Jun 2017)|Japan photographs taken on 2017-05-02|Skylines in Fukuoka",
+      "author": "Hhcp.0.5.8",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "src": "images/qa/9a11b6f1c0faa9884a64.webp",
+      "review": "subject-metadata-and-16:9-center-crop-reviewed"
+    },
+    "4002": {
+      "filename": "City nightscape of Sapporo from Mt. Moiwa 20260703b.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703b.jpg",
+      "width": 1280,
+      "height": 720,
+      "description": "Night view from Mount Moiwa in Sapporo, Hokkaido, Japan",
+      "categories": "Taken with Sony ILCE-6300|Self-published work|Files with coordinates missing SDC location of creation|July 2026 in Sapporo|Views from Mount Moiwa (Sapporo) at night|Japan photographs taken on 2026-07-03",
+      "author": "掬茶",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "src": "images/qa/a8f44cf2772f70af18ac.webp",
+      "review": "subject-metadata-and-16:9-center-crop-reviewed"
+    }
+  },
+  "pending": {
+    "3409": "Foreground horse legs cut in center crop; follow-up returned no eligible candidates.",
+    "2908": "Both searches returned no eligible landscape candidates. Existing cave interior remains.",
+    "4704": "Bus-focused, close-up snow wall or sign-dominated candidates did not improve representative composition."
+  },
+  "searches": {
+    "2903": {
+      "query": "Fukuoka Tower skyline",
+      "candidates": [
+        {
+          "filename": "Fukuoka .jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Fukuoka_.jpg/1280px-Fukuoka_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4128,
+          "height": 2322,
+          "description": "",
+          "categories": "Fukuoka Tower|Media lacking a description|Seaside Momochi|May 2017 in Fukuoka|Seaside Momochi Seaside Park|Self-published work|Uploaded with Mobile/Android|Uploaded with Mobile/Android (Jul 2016 - Jun 2017)|Japan photographs taken on 2017-05-02|Skylines in Fukuoka",
+          "author": "Hhcp.0.5.8",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "filename": "20100718 Fukuoka 2870.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:20100718_Fukuoka_2870.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/20100718_Fukuoka_2870.jpg/1280px-20100718_Fukuoka_2870.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4288,
+          "height": 2848,
+          "description": "The beach in Fukuoka, near Fukuoka Tower",
+          "categories": "Fukuoka Dome|Hilton Fukuoka Seahawk|GFDL|Taken with Pentax K-x|Fukuoka Tower|License migration redundant|CC-BY-SA-4.0,3.0,2.5,2.0,1.0|July 2010 in Fukuoka|Seaside Momochi Seaside Park|Self-published work|Files by Jakub Hałun|Japan photographs taken on 2010-07-18|Skylines in Fukuoka",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "filename": "Fukuoka winter.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_winter.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Fukuoka_winter.jpg/1280px-Fukuoka_winter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1600,
+          "height": 1200,
+          "description": "",
+          "categories": "Taken with Nikon Coolpix 2500|Files with no machine-readable author|Files with no machine-readable source|Views from Fukuoka Tower|Media missing infobox template|Self-published work|PD-self",
+          "author": "",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      ]
+    },
+    "2908": {
+      "query": "芥屋の大門 海",
+      "candidates": []
+    },
+    "3409": {
+      "query": "Wild horse of cape toi panoramio 25",
+      "candidates": [
+        {
+          "filename": "Wild horse of cape toi. - 都井岬の野生馬 - panoramio (25).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Wild_horse_of_cape_toi._-_%E9%83%BD%E4%BA%95%E5%B2%AC%E3%81%AE%E9%87%8E%E7%94%9F%E9%A6%AC_-_panoramio_(25).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wild_horse_of_cape_toi._-_%E9%83%BD%E4%BA%95%E5%B2%AC%E3%81%AE%E9%87%8E%E7%94%9F%E9%A6%AC_-_panoramio_%2825%29.jpg/1280px-Wild_horse_of_cape_toi._-_%E9%83%BD%E4%BA%95%E5%B2%AC%E3%81%AE%E9%87%8E%E7%94%9F%E9%A6%AC_-_panoramio_%2825%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2400,
+          "height": 1600,
+          "description": "Wild horse of cape toi. / 都井岬の野生馬",
+          "categories": "Cape Toi|Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Japan photographs taken on 2016-05-01|Photos from Panoramio ID 238971",
+          "author": "z tanuki",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+        }
+      ]
+    },
+    "4002": {
+      "query": "View from Mount Moiwa",
+      "candidates": [
+        {
+          "filename": "Sapporo Mt Moiwa Observation (184517457).jpeg",
+          "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Mt_Moiwa_Observation_(184517457).jpeg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Sapporo_Mt_Moiwa_Observation_%28184517457%29.jpeg/1280px-Sapporo_Mt_Moiwa_Observation_%28184517457%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2048,
+          "height": 1536,
+          "description": "Mount Moiwa observation deck in Sapporo City, Hokkaido, Japan",
+          "categories": "Views from Mount Moiwa (Sapporo)|Files with coordinates missing SDC location of creation|Photos imported with import-500px|Summit of Mount Moiwa (Sapporo)",
+          "author": "\nSorah Fukumori",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+        },
+        {
+          "filename": "City nightscape of Sapporo from Mt. Moiwa 20260703b.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703b.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703b.jpg/1280px-City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 6000,
+          "height": 3376,
+          "description": "Night view from Mount Moiwa in Sapporo, Hokkaido, Japan",
+          "categories": "Taken with Sony ILCE-6300|Self-published work|Files with coordinates missing SDC location of creation|July 2026 in Sapporo|Views from Mount Moiwa (Sapporo) at night|Japan photographs taken on 2026-07-03",
+          "author": "掬茶",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "filename": "City nightscape of Sapporo from Mt. Moiwa 20260703a.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703a.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703a.jpg/1280px-City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 6000,
+          "height": 3376,
+          "description": "Night view from Mount Moiwa in Sapporo, Hokkaido, Japan",
+          "categories": "Taken with Sony ILCE-6300|Self-published work|Files with coordinates missing SDC location of creation|July 2026 in Sapporo|Views from Mount Moiwa (Sapporo) at night|Japan photographs taken on 2026-07-03",
+          "author": "掬茶",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    "4704": {
+      "query": "Tateyama Kurobe Alpine Route Murodo",
+      "candidates": [
+        {
+          "filename": "Tateyama Highland Bus (Murodo Station s2).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tateyama_Highland_Bus_(Murodo_Station_s2).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Tateyama_Highland_Bus_%28Murodo_Station_s2%29.jpg/1280px-Tateyama_Highland_Bus_%28Murodo_Station_s2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4600,
+          "height": 3600,
+          "description": "Tateyama Highland Bus (Hino Selega Hybrid) at Murodo Station of Tateyama Kurobe Alpine Route in Tateyama, Toyama prefecture, Japan.",
+          "categories": "Murodo Station|Tateyama Highland Bus|Self-published work|Hino Selega HIMR|Coaches in Japan",
+          "author": "Alpsdake",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "filename": "Tateyama Highland Bus (Murodo Station).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tateyama_Highland_Bus_(Murodo_Station).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Tateyama_Highland_Bus_%28Murodo_Station%29.jpg/1280px-Tateyama_Highland_Bus_%28Murodo_Station%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4500,
+          "height": 2560,
+          "description": "Tateyama Highland Bus (Hino Selega Hybrid) at Yuki-no-otani near Murodo Station of Tateyama Kurobe Alpine Route in Tateyama, Toyama prefecture, Japan.",
+          "categories": "Tateyama Highland Bus|Self-published work|Hino Selega HIMR|Coaches in Japan",
+          "author": "Alpsdake",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "filename": "Tateyama Toll Road and Yuki-no-otani.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tateyama_Toll_Road_and_Yuki-no-otani.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tateyama_Toll_Road_and_Yuki-no-otani.jpg/1280px-Tateyama_Toll_Road_and_Yuki-no-otani.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2400,
+          "height": 1920,
+          "description": "Tateyama Highland Bus (Hino Selega Hybrid) at Yuki-no-otani near Murodo Station of Tateyama Kurobe Alpine Route in Tateyama, Toyama prefecture, Japan.",
+          "categories": "Self-published work|Hino Selega HIMR|Coaches in Japan|Tateyama Snow Walls",
+          "author": "Alpsdake",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    "3409b": {
+      "query": "Cape Toi horses landscape",
+      "candidates": []
+    },
+    "2908b": {
+      "query": "Keya no Oto",
+      "candidates": []
+    },
+    "4704c": {
+      "query": "Tateyama snow wall",
+      "candidates": [
+        {
+          "filename": "立山雪牆 Tateyama Snow Wall - panoramio.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AB%8B%E5%B1%B1%E9%9B%AA%E7%89%86_Tateyama_Snow_Wall_-_panoramio.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E7%AB%8B%E5%B1%B1%E9%9B%AA%E7%89%86_Tateyama_Snow_Wall_-_panoramio.jpg/1280px-%E7%AB%8B%E5%B1%B1%E9%9B%AA%E7%89%86_Tateyama_Snow_Wall_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3816,
+          "height": 2862,
+          "description": "立山雪牆  Tateyama Snow  Wall",
+          "categories": "Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Japan photographs taken on 2011-05-15|Tateyama Snow Walls|Photos from Panoramio ID 6452510",
+          "author": "lienyuan lee",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+        },
+        {
+          "filename": "Tateyama Snow Wall 立山雪壁 - panoramio.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tateyama_Snow_Wall_%E7%AB%8B%E5%B1%B1%E9%9B%AA%E5%A3%81_-_panoramio.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Tateyama_Snow_Wall_%E7%AB%8B%E5%B1%B1%E9%9B%AA%E5%A3%81_-_panoramio.jpg/1280px-Tateyama_Snow_Wall_%E7%AB%8B%E5%B1%B1%E9%9B%AA%E5%A3%81_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3648,
+          "height": 2736,
+          "description": "Tateyama Snow Wall  立山雪壁",
+          "categories": "Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Japan photographs taken on 2011-05-15|Tateyama Snow Walls|Photos from Panoramio ID 6452510",
+          "author": "lienyuan lee",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+        },
+        {
+          "filename": "Tateyama Snow Wall 立山雪壁 - panoramio (1).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tateyama_Snow_Wall_%E7%AB%8B%E5%B1%B1%E9%9B%AA%E5%A3%81_-_panoramio_(1).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Tateyama_Snow_Wall_%E7%AB%8B%E5%B1%B1%E9%9B%AA%E5%A3%81_-_panoramio_%281%29.jpg/1280px-Tateyama_Snow_Wall_%E7%AB%8B%E5%B1%B1%E9%9B%AA%E5%A3%81_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4000,
+          "height": 3000,
+          "description": "Tateyama Snow Wall   立山雪壁",
+          "categories": "Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Japan photographs taken on 2011-05-15|Tateyama Snow Walls|Photos from Panoramio ID 6452510",
+          "author": "lienyuan lee",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+        }
+      ]
+    }
+  }
+}
