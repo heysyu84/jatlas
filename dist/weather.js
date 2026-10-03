@@ -1,5 +1,6 @@
 /* Compact current weather + 5-day forecast for regional travel planning. */
 const weatherCache=new Map();
+const weatherRequests=new Map();
 const WEATHER_TTL=30*60*1000;
 let weatherExpanded=false;
 const weatherCodes={
@@ -73,12 +74,13 @@ function weatherPoint(){
  const areaCenter=weatherAverage(townCenters,area);
  if(areaCenter)return areaCenter;
  for(const p of scoped){
-  const loc=pointLocations[p.id]||(Number.isFinite(p.lat)&&Number.isFinite(p.lon)?{lat:p.lat,lon:p.lon}:null);
+  const candidate=pointLocations[p.id];
+  const loc=Number.isFinite(candidate?.lat)&&Number.isFinite(candidate?.lon)?candidate:(Number.isFinite(p.lat)&&Number.isFinite(p.lon)?{lat:p.lat,lon:p.lon}:null);
   if(loc)return{lat:loc.lat,lon:loc.lon,name:p.name};
  }
  return weatherPrefCenter(pref);
 }
-function weatherCondition(code){return weatherCodes[Number(code)]||['🌡️','현재 날씨']}
+function weatherCondition(code){return code==null||code===''?['🌡️','현재 날씨']:weatherCodes[Number(code)]||['🌡️','현재 날씨']}
 function weatherDateLabel(date,index){
  if(index===0)return weatherText('오늘');
  if(index===1)return weatherText('내일');
@@ -86,7 +88,7 @@ function weatherDateLabel(date,index){
  const locale=weatherLang()==='ja'?'ja-JP':'ko-KR';
  try{return new Intl.DateTimeFormat(locale,{month:'numeric',day:'numeric',weekday:'short'}).format(new Date(date+'T12:00:00'))}catch{return date}
 }
-function weatherRound(v,digits=0){const n=Number(v);return Number.isFinite(n)?n.toFixed(digits):'–'}
+function weatherRound(v,digits=0){if(v==null||v==='')return '–';const n=Number(v);return Number.isFinite(n)?n.toFixed(digits):'–'}
 function weatherHost(){return window.matchMedia('(max-width:760px)').matches?$('#weatherPanel'):$('#weatherDesktopPanel')}
 function weatherHosts(){return [$('#weatherPanel'),$('#weatherDesktopPanel')].filter(Boolean)}
 function setWeatherExpanded(value){
@@ -117,7 +119,7 @@ function renderWeatherData(host,data,point){
  const times=d.time||[];
  for(let i=0;i<Math.min(5,times.length);i++){
   const cond=weatherCondition(d.weather_code?.[i]),card=document.createElement('article');card.className='weatherDay';
-  const rain=Number(d.precipitation_probability_max?.[i]);
+  const rawRain=d.precipitation_probability_max?.[i],rain=rawRain==null||rawRain===''?NaN:Number(rawRain);
   card.innerHTML='<strong>'+weatherDateLabel(times[i],i)+'</strong><span class="weatherIcon">'+cond[0]+'</span><span>'+weatherText(cond[1])+'</span><span>'+weatherRound(d.temperature_2m_max?.[i])+'° / '+weatherRound(d.temperature_2m_min?.[i])+'°</span><small>'+weatherText('강수확률')+' '+(Number.isFinite(rain)?Math.round(rain)+'%':'–')+'</small>';
   days.append(card);
  }
@@ -133,6 +135,17 @@ function renderWeatherError(host,key){
  host.innerHTML='<div class="weatherError">'+weatherText('날씨 정보를 불러오지 못했습니다.')+'</div>';
  const retry=button(weatherText('다시 시도'),()=>{weatherCache.delete(key);renderWeatherPanel(true)});
  host.querySelector('.weatherError').append(retry);host.hidden=false;
+}
+function fetchWeather(key,params){
+ if(weatherRequests.has(key))return weatherRequests.get(key);
+ const request=(async()=>{
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+  try{
+   const response=await fetch('https://api.open-meteo.com/v1/forecast?'+params.toString(),{headers:{Accept:'application/json'},signal:controller.signal});
+   if(!response.ok)throw new Error('weather '+response.status);
+   const data=await response.json();weatherCache.set(key,{time:Date.now(),data});return data;
+  }finally{clearTimeout(timer);weatherRequests.delete(key)}
+ })();weatherRequests.set(key,request);return request;
 }
 async function renderWeatherPanel(force=false){
  const host=weatherHost();if(!host)return;
@@ -151,9 +164,7 @@ async function renderWeatherPanel(force=false){
   timezone:'auto',forecast_days:'5'
  });
  try{
-  const response=await fetch('https://api.open-meteo.com/v1/forecast?'+params.toString(),{headers:{Accept:'application/json'}});
-  if(!response.ok)throw new Error('weather '+response.status);
-  const data=await response.json();weatherCache.set(key,{time:Date.now(),data});
+  const data=await fetchWeather(key,params);
   if(host.dataset.weatherKey===key&&state.view==='explore')renderWeatherData(host,data,point);
  }catch{renderWeatherError(host,key)}
 }
