@@ -1,6 +1,16 @@
 {
   "reviewedAt": "2026-10-03",
   "places": {
+    "2906": {
+      "filename": "Ginormous reclining Buddha at Nanzoin Temple",
+      "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
+      "source": "https://www.flickr.com/photos/traveloriented/37986553175/",
+      "author": "traveloriented",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "description": "Nanzoin Temple reclining Buddha (Nehanzo), Sasaguri, Fukuoka.",
+      "review": "user-approved-reclining-buddha-and-license-reviewed"
+    },
     "2911": {
       "filename": "Munakata Taisha Nakatsumiya Shrine",
       "source": "https://www.crossroadfukuoka.jp/en/photo/429",
@@ -22,6 +32,16 @@
       "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
       "src": "images/official/fukuoka-sarakura-193.webp",
       "review": "subject-identity-landscape-and-16:9-center-crop-reviewed"
+    },
+    "3203": {
+      "filename": "Kumamon Square",
+      "src": "images/licensed/kumamoto-kumamon-square-23716539709.webp",
+      "source": "https://www.flickr.com/photos/othree/23716539709/",
+      "author": "othree",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "User-approved Kumamon stage photo at Kumamon Square.",
+      "review": "user-approved-stage-photo-and-license-reviewed"
     }
   },
   "foods": {
@@ -35,16 +55,23 @@
       "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
       "src": "images/official/fukuoka-mizutaki-222.webp",
       "review": "dish-identity-landscape-and-center-crop-reviewed"
+    },
+    "이십세기배": {
+      "filename": "二十世紀梨",
+      "src": "images/licensed/tottori-nijisseiki-pear.webp",
+      "source": "https://sanin-geo.jp/resrources-tottori/",
+      "author": "写真提供：山陰海岸ジオパーク推進協議会",
+      "license": "観光・教育フリー素材（非商用・クレジット必須）",
+      "licenseUrl": "https://sanin-geo.jp/gaia/wp-content/uploads/2025/09/889ac7991f134ad80adde08ab0218e9c.pdf",
+      "description": "San’in Kaigan Geopark official free material showing Tottori Nijisseiki pears.",
+      "review": "user-approved-official-free-material-and-terms-reviewed"
     }
   },
   "pending": {
     "place:1208": "Previous Commons candidates: gate, aerial and rear view rejected. No suitable selection yet.",
-    "place:2906": "Category candidates showed subsidiary shrines, small statues and hall; representative reclining Buddha still needed.",
-    "place:3203": "Search candidate depicts a tram, not Kumamon Square.",
     "place:2908": "Official Fukuoka photo 424 rejected as aerial view.",
     "food:이모니": "Commons candidates depict festival or Sendai-style soup. MAFF Yamagata page explicitly prohibits downloading dish photographs.",
     "food:오시마 우유·아시타바 간식": "Certificate and unrelated/no matching imagery rejected.",
-    "food:이십세기배": "Pear museum interior candidates rejected; actual cultivar photo needed.",
     "food:도사 아카우시": "No verified dish-and-beef-origin candidate.",
     "food:요부코 오징어 활어회": "Dried squid is not live squid sashimi. Saga gallery candidate found but not acquired or approved."
   },
@@ -55,5 +82,20 @@
     "rawRedistribution": false,
     "delivery": "Existing build-time website-only derivative pipeline"
   },
-  "nextSearchRule": "Do not repeat rejected candidates; use verified dish/landmark photo libraries; no application-required sources."
+  "nextSearchRule": "Do not repeat rejected candidates; use verified dish/landmark photo libraries; no application-required sources.",
+  "updatedAt": "2026-10-04",
+  "licensedSourcePolicies": {
+    "flickr": {
+      "delivery": "Build-time website-only derivative via Flickr oEmbed; no raw source committed",
+      "attributionRequired": true,
+      "licenseVerifiedPerPhoto": true
+    },
+    "saninKaiganGeopark": {
+      "url": "https://sanin-geo.jp/gaia/wp-content/uploads/2025/09/889ac7991f134ad80adde08ab0218e9c.pdf",
+      "applicationRequiredForNonCommercialUse": false,
+      "attribution": "写真提供：山陰海岸ジオパーク推進協議会",
+      "rawRedistribution": false,
+      "delivery": "Build-time website-only derivative"
+    }
+  }
 }

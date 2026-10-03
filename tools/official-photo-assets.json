@@ -31,6 +31,34 @@
       "output": "images/official/fukuoka-sarakura-193.webp",
       "source": "https://www.crossroadfukuoka.jp/en/photo/193",
       "terms": "https://www.crossroadfukuoka.jp/en/photo/guide"
+    },
+    {
+      "placeId": 2906,
+      "flickrPhotoId": "37986553175",
+      "author": "traveloriented",
+      "expectedLicenseId": 5,
+      "allowUnpinned": true,
+      "output": "images/licensed/fukuoka-nanzoin-37986553175.webp",
+      "source": "https://www.flickr.com/photos/traveloriented/37986553175/",
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    {
+      "placeId": 3203,
+      "flickrPhotoId": "23716539709",
+      "author": "othree",
+      "expectedLicenseId": 4,
+      "allowUnpinned": true,
+      "output": "images/licensed/kumamoto-kumamon-square-23716539709.webp",
+      "source": "https://www.flickr.com/photos/othree/23716539709/",
+      "terms": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "foodName": "이십세기배",
+      "download": "https://sanin-geo.jp/wp/wp-content/uploads/sites/3/2022/02/220924GPSK_8053-scaled.jpg",
+      "allowUnpinned": true,
+      "output": "images/licensed/tottori-nijisseiki-pear.webp",
+      "source": "https://sanin-geo.jp/resrources-tottori/",
+      "terms": "https://sanin-geo.jp/gaia/wp-content/uploads/2025/09/889ac7991f134ad80adde08ab0218e9c.pdf"
     }
   ]
 }

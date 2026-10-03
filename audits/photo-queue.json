@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-04",
   "method": "Union of historical visual/quality candidates plus current missing photos and still-matching historical duplicate groups, minus explicitly reviewed current photo mappings. Fukushima excluded. This is a tracked review backlog, not confirmed defects or a fresh nationwide audit.",
   "summary": {
     "trackedUniqueCandidates": 278,
-    "remainingCandidates": 245,
-    "remainingPlaces": 192,
-    "remainingFoods": 53,
-    "missingPhotos": 8,
-    "resolvedTrackedCandidates": 26,
+    "remainingCandidates": 242,
+    "remainingPlaces": 190,
+    "remainingFoods": 52,
+    "missingPhotos": 5,
+    "resolvedTrackedCandidates": 29,
     "outsideScope": 7,
-    "currentReviewedItems": 59,
+    "currentReviewedItems": 62,
     "historicalDuplicateGroupsStillMatching": 16
   },
   "duplicateGroups": [
@@ -101,14 +101,10 @@
       "key": "place:3203",
       "name": "구마몬 스퀘어",
       "pref": "구마모토",
-      "src": null,
-      "status": "needs-review",
-      "reasons": [
-        "held: Search candidate depicts a tram, not Kumamon Square.",
-        "missing-photo",
-        "visual: tram rather than Kumamon Square"
-      ],
-      "review": null
+      "src": "images/licensed/kumamoto-kumamon-square-23716539709.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
     },
     {
       "key": "food:오시마 우유·아시타바 간식",
@@ -127,13 +123,10 @@
       "key": "food:이십세기배",
       "name": "이십세기배",
       "pref": "돗토리",
-      "src": null,
-      "status": "needs-review",
-      "reasons": [
-        "held: Pear museum interior candidates rejected; actual cultivar photo needed.",
-        "missing-photo"
-      ],
-      "review": null
+      "src": "images/licensed/tottori-nijisseiki-pear.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
     },
     {
       "key": "food:요부코 오징어 활어회",
@@ -176,14 +169,10 @@
       "key": "place:2906",
       "name": "난조인",
       "pref": "후쿠오카",
-      "src": null,
-      "status": "needs-review",
-      "reasons": [
-        "held: Category candidates showed subsidiary shrines, small statues and hall; representative reclining Buddha still needed.",
-        "missing-photo",
-        "visual: temple exterior lacks reclining Buddha"
-      ],
-      "review": null
+      "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
     },
     {
       "key": "food:쇼도시마 소멘",
