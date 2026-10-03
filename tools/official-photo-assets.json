@@ -1,0 +1,12 @@
+{
+  "photos": [
+    {
+      "placeId": 3409,
+      "download": "https://www.kanko-miyazaki.jp/downloads/photo/472",
+      "sha256": "5b7269564468b80143da6f54ad83b83a1ea8c189eae344fb68497505565e7ac4",
+      "output": "images/official/miyazaki-toi-472.webp",
+      "source": "https://www.kanko-miyazaki.jp/business/photo/472",
+      "terms": "https://www.kanko-miyazaki.jp/business/photo/guide"
+    }
+  ]
+}

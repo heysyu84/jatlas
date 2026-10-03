@@ -25,6 +25,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python for licensed website assets
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Prepare licensed website photos
+        run: |
+          python -m pip install Pillow==11.3.0
+          python tools/prepare-official-photos.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

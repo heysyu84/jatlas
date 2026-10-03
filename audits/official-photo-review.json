@@ -1,0 +1,41 @@
+{
+  "reviewedAt": "2026-10-03",
+  "sources": {
+    "miyazaki": {
+      "terms": "https://www.kanko-miyazaki.jp/business/photo/guide",
+      "websiteUse": "Tourism promotion on websites allowed; non-degrading edits allowed; no raw image redistribution.",
+      "credit": "宮崎県観光協会",
+      "delivery": "Build-time download, verified SHA256, web-sized derivative deployed with website only; source and generated images excluded from git."
+    },
+    "toyama": {
+      "terms": "https://www.info-toyama.com/business/images/guide",
+      "websiteUse": "Tourism promotion permitted only within submitted application purpose; download application required; reuse requires reapplication.",
+      "status": "application-required; no application submitted"
+    }
+  },
+  "places": {
+    "3409": {
+      "status": "selected-for-deployment",
+      "source": "https://www.kanko-miyazaki.jp/business/photo/472",
+      "filename": "都井岬5",
+      "sourceWidth": 2305,
+      "sourceHeight": 1533,
+      "review": "Horses, pasture, bay and coastline visible; 16:9 center crop retains primary horse. First acceptable official-library candidate selected.",
+      "src": "images/official/miyazaki-toi-472.webp"
+    },
+    "4704": {
+      "status": "awaiting-download-application",
+      "source": "https://www.info-toyama.com/business/images/1365",
+      "filename": "雪の大谷ウォーク①",
+      "sourceWidth": 2100,
+      "sourceHeight": 1400,
+      "review": "Landscape preview shows snow corridor, bus and visitors; full-resolution file not acquired or reviewed.",
+      "rejected": [
+        "1364: portrait",
+        "1366: portrait"
+      ],
+      "applicationPurpose": "訪日旅行情報サイト「Jatlas」（https://heysyu84.github.io/jatlas/）にて、富山県への誘客を目的とした立山黒部アルペンルートの紹介に使用。観光地一覧・詳細ページ・同スポットに連動する旅程サムネイルに掲載予定。サイト表示用に縮小・WebP変換し、画面比率に応じてトリミングします。原本の再配布・販売は行いません。",
+      "applicationSent": false
+    }
+  }
+}
