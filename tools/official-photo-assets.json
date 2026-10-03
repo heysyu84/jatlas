@@ -7,6 +7,14 @@
       "output": "images/official/miyazaki-toi-472.webp",
       "source": "https://www.kanko-miyazaki.jp/business/photo/472",
       "terms": "https://www.kanko-miyazaki.jp/business/photo/guide"
+    },
+    {
+      "foodName": "미즈타키",
+      "download": "https://www.crossroadfukuoka.jp/downloads/photo/222",
+      "sha256": "c190685ad943b94b670658f83acc065fa5bcd731ae0d4cb2dce49149e54eb1f8",
+      "output": "images/official/fukuoka-mizutaki-222.webp",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/222",
+      "terms": "https://www.crossroadfukuoka.jp/en/photo/guide"
     }
   ]
 }

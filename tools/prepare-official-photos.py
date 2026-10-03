@@ -41,7 +41,7 @@ def prepare():
             temporary = output.with_suffix('.tmp')
             image.save(temporary, format='WEBP', quality=84)
             temporary.replace(output)
-            print(f"Prepared place {photo['placeId']}: {image.width}x{image.height}")
+            print(f"Prepared {photo.get('placeId', photo.get('foodName'))}: {image.width}x{image.height}")
 
 
 if __name__ == '__main__':
