@@ -40,7 +40,8 @@
       "allowUnpinned": true,
       "output": "images/licensed/fukuoka-nanzoin-37986553175.webp",
       "source": "https://www.flickr.com/photos/traveloriented/37986553175/",
-      "terms": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "flickrAuthorSlug": "traveloriented"
     },
     {
       "placeId": 3203,
@@ -50,7 +51,8 @@
       "allowUnpinned": true,
       "output": "images/licensed/kumamoto-kumamon-square-23716539709.webp",
       "source": "https://www.flickr.com/photos/othree/23716539709/",
-      "terms": "https://creativecommons.org/licenses/by/2.0/"
+      "terms": "https://creativecommons.org/licenses/by/2.0/",
+      "flickrAuthorSlug": "othree"
     },
     {
       "foodName": "이십세기배",

@@ -37,8 +37,10 @@ def resolve_download(photo):
     web_page = str(metadata.get('web_page', ''))
     if str(photo_id) not in web_page:
         raise ValueError(f"Flickr photo identity changed: {photo['source']}")
-    if metadata.get('author_name') != photo.get('author'):
-        raise ValueError(f"Flickr author changed: {photo['source']}")
+    author_slug = photo.get('flickrAuthorSlug')
+    author_url = str(metadata.get('author_url', ''))
+    if author_slug and f'/photos/{author_slug}' not in author_url:
+        raise ValueError(f"Flickr author account changed: {photo['source']}")
     expected_license = photo.get('expectedLicenseId')
     actual_license = metadata.get('license_id')
     if expected_license is not None and actual_license is not None and int(actual_license) != int(expected_license):
