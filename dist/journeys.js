@@ -25,14 +25,15 @@ routeTemplates.push(
 let plans=[],activePlanId='',selectedRoute='',hubPref='전체',pendingPlace=null,lastDeleted=null;
 const uid=()=>globalThis.crypto?.randomUUID?.()||'p'+Date.now().toString(36)+Math.random().toString(36).slice(2);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s));
+const validDate=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s+'T00:00:00Z'))&&new Date(s+'T00:00:00Z').toISOString().slice(0,10)===s;
+const validTime=s=>typeof s==='string'&&/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(s);
 function cleanPlan(p,renew=false){
  if(!p||typeof p!=='object'||typeof p.name!=='string'||!Array.isArray(p.days)||!p.days.length||p.days.length>30)throw Error('invalid plan');
  return {id:renew?uid():String(p.id||uid()).slice(0,90),name:p.name.slice(0,120),start:validDate(p.start)?p.start:'',notes:String(p.notes||'').slice(0,5000),days:p.days.map(d=>{
   if(!d||!Array.isArray(d.items)||d.items.length>60)throw Error('invalid day');
-  return {label:String(d.label||'').slice(0,100),items:d.items.map(i=>{if(!i||typeof i.name!=='string')throw Error('invalid item');return {id:uid(),name:i.name.slice(0,180),placeId:Number.isInteger(i.placeId)&&samples.some(p=>p.id===i.placeId)?i.placeId:null,time:/^\d{2}:\d{2}$/.test(i.time)?i.time:'',note:String(i.note||'').slice(0,3000)}})};}),updated:new Date().toISOString()};
+  return {label:String(d.label||'').slice(0,100),items:d.items.map(i=>{if(!i||typeof i.name!=='string')throw Error('invalid item');return {id:uid(),name:i.name.slice(0,180),placeId:Number.isInteger(i.placeId)&&samples.some(p=>p.id===i.placeId)?i.placeId:null,time:validTime(i.time)?i.time:'',note:String(i.note||'').slice(0,3000)}})};}),updated:new Date().toISOString()};
 }
-try{const raw=JSON.parse(localStorage.getItem('japlan-plans-v1')||'[]');if(Array.isArray(raw))plans=raw.slice(0,30).map(p=>cleanPlan(p))}catch{}
+try{const raw=JSON.parse(localStorage.getItem('japlan-plans-v1')||'[]');if(Array.isArray(raw))plans=raw.slice(0,30).flatMap(p=>{try{return [cleanPlan(p)]}catch{return []}})}catch{}
 function savePlans(){try{localStorage.setItem('japlan-plans-v1',JSON.stringify(plans));return true}catch{toast('저장 공간을 사용할 수 없습니다. 파일로 내보내 주세요.');return false}}
 function toast(message,undo=false){const box=$('#appToast');box.hidden=false;box.replaceChildren(document.createTextNode(message));if(undo)box.append(button('되돌리기',()=>{if(lastDeleted){plans.push(lastDeleted);activePlanId=lastDeleted.id;lastDeleted=null;savePlans();renderPlans();box.hidden=true}}));clearTimeout(toast.timer);toast.timer=setTimeout(()=>box.hidden=true,6000);if(typeof localize==='function')localize()}
 function toggleMenu(force){const menu=$('#siteMenu'),open=force??!menu.open;if(open){menu.showModal();$('#menuToggle').setAttribute('aria-expanded','true')}else{menu.close();$('#menuToggle').setAttribute('aria-expanded','false')}}
@@ -43,7 +44,7 @@ function showRegions(){state.view='regions';close();render();window.scrollTo?.({
 function renderRegions(){const host=$('#regionHub');host.innerHTML='<p class="eyebrow">REGIONS</p><h1>지역별 탐색</h1><p>지방별 목록에서 도도부현으로 바로 이동하세요.</p>';const grid=document.createElement('div');grid.className='regionDirectory';for(const [name,prefs] of regions){const section=document.createElement('section');section.append(button(name,()=>selectRegion(name),'regionHeading'));const list=document.createElement('div');list.className='chiprow';for(const pref of prefs.split(' '))list.append(button(pref,()=>{contentTab='places';go(pref)}));section.append(list);grid.append(section)}host.append(grid)}
 function showEvents(){hubPref='전체';eventMonth=0;state.view='events';close();render();window.scrollTo?.({top:0,behavior:'smooth'})}
 function showRoutes(){selectedRoute='';hubPref='전체';routeLength='전체';state.view='routes';close();render();window.scrollTo?.({top:0,behavior:'smooth'})}
-function showPlans(){state.view='plans';close();render();window.scrollTo?.({top:0,behavior:'smooth'})}
+function showPlans(){targetPlanId='';targetDay=0;state.view='plans';close();render();window.scrollTo?.({top:0,behavior:'smooth'})}
 function scopeSelect(value,onchange){const select=document.createElement('select');select.setAttribute('aria-label','지역 선택');for(const pref of ['전체',...allPrefs])select.append(new Option(pref,pref));select.value=value;select.onchange=e=>onchange(e.target.value);return select}
 function eventHubImage(pref,event){
  const area=event?.area&&!event.area.endsWith('전역')?event.area:pref;

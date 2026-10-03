@@ -1,0 +1,26 @@
+/* Plan persistence and import regression checks; no browser layout assertions. */
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path'),os=require('node:os');
+const inventory=path.join(os.tmpdir(),'jatlas-plan-test-'+process.pid+'.json');
+process.argv[2]=inventory;
+const {ctx}=require('./audit-content.cjs');
+fs.unlinkSync(inventory);
+const run=s=>vm.runInContext(s,ctx);
+assert.equal(run("validDate('2026-02-31')"),false);
+assert.equal(run("validDate('2024-02-29')"),true);
+assert.equal(run("validDate('2026-02-29')"),false);
+assert.equal(run("validTime('99:99')"),false);
+assert.equal(run("validTime('23:59')"),true);
+run("renderPlans=()=>{};renderJourneys=()=>{};showPlanAdded=()=>{};plans=[];activePlanId='';");
+run("const testId=newPlan(null,true);addPlaceToDay(testId,0,samples[0].id);addPlaceToDay(testId,0,samples[0].id);");
+assert.equal(run('activePlan().days[0].items.length'),1);
+assert.equal(run("JSON.parse(localStorage.getItem('japlan-plans-v1'))[0].days[0].items.length"),1);
+run("targetPlanId=testId;targetDay=12;showPlans()");
+assert.equal(run('targetPlanId'),'');assert.equal(run('targetDay'),0);
+const source=fs.readFileSync(path.resolve(__dirname,'../dist/journeys.js'),'utf8');
+const load=source.split('\n').find(line=>line.startsWith('try{const raw=JSON.parse(localStorage'));
+run("localStorage.setItem('japlan-plans-v1',JSON.stringify([activePlan(),{name:'broken',days:null}]));plans=[];");
+run(load);assert.equal(run('plans.length'),1);
+const cleaned=run("cleanPlan({name:'bad inputs',start:'2026-02-31',days:[{items:[{name:'custom',time:'24:00',placeId:-1}]}]})");
+assert.equal(cleaned.start,'');assert.equal(cleaned.days[0].items[0].time,'');assert.equal(cleaned.days[0].items[0].placeId,null);
+assert.equal(run('routeTemplates.flatMap(r=>r.days.flatMap(d=>(d.places||[]).filter(id=>!samples.some(p=>p.id===id)))).length'),0);
+console.log('PASS: dates, times, duplicate prevention, persistence, target reset, damaged-plan recovery, route references');
