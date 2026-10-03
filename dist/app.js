@@ -39,7 +39,35 @@ function openDetail(p){if(!placeMatches(p))placeTheme='전체';if(state.view!=='
 function updateSave(){$('#savePlace').textContent=saved.includes(selected.id)?'✓ 관심 장소에 저장됨 · 해제':'♡ 관심 장소에 저장'}
 function renderSaved(){const list=$('#savedList');list.replaceChildren();const points=samples.filter(p=>saved.includes(p.id));if(!points.length){list.innerHTML='<div class="empty">아직 저장한 장소가 없습니다. 지역에서 장소를 열어 저장해보세요.</div>';return}for(const key of [...new Set(points.map(p=>p.pref+' · '+p.area))]){const group=document.createElement('div');group.className='savedgroup';const h=document.createElement('h2');h.textContent=key;const grid=document.createElement('div');grid.className='cards';grid.append(...points.filter(p=>p.pref+' · '+p.area===key).map(card));group.append(h,grid);list.append(group)}}
 for(const [name,prefs] of regions){const d=document.createElement('details');d.open=true;const s=document.createElement('summary');s.textContent=name;const box=document.createElement('div');box.className='pref';box.append(...prefs.split(' ').map(p=>button(p,()=>go(p))));d.append(s,box);$('#nav').append(d);}
-$('#prefSwitch').append(...allPrefs.map(p=>new Option(p,p)));$('#mobilePrefSwitch').append(...allPrefs.map(p=>new Option(p,p)));$('#prefSwitch').onchange=e=>go(e.target.value);$('#mobilePrefSwitch').onchange=e=>go(e.target.value);$('#home').onclick=home;$('#brand').onclick=e=>{e.preventDefault();home()};$('#savedToggle').onclick=()=>{state.view=state.view==='saved'?'home':'saved';close();render()};$('#closeDetail').onclick=close;document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(typeof dismissDetail==='function')dismissDetail();else close()}});$('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase(),r=$('#searchResults');r.replaceChildren();if(!q)return;const hits=allPrefs.filter(p=>(p+' '+translateText(p)).toLowerCase().includes(q)).map(p=>button(p,()=>{go(p);clearSearch()},'searchhit'));for(const p of samples.filter(p=>(p.name+' '+p.town+' '+p.area+' '+translateText(p.name+' '+p.town+' '+p.area,true)).toLowerCase().includes(q))){const b=button('',()=>{go(p.pref,p.area,p.town);openDetail(p);clearSearch()},'searchhit');b.textContent=p.name;const small=document.createElement('small');small.textContent=p.pref+' · '+p.town;b.append(small);hits.push(b)}for(const [prefId,ms] of Object.entries(municipalIndex)){for(const m of ms){if(!(municipalName(m)+' '+m.name).toLowerCase().includes(q))continue;const pref=prefNames[Number(prefId)],b=button('',()=>{contentTab='places';go(pref,municipalName(m));clearSearch()},'searchhit');const n=document.createElement('span');n.dataset.municipalityId=m.id;n.textContent=municipalName(m);const small=document.createElement('small');small.textContent=pref;b.append(n,small);if(typeof markMunicipalityContent==='function')markMunicipalityContent(b,pref,m);hits.push(b)}}r.append(...hits.slice(0,12));localize();if(!hits.length)r.innerHTML='<p class="searchEmpty">등록된 예시가 없습니다. 현 이름으로 찾아보세요.</p>'};$('#resetMap').onclick=()=>{selected=null;renderMaps(true)};$('#placesTab').onclick=()=>{contentTab='places';render()};$('#eventsTab').onclick=()=>{contentTab='events';render()};
+$('#prefSwitch').append(...allPrefs.map(p=>new Option(p,p)));$('#mobilePrefSwitch').append(...allPrefs.map(p=>new Option(p,p)));$('#prefSwitch').onchange=e=>go(e.target.value);$('#mobilePrefSwitch').onchange=e=>go(e.target.value);$('#home').onclick=home;$('#brand').onclick=e=>{e.preventDefault();home()};$('#savedToggle').onclick=()=>{state.view=state.view==='saved'?'home':'saved';close();render()};$('#closeDetail').onclick=close;document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(typeof dismissDetail==='function')dismissDetail();else close()}});$('#search').oninput=e=>{
+ const q=e.target.value.trim().toLowerCase(),r=$('#searchResults');r.replaceChildren();if(!q)return;
+ const hits=allPrefs.filter(p=>(p+' '+translateText(p)).toLowerCase().includes(q)).map(p=>button(p,()=>{go(p);clearSearch()},'searchhit'));
+ for(const p of samples.filter(p=>(p.name+' '+p.town+' '+p.area+' '+translateText(p.name+' '+p.town+' '+p.area,true)).toLowerCase().includes(q))){
+  const b=button('',()=>{go(p.pref,p.area,p.town);openDetail(p);clearSearch()},'searchhit');b.textContent=p.name;
+  const small=document.createElement('small');small.textContent=p.pref+' · '+p.town;b.append(small);hits.push(b);
+ }
+ if(typeof foodsForPref==='function'){
+  for(const pref of allPrefs){
+   for(const food of foodsForPref(pref)||[]){
+    const foodSearch=(String(food.name||'')+' '+String(food.kind||'')+' '+translateText(String(food.name||'')+' '+String(food.kind||''),true)).toLowerCase();
+    if(!foodSearch.includes(q))continue;
+    const b=button('',()=>{contentTab='foods';go(pref,food.area||'전체');clearSearch()},'searchhit');b.textContent=food.name;
+    const small=document.createElement('small');
+    small.textContent=(language==='ja'?'グルメ':'음식')+' · '+translateText(pref)+(food.area?' · '+translateText(food.area):'');
+    b.append(small);hits.push(b);
+   }
+  }
+ }
+ for(const [prefId,ms] of Object.entries(municipalIndex)){for(const m of ms){
+  if(!(municipalName(m)+' '+m.name).toLowerCase().includes(q))continue;
+  const pref=prefNames[Number(prefId)],b=button('',()=>{contentTab='places';go(pref,municipalName(m));clearSearch()},'searchhit');
+  const n=document.createElement('span');n.dataset.municipalityId=m.id;n.textContent=municipalName(m);
+  const small=document.createElement('small');small.textContent=pref;b.append(n,small);
+  if(typeof markMunicipalityContent==='function')markMunicipalityContent(b,pref,m);hits.push(b)
+ }}
+ r.append(...hits.slice(0,12));localize();
+ if(!hits.length)r.innerHTML='<p class="searchEmpty">등록된 예시가 없습니다. 현 이름으로 찾아보세요.</p>'
+};$('#resetMap').onclick=()=>{selected=null;renderMaps(true)};$('#placesTab').onclick=()=>{contentTab='places';render()};$('#eventsTab').onclick=()=>{contentTab='events';render()};
 function clearSearch(){$('#search').value='';$('#searchResults').replaceChildren()}render();
 
 function renderContent(){
