@@ -27,12 +27,23 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "src": "images/qa/a8f44cf2772f70af18ac.webp",
       "review": "subject-metadata-and-16:9-center-crop-reviewed"
+    },
+    "4704": {
+      "filename": "立山雪の大谷20220507-IMG 2206.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%AB%8B%E5%B1%B1%E9%9B%AA%E3%81%AE%E5%A4%A7%E8%B0%B720220507-IMG_2206.jpg",
+      "width": 1280,
+      "height": 854,
+      "author": "くろふね",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "立山雪の大谷",
+      "src": "images/qa/04cf63d541def45b62e7.webp",
+      "review": "subject-license-landscape-and-16:9-center-crop-reviewed"
     }
   },
   "pending": {
     "3409": "Foreground horse legs cut in center crop; follow-up returned no eligible candidates.",
-    "2908": "Both searches returned no eligible landscape candidates. Existing cave interior remains.",
-    "4704": "Bus-focused, close-up snow wall or sign-dominated candidates did not improve representative composition."
+    "2908": "Both searches returned no eligible landscape candidates. Existing cave interior remains."
   },
   "searches": {
     "2903": {
@@ -228,5 +239,23 @@
         }
       ]
     }
+  },
+  "followUp20261003": {
+    "target": "4704",
+    "policy": "No individual usage application; Japanese web search first, explicit reuse license required.",
+    "selected": {
+      "filename": "立山雪の大谷20220507-IMG 2206.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%AB%8B%E5%B1%B1%E9%9B%AA%E3%81%AE%E5%A4%A7%E8%B0%B720220507-IMG_2206.jpg",
+      "width": 1280,
+      "height": 854,
+      "author": "くろふね",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "立山雪の大谷",
+      "src": "images/qa/04cf63d541def45b62e7.webp",
+      "review": "subject-license-landscape-and-16:9-center-crop-reviewed"
+    },
+    "previousOfficialCandidate": "https://www.info-toyama.com/business/images/1365",
+    "previousOfficialCandidateStatus": "not used; application required"
   }
 }

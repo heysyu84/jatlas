@@ -24,7 +24,7 @@
       "src": "images/official/miyazaki-toi-472.webp"
     },
     "4704": {
-      "status": "awaiting-download-application",
+      "status": "superseded-by-no-application-photo",
       "source": "https://www.info-toyama.com/business/images/1365",
       "filename": "雪の大谷ウォーク①",
       "sourceWidth": 2100,
@@ -35,7 +35,10 @@
         "1366: portrait"
       ],
       "applicationPurpose": "訪日旅行情報サイト「Jatlas」（https://heysyu84.github.io/jatlas/）にて、富山県への誘客を目的とした立山黒部アルペンルートの紹介に使用。観光地一覧・詳細ページ・同スポットに連動する旅程サムネイルに掲載予定。サイト表示用に縮小・WebP変換し、画面比率に応じてトリミングします。原本の再配布・販売は行いません。",
-      "applicationSent": false
+      "applicationSent": false,
+      "replacementSource": "https://commons.wikimedia.org/wiki/File:%E7%AB%8B%E5%B1%B1%E9%9B%AA%E3%81%AE%E5%A4%A7%E8%B0%B720220507-IMG_2206.jpg",
+      "applicationRequiredForReplacement": false,
+      "note": "User requested sources requiring no application; Toyama candidate not used. CC BY 4.0 replacement applied, with attribution and WebP/resizing notice."
     }
   }
 }
