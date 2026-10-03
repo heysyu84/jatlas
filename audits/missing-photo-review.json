@@ -1,6 +1,36 @@
 {
   "reviewedAt": "2026-10-03",
   "places": {
+    "507": {
+      "filename": "The Railway Museum 20080614.jpg",
+      "src": "images/licensed/saitama-railway-museum-507.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Railway_Museum_20080614.jpg",
+      "author": "kanegen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "User-approved interior view of the Railway Museum in Saitama.",
+      "review": "user-approved-and-license-reviewed"
+    },
+    "518": {
+      "filename": "首都圏外郭放水路(調圧水槽と立坑).jpg",
+      "src": "images/licensed/saitama-g-cans-518.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:首都圏外郭放水路(調圧水槽と立坑).jpg",
+      "author": "Souka Kinmei",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "User-approved pressure-adjusting tank and shaft view of the Metropolitan Area Outer Underground Discharge Channel.",
+      "review": "user-approved-and-license-reviewed"
+    },
+    "1208": {
+      "filename": "Okiku Daibutsu Cherry Blossoms.jpg",
+      "src": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Okiku_Daibutsu_Cherry_Blossoms.jpg",
+      "author": "Manish Prabhune",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "User-approved Ushiku Daibutsu with cherry blossoms; landscape crop.",
+      "review": "user-approved-buddha-cherry-blossom-crop"
+    },
     "2906": {
       "filename": "Ginormous reclining Buddha at Nanzoin Temple",
       "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
@@ -10,6 +40,16 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "description": "Nanzoin Temple reclining Buddha (Nehanzo), Sasaguri, Fukuoka.",
       "review": "user-approved-reclining-buddha-and-license-reviewed"
+    },
+    "2908": {
+      "filename": "Keya Oto",
+      "src": "images/official/fukuoka-keya-oto-424.webp",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/424",
+      "author": "© Fukuoka Prefecture Tourism Association",
+      "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+      "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+      "description": "User-approved official aerial overview of Keya Oto, photo ID 424.",
+      "review": "user-approved-official-photo-424"
     },
     "2911": {
       "filename": "Munakata Taisha Nakatsumiya Shrine",
@@ -42,6 +82,16 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "description": "User-approved Kumamon stage photo at Kumamon Square.",
       "review": "user-approved-stage-photo-and-license-reviewed"
+    },
+    "4003": {
+      "filename": "(JPN-Hokkaido) Hokkaido Shrine 2026-06-06.jpg",
+      "src": "images/licensed/hokkaido-shrine-4003.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:(JPN-Hokkaido)_Hokkaido_Shrine_2026-06-06.jpg",
+      "author": "S5A-0043",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "User-approved landscape photo of Hokkaido Shrine.",
+      "review": "user-approved-and-license-reviewed"
     }
   },
   "foods": {
@@ -65,16 +115,49 @@
       "licenseUrl": "https://sanin-geo.jp/gaia/wp-content/uploads/2025/09/889ac7991f134ad80adde08ab0218e9c.pdf",
       "description": "San’in Kaigan Geopark official free material showing Tottori Nijisseiki pears.",
       "review": "user-approved-official-free-material-and-terms-reviewed"
+    },
+    "이모니": {
+      "filename": "芋煮会",
+      "src": "images/official/yamagata-imoni-154.webp",
+      "source": "https://yamagatakanko.com/photos/detail_154.html",
+      "author": "山形県・写真提供者",
+      "license": "観光宣伝・販売促進・観光出版物での利用・編集可",
+      "licenseUrl": "https://yamagatakanko.com/photos/detail_154.html",
+      "description": "User-approved official Yamagata tourism photo ID 154.",
+      "review": "user-approved-official-photo-154"
+    },
+    "오시마 우유·아시타바 간식": {
+      "filename": "ソフトクリーム",
+      "src": "images/official/tokyo-oshima-milk-soft.webp",
+      "source": "https://oshima-photo.com/type_library/20240313-2/",
+      "author": "東京都大島町 / 伊豆大島写真館",
+      "license": "伊豆大島写真館 利用規約（改変・Web利用可）",
+      "licenseUrl": "https://oshima-photo.com/",
+      "description": "User-approved official Oshima milk soft-serve photo.",
+      "review": "user-approved-official-oshima-photo"
+    },
+    "도사 아카우시": {
+      "filename": "写真：土佐あかうし",
+      "src": "images/official/kochi-tosa-akaushi.webp",
+      "source": "https://www.jpo.go.jp/system/trademark/gaiyo/chidan/shoukai/ichiran/6478407.html",
+      "author": "特許庁",
+      "license": "公共データ利用規約 第1.0版 (PDL1.0)",
+      "licenseUrl": "https://www.jpo.go.jp/toppage/about/index.html",
+      "description": "User-approved JPO Tosa Akaushi image, cropped to the upper raw-beef portion.",
+      "review": "user-approved-jpo-pdl1-top-crop"
+    },
+    "요부코 오징어 활어회": {
+      "filename": "Ika-sashi 01.JPG",
+      "src": "images/licensed/saga-yobuko-ika-sashi.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ika-sashi_01.JPG",
+      "author": "Miya.m",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "User-approved representative live squid sashimi photo.",
+      "review": "user-approved-live-squid-sashimi-and-license-reviewed"
     }
   },
-  "pending": {
-    "place:1208": "Previous Commons candidates: gate, aerial and rear view rejected. No suitable selection yet.",
-    "place:2908": "Official Fukuoka photo 424 rejected as aerial view.",
-    "food:이모니": "Commons candidates depict festival or Sendai-style soup. MAFF Yamagata page explicitly prohibits downloading dish photographs.",
-    "food:오시마 우유·아시타바 간식": "Certificate and unrelated/no matching imagery rejected.",
-    "food:도사 아카우시": "No verified dish-and-beef-origin candidate.",
-    "food:요부코 오징어 활어회": "Dried squid is not live squid sashimi. Saga gallery candidate found but not acquired or approved."
-  },
+  "pending": {},
   "sourcePolicy": {
     "url": "https://www.crossroadfukuoka.jp/en/photo/guide",
     "applicationRequired": false,
@@ -97,5 +180,24 @@
       "rawRedistribution": false,
       "delivery": "Build-time website-only derivative"
     }
+  },
+  "approvedRecovery": {
+    "note": "Recovered all 12 user-approved selections; 3 were already live and 9 were previously omitted during queue reconciliation.",
+    "appliedPlaceIds": [
+      4003,
+      507,
+      518,
+      1208,
+      2906,
+      2908,
+      3203
+    ],
+    "appliedFoods": [
+      "이모니",
+      "오시마 우유·아시타바 간식",
+      "이십세기배",
+      "도사 아카우시",
+      "요부코 오징어 활어회"
+    ]
   }
 }

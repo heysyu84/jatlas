@@ -65,6 +65,92 @@
       "output": "images/licensed/tottori-nijisseiki-pear.webp",
       "source": "https://sanin-geo.jp/resrources-tottori/",
       "terms": "https://sanin-geo.jp/gaia/wp-content/uploads/2025/09/889ac7991f134ad80adde08ab0218e9c.pdf"
+    },
+    {
+      "placeId": 4003,
+      "commonsFilename": "(JPN-Hokkaido) Hokkaido Shrine 2026-06-06.jpg",
+      "allowUnpinned": true,
+      "output": "images/licensed/hokkaido-shrine-4003.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:(JPN-Hokkaido)_Hokkaido_Shrine_2026-06-06.jpg",
+      "terms": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "placeId": 507,
+      "commonsFilename": "The Railway Museum 20080614.jpg",
+      "allowUnpinned": true,
+      "output": "images/licensed/saitama-railway-museum-507.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Railway_Museum_20080614.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "placeId": 518,
+      "commonsFilename": "首都圏外郭放水路(調圧水槽と立坑).jpg",
+      "allowUnpinned": true,
+      "output": "images/licensed/saitama-g-cans-518.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:首都圏外郭放水路(調圧水槽と立坑).jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "placeId": 1208,
+      "commonsFilename": "Okiku Daibutsu Cherry Blossoms.jpg",
+      "allowUnpinned": true,
+      "cropRatio": 1.7777777778,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "output": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Okiku_Daibutsu_Cherry_Blossoms.jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "placeId": 2908,
+      "download": "https://www.crossroadfukuoka.jp/downloads/photo/424",
+      "allowUnpinned": true,
+      "output": "images/official/fukuoka-keya-oto-424.webp",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/424",
+      "terms": "https://www.crossroadfukuoka.jp/en/photo/guide"
+    },
+    {
+      "foodName": "이모니",
+      "imagePage": "https://yamagatakanko.com/photos/detail_154.html",
+      "imageAltContains": "芋煮会",
+      "allowUnpinned": true,
+      "output": "images/official/yamagata-imoni-154.webp",
+      "source": "https://yamagatakanko.com/photos/detail_154.html",
+      "terms": "https://yamagatakanko.com/photos/detail_154.html"
+    },
+    {
+      "foodName": "오시마 우유·아시타바 간식",
+      "imagePage": "https://oshima-photo.com/type_library/20240313-2/",
+      "imageAltContains": "img",
+      "allowUnpinned": true,
+      "cropRatio": 1.5,
+      "cropX": 0.5,
+      "cropY": 0.45,
+      "output": "images/official/tokyo-oshima-milk-soft.webp",
+      "source": "https://oshima-photo.com/type_library/20240313-2/",
+      "terms": "https://oshima-photo.com/",
+      "minHeight": 500
+    },
+    {
+      "foodName": "도사 아카우시",
+      "imagePage": "https://www.jpo.go.jp/system/trademark/gaiyo/chidan/shoukai/ichiran/6478407.html",
+      "imageAltContains": "土佐あかうし",
+      "allowUnpinned": true,
+      "cropRatio": 1.7777777778,
+      "cropX": 0.5,
+      "cropY": 0,
+      "output": "images/official/kochi-tosa-akaushi.webp",
+      "source": "https://www.jpo.go.jp/system/trademark/gaiyo/chidan/shoukai/ichiran/6478407.html",
+      "terms": "https://www.jpo.go.jp/toppage/about/index.html",
+      "minHeight": 450
+    },
+    {
+      "foodName": "요부코 오징어 활어회",
+      "commonsFilename": "Ika-sashi 01.JPG",
+      "allowUnpinned": true,
+      "output": "images/licensed/saga-yobuko-ika-sashi.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ika-sashi_01.JPG",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   ]
 }

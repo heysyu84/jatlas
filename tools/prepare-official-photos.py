@@ -6,6 +6,8 @@ build so Pages retains its previously successful deployment instead of a broken 
 import hashlib
 import io
 import json
+import html as html_module
+from html.parser import HTMLParser
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -22,7 +24,74 @@ def fetch_json(url):
         return json.loads(response.read(1024 * 1024).decode('utf-8'))
 
 
+def fetch_text(url):
+    request = urllib.request.Request(
+        url,
+        headers={
+            'User-Agent': 'Mozilla/5.0 (compatible; Jatlas tourism website photo build/1.0)',
+            'Accept-Language': 'ja,en;q=0.8',
+        },
+    )
+    with urllib.request.urlopen(request, timeout=45) as response:
+        return response.read(5 * 1024 * 1024).decode(response.headers.get_content_charset() or 'utf-8', errors='replace')
+
+
+class ImagePageParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.images = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() == 'img':
+            self.images.append(dict(attrs))
+
+
+def image_from_page(photo):
+    page = photo['imagePage']
+    parser = ImagePageParser()
+    parser.feed(fetch_text(page))
+    needle = str(photo.get('imageAltContains', '')).casefold()
+    candidates = []
+    for attrs in parser.images:
+        alt = str(attrs.get('alt', '')).casefold()
+        if needle and needle not in alt:
+            continue
+        source = attrs.get('data-src') or attrs.get('data-original') or attrs.get('src')
+        srcset = attrs.get('data-srcset') or attrs.get('srcset')
+        if srcset:
+            parts = [part.strip().split()[0] for part in srcset.split(',') if part.strip()]
+            if parts:
+                source = parts[-1]
+        if source and not str(source).startswith('data:'):
+            candidates.append(urllib.parse.urljoin(page, html_module.unescape(str(source))))
+    if not candidates:
+        raise ValueError(f"No matching image found on source page: {page}")
+    return candidates[0]
+
+
+def crop_to_ratio(image, ratio, anchor_x=0.5, anchor_y=0.5):
+    ratio = float(ratio)
+    anchor_x = min(1.0, max(0.0, float(anchor_x)))
+    anchor_y = min(1.0, max(0.0, float(anchor_y)))
+    current = image.width / image.height
+    if abs(current - ratio) < 0.001:
+        return image
+    if current > ratio:
+        new_width = max(1, int(round(image.height * ratio)))
+        left = int(round((image.width - new_width) * anchor_x))
+        return image.crop((left, 0, left + new_width, image.height))
+    new_height = max(1, int(round(image.width / ratio)))
+    top = int(round((image.height - new_height) * anchor_y))
+    return image.crop((0, top, image.width, top + new_height))
+
+
 def resolve_download(photo):
+    if photo.get('commonsFilename'):
+        filename = urllib.parse.quote(photo['commonsFilename'], safe='')
+        return f'https://commons.wikimedia.org/wiki/Special:Redirect/file/{filename}?width=1600'
+    if photo.get('imagePage'):
+        return image_from_page(photo)
+
     photo_id = photo.get('flickrPhotoId')
     if not photo_id:
         return photo['download']
@@ -80,6 +149,13 @@ def prepare():
 
         with Image.open(io.BytesIO(raw)) as original:
             image = ImageOps.exif_transpose(original).convert('RGB')
+            if photo.get('cropRatio'):
+                image = crop_to_ratio(
+                    image,
+                    photo['cropRatio'],
+                    photo.get('cropX', 0.5),
+                    photo.get('cropY', 0.5),
+                )
             if not (1.25 <= image.width / image.height <= 1.85):
                 raise ValueError(f"Licensed photo must be a moderate landscape: {photo['source']}")
             min_width = int(photo.get('minWidth', 900))
