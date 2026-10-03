@@ -145,7 +145,8 @@
       "output": "images/official/kochi-tosa-akaushi.webp",
       "source": "https://www.jpo.go.jp/system/trademark/gaiyo/chidan/shoukai/ichiran/6478407.html",
       "terms": "https://www.jpo.go.jp/toppage/about/index.html",
-      "minHeight": 450
+      "minHeight": 236,
+      "minWidth": 420
     },
     {
       "foodName": "요부코 오징어 활어회",
