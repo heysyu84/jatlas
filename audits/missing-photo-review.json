@@ -1,6 +1,29 @@
 {
   "reviewedAt": "2026-10-03",
-  "places": {},
+  "places": {
+    "2911": {
+      "filename": "Munakata Taisha Nakatsumiya Shrine",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/429",
+      "width": 1280,
+      "height": 853,
+      "author": "© Fukuoka Prefecture Tourism Association",
+      "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+      "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+      "src": "images/official/fukuoka-nakatsumiya-429.webp",
+      "review": "subject-identity-landscape-and-16:9-center-crop-reviewed"
+    },
+    "2914": {
+      "filename": "Mt. Sarakura02",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/193",
+      "width": 1280,
+      "height": 853,
+      "author": "© Fukuoka Prefecture Tourism Association",
+      "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+      "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+      "src": "images/official/fukuoka-sarakura-193.webp",
+      "review": "subject-identity-landscape-and-16:9-center-crop-reviewed"
+    }
+  },
   "foods": {
     "미즈타키": {
       "filename": "Mizutaki (Chicken and Vegetable Hot Pot) (#1)",

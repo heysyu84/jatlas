@@ -33,6 +33,12 @@ for key, reason in visual['places'].items():
     reasons['place:' + key].add('visual: ' + reason)
 for key, reason in visual['foods'].items():
     reasons['food:' + key].add('visual: ' + reason)
+# Include manually held targets even when absent from the original audit.
+for file in audit.glob('*photo-review.json'):
+    data = json.loads(file.read_text())
+    for key, reason in data.get('pending', {}).items():
+        target = key if ':' in key else 'place:' + key
+        reasons[target].add('held: ' + str(reason))
 for item in old['entries']:
     key = 'place:' + str(item['id']) if item['kind'] == 'place' else 'food:' + item['name']
     for flag in item['flags']:

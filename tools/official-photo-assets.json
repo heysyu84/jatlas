@@ -15,6 +15,22 @@
       "output": "images/official/fukuoka-mizutaki-222.webp",
       "source": "https://www.crossroadfukuoka.jp/en/photo/222",
       "terms": "https://www.crossroadfukuoka.jp/en/photo/guide"
+    },
+    {
+      "placeId": 2911,
+      "download": "https://www.crossroadfukuoka.jp/downloads/photo/429",
+      "sha256": "c594e2a4d852d1936c2ce452766977c2fa7bee3e9105b398f412507623e33919",
+      "output": "images/official/fukuoka-nakatsumiya-429.webp",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/429",
+      "terms": "https://www.crossroadfukuoka.jp/en/photo/guide"
+    },
+    {
+      "placeId": 2914,
+      "download": "https://www.crossroadfukuoka.jp/downloads/photo/193",
+      "sha256": "fb45b8ecdc5bdfdd5b986673f5e9fe8eb190fbffdec3f9e88a24962b6c08d979",
+      "output": "images/official/fukuoka-sarakura-193.webp",
+      "source": "https://www.crossroadfukuoka.jp/en/photo/193",
+      "terms": "https://www.crossroadfukuoka.jp/en/photo/guide"
     }
   ]
 }

@@ -2,14 +2,14 @@
   "updatedAt": "2026-10-03",
   "method": "Union of historical visual/quality candidates plus current missing photos and still-matching historical duplicate groups, minus explicitly reviewed current photo mappings. Fukushima excluded. This is a tracked review backlog, not confirmed defects or a fresh nationwide audit.",
   "summary": {
-    "trackedUniqueCandidates": 276,
-    "remainingCandidates": 246,
-    "remainingPlaces": 193,
+    "trackedUniqueCandidates": 278,
+    "remainingCandidates": 245,
+    "remainingPlaces": 192,
     "remainingFoods": 53,
     "missingPhotos": 8,
-    "resolvedTrackedCandidates": 23,
+    "resolvedTrackedCandidates": 26,
     "outsideScope": 7,
-    "currentReviewedItems": 57,
+    "currentReviewedItems": 59,
     "historicalDuplicateGroupsStillMatching": 16
   },
   "duplicateGroups": [
@@ -92,6 +92,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: No verified dish-and-beef-origin candidate.",
         "missing-photo"
       ],
       "review": null
@@ -103,6 +104,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Search candidate depicts a tram, not Kumamon Square.",
         "missing-photo",
         "visual: tram rather than Kumamon Square"
       ],
@@ -115,6 +117,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Certificate and unrelated/no matching imagery rejected.",
         "missing-photo",
         "visual: plant rather than food"
       ],
@@ -127,6 +130,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Pear museum interior candidates rejected; actual cultivar photo needed.",
         "missing-photo"
       ],
       "review": null
@@ -138,6 +142,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Dried squid is not live squid sashimi. Saga gallery candidate found but not acquired or approved.",
         "missing-photo"
       ],
       "review": null
@@ -149,6 +154,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Commons candidates depict festival or Sendai-style soup. MAFF Yamagata page explicitly prohibits downloading dish photographs.",
         "missing-photo"
       ],
       "review": null
@@ -160,6 +166,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Previous Commons candidates: gate, aerial and rear view rejected. No suitable selection yet.",
         "missing-photo",
         "visual: extreme panorama cuts off Buddha head"
       ],
@@ -172,6 +179,7 @@
       "src": null,
       "status": "needs-review",
       "reasons": [
+        "held: Category candidates showed subsidiary shrines, small statues and hall; representative reclining Buddha still needed.",
         "missing-photo",
         "visual: temple exterior lacks reclining Buddha"
       ],
@@ -1500,6 +1508,7 @@
       "src": "images/commons/e1a57d9778710e89.webp",
       "status": "needs-review",
       "reasons": [
+        "held: Saitama candidate carriage interiors too dark; Kyoto museum and pre-museum Omiya workshop candidates rejected.",
         "visual: water machine rather than museum"
       ],
       "review": null
@@ -1511,6 +1520,7 @@
       "src": "images/commons/fa32c2ae259816c4.webp",
       "status": "needs-review",
       "reasons": [
+        "held: Dark interior candidates and composite image rejected; sole-shaft image insufficient for main hall.",
         "previous-audit: dark",
         "visual: very dark interior"
       ],
@@ -2577,6 +2587,7 @@
       "src": "images/commons/fe78e89fea31f29a.webp",
       "status": "needs-review",
       "reasons": [
+        "held: Existing monochrome image needs replacement; first candidate roof too close to edge for card crop. No replacement applied.",
         "visual: historical monochrome photo"
       ],
       "review": null
@@ -2650,24 +2661,14 @@
       "review": null
     },
     {
-      "key": "place:2911",
-      "name": "오시마·무나카타타이샤 나카쓰구",
+      "key": "place:2908",
+      "name": "게야노오토",
       "pref": "후쿠오카",
-      "src": "images/commons/c7f241d1014bf788.webp",
+      "src": "images/commons/d86e444acf0320db.webp",
       "status": "needs-review",
       "reasons": [
-        "visual: dark forest instead of shrine"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:2914",
-      "name": "사라쿠라산",
-      "pref": "후쿠오카",
-      "src": "images/commons/57a704b614406d83.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
+        "held: Both searches returned no eligible landscape candidates. Existing cave interior remains.",
+        "held: Official Fukuoka photo 424 rejected as aerial view."
       ],
       "review": null
     },
@@ -2835,6 +2836,15 @@
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "representative-photo-review.json"
+    },
+    {
+      "key": "place:3409",
+      "name": "도이미사키",
+      "pref": "미야자키",
+      "src": "images/official/miyazaki-toi-472.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "official-photo-review.json"
     },
     {
       "key": "place:508",
@@ -3109,6 +3119,24 @@
       "name": "미즈타키",
       "pref": "후쿠오카",
       "src": "images/official/fukuoka-mizutaki-222.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
+      "key": "place:2911",
+      "name": "오시마·무나카타타이샤 나카쓰구",
+      "pref": "후쿠오카",
+      "src": "images/official/fukuoka-nakatsumiya-429.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
+      "key": "place:2914",
+      "name": "사라쿠라산",
+      "pref": "후쿠오카",
+      "src": "images/official/fukuoka-sarakura-193.webp",
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "missing-photo-review.json"
