@@ -82,8 +82,13 @@ def prepare():
             image = ImageOps.exif_transpose(original).convert('RGB')
             if not (1.25 <= image.width / image.height <= 1.85):
                 raise ValueError(f"Licensed photo must be a moderate landscape: {photo['source']}")
-            if image.width < 900 or image.height < 600:
-                raise ValueError(f"Licensed photo source resolution too low: {photo['source']}")
+            min_width = int(photo.get('minWidth', 900))
+            min_height = int(photo.get('minHeight', 600))
+            if image.width < min_width or image.height < min_height:
+                raise ValueError(
+                    f"Licensed photo source resolution too low ({image.width}x{image.height}; "
+                    f"need {min_width}x{min_height}): {photo['source']}"
+                )
             image.thumbnail((1280, 960), Image.Resampling.LANCZOS)
             output = (ROOT / 'dist' / photo['output']).resolve()
             if not any(output.is_relative_to(root) for root in allowed_roots):
