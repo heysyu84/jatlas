@@ -71,12 +71,30 @@ const filteredNear=near.filter(x=>{
   const s=[x.a.id,x.b.id].sort((a,b)=>a-b).join(',');
   return !exactNameSigs.has(s)&&!exactMapSigs.has(s);
 });
+const fuzzyNameCandidates=[];
+for(const [pref,arr] of byPref){
+  for(let i=0;i<arr.length;i++)for(let j=i+1;j<arr.length;j++){
+    const a=arr[i],b=arr[j];
+    if(a.id===b.id)continue;
+    const na=norm(a.name),nb=norm(b.name);
+    if(Math.min(na.length,nb.length)<4)continue;
+    const sim=similarity(a.name,b.name);
+    const contained=na.includes(nb)||nb.includes(na);
+    if(sim>=0.72||contained){
+      const pair=[a.id,b.id].sort((x,y)=>x-y).join(',');
+      if(exactNameSigs.has(pair)||exactMapSigs.has(pair))continue;
+      fuzzyNameCandidates.push({similarity:Number(sim.toFixed(2)),contained,a:pack([a])[0],b:pack([b])[0]});
+    }
+  }
+}
 const report={
   generatedAt:new Date().toISOString(),
   placeCount:places.length,
   exactNameGroups:exactName,
   exactMapQueryGroups:filteredExactMap,
-  nearCoordinateCandidates:filteredNear
+  nearCoordinateCandidates:filteredNear,
+  fuzzyNameCandidates,
+  shizuokaPlaces:pack(places.filter(p=>p.pref==='시즈오카'))
 };
 require('node:fs').writeFileSync('/tmp/duplicate-place-report.json',JSON.stringify(report,null,2)+'\n');
 console.log('DUPLICATE_PLACE_REPORT_BEGIN');
