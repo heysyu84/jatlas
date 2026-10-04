@@ -255,6 +255,30 @@
       "output": "images/official/aomori-sannai-4103.webp",
       "source": "https://www.tohokukanko.jp/photos/detail_2208.html",
       "terms": "https://www.tohokukanko.jp/photos/detail_2208.html"
+    },
+    {
+      "placeId": 4203,
+      "commonsFilename": "ArhatsMorioka.JPG",
+      "sha256": "963c9ce6df7ffb90420d26cb4921852aa886d9f4bc4b9dc22da23eec57044727",
+      "output": "images/licensed/iwate-hoonji-rakan-4203.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:ArhatsMorioka.JPG",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 4214,
+      "commonsFilename": "230729 Geibikei Ichinoseki Iwate pref Japan04s3.jpg",
+      "sha256": "1688dea8346e7d4053ef234978c9b740577032d4a14dc5ab0e58c013f35ca914",
+      "output": "images/licensed/iwate-geibikei-4214.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:230729_Geibikei_Ichinoseki_Iwate_pref_Japan04s3.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 4221,
+      "commonsFilename": "Kappa-buchi02s3872.jpg",
+      "sha256": "10eaecd25cede6ebe900c7447ff14da8ddbf3ff7806e01a12825e2235af96914",
+      "output": "images/licensed/iwate-kappabuchi-4221.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kappa-buchi02s3872.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.5/"
     }
   ]
 }
