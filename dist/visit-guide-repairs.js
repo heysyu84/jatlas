@@ -338,7 +338,7 @@ const repairs = {"checked":"2026.10.04",
 "307":{"access":{"ko":"JR 엔잔역 남쪽 출구에서 니시자와 계곡 방면 버스를 타고 ‘에린지마에’에서 하차합니다.","ja":"JR塩山駅南口から西沢渓谷方面のバスに乗り、「恵林寺前」で下車します。"},"source":"https://www.yamanashi-kankou.jp/kankou/spot/p1_4484.html"},
 "308":{"access":{"ko":"가와구치코역에서 가와구치호 주유버스 레드라인을 타고 ‘가와구치코 시젠세이카쓰칸’에서 하차합니다. 오이시 공원은 자연생활관 주변 호숫가에 있습니다.","ja":"河口湖駅から河口湖周遊バスのレッドラインに乗り、「河口湖自然生活館」で下車します。大石公園は自然生活館周辺の湖畔にあります。"},"source":"https://www.yamanashi-kankou.jp/english/explore-by-area/fujisan-fujigoko/flower-street-in-oishi-park.html"},
 "309":{"access":{"ko":"가와구치코역에서 가와구치호 북쪽 방면 노선버스를 타고 ‘가와구치쿄쿠마에’에서 하차한 뒤 신사로 걸어갑니다.","ja":"河口湖駅から河口湖北岸方面の路線バスに乗り、「河口局前」で下車して神社へ歩きます。"},"source":"https://www.yamanashi-kankou.jp/english/discover/kawaguchi-asama-shrine.html"},
-"310":{"access":{"ko":"가와구치코역에서 사이코 주유버스를 타고 ‘사이코 이야시노사토 넨바’에서 하차합니다. 공식 안내 기준 버스 이동은 약 40분입니다.","ja":"河口湖駅から西湖周遊バスに乗り、「西湖いやしの里根場」で下車します。公式案内ではバスの所要時間は約40分です。"},"source":"https://www.yamanashi-kankou.jp/kankou/spot/p2_2803.html"},
+
 "311":{"access":{"ko":"후지큐코선 시모요시다역에서 공원 입구까지 걸어갑니다. 입구에서 전망 지점까지는 계단이나 우회 산책로를 올라야 합니다.","ja":"富士急行線下吉田駅から公園入口へ歩きます。入口から展望地点までは階段または迂回する遊歩道を上ります。"},"source":"https://www.yamanashi-kankou.jp/english/explore-by-area/fujisan-fujigoko/cherry-blossom-arakurayama-sengen-park.html"},
 "312":{"access":{"ko":"후지산역에서 야마나카호 방면 버스를 타고 ‘센겐진자마에’에서 하차합니다. 역에서 걸어가는 방법도 있습니다.","ja":"富士山駅から山中湖方面のバスに乗り、「浅間神社前」で下車します。駅から歩く方法もあります。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/kitaguchi-hongu-fuji-sengen-shrine.html"},
 "313":{"access":{"ko":"후지산역에서 오시노 방면 버스를 타고 ‘오시노핫카이’에서 하차한 뒤 용천 연못을 도보로 둘러봅니다.","ja":"富士山駅から忍野方面のバスに乗り、「忍野八海」で下車して湧水池を徒歩で巡ります。"},"source":"https://www.yamanashi-kankou.jp/english/recover/oshino-hakkai.html"},
