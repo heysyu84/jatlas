@@ -17,8 +17,8 @@ s+='const photoQaLocal='+json.dumps(localized,ensure_ascii=False,separators=(','
 s+='const photoQaAliases='+json.dumps(aliases,ensure_ascii=False,separators=(',',':'))+';\n'
 s+='const photoQaContain=new Set('+json.dumps(sorted(contain),ensure_ascii=False)+');\n'
 s+='''const photoQaJapanese={'사진 준비 중':'写真準備中'};
-const photoQaPendingPlaces=new Set([1208,2906,3203]);
-const photoQaPendingFoods=new Set(['이모니','오시마 우유·아시타바 간식','이십세기배','도사 아카우시','미즈타키','요부코 오징어 활어회']);
+const photoQaPendingPlaces=new Set([]);
+const photoQaPendingFoods=new Set([]);
 function photoQaFilename(source){try{return decodeURIComponent((source||'').split('/wiki/File:')[1]||'').replaceAll('_',' ')}catch{return ''}}
 function photoQaSource(source){const name=photoQaFilename(source);return photoQaAliases[name]?'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(photoQaAliases[name].replaceAll(' ','_')):source}
 const photoQaSrcChanges=new Map();

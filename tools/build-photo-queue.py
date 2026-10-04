@@ -29,10 +29,17 @@ for file in audit.glob('*photo-review.json'):
             if value.get('src') and value['src'] == current.get(target, {}).get('src'):
                 reviewed[target] = file.name
 reasons = collections.defaultdict(set)
+previous_queue_path = audit / 'photo-queue.json'
+previous_queue = json.loads(previous_queue_path.read_text()) if previous_queue_path.exists() else {'items': []}
+previous_src = {row['key']: row.get('src') for row in previous_queue.get('items', [])}
 for key, reason in visual['places'].items():
-    reasons['place:' + key].add('visual: ' + reason)
+    target = 'place:' + key
+    if previous_src.get(target) == current.get(target, {}).get('src'):
+        reasons[target].add('visual: ' + reason)
 for key, reason in visual['foods'].items():
-    reasons['food:' + key].add('visual: ' + reason)
+    target = 'food:' + key
+    if previous_src.get(target) == current.get(target, {}).get('src'):
+        reasons[target].add('visual: ' + reason)
 # Include manually held targets even when absent from the original audit.
 for file in audit.glob('*photo-review.json'):
     data = json.loads(file.read_text())
@@ -74,6 +81,6 @@ for key, flags in reasons.items():
 rows.sort(key=lambda r: (r['status'] != 'needs-review', 'missing-photo' not in r['reasons'], r['pref'], r['key']))
 active = [r for r in rows if r['status'] == 'needs-review']
 summary = dict(trackedUniqueCandidates=len(rows), remainingCandidates=len(active), remainingPlaces=sum(r['key'].startswith('place:') for r in active), remainingFoods=sum(r['key'].startswith('food:') for r in active), missingPhotos=sum('missing-photo' in r['reasons'] for r in active), resolvedTrackedCandidates=sum(r['status'] == 'resolved-by-reviewed-current-photo' for r in rows), outsideScope=sum(r['status'] == 'outside-user-scope' for r in rows), currentReviewedItems=len(reviewed), historicalDuplicateGroupsStillMatching=len(duplicates))
-result = dict(updatedAt='2026-10-03', method='Union of historical visual/quality candidates plus current missing photos and still-matching historical duplicate groups, minus explicitly reviewed current photo mappings. Fukushima excluded. This is a tracked review backlog, not confirmed defects or a fresh nationwide audit.', summary=summary, duplicateGroups=duplicates, items=rows)
+result = dict(updatedAt=__import__('datetime').date.today().isoformat(), method='Current runtime photo audit plus historical visual findings only when the photo src is unchanged, minus explicitly reviewed current mappings. Fukushima excluded. Replaced photos do not inherit stale visual reasons.', summary=summary, duplicateGroups=duplicates, items=rows)
 (audit / 'photo-queue.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps(summary, ensure_ascii=False))

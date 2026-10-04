@@ -50,8 +50,4 @@
     const pic=photoForPlace(p);r.image=pic?.src||'';r.imageAlt=pic?.alt||'';
   }
   if(typeof render==="function")render();
-  for(const img of document.querySelectorAll('img[src*="images/commons/cd3e0ef08e48de90.webp"]')){
-    img.src="images/licensed/kanagawa-pola-02-726.webp?v=20261005-pola-force1";
-    img.alt="폴라 미술관";
-  }
 })();
