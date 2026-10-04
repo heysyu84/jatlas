@@ -224,13 +224,13 @@
     },
     {
       "placeId": 3201,
-      "commonsFilename": "Johsaien 57T3202small.jpg",
       "allowUnpinned": true,
-      "output": "images/licensed/kumamoto-josaien-03-3201.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:Johsaien_57T3202small.jpg",
-      "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "output": "images/official/kumamoto-josaien-selected-03-3201.webp",
+      "source": "https://kumamoto.guide/photogallery/",
+      "terms": "https://kumamoto.guide/ko/photogallery/detail/5562",
       "minWidth": 900,
-      "minHeight": 500
+      "minHeight": 500,
+      "download": "https://kumamoto.guide/files/bb75fb10-efdd-49d6-b456-40a35ad86714_l.jpg"
     }
   ]
 }
