@@ -173,6 +173,27 @@ def prepare():
             temporary = output.with_suffix('.tmp')
             image.save(temporary, format='WEBP', quality=84)
             temporary.replace(output)
+
+            # Some older site builds may still reference a superseded local Commons
+            # path. For explicitly reviewed assets, publish the approved replacement
+            # at those legacy paths too so stale mappings cannot resurrect a bad photo.
+            legacy_root = (ROOT / 'dist/images/commons').resolve()
+            for legacy_rel in photo.get('legacyOutputs', []):
+                legacy_output = (ROOT / 'dist' / legacy_rel).resolve()
+                if (
+                    not legacy_output.is_relative_to(legacy_root)
+                    or legacy_output.suffix.lower() != '.webp'
+                ):
+                    raise ValueError('Legacy output must remain a WebP in dist/images/commons')
+                legacy_output.parent.mkdir(parents=True, exist_ok=True)
+                legacy_temporary = legacy_output.with_suffix('.tmp')
+                image.save(legacy_temporary, format='WEBP', quality=84)
+                legacy_temporary.replace(legacy_output)
+                print(
+                    f"Prepared legacy {photo.get('placeId', photo.get('foodName'))}: "
+                    f"{legacy_rel}"
+                )
+
             print(f"Prepared {photo.get('placeId', photo.get('foodName'))}: {image.width}x{image.height}")
 
 

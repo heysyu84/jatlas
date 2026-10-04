@@ -220,7 +220,10 @@
       "source": "https://commons.wikimedia.org/wiki/File:191103_Pola_Museum_of_Art_Hakone_Japan02s3.jpg",
       "terms": "https://creativecommons.org/licenses/by/2.5/",
       "minWidth": 900,
-      "minHeight": 500
+      "minHeight": 500,
+      "legacyOutputs": [
+        "images/commons/cd3e0ef08e48de90.webp"
+      ]
     },
     {
       "placeId": 3201,
