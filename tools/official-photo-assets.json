@@ -345,6 +345,14 @@
       "output": "images/licensed/fukushima-shioyasaki-5219.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Shioyasaki_Light_House_(13332232033).jpg",
       "terms": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "placeId": 3202,
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Suizen-ji_J%C5%8Dju-en_20230103-5.jpg/1920px-Suizen-ji_J%C5%8Dju-en_20230103-5.jpg",
+      "sha256": "eb4c9bc6f67753703a6961c38804dbabfd452cff9eef4f7c650fac82dffc6d9f",
+      "output": "images/licensed/kumamoto-suizenji-pond-3202.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Suizen-ji_J%C5%8Dju-en_20230103-5.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0"
     }
   ]
 }
