@@ -1,15 +1,15 @@
 {
   "updatedAt": "2026-10-04",
-  "method": "Union of historical visual/quality candidates plus current missing photos and still-matching historical duplicate groups, minus explicitly reviewed current photo mappings. Fukushima excluded. This is a tracked review backlog, not confirmed defects or a fresh nationwide audit.",
+  "method": "Current runtime photo audit plus historical visual findings only when the photo src is unchanged, minus explicitly reviewed current mappings. Fukushima excluded. Replaced photos do not inherit stale visual reasons.",
   "summary": {
-    "trackedUniqueCandidates": 278,
-    "remainingCandidates": 232,
-    "remainingPlaces": 184,
+    "trackedUniqueCandidates": 256,
+    "remainingCandidates": 216,
+    "remainingPlaces": 168,
     "remainingFoods": 48,
     "missingPhotos": 0,
-    "resolvedTrackedCandidates": 39,
+    "resolvedTrackedCandidates": 33,
     "outsideScope": 7,
-    "currentReviewedItems": 72,
+    "currentReviewedItems": 70,
     "historicalDuplicateGroupsStillMatching": 16
   },
   "duplicateGroups": [
@@ -86,78 +86,6 @@
   ],
   "items": [
     {
-      "key": "food:도사 아카우시",
-      "name": "도사 아카우시",
-      "pref": "고치",
-      "src": "images/official/kochi-tosa-akaushi.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "place:3203",
-      "name": "구마몬 스퀘어",
-      "pref": "구마모토",
-      "src": "images/licensed/kumamoto-kumamon-square-23716539709.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "food:오시마 우유·아시타바 간식",
-      "name": "오시마 우유·아시타바 간식",
-      "pref": "도쿄",
-      "src": "images/official/tokyo-oshima-milk-soft.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "food:이십세기배",
-      "name": "이십세기배",
-      "pref": "돗토리",
-      "src": "images/licensed/tottori-nijisseiki-pear.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "food:요부코 오징어 활어회",
-      "name": "요부코 오징어 활어회",
-      "pref": "사가",
-      "src": "images/licensed/saga-yobuko-ika-sashi.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "food:이모니",
-      "name": "이모니",
-      "pref": "야마가타",
-      "src": "images/official/yamagata-imoni-154.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "place:1208",
-      "name": "우시쿠 대불",
-      "pref": "이바라키",
-      "src": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "place:2906",
-      "name": "난조인",
-      "pref": "후쿠오카",
-      "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
       "key": "food:쇼도시마 소멘",
       "name": "쇼도시마 소멘",
       "pref": "가가와",
@@ -223,17 +151,6 @@
       "status": "needs-review",
       "reasons": [
         "visual: plaque rather than shrine"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:2612",
-      "name": "이에프로젝트·혼무라",
-      "pref": "가가와",
-      "src": "images/commons/8bf80597068c3c66.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: cat rather than district"
       ],
       "review": null
     },
@@ -404,17 +321,6 @@
       "review": null
     },
     {
-      "key": "place:726",
-      "name": "폴라 미술관",
-      "pref": "가나가와",
-      "src": "images/commons/cd3e0ef08e48de90.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: cup display rather than museum overview"
-      ],
-      "review": null
-    },
-    {
       "key": "food:사와치요리",
       "name": "사와치요리",
       "pref": "고치",
@@ -455,17 +361,6 @@
       "status": "needs-review",
       "reasons": [
         "visual: sign rather than cave"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:2807",
-      "name": "야스이계곡",
-      "pref": "고치",
-      "src": "images/commons/2786d1425799d7aa.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: wrong waterfall identity review"
       ],
       "review": null
     },
@@ -514,17 +409,6 @@
       "review": null
     },
     {
-      "key": "place:3201",
-      "name": "사쿠라노바바 조사이엔",
-      "pref": "구마모토",
-      "src": "images/commons/0c63184d6ae00429.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: parking area rather than shrine"
-      ],
-      "review": null
-    },
-    {
       "key": "place:3218",
       "name": "사키쓰 집락",
       "pref": "구마모토",
@@ -565,17 +449,6 @@
       "status": "needs-review",
       "reasons": [
         "duplicate-group: 11"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3",
-      "name": "다카야마 옛 거리",
-      "pref": "기후",
-      "src": "images/commons/e45bb302a6f1df24.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: wall closeup rather than historic street"
       ],
       "review": null
     },
@@ -671,17 +544,6 @@
       "review": null
     },
     {
-      "key": "place:5004",
-      "name": "시부 온천",
-      "pref": "나가노",
-      "src": "images/commons/144090ab5c730871.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: mailbox rather than hot spring"
-      ],
-      "review": null
-    },
-    {
       "key": "place:5011",
       "name": "시라이토 폭포",
       "pref": "나가노",
@@ -737,17 +599,6 @@
       "review": null
     },
     {
-      "key": "place:5021",
-      "name": "쓰마고주쿠",
-      "pref": "나가노",
-      "src": "images/commons/7effa42523d0ef91.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: straw doll rather than street"
-      ],
-      "review": null
-    },
-    {
       "key": "place:3101",
       "name": "오우라 천주당",
       "pref": "나가사키",
@@ -766,17 +617,6 @@
       "status": "needs-review",
       "reasons": [
         "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3103",
-      "name": "평화공원·평화기념상",
-      "pref": "나가사키",
-      "src": "images/commons/9b1a32e5b8f2b9b5.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: scaffolding instead of monument"
       ],
       "review": null
     },
@@ -891,17 +731,6 @@
       "review": null
     },
     {
-      "key": "place:4612",
-      "name": "사도 금산",
-      "pref": "니가타",
-      "src": "images/commons/b23855a2fc56bdf8.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: ore specimen rather than mine"
-      ],
-      "review": null
-    },
-    {
       "key": "place:4618",
       "name": "아카쿠라 온천",
       "pref": "니가타",
@@ -986,17 +815,6 @@
       "status": "needs-review",
       "reasons": [
         "visual: historical monochrome coast"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:4721",
-      "name": "호타루이카 해상관광",
-      "pref": "도야마",
-      "src": "images/commons/926ba3b50f371070.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: dead squid rather than luminous coastline"
       ],
       "review": null
     },
@@ -1474,24 +1292,6 @@
       "review": null
     },
     {
-      "key": "place:507",
-      "name": "철도박물관",
-      "pref": "사이타마",
-      "src": "images/licensed/saitama-railway-museum-507.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "place:518",
-      "name": "수도권 외곽방수로",
-      "pref": "사이타마",
-      "src": "images/licensed/saitama-g-cans-518.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
       "key": "food:노도구로",
       "name": "노도구로",
       "pref": "시마네",
@@ -1592,17 +1392,6 @@
       "review": null
     },
     {
-      "key": "place:4103",
-      "name": "산나이마루야마 유적",
-      "pref": "아오모리",
-      "src": "images/commons/c74618d5cf47b935.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: artifact rather than site overview"
-      ],
-      "review": null
-    },
-    {
       "key": "place:4107",
       "name": "스카유 온천",
       "pref": "아오모리",
@@ -1610,17 +1399,6 @@
       "status": "needs-review",
       "reasons": [
         "visual: parking lot dominates"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:4113",
-      "name": "히로사키시 사과공원",
-      "pref": "아오모리",
-      "src": "images/commons/b0bf171ba9a74e70.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: mailbox rather than apple park"
       ],
       "review": null
     },
@@ -1722,15 +1500,6 @@
         "visual: display cart rather than mansion"
       ],
       "review": null
-    },
-    {
-      "key": "place:4417",
-      "name": "아키타견 회관",
-      "pref": "아키타",
-      "src": "images/licensed/akita-inu-kaikan-4417.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "priority-photo-review-20261004.json"
     },
     {
       "key": "place:4420",
@@ -2467,17 +2236,6 @@
       "review": null
     },
     {
-      "key": "place:4217",
-      "name": "미야자와 겐지 기념관",
-      "pref": "이와테",
-      "src": "images/commons/42b9713af137dfe9.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: station rather than intended landmark review"
-      ],
-      "review": null
-    },
-    {
       "key": "place:4220",
       "name": "도노 후루사토무라",
       "pref": "이와테",
@@ -2496,17 +2254,6 @@
       "status": "needs-review",
       "reasons": [
         "visual: small figure rather than pond"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:4224",
-      "name": "류센도",
-      "pref": "이와테",
-      "src": "images/commons/22718df095791ee1.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: stone sign rather than cave"
       ],
       "review": null
     },
@@ -2542,15 +2289,6 @@
         "visual: empty pan; food not visible"
       ],
       "review": null
-    },
-    {
-      "key": "place:4003",
-      "name": "홋카이도 신궁",
-      "pref": "홋카이도",
-      "src": "images/licensed/hokkaido-shrine-4003.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
     },
     {
       "key": "place:4016",
@@ -2621,15 +2359,6 @@
       "review": null
     },
     {
-      "key": "place:2908",
-      "name": "게야노오토",
-      "pref": "후쿠오카",
-      "src": "images/official/fukuoka-keya-oto-424.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
       "key": "food:미즈요칸",
       "name": "미즈요칸",
       "pref": "후쿠이",
@@ -2659,17 +2388,6 @@
       "status": "needs-review",
       "reasons": [
         "duplicate-group: 14"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:4900",
-      "name": "후쿠이성터",
-      "pref": "후쿠이",
-      "src": "images/commons/053fbd96e1fac755.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: station rather than castle site"
       ],
       "review": null
     },
@@ -2752,17 +2470,6 @@
       "review": null
     },
     {
-      "key": "place:2309",
-      "name": "야마토 뮤지엄",
-      "pref": "히로시마",
-      "src": "images/commons/1a165034345b7d05.webp",
-      "status": "needs-review",
-      "reasons": [
-        "visual: shopping building rather than harbor"
-      ],
-      "review": null
-    },
-    {
       "key": "place:2311",
       "name": "오쿠노시마",
       "pref": "히로시마",
@@ -2786,6 +2493,15 @@
       "review": null
     },
     {
+      "key": "food:도사 아카우시",
+      "name": "도사 아카우시",
+      "pref": "고치",
+      "src": "images/official/kochi-tosa-akaushi.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
       "key": "place:4704",
       "name": "다테야마 구로베 알펜루트",
       "pref": "도야마",
@@ -2793,6 +2509,15 @@
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "representative-photo-review.json"
+    },
+    {
+      "key": "food:오시마 우유·아시타바 간식",
+      "name": "오시마 우유·아시타바 간식",
+      "pref": "도쿄",
+      "src": "images/official/tokyo-oshima-milk-soft.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
     },
     {
       "key": "place:3409",
@@ -2804,6 +2529,15 @@
       "review": "official-photo-review.json"
     },
     {
+      "key": "place:507",
+      "name": "철도박물관",
+      "pref": "사이타마",
+      "src": "images/licensed/saitama-railway-museum-507.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
       "key": "place:508",
       "name": "무사시 이치노미야 히카와 신사",
       "pref": "사이타마",
@@ -2811,6 +2545,15 @@
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "kanto-photo-review.json"
+    },
+    {
+      "key": "place:518",
+      "name": "수도권 외곽방수로",
+      "pref": "사이타마",
+      "src": "images/licensed/saitama-g-cans-518.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
     },
     {
       "key": "place:520",
@@ -2876,6 +2619,24 @@
       "review": "nagoya-photo-review.json"
     },
     {
+      "key": "food:이모니",
+      "name": "이모니",
+      "pref": "야마가타",
+      "src": "images/official/yamagata-imoni-154.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
+      "key": "place:1208",
+      "name": "우시쿠 대불",
+      "pref": "이바라키",
+      "src": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
       "key": "place:1212",
       "name": "JAXA 쓰쿠바 우주센터",
       "pref": "이바라키",
@@ -2919,6 +2680,15 @@
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "representative-photo-review.json"
+    },
+    {
+      "key": "place:4003",
+      "name": "홋카이도 신궁",
+      "pref": "홋카이도",
+      "src": "images/licensed/hokkaido-shrine-4003.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
     },
     {
       "key": "place:4006",
@@ -3072,10 +2842,19 @@
       "review": null
     },
     {
-      "key": "food:미즈타키",
-      "name": "미즈타키",
+      "key": "place:2906",
+      "name": "난조인",
       "pref": "후쿠오카",
-      "src": "images/official/fukuoka-mizutaki-222.webp",
+      "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "missing-photo-review.json"
+    },
+    {
+      "key": "place:2908",
+      "name": "게야노오토",
+      "pref": "후쿠오카",
+      "src": "images/official/fukuoka-keya-oto-424.webp",
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "missing-photo-review.json"
@@ -3085,15 +2864,6 @@
       "name": "오시마·무나카타타이샤 나카쓰구",
       "pref": "후쿠오카",
       "src": "images/official/fukuoka-nakatsumiya-429.webp",
-      "status": "resolved-by-reviewed-current-photo",
-      "reasons": [],
-      "review": "missing-photo-review.json"
-    },
-    {
-      "key": "place:2914",
-      "name": "사라쿠라산",
-      "pref": "후쿠오카",
-      "src": "images/official/fukuoka-sarakura-193.webp",
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "missing-photo-review.json"

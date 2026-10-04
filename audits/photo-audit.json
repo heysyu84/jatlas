@@ -1,12 +1,11 @@
 {
   "summary": {
     "entries": 1506,
-    "uniqueLocalImages": 1477,
+    "uniqueLocalImages": 1486,
     "flags": {
-      "dark": 15,
-      "extreme-ratio": 18,
-      "low-resolution": 38,
-      "missing-photo": 9
+      "dark": 12,
+      "extreme-ratio": 17,
+      "low-resolution": 40
     },
     "duplicateGroups": 16
   },
@@ -1764,16 +1763,24 @@
       "pref": "사이타마",
       "name": "기타인",
       "photo": {
-        "src": "images/regional/Kita-in.webp",
-        "alt": "기타인",
-        "source": "https://commons.wikimedia.org/wiki/File:Kawagoe_Kitain_Tahoto_202011.jpg",
-        "fit": "contain"
+        "filename": "Kawagoe Kitain Main Hall 202011.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Kawagoe_Kitain_Main_Hall_202011.jpg",
+        "width": 1280,
+        "height": 853,
+        "description": "Jie-dō (Main hall) of Kita-in temple in Kawagoe, Saitama Prefecture",
+        "categories": "GFDL|License migration redundant|Self-published work|Files with coordinates missing SDC location of creation|Photographs taken on 2020-11-23|Jiedō, Kitain",
+        "author": "tak1701d",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/616ff8ae71a835e38473.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "기타인"
       },
       "flags": [],
-      "width": 900,
-      "height": 1200,
-      "luminance": 131.5,
-      "sha256": "4d02693a3efad58af29e28a67f0c7a49883c19869763e3d983f1986cfe55a208"
+      "width": 1280,
+      "height": 853,
+      "luminance": 119.9,
+      "sha256": "095b4e966e757ac00a30191c86f5ee3b681db087ed2a7a56b289dd31db4b530f"
     },
     {
       "kind": "place",
@@ -1861,15 +1868,21 @@
       "pref": "사이타마",
       "name": "철도박물관",
       "photo": {
-        "src": "images/commons/e1a57d9778710e89.webp",
-        "alt": "철도박물관",
-        "source": "https://commons.wikimedia.org/wiki/File:Railway_Museum_in_Saitama%2C_Japan_(3601420888).jpg"
+        "filename": "The Railway Museum 20080614.jpg",
+        "src": "images/licensed/saitama-railway-museum-507.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Railway_Museum_20080614.jpg",
+        "author": "kanegen",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "description": "User-approved interior view of the Railway Museum in Saitama.",
+        "review": "user-approved-and-license-reviewed",
+        "alt": "철도박물관"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 172.1,
-      "sha256": "3f3fba985da2835f5a0ce7cce59ae6fd2af7df0036c08ca6bd9f5771b2aa375d"
+      "height": 851,
+      "luminance": 85.2,
+      "sha256": "9adcc34cb0b37787aac5e0057647baf5b404d5a4867ee122014c566610956dda"
     },
     {
       "kind": "place",
@@ -1877,15 +1890,24 @@
       "pref": "사이타마",
       "name": "무사시 이치노미야 히카와 신사",
       "photo": {
-        "src": "images/commons/7e95fea0e51c9ed2.webp",
-        "alt": "무사시 이치노미야 히카와 신사",
-        "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%B7%E5%B7%9D%E7%A5%9E%E7%A4%BE%EF%BC%88%E5%A4%A7%E5%AE%AE%EF%BC%89_Omiya_Hikawa_shrine_-_panoramio.jpg"
+        "filename": "Front shrine of the Hikawa shrine.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Front_shrine_of_the_Hikawa_shrine.jpg",
+        "width": 1280,
+        "height": 850,
+        "description": "front shrine of the Hikawa shrine",
+        "categories": "Taken with Nikon D5000|Self-published work|Japan photographs taken on 2012-06-18|June 2012 in Saitama|Haiden, Hikawa-jinja, Omiya",
+        "author": "Ocdp",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/f51d509b0263207cf8c8.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "무사시 이치노미야 히카와 신사"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 105.8,
-      "sha256": "1d35cbf4f9740e3f379cb895cbf0d60330884fdcc2e3059e36533b7d8e941d16"
+      "height": 850,
+      "luminance": 158.8,
+      "sha256": "59945ed753961f192bd4d3efff584f945d920d752ea14536991dc5033b435842"
     },
     {
       "kind": "place",
@@ -2037,17 +2059,21 @@
       "pref": "사이타마",
       "name": "수도권 외곽방수로",
       "photo": {
-        "src": "images/commons/fa32c2ae259816c4.webp",
-        "alt": "수도권 외곽방수로",
-        "source": "https://commons.wikimedia.org/wiki/File:Metropolitan_Area_Outer_Underground_Discharge_Channel_(10886015096).jpg"
+        "filename": "首都圏外郭放水路(調圧水槽と立坑).jpg",
+        "src": "images/licensed/saitama-g-cans-518.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:首都圏外郭放水路(調圧水槽と立坑).jpg",
+        "author": "Souka Kinmei",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "description": "User-approved pressure-adjusting tank and shaft view of the Metropolitan Area Outer Underground Discharge Channel.",
+        "review": "user-approved-and-license-reviewed",
+        "alt": "수도권 외곽방수로"
       },
-      "flags": [
-        "dark"
-      ],
+      "flags": [],
       "width": 1280,
-      "height": 854,
-      "luminance": 27.4,
-      "sha256": "beb5a50f8aa9601d28d92881fd7c8a91d91fb8cf71b14113b611295f825ff202"
+      "height": 721,
+      "luminance": 106.6,
+      "sha256": "6258683088090f70c0d3ba0b733f83b25ecb89ed135b7e862e827ef367e88266"
     },
     {
       "kind": "place",
@@ -2071,15 +2097,24 @@
       "pref": "사이타마",
       "name": "오미야 공원",
       "photo": {
-        "src": "images/commons/2b01c058d6090352.webp",
-        "alt": "오미야 공원의 벚꽃",
-        "source": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_-_Sakura_-_%E6%A1%9C_-_Flickr_-_TANAKA_Juuyoh_(%E7%94%B0%E4%B8%AD%E5%8D%81%E6%B4%8B).jpg"
+        "filename": "Sakura in Omiya Park 20090409-2.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Sakura_in_Omiya_Park_20090409-2.jpg",
+        "width": 1280,
+        "height": 960,
+        "description": "大宮公園のサクラ",
+        "categories": "Omiya Park|Self-published work|Files with coordinates missing SDC location of creation|Japan photographs taken on 2009-04-09|April 2009 in Saitama|2009 photographs of Saitama, Saitama taken by User:掬茶|Sakura in Saitama, Saitama",
+        "author": "掬茶",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "src": "images/qa/2f6c58e90470b84c197b.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "오미야 공원"
       },
       "flags": [],
       "width": 1280,
       "height": 960,
-      "luminance": 120.7,
-      "sha256": "b12ad23fc50ae4b6c562c3ed5f467f753c9de01ab86a4c818903e1b336d71685"
+      "luminance": 127.3,
+      "sha256": "95dea218e3ce01d405a952cf7a82a92395f2d85bae808ca29605fccf5290e6b1"
     },
     {
       "kind": "place",
@@ -2336,16 +2371,24 @@
       "pref": "지바",
       "name": "도쿄 디즈니씨",
       "photo": {
-        "src": "images/commons/eeccd24a3f271181.webp",
-        "alt": "도쿄 디즈니씨",
-        "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea.jpg",
-        "fit": "contain"
+        "filename": "Tokyo DisneySea Mediterranean Harbour View1 201306.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokyo_DisneySea_Mediterranean_Harbour_View1_201306.jpg",
+        "width": 1280,
+        "height": 960,
+        "description": "Tokyo DisneySea Mediterranean Harbour",
+        "categories": "Taken with Canon PowerShot G11|Tokyo DisneySea Hotel MiraCosta|Self-published work|Tokyo Disney Resort in 2013|Mediterranean Harbor",
+        "author": "Wing1990hk",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "src": "images/qa/297ea368943d9bc9fefa.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "도쿄 디즈니씨"
       },
       "flags": [],
-      "width": 933,
-      "height": 1400,
-      "luminance": 103.1,
-      "sha256": "a1ec10b553c07cf9ab8223d60a28274fe69a2fb7ff647014d7d7f88109a3db54"
+      "width": 1280,
+      "height": 960,
+      "luminance": 143.5,
+      "sha256": "f316e5cf24384ee52d4cbf907acdc7b7eb5c7c747f253b77c3765933c093cf08"
     },
     {
       "kind": "place",
@@ -2353,16 +2396,24 @@
       "pref": "지바",
       "name": "나리타산 오모테산도",
       "photo": {
-        "src": "images/commons/d0f6b1abc67c20f2.webp",
-        "alt": "나리타산 오모테산도",
-        "source": "https://commons.wikimedia.org/wiki/File:Omotesando_to_Naritasan_Shinshoji_Temple_%40_Narita_(15265627342).jpg",
-        "fit": "contain"
+        "filename": "Naritasan Omotesando seen from in front of Umeya Ryokan - Mar 21, 2014.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Naritasan_Omotesando_seen_from_in_front_of_Umeya_Ryokan_-_Mar_21,_2014.jpg",
+        "width": 1280,
+        "height": 854,
+        "description": "Naritasan Omotesando seen from in front of Umeya Ryokan, Narita, Chiba prefecture, Japan",
+        "categories": "March 2014 in Chiba prefecture|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Japan photographs taken on 2014-03-21|Naritasan Omotesando|Flickr images missing SDC published in",
+        "author": "Kunitaka NIIDATE",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "src": "images/qa/33c232f4dc1a5db28562.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "나리타산 오모테산도"
       },
       "flags": [],
-      "width": 1050,
-      "height": 1400,
-      "luminance": 87.0,
-      "sha256": "858b93a29d22c3efa6ee04b02cb0037162aa5662eafd1448e7add6d515716849"
+      "width": 1280,
+      "height": 854,
+      "luminance": 78.9,
+      "sha256": "8db7bc77d26147e0495fa13b9bb5b7a59a1c3e2c8bc599784876038f75fdf2c2"
     },
     {
       "kind": "place",
@@ -2482,15 +2533,24 @@
       "pref": "지바",
       "name": "우미호타루 PA",
       "photo": {
-        "src": "images/commons/e06e92d376a0dc37.webp",
-        "alt": "우미호타루 PA",
-        "source": "https://commons.wikimedia.org/wiki/File:Umihotaru_Parking_Area.jpg"
+        "filename": "Landscape seen from Umihotaru 12.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Landscape_seen_from_Umihotaru_12.jpg",
+        "width": 1275,
+        "height": 960,
+        "description": "Landscape seen from Umihotaru ",
+        "categories": "CC-Zero|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Japan photographs taken on 2024-05-03|Views from the Umihotaru Parking Area",
+        "author": "Syced",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "src": "images/qa/3cf3bbfb4accaf7438ae.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "우미호타루 PA"
       },
       "flags": [],
-      "width": 1280,
-      "height": 964,
-      "luminance": 109.2,
-      "sha256": "146a93369c16e2dd60b8c4721bd650ee628370542f6ab06d25b77fb657d11e89"
+      "width": 1275,
+      "height": 960,
+      "luminance": 143.4,
+      "sha256": "2d2394374d5ac8cd3257b05ef90859d28d99a210fbdd3aba426be490359ee807"
     },
     {
       "kind": "place",
@@ -2981,15 +3041,15 @@
       "pref": "가나가와",
       "name": "폴라 미술관",
       "photo": {
-        "src": "images/commons/cd3e0ef08e48de90.webp",
+        "src": "images/licensed/kanagawa-pola-02-726.webp",
         "alt": "폴라 미술관",
-        "source": "https://commons.wikimedia.org/wiki/File:230908_Pola_Museum_of_Art_Hakone_Japan04s3.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:191103_Pola_Museum_of_Art_Hakone_Japan02s3.jpg"
       },
       "flags": [],
-      "width": 1400,
-      "height": 933,
-      "luminance": 154.4,
-      "sha256": "ca1369903d5ed45e1485cd6134d542cc87d0196143b9dc26da5335bd8a39c88d"
+      "width": 1280,
+      "height": 853,
+      "luminance": 104.8,
+      "sha256": "d10c1c340c8269cd1b43a4f9828c1bbbe3eb2951ca368da2a51796a54f1c25f0"
     },
     {
       "kind": "place",
@@ -3063,7 +3123,8 @@
       "photo": {
         "src": "images/commons/f22e5ff865e7a0ea.webp",
         "alt": "니혼다이라 유메테라스",
-        "source": "https://commons.wikimedia.org/wiki/File:Nihondaira_Digital_Tower_(2).jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Nihondaira_Digital_Tower_(2).jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 1050,
@@ -3333,15 +3394,15 @@
       "pref": "기후",
       "name": "다카야마 옛 거리",
       "photo": {
-        "src": "images/commons/e45bb302a6f1df24.webp",
+        "src": "images/commons/5f25d070115d8e02.webp",
         "alt": "다카야마 옛 거리",
-        "source": "https://commons.wikimedia.org/wiki/File:Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_(6156040666).jpg"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 96.2,
-      "sha256": "c81813c9e0ee0945730ee336045bfdc7665e16d3d19a7ba49cc01334c0e44d2a"
+      "height": 857,
+      "luminance": 105.1,
+      "sha256": "c0f8ac9330673124f35bf58175e9887c54a37382e7b0b36f2c59c36d69de61c6"
     },
     {
       "kind": "place",
@@ -3496,16 +3557,16 @@
       "pref": "기후",
       "name": "신호타카 로프웨이",
       "photo": {
-        "src": "images/commons/d0b632fad99333f6.webp",
+        "src": "images/commons/8f65722fc95cc182.webp",
         "alt": "신호타카 로프웨이",
-        "source": "https://commons.wikimedia.org/wiki/File:Shinhotaka_Ropeway_and_Mount_Kasa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Kiso_Mountains_and_Shinhotaka_Ropeway.jpg",
         "fit": "contain"
       },
       "flags": [],
-      "width": 933,
-      "height": 1400,
-      "luminance": 139.0,
-      "sha256": "2d28d9c81e4761080ff742c0b825a2bb0384f3d5c195d73983205710cd20701f"
+      "width": 1280,
+      "height": 853,
+      "luminance": 87.4,
+      "sha256": "7ad27bb9d114b59db671f1e642f8bc7c8eb834667bfa6a04c291ea3741180647"
     },
     {
       "kind": "place",
@@ -4706,26 +4767,46 @@
       "pref": "이바라키",
       "name": "가사마 이나리 신사",
       "photo": {
-        "src": "images/commons/f762d4b706c8092e.webp",
-        "alt": "가사마 이나리 신사",
-        "source": "https://commons.wikimedia.org/wiki/File:Kasama_Inari_shrine_1.jpg",
-        "fit": "contain"
+        "filename": "Kasama Inari Shrine 02.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Kasama_Inari_Shrine_02.jpg",
+        "width": 1280,
+        "height": 853,
+        "description": "Kasama Inari Shrine, Kasama City, Ibaraki Pref., Japan",
+        "categories": "GFDL|License migration redundant|Self-published work|Haiden, Kasama Inari-jinja",
+        "author": "Σ64",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "src": "images/qa/ff983684227e20d83694.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "가사마 이나리 신사"
       },
       "flags": [],
-      "width": 600,
-      "height": 800,
-      "luminance": 75.1,
-      "sha256": "40eeb2bfbf3c3706610b2e01fd3a1b7c718fd38a9ceda8cc7e1dd3bb3f8fb57d"
+      "width": 1280,
+      "height": 853,
+      "luminance": 145.5,
+      "sha256": "39e28e557c68b21ac6431bc102506209ccff0185231638322d9b16cc30d57814"
     },
     {
       "kind": "place",
       "id": 1208,
       "pref": "이바라키",
       "name": "우시쿠 대불",
-      "photo": null,
-      "flags": [
-        "missing-photo"
-      ]
+      "photo": {
+        "filename": "Okiku Daibutsu Cherry Blossoms.jpg",
+        "src": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Okiku_Daibutsu_Cherry_Blossoms.jpg",
+        "author": "Manish Prabhune",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "description": "User-approved Ushiku Daibutsu with cherry blossoms; landscape crop.",
+        "review": "user-approved-buddha-cherry-blossom-crop",
+        "alt": "우시쿠 대불"
+      },
+      "flags": [],
+      "width": 1280,
+      "height": 720,
+      "luminance": 152.0,
+      "sha256": "a6f5dc24efc2d5e85d9304d441f47264fa1acf7ac82eff4a34d095485687e38c"
     },
     {
       "kind": "place",
@@ -4781,19 +4862,24 @@
       "pref": "이바라키",
       "name": "JAXA 쓰쿠바 우주센터",
       "photo": {
-        "src": "images/commons/54e6f50983553257.webp",
-        "alt": "JAXA 쓰쿠바 우주센터",
-        "source": "https://commons.wikimedia.org/wiki/File:Space_Dome%2C_Tsukuba_Space_Center.jpg",
-        "fit": "contain"
+        "filename": "Artefacts at Tsukuba Space Center exhibition hall.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Artefacts_at_Tsukuba_Space_Center_exhibition_hall.jpg",
+        "width": 1275,
+        "height": 960,
+        "description": "Artefacts at Tsukuba Space Center exhibition hall ",
+        "categories": "CC-Zero|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Japan photographs taken on 2024-02-10|Models of Kibo (ISS module)|Space Dome (Tsukuba Space Center)",
+        "author": "Syced",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "src": "images/qa/85fea7b124be9bebc46d.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "JAXA 쓰쿠바 우주센터"
       },
-      "flags": [
-        "low-resolution",
-        "extreme-ratio"
-      ],
-      "width": 1280,
-      "height": 283,
-      "luminance": 87.5,
-      "sha256": "0338677262c75708e8ab212b142788cd040d787c28e6381f9d130c9c183f511c"
+      "flags": [],
+      "width": 1275,
+      "height": 960,
+      "luminance": 82.4,
+      "sha256": "88279b4ddf07a9928b7ee9ea130d11de0729cab4c297a612ecf50330442ecd2e"
     },
     {
       "kind": "place",
@@ -6142,7 +6228,8 @@
       "photo": {
         "src": "images/commons/f6c86a9b5f858ae9.webp",
         "alt": "단잔 신사",
-        "source": "https://commons.wikimedia.org/wiki/File:061202_Tanzan-jinja_Sakurai_Nara_pref_Japan02s5.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:061202_Tanzan-jinja_Sakurai_Nara_pref_Japan02s5.jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 937,
@@ -6499,7 +6586,8 @@
       "photo": {
         "src": "images/commons/9b6aed10ec3bb2b6.webp",
         "alt": "아카시성",
-        "source": "https://commons.wikimedia.org/wiki/File:Akashi_Castle39nt3200.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Akashi_Castle39nt3200.jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 932,
@@ -6547,7 +6635,8 @@
       "photo": {
         "src": "images/commons/2e86e6c38fa6f272.webp",
         "alt": "고베 포트타워",
-        "source": "https://commons.wikimedia.org/wiki/File:Kobe_port_tower11s3200.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Kobe_port_tower11s3200.jpg",
+        "fit": "contain"
       },
       "flags": [
         "dark"
@@ -6933,7 +7022,8 @@
       "photo": {
         "src": "images/commons/99666f2f4624e0f2.webp",
         "alt": "오유노하라",
-        "source": "https://commons.wikimedia.org/wiki/File:Oyunohara_banner.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Oyunohara_banner.jpg",
+        "fit": "contain"
       },
       "flags": [
         "low-resolution",
@@ -7000,7 +7090,8 @@
       "photo": {
         "src": "images/commons/3d4234d1442fcf18.webp",
         "alt": "나치 폭포",
-        "source": "https://commons.wikimedia.org/wiki/File:Nachi_Falls002.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Nachi_Falls002.JPG",
+        "fit": "contain"
       },
       "flags": [],
       "width": 1050,
@@ -7322,7 +7413,8 @@
       "photo": {
         "src": "images/commons/35b6954211ab4133.webp",
         "alt": "가이케 온천",
-        "source": "https://commons.wikimedia.org/wiki/File:Kaike_onsen05s3648.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Kaike_onsen05s3648.jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 933,
@@ -7402,7 +7494,8 @@
       "photo": {
         "src": "images/commons/3b3bfb97123cc0c9.webp",
         "alt": "아다치 미술관",
-        "source": "https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden.jpg",
+        "fit": "contain"
       },
       "flags": [
         "extreme-ratio"
@@ -7484,7 +7577,8 @@
       "photo": {
         "src": "images/commons/07234e3f7a0e1aa6.webp",
         "alt": "류겐지 마부",
-        "source": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine%2C_Ryugenji_Mabu_Mine_Shaft_001.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine%2C_Ryugenji_Mabu_Mine_Shaft_001.JPG",
+        "fit": "contain"
       },
       "flags": [],
       "width": 1050,
@@ -8203,15 +8297,15 @@
       "pref": "히로시마",
       "name": "야마토 뮤지엄",
       "photo": {
-        "src": "images/commons/1a165034345b7d05.webp",
+        "src": "images/commons/9f52f0980d7312ca.webp",
         "alt": "야마토 뮤지엄",
-        "source": "https://commons.wikimedia.org/wiki/File:Yamato_Museum_and_Kure_Central_Pier_from_Yamato_Wharf.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Model_of_Battleship_%22Yamato%22_in_Yamato_Museum.jpg"
       },
       "flags": [],
       "width": 1280,
       "height": 960,
-      "luminance": 138.2,
-      "sha256": "2fdea2dcfe2bf28115156b8432f7b94f9b0f74165626b0f543be70300009c137"
+      "luminance": 125.6,
+      "sha256": "675eee4c6f9789fcb64fe2fa7e569aa16f578d2ea968accb71e4d28f2a64d48d"
     },
     {
       "kind": "place",
@@ -9153,15 +9247,15 @@
       "pref": "가가와",
       "name": "이에프로젝트·혼무라",
       "photo": {
-        "src": "images/commons/8bf80597068c3c66.webp",
+        "src": "images/official/kagawa-naoshima-haisha-2612.webp",
         "alt": "이에프로젝트·혼무라",
-        "source": "https://commons.wikimedia.org/wiki/File:Art_house_project_in_Naoshima%2C_Kadoya(%E8%A7%92%E5%B1%8B%E3%80%81%E7%9B%B4%E5%B3%B6_%E5%AE%B6%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88)_PC182309.JPG"
+        "source": "https://www.benesse-artsite.jp/art/arthouse.html"
       },
       "flags": [],
-      "width": 1280,
-      "height": 960,
-      "luminance": 144.2,
-      "sha256": "50bddef92d122020f77986d948cacca4894b529da813a3ba63a859f9f1a99fe2"
+      "width": 960,
+      "height": 640,
+      "luminance": 65.8,
+      "sha256": "6c36a16403106fa3f7f14da30aa8b40032efed17436c33884be42b005f35d13f"
     },
     {
       "kind": "place",
@@ -9705,16 +9799,18 @@
       "pref": "고치",
       "name": "야스이계곡",
       "photo": {
-        "src": "images/commons/2786d1425799d7aa.webp",
+        "src": "images/licensed/yasui-gorge-nakashi-54360037444.webp",
         "alt": "야스이계곡",
-        "source": "https://commons.wikimedia.org/wiki/File:%E9%A3%9B%E9%BE%8D%E3%81%AE%E6%BB%9D_-_panoramio.jpg",
-        "fit": "contain"
+        "source": "https://www.flickr.com/photos/81497476@N00/54360037444/",
+        "author": "nakashi",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "flags": [],
-      "width": 934,
-      "height": 1400,
-      "luminance": 77.8,
-      "sha256": "3441b42e523bed207e35936125d4245fc38ec70eb4bf04426863d96fc1d3bcea"
+      "width": 1800,
+      "height": 1350,
+      "luminance": 75.2,
+      "sha256": "3caf7e183ddff88f8db63b8261ec600ef5713223320cedd44a7a200bc42f2b39"
     },
     {
       "kind": "place",
@@ -9946,16 +10042,24 @@
       "pref": "후쿠오카",
       "name": "후쿠오카 타워",
       "photo": {
-        "src": "images/commons/e5ad029783dd4e52.webp",
-        "alt": "후쿠오카 타워",
-        "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_Tower_20140302.jpg",
-        "fit": "contain"
+        "filename": "Fukuoka .jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_.jpg",
+        "width": 1280,
+        "height": 720,
+        "description": "",
+        "categories": "Fukuoka Tower|Media lacking a description|Seaside Momochi|May 2017 in Fukuoka|Seaside Momochi Seaside Park|Self-published work|Uploaded with Mobile/Android|Uploaded with Mobile/Android (Jul 2016 - Jun 2017)|Japan photographs taken on 2017-05-02|Skylines in Fukuoka",
+        "author": "Hhcp.0.5.8",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/9a11b6f1c0faa9884a64.webp",
+        "review": "subject-metadata-and-16:9-center-crop-reviewed",
+        "alt": "후쿠오카 타워"
       },
       "flags": [],
-      "width": 1050,
-      "height": 1400,
-      "luminance": 160.8,
-      "sha256": "d5182631f54f7a42d480654c5af33b3440a4f303b887ea2838a6f963d92f4260"
+      "width": 1280,
+      "height": 720,
+      "luminance": 133.3,
+      "sha256": "7102376a4496aabd03262027b6a117e6c8d948d4fd8f944c18059f9587e0b2a2"
     },
     {
       "kind": "place",
@@ -9994,10 +10098,22 @@
       "id": 2906,
       "pref": "후쿠오카",
       "name": "난조인",
-      "photo": null,
-      "flags": [
-        "missing-photo"
-      ]
+      "photo": {
+        "filename": "Ginormous reclining Buddha at Nanzoin Temple",
+        "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
+        "source": "https://www.flickr.com/photos/traveloriented/37986553175/",
+        "author": "traveloriented",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "description": "Nanzoin Temple reclining Buddha (Nehanzo), Sasaguri, Fukuoka.",
+        "review": "user-approved-reclining-buddha-and-license-reviewed",
+        "alt": "난조인"
+      },
+      "flags": [],
+      "width": 1024,
+      "height": 576,
+      "luminance": 134.7,
+      "sha256": "f80160b13e0d547a12806ae6015fb0a66a5e356f6228f2f6219d0ba538088ffe"
     },
     {
       "kind": "place",
@@ -10021,15 +10137,21 @@
       "pref": "후쿠오카",
       "name": "게야노오토",
       "photo": {
-        "src": "images/commons/d86e444acf0320db.webp",
-        "alt": "게야노오토",
-        "source": "https://commons.wikimedia.org/wiki/File:%E8%8A%A5%E5%B1%8B%E3%81%AE%E5%A4%A7%E9%96%80(1).jpg"
+        "filename": "Keya Oto",
+        "src": "images/official/fukuoka-keya-oto-424.webp",
+        "source": "https://www.crossroadfukuoka.jp/en/photo/424",
+        "author": "© Fukuoka Prefecture Tourism Association",
+        "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+        "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+        "description": "User-approved official aerial overview of Keya Oto, photo ID 424.",
+        "review": "user-approved-official-photo-424",
+        "alt": "게야노오토"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 59.4,
-      "sha256": "6634042c97c19f92478e97199aebf7696d06d2501ec4df64391134c3e0f2e7f6"
+      "height": 826,
+      "luminance": 116.3,
+      "sha256": "864826b03b2e767ef635e4c290e973ea5a0f0e871c876aa59e2b0821810ef2a0"
     },
     {
       "kind": "place",
@@ -10069,16 +10191,22 @@
       "pref": "후쿠오카",
       "name": "오시마·무나카타타이샤 나카쓰구",
       "photo": {
-        "src": "images/commons/c7f241d1014bf788.webp",
-        "alt": "오시마·무나카타타이샤 나카쓰구",
-        "source": "https://commons.wikimedia.org/wiki/File:View_of_sando_of_Munakata_Grand_Shrine_(Nakatsu_Shrine).jpg",
-        "fit": "contain"
+        "filename": "Munakata Taisha Nakatsumiya Shrine",
+        "source": "https://www.crossroadfukuoka.jp/en/photo/429",
+        "width": 1280,
+        "height": 853,
+        "author": "© Fukuoka Prefecture Tourism Association",
+        "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+        "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+        "src": "images/official/fukuoka-nakatsumiya-429.webp",
+        "review": "subject-identity-landscape-and-16:9-center-crop-reviewed",
+        "alt": "오시마·무나카타타이샤 나카쓰구"
       },
       "flags": [],
-      "width": 1050,
-      "height": 1400,
-      "luminance": 45.1,
-      "sha256": "8ffd2a1648b4417ffc9c86d833f66538877a56bb8fa6cbe70a60c7104911f96d"
+      "width": 1280,
+      "height": 853,
+      "luminance": 136.6,
+      "sha256": "15b951cb84f61d55511de3738d53a513e755050be02dbdc8c6d734b16dec4590"
     },
     {
       "kind": "place",
@@ -10119,17 +10247,22 @@
       "pref": "후쿠오카",
       "name": "사라쿠라산",
       "photo": {
-        "src": "images/commons/57a704b614406d83.webp",
-        "alt": "사라쿠라산",
-        "source": "https://commons.wikimedia.org/wiki/File:Night_view_from_Sarakurayama.jpg"
+        "filename": "Mt. Sarakura02",
+        "source": "https://www.crossroadfukuoka.jp/en/photo/193",
+        "width": 1280,
+        "height": 853,
+        "author": "© Fukuoka Prefecture Tourism Association",
+        "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+        "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+        "src": "images/official/fukuoka-sarakura-193.webp",
+        "review": "subject-identity-landscape-and-16:9-center-crop-reviewed",
+        "alt": "사라쿠라산"
       },
-      "flags": [
-        "dark"
-      ],
+      "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 40.4,
-      "sha256": "57f45ba0e4e06d028a41982f96b9b40cb3fcee9ae492802ff0717f3352bd1b25"
+      "height": 853,
+      "luminance": 53.7,
+      "sha256": "c86c61c7cc9343d527e47dcf48cb8aafd9bee423162373d798069615d4db441d"
     },
     {
       "kind": "place",
@@ -10396,7 +10529,8 @@
       "photo": {
         "src": "images/commons/cb10e523d1aeaa91.webp",
         "alt": "니지노마쓰바라 해안 송림",
-        "source": "https://commons.wikimedia.org/wiki/File:Niji_no_matsubara.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Niji_no_matsubara.jpg",
+        "fit": "contain"
       },
       "flags": [
         "extreme-ratio"
@@ -10446,7 +10580,8 @@
       "photo": {
         "src": "images/commons/230b8b6e0111245f.webp",
         "alt": "히젠 나고야성터",
-        "source": "https://commons.wikimedia.org/wiki/File:Nagoya_Castle_Saga_Prefecture_2026-09.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Nagoya_Castle_Saga_Prefecture_2026-09.jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 1050,
@@ -10462,7 +10597,8 @@
       "photo": {
         "src": "images/commons/527e1f0252d6a919.webp",
         "alt": "사가현립 규슈도자문화관",
-        "source": "https://commons.wikimedia.org/wiki/File:The_Kyushu_Ceramic_Museum_-_52125287598.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:The_Kyushu_Ceramic_Museum_-_52125287598.jpg",
+        "fit": "contain"
       },
       "flags": [
         "extreme-ratio"
@@ -10496,7 +10632,8 @@
       "photo": {
         "src": "images/commons/1618295f9bf7357d.webp",
         "alt": "오카와치야마 도자기 마을",
-        "source": "https://commons.wikimedia.org/wiki/File:Okawachiyama.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Okawachiyama.jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 1086,
@@ -10673,15 +10810,15 @@
       "pref": "나가사키",
       "name": "평화공원·평화기념상",
       "photo": {
-        "src": "images/commons/9b1a32e5b8f2b9b5.webp",
+        "src": "images/official/nagasaki-peace-statue-3103.webp",
         "alt": "평화공원·평화기념상",
-        "source": "https://commons.wikimedia.org/wiki/File:20190202_Nagasaki_Peace_Park_Peace_Statue-3.jpg"
+        "source": "https://www.nagasaki-tabinet.com/guide/130/"
       },
       "flags": [],
       "width": 1280,
       "height": 853,
-      "luminance": 138.1,
-      "sha256": "d782f9ec3933c9d6755eefb7da47f45a19f5c7d397f7b3084c23b0a03c84d11d"
+      "luminance": 169.4,
+      "sha256": "1cd603b0cff6756fa952e917b9a90e4cfc1d6c9b43848cc5a99b28b21648c940"
     },
     {
       "kind": "place",
@@ -11126,15 +11263,15 @@
       "pref": "구마모토",
       "name": "사쿠라노바바 조사이엔",
       "photo": {
-        "src": "images/commons/0c63184d6ae00429.webp",
+        "src": "images/official/kumamoto-josaien-selected-03-3201.webp",
         "alt": "사쿠라노바바 조사이엔",
-        "source": "https://commons.wikimedia.org/wiki/File:Sakuranobaba-Josaien_Museum_near_Kumamoto_Castle.JPG"
+        "source": "https://kumamoto.guide/photogallery/"
       },
       "flags": [],
       "width": 1280,
       "height": 960,
-      "luminance": 115.8,
-      "sha256": "97ec5f9d22434685f764b2979efa9cd0c0116f2cd1f49629e8f1942c17c6f63e"
+      "luminance": 135.5,
+      "sha256": "e2211ff2c1236b0f85ac107103975c54364f0ff0675ec30678aea2441ab231ae"
     },
     {
       "kind": "place",
@@ -11157,10 +11294,25 @@
       "id": 3203,
       "pref": "구마모토",
       "name": "구마몬 스퀘어",
-      "photo": null,
-      "flags": [
-        "missing-photo"
-      ]
+      "photo": {
+        "filename": "Kumamon Square",
+        "src": "images/licensed/kumamoto-kumamon-square-24086051195.webp",
+        "source": "https://www.flickr.com/photos/othree/24086051195/",
+        "author": "othree",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "description": "User-approved candidate 2: Kumamon with Kumamon Square signage, photographed 2015-12-18.",
+        "review": "user-approved-candidate-2-and-license-reviewed",
+        "width": 1024,
+        "height": 683,
+        "copyright": "©2010kumamoto pref. kumamon",
+        "alt": "구마몬 스퀘어"
+      },
+      "flags": [],
+      "width": 1024,
+      "height": 683,
+      "luminance": 165.8,
+      "sha256": "18607d7de858a1efb0b676892f6af770b5bd8daa51826c94f15768b6cb1a9a9c"
     },
     {
       "kind": "place",
@@ -12120,15 +12272,23 @@
       "pref": "미야자키",
       "name": "도이미사키",
       "photo": {
-        "src": "images/commons/68bedda6e24adc4c.webp",
-        "alt": "도이미사키",
-        "source": "https://commons.wikimedia.org/wiki/File:Misaki_uma_May_2014_5046.jpg"
+        "filename": "都井岬5",
+        "source": "https://www.kanko-miyazaki.jp/business/photo/472",
+        "width": 1280,
+        "height": 851,
+        "description": "도이미사키의 야생마와 초원, 바다 및 해안선",
+        "author": "宮崎県観光協会",
+        "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+        "licenseUrl": "https://www.kanko-miyazaki.jp/business/photo/guide",
+        "src": "images/official/miyazaki-toi-472.webp",
+        "review": "official-library-subject-and-center-crop-reviewed",
+        "alt": "도이미사키"
       },
       "flags": [],
       "width": 1280,
-      "height": 852,
-      "luminance": 177.5,
-      "sha256": "7d135a34bce37563286c2bef691d48c36491e99b9b7e54e355abb5dcae5221c9"
+      "height": 851,
+      "luminance": 132.5,
+      "sha256": "88e1581e1d333d71152ba298a0a79907d9008053db6f05579061687860ee737a"
     },
     {
       "kind": "place",
@@ -12774,7 +12934,7 @@
       "photo": {
         "src": "images/commons/35c232956b589df9.webp",
         "alt": "야쿠스기랜드",
-        "source": "https://commons.wikimedia.org/wiki/File:Yakusugi_Land_23.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Yakusugi_Land_30.jpg"
       },
       "flags": [],
       "width": 1280,
@@ -12969,7 +13129,7 @@
       "photo": {
         "src": "images/commons/43c6f3dee4ff500f.webp",
         "alt": "오키나와월드·교쿠센도",
-        "source": "https://commons.wikimedia.org/wiki/File:Gyokusendo_Nanjo_Okinawa_Japan23s3104.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gyokusendo_Nanjo_Okinawa_Japan15s3104.jpg",
         "fit": "contain"
       },
       "flags": [],
@@ -13451,7 +13611,7 @@
       "photo": {
         "src": "images/commons/c644cb006d506664.webp",
         "alt": "하테루마 니시하마",
-        "source": "https://commons.wikimedia.org/wiki/File:Hateruma_nishihama_2.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Hateruma_nishihama_1.jpg"
       },
       "flags": [],
       "width": 1280,
@@ -13514,15 +13674,24 @@
       "pref": "홋카이도",
       "name": "모이와산",
       "photo": {
-        "src": "images/commons/8b47b1fb4a3e718d.webp",
-        "alt": "모이와산",
-        "source": "https://commons.wikimedia.org/wiki/File:Japan_Sapporo_Mt.Moiwa_0052.jpg"
+        "filename": "City nightscape of Sapporo from Mt. Moiwa 20260703b.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:City_nightscape_of_Sapporo_from_Mt._Moiwa_20260703b.jpg",
+        "width": 1280,
+        "height": 720,
+        "description": "Night view from Mount Moiwa in Sapporo, Hokkaido, Japan",
+        "categories": "Taken with Sony ILCE-6300|Self-published work|Files with coordinates missing SDC location of creation|July 2026 in Sapporo|Views from Mount Moiwa (Sapporo) at night|Japan photographs taken on 2026-07-03",
+        "author": "掬茶",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "src": "images/qa/a8f44cf2772f70af18ac.webp",
+        "review": "subject-metadata-and-16:9-center-crop-reviewed",
+        "alt": "모이와산"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 87.6,
-      "sha256": "f5bbc83615ec2e6cebf1bf50dbcfe2d7d2d8ff0b35d810a4423b475ccb3a5d3b"
+      "height": 720,
+      "luminance": 45.9,
+      "sha256": "913117eac3fc3490896494c7cd49e28d2023df074fb96231db0e857ed4c1df38"
     },
     {
       "kind": "place",
@@ -13530,15 +13699,21 @@
       "pref": "홋카이도",
       "name": "홋카이도 신궁",
       "photo": {
-        "src": "images/commons/fe78e89fea31f29a.webp",
-        "alt": "홋카이도 신궁",
-        "source": "https://commons.wikimedia.org/wiki/File:Hokkaido_Jingu%2C_Hokkaido_Shrine%2C_Sapporo%2C_Hokkaido%2C_Japan%2C_%E5%8C%97%E6%B5%B7%E9%81%93%E7%A5%9E%E5%AE%AE%2C_%E6%9C%AD%E5%B9%8C%2C_%E5%8C%97%E6%B5%B7%E9%81%93%2C_%E6%97%A5%E6%9C%AC%2C_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86%E3%81%98%E3%82%93%E3%81%90%E3%81%86%2C_%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D%E3%81%97%2C_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86%2C_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93%2C_%E3%81%AB%E3%81%BB%E3%82%93_(16578027820).jpg"
+        "filename": "(JPN-Hokkaido) Hokkaido Shrine 2026-06-06.jpg",
+        "src": "images/licensed/hokkaido-shrine-4003.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:(JPN-Hokkaido)_Hokkaido_Shrine_2026-06-06.jpg",
+        "author": "S5A-0043",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "description": "User-approved landscape photo of Hokkaido Shrine.",
+        "review": "user-approved-and-license-reviewed",
+        "alt": "홋카이도 신궁"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 120.8,
-      "sha256": "c0fba9b90e1a16640339f039cc605d1502b3781f26dbe30117062877aa8ff26a"
+      "height": 720,
+      "luminance": 121.8,
+      "sha256": "f643a31be32911d4eb33b6968e716672aa30328efcc6bd542748db3558bbdc95"
     },
     {
       "kind": "place",
@@ -13578,16 +13753,24 @@
       "pref": "홋카이도",
       "name": "조잔케이 온천",
       "photo": {
-        "src": "images/commons/cfabb757972a57fe.webp",
-        "alt": "조잔케이 온천",
-        "source": "https://commons.wikimedia.org/wiki/File:Jozankei_Onsen%2C_Sapporo%2C_Hokkaido_Prefecture%3B_January_2018_(22).jpg",
-        "fit": "contain"
+        "filename": "定山渓二見吊橋 (Jozankei Futami suspension bridge) - panoramio.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E4%BA%8C%E8%A6%8B%E5%90%8A%E6%A9%8B_(Jozankei_Futami_suspension_bridge)_-_panoramio.jpg",
+        "width": 1280,
+        "height": 839,
+        "description": "定山渓二見吊橋 (Jozankei Futami suspension bridge)\n\n今年は紅葉が遅れています。10月20日頃が見頃と思われます。",
+        "categories": "Jozankei Onsen|Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Japan photographs taken on 2016-10-09",
+        "author": "t-konno",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/1eb448ab5486290232c2.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "조잔케이 온천"
       },
       "flags": [],
-      "width": 933,
-      "height": 1400,
-      "luminance": 67.6,
-      "sha256": "5a06203ce1f66359190f178a972fdfc51bcbe5caa8180cd4eaceb521bb131152"
+      "width": 1280,
+      "height": 839,
+      "luminance": 104.1,
+      "sha256": "4f6132bed80ac9ceb09452e407a99a5eaac06eec370ddc273160984a67b92cf9"
     },
     {
       "kind": "place",
@@ -13723,15 +13906,24 @@
       "pref": "홋카이도",
       "name": "우포포이",
       "photo": {
-        "src": "images/commons/fcbc1b3f25312ebd.webp",
-        "alt": "우포포이",
-        "source": "https://commons.wikimedia.org/wiki/File:%E3%82%A6%E3%83%9D%E3%83%9D%E3%82%A4.jpg"
+        "filename": "Shiraoi-upopoy 38.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Shiraoi-upopoy_38.jpg",
+        "width": 1280,
+        "height": 960,
+        "description": "北海道白老郡白老町にある「民族共生象徴空間」ウポポイ（国立アイヌ民族博物館）",
+        "categories": "CC-Zero|National Ainu Museum|Self-published work|Files with coordinates missing SDC location of creation",
+        "author": "Higa4",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "src": "images/qa/94bf25f4107e90f57e4c.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "우포포이"
       },
       "flags": [],
       "width": 1280,
       "height": 960,
-      "luminance": 125.8,
-      "sha256": "22319275c1ebcbdbb35cf1c78be7b9febad501103294ad0418ff0db357ebd480"
+      "luminance": 143.4,
+      "sha256": "2a52d12159a3b692168381f608fd429e5e33740ec1855dffc129a3d29dd69736"
     },
     {
       "kind": "place",
@@ -13773,16 +13965,24 @@
       "pref": "홋카이도",
       "name": "하코다테 아침시장",
       "photo": {
-        "src": "images/commons/c43005c435081fef.webp",
-        "alt": "하코다테 아침시장",
-        "source": "https://commons.wikimedia.org/wiki/File:Hakodate_Morning_Market_%E5%87%BD%E9%A4%A8%E6%9C%9D%E5%B8%82_-_panoramio.jpg",
-        "fit": "contain"
+        "filename": "Hakodate Morning Market, Hakodate Asaichi, Hakodate, 2014.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Hakodate_Morning_Market,_Hakodate_Asaichi,_Hakodate,_2014.jpg",
+        "width": 1280,
+        "height": 960,
+        "description": "Hakodate Morning Market, Hakodate Asaichi, Hakodate, 2014.",
+        "categories": "Hakodate Asaichi|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2",
+        "author": "bryan...",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "src": "images/qa/c0510a7a7672dc014037.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "하코다테 아침시장"
       },
       "flags": [],
-      "width": 1106,
-      "height": 1400,
-      "luminance": 106.3,
-      "sha256": "1f5f7ff83dadace983373846a35f982c5801c5ec29670c3b9c0c2743ca9148fa"
+      "width": 1280,
+      "height": 960,
+      "luminance": 117.9,
+      "sha256": "1d26e47c8a03ce1eed5c2f06afc88aebfa1bc58d32febbeb529b89fdbb6f4e96"
     },
     {
       "kind": "place",
@@ -13838,15 +14038,24 @@
       "pref": "홋카이도",
       "name": "아사히야마 동물원",
       "photo": {
-        "src": "images/commons/4dcacb315db965a9.webp",
-        "alt": "아사히야마 동물원",
-        "source": "https://commons.wikimedia.org/wiki/File:Asahiyama_zoo.jpg"
+        "filename": "Asahiyama zoo Penguin.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Asahiyama_zoo_Penguin.jpg",
+        "width": 1230,
+        "height": 960,
+        "description": "旭川市旭山動物園でのペンギンの散歩",
+        "categories": "GFDL|Taken with Fujifilm FinePix Z20fd|License migration redundant|Self-published work|February 2009 in Hokkaido|Aptenodytes patagonicus in Asahikawa Asahiyama Zoological Park",
+        "author": "欅 (Keyaki)",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/743d7030dfe1a368bb11.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "아사히야마 동물원"
       },
       "flags": [],
-      "width": 1024,
-      "height": 681,
-      "luminance": 139.7,
-      "sha256": "d03d8addf0471340ad471a5d4f191f899736ee0dd77dbfccf8da05b8d0e89ee6"
+      "width": 1230,
+      "height": 960,
+      "luminance": 155.6,
+      "sha256": "a899c850bab801c5ace11e862a933fb128031fb5be7a2d91e9faa487ef4226a4"
     },
     {
       "kind": "place",
@@ -13870,16 +14079,25 @@
       "pref": "홋카이도",
       "name": "소운쿄·구로다케 로프웨이",
       "photo": {
-        "src": "images/commons/7711af1e67fdc849.webp",
-        "alt": "소운쿄·구로다케 로프웨이",
-        "source": "https://commons.wikimedia.org/wiki/File:Gondola_of_Daisetsuzan_Sounkyo_Kurodake_Ropeway.jpg",
-        "fit": "contain"
+        "filename": "Kurodake Chairlift.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Kurodake_Chairlift.jpg",
+        "width": 1280,
+        "height": 960,
+        "description": "Kurodake Chairlift connected to Daisetsuzan Sōunkyō Kurodake Ropeway, This photo taken in June 18, 2008",
+        "categories": "GFDL|CC-BY-SA-3.0,2.5,2.0,1.0|Daisetsuzan Sounkyo - Kurodake Ropeway|License migration redundant|Self-published work|Chairlifts in Japan|Files with coordinates missing SDC location of creation|Japan photographs taken on 2009-07-01|2-seat chairlifts",
+        "author": "Mukasora (talk)",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/c1ea1a5f29d8510fe584.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "scope": "Upper Kurodake chairlift and mountain landscape; not the lower aerial ropeway gondola.",
+        "alt": "소운쿄·구로다케 로프웨이"
       },
       "flags": [],
-      "width": 1050,
-      "height": 1400,
-      "luminance": 137.4,
-      "sha256": "93fb7a76bfd25915ef9ebfc7c321fea404f69c7850473013d1a9df614449517b"
+      "width": 1280,
+      "height": 960,
+      "luminance": 145.7,
+      "sha256": "e68dc98c9df8cc6dd69cad095b70eb3d41ed08132dc4d626b92d4b44619e93b4"
     },
     {
       "kind": "place",
@@ -13951,15 +14169,24 @@
       "pref": "홋카이도",
       "name": "패치워크 로드",
       "photo": {
-        "src": "images/commons/ff435e216a5d7f2f.webp",
-        "alt": "패치워크 로드",
-        "source": "https://commons.wikimedia.org/wiki/File:140724_Biei_Hokkaido_Japan01s8.jpg"
+        "filename": "Patchwork hills - biei - panoramio.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Patchwork_hills_-_biei_-_panoramio.jpg",
+        "width": 1280,
+        "height": 960,
+        "description": "Patchwork  hills  /  biei",
+        "categories": "Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Japan photographs taken on 2006-08-01|Fields in Biei in summer",
+        "author": "taku-k",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "src": "images/qa/d57c409254be1745dad2.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "패치워크 로드"
       },
       "flags": [],
       "width": 1280,
-      "height": 853,
-      "luminance": 119.2,
-      "sha256": "f36d3d78ca035dbf4bc1f4aeb08e73088e3f335b87c54e5973cc577b04142d93"
+      "height": 960,
+      "luminance": 142.4,
+      "sha256": "1c728e0920f68dcfc2d04387e99788992f4c820b5181e8ee32af3fc1508c033e"
     },
     {
       "kind": "place",
@@ -14047,17 +14274,24 @@
       "pref": "홋카이도",
       "name": "시레토코 오호",
       "photo": {
-        "src": "images/commons/8ac985dd19570cd8.webp",
-        "alt": "시레토코 오호",
-        "source": "https://commons.wikimedia.org/wiki/File:Shiretoko_Five_Lakes%2C_Hokkaido%3B_October_2018_(02).jpg"
+        "filename": "140829 Ichiko of Shiretoko Goko Lakes Hokkaido Japan01s5.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:140829_Ichiko_of_Shiretoko_Goko_Lakes_Hokkaido_Japan01s5.jpg",
+        "width": 1280,
+        "height": 853,
+        "description": "Lake Ichiko of Shiretoko Goko Lakes in Shari, Hokkaido prefecture, Japan.",
+        "categories": "GFDL|Taken with Sony ILCE-6000|Shiretoko Five Lakes|License migration redundant|Self-published work|Summer in Hokkaido|Files with coordinates missing SDC location of creation|Japan photographs taken on 2014-08-29|Shiretoko Mountains",
+        "author": "663highland",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "src": "images/qa/1537c76179f724ceba66.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "시레토코 오호"
       },
-      "flags": [
-        "dark"
-      ],
+      "flags": [],
       "width": 1280,
       "height": 853,
-      "luminance": 14.6,
-      "sha256": "71242578dc4ab6b9045714decc23d631bf6364eb3abe1becb664bb0cd45e8939"
+      "luminance": 128.2,
+      "sha256": "5edfe8945b952bcecfd586edd1bbbdec4db67e2931ed005a1af67ce15724a99e"
     },
     {
       "kind": "place",
@@ -14065,15 +14299,24 @@
       "pref": "홋카이도",
       "name": "오신코신 폭포",
       "photo": {
-        "src": "images/commons/c08e1443c5461d17.webp",
-        "alt": "오신코신 폭포",
-        "source": "https://commons.wikimedia.org/wiki/File:Oshinkoshin_Falls_-_Mar_14%2C_2009_(3).jpg"
+        "filename": "Waterfall of Oshinkoshin 02.JPG",
+        "source": "https://commons.wikimedia.org/wiki/File:Waterfall_of_Oshinkoshin_02.JPG",
+        "width": 1162,
+        "height": 778,
+        "description": "Waterfall of Oshinkoshin",
+        "categories": "GFDL|Taken with Nikon D60|CC-BY-SA-3.0,2.5,2.0,1.0|Oshinkoshin Falls|License migration redundant|Self-published work",
+        "author": "Captain76",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "src": "images/qa/2bf14090ceafabcf7c6e.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "오신코신 폭포"
       },
       "flags": [],
-      "width": 1280,
-      "height": 960,
-      "luminance": 106.2,
-      "sha256": "efb76eda9d7cf284c67887f8b786d4f2b7d7b0a4743ea1b0cc19e15683bff8a1"
+      "width": 1162,
+      "height": 778,
+      "luminance": 96.8,
+      "sha256": "5d09e4e01309ddc61b327456ad8930ec12a8a2fd720fec8f784085efe6997fae"
     },
     {
       "kind": "place",
@@ -14097,15 +14340,24 @@
       "pref": "홋카이도",
       "name": "아칸호",
       "photo": {
-        "src": "images/commons/61ba3d7cca14fa93.webp",
-        "alt": "아칸호",
-        "source": "https://commons.wikimedia.org/wiki/File:Lake_Akan_Kushiro_Hokkaido_Japan11n.jpg"
+        "filename": "Oakan and Akanko DSCN2497 20060805.JPG",
+        "source": "https://commons.wikimedia.org/wiki/File:Oakan_and_Akanko_DSCN2497_20060805.JPG",
+        "width": 1280,
+        "height": 960,
+        "description": "Pleasure boat that passes through the Lake Akan and Mount Oakan. taken in 2006.",
+        "categories": "Lake Akan|Taken with Nikon Coolpix 7900|Self-published work|PD-self|Remote views of Mount Oakan",
+        "author": "Ogiyoshisan",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "src": "images/qa/0bd428a747f1377eda50.webp",
+        "review": "visual-subject-and-landscape-reviewed",
+        "alt": "아칸호"
       },
       "flags": [],
       "width": 1280,
-      "height": 853,
-      "luminance": 144.9,
-      "sha256": "db143c344678d481d0190713db4923d0a9fc694960774d6811d7e2bdd56f91b3"
+      "height": 960,
+      "luminance": 128.9,
+      "sha256": "c9418010dcc45a01d9c74356428c96454c3afb87a98e60a7c438a9c6c45afe7e"
     },
     {
       "kind": "place",
@@ -14209,16 +14461,15 @@
       "pref": "아오모리",
       "name": "산나이마루야마 유적",
       "photo": {
-        "src": "images/commons/c74618d5cf47b935.webp",
+        "src": "images/official/aomori-sannai-4103.webp",
         "alt": "산나이마루야마 유적",
-        "source": "https://commons.wikimedia.org/wiki/File:140913_Sannai-Maruyama_site_Aomori_Japan16n.jpg",
-        "fit": "contain"
+        "source": "https://www.tohokukanko.jp/photos/detail_2208.html"
       },
       "flags": [],
-      "width": 933,
-      "height": 1400,
-      "luminance": 112.9,
-      "sha256": "6b3506bf69ba2ad68b3e181ff4d8b394305d83087fd31ab8f011d1aa8fa40b68"
+      "width": 1280,
+      "height": 960,
+      "luminance": 137.0,
+      "sha256": "5fe52ed0cc92d0d3e7c3ec8b39530f39ad5ce18ac3b05494d6227277ae32b03d"
     },
     {
       "kind": "place",
@@ -14260,7 +14511,7 @@
       "photo": {
         "src": "images/commons/5672e8276400821e.webp",
         "alt": "핫코다 로프웨이",
-        "source": "https://commons.wikimedia.org/wiki/File:Hakkoda_Ropeway.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Hakkoda_Ropeway_2019.jpg"
       },
       "flags": [],
       "width": 1280,
@@ -14370,16 +14621,15 @@
       "pref": "아오모리",
       "name": "히로사키시 사과공원",
       "photo": {
-        "src": "images/commons/b0bf171ba9a74e70.webp",
+        "src": "images/official/aomori-hirosaki-apple-4113.webp",
         "alt": "히로사키시 사과공원",
-        "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%98%E5%89%8D%E5%B8%82%E3%82%8A%E3%82%93%E3%81%94%E5%85%AC%E5%9C%92_%E9%83%B5%E4%BE%BF%E3%83%9D%E3%82%B9%E3%83%88_-_panoramio.jpg",
-        "fit": "contain"
+        "source": "https://aomori-tourism.com/photos/detail_7268.html"
       },
       "flags": [],
-      "width": 1050,
-      "height": 1400,
-      "luminance": 83.8,
-      "sha256": "d57a3974fb42a86829ec0e715c90fa8ba42cb5a488fbd2554c49b5b52710b7a1"
+      "width": 1280,
+      "height": 853,
+      "luminance": 153.0,
+      "sha256": "ae4bacfa572a8fa5191753a722f585c2ea0cbfcfe9dd155dd6a8d59a4e7c2178"
     },
     {
       "kind": "place",
@@ -14709,7 +14959,7 @@
       "photo": {
         "src": "images/commons/2357e866a9962e4d.webp",
         "alt": "호온지 오백나한",
-        "source": "https://commons.wikimedia.org/wiki/File:171104_Hoonji_Morioka_Iwate_pref_Japan06s3.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:171104_Hoonji_Morioka_Iwate_pref_Japan03s3.jpg",
         "fit": "contain"
       },
       "flags": [],
@@ -14933,15 +15183,18 @@
       "pref": "이와테",
       "name": "미야자와 겐지 기념관",
       "photo": {
-        "src": "images/commons/42b9713af137dfe9.webp",
+        "src": "images/licensed/miyazawa-kenji-museum-yoshihide-14909320636.webp",
         "alt": "미야자와 겐지 기념관",
-        "source": "https://commons.wikimedia.org/wiki/File:Wild_Cat_House_-_%E5%AE%AE%E6%B2%A2%E8%B3%A2%E6%B2%BB%E8%A8%98%E5%BF%B5%E9%A4%A8%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E5%B1%B1%E7%8C%AB%E8%BB%92_-_panoramio.jpg"
+        "source": "https://www.flickr.com/photos/123717325@N02/14909320636/",
+        "author": "Yoshihide Urushihara",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "flags": [],
-      "width": 1280,
-      "height": 960,
-      "luminance": 131.0,
-      "sha256": "669034242ddd5166ba6c2ab963128e4a9ad44e031ae22209f8769753146748c5"
+      "width": 1800,
+      "height": 1013,
+      "luminance": 135.7,
+      "sha256": "f7ec75e67ec0a8f0ab1e4ca2c855fea64e2fc14b9e849d8a91fb521435be0004"
     },
     {
       "kind": "place",
@@ -15032,7 +15285,7 @@
       "photo": {
         "src": "images/commons/ec80da0dea77055d.webp",
         "alt": "조도가하마",
-        "source": "https://commons.wikimedia.org/wiki/File:Jodogahama_Beach_(51971544590).jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Jodogahama_Beach_(51969977762).jpg"
       },
       "flags": [],
       "width": 1280,
@@ -15046,16 +15299,15 @@
       "pref": "이와테",
       "name": "류센도",
       "photo": {
-        "src": "images/commons/22718df095791ee1.webp",
+        "src": "images/licensed/iwate-ryusendo-lake-4224.webp",
         "alt": "류센도",
-        "source": "https://commons.wikimedia.org/wiki/File:Ryusendo_cave-sign.jpg",
-        "fit": "contain"
+        "source": "https://commons.wikimedia.org/wiki/File:Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg"
       },
       "flags": [],
-      "width": 1072,
-      "height": 1400,
-      "luminance": 137.7,
-      "sha256": "a94e432fbeac20ef814ea051701381fba4999d6a1b581211c27b8575ce2b1f7d"
+      "width": 1280,
+      "height": 799,
+      "luminance": 92.2,
+      "sha256": "926448f23f0cb4a040bcbbf8d75e2591af6b588ae9a76118e30dd49abcc646fa"
     },
     {
       "kind": "place",
@@ -15851,15 +16103,21 @@
       "pref": "아키타",
       "name": "아키타견 회관",
       "photo": {
-        "src": "images/commons/0834fec534b951ea.webp",
-        "alt": "아키타견 회관",
-        "source": "https://commons.wikimedia.org/wiki/File:Akita-Inu-Kaikan_110827.jpg"
+        "filename": "Akita-Inu-Kaikan 110827.jpg",
+        "src": "images/licensed/akita-inu-kaikan-4417.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Akita-Inu-Kaikan_110827.jpg",
+        "author": "Yauchi",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "description": "Front view of Akita Inu Kaikan in Odate, Akita.",
+        "review": "user-approved-identity-and-license-reviewed",
+        "alt": "아키타견 회관"
       },
       "flags": [],
       "width": 1024,
       "height": 768,
-      "luminance": 109.5,
-      "sha256": "30ba88cbc8e0e59b20746ab14ed1e0453674a41663f1eb6cff2afb49f15e067d"
+      "luminance": 109.4,
+      "sha256": "cd12b7f15e37c4e8ec73d8700196cc153f97e2902d6b00e50c4d0759f7d8f364"
     },
     {
       "kind": "place",
@@ -16542,15 +16800,15 @@
       "pref": "니가타",
       "name": "사도 금산",
       "photo": {
-        "src": "images/commons/b23855a2fc56bdf8.webp",
+        "src": "images/commons/4db91be30f39269a.webp",
         "alt": "사도 금산",
-        "source": "https://commons.wikimedia.org/wiki/File:Electrum_from_Sado_Gold_Mine.jpeg"
+        "source": "https://commons.wikimedia.org/wiki/File:Sadokinzan-doyunowareto_01.JPG"
       },
       "flags": [],
-      "width": 1280,
-      "height": 960,
-      "luminance": 130.7,
-      "sha256": "2b3bd6af966bbf727cb1bbebd049eb2aa20abf004b26542d01bff944b920c066"
+      "width": 1024,
+      "height": 712,
+      "luminance": 132.0,
+      "sha256": "1dc184b1dc8654a9c5811814eebf4e3a521ee69b91136b768f0c0a68a18a2027"
     },
     {
       "kind": "place",
@@ -16798,15 +17056,23 @@
       "pref": "도야마",
       "name": "다테야마 구로베 알펜루트",
       "photo": {
-        "src": "images/commons/fa8fddea46b32739.webp",
-        "alt": "다테야마 구로베 알펜루트",
-        "source": "https://commons.wikimedia.org/wiki/File:Tateyama_Kurobe_Alpine_Route_-_AlpineRoute6313.jpg"
+        "filename": "立山雪の大谷20220507-IMG 2206.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:%E7%AB%8B%E5%B1%B1%E9%9B%AA%E3%81%AE%E5%A4%A7%E8%B0%B720220507-IMG_2206.jpg",
+        "width": 1280,
+        "height": 854,
+        "author": "くろふね",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "description": "立山雪の大谷",
+        "src": "images/qa/04cf63d541def45b62e7.webp",
+        "review": "subject-license-landscape-and-16:9-center-crop-reviewed",
+        "alt": "다테야마 구로베 알펜루트"
       },
       "flags": [],
       "width": 1280,
-      "height": 795,
-      "luminance": 149.0,
-      "sha256": "89859d68ca0b37271175d735e6818c9ad93661040fce284ce6d93db59d79de3a"
+      "height": 854,
+      "luminance": 134.8,
+      "sha256": "5fc37b051a89ace8c6b3dba75ba3e19ed786eebb520f0488fddb53ada5af5117"
     },
     {
       "kind": "place",
@@ -17071,15 +17337,15 @@
       "pref": "도야마",
       "name": "호타루이카 해상관광",
       "photo": {
-        "src": "images/commons/926ba3b50f371070.webp",
+        "src": "images/official/toyama-hotaruika-sea-tour-4721.webp",
         "alt": "호타루이카 해상관광",
-        "source": "https://commons.wikimedia.org/wiki/File:Hotaruika001.jpg"
+        "source": "https://prtimes.jp/main/html/rd/p/000000002.000149148.html"
       },
       "flags": [],
       "width": 1280,
-      "height": 960,
-      "luminance": 128.0,
-      "sha256": "8bdba02e13e354634ff72afed17c0fde164069a279eb5857d1cd4119ff384dce"
+      "height": 854,
+      "luminance": 74.7,
+      "sha256": "b22b72246803d9367400b5879933e040dfc49e033564a5b83c8cc43d231d43d3"
     },
     {
       "kind": "place",
@@ -17506,15 +17772,15 @@
       "pref": "후쿠이",
       "name": "후쿠이성터",
       "photo": {
-        "src": "images/commons/053fbd96e1fac755.webp",
+        "src": "images/commons/acc93a8c74004aa3.webp",
         "alt": "후쿠이성터",
-        "source": "https://commons.wikimedia.org/wiki/File:Fukui_Castle_Ruins-daimyomachi_station.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Or%C5%8Dkabashi_Bridge_20210505_01.jpg"
       },
       "flags": [],
       "width": 1280,
-      "height": 853,
-      "luminance": 125.7,
-      "sha256": "2464584eb5f3b338d3c13249bbf51eb7969f86fc9d8509c141678582191d4e74"
+      "height": 960,
+      "luminance": 110.0,
+      "sha256": "325368fe03cf5854b69ea569915306c409c83a5e3b2bef8f925e2c08c3258833"
     },
     {
       "kind": "place",
@@ -17572,7 +17838,7 @@
       "photo": {
         "src": "images/commons/e601eb370a3df91d.webp",
         "alt": "도진보",
-        "source": "https://commons.wikimedia.org/wiki/File:Tojinbo_cliffs%2C_Fukui_Prefecture%3B_September_2019_(01).jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Tojinbo_cliffs%2C_Fukui_Prefecture%3B_September_2019_(03).jpg"
       },
       "flags": [],
       "width": 1280,
@@ -17744,10 +18010,10 @@
       "kind": "place",
       "id": 4915,
       "pref": "후쿠이",
-      "name": "인도의 문·진닌노마쓰바라",
+      "name": "기비노마쓰바라",
       "photo": {
         "src": "images/commons/59d3f0eb830197bd.webp",
-        "alt": "인도의 문·진닌노마쓰바라",
+        "alt": "기비노마쓰바라",
         "source": "https://commons.wikimedia.org/wiki/File:Kehi_matsubara02s3200.jpg"
       },
       "flags": [],
@@ -17827,10 +18093,10 @@
       "kind": "place",
       "id": 4920,
       "pref": "후쿠이",
-      "name": "마이즈루와카사 자동차도 전망지·엔카이지",
+      "name": "소토모 해안·유람선",
       "photo": {
         "src": "images/commons/6ed61ab6692442ce.webp",
-        "alt": "마이즈루와카사 자동차도 전망지·엔카이지",
+        "alt": "소토모 해안·유람선",
         "source": "https://commons.wikimedia.org/wiki/File:The_sea_from_the_cruise_boat_of_%22Sotomo%22_-_panoramio.jpg"
       },
       "flags": [],
@@ -17958,15 +18224,15 @@
       "pref": "나가노",
       "name": "시부 온천",
       "photo": {
-        "src": "images/commons/144090ab5c730871.webp",
+        "src": "images/licensed/nagano-shibu-kanaguya-5004.webp",
         "alt": "시부 온천",
-        "source": "https://commons.wikimedia.org/wiki/File:Round_red_post_box_at_Shibu-onsen%2C_Nagano_(15731049113).jpg"
+        "source": "https://www.flickr.com/photos/clvs7/49453787357/"
       },
       "flags": [],
-      "width": 1280,
-      "height": 853,
-      "luminance": 151.2,
-      "sha256": "8a18255b85b3760762b7d3b1e497d94e2ff94f5a694954b439c1ae110aca80b8"
+      "width": 1024,
+      "height": 768,
+      "luminance": 67.0,
+      "sha256": "336c72362ab05fada642cc030473969de4d7a402e080aba2cce9c5d5f53c4991"
     },
     {
       "kind": "place",
@@ -18235,16 +18501,15 @@
       "pref": "나가노",
       "name": "쓰마고주쿠",
       "photo": {
-        "src": "images/commons/7effa42523d0ef91.webp",
+        "src": "images/commons/100acc32d3074dc8.webp",
         "alt": "쓰마고주쿠",
-        "source": "https://commons.wikimedia.org/wiki/File:Tsumago-juku%2C_Nagiso%2C_Nagano%2C_Japan_(3599672649).jpg",
-        "fit": "contain"
+        "source": "https://commons.wikimedia.org/wiki/File:Tsumago-juku_-_Tsumago686.jpg"
       },
       "flags": [],
-      "width": 1050,
-      "height": 1400,
-      "luminance": 143.5,
-      "sha256": "d0b66d48c980c419565fa67b3577a923bdaa02f9ede07a4d3fb1de86e5aa64c8"
+      "width": 1280,
+      "height": 853,
+      "luminance": 74.8,
+      "sha256": "2c033133ffefc9c0ec0149d87a1baffcbd14584b5f58e5951e09cd7f7f85f597"
     },
     {
       "kind": "place",
@@ -18528,7 +18793,7 @@
       "photo": {
         "src": "images/commons/450ad9d289d9c1e6.webp",
         "alt": "기요사토 고원",
-        "source": "https://commons.wikimedia.org/wiki/File:160826_In_front_of_Kiyosato_Station_Hokuto_Yamanashi_pref_Japan07s3.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:160826_In_front_of_Kiyosato_Station_Hokuto_Yamanashi_pref_Japan05s3.jpg"
       },
       "flags": [],
       "width": 1280,
@@ -19723,11 +19988,23 @@
       "pref": "야마가타",
       "name": "이모니",
       "photo": {
-        "src": ""
+        "filename": "芋煮会",
+        "src": "images/official/yamagata-imoni-154.webp",
+        "source": "https://yamagatakanko.com/photos/detail_154.html",
+        "author": "山形県・写真提供者",
+        "license": "観光宣伝・販売促進・観光出版物での利用・編集可",
+        "licenseUrl": "https://yamagatakanko.com/photos/detail_154.html",
+        "description": "User-approved official Yamagata tourism photo ID 154.",
+        "review": "user-approved-official-photo-154",
+        "alt": "이모니"
       },
       "flags": [
-        "missing-photo"
-      ]
+        "low-resolution"
+      ],
+      "width": 640,
+      "height": 360,
+      "luminance": 110.3,
+      "sha256": "22ecaf7686aafe4a56307c713e2a75a95eec774b2e12ad6faa5f429cbbcfc684"
     },
     {
       "kind": "food",
@@ -20524,11 +20801,23 @@
       "pref": "도쿄",
       "name": "오시마 우유·아시타바 간식",
       "photo": {
-        "src": ""
+        "filename": "ソフトクリーム",
+        "src": "images/official/tokyo-oshima-milk-soft.webp",
+        "source": "https://oshima-photo.com/type_library/20240313-2/",
+        "author": "東京都大島町 / 伊豆大島写真館",
+        "license": "伊豆大島写真館 利用規約（改変・Web利用可）",
+        "licenseUrl": "https://oshima-photo.com/",
+        "description": "User-approved official Oshima milk soft-serve photo.",
+        "review": "user-approved-official-oshima-photo",
+        "alt": "오시마 우유·아시타바 간식"
       },
       "flags": [
-        "missing-photo"
-      ]
+        "low-resolution"
+      ],
+      "width": 610,
+      "height": 407,
+      "luminance": 105.6,
+      "sha256": "bf3ffc686962509c118a16f9959919a2a793f35108763d3ca1f5d5365fc962e3"
     },
     {
       "kind": "food",
@@ -22319,7 +22608,8 @@
       "name": "와카야마 라멘",
       "photo": {
         "src": "images/commons/773a650fc21d841b.webp",
-        "source": "https://commons.wikimedia.org/wiki/File:Wakayamaramen2.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Wakayamaramen2.jpg",
+        "fit": "contain"
       },
       "flags": [],
       "width": 1050,
@@ -22456,11 +22746,21 @@
       "pref": "돗토리",
       "name": "이십세기배",
       "photo": {
-        "src": ""
+        "filename": "二十世紀梨",
+        "src": "images/licensed/tottori-nijisseiki-pear.webp",
+        "source": "https://sanin-geo.jp/resrources-tottori/",
+        "author": "写真提供：山陰海岸ジオパーク推進協議会",
+        "license": "観光・教育フリー素材（非商用・クレジット必須）",
+        "licenseUrl": "https://sanin-geo.jp/gaia/wp-content/uploads/2025/09/889ac7991f134ad80adde08ab0218e9c.pdf",
+        "description": "San’in Kaigan Geopark official free material showing Tottori Nijisseiki pears.",
+        "review": "user-approved-official-free-material-and-terms-reviewed",
+        "alt": "이십세기배"
       },
-      "flags": [
-        "missing-photo"
-      ]
+      "flags": [],
+      "width": 1280,
+      "height": 854,
+      "luminance": 166.4,
+      "sha256": "8a2ec6497d72407d82834a2f8095b9764c62fad2da8b403f359eeed68f640227"
     },
     {
       "kind": "food",
@@ -23262,11 +23562,23 @@
       "pref": "고치",
       "name": "도사 아카우시",
       "photo": {
-        "src": ""
+        "filename": "写真：土佐あかうし",
+        "src": "images/official/kochi-tosa-akaushi.webp",
+        "source": "https://www.jpo.go.jp/system/trademark/gaiyo/chidan/shoukai/ichiran/6478407.html",
+        "author": "特許庁",
+        "license": "公共データ利用規約 第1.0版 (PDL1.0)",
+        "licenseUrl": "https://www.jpo.go.jp/toppage/about/index.html",
+        "description": "User-approved JPO Tosa Akaushi image, cropped to the upper raw-beef portion.",
+        "review": "user-approved-jpo-pdl1-top-crop",
+        "alt": "도사 아카우시"
       },
       "flags": [
-        "missing-photo"
-      ]
+        "low-resolution"
+      ],
+      "width": 420,
+      "height": 236,
+      "luminance": 124.0,
+      "sha256": "8a33de1015025f52d5234980ccce410e0d9062488868f04b6d9cf5aa83c177f5"
     },
     {
       "kind": "food",
@@ -23337,11 +23649,22 @@
       "pref": "후쿠오카",
       "name": "미즈타키",
       "photo": {
-        "src": ""
+        "filename": "Mizutaki (Chicken and Vegetable Hot Pot) (#1)",
+        "source": "https://www.crossroadfukuoka.jp/en/photo/222",
+        "width": 1280,
+        "height": 853,
+        "author": "© Fukuoka Prefecture Tourism Association",
+        "license": "관광 홍보용 이용 허가 · 사진 자체 재배포 금지",
+        "licenseUrl": "https://www.crossroadfukuoka.jp/en/photo/guide",
+        "src": "images/official/fukuoka-mizutaki-222.webp",
+        "review": "dish-identity-landscape-and-center-crop-reviewed",
+        "alt": "미즈타키"
       },
-      "flags": [
-        "missing-photo"
-      ]
+      "flags": [],
+      "width": 1280,
+      "height": 853,
+      "luminance": 122.0,
+      "sha256": "3c05b26ec38f04864cc666abea8c1514ca1e343bf625bc30fafc34c72a43e834"
     },
     {
       "kind": "food",
@@ -23439,11 +23762,21 @@
       "pref": "사가",
       "name": "요부코 오징어 활어회",
       "photo": {
-        "src": ""
+        "filename": "Ika-sashi 01.JPG",
+        "src": "images/licensed/saga-yobuko-ika-sashi.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Ika-sashi_01.JPG",
+        "author": "Miya.m",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "description": "User-approved representative live squid sashimi photo.",
+        "review": "user-approved-live-squid-sashimi-and-license-reviewed",
+        "alt": "요부코 오징어 활어회"
       },
-      "flags": [
-        "missing-photo"
-      ]
+      "flags": [],
+      "width": 1280,
+      "height": 818,
+      "luminance": 107.7,
+      "sha256": "e06db99834dbd3df40d08eedf219591e08ccdd6db252ef5ec593691674073d82"
     },
     {
       "kind": "food",
