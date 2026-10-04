@@ -1,0 +1,19 @@
+name: Audit Jatlas duplicate places
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  duplicate-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run duplicate tourist spot audit
+        run: node tools/audit-duplicates.cjs
