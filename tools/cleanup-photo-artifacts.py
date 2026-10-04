@@ -1,6 +1,6 @@
 """Remove photo artifacts that are not used by the effective Jatlas runtime.
 
-The runtime inventory is produced by tools/audit-content.cjs after all photo overrides.\nCleanup diagnostic revision: 2.
+The runtime inventory is produced by tools/audit-content.cjs after all photo overrides.\nCleanup diagnostic revision: 3 (official assets count as active but are never deleted).
 Only photo-cache roots are touched; general site images are never deleted.
 """
 import json, re, sys
@@ -11,12 +11,13 @@ ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
 AUDIT=ROOT/'audits'
 RUNTIME=Path(sys.argv[1]) if len(sys.argv)>1 else AUDIT/'runtime-inventory.json'
-TARGET_ROOTS=('images/commons/','images/qa/','images/licensed/')
+PHOTO_ROOTS=('images/commons/','images/qa/','images/licensed/','images/official/')
+DELETE_ROOTS=('images/commons/','images/qa/','images/licensed/')
 
 def clean_path(value):
     if not isinstance(value,str): return None
     value=unquote(urlsplit(value).path.lstrip('/'))
-    return value if value.startswith(TARGET_ROOTS) else None
+    return value if value.startswith(PHOTO_ROOTS) else None
 
 def collect(value,out):
     if isinstance(value,dict):
@@ -111,7 +112,7 @@ manifest_file.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',e
 # Delete committed/local cache files that no current runtime photo uses.
 removed=[]
 freed=0
-for root_name in TARGET_ROOTS:
+for root_name in DELETE_ROOTS:
     root=DIST/root_name.rstrip('/')
     if not root.exists(): continue
     for path in root.rglob('*'):
