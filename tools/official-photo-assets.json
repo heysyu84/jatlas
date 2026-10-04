@@ -279,6 +279,32 @@
       "output": "images/licensed/iwate-kappabuchi-4221.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Kappa-buchi02s3872.jpg",
       "terms": "https://creativecommons.org/licenses/by/2.5/"
+    },
+    {
+      "placeId": 5003,
+      "sha256": "11682acd021b0f864a9724b3d592a8e1ee221a826743df8eb2410bb09cd563a5",
+      "output": "images/licensed/nagano-jigokudani-hotspring-5003.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Jigokudani_hotspring_in_Nagano_Japan_001.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Jigokudani_hotspring_in_Nagano_Japan_001.jpg",
+      "minWidth": 800,
+      "minHeight": 600
+    },
+    {
+      "placeId": 711,
+      "sha256": "a183d993d2256dfe3877f674c4f5c8d7f93e8695a51f88a10f2b6c1cca10e928",
+      "output": "images/licensed/kanagawa-hakone-heiwa-711.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%AE%B1%E6%A0%B9%E7%A5%9E%E7%A4%BE_%E5%B9%B3%E5%92%8C%E3%81%AE%E9%B3%A5%E5%B1%85,_%E7%AE%B1%E6%A0%B9%E7%94%BA,_Japan_(Unsplash).jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "commonsFilename": "箱根神社 平和の鳥居, 箱根町, Japan (Unsplash).jpg"
+    },
+    {
+      "placeId": 4504,
+      "sha256": "8a932b5f8a35c1560fdb441adcf828ee48eb281bb6c6d099c482d222c9d1d3bf",
+      "output": "images/licensed/yamagata-zao-ice-monsters-4504.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Mt.Zao_-_Ice_monsters_field_-_panoramio.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "commonsFilename": "Mt.Zao - Ice monsters field - panoramio.jpg"
     }
   ]
 }
