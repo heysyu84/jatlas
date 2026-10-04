@@ -25,6 +25,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Audit duplicate tourist spots
+        run: node tools/audit-duplicates.cjs
+
       - name: Setup Python for licensed website assets
         uses: actions/setup-python@v5
         with:
@@ -34,9 +37,6 @@ jobs:
         run: |
           python -m pip install Pillow==11.3.0
           python tools/prepare-official-photos.py
-
-      - name: Audit duplicate tourist spots
-        run: node tools/audit-duplicates.cjs
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
