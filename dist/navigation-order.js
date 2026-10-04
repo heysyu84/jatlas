@@ -5,7 +5,7 @@ function orderedPlaces(places,pref=state.pref){
  const ranks=new Map(areas.map((area,i)=>[area,i]));
  const seenIds=new Set(),seenNames=new Set(),unique=[];
  for(const p of places){
-  const id=String(p.id??''),nameKey=(String(p.pref||pref)+'|'+String(p.name||'')).normalize('NFKC').toLowerCase().replace(/\\s+/gu,'');
+  const id=String(p.id??''),nameKey=(String(p.pref||pref)+'|'+String(p.name||'')).normalize('NFKC').toLowerCase().replace(/\s+/gu,'');
   if((id&&seenIds.has(id))||(nameKey&&seenNames.has(nameKey)))continue;
   if(id)seenIds.add(id);if(nameKey)seenNames.add(nameKey);unique.push(p);
  }
