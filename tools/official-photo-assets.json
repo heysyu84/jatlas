@@ -47,16 +47,16 @@
     },
     {
       "placeId": 3203,
-      "flickrPhotoId": "23716539709",
+      "flickrPhotoId": "24086051195",
       "author": "othree",
       "expectedLicenseId": 4,
-      "allowUnpinned": true,
-      "output": "images/licensed/kumamoto-kumamon-square-23716539709.webp",
-      "source": "https://www.flickr.com/photos/othree/23716539709/",
+      "output": "images/licensed/kumamoto-kumamon-square-24086051195.webp",
+      "source": "https://www.flickr.com/photos/othree/24086051195/",
       "terms": "https://creativecommons.org/licenses/by/2.0/",
       "flickrAuthorSlug": "othree",
       "minWidth": 900,
-      "minHeight": 500
+      "minHeight": 500,
+      "sha256": "5a6ea3f2c3e807cedebec68a12e7b6e89975f950c32aafb059b842581bc9a754"
     },
     {
       "foodName": "이십세기배",
