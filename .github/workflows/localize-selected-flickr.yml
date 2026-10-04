@@ -44,14 +44,35 @@ jobs:
                   "https://live.staticflickr.com/3886/14909320636_80615e058b_o.jpg",
                   out / "miyazawa-kenji-museum-yoshihide-14909320636.webp",
               ),
+              (
+                  "https://prcdn.freetls.fastly.net/release_image/149148/2/149148-2-54e2b5a3cb53c038c553d90114ada39e-3900x3349.jpg?auto=webp&fit=bounds&format=jpeg&width=1600",
+                  out / "hotaruika-sea-tour-namerikawa-2025.webp",
+              ),
+              (
+                  "https://www.nagasaki-tabinet.com/storage/tourism_attractions/130/responsive_images/xAa9VBOpfPTPqUznIlEEGbYe7QxJps2HTUyaZ1kR__1673_1115.jpeg",
+                  out / "nagasaki-peace-statue-official.webp",
+              ),
+              (
+                  "https://www.benesse-artsite.jp/art/uploads/art/arthouse/haisya_1.jpg",
+                  out / "naoshima-haisha-benesse.webp",
+              ),
           ]
 
-          headers = {
-              "User-Agent": "Mozilla/5.0 Jatlas photo localizer",
-              "Referer": "https://www.flickr.com/",
-          }
-
           for url, dest in assets:
+              if "staticflickr.com" in url:
+                  referer = "https://www.flickr.com/"
+              elif "prcdn.freetls.fastly.net" in url:
+                  referer = "https://prtimes.jp/"
+              elif "nagasaki-tabinet.com" in url:
+                  referer = "https://www.nagasaki-tabinet.com/"
+              elif "benesse-artsite.jp" in url:
+                  referer = "https://www.benesse-artsite.jp/"
+              else:
+                  referer = ""
+              headers = {
+                  "User-Agent": "Mozilla/5.0 Jatlas photo localizer",
+                  "Referer": referer,
+              }
               r = requests.get(url, headers=headers, timeout=60)
               r.raise_for_status()
               ctype = (r.headers.get("content-type") or "").lower()
@@ -96,6 +117,33 @@ jobs:
           s = s.replace(old, new)
           iwate.write_text(s, encoding="utf-8")
 
+          toyama = Path("dist/toyama-expansion.js")
+          s = toyama.read_text(encoding="utf-8")
+          old = 'src:"https://prcdn.freetls.fastly.net/release_image/149148/2/149148-2-54e2b5a3cb53c038c553d90114ada39e-3900x3349.jpg?auto=webp&fit=bounds&format=jpeg&width=1600"'
+          new = 'src:"images/licensed/hotaruika-sea-tour-namerikawa-2025.webp"'
+          if old not in s and new not in s:
+              raise RuntimeError("Hotaruika photo override not found")
+          s = s.replace(old, new)
+          toyama.write_text(s, encoding="utf-8")
+
+          nagasaki = Path("dist/nagasaki-expansion.js")
+          s = nagasaki.read_text(encoding="utf-8")
+          old = 'src:"https://www.nagasaki-tabinet.com/storage/tourism_attractions/130/responsive_images/xAa9VBOpfPTPqUznIlEEGbYe7QxJps2HTUyaZ1kR__1673_1115.jpeg"'
+          new = 'src:"images/licensed/nagasaki-peace-statue-official.webp"'
+          if old not in s and new not in s:
+              raise RuntimeError("Nagasaki Peace photo override not found")
+          s = s.replace(old, new)
+          nagasaki.write_text(s, encoding="utf-8")
+
+          kagawa = Path("dist/kagawa-expansion.js")
+          s = kagawa.read_text(encoding="utf-8")
+          old = 'src:"https://www.benesse-artsite.jp/art/uploads/art/arthouse/haisya_1.jpg"'
+          new = 'src:"images/licensed/naoshima-haisha-benesse.webp"'
+          if old not in s and new not in s:
+              raise RuntimeError("Naoshima Haisha photo override not found")
+          s = s.replace(old, new)
+          kagawa.write_text(s, encoding="utf-8")
+
           index = Path("dist/index.html")
           s = index.read_text(encoding="utf-8")
           s = s.replace(
@@ -106,6 +154,9 @@ jobs:
               '<script defer src="iwate-expansion.js?v=20261004-photo1"></script>',
               '<script defer src="iwate-expansion.js?v=20261004-photo2"></script>'
           )
+          s = s.replace('<script defer src="toyama-expansion.js"></script>', '<script defer src="toyama-expansion.js?v=20261005-photo1"></script>')
+          s = s.replace('<script defer src="nagasaki-expansion.js"></script>', '<script defer src="nagasaki-expansion.js?v=20261005-photo1"></script>')
+          s = s.replace('<script defer src="kagawa-expansion.js"></script>', '<script defer src="kagawa-expansion.js?v=20261005-photo1"></script>')
           s = s.replace(
               '<p><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/123717325@N02/14932317465/">Yoshihide Urushihara · 미야자와 겐지 기념관 · CC BY-SA 2.0</a></p>',
               '<p><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/nakashi/54360037444/">nakashi · 야스이계곡 · CC BY-SA 2.0</a></p><p><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/123717325@N02/14909320636/">Yoshihide Urushihara · 미야자와 겐지 기념관 · CC BY-SA 2.0</a></p>'
@@ -121,8 +172,8 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/kochi-expansion.js dist/iwate-expansion.js dist/index.html dist/images/licensed
-          git commit -m "Localize approved Yasui and Miyazawa photos"
+          git add dist/kochi-expansion.js dist/iwate-expansion.js dist/toyama-expansion.js dist/nagasaki-expansion.js dist/kagawa-expansion.js dist/index.html dist/images/licensed
+          git commit -m "Localize approved representative photos"
           git pull --rebase origin main
           git push
 
