@@ -413,16 +413,6 @@
       "terms": "https://creativecommons.org/licenses/by/2.0/"
     },
     {
-      "placeId": 1409,
-      "commonsFilename": "Takasaki Kannon 7.jpg",
-      "allowUnpinned": true,
-      "minWidth": 900,
-      "minHeight": 600,
-      "output": "images/licensed/gunma-takasaki-kannon-1409.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:Takasaki_Kannon_7.jpg",
-      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
       "placeId": 5107,
       "commonsFilename": "Iyashinosato village 04.jpg",
       "allowUnpinned": true,
@@ -521,6 +511,106 @@
       "output": "images/official/ishikawa-fukube-4819.webp",
       "source": "https://www.hot-ishikawa.jp/photo/detail_1111114178.html",
       "terms": "https://faq.hot-ishikawa.jp/%E7%9F%B3%E5%B7%9D%E7%9C%8C%E8%A6%B3%E5%85%89%E5%86%99%E7%9C%9F%E3%81%AE%E5%88%A9%E7%94%A8%E3%83%AB%E3%83%BC%E3%83%AB-67efa3b4aa51efad14aee421"
+    },
+    {
+      "placeId": 1409,
+      "commonsFilename": "Byakui Kannon - Takasaki city - panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/gunma-takasaki-kannon-1409.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Byakui_Kannon_-_Takasaki_city_-_panoramio.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 2601,
+      "commonsFilename": "Takamatsu Castle - Tamamo Park 20211125 08.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kagawa-takamatsu-castle-2601.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Takamatsu_Castle_-_Tamamo_Park_20211125_08.jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "placeId": 2608,
+      "commonsFilename": "Takayajinja 20200407 02.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kagawa-takaya-shrine-2608.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Takayajinja_20200407_02.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 2613,
+      "commonsFilename": "Teshima Art Museum exterior view 201310.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kagawa-teshima-art-2613.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Teshima_Art_Museum_exterior_view_201310.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "placeId": 3506,
+      "commonsFilename": "Ibusuki-sand-bath Saraku.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kagoshima-saraku-3506.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ibusuki-sand-bath_Saraku.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 3525,
+      "commonsFilename": "Suspension footbridge in Yakusugi Land.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kagoshima-yakusugi-land-3525.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Suspension_footbridge_in_Yakusugi_Land.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 3530,
+      "commonsFilename": "Amami island Honohoshi beach.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kagoshima-honohoshi-3530.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Amami_island_Honohoshi_beach.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 703,
+      "commonsFilename": "Sangkaien Garden.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kanagawa-sankeien-703.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Sangkaien_Garden.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 714,
+      "commonsFilename": "250429 Jogashima Island 132.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kanagawa-jogashima-714.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:250429_Jogashima_Island_132.jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "placeId": 2802,
+      "commonsFilename": "Katsurahama.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/kochi-katsurahama-2802.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Katsurahama.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   ]
 }
