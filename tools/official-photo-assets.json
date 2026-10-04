@@ -165,6 +165,39 @@
       "output": "images/licensed/akita-inu-kaikan-4417.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Akita-Inu-Kaikan_110827.jpg",
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 4721,
+      "download": "https://prcdn.freetls.fastly.net/release_image/149148/2/149148-2-54e2b5a3cb53c038c553d90114ada39e-3900x3349.jpg?auto=webp&fit=bounds&format=jpeg&width=1600",
+      "allowUnpinned": true,
+      "cropRatio": 1.5,
+      "cropX": 0.5,
+      "cropY": 0.55,
+      "output": "images/official/toyama-hotaruika-sea-tour-4721.webp",
+      "source": "https://prtimes.jp/main/html/rd/p/000000002.000149148.html",
+      "terms": "https://prtimes.jp/main/html/rd/p/000000002.000149148.html",
+      "minWidth": 900,
+      "minHeight": 600
+    },
+    {
+      "placeId": 3103,
+      "download": "https://www.nagasaki-tabinet.com/storage/tourism_attractions/130/responsive_images/xAa9VBOpfPTPqUznIlEEGbYe7QxJps2HTUyaZ1kR__1673_1115.jpeg",
+      "allowUnpinned": true,
+      "output": "images/official/nagasaki-peace-statue-3103.webp",
+      "source": "https://www.nagasaki-tabinet.com/guide/130/",
+      "terms": "https://www.nagasaki-tabinet.com/houjin/photo/guide",
+      "minWidth": 900,
+      "minHeight": 600
+    },
+    {
+      "placeId": 2612,
+      "download": "https://www.benesse-artsite.jp/art/uploads/art/arthouse/haisya_1.jpg",
+      "allowUnpinned": true,
+      "output": "images/official/kagawa-naoshima-haisha-2612.webp",
+      "source": "https://www.benesse-artsite.jp/art/arthouse.html",
+      "terms": "https://www.benesse-artsite.jp/",
+      "minWidth": 900,
+      "minHeight": 600
     }
   ]
 }
