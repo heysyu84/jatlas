@@ -231,6 +231,30 @@
       "minWidth": 900,
       "minHeight": 500,
       "download": "https://kumamoto.guide/files/bb75fb10-efdd-49d6-b456-40a35ad86714_l.jpg"
+    },
+    {
+      "placeId": 4113,
+      "download": "https://aomori-tourism.com/lsc/upfile/photo/0000/7268/7268_1.jpg",
+      "sha256": "d31359daf4fd1b09451960095470d7256c86a65971ce22a4ccd2f0feafc921e4",
+      "output": "images/official/aomori-hirosaki-apple-4113.webp",
+      "source": "https://aomori-tourism.com/photos/detail_7268.html",
+      "terms": "https://aomori-tourism.com/photos/detail_7268.html"
+    },
+    {
+      "placeId": 4224,
+      "download": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg?width=1600",
+      "sha256": "21e305a461b6ea008d61aec386907db49f86448ffd03aa3d8c7f27a768c5ef9d",
+      "output": "images/licensed/iwate-ryusendo-lake-4224.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg",
+      "terms": "https://commons.wikimedia.org/wiki/File:Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg"
+    },
+    {
+      "placeId": 4103,
+      "download": "https://www.tohokukanko.jp/lsc/upfile/photo/0000/2208/2208_1.jpg",
+      "sha256": "e324ab04f51a2d690b52a677d7fdcf4212355a2b7ff71f146f597a0252634ab8",
+      "output": "images/official/aomori-sannai-4103.webp",
+      "source": "https://www.tohokukanko.jp/photos/detail_2208.html",
+      "terms": "https://www.tohokukanko.jp/photos/detail_2208.html"
     }
   ]
 }
