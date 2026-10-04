@@ -321,6 +321,30 @@
       "output": "images/licensed/akita-oyasukyo-steam-4414.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Oyasukyo3.JPG",
       "terms": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "placeId": 5201,
+      "commonsFilename": "Joudodaira.JPG",
+      "sha256": "6bb3a734d3481ab95ce65c72cb5f4492d089c5f1a987f0ae148f2909465290e1",
+      "output": "images/licensed/fukushima-jododaira-5201.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Joudodaira.JPG",
+      "terms": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "placeId": 5205,
+      "commonsFilename": "会津さざえ堂 (円通三匝堂)20200208-IMG 7847.jpg",
+      "sha256": "6665dbfc4b77cecd2097c4235483b07b7682dce00cdd00a9de5c49843e680355",
+      "output": "images/licensed/fukushima-sazaedo-5205.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%9A%E6%B4%A5%E3%81%95%E3%81%96%E3%81%88%E5%A0%82_(%E5%86%86%E9%80%9A%E4%B8%89%E5%8C%9D%E5%A0%82)20200208-IMG_7847.jpg",
+      "terms": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "placeId": 5219,
+      "commonsFilename": "Shioyasaki Light House (13332232033).jpg",
+      "sha256": "ae7b69f4286e2a1224f42ac81abc4c199261b661f270b53ebf19f1f386799d2c",
+      "output": "images/licensed/fukushima-shioyasaki-5219.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Shioyasaki_Light_House_(13332232033).jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0/"
     }
   ]
 }
