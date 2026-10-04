@@ -3,7 +3,13 @@ const placeNameCollator=new Intl.Collator('ko',{numeric:true,sensitivity:'base'}
 function orderedPlaces(places,pref=state.pref){
  const areas=[...new Set(samples.filter(p=>p.pref===pref).map(p=>p.area))];
  const ranks=new Map(areas.map((area,i)=>[area,i]));
- return [...places].sort((a,b)=>(ranks.get(a.area)??areas.length)-(ranks.get(b.area)??areas.length)||placeNameCollator.compare(a.name,b.name));
+ const seenIds=new Set(),seenNames=new Set(),unique=[];
+ for(const p of places){
+  const id=String(p.id??''),nameKey=(String(p.pref||pref)+'|'+String(p.name||'')).normalize('NFKC').toLowerCase().replace(/\\s+/gu,'');
+  if((id&&seenIds.has(id))||(nameKey&&seenNames.has(nameKey)))continue;
+  if(id)seenIds.add(id);if(nameKey)seenNames.add(nameKey);unique.push(p);
+ }
+ return unique.sort((a,b)=>(ranks.get(a.area)??areas.length)-(ranks.get(b.area)??areas.length)||placeNameCollator.compare(a.name,b.name));
 }
 
 Object.assign(featureJapanese,{
