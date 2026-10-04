@@ -441,6 +441,66 @@
       "output": "images/licensed/yamanashi-shosenkyo-5112.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Yamanashi_Shosenkyo_xl.jpg",
       "terms": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "placeId": 911,
+      "commonsFilename": "View of Sekigahara from Sasaoyama, site of Ishida Mitsunari's headquarters.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/gifu-sekigahara-overview-911.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Sekigahara_from_Sasaoyama,_site_of_Ishida_Mitsunari%27s_headquarters.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 923,
+      "commonsFilename": "The-Battlefield-of-Sekigahara-1.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/gifu-sekigahara-decisive-923.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:The-Battlefield-of-Sekigahara-1.jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "placeId": 3702,
+      "commonsFilename": "Ise Mie Okage Yokocho 01.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/mie-okage-yokocho-3702.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ise_Mie_Okage_Yokocho_01.jpg",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "placeId": 3711,
+      "commonsFilename": "Overview of Nagashima Spa Land 1.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/mie-nagashima-3711.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Overview_of_Nagashima_Spa_Land_1.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 3717,
+      "commonsFilename": "伊贺流忍者博物馆 - panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/mie-iga-ninja-museum-3717.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B4%BA%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A6%86_-_panoramio.jpg",
+      "terms": "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B4%BA%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A6%86_-_panoramio.jpg"
+    },
+    {
+      "placeId": 4809,
+      "commonsFilename": "260719 Natadera Komatsu Ishikawa pref Japan16s4.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/ishikawa-natadera-4809.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:260719_Natadera_Komatsu_Ishikawa_pref_Japan16s4.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   ]
 }
