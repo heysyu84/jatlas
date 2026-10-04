@@ -328,24 +328,24 @@ const repairs = {"checked":"2026.10.04",
 "4911":{"access":{"ko":"JR 에치젠오노역에서 도심으로 걸어갑니다. 2026년 6~10월 시치켄도리 공사 기간에는 아침시장이 ‘城下町東広場’(大和町3-7)로 옮겨 열리므로 임시 회장을 목적지로 정합니다.","ja":"JR越前大野駅から市街地へ歩きます。2026年6〜10月の七間通りの工事中は、朝市が「城下町東広場」（大和町3-7）へ移るため、仮会場を目的地にします。"},"source":"https://7-ken.com/home/?p=845"},
 "4918":{"access":{"ko":"JR 오바마역에서 니시구미 옛 거리로 걸어가거나 택시로 접근합니다. 마치나미보존자료관 주변을 거점으로 골목을 도보로 연결합니다.","ja":"JR小浜駅から西組の古い町並みへ徒歩・タクシーで移動します。町並み保存資料館周辺を拠点に路地を徒歩で巡ります。"},"source":"https://www1.city.obama.fukui.jp/kanko-bunka/rekishi-bunka/obamanishigumichiku/515.html"},
 "4919":{"access":{"ko":"JR 오바마역에서 차량으로 항구·와카사오바마오사카나센터 주변에 접근합니다. 항구 산책과 소토모 유람선 승선장은 구분하고 작업 중인 부두에는 들어가지 않습니다.","ja":"JR小浜駅から車で港・若狭小浜お魚センター周辺へ。港の散策と蘇洞門遊覧船の乗船場を区別し、作業中の岸壁には入りません。"},"source":"https://www.fuku-e.com/spot/detail_1404.html"},
-"300":{"access":{"ko":"JR 고후역 북쪽 출구에서 야마나시교통 버스를 타고 ‘다케다 신사’에서 하차합니다.","ja":"JR甲府駅北口から山梨交通バスに乗り、「武田神社」で下車します。"},"source":"https://ykbus.jp/route_bus/route_sp_info/takeda-jinja_shrine/"},
-"301":{"access":{"ko":"JR 고후역 남쪽 출구에서 성터 공원 입구까지 걸어갑니다. 역 바로 남동쪽에 있는 도심 공원입니다.","ja":"JR甲府駅南口から城跡公園の入口へ歩きます。駅の南東側にある市街地の公園です。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/kofu-castle.html"},
-"302":{"access":{"ko":"JR 주오선 사카오리역 또는 미노부선 젠코지역에서 사찰까지 걸어갑니다.","ja":"JR中央本線酒折駅または身延線善光寺駅から寺院まで歩きます。"},"source":"https://www.yamanashi-kankou.jp/english/recover/kai-zenkoji-temple.html"},
-"303":{"access":{"ko":"JR 고후역 남쪽 출구에서 쇼센쿄 방면 버스를 이용합니다. 계곡을 아래에서 걸으려면 ‘쇼센쿄구치’, 폭포와 로프웨이부터 보려면 ‘쇼센쿄타키우에’에서 하차합니다.","ja":"JR甲府駅南口から昇仙峡方面のバスに乗ります。渓谷を下流から歩く場合は「昇仙峡口」、滝やロープウェイから回る場合は「昇仙峡滝上」で下車します。"},"source":"https://www.yamanashi-kankou.jp/english/discover/shosenkyo-gorge.html"},
-"304":{"access":{"ko":"JR 고후역에서 쇼센쿄 방면 버스로 ‘쇼센쿄타키우에’까지 이동한 뒤 폭포 산책로를 걸어 내려갑니다.","ja":"JR甲府駅から昇仙峡方面のバスで「昇仙峡滝上」へ行き、滝への遊歩道を歩いて下ります。"},"source":"https://www.yamanashi-kankou.jp/english/discover/sengataki-waterfall.html"},
-"305":{"access":{"ko":"JR 주오선 이사와온천역에서 온천거리로 걸어갑니다. 숙소가 역에서 떨어져 있으면 해당 숙소의 송영차나 택시를 이용합니다.","ja":"JR中央本線石和温泉駅から温泉街へ歩きます。駅から離れた宿へは、その宿の送迎車やタクシーを利用します。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/isawa-onsen-street.html"},
-"306":{"access":{"ko":"JR 주오선 가쓰누마부도쿄역을 거점으로 방문할 농원이나 와이너리까지 택시로 이동합니다. 포도밭과 시설이 넓게 흩어져 있어 목적지를 먼저 정해야 합니다.","ja":"JR中央本線勝沼ぶどう郷駅を起点に、訪れる農園やワイナリーまでタクシーで移動します。ぶどう畑と施設が広く点在しているため、目的地を先に決めます。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/katsunuma.html"},
-"307":{"access":{"ko":"JR 엔잔역 남쪽 출구에서 니시자와 계곡 방면 버스를 타고 ‘에린지마에’에서 하차합니다.","ja":"JR塩山駅南口から西沢渓谷方面のバスに乗り、「恵林寺前」で下車します。"},"source":"https://www.yamanashi-kankou.jp/kankou/spot/p1_4484.html"},
-"308":{"access":{"ko":"가와구치코역에서 가와구치호 주유버스 레드라인을 타고 ‘가와구치코 시젠세이카쓰칸’에서 하차합니다. 오이시 공원은 자연생활관 주변 호숫가에 있습니다.","ja":"河口湖駅から河口湖周遊バスのレッドラインに乗り、「河口湖自然生活館」で下車します。大石公園は自然生活館周辺の湖畔にあります。"},"source":"https://www.yamanashi-kankou.jp/english/explore-by-area/fujisan-fujigoko/flower-street-in-oishi-park.html"},
-"309":{"access":{"ko":"가와구치코역에서 가와구치호 북쪽 방면 노선버스를 타고 ‘가와구치쿄쿠마에’에서 하차한 뒤 신사로 걸어갑니다.","ja":"河口湖駅から河口湖北岸方面の路線バスに乗り、「河口局前」で下車して神社へ歩きます。"},"source":"https://www.yamanashi-kankou.jp/english/discover/kawaguchi-asama-shrine.html"},
 
-"311":{"access":{"ko":"후지큐코선 시모요시다역에서 공원 입구까지 걸어갑니다. 입구에서 전망 지점까지는 계단이나 우회 산책로를 올라야 합니다.","ja":"富士急行線下吉田駅から公園入口へ歩きます。入口から展望地点までは階段または迂回する遊歩道を上ります。"},"source":"https://www.yamanashi-kankou.jp/english/explore-by-area/fujisan-fujigoko/cherry-blossom-arakurayama-sengen-park.html"},
-"312":{"access":{"ko":"후지산역에서 야마나카호 방면 버스를 타고 ‘센겐진자마에’에서 하차합니다. 역에서 걸어가는 방법도 있습니다.","ja":"富士山駅から山中湖方面のバスに乗り、「浅間神社前」で下車します。駅から歩く方法もあります。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/kitaguchi-hongu-fuji-sengen-shrine.html"},
-"313":{"access":{"ko":"후지산역에서 오시노 방면 버스를 타고 ‘오시노핫카이’에서 하차한 뒤 용천 연못을 도보로 둘러봅니다.","ja":"富士山駅から忍野方面のバスに乗り、「忍野八海」で下車して湧水池を徒歩で巡ります。"},"source":"https://www.yamanashi-kankou.jp/english/recover/oshino-hakkai.html"},
-"314":{"access":{"ko":"후지산역에서 야마나카호 방면 버스를 이용합니다. 유람선·호숫가 산책·숙소 중 방문 목적에 맞춰 야마나카호 주변 하차 지점을 정합니다.","ja":"富士山駅から山中湖方面のバスを利用します。遊覧船、湖畔散策、宿泊先など、目的に合わせて山中湖周辺の下車地点を選びます。"},"source":"https://www.yamanashi-kankou.jp/english/explore-by-area/fujisan-fujigoko/lake-yamanakako.html"},
-"315":{"access":{"ko":"JR 고우미선 기요사토역을 거점으로 고원 시설을 둘러봅니다. 역 주변은 도보로, 세이센료 등 역에서 떨어진 곳은 택시나 지역 순환버스로 이동합니다.","ja":"JR小海線清里駅を起点に高原の施設を巡ります。駅周辺は徒歩、清泉寮など駅から離れた場所へはタクシーや地域の周遊バスで移動します。"},"source":"https://www.yamanashi-kankou.jp/english/discover/kiyosato.html"},
+
+"302":{"access":{"ko":"JR 주오선 사카오리역 또는 미노부선 젠코지역에서 사찰까지 걸어갑니다.","ja":"JR中央本線酒折駅または身延線善光寺駅から寺院まで歩きます。"},"source":"https://www.yamanashi-kankou.jp/english/recover/kai-zenkoji-temple.html"},
+
+"304":{"access":{"ko":"JR 고후역에서 쇼센쿄 방면 버스로 ‘쇼센쿄타키우에’까지 이동한 뒤 폭포 산책로를 걸어 내려갑니다.","ja":"JR甲府駅から昇仙峡方面のバスで「昇仙峡滝上」へ行き、滝への遊歩道を歩いて下ります。"},"source":"https://www.yamanashi-kankou.jp/english/discover/sengataki-waterfall.html"},
+
+
+
+
+
+
+
+
+
+
+
 "316":{"access":{"ko":"JR 고부치자와역에서 택시로 오지라가와 계곡 주차장까지 약 30분 이동합니다. 주차장에서 계곡 산책로로 들어갑니다.","ja":"JR小淵沢駅からタクシーで尾白川渓谷駐車場まで約30分移動し、駐車場から渓谷の遊歩道に入ります。"},"source":"https://www.yamanashi-kankou.jp/kankou/spot/p1_4334.html"},
-"317":{"access":{"ko":"JR 미노부역에서 미노부산 방면 버스로 종점까지 이동한 뒤 산몬으로 걸어갑니다. 본당까지는 계단을 오르거나 차량으로 세이신 주차장에 접근하는 방법이 있습니다.","ja":"JR身延駅から身延山方面のバスで終点へ行き、三門まで歩きます。本堂へは石段を上る方法と、車でせいしん駐車場へ向かう方法があります。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/kuonji-temple-five-story-pagoda.html"},
+
 "318":{"access":{"ko":"JR 주오선 사루하시역에서 다리까지 걸어갑니다. 다리는 역 북쪽의 가쓰라강 계곡 위에 있습니다.","ja":"JR中央本線猿橋駅から橋まで歩きます。橋は駅の北側、桂川の渓谷に架かっています。"},"source":"https://www.yamanashi-kankou.jp/english/uncover/saruhashi-bridge.html"},
 "5102":{"access":{"ko":"JR 고후역 북쪽 출구에서 선로를 따라 동쪽으로 걸어갑니다. 고슈유메코지는 역에 인접한 상업 구역입니다.","ja":"JR甲府駅北口から線路沿いに東へ歩きます。甲州夢小路は駅に隣接した商業エリアです。"},"source":"https://koshuyumekouji.com/"},
 "5104":{"access":{"ko":"가와구치코역에서 호숫가까지 걸어가거나 가와구치호 주유버스를 이용합니다. 북쪽 호숫가와 오이시 공원은 레드라인으로 이동합니다.","ja":"河口湖駅から湖畔へ歩くか、河口湖周遊バスを利用します。北岸や大石公園へはレッドラインで移動します。"},"source":"https://www.yamanashi-kankou.jp/kankou/spot/p_9639.html"},
