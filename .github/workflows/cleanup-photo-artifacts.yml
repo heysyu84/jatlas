@@ -114,5 +114,12 @@ jobs:
             exit 0
           fi
           git commit -m "Remove stale photo artifacts and refresh photo QA"
+
+          # prepare-official-photos.py creates deploy-only derivatives and can modify
+          # tracked cache files during verification. They are intentionally not part
+          # of the cleanup commit; clear those working-tree changes before rebasing.
+          git reset --hard HEAD
+          git clean -fd -- package-lock.json dist/images/licensed
+
           git pull --rebase origin main
           git push
