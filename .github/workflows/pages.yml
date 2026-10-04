@@ -35,6 +35,9 @@ jobs:
           python -m pip install Pillow==11.3.0
           python tools/prepare-official-photos.py
 
+      - name: Audit duplicate tourist spots
+        run: node tools/audit-duplicates.cjs
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
