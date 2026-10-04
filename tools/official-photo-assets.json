@@ -305,6 +305,22 @@
       "source": "https://commons.wikimedia.org/wiki/File:Mt.Zao_-_Ice_monsters_field_-_panoramio.jpg",
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
       "commonsFilename": "Mt.Zao - Ice monsters field - panoramio.jpg"
+    },
+    {
+      "placeId": 4408,
+      "commonsFilename": "Aoyagi Samurai House, Kakunodate, April 2023 01.jpg",
+      "sha256": "05487f2fc20249fa19a527c57bfa6338586f5d6a3daac1fae3153bfbf5ffb2da",
+      "output": "images/licensed/akita-aoyagi-house-4408.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Aoyagi_Samurai_House,_Kakunodate,_April_2023_01.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 4414,
+      "commonsFilename": "Oyasukyo3.JPG",
+      "sha256": "b8c8291b57b437103f693f559981586c8f1b28e21906f3dc0fe167130b639aed",
+      "output": "images/licensed/akita-oyasukyo-steam-4414.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Oyasukyo3.JPG",
+      "terms": "https://creativecommons.org/licenses/by/3.0/"
     }
   ]
 }
