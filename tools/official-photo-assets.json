@@ -198,6 +198,42 @@
       "terms": "https://www.benesse-artsite.jp/",
       "minWidth": 900,
       "minHeight": 600
+    },
+    {
+      "placeId": 5004,
+      "flickrPhotoId": "49453787357",
+      "author": "clvs7",
+      "expectedLicenseId": 9,
+      "allowUnpinned": true,
+      "output": "images/licensed/nagano-shibu-kanaguya-5004.webp",
+      "source": "https://www.flickr.com/photos/clvs7/49453787357/",
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "flickrAuthorSlug": "clvs7",
+      "minWidth": 900,
+      "minHeight": 500
+    },
+    {
+      "placeId": 726,
+      "commonsFilename": "Pola Museum of Art - Entrance.jpg",
+      "allowUnpinned": true,
+      "output": "images/licensed/kanagawa-pola-entrance-726.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Pola_Museum_of_Art_-_Entrance.jpg",
+      "terms": "https://creativecommons.org/licenses/by/3.0/",
+      "minWidth": 900,
+      "minHeight": 500
+    },
+    {
+      "placeId": 3201,
+      "commonsFilename": "Sakuranobaba-johsaien , 桜の馬場城彩苑 - panoramio (1).jpg",
+      "allowUnpinned": true,
+      "cropRatio": 1.5,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "output": "images/licensed/kumamoto-josaien-3201.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Sakuranobaba-johsaien_,_桜の馬場城彩苑_-_panoramio_(1).jpg",
+      "terms": "https://creativecommons.org/licenses/by/3.0/",
+      "minWidth": 900,
+      "minHeight": 600
     }
   ]
 }
