@@ -8,9 +8,9 @@
       source:"https://commons.wikimedia.org/wiki/File:191103_Pola_Museum_of_Art_Hakone_Japan02s3.jpg"
     },
     "3201":{
-      src:"images/licensed/kumamoto-josaien-03-3201.webp",
+      src:"images/official/kumamoto-josaien-selected-03-3201.webp",
       alt:"사쿠라노바바 조사이엔",
-      source:"https://commons.wikimedia.org/wiki/File:Johsaien_57T3202small.jpg"
+      source:"https://kumamoto.guide/photogallery/"
     }
   };
   for(const [id,pic] of Object.entries(replacements)){
