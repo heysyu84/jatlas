@@ -1,6 +1,6 @@
 """Remove photo artifacts that are not used by the effective Jatlas runtime.
 
-The runtime inventory is produced by tools/audit-content.cjs after all photo overrides.
+The runtime inventory is produced by tools/audit-content.cjs after all photo overrides.\nCleanup diagnostic revision: 2.
 Only photo-cache roots are touched; general site images are never deleted.
 """
 import json, re, sys

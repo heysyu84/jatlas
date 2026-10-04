@@ -54,6 +54,27 @@ jobs:
           before=json.loads((root/'audits/runtime-before-cleanup.json').read_text())
           after=json.loads((root/'audits/runtime-inventory.json').read_text())
           if before != after:
+              diffs=[]
+              def diff(a,b,path='root'):
+                  if len(diffs)>=80: return
+                  if type(a) is not type(b):
+                      diffs.append((path,a,b)); return
+                  if isinstance(a,dict):
+                      for k in sorted(set(a)|set(b),key=str):
+                          if k not in a or k not in b: diffs.append((path+'.'+str(k),a.get(k,'<missing>'),b.get(k,'<missing>')))
+                          else: diff(a[k],b[k],path+'.'+str(k))
+                          if len(diffs)>=80:return
+                  elif isinstance(a,list):
+                      if len(a)!=len(b): diffs.append((path+'.length',len(a),len(b)))
+                      for i,(x,y) in enumerate(zip(a,b)):
+                          diff(x,y,f'{path}[{i}]')
+                          if len(diffs)>=80:return
+                  elif a!=b:
+                      diffs.append((path,a,b))
+              diff(before,after)
+              print('Runtime differences after cleanup:')
+              for path,a,b in diffs:
+                  print(path,'BEFORE=',repr(a),'AFTER=',repr(b))
               raise SystemExit('Runtime inventory changed during photo cleanup')
           missing=[]
           def walk(v):
