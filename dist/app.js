@@ -7,7 +7,7 @@ for(const p of regionalPlaces){const i=samples.findIndex(q=>q.id===p.id);if(i>=0
 const duplicatePlaceIdsToRemove=new Set([
   300,301,303,305,306,307,308,309,311,312,313,314,315,317,322,323,
   920,
-  1122,1124,1130
+  1121,1122,1124,1130
 ]);
 for(let i=samples.length-1;i>=0;i--)if(duplicatePlaceIdsToRemove.has(Number(samples[i].id)))samples.splice(i,1);
 let placeTheme='전체';
