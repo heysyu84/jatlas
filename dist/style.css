@@ -216,3 +216,13 @@
 /* Preserve complete subjects in unusually tall/wide photographs. */
 img[data-photo-fit="contain"]{object-fit:contain!important;background:#eaf0f4}
 .photoPending{min-height:170px;display:grid;place-items:center;background:#eaf0f4;color:#52616c;border-radius:12px}
+
+/* Scope shortcuts and in-site back navigation. */
+.scopeNavigation{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
+.scopeNavigation[hidden],.floatingBack[hidden]{display:none!important}
+.scopeNavigation button{padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--blue);font-size:14px;cursor:pointer}
+.scopeNavigation button:hover{background:#edf5fb}
+.floatingBack{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:1600;display:flex;align-items:center;gap:7px;min-height:44px;padding:10px 15px;border:1px solid #c3d5e5;border-radius:999px;background:#fff;color:#25486e;box-shadow:0 3px 15px #25486e26;font-size:14px;font-weight:600;cursor:pointer}
+.floatingBack:hover{background:#edf5fb}
+.floatingBack:focus-visible,.scopeNavigation button:focus-visible{outline:3px solid #4c91c5;outline-offset:3px}
+@media(max-width:760px){.scopeNavigation{margin:12px 0 6px;gap:6px}.scopeNavigation button{font-size:13px;padding:8px 12px}.floatingBack{right:max(12px,env(safe-area-inset-right));bottom:calc(82px + env(safe-area-inset-bottom));padding:10px 12px;font-size:13px}}
