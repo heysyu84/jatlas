@@ -3,6 +3,13 @@ const regions=[["홋카이도","홋카이도"],["도호쿠","아오모리 이와
 const samples=[['홋카이도','삿포로·오타루','삿포로','오도리 공원','도시 산책'],['홋카이도','삿포로·오타루','오타루','오타루 운하','거리 풍경'],['홋카이도','후라노·비에이','비에이','시로가네 푸른 연못','자연'],['기후','히다','다카야마','산마치 옛 거리','옛 마을'],['기후','히다','히다후루카와','세토가와와 시라카베 도조가이','마을 산책'],['기후','기후·나가라가와','기후시','기후성','역사'],['교토','교토 시내','교토시','기요미즈데라','사찰'],['교토','교토 시내','교토시','아라시야마','자연·산책'],['교토','우지','우지시','뵤도인','사찰'],['나가노','마쓰모토·아즈미노','마쓰모토시','마쓰모토성','역사'],['나가노','기소','시오지리시','나라이주쿠','옛 마을'],['후쿠오카','후쿠오카·다자이후','후쿠오카시','오호리 공원','도시 산책'],['후쿠오카','후쿠오카·다자이후','다자이후시','다자이후 텐만구','신사'],['후쿠오카','기타큐슈','기타큐슈시','모지코 레트로','거리 풍경']].map((a,i)=>({id:i,pref:a[0],area:a[1],town:a[2],name:a[3],tag:a[4]})).filter(p=>!completePrefs.includes(p.pref));
 samples.push(...tokyoPlaces,...yamanashiPlaces,...osakaPlaces);
 for(const p of regionalPlaces){const i=samples.findIndex(q=>q.id===p.id);if(i>=0)samples[i]=p;else samples.push(p)}
+/* Canonical place IDs for confirmed duplicate tourist spots. Keep one real card per attraction. */
+const duplicatePlaceIdsToRemove=new Set([
+  300,301,303,305,306,307,308,309,311,312,313,314,315,317,322,323,
+  920,
+  1122,1124,1130
+]);
+for(let i=samples.length-1;i>=0;i--)if(duplicatePlaceIdsToRemove.has(Number(samples[i].id)))samples.splice(i,1);
 let placeTheme='전체';
 let contentTab='places',eventMonth=0,eventAllAreas=false;
 const $=s=>document.querySelector(s),allPrefs=regions.flatMap(r=>r[1].split(' '));let state={view:'home',pref:'',area:'전체',town:'전체'},selected=null,saved=[];try{saved=JSON.parse(localStorage.getItem('atlas-saved')||'[]').filter(id=>samples.some(p=>p.id===id))}catch{};
