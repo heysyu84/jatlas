@@ -18,6 +18,16 @@ async function get(url){
 }
 
 (async()=>{
+ const detail802=await get('https://hellonavi.jp/photo/802');
+ for(const needle of ['<form','cart','カート','利用目的','メール','氏名','会社','団体','download']){
+   const i=detail802.toLowerCase().indexOf(needle.toLowerCase());
+   if(i>=0) console.log('DETAIL802_FORM_SNIP',needle,JSON.stringify(detail802.slice(Math.max(0,i-1000),i+3000)));
+ }
+ const cart=await get('https://hellonavi.jp/photo/cart');
+ for(const needle of ['<form','利用目的','メール','氏名','会社','団体','規約','申請']){
+   const i=cart.toLowerCase().indexOf(needle.toLowerCase());
+   if(i>=0) console.log('CART_FORM_SNIP',needle,JSON.stringify(cart.slice(Math.max(0,i-1000),i+4000)));
+ }
  const first=await get('https://hellonavi.jp/photo');
  const pageLinks=[...first.matchAll(/href=["']([^"']*\/photo\?[^"']+)["']/g)].map(m=>new URL(m[1],'https://hellonavi.jp').href);
  const queryLinks=[...new Set(pageLinks)].filter(u=>/page|p=|offset|limit/i.test(u));
