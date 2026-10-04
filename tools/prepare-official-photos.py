@@ -6,9 +6,11 @@ build so Pages retains its previously successful deployment instead of a broken 
 import hashlib
 import io
 import json
+import time
 import html as html_module
 from html.parser import HTMLParser
 import urllib.parse
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -16,6 +18,23 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 USER_AGENT = 'Jatlas tourism website photo build/1.0'
+
+
+def download_bytes(request):
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=45) as response:
+                return response.read(20 * 1024 * 1024 + 1)
+        except urllib.error.HTTPError as error:
+            if error.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise
+            delay = (10, 30)[attempt]
+            try:
+                delay = min(60, max(delay, int(error.headers.get('Retry-After', '0'))))
+            except (ValueError, TypeError):
+                pass
+            print(f'Photo source returned HTTP {error.code}; retrying in {delay}s', flush=True)
+            time.sleep(delay)
 
 
 def fetch_json(url):
@@ -135,8 +154,7 @@ def prepare():
     for photo in manifest['photos']:
         download = resolve_download(photo)
         request = urllib.request.Request(download, headers={'User-Agent': USER_AGENT})
-        with urllib.request.urlopen(request, timeout=45) as response:
-            raw = response.read(20 * 1024 * 1024 + 1)
+        raw = download_bytes(request)
         if len(raw) > 20 * 1024 * 1024:
             raise ValueError('Licensed photo exceeds download size limit')
 
