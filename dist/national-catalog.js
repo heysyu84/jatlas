@@ -1,6 +1,7 @@
 /* Continuous nationwide catalogs, ordered like the existing prefecture/area menus. */
 const nationalCatalogViews={nationalPlaces:'전국 관광지',nationalFoods:'전국 음식'};
 Object.assign(featureJapanese,{
+ '상세정보':'詳細情報','클릭하거나 터치하면 닫힙니다.':'クリックまたはタップすると閉じます。',
  '전국 관광지':'全国の観光スポット','전국 음식':'全国のグルメ','전국 목록':'全国の一覧',
  '관광지 카테고리':'観光スポットのカテゴリー','음식 카테고리':'グルメのカテゴリー',
  '밥·덮밥':'ご飯・丼物','국·전골':'汁物・鍋料理','간식·디저트':'おやつ・デザート','과일·특산물':'果物・特産品','기타 향토요리':'その他の郷土料理',
@@ -83,12 +84,75 @@ function selectNationalCategory(category){
  nationalCatalogCategories[state.view]=category;renderNationalCatalog();
 }
 
+let nationalDetailDialog;
+function closeNationalDetail(){
+ if(nationalDetailDialog?.open)nationalDetailDialog.close();
+}
+function openNationalDetail(item,kind){
+ if(!Object.hasOwn(nationalCatalogViews,state.view))return;
+ if(!nationalDetailDialog){
+  nationalDetailDialog=document.createElement('dialog');
+  nationalDetailDialog.id='nationalDetailDialog';
+  nationalDetailDialog.setAttribute('aria-labelledby','nationalDetailTitle');
+  nationalDetailDialog.addEventListener('click',event=>{
+   if(event.target.closest?.('a,button'))return;
+   closeNationalDetail();
+  });
+  nationalDetailDialog.addEventListener('close',()=>document.body.classList.remove('nationalDetailOpen'));
+  document.body.append(nationalDetailDialog);
+ }
+ const panel=document.createElement('div');panel.className='nationalDetailPanel';
+ const dismiss=button('×',closeNationalDetail,'nationalDetailClose');dismiss.setAttribute('aria-label','닫기');
+ const hint=document.createElement('p');hint.className='muted';hint.textContent='클릭하거나 터치하면 닫힙니다.';
+ const title=document.createElement('h2');title.id='nationalDetailTitle';title.textContent=item.name;
+ const location=document.createElement('p');location.className='eyebrow';location.textContent=[item.pref,item.area,item.town].filter(Boolean).join(' · ');
+ panel.append(dismiss,hint,location,title);
+ if(kind==='foods'){
+  const details=nationalFoodCard(item);
+  details.querySelector('h3')?.remove();
+  panel.append(details);
+ }else{
+  const visual=document.createElement('div');visual.innerHTML=tokyoDetailExtras(item);panel.append(visual);
+  for(const [heading,text] of [['어떤 곳인가요?',item.description],['어떻게 즐길까요?',item.activity]]){
+   if(!text)continue;
+   const h=document.createElement('h3');h.textContent=heading;
+   const p=document.createElement('p');p.textContent=text;panel.append(h,p);
+  }
+  const links=document.createElement('div');links.className='officialLinks';
+  const urls=[['공식 관광 안내 ↗',item.source],['지도에서 장소 검색 ↗',googlePlaceMapURL(item,false)]];
+  for(const [label,url] of urls){
+   if(!url)continue;const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=label;links.append(a);
+  }
+  panel.append(links);
+ }
+ nationalDetailDialog.replaceChildren(panel);
+ if(typeof localize==='function')localize();
+ if(!nationalDetailDialog.open)nationalDetailDialog.showModal();
+ document.body.classList.add('nationalDetailOpen');
+ nationalDetailDialog.scrollTop=0;
+}
+function wireNationalDetail(el,item,foods){
+ if(!foods){
+  const main=el.querySelector('.cardMain')||el;
+  main.onclick=()=>openNationalDetail(item,'places');
+ }else{
+  el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-label',item.name+' · 상세정보');
+  el.addEventListener('click',event=>{
+   if(event.target.closest?.('a,button'))return;
+   openNationalDetail(item,'foods');
+  });
+  el.addEventListener('keydown',event=>{
+   if(event.target!==el||!['Enter',' '].includes(event.key))return;
+   event.preventDefault();openNationalDetail(item,'foods');
+  });
+ }
+}
 function renderNationalCatalog(){
  const view=state.view,active=Object.hasOwn(nationalCatalogViews,view),host=$('#nationalCatalog');host.hidden=!active;
  for(const [key,label] of Object.entries(nationalCatalogViews)){
   const menu=$('#'+key+'Menu');menu?.setAttribute('aria-current',view===key?'page':'false');
  }
- if(!active)return;
+ if(!active){closeNationalDetail();return;}
  let cached=nationalCatalogCache.get(view);
  if(!cached){
   const foods=view==='nationalFoods',items=nationalCatalogEntries(foods?'foods':'places');
@@ -96,6 +160,7 @@ function renderNationalCatalog(){
   for(const item of items){
    const el=foods?nationalFoodCard(item):card(item);
    if(!foods){const small=el.querySelector('.cardMain small');if(small)small.textContent=[item.pref,item.area,item.town].filter(Boolean).join(' · ')}
+   wireNationalDetail(el,item,foods);
    grid.append(el);
   }
   cached={grid,items,cards:[...grid.children]};nationalCatalogCache.set(view,cached);
