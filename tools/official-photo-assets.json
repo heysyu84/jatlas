@@ -1356,6 +1356,76 @@
       "minWidth": 900,
       "minHeight": 600,
       "terms": "https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg"
+    },
+    {
+      "placeId": 3319,
+      "commonsFilename": "Stone sign and Torii of Usa Jingu Shrine - Mar 26, 2018.jpg",
+      "output": "images/licensed/oita-usa-jingu-3319.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Stone_sign_and_Torii_of_Usa_Jingu_Shrine_-_Mar_26,_2018.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Stone_sign_and_Torii_of_Usa_Jingu_Shrine_-_Mar_26,_2018.jpg"
+    },
+    {
+      "placeId": 3415,
+      "commonsFilename": "馬ヶ背突端.jpg",
+      "output": "images/licensed/miyazaki-umagase-3415.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%A6%AC%E3%83%B6%E8%83%8C%E7%AA%81%E7%AB%AF.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:%E9%A6%AC%E3%83%B6%E8%83%8C%E7%AA%81%E7%AB%AF.jpg"
+    },
+    {
+      "placeId": 3522,
+      "commonsFilename": "Yaku-Island Shiratani-Unsui-Gorge.jpg",
+      "output": "images/licensed/kagoshima-shiratani-unsuikyo-3522.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg"
+    },
+    {
+      "placeId": 3523,
+      "commonsFilename": "Jomonsugi (52931651088).jpg",
+      "output": "images/licensed/kagoshima-jomonsugi-3523.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Jomonsugi_(52931651088).jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Jomonsugi_(52931651088).jpg"
+    },
+    {
+      "placeId": 3524,
+      "commonsFilename": "Oko Falls in Yakushima.jpg",
+      "output": "images/licensed/kagoshima-oko-falls-3524.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Oko_Falls_in_Yakushima.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Oko_Falls_in_Yakushima.jpg"
+    },
+    {
+      "placeId": 3606,
+      "commonsFilename": "Gyokusendo Cave - panoramio.jpg",
+      "output": "images/licensed/okinawa-gyokusendo-3606.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Gyokusendo_Cave_-_panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Gyokusendo_Cave_-_panoramio.jpg"
+    },
+    {
+      "placeId": 3637,
+      "commonsFilename": "Ishigaki eugrena mall.jpg",
+      "output": "images/licensed/okinawa-euglena-mall-3637.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ishigaki_eugrena_mall.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Ishigaki_eugrena_mall.jpg"
     }
   ]
 }
