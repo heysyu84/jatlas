@@ -357,6 +357,41 @@
       alt:"오카성터",
       source:"https://commons.wikimedia.org/wiki/File:Oka_Castle%27s_Main_Gate_Ruin.jpg"
     },
+    "3319":{
+      src:"images/licensed/oita-usa-jingu-3319.webp",
+      alt:"우사신궁",
+      source:"https://commons.wikimedia.org/wiki/File:Stone_sign_and_Torii_of_Usa_Jingu_Shrine_-_Mar_26,_2018.jpg"
+    },
+    "3415":{
+      src:"images/licensed/miyazaki-umagase-3415.webp",
+      alt:"우마가세",
+      source:"https://commons.wikimedia.org/wiki/File:%E9%A6%AC%E3%83%B6%E8%83%8C%E7%AA%81%E7%AB%AF.jpg"
+    },
+    "3522":{
+      src:"images/licensed/kagoshima-shiratani-unsuikyo-3522.webp",
+      alt:"시라타니운스이쿄",
+      source:"https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg"
+    },
+    "3523":{
+      src:"images/licensed/kagoshima-jomonsugi-3523.webp",
+      alt:"조몬스기",
+      source:"https://commons.wikimedia.org/wiki/File:Jomonsugi_(52931651088).jpg"
+    },
+    "3524":{
+      src:"images/licensed/kagoshima-oko-falls-3524.webp",
+      alt:"오코노타키",
+      source:"https://commons.wikimedia.org/wiki/File:Oko_Falls_in_Yakushima.jpg"
+    },
+    "3606":{
+      src:"images/licensed/okinawa-gyokusendo-3606.webp",
+      alt:"오키나와월드·교쿠센도",
+      source:"https://commons.wikimedia.org/wiki/File:Gyokusendo_Cave_-_panoramio.jpg"
+    },
+    "3637":{
+      src:"images/licensed/okinawa-euglena-mall-3637.webp",
+      alt:"유글레나몰·이시가키시 공설시장",
+      source:"https://commons.wikimedia.org/wiki/File:Ishigaki_eugrena_mall.jpg"
+    },
     "3410":{
       src:"images/licensed/miyazaki-takachiho-gorge-3410.webp",
       alt:"다카치호 협곡",
