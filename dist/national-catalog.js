@@ -2,7 +2,8 @@
 const nationalCatalogViews={nationalPlaces:'전국 관광지',nationalFoods:'전국 음식'};
 Object.assign(featureJapanese,{
  '전국 관광지':'全国の観光スポット','전국 음식':'全国のグルメ','전국 목록':'全国の一覧',
- '도도부현 → 지역 → 가나다 순':'都道府県 → エリア → 韓国語の名前順',
+ '관광지 카테고리':'観光スポットのカテゴリー','음식 카테고리':'グルメのカテゴリー',
+ '밥·덮밥':'ご飯・丼物','국·전골':'汁物・鍋料理','간식·디저트':'おやつ・デザート','과일·특산물':'果物・特産品','기타 향토요리':'その他の郷土料理',
  '전국의 관광지를 한 목록에서 둘러보세요.':'全国の観光スポットを一つの一覧でご覧ください。',
  '전국의 음식을 한 목록에서 둘러보세요.':'全国のグルメを一つの一覧でご覧ください。'
 });
@@ -56,6 +57,32 @@ function nationalFoodCard(food){
  return root;
 }
 const nationalCatalogCache=new Map();
+const nationalCatalogCategories={nationalPlaces:'전체',nationalFoods:'전체'};
+const nationalPlaceCategories=['전체','산책','역사','전망','자연','전시·체험','쇼핑'];
+const nationalFoodPatterns={
+ '면요리':/면|라멘|우동|소바|소멘|국수|짬뽕|당면/,
+ '밥·덮밥':/밥|덮밥|동$|초밥|스시|주먹밥|라이스|카레|타이메시|게이한/,
+ '육류':/육류|고기|소고기|와규|브랜드육|브랜드소|토종닭|닭|돼지|곱창|내장|돈가스|돈카|돈코츠|징기스칸|스테이크|버거|바사시/,
+ '해산물':/해산물|생선|참치|장어|복어|오징어|명란|멘타이코|굴·|게·|고등어|도미|활어|가다랑어|가쓰오|은어|멸치|연어|어묵|오뎅|바다포도|해조류|회·|초밥|스시/,
+ '국·전골':/국물|향토국|전골|생선탕|나베|지루|수제비|오뎅|히야지루|미즈타키/,
+ '간식·디저트':/간식|디저트|과자|화과자|빵|떡|빙수|아이스|소프트|푸딩|설탕|도넛|만주|단고|야세우마|유제품/,
+ '과일·특산물':/과일|감귤|귤|망고|휴가나쓰|스다치|풋콩|절임|채소|녹차|차·|야메차|우레시노차|지란차|와인|특산품|전통식품/
+};
+function nationalFoodCategories(food){
+ const hay=[food.name,food.kind].filter(Boolean).join(' ');
+ const categories=Object.entries(nationalFoodPatterns).filter(([,pattern])=>pattern.test(hay)).map(([name])=>name);
+ return categories.length?categories:['기타 향토요리'];
+}
+function nationalCatalogMatches(item,view,category){
+ if(category==='전체')return true;
+ if(view==='nationalFoods')return nationalFoodCategories(item).includes(category);
+ const previous=placeTheme;placeTheme=category;
+ try{return placeMatches(item)}finally{placeTheme=previous}
+}
+function selectNationalCategory(category){
+ nationalCatalogCategories[state.view]=category;renderNationalCatalog();
+}
+
 function renderNationalCatalog(){
  const view=state.view,active=Object.hasOwn(nationalCatalogViews,view),host=$('#nationalCatalog');host.hidden=!active;
  for(const [key,label] of Object.entries(nationalCatalogViews)){
@@ -71,13 +98,21 @@ function renderNationalCatalog(){
    if(!foods){const small=el.querySelector('.cardMain small');if(small)small.textContent=[item.pref,item.area,item.town].filter(Boolean).join(' · ')}
    grid.append(el);
   }
-  cached={grid,count:items.length};nationalCatalogCache.set(view,cached);
+  cached={grid,items,cards:[...grid.children]};nationalCatalogCache.set(view,cached);
  }
  const title=document.createElement('h1');title.textContent=nationalCatalogViews[view];
  const intro=document.createElement('p');intro.textContent=view==='nationalFoods'?'전국의 음식을 한 목록에서 둘러보세요.':'전국의 관광지를 한 목록에서 둘러보세요.';
- const order=document.createElement('p');order.className='muted';order.textContent='도도부현 → 지역 → 가나다 순';
- const count=document.createElement('p');count.className='muted';count.textContent=document.documentElement.lang==='ja'?`全 ${cached.count}件`:`총 ${cached.count}개`;
- host.replaceChildren(title,intro,order,count,cached.grid);
+ const category=nationalCatalogCategories[view];
+ const filters=document.createElement('div');filters.className='nationalCategoryFilters';filters.setAttribute('role','group');filters.setAttribute('aria-label',view==='nationalFoods'?'음식 카테고리':'관광지 카테고리');
+ const categories=view==='nationalFoods'?['전체',...Object.keys(nationalFoodPatterns),'기타 향토요리']:nationalPlaceCategories;
+ for(const name of categories){
+  const control=button(name,()=>selectNationalCategory(name),category===name?'active':'');
+  control.setAttribute('aria-pressed',String(category===name));filters.append(control);
+ }
+ let visibleCount=0;
+ cached.cards.forEach((el,i)=>{el.hidden=!nationalCatalogMatches(cached.items[i],view,category);if(!el.hidden)visibleCount++});
+ const count=document.createElement('p');count.className='muted';count.textContent=document.documentElement.lang==='ja'?`全 ${visibleCount}件`:`총 ${visibleCount}개`;
+ host.replaceChildren(title,intro,filters,count,cached.grid);
  document.querySelectorAll('.bottomnav button').forEach(b=>{b.classList.remove('active');b.removeAttribute('aria-current')});
  if(typeof localize==='function')localize();
 }
