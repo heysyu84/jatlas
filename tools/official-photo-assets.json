@@ -965,7 +965,10 @@
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
-      "terms": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_in_Japan.jpg"
+      "terms": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_in_Japan.jpg",
+      "cropRatio": 1.3333333333333333,
+      "cropX": 0.5,
+      "cropY": 0.5
     },
     {
       "placeId": 408,
