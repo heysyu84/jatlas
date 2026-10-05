@@ -593,3 +593,27 @@
   }
   if(typeof render==="function")render();
 })();
+
+
+/* User-selected Commons batch 2026-10-06 F */
+(()=>{
+  const replacements={
+    "3603":{src:"images/licensed/approved/okinawa-makishi-market-3603.webp",alt:"마키시 공설시장",source:"https://commons.wikimedia.org/wiki/File:Makishi_market_temporary_building_20200105.jpg"}
+  };
+  for(const [id,pic] of Object.entries(replacements)){
+    if(typeof photoQaPendingPlaces!=="undefined")photoQaPendingPlaces.delete(Number(id));
+    const place=typeof samples!=="undefined"?samples.find(p=>String(p.id)===id):null;
+    const previous=place&&typeof photoForPlace==="function"?photoForPlace(place):null;
+    if(typeof tokyoPhotos!=="undefined")tokyoPhotos[id]={...pic};
+    if(typeof regionalCatalog!=="undefined")for(const r of regionalCatalog){
+      if(r.photos?.[id])r.photos[id]={...pic};
+      if(previous?.src&&r.hero?.src===previous.src)r.hero={...pic};
+    }
+    if(place&&previous?.src&&typeof designPhotos!=="undefined"){
+      for(const [key,hero] of Object.entries(designPhotos)){
+        if(hero?.src===previous.src&&[place.pref,place.area,place.town,place.name].includes(key))designPhotos[key]={...pic};
+      }
+    }
+  }
+  if(typeof render==="function")render();
+})();
