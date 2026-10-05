@@ -1,3 +1,4 @@
+/* Lucide SVG icons: vendor/lucide-LICENSE.txt (ISC / MIT). */
 /* Keep area-menu order, then alphabetize Korean place names within each area. */
 const placeNameCollator=new Intl.Collator('ko',{numeric:true,sensitivity:'base'});
 function orderedPlaces(places,pref=state.pref){
@@ -32,9 +33,10 @@ function updateFloatingNavigation(){
  const parent=menu?.open?menu:detail?.open?detail:document.body;
  if(controls.parentElement!==parent)parent.append(controls);
  const region=state.view==='explore'?regionFor(state.pref):'';
- const available=!!region||state.view!=='home'||!!nationalRegion;
- up.hidden=!available;
- up.textContent=region?region+(region==='수도권'?'으로':'로'):'전국으로';
+ up.hidden=!region;
+ $('#floatingDestination').textContent=region;
+ const label=region?region+(region==='수도권'?'으로':'로'):'상위 지역으로 이동';
+ up.setAttribute('aria-label',label);up.setAttribute('title',label);
  if(typeof localize==='function')localize();
 }
 function floatingParent(){
@@ -47,6 +49,7 @@ function scrollToPageTop(){
  const target=menu?.open?menu:detail?.open&&window.matchMedia('(max-width:760px)').matches?detail:window;
  target.scrollTo?.({top:0,behavior:'smooth'});
 }
+$('#floatingNational').onclick=()=>{if($('#siteMenu')?.open)toggleMenu(false);home()};
 $('#floatingParent').onclick=floatingParent;
 $('#floatingTop').onclick=scrollToPageTop;
 const navigationBaseRender=renderNavigation;

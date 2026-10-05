@@ -217,10 +217,12 @@
 img[data-photo-fit="contain"]{object-fit:contain!important;background:#eaf0f4}
 .photoPending{min-height:170px;display:grid;place-items:center;background:#eaf0f4;color:#52616c;border-radius:12px}
 
-/* Floating parent-region and scroll-to-top controls. */
-.floatingNavigation{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:1600;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
-.floatingNavigation button{min-height:44px;padding:10px 15px;border:1px solid #c3d5e5;border-radius:999px;background:#fff;color:#25486e;box-shadow:0 3px 15px #25486e26;font-size:14px;font-weight:600;cursor:pointer}
+/* Floating navigation with Lucide icons. */
+.floatingNavigation{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:1600;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.floatingNavigation button{position:relative;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid #d4e0eb;border-radius:50%;background:#fff;color:#25486e;box-shadow:0 4px 16px #25486e1c;cursor:pointer}
 .floatingNavigation button[hidden]{display:none!important}
-.floatingNavigation button:hover{background:#edf5fb}
+.floatingNavigation svg{display:block;width:22px;height:22px;pointer-events:none}
+.floatingDestination{position:absolute;right:calc(100% + 9px);white-space:nowrap;max-width:min(180px,55vw);overflow:hidden;text-overflow:ellipsis;padding:5px 9px;border:1px solid #e0e8ef;border-radius:8px;background:#fffffff5;color:#4b6278;font-size:14px;font-weight:600;box-shadow:0 2px 8px #25486e0c}
+.floatingNavigation button:hover{background:#edf5fb;border-color:#a9c1d6}
 .floatingNavigation button:focus-visible{outline:3px solid #4c91c5;outline-offset:3px}
-@media(max-width:760px){.floatingNavigation{right:max(12px,env(safe-area-inset-right));bottom:calc(82px + env(safe-area-inset-bottom))}.floatingNavigation button{padding:10px 12px}}
+@media(max-width:760px){.floatingNavigation{right:max(12px,env(safe-area-inset-right));bottom:calc(82px + env(safe-area-inset-bottom));gap:8px}.floatingNavigation button{width:44px;height:44px}.floatingNavigation svg{width:21px;height:21px}}
