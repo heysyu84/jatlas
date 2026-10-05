@@ -1104,6 +1104,135 @@
       "minWidth": 900,
       "minHeight": 600,
       "terms": "https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden_03.jpg"
+    },
+    {
+      "placeId": 2108,
+      "commonsFilename": "Iwami Ginzan Silver Mine, Ryugenji Mabu Mine Shaft 002.JPG",
+      "output": "images/licensed/shimane-ryugenji-mabu-2108.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine,_Ryugenji_Mabu_Mine_Shaft_002.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine,_Ryugenji_Mabu_Mine_Shaft_002.JPG"
+    },
+    {
+      "placeId": 2302,
+      "commonsFilename": "20181111 Hiroshima Castle statue.jpg",
+      "output": "images/licensed/hiroshima-castle-2302.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:20181111_Hiroshima_Castle_statue.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:20181111_Hiroshima_Castle_statue.jpg"
+    },
+    {
+      "placeId": 2400,
+      "commonsFilename": "Karato Piers and Karato Market.jpg",
+      "output": "images/licensed/yamaguchi-karato-market-2400.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Karato_Piers_and_Karato_Market.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Karato_Piers_and_Karato_Market.jpg"
+    },
+    {
+      "placeId": 2602,
+      "imagePage": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
+      "preferLargest": true,
+      "allowAnyRatio": true,
+      "upscaleWidth": 960,
+      "minWidth": 900,
+      "minHeight": 500,
+      "output": "images/official/kagawa-yashimaru-2602.webp",
+      "source": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
+      "terms": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
+      "allowUnpinned": true
+    },
+    {
+      "placeId": 2616,
+      "commonsFilename": "Shodoshima Olive Park Shodo Island Japan01s3.jpg",
+      "output": "images/licensed/kagawa-shodoshima-olive-park-2616.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Shodoshima_Olive_Park_Shodo_Island_Japan01s3.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Shodoshima_Olive_Park_Shodo_Island_Japan01s3.jpg"
+    },
+    {
+      "placeId": 2619,
+      "commonsFilename": "Marugamemachi Shopping Street 2021-08 ac (4).jpg",
+      "output": "images/licensed/kagawa-marugamemachi-2619.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Marugamemachi_Shopping_Street_2021-08_ac_(4).jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Marugamemachi_Shopping_Street_2021-08_ac_(4).jpg"
+    },
+    {
+      "placeId": 2703,
+      "commonsFilename": "Bansui-so 2016-04-30.jpg",
+      "cropRatio": 1.3333333333333333,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "output": "images/licensed/ehime-bansuiso-2703.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Bansui-so_2016-04-30.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Bansui-so_2016-04-30.jpg"
+    },
+    {
+      "placeId": 2712,
+      "commonsFilename": "臥龍山荘 - garyuu sanso - panoramio.jpg",
+      "output": "images/licensed/ehime-garyu-sanso-2712.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E8%87%A5%E9%BE%8D%E5%B1%B1%E8%8D%98_-_garyuu_sanso_-_panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:%E8%87%A5%E9%BE%8D%E5%B1%B1%E8%8D%98_-_garyuu_sanso_-_panoramio.jpg"
+    },
+    {
+      "placeId": 2800,
+      "commonsFilename": "Kochi Castle09.JPG",
+      "output": "images/licensed/kochi-castle-2800.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kochi_Castle09.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Kochi_Castle09.JPG"
+    },
+    {
+      "placeId": 2913,
+      "commonsFilename": "Kokura-jo-teien.jpg",
+      "output": "images/licensed/fukuoka-kokura-castle-2913.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kokura-jo-teien.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Kokura-jo-teien.jpg"
+    },
+    {
+      "placeId": 2922,
+      "commonsFilename": "Dancing fountains, Canal City, Fukuoka, Japan.jpg",
+      "cropRatio": 1.7777777777777777,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "output": "images/licensed/fukuoka-canal-city-2922.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Dancing_fountains,_Canal_City,_Fukuoka,_Japan.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Dancing_fountains,_Canal_City,_Fukuoka,_Japan.jpg"
+    },
+    {
+      "placeId": 3004,
+      "commonsFilename": "Nijinomatsubara.jpg",
+      "output": "images/licensed/saga-nijinomatsubara-3004.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Nijinomatsubara.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Nijinomatsubara.jpg"
     }
   ]
 }
