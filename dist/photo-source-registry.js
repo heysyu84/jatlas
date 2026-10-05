@@ -35,3 +35,12 @@ Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
   "images/licensed/approved/kumamoto-sakitsu-3218.webp":{"source":"https://commons.wikimedia.org/wiki/File:Sakitsu.jpg","terms":"https://commons.wikimedia.org/wiki/File:Sakitsu.jpg","author":"","placeId":3218,"foodName":""},
   "images/licensed/approved/kagawa-marugame-castle-2605.webp":{"source":"https://commons.wikimedia.org/wiki/File:Marugame_Castle,_Tenshu_002.jpg","terms":"https://commons.wikimedia.org/wiki/File:Marugame_Castle,_Tenshu_002.jpg","author":"","placeId":2605,"foodName":""}
 });
+
+/* User-selected Commons batch 2026-10-06 E */
+Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
+  "images/licensed/approved/oita-harajiri-3325.webp":{"source":"https://commons.wikimedia.org/wiki/File:Oita-Harajiri_Falls,_echoing_in_the_countryside-xl.jpg","terms":"https://commons.wikimedia.org/wiki/File:Oita-Harajiri_Falls,_echoing_in_the_countryside-xl.jpg","author":"","placeId":3325,"foodName":""},
+  "images/licensed/approved/nagasaki-hirado-castle-3114.webp":{"source":"https://commons.wikimedia.org/wiki/File:Hirado_Castle_Keep.jpg","terms":"https://commons.wikimedia.org/wiki/File:Hirado_Castle_Keep.jpg","author":"","placeId":3114,"foodName":""},
+  "images/licensed/approved/oita-usuki-stone-buddhas-3317.webp":{"source":"https://commons.wikimedia.org/wiki/File:Usuki_Stone_Buddas55.jpg","terms":"https://commons.wikimedia.org/wiki/File:Usuki_Stone_Buddas55.jpg","author":"","placeId":3317,"foodName":""},
+  "images/licensed/approved/miyazaki-sekinoo-falls-3422.webp":{"source":"https://commons.wikimedia.org/wiki/File:Sekinoo_Falls_02.jpg","terms":"https://commons.wikimedia.org/wiki/File:Sekinoo_Falls_02.jpg","author":"","placeId":3422,"foodName":""},
+  "images/licensed/approved/okinawa-peace-memorial-3607.webp":{"source":"https://commons.wikimedia.org/wiki/File:Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg","author":"","placeId":3607,"foodName":""}
+});
