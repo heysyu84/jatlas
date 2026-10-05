@@ -1,61 +1,16 @@
 {
   "version": 1,
-  "baseCommit": "758f689b3661df424275e4cd08569e15b386d44c",
-  "reason": "User-approved representative photo batch 41-50. User-supplied images are used where provided; remaining entries use the previously reviewed candidates.",
+  "baseCommit": "ef9aea21ca9253b369f6d410a5aa49f16d7815aa",
+  "reason": "Restore and lock previously user-approved representative photo mappings from retained source records; correct Takasaki Kannon source metadata. No new photo selection.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 3007,
-        "fromSrc": "images/commons/230b8b6e0111245f.webp",
-        "toSrc": "images/licensed/saga-nagoya-castle-museum-3007.webp"
-      },
-      {
-        "id": 3008,
-        "fromSrc": "images/commons/527e1f0252d6a919.webp",
-        "toSrc": "images/licensed/saga-kyushu-ceramic-museum-3008.webp"
-      },
-      {
-        "id": 3010,
-        "fromSrc": "images/commons/1618295f9bf7357d.webp",
-        "toSrc": "images/licensed/saga-okawachiyama-3010.webp"
-      },
-      {
-        "id": 3101,
-        "fromSrc": "images/licensed/nagasaki-oura-church-3101.webp?v=20261005-ratiofix1",
-        "toSrc": "images/licensed/nagasaki-oura-church-3101.webp"
-      },
-      {
-        "id": 3109,
-        "fromSrc": "images/licensed/nagasaki-26-martyrs-3109.webp?v=20261005-ratiofix1",
-        "toSrc": "images/licensed/nagasaki-26-martyrs-3109.webp"
-      },
-      {
-        "id": 3115,
-        "fromSrc": "images/commons/f7f83dd10bff1bd9.webp",
-        "toSrc": "images/licensed/nagasaki-hirado-east-west-3115.webp"
-      },
-      {
-        "id": 3124,
-        "fromSrc": "images/commons/fbbce670421fd9eb.webp",
-        "toSrc": "images/official/nagasaki-fukue-castle-3124.webp"
-      },
-      {
-        "id": 3310,
-        "fromSrc": "images/commons/686af91197ae6e1f.webp",
-        "toSrc": "images/licensed/oita-yunotsubo-street-3310.webp"
-      },
-      {
-        "id": 3315,
-        "fromSrc": "images/commons/9a9a77493ae78a63.webp",
-        "toSrc": "images/licensed/oita-ramune-onsen-3315.webp"
-      },
-      {
-        "id": 3316,
-        "fromSrc": "images/commons/69ca1aba39a4d95b.webp",
-        "toSrc": "images/licensed/oita-oka-castle-3316.webp"
+        "id": 1409,
+        "fromSrc": "images/licensed/gunma-takasaki-kannon-1409.webp",
+        "toSrc": "images/licensed/gunma-takasaki-kannon-1409.webp"
       }
     ],
     "heroChanges": []

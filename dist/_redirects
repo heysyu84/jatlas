@@ -1,0 +1,3 @@
+# Cloudflare Pages fallback for curated photos generated during GitHub Pages deployment.
+/images/licensed/* https://heysyu84.github.io/jatlas/images/licensed/:splat 302
+/images/official/* https://heysyu84.github.io/jatlas/images/official/:splat 302
