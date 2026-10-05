@@ -908,16 +908,6 @@
       "download": "https://www.kankomie.or.jp/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0Y3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a900c57baaa6a78b70f8b6189ed51fa1dfd8c14d/5793_1_org.jpg"
     },
     {
-      "placeId": 1614,
-      "commonsFilename": "Asuka Temple.JPG",
-      "allowUnpinned": true,
-      "minWidth": 900,
-      "minHeight": 500,
-      "output": "images/licensed/nara-asukadera-1614.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:Asuka_Temple.JPG",
-      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
       "placeId": 1622,
       "commonsFilename": "Okadera Asuka Nara pref06n3900.jpg",
       "allowUnpinned": true,
@@ -926,6 +916,191 @@
       "output": "images/licensed/nara-okadera-1622.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Okadera_Asuka_Nara_pref06n3900.jpg",
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 1108,
+      "commonsFilename": "Ise Mie Okage Yokocho 15.jpg",
+      "output": "images/licensed/mie-okage-yokocho-1108.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ise_Mie_Okage_Yokocho_15.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Ise_Mie_Okage_Yokocho_15.jpg"
+    },
+    {
+      "placeId": 7,
+      "commonsFilename": "Arashiyama - Bamboo Forest, Kyoto, Japan10.jpg",
+      "output": "images/licensed/kyoto-arashiyama-bamboo-7.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Arashiyama_-_Bamboo_Forest,_Kyoto,_Japan10.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Arashiyama_-_Bamboo_Forest,_Kyoto,_Japan10.jpg"
+    },
+    {
+      "placeId": 1511,
+      "commonsFilename": "Silberner Pavillion, Ginkaku-ji, Kyoto.jpg",
+      "output": "images/licensed/kyoto-ginkakuji-1511.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Silberner_Pavillion,_Ginkaku-ji,_Kyoto.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Silberner_Pavillion,_Ginkaku-ji,_Kyoto.jpg"
+    },
+    {
+      "placeId": 401,
+      "commonsFilename": "黒門市場 2024(1).jpg",
+      "output": "images/licensed/osaka-kuromon-401.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg"
+    },
+    {
+      "placeId": 406,
+      "commonsFilename": "Osaka Castle in Japan.jpg",
+      "output": "images/licensed/osaka-castle-406.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_in_Japan.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_in_Japan.jpg"
+    },
+    {
+      "placeId": 408,
+      "commonsFilename": "Shitenno-ji Temple @ Osaka (13382740383).jpg",
+      "output": "images/licensed/osaka-shitennoji-408.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Shitenno-ji_Temple_@_Osaka_(13382740383).jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Shitenno-ji_Temple_@_Osaka_(13382740383).jpg"
+    },
+    {
+      "placeId": 412,
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/USJ_Entrance_2026.jpg/960px-USJ_Entrance_2026.jpg",
+      "output": "images/licensed/osaka-usj-412.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:USJ_Entrance_2026.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:USJ_Entrance_2026.jpg"
+    },
+    {
+      "placeId": 1707,
+      "commonsFilename": "Kinosaki Onsen at night.jpg",
+      "upscaleWidth": 960,
+      "output": "images/licensed/hyogo-kinosaki-onsen-1707.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kinosaki_Onsen_at_night.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Kinosaki_Onsen_at_night.jpg"
+    },
+    {
+      "placeId": 1717,
+      "commonsFilename": "あわじ花さじきポピー.jpg",
+      "output": "images/licensed/hyogo-awaji-hanasajiki-1717.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E3%81%82%E3%82%8F%E3%81%98%E8%8A%B1%E3%81%95%E3%81%98%E3%81%8D%E3%83%9D%E3%83%94%E3%83%BC.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:%E3%81%82%E3%82%8F%E3%81%98%E8%8A%B1%E3%81%95%E3%81%98%E3%81%8D%E3%83%9D%E3%83%94%E3%83%BC.jpg"
+    },
+    {
+      "placeId": 1719,
+      "commonsFilename": "Castle of Akashi：明石城 - panoramio.jpg",
+      "upscaleWidth": 960,
+      "output": "images/licensed/hyogo-akashi-castle-1719.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Castle_of_Akashi%EF%BC%9A%E6%98%8E%E7%9F%B3%E5%9F%8E_-_panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Castle_of_Akashi%EF%BC%9A%E6%98%8E%E7%9F%B3%E5%9F%8E_-_panoramio.jpg"
+    },
+    {
+      "placeId": 1722,
+      "commonsFilename": "Kobe nakatottei07s3200.jpg",
+      "output": "images/licensed/hyogo-kobe-port-tower-1722.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kobe_nakatottei07s3200.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Kobe_nakatottei07s3200.jpg"
+    },
+    {
+      "placeId": 1609,
+      "commonsFilename": "From Mount Yoshino (6988360150).jpg",
+      "output": "images/licensed/nara-yoshinoyama-1609.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:From_Mount_Yoshino_(6988360150).jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:From_Mount_Yoshino_(6988360150).jpg"
+    },
+    {
+      "placeId": 1614,
+      "commonsFilename": "Asuka Temple.JPG",
+      "output": "images/licensed/nara-asukadera-1614.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Asuka_Temple.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Asuka_Temple.JPG"
+    },
+    {
+      "placeId": 1619,
+      "commonsFilename": "Tanzan jinja lanterns at balcony.jpg",
+      "output": "images/licensed/nara-tanzan-jinja-1619.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Tanzan_jinja_lanterns_at_balcony.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Tanzan_jinja_lanterns_at_balcony.jpg"
+    },
+    {
+      "placeId": 1907,
+      "commonsFilename": "Oyunohara autumn panorama.jpeg",
+      "cropRatio": 1.6,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "output": "images/licensed/wakayama-oyunohara-1907.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Oyunohara_autumn_panorama.jpeg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Oyunohara_autumn_panorama.jpeg"
+    },
+    {
+      "placeId": 1911,
+      "commonsFilename": "那智滝と三重塔 - Nachi-no-taki waterfall - panoramio.jpg",
+      "output": "images/licensed/wakayama-nachi-falls-1911.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%82%A3%E6%99%BA%E6%BB%9D%E3%81%A8%E4%B8%89%E9%87%8D%E5%A1%94_-_Nachi-no-taki_waterfall_-_panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:%E9%82%A3%E6%99%BA%E6%BB%9D%E3%81%A8%E4%B8%89%E9%87%8D%E5%A1%94_-_Nachi-no-taki_waterfall_-_panoramio.jpg"
+    },
+    {
+      "placeId": 2013,
+      "commonsFilename": "Kaike onsen01n3200.jpg",
+      "output": "images/licensed/tottori-kaike-onsen-2013.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaike_onsen01n3200.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Kaike_onsen01n3200.jpg"
+    },
+    {
+      "placeId": 2103,
+      "commonsFilename": "Adachi Museum of Art Garden 03.jpg",
+      "output": "images/licensed/shimane-adachi-museum-2103.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden_03.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden_03.jpg"
     }
   ]
 }
