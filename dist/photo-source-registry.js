@@ -26,3 +26,12 @@ Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
   "images/licensed/approved/kyoto-kiyomizudera-6.webp":{"source":"https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg","author":"","placeId":6,"foodName":""},
   "images/licensed/approved/osaka-namba-yasaka-420.webp":{"source":"https://commons.wikimedia.org/wiki/File:Namba_Yasaka_jinja_(Osaka_Naniwa-ku)_Shrine_hdsr_S5_g06.jpg","terms":"https://commons.wikimedia.org/wiki/File:Namba_Yasaka_jinja_(Osaka_Naniwa-ku)_Shrine_hdsr_S5_g06.jpg","author":"","placeId":420,"foodName":""}
 });
+
+/* User-selected Commons batch 2026-10-06 D */
+Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
+  "images/licensed/approved/yamaguchi-akiyoshido-2405.webp":{"source":"https://commons.wikimedia.org/wiki/File:USMC-090419-M-8097K-001.jpg","terms":"https://commons.wikimedia.org/wiki/File:USMC-090419-M-8097K-001.jpg","author":"","placeId":2405,"foodName":""},
+  "images/licensed/approved/hyogo-himeji-castle-1704.webp":{"source":"https://commons.wikimedia.org/wiki/File:Himeji_Castle_with_cherry_blossoms_from_Himeji_Zoo.jpg","terms":"https://commons.wikimedia.org/wiki/File:Himeji_Castle_with_cherry_blossoms_from_Himeji_Zoo.jpg","author":"","placeId":1704,"foodName":""},
+  "images/licensed/approved/osaka-housing-living-423.webp":{"source":"https://commons.wikimedia.org/wiki/File:Museum_of_Housing_and_Living_(Osaka_Kita-ku)_hdsr_S5_05.jpg","terms":"https://commons.wikimedia.org/wiki/File:Museum_of_Housing_and_Living_(Osaka_Kita-ku)_hdsr_S5_05.jpg","author":"","placeId":423,"foodName":""},
+  "images/licensed/approved/kumamoto-sakitsu-3218.webp":{"source":"https://commons.wikimedia.org/wiki/File:Sakitsu.jpg","terms":"https://commons.wikimedia.org/wiki/File:Sakitsu.jpg","author":"","placeId":3218,"foodName":""},
+  "images/licensed/approved/kagawa-marugame-castle-2605.webp":{"source":"https://commons.wikimedia.org/wiki/File:Marugame_Castle,_Tenshu_002.jpg","terms":"https://commons.wikimedia.org/wiki/File:Marugame_Castle,_Tenshu_002.jpg","author":"","placeId":2605,"foodName":""}
+});
