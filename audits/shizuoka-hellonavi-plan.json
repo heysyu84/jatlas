@@ -67,7 +67,7 @@
         625
       ],
       "preferred": 625,
-      "status": "application-required"
+      "status": "selected-and-applied"
     },
     {
       "placeId": 805,
@@ -136,9 +136,11 @@
     {
       "placeId": 812,
       "name": "페리 로드",
-      "photoIds": [],
-      "preferred": null,
-      "status": "no-photo-library-match-found-yet"
+      "photoIds": [
+        574
+      ],
+      "preferred": 574,
+      "status": "selected-and-applied"
     },
     {
       "placeId": 813,
@@ -150,16 +152,20 @@
     {
       "placeId": 816,
       "name": "조렌 폭포",
-      "photoIds": [],
-      "preferred": null,
-      "status": "no-photo-library-match-found-yet"
+      "photoIds": [
+        715
+      ],
+      "preferred": 715,
+      "status": "selected-and-applied"
     },
     {
       "placeId": 817,
       "name": "MOA 미술관",
-      "photoIds": [],
-      "preferred": null,
-      "status": "no-photo-library-match-found-yet"
+      "photoIds": [
+        579
+      ],
+      "preferred": 579,
+      "status": "selected-and-applied"
     },
     {
       "placeId": 819,
@@ -189,10 +195,11 @@
       "name": "미시마 스카이워크",
       "photoIds": [
         521,
-        539
+        539,
+        641
       ],
-      "preferred": 521,
-      "status": "application-required"
+      "preferred": 641,
+      "status": "selected-and-applied"
     }
   ],
   "batchSize": 5,
@@ -270,5 +277,44 @@
       "url": "https://hellonavi.jp/photo/594",
       "status": "selected-and-applied"
     }
-  ]
+  ],
+  "batch3": [
+    {
+      "placeId": 804,
+      "name": "도가시마 덴소도",
+      "photoId": 625,
+      "url": "https://hellonavi.jp/photo/625",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 812,
+      "name": "페리 로드",
+      "photoId": 574,
+      "url": "https://hellonavi.jp/photo/574",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 816,
+      "name": "조렌 폭포",
+      "photoId": 715,
+      "url": "https://hellonavi.jp/photo/715",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 817,
+      "name": "MOA 미술관",
+      "photoId": 579,
+      "url": "https://hellonavi.jp/photo/579",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 822,
+      "name": "미시마 스카이워크",
+      "photoId": 641,
+      "url": "https://hellonavi.jp/photo/641",
+      "status": "selected-and-applied",
+      "crop": "3:2 center crop; preserve bridge and Mt. Fuji"
+    }
+  ],
+  "batch3Note": "User-approved 2026-10-05. Photo 641 is intentionally cropped from portrait to a 3:2 landscape derivative while retaining Mishima Skywalk and Mt. Fuji."
 }
