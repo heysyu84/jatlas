@@ -1,71 +1,61 @@
 {
   "version": 1,
-  "baseCommit": "5ff0a93fab98c796c128aeb5cfcbf31b38c67db7",
-  "reason": "User-approved representative photo batch 29-40. User-selected photos are used where supplied; remaining entries use the previously reviewed candidates.",
+  "baseCommit": "758f689b3661df424275e4cd08569e15b386d44c",
+  "reason": "User-approved representative photo batch 41-50. User-supplied images are used where provided; remaining entries use the previously reviewed candidates.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 2108,
-        "fromSrc": "images/commons/07234e3f7a0e1aa6.webp",
-        "toSrc": "images/licensed/shimane-ryugenji-mabu-2108.webp"
+        "id": 3007,
+        "fromSrc": "images/commons/230b8b6e0111245f.webp",
+        "toSrc": "images/licensed/saga-nagoya-castle-museum-3007.webp"
       },
       {
-        "id": 2302,
-        "fromSrc": "images/commons/39565eaaa6ebb0ec.webp",
-        "toSrc": "images/licensed/hiroshima-castle-2302.webp"
+        "id": 3008,
+        "fromSrc": "images/commons/527e1f0252d6a919.webp",
+        "toSrc": "images/licensed/saga-kyushu-ceramic-museum-3008.webp"
       },
       {
-        "id": 2400,
-        "fromSrc": "images/commons/73bb1e050d504eb4.webp",
-        "toSrc": "images/licensed/yamaguchi-karato-market-2400.webp"
+        "id": 3010,
+        "fromSrc": "images/commons/1618295f9bf7357d.webp",
+        "toSrc": "images/licensed/saga-okawachiyama-3010.webp"
       },
       {
-        "id": 2602,
-        "fromSrc": "images/commons/7a3b3a8f24f6e4e3.webp",
-        "toSrc": "images/official/kagawa-yashimaru-2602.webp"
+        "id": 3101,
+        "fromSrc": "images/commons/fec98e9bc432a56e.webp",
+        "toSrc": "images/licensed/nagasaki-oura-church-3101.webp"
       },
       {
-        "id": 2616,
-        "fromSrc": "images/commons/4b44ed89723671cf.webp",
-        "toSrc": "images/licensed/kagawa-shodoshima-olive-park-2616.webp"
+        "id": 3109,
+        "fromSrc": "images/commons/706134d921525c01.webp",
+        "toSrc": "images/licensed/nagasaki-26-martyrs-3109.webp"
       },
       {
-        "id": 2619,
-        "fromSrc": "images/commons/27b73979708bcbfd.webp",
-        "toSrc": "images/licensed/kagawa-marugamemachi-2619.webp"
+        "id": 3115,
+        "fromSrc": "images/commons/f7f83dd10bff1bd9.webp",
+        "toSrc": "images/licensed/nagasaki-hirado-east-west-3115.webp"
       },
       {
-        "id": 2703,
-        "fromSrc": "images/commons/fa04a82d34462228.webp",
-        "toSrc": "images/licensed/ehime-bansuiso-2703.webp"
+        "id": 3124,
+        "fromSrc": "images/commons/fbbce670421fd9eb.webp",
+        "toSrc": "images/official/nagasaki-fukue-castle-3124.webp"
       },
       {
-        "id": 2712,
-        "fromSrc": "images/commons/3ef189d049dc426c.webp",
-        "toSrc": "images/licensed/ehime-garyu-sanso-2712.webp"
+        "id": 3310,
+        "fromSrc": "images/commons/686af91197ae6e1f.webp",
+        "toSrc": "images/licensed/oita-yunotsubo-street-3310.webp"
       },
       {
-        "id": 2800,
-        "fromSrc": "images/commons/a55106613fd583b5.webp",
-        "toSrc": "images/licensed/kochi-castle-2800.webp"
+        "id": 3315,
+        "fromSrc": "images/commons/9a9a77493ae78a63.webp",
+        "toSrc": "images/licensed/oita-ramune-onsen-3315.webp"
       },
       {
-        "id": 2913,
-        "fromSrc": "images/commons/b8ff773e5bc63d4a.webp",
-        "toSrc": "images/licensed/fukuoka-kokura-castle-2913.webp"
-      },
-      {
-        "id": 2922,
-        "fromSrc": "images/commons/5cf59f89768e4f6e.webp",
-        "toSrc": "images/licensed/fukuoka-canal-city-2922.webp"
-      },
-      {
-        "id": 3004,
-        "fromSrc": "images/commons/cb10e523d1aeaa91.webp",
-        "toSrc": "images/licensed/saga-nijinomatsubara-3004.webp"
+        "id": 3316,
+        "fromSrc": "images/commons/69ca1aba39a4d95b.webp",
+        "toSrc": "images/licensed/oita-oka-castle-3316.webp"
       }
     ],
     "heroChanges": []
