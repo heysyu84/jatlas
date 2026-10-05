@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "baseCommit": "74609fafd36b3b38d9096a98087617ab5e78d213",
-  "reason": "Apply the user's 26 selected Wikimedia Commons representative photos as localized WebP files with matching photo-source attribution, while preserving the approved Ghibli Park user-photo change.",
+  "baseCommit": "4c848e470c55933d372aad44ecef6d8404a9b8dc",
+  "reason": "Apply the user's 26 selected Wikimedia Commons representative photos as localized WebP files with matching photo-source attribution, including the corresponding regional hero images where those places are the configured hero, while preserving the approved Ghibli Park user-photo change.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
@@ -128,6 +128,47 @@
         "toSrc": "images/licensed/approved/fukushima-matsukawaura-5221.webp"
       }
     ],
-    "heroChanges": []
+    "heroChanges": [
+      {
+        "key": "우쓰노미야",
+        "fromSrc": "images/commons/709c7ce35ca191d4.webp",
+        "toSrc": "images/licensed/approved/tochigi-oya-history-1305.webp"
+      },
+      {
+        "key": "교토",
+        "fromSrc": "images/commons/f194050f337e1f09.webp",
+        "toSrc": "images/licensed/approved/kyoto-kiyomizudera-6.webp"
+      },
+      {
+        "key": "히가시야마",
+        "fromSrc": "images/commons/f194050f337e1f09.webp",
+        "toSrc": "images/licensed/approved/kyoto-kiyomizudera-6.webp"
+      },
+      {
+        "key": "히메지",
+        "fromSrc": "images/commons/1e75df6e7dcb1290.webp",
+        "toSrc": "images/licensed/approved/hyogo-himeji-castle-1704.webp"
+      },
+      {
+        "key": "마루가메",
+        "fromSrc": "images/commons/0c921d9922e41065.webp",
+        "toSrc": "images/licensed/approved/kagawa-marugame-castle-2605.webp"
+      },
+      {
+        "key": "히라도·마쓰우라",
+        "fromSrc": "images/commons/52a343638bb84abb.webp",
+        "toSrc": "images/licensed/approved/nagasaki-hirado-castle-3114.webp"
+      },
+      {
+        "key": "아마쿠사",
+        "fromSrc": "images/commons/03d53083d669292e.webp",
+        "toSrc": "images/licensed/approved/kumamoto-sakitsu-3218.webp"
+      },
+      {
+        "key": "우스키·분고오노",
+        "fromSrc": "images/commons/f41fe48a89ae6a24.webp",
+        "toSrc": "images/licensed/approved/oita-usuki-stone-buddhas-3317.webp"
+      }
+    ]
   }
 }
