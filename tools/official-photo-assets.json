@@ -748,6 +748,26 @@
       "output": "images/official/shizuoka-mishima-skywalk-822.webp",
       "source": "https://hellonavi.jp/photo/641",
       "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 817,
+      "commonsFilename": "231007 MOA Museum of Art Atami Japan12s3.jpg",
+      "allowUnpinned": true,
+      "minWidth": 1200,
+      "minHeight": 800,
+      "output": "images/licensed/shizuoka-moa-museum-817.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 820,
+      "commonsFilename": "河津七滝～初景滝 - panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 1000,
+      "minHeight": 650,
+      "output": "images/licensed/shizuoka-kawazu-shokeidaru-820.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:河津七滝～初景滝_-_panoramio.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   ]
 }
