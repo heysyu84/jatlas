@@ -33,24 +33,24 @@ jobs:
 
           assets = [
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/500px_photo_%28188688269%29.jpeg/960px-500px_photo_%28188688269%29.jpeg",
-                  "dist/images/licensed/approved/okinawa-zanpa-3611.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Oyashirazu%2C_enkei.jpg/960px-Oyashirazu%2C_enkei.jpg",
+                  "dist/images/licensed/approved/niigata-oyashirazu-4623.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Korakukan_2025-07_ac_%282%29.jpg/960px-Korakukan_2025-07_ac_%282%29.jpg",
-                  "dist/images/licensed/approved/akita-korakukan-4420.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Furin_tunnel_at_Kawagoe_Hikawa_Shrine_01.jpg/960px-Furin_tunnel_at_Kawagoe_Hikawa_Shrine_01.jpg",
+                  "dist/images/licensed/approved/saitama-kawagoe-hikawa-502.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Aomori-Hotokegaura-xl.jpg/960px-Aomori-Hotokegaura-xl.jpg",
-                  "dist/images/licensed/approved/aomori-hotokegaura-4129.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG/960px-%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG",
+                  "dist/images/licensed/approved/mie-iga-ninja-3717.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/20091011%E6%9D%BE%E5%B7%9D%E6%B5%A6.jpg/960px-20091011%E6%9D%BE%E5%B7%9D%E6%B5%A6.jpg",
-                  "dist/images/licensed/approved/fukushima-matsukawaura-5221.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Magose_Pass_01.jpg/960px-Magose_Pass_01.jpg",
+                  "dist/images/licensed/approved/mie-magose-pass-3726.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Oya_History_Museum_entrance_2016-05-12.jpg/960px-Oya_History_Museum_entrance_2016-05-12.jpg",
-                  "dist/images/licensed/approved/tochigi-oya-history-1305.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Acrobat_at_Nagashima_Spa_Land_1.jpg/960px-Acrobat_at_Nagashima_Spa_Land_1.jpg",
+                  "dist/images/licensed/approved/mie-nagashima-3711.webp",
               ),
           ]
 
@@ -98,5 +98,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/images/licensed/approved
-          git commit -m "Localize user-selected Commons photos batch A"
+          git commit -m "Localize user-selected Commons photos batch B"
+          git pull --rebase origin main
           git push origin HEAD:main
