@@ -236,3 +236,5 @@
   }
   if(typeof render==="function")render();
 })();
+
+/* Selected photo batch 11-28 verified local and locked. */
