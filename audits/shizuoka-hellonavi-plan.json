@@ -92,7 +92,7 @@
       "name": "간잔지 로프웨이",
       "photoIds": [],
       "preferred": null,
-      "status": "no-photo-library-match-found-yet"
+      "status": "commons-selected-and-applied"
     },
     {
       "placeId": 808,
@@ -149,7 +149,7 @@
       "name": "하마마쓰 플라워파크",
       "photoIds": [],
       "preferred": null,
-      "status": "listed-in-Hello-Navi-but-photo-id-not-resolved-yet"
+      "status": "commons-selected-and-applied"
     },
     {
       "placeId": 816,
@@ -172,7 +172,7 @@
       "name": "고텐바 프리미엄 아울렛",
       "photoIds": [],
       "preferred": null,
-      "status": "no-photo-library-match-found-yet"
+      "status": "retained-existing-commons-best-match"
     },
     {
       "placeId": 820,
@@ -319,12 +319,34 @@
   "batch3Note": "User-approved 2026-10-05. Photo 641 is intentionally cropped from portrait to a 3:2 landscape derivative while retaining Mishima Skywalk and Mt. Fuji.",
   "batch3Correction": "Corrected after visual verification: 715 is Perry Road, 579 is Joren Falls. The mistaken MOA override was removed and MOA reverted to its prior correct photo.",
   "commonsSelections": {
+    "807": {
+      "name": "간잔지 로프웨이",
+      "source": "https://commons.wikimedia.org/wiki/File:Kanzanjiropeway.jpg",
+      "author": "ふせごげ",
+      "license": "CC BY-SA 4.0",
+      "status": "selected-and-applied"
+    },
+    "813": {
+      "name": "하마마쓰 플라워파크",
+      "source": "https://commons.wikimedia.org/wiki/File:Flower_park_1.JPG",
+      "author": "Jfr0595",
+      "license": "CC BY-SA 3.0",
+      "status": "selected-and-applied"
+    },
     "817": {
       "name": "MOA 미술관",
       "source": "https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg",
       "author": "663highland",
       "license": "CC BY-SA 4.0",
       "status": "selected-and-applied"
+    },
+    "819": {
+      "name": "고텐바 프리미엄 아울렛",
+      "source": "https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets1.jpg",
+      "author": "Jungle",
+      "license": "CC BY-SA 3.0",
+      "status": "retained-existing-best-match",
+      "note": "Existing image already shows the outlet streetscape and Mount Fuji clearly."
     },
     "820": {
       "name": "가와즈 나나다루",
