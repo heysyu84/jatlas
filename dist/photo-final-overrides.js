@@ -112,15 +112,100 @@
       alt:"고조반야시키",
       source:"https://www.kankomie.or.jp/media/photo_free/4848"
     },
+    "1622":{
+      src:"images/licensed/nara-okadera-1622.webp",
+      alt:"오카데라",
+      source:"https://commons.wikimedia.org/wiki/File:Okadera_Asuka_Nara_pref06n3900.jpg"
+    },
+    "7":{
+      src:"images/licensed/kyoto-arashiyama-bamboo-7.webp",
+      alt:"아라시야마 대나무숲",
+      source:"https://commons.wikimedia.org/wiki/File:Arashiyama_-_Bamboo_Forest,_Kyoto,_Japan10.jpg"
+    },
+    "401":{
+      src:"images/licensed/osaka-kuromon-401.webp",
+      alt:"구로몬 시장",
+      source:"https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg"
+    },
+    "406":{
+      src:"images/licensed/osaka-castle-406.webp",
+      alt:"오사카성 공원·천수각",
+      source:"https://commons.wikimedia.org/wiki/File:Osaka_Castle_in_Japan.jpg"
+    },
+    "408":{
+      src:"images/licensed/osaka-shitennoji-408.webp",
+      alt:"시텐노지",
+      source:"https://commons.wikimedia.org/wiki/File:Shitenno-ji_Temple_@_Osaka_(13382740383).jpg"
+    },
+    "412":{
+      src:"images/licensed/osaka-usj-412.webp",
+      alt:"유니버설 스튜디오 재팬",
+      source:"https://commons.wikimedia.org/wiki/File:USJ_Entrance_2026.jpg"
+    },
+    "1108":{
+      src:"images/licensed/mie-okage-yokocho-1108.webp",
+      alt:"오카게요코초",
+      source:"https://commons.wikimedia.org/wiki/File:Ise_Mie_Okage_Yokocho_15.jpg"
+    },
+    "1511":{
+      src:"images/licensed/kyoto-ginkakuji-1511.webp",
+      alt:"긴카쿠지",
+      source:"https://commons.wikimedia.org/wiki/File:Silberner_Pavillion,_Ginkaku-ji,_Kyoto.jpg"
+    },
+    "1609":{
+      src:"images/licensed/nara-yoshinoyama-1609.webp",
+      alt:"요시노산",
+      source:"https://commons.wikimedia.org/wiki/File:From_Mount_Yoshino_(6988360150).jpg"
+    },
     "1614":{
       src:"images/licensed/nara-asukadera-1614.webp",
       alt:"아스카데라",
       source:"https://commons.wikimedia.org/wiki/File:Asuka_Temple.JPG"
     },
-    "1622":{
-      src:"images/licensed/nara-okadera-1622.webp",
-      alt:"오카데라",
-      source:"https://commons.wikimedia.org/wiki/File:Okadera_Asuka_Nara_pref06n3900.jpg"
+    "1619":{
+      src:"images/licensed/nara-tanzan-jinja-1619.webp",
+      alt:"단잔 신사",
+      source:"https://commons.wikimedia.org/wiki/File:Tanzan_jinja_lanterns_at_balcony.jpg"
+    },
+    "1707":{
+      src:"images/licensed/hyogo-kinosaki-onsen-1707.webp",
+      alt:"기노사키 온천",
+      source:"https://commons.wikimedia.org/wiki/File:Kinosaki_Onsen_at_night.jpg"
+    },
+    "1717":{
+      src:"images/licensed/hyogo-awaji-hanasajiki-1717.webp",
+      alt:"아와지 하나사지키",
+      source:"https://commons.wikimedia.org/wiki/File:%E3%81%82%E3%82%8F%E3%81%98%E8%8A%B1%E3%81%95%E3%81%98%E3%81%8D%E3%83%9D%E3%83%94%E3%83%BC.jpg"
+    },
+    "1719":{
+      src:"images/licensed/hyogo-akashi-castle-1719.webp",
+      alt:"아카시성",
+      source:"https://commons.wikimedia.org/wiki/File:Castle_of_Akashi%EF%BC%9A%E6%98%8E%E7%9F%B3%E5%9F%8E_-_panoramio.jpg"
+    },
+    "1722":{
+      src:"images/licensed/hyogo-kobe-port-tower-1722.webp",
+      alt:"고베 포트타워",
+      source:"https://commons.wikimedia.org/wiki/File:Kobe_nakatottei07s3200.jpg"
+    },
+    "1907":{
+      src:"images/licensed/wakayama-oyunohara-1907.webp",
+      alt:"오유노하라",
+      source:"https://commons.wikimedia.org/wiki/File:Oyunohara_autumn_panorama.jpeg"
+    },
+    "1911":{
+      src:"images/licensed/wakayama-nachi-falls-1911.webp",
+      alt:"나치 폭포",
+      source:"https://commons.wikimedia.org/wiki/File:%E9%82%A3%E6%99%BA%E6%BB%9D%E3%81%A8%E4%B8%89%E9%87%8D%E5%A1%94_-_Nachi-no-taki_waterfall_-_panoramio.jpg"
+    },
+    "2013":{
+      src:"images/licensed/tottori-kaike-onsen-2013.webp",
+      alt:"가이케 온천",
+      source:"https://commons.wikimedia.org/wiki/File:Kaike_onsen01n3200.jpg"
+    },
+    "2103":{
+      src:"images/licensed/shimane-adachi-museum-2103.webp",
+      alt:"아다치 미술관",
+      source:"https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden_03.jpg"
     },
   };
   for(const [id,pic] of Object.entries(replacements)){
