@@ -200,42 +200,37 @@
     {
       "placeId": 800,
       "name": "시라이토 폭포",
-      "photoId": 657,
-      "title": "【しずおか富嶽三十六景】20景 白糸の滝",
-      "url": "https://hellonavi.jp/photo/657",
-      "status": "selected"
+      "photoId": 605,
+      "url": "https://hellonavi.jp/photo/605",
+      "status": "selected-and-applied"
     },
     {
       "placeId": 801,
       "name": "후지산 혼구 센겐타이샤",
-      "photoId": 546,
-      "title": "富士山本宮浅間大社 鳥居と富士山",
-      "url": "https://hellonavi.jp/photo/546",
-      "status": "selected"
+      "photoId": 585,
+      "url": "https://hellonavi.jp/photo/585",
+      "status": "selected-and-applied"
     },
     {
       "placeId": 802,
       "name": "미호노마쓰바라",
-      "photoId": 789,
-      "title": "三保松原",
-      "url": "https://hellonavi.jp/photo/789",
-      "status": "selected"
+      "photoId": 627,
+      "url": "https://hellonavi.jp/photo/627",
+      "status": "selected-and-applied"
     },
     {
       "placeId": 803,
       "name": "니혼다이라 유메테라스",
       "photoId": 802,
-      "title": "日本平夢テラス",
       "url": "https://hellonavi.jp/photo/802",
-      "status": "selected-for-proper-download"
+      "status": "selected-and-applied"
     },
     {
       "placeId": 805,
       "name": "하마마쓰성",
-      "photoId": 593,
-      "title": "浜松城",
-      "url": "https://hellonavi.jp/photo/593",
-      "status": "selected"
+      "photoId": 498,
+      "url": "https://hellonavi.jp/photo/498",
+      "status": "selected-and-applied"
     }
   ],
   "batch1Note": "Review/download in a group of five even though Hello Navi allows up to 20 photos per application. Do not use preview URLs as the licensed source file."
