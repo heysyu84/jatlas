@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/localize-shizuoka-photos.yml'
       - 'tools/official-photo-assets.json'
+      - 'tools/prepare-official-photos.py'
+      - 'dist/kyoto-nara-expansion.js'
       - 'dist/photo-final-overrides.js'
   workflow_dispatch:
 
@@ -40,6 +42,8 @@ jobs:
           from PIL import Image
 
           expected = {
+              'dist/images/licensed/nara-asukadera-1614.webp': (900, 500),
+              'dist/images/licensed/nara-okadera-1622.webp': (900, 600),
               'dist/images/licensed/tokyo-ghibli-museum-210.webp': (900, 600),
               'dist/images/licensed/niigata-echigo-yuzawa-4608.webp': (900, 600),
               'dist/images/official/toyama-shomyo-falls-4706.webp': (900, 600),
@@ -71,6 +75,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
+            dist/images/licensed/nara-asukadera-1614.webp \
+            dist/images/licensed/nara-okadera-1622.webp \
             dist/images/licensed/tokyo-ghibli-museum-210.webp \
             dist/images/licensed/niigata-echigo-yuzawa-4608.webp \
             dist/images/official/toyama-shomyo-falls-4706.webp \
