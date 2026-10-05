@@ -34,7 +34,12 @@ const helloNaviPhotos={
 808:["images/official/shizuoka-shuzenji-808.webp?v=20261005-local1","https://hellonavi.jp/photo/489"],
 810:["images/official/shizuoka-kunozan-810.webp?v=20261005-local1","https://hellonavi.jp/photo/795"],
 811:["images/official/shizuoka-jogasaki-811.webp?v=20261005-local1","https://hellonavi.jp/photo/707"],
-821:["images/official/shizuoka-nirayama-821.webp?v=20261005-local1","https://hellonavi.jp/photo/594"]
+821:["images/official/shizuoka-nirayama-821.webp?v=20261005-local1","https://hellonavi.jp/photo/594"],
+804:["images/official/shizuoka-dogashima-tensodo-804.webp?v=20261005-local3","https://hellonavi.jp/photo/625"],
+812:["images/official/shizuoka-perry-road-812.webp?v=20261005-local3","https://hellonavi.jp/photo/574"],
+816:["images/official/shizuoka-joren-falls-816.webp?v=20261005-local3","https://hellonavi.jp/photo/715"],
+817:["images/official/shizuoka-moa-museum-817.webp?v=20261005-local3","https://hellonavi.jp/photo/579"],
+822:["images/official/shizuoka-mishima-skywalk-822.webp?v=20261005-local3","https://hellonavi.jp/photo/641"]
 };
 for(const [id,[src,source]] of Object.entries(helloNaviPhotos)){
  const p=r.places.find(x=>String(x.id)===id);if(!p)continue;
