@@ -8,3 +8,12 @@ Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
   "images/licensed/approved/fukushima-matsukawaura-5221.webp":{"source":"https://commons.wikimedia.org/wiki/File:20091011%E6%9D%BE%E5%B7%9D%E6%B5%A6.jpg","terms":"https://commons.wikimedia.org/wiki/File:20091011%E6%9D%BE%E5%B7%9D%E6%B5%A6.jpg","author":"","placeId":5221,"foodName":""},
   "images/licensed/approved/tochigi-oya-history-1305.webp":{"source":"https://commons.wikimedia.org/wiki/File:Oya_History_Museum_entrance_2016-05-12.jpg","terms":"https://commons.wikimedia.org/wiki/File:Oya_History_Museum_entrance_2016-05-12.jpg","author":"","placeId":1305,"foodName":""}
 });
+
+/* User-selected Commons batch 2026-10-06 B */
+Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
+  "images/licensed/approved/niigata-oyashirazu-4623.webp":{"source":"https://commons.wikimedia.org/wiki/File:Oyashirazu,_enkei.jpg","terms":"https://commons.wikimedia.org/wiki/File:Oyashirazu,_enkei.jpg","author":"","placeId":4623,"foodName":""},
+  "images/licensed/approved/saitama-kawagoe-hikawa-502.webp":{"source":"https://commons.wikimedia.org/wiki/File:Furin_tunnel_at_Kawagoe_Hikawa_Shrine_01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Furin_tunnel_at_Kawagoe_Hikawa_Shrine_01.jpg","author":"","placeId":502,"foodName":""},
+  "images/licensed/approved/mie-iga-ninja-3717.webp":{"source":"https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG","terms":"https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG","author":"","placeId":3717,"foodName":""},
+  "images/licensed/approved/mie-magose-pass-3726.webp":{"source":"https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg","author":"","placeId":3726,"foodName":""},
+  "images/licensed/approved/mie-nagashima-3711.webp":{"source":"https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg","terms":"https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg","author":"","placeId":3711,"foodName":""}
+});
