@@ -33,24 +33,24 @@ jobs:
 
           assets = [
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/USMC-090419-M-8097K-001.jpg/960px-USMC-090419-M-8097K-001.jpg",
-                  "dist/images/licensed/approved/yamaguchi-akiyoshido-2405.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Oita-Harajiri_Falls%2C_echoing_in_the_countryside-xl.jpg/960px-Oita-Harajiri_Falls%2C_echoing_in_the_countryside-xl.jpg",
+                  "dist/images/licensed/approved/oita-harajiri-3325.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Himeji_Castle_with_cherry_blossoms_from_Himeji_Zoo.jpg/960px-Himeji_Castle_with_cherry_blossoms_from_Himeji_Zoo.jpg",
-                  "dist/images/licensed/approved/hyogo-himeji-castle-1704.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Hirado_Castle_Keep.jpg/960px-Hirado_Castle_Keep.jpg",
+                  "dist/images/licensed/approved/nagasaki-hirado-castle-3114.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Museum_of_Housing_and_Living_%28Osaka_Kita-ku%29_hdsr_S5_05.jpg/960px-Museum_of_Housing_and_Living_%28Osaka_Kita-ku%29_hdsr_S5_05.jpg",
-                  "dist/images/licensed/approved/osaka-housing-living-423.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Usuki_Stone_Buddas55.jpg/960px-Usuki_Stone_Buddas55.jpg",
+                  "dist/images/licensed/approved/oita-usuki-stone-buddhas-3317.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Sakitsu.jpg/960px-Sakitsu.jpg",
-                  "dist/images/licensed/approved/kumamoto-sakitsu-3218.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Sekinoo_Falls_02.jpg/960px-Sekinoo_Falls_02.jpg",
+                  "dist/images/licensed/approved/miyazaki-sekinoo-falls-3422.webp",
               ),
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Marugame_Castle%2C_Tenshu_002.jpg/960px-Marugame_Castle%2C_Tenshu_002.jpg",
-                  "dist/images/licensed/approved/kagawa-marugame-castle-2605.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg/960px-Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg",
+                  "dist/images/licensed/approved/okinawa-peace-memorial-3607.webp",
               ),
           ]
 
@@ -98,6 +98,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/images/licensed/approved
-          git commit -m "Localize user-selected Commons photos batch D"
+          git commit -m "Localize user-selected Commons photos batch E"
           git pull --rebase origin main
           git push origin HEAD:main
