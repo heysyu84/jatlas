@@ -601,6 +601,56 @@
       "output": "images/licensed/kochi-katsurahama-2802.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Katsurahama.jpg",
       "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 800,
+      "download": "https://hellonavi.jp/storage/photos/605/responsive_images/czvHOGV80InjnXTlTqyOMgmXF9CKnLg0nLmoreba__1714_1144.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-shiraito-800.webp",
+      "source": "https://hellonavi.jp/photo/605",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 801,
+      "download": "https://hellonavi.jp/storage/photos/585/responsive_images/jIhIHDwP8KAVL0v5b26wf8hKiEpv3RKXv0q45Kxj__4900_3675.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-sengen-801.webp",
+      "source": "https://hellonavi.jp/photo/585",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 802,
+      "download": "https://hellonavi.jp/storage/photos/627/responsive_images/IjMQixkajWFhxdvEX4S4qpcZLyYjF3QqmGR1vEHM__4900_3675.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-miho-802.webp",
+      "source": "https://hellonavi.jp/photo/627",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 803,
+      "download": "https://hellonavi.jp/storage/photos/802/responsive_images/sGaTUBTGaHQYzzOONawkQrpyndO3IbpNUzB2KPy4__1680_1120.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-nihondaira-yume-803.webp",
+      "source": "https://hellonavi.jp/photo/802",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 805,
+      "download": "https://hellonavi.jp/storage/photos/498/responsive_images/SALhNuFt4gnzBMlWhQvucvp91dGDxra3h8MlS72A__3059_2060.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-hamamatsu-castle-805.webp",
+      "source": "https://hellonavi.jp/photo/498",
+      "terms": "https://hellonavi.jp/photo/guide"
     }
   ]
 }
