@@ -106,9 +106,11 @@
     {
       "placeId": 809,
       "name": "슨푸성 공원",
-      "photoIds": [],
-      "preferred": null,
-      "status": "listed-in-library-search-but-detail-id-not-resolved-yet"
+      "photoIds": [
+        608
+      ],
+      "preferred": 608,
+      "status": "selected-and-applied"
     },
     {
       "placeId": 810,
@@ -331,5 +333,11 @@
       "license": "CC BY-SA 3.0",
       "status": "selected-and-applied"
     }
+  },
+  "sunpuCorrection": {
+    "placeId": 809,
+    "photoId": 608,
+    "url": "https://hellonavi.jp/photo/608",
+    "status": "selected-and-applied"
   }
 }
