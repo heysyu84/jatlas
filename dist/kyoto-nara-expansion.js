@@ -42,6 +42,29 @@ if(ky){
  replaceRoute('r-1500-0',{title:'산주산겐도와 기요미즈데라 반나절',intro:'교토의 대표 불교 조각과 히가시야마의 전망 사찰을 반나절에 이어보는 일정입니다.',note:'두 사찰 사이 이동과 식사 시간을 포함해 여유 있게 조정하세요.',days:[{label:'히가시야마',places:[1518,6],schedule:[[1518,'09:00','본당을 따라 천수관음상과 수호신상을 천천히 살펴보세요. 실내에서는 현장 촬영 안내를 확인하세요.'],[null,'10:30','히가시야마 이동·휴식'],[6,'11:00',ky.places.find(p=>p.id===6)?.activity||'기요미즈데라를 둘러보세요.']]}]});
  replaceRoute('r-1500-4',{title:'뵤도인과 우지가미 신사 반나절',intro:'우지강 양쪽의 두 세계유산을 차분하게 이어보는 역사 산책 일정입니다.',note:'우지강을 건너는 도보 이동과 차·식사 시간을 따로 잡으세요.',days:[{label:'우지',places:[8,1522],schedule:[[8,'09:30',ky.places.find(p=>p.id===8)?.activity||'뵤도인을 둘러보세요.'],[null,'11:30','우지강 주변에서 차·점심·이동'],[1522,'13:00','배전과 본전의 고건축을 둘러보고 우지 신사와 강변 산책을 함께 이어보세요.']]}]});
  replaceRoute('r-1500-10',{title:'구라마데라와 기후네 신사 하루',duration:'1일',intro:'교토 북부의 산악 사찰과 계곡 신사를 하루에 나누어 둘러보는 일정입니다.',note:'구라마와 기후네 사이 산길을 이용할지는 현장 통행 상황과 체력에 따라 결정하고, 필요하면 철도·버스로 이동하세요.',days:[{label:'구라마·기부네',places:[1520,1516],schedule:[[1520,'09:30','니오몬에서 본전까지 산길을 따라 올라가며 숲과 전각을 둘러보세요. 계단과 경사가 있으므로 날씨와 이동수단을 확인하세요.'],[null,'12:30','구라마·기부네 이동 및 점심'],[1516,'14:00',ky.places.find(p=>p.id===1516)?.activity||'기후네 신사를 둘러보세요.']]}]});
+ const asukaRoute=na.routes.find(x=>x.id==='r-1600-8');
+ if(asukaRoute){
+  Object.assign(asukaRoute,{
+   title:'아스카 사찰과 고분 하루',
+   intro:'아스카데라와 오카데라의 서로 다른 사찰 풍경을 보고 이시부타이 고분까지 연결해 고대 아스카의 종교·장례 문화를 함께 보는 일정입니다.',
+   note:'세 장소가 흩어져 있어 자전거가 편리합니다. 대중교통을 이용하면 버스 시간표와 오카데라 언덕 구간을 고려하세요.',
+   days:[{label:'아스카',places:[1614,1622,1608],schedule:[
+    [1614,'09:00',na.places.find(p=>p.id===1614)?.activity||'아스카데라를 둘러보세요.'],
+    [1622,'10:30',na.places.find(p=>p.id===1622)?.activity||'오카데라를 둘러보세요.'],
+    [null,'12:30','오카데라를 참배한 뒤 점심·휴식'],
+    [1608,'14:00',na.places.find(p=>p.id===1608)?.activity||'이시부타이 고분을 둘러보세요.']
+   ]}]
+  });
+  na.routePlanning['r-1600-8']={
+   start:'아스카데라',end:'이시부타이 고분',
+   move:'아스카 일대는 자전거 이동이 편리하며, 버스를 이용할 경우 정류장과 시간표를 확인하세요.',
+   meal:'오카데라를 참배한 뒤 점심·휴식',
+   rain:'비가 오면 야외 고분 관람 시간을 줄이고 두 사찰을 중심으로 둘러보세요.',
+   skip:'시간이 부족하면 이시부타이 고분을 별도 일정으로 미루세요.',
+   warning:'세 장소가 흩어져 있어 자전거가 편리합니다. 대중교통을 이용하면 버스 시간표와 오카데라 언덕 구간을 고려하세요.',
+   schedule:asukaRoute.days[0].schedule
+  };
+ }
  const newRoutes=[
   {id:'r-1500-12',pref:'교토',areas:['후시미·교토역 남부'],title:'다이고지 사찰과 정원 반나절',duration:'반나절',intro:'넓은 다이고지의 하부 가람과 산보인 정원을 중심으로 둘러보는 일정입니다.',note:'상다이고 산행은 포함하지 않은 일정입니다. 개화철에는 혼잡과 입장 동선을 확인하세요.',days:[{label:'후시미·교토역 남부',places:[1519],schedule:[[1519,'09:30','하부 가람과 오층탑, 산보인 정원을 중심으로 둘러보세요. 상다이고까지 오를 경우 별도의 산행 시간을 잡으세요.'],[null,'12:00','다이고역 주변으로 이동·점심']]}],image:''},
   {id:'r-1500-13',pref:'교토',areas:['오하라'],title:'오하라 산젠인 반나절',duration:'반나절',intro:'도심을 벗어나 오하라의 이끼 정원과 사찰 분위기를 여유롭게 즐기는 일정입니다.',note:'교토 중심부와 왕복 이동 시간이 길어 다른 권역 일정과 무리하게 묶지 않는 편이 좋습니다.',days:[{label:'오하라',places:[1521],schedule:[[1521,'10:00','유세이엔의 이끼 정원과 왕생극락원 주변을 천천히 걸어보세요. 단풍철에는 혼잡을 고려해 이른 시간 방문을 권합니다.'],[null,'12:00','오하라에서 점심·산책']]}],image:''}
@@ -59,7 +82,19 @@ if(ky){
 
 const na=regionalCatalog.find(x=>x.pref==='나라');
 if(na){
+ Object.assign(regionalJapanese,{
+  '오카데라':'岡寺（龍蓋寺）',
+  '사찰·관음·정원':'寺院・観音・庭園',
+  '아스카 평야를 내려다보는 산기슭에 자리한 고찰로, 큰 소조 여의륜관음상과 니오몬·삼층탑, 계절 정원으로 알려져 있습니다.':'飛鳥平野を見下ろす山腹にある古刹で、大きな塑造如意輪観音像、仁王門、三重塔、四季の庭園で知られています。',
+  '니오몬에서 본당과 여의륜관음을 참배하고 삼층탑과 정원을 둘러보세요. 경사가 있으므로 편한 신발이 좋습니다.':'仁王門から本堂と如意輪観音を参拝し、三重塔と庭園を巡ってください。坂道があるため歩きやすい靴がおすすめです。',
+  '긴테쓰 가시하라진구마에역 동쪽 출구에서 오카데라마에행 버스를 타고 오카데라마에 정류장에서 하차한 뒤 산문까지 걸어가세요.':'近鉄橿原神宮前駅東口から岡寺前方面のバスに乗り、岡寺前停留所で下車して山門まで歩いてください。',
+  '아스카 사찰과 고분 하루':'飛鳥の寺院と古墳の1日',
+  '아스카데라와 오카데라의 서로 다른 사찰 풍경을 보고 이시부타이 고분까지 연결해 고대 아스카의 종교·장례 문화를 함께 보는 일정입니다.':'飛鳥寺と岡寺の異なる寺院景観を見た後、石舞台古墳までつなぎ、古代飛鳥の宗教・葬送文化を一緒に見る1日コースです。',
+  '세 장소가 흩어져 있어 자전거가 편리합니다. 대중교통을 이용하면 버스 시간표와 오카데라 언덕 구간을 고려하세요.':'3か所が離れているため自転車が便利です。公共交通を利用する場合はバス時刻表と岡寺の坂道区間を考慮してください。',
+  '오카데라를 참배한 뒤 점심·휴식':'岡寺を参拝した後、昼食・休憩'
+ });
  const add=[
+ {id:1622,pref:'나라',area:'아스카',town:'아스카촌',name:'오카데라',tag:'사찰·관음·정원',description:'아스카 평야를 내려다보는 산기슭에 자리한 고찰로, 큰 소조 여의륜관음상과 니오몬·삼층탑, 계절 정원으로 알려져 있습니다.',activity:'니오몬에서 본당과 여의륜관음을 참배하고 삼층탑과 정원을 둘러보세요. 경사가 있으므로 편한 신발이 좋습니다.',checked:'2026.10.05',lat:34.471789,lon:135.828372,source:'https://www.visitnara.jp/venues/A00523/',note,mapQuery:'奈良県明日香村 岡寺'},
  {id:1618,pref:'나라',area:'하세·사쿠라이',town:'사쿠라이시',name:'오미와 신사',tag:'신사·고대신앙·숲',description:'미와산 자체를 신체로 모시는 고대 신앙 형태가 남아 있어 본전이 없는 독특한 구조로 알려진 오래된 신사입니다.',activity:'배전과 삼륜산을 향한 신앙 공간을 둘러보고 인근 사이진자까지 천천히 걸어보세요. 산 입산은 별도 규정을 확인하세요.',checked:'2026.09.30',lat:34.52875,lon:135.85175,source:'https://www.visitnara.jp/venues/A00515/',note,mapQuery:'奈良 大神神社'},
  {id:1619,pref:'나라',area:'하세·사쿠라이',town:'사쿠라이시',name:'단잔 신사',tag:'신사·역사·단풍',description:'후지와라노 가마타리를 모신 산중 신사로, 일본에서 유일한 현존 목조 십삼층탑과 가을 단풍으로 유명합니다.',activity:'십삼층탑과 배전 주변을 둘러보고 산비탈의 단풍 풍경을 감상해보세요. 계단이 많아 편한 신발이 좋습니다.',checked:'2026.09.30',lat:34.465806,lon:135.861653,source:'https://www.visitnara.jp/venues/A00518/',note,mapQuery:'奈良 談山神社'},
  {id:1620,pref:'나라',area:'우다·무로',town:'우다시',name:'무로지',tag:'사찰·국보·숲',description:'삼나무 숲과 돌계단 사이에 국보 전각과 작은 오층탑이 이어지는 산중 사찰로, 과거 여성의 참배를 허용해 ‘여인고야’로 불렸습니다.',activity:'니오몬에서 본당과 오층탑까지 돌계단을 따라 올라가보세요. 더 깊은 오쿠노인까지 갈 경우 체력과 시간을 넉넉히 잡으세요.',checked:'2026.09.30',lat:34.53823,lon:136.04034,source:'https://www.visitnara.jp/venues/A00527/',note,mapQuery:'奈良 室生寺'},
@@ -67,6 +102,7 @@ if(na){
  ];
  for(const p of add){p.mapUrl=map(p.mapQuery);if(!na.places.some(x=>x.id===p.id))na.places.push(p)}
  Object.assign(na.guides,{
+  '1622':{access:'긴테쓰 가시하라진구마에역 동쪽 출구에서 오카데라마에행 버스를 타고 오카데라마에 정류장에서 하차한 뒤 산문까지 걸어가세요.',duration:'1시간 30분~2시간'},
   '1618':{access:'JR 미와역에서 도보 약 5분입니다.',duration:'1시간 30분~2시간'},
   '1619':{access:'JR·긴테쓰 사쿠라이역에서 버스 또는 택시 운행을 확인해 이동하세요.',duration:'1시간 30분~2시간'},
   '1620':{access:'긴테쓰 무로구치오노역에서 무로지마에행 버스를 이용하세요.',duration:'2~3시간'},
@@ -75,7 +111,11 @@ if(na){
  for(const p of add)na.facts[String(p.id)]=[na.guides[String(p.id)].duration];
  const pf={1618:'Omiwa Shrine Worship Hall.jpg',1619:'061202 Tanzan-jinja Sakurai Nara pref Japan02s5.jpg',1620:'Murouji Temple Five-storied Pagoda.jpg',1621:'Kasugayama Forest.jpg'};
  for(const [id,file] of Object.entries(pf)){const p=na.places.find(x=>String(x.id)===id);na.photos[id]={src:cf(file),alt:p.name,source:cp(file)}}
+ na.photos[1614]={src:'images/licensed/nara-asukadera-1614.webp',alt:'아스카데라',source:cp('Asuka Temple.JPG')};
+ na.photos[1622]={src:'images/licensed/nara-okadera-1622.webp',alt:'오카데라',source:cp('Okadera Asuka Nara pref06n3900.jpg')};
  const credits=[
+  {label:'아스카데라',source:cp('Asuka Temple.JPG'),author:'Osakaosaka',license:'CC BY-SA 3.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'},
+  {label:'오카데라',source:cp('Okadera Asuka Nara pref06n3900.jpg'),author:'663highland',license:'CC BY-SA 3.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'},
   {label:'오미와 신사',source:cp(pf[1618]),author:'KishujiRapid',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},
   {label:'단잔 신사',source:cp(pf[1619]),author:'663highland',license:'CC BY-SA 3.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/'},
   {label:'무로지',source:cp(pf[1620]),author:'KishujiRapid',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'},
