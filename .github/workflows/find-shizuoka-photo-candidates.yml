@@ -10,10 +10,10 @@ permissions:
   contents: read
 
 jobs:
-  inspect:
+  probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect Hello Navi photo pagination
+      - name: Probe Hello Navi photo search
         uses: actions/github-script@v7
         with:
           script: |
@@ -27,14 +27,18 @@ jobs:
                 }).on('error', reject);
               });
             }
-            const html = await fetchText('https://hellonavi.jp/photo');
-            for (const needle of ['pagination','keyword','page','axios','fetch(','photo?','form','currentPage','lastPage']) {
-              let start = 0, count = 0;
-              while (count < 8) {
-                const i = html.toLowerCase().indexOf(needle.toLowerCase(), start);
-                if (i < 0) break;
-                console.log('SNIP', needle, JSON.stringify(html.slice(Math.max(0,i-600), i+1600)));
-                start = i + needle.length;
-                count++;
-              }
+            const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').replace(/\s+/g,' ').trim();
+            for (const url of [
+              'https://hellonavi.jp/photo?q=%E6%B2%B3%E6%B4%A5',
+              'https://hellonavi.jp/photo?q=%E6%B2%B3%E6%B4%A5%E4%B8%83%E6%BB%9D',
+              'https://hellonavi.jp/photo?q=%E5%88%9D%E6%99%AF%E6%BB%9D',
+              'https://hellonavi.jp/photo?page=2',
+              'https://hellonavi.jp/photo?p=2',
+              'https://hellonavi.jp/photo?key=2'
+            ]) {
+              const html=await fetchText(url);
+              const count=(html.match(/<span[^>]*>(\d+)<\/span>件ありました/)||[])[1]||'?';
+              const ids=[...new Set([...html.matchAll(/href=["'][^"']*\/photo\/(\d+)["']/g)].map(m=>m[1]))];
+              const titles=[...html.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>/g)].map(m=>strip(m[1])).filter(Boolean);
+              console.log('PROBE',url,'COUNT',count,'IDS',ids.slice(0,50).join(','),'TITLES',JSON.stringify(titles.slice(0,45)));
             }
