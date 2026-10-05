@@ -701,6 +701,64 @@
       "output": "images/official/shizuoka-nirayama-821.webp",
       "source": "https://hellonavi.jp/photo/594",
       "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 804,
+      "imagePage": "https://hellonavi.jp/photo/625",
+      "imageSrcContains": "/storage/photos/625/",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-dogashima-tensodo-804.webp",
+      "source": "https://hellonavi.jp/photo/625",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 812,
+      "imagePage": "https://hellonavi.jp/photo/574",
+      "imageSrcContains": "/storage/photos/574/",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-perry-road-812.webp",
+      "source": "https://hellonavi.jp/photo/574",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 816,
+      "imagePage": "https://hellonavi.jp/photo/715",
+      "imageSrcContains": "/storage/photos/715/",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-joren-falls-816.webp",
+      "source": "https://hellonavi.jp/photo/715",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 817,
+      "imagePage": "https://hellonavi.jp/photo/579",
+      "imageSrcContains": "/storage/photos/579/",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-moa-museum-817.webp",
+      "source": "https://hellonavi.jp/photo/579",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 822,
+      "imagePage": "https://hellonavi.jp/photo/641",
+      "imageSrcContains": "/storage/photos/641/",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "cropRatio": 1.5,
+      "cropX": 0.5,
+      "cropY": 0.5,
+      "output": "images/official/shizuoka-mishima-skywalk-822.webp",
+      "source": "https://hellonavi.jp/photo/641",
+      "terms": "https://hellonavi.jp/photo/guide"
     }
   ]
 }
