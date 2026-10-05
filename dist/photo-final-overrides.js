@@ -318,6 +318,26 @@
       alt:"오카성터",
       source:"https://commons.wikimedia.org/wiki/File:Oka_Castle%27s_Main_Gate_Ruin.jpg"
     },
+    "3410":{
+      src:"images/licensed/miyazaki-takachiho-gorge-3410.webp",
+      alt:"다카치호 협곡",
+      source:"https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E8%89%B2%E3%81%AE%E9%AB%98%E5%8D%83%E7%A9%82%E5%B3%A1_(Autumn_Colored_Takachiho_Gorge)_24_Nov,_2012_-_panoramio.jpg"
+    },
+    "3513":{
+      src:"images/licensed/kagoshima-takachiho-gawara-3513.webp",
+      alt:"다카치호가와라",
+      source:"https://commons.wikimedia.org/wiki/File:Takachiho-gawara_Kirishima_City_Kagoshima_Pref02n4050.jpg"
+    },
+    "3605":{
+      src:"images/licensed/okinawa-sefa-utaki-3605.webp",
+      alt:"세이화우타키",
+      source:"https://commons.wikimedia.org/wiki/File:Okinawa_Nanjo_Sefa-utaki_Gusuku_site_Yuinchi_06.jpg"
+    },
+    "3621":{
+      src:"images/licensed/okinawa-cape-hedo-3621.webp",
+      alt:"헤도곶",
+      source:"https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg"
+    },
   };
   for(const [id,pic] of Object.entries(replacements)){
     tokyoPhotos[id]={...pic};
