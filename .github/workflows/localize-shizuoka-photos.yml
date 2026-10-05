@@ -42,6 +42,16 @@ jobs:
           from PIL import Image
 
           expected = {
+              'dist/images/licensed/saga-nagoya-castle-museum-3007.webp': (900, 600),
+              'dist/images/licensed/saga-kyushu-ceramic-museum-3008.webp': (900, 600),
+              'dist/images/licensed/saga-okawachiyama-3010.webp': (900, 600),
+              'dist/images/licensed/nagasaki-oura-church-3101.webp': (900, 600),
+              'dist/images/licensed/nagasaki-26-martyrs-3109.webp': (900, 600),
+              'dist/images/licensed/nagasaki-hirado-east-west-3115.webp': (900, 600),
+              'dist/images/official/nagasaki-fukue-castle-3124.webp': (900, 500),
+              'dist/images/licensed/oita-yunotsubo-street-3310.webp': (900, 600),
+              'dist/images/licensed/oita-ramune-onsen-3315.webp': (900, 600),
+              'dist/images/licensed/oita-oka-castle-3316.webp': (900, 600),
               'dist/images/licensed/shimane-ryugenji-mabu-2108.webp': (900, 600),
               'dist/images/licensed/hiroshima-castle-2302.webp': (900, 600),
               'dist/images/licensed/yamaguchi-karato-market-2400.webp': (900, 600),
@@ -104,6 +114,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
+            dist/images/licensed/saga-nagoya-castle-museum-3007.webp \
+            dist/images/licensed/saga-kyushu-ceramic-museum-3008.webp \
+            dist/images/licensed/saga-okawachiyama-3010.webp \
+            dist/images/licensed/nagasaki-oura-church-3101.webp \
+            dist/images/licensed/nagasaki-26-martyrs-3109.webp \
+            dist/images/licensed/nagasaki-hirado-east-west-3115.webp \
+            dist/images/official/nagasaki-fukue-castle-3124.webp \
+            dist/images/licensed/oita-yunotsubo-street-3310.webp \
+            dist/images/licensed/oita-ramune-onsen-3315.webp \
+            dist/images/licensed/oita-oka-castle-3316.webp \
             dist/images/licensed/shimane-ryugenji-mabu-2108.webp \
             dist/images/licensed/hiroshima-castle-2302.webp \
             dist/images/licensed/yamaguchi-karato-market-2400.webp \
