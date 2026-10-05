@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: jatlas-localize-shizuoka
+  group: jatlas-localize-approved-photos-v2
   cancel-in-progress: true
 
 jobs:
