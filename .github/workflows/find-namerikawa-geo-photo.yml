@@ -1,0 +1,45 @@
+name: Find Namerikawa geotagged Commons photos
+
+on:
+  push:
+    paths:
+      - '.github/workflows/find-namerikawa-geo-photo.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query Wikimedia Commons geosearch
+        run: |
+          python - <<'PY'
+          import json, urllib.parse, urllib.request
+          params = {
+              "action":"query","generator":"geosearch","ggsprimary":"all",
+              "ggsnamespace":"6","ggsradius":"2000","ggscoord":"36.77874|137.35130",
+              "ggslimit":"100","prop":"imageinfo|coordinates",
+              "iiprop":"url|extmetadata","format":"json"
+          }
+          url="https://commons.wikimedia.org/w/api.php?"+urllib.parse.urlencode(params)
+          req=urllib.request.Request(url,headers={"User-Agent":"Jatlas photo QA/1.0"})
+          data=json.load(urllib.request.urlopen(req,timeout=45))
+          rows=[]
+          for p in data.get("query",{}).get("pages",{}).values():
+              ii=(p.get("imageinfo") or [{}])[0]
+              meta=ii.get("extmetadata") or {}
+              coord=(p.get("coordinates") or [{}])[0]
+              rows.append({
+                  "title":p.get("title"),
+                  "lat":coord.get("lat"),"lon":coord.get("lon"),
+                  "url":ii.get("descriptionurl"),
+                  "thumb":ii.get("thumburl") or ii.get("url"),
+                  "license":(meta.get("LicenseShortName") or {}).get("value"),
+                  "artist":(meta.get("Artist") or {}).get("value"),
+                  "description":(meta.get("ImageDescription") or {}).get("value"),
+              })
+          print("RESULTS_BEGIN")
+          print(json.dumps(rows,ensure_ascii=False,indent=2))
+          print("RESULTS_END")
+          PY
