@@ -162,7 +162,7 @@ def crop_to_ratio(image, ratio, anchor_x=0.5, anchor_y=0.5):
 def resolve_download(photo):
     if photo.get('commonsFilename'):
         filename = urllib.parse.quote(photo['commonsFilename'], safe='')
-        return f'https://commons.wikimedia.org/wiki/Special:Redirect/file/{filename}?width=1280'
+        return f'https://commons.wikimedia.org/wiki/Special:Redirect/file/{filename}?width=1600'
     if photo.get('imagePage'):
         return image_from_page(photo)
 
