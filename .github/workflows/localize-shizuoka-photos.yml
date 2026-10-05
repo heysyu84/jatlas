@@ -42,6 +42,18 @@ jobs:
           from PIL import Image
 
           expected = {
+              'dist/images/licensed/shimane-ryugenji-mabu-2108.webp': (900, 600),
+              'dist/images/licensed/hiroshima-castle-2302.webp': (900, 600),
+              'dist/images/licensed/yamaguchi-karato-market-2400.webp': (900, 600),
+              'dist/images/official/kagawa-yashimaru-2602.webp': (900, 500),
+              'dist/images/licensed/kagawa-shodoshima-olive-park-2616.webp': (900, 600),
+              'dist/images/licensed/kagawa-marugamemachi-2619.webp': (900, 600),
+              'dist/images/licensed/ehime-bansuiso-2703.webp': (900, 600),
+              'dist/images/licensed/ehime-garyu-sanso-2712.webp': (900, 600),
+              'dist/images/licensed/kochi-castle-2800.webp': (900, 600),
+              'dist/images/licensed/fukuoka-kokura-castle-2913.webp': (900, 600),
+              'dist/images/licensed/fukuoka-canal-city-2922.webp': (900, 600),
+              'dist/images/licensed/saga-nijinomatsubara-3004.webp': (900, 600),
               'dist/images/licensed/mie-okage-yokocho-1108.webp': (900, 600),
               'dist/images/licensed/kyoto-arashiyama-bamboo-7.webp': (900, 600),
               'dist/images/licensed/kyoto-ginkakuji-1511.webp': (900, 600),
@@ -92,6 +104,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
+            dist/images/licensed/shimane-ryugenji-mabu-2108.webp \
+            dist/images/licensed/hiroshima-castle-2302.webp \
+            dist/images/licensed/yamaguchi-karato-market-2400.webp \
+            dist/images/official/kagawa-yashimaru-2602.webp \
+            dist/images/licensed/kagawa-shodoshima-olive-park-2616.webp \
+            dist/images/licensed/kagawa-marugamemachi-2619.webp \
+            dist/images/licensed/ehime-bansuiso-2703.webp \
+            dist/images/licensed/ehime-garyu-sanso-2712.webp \
+            dist/images/licensed/kochi-castle-2800.webp \
+            dist/images/licensed/fukuoka-kokura-castle-2913.webp \
+            dist/images/licensed/fukuoka-canal-city-2922.webp \
+            dist/images/licensed/saga-nijinomatsubara-3004.webp \
             dist/images/licensed/mie-okage-yokocho-1108.webp \
             dist/images/licensed/kyoto-arashiyama-bamboo-7.webp \
             dist/images/licensed/kyoto-ginkakuji-1511.webp \
