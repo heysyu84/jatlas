@@ -100,3 +100,8 @@ require('node:fs').writeFileSync('/tmp/duplicate-place-report.json',JSON.stringi
 console.log('DUPLICATE_PLACE_REPORT_BEGIN');
 console.log(JSON.stringify(report));
 console.log('DUPLICATE_PLACE_REPORT_END');
+const safety=result.safety||{tombstones:[],duplicates:[]};
+if(exactName.length||filteredExactMap.length||(safety.tombstones||[]).length||(safety.duplicates||[]).length){
+  console.error('Duplicate/tombstone audit failed. Fix the source data; do not rely on runtime cleanup.');
+  process.exitCode=1;
+}
