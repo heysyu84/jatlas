@@ -1,9 +1,9 @@
-name: Localize Shizuoka selected photos
+name: Localize selected photos
 
 on:
   push:
     paths:
-      - '.github/workflows/localize-shizuoka-photos.yml'
+      - '.github/workflows/localize-shizuoka-photos.yml'\n      - 'tools/official-photo-assets.json'\n      - 'dist/photo-final-overrides.js'
   workflow_dispatch:
 
 permissions:
@@ -31,13 +31,23 @@ jobs:
           python -m pip install Pillow==11.3.0
           python tools/prepare-official-photos.py
 
-      - name: Verify selected Shizuoka photos
+      - name: Verify selected photos
         run: |
           python - <<'PY'
           from pathlib import Path
           from PIL import Image
 
           expected = {
+              'dist/images/licensed/tokyo-ghibli-museum-210.webp': (900, 600),
+              'dist/images/licensed/niigata-echigo-yuzawa-4608.webp': (900, 600),
+              'dist/images/official/toyama-shomyo-falls-4706.webp': (900, 600),
+              'dist/images/licensed/toyama-kurobe-dam-4723.webp': (900, 600),
+              'dist/images/official/fukui-obama-port-4919.webp': (900, 600),
+              'dist/images/licensed/gifu-gujo-hachiman-castle-906.webp': (900, 600),
+              'dist/images/official/mie-iga-ninja-show-3717.webp': (900, 600),
+              'dist/images/official/mie-nagashima-overview-3711.webp': (900, 600),
+              'dist/images/official/mie-matsusaka-castle-3721.webp': (900, 600),
+              'dist/images/official/mie-gojobanyashiki-3722.webp': (900, 600),
               'dist/images/licensed/shizuoka-kanzanji-ropeway-807.webp': (1200, 800),
               'dist/images/licensed/shizuoka-hamamatsu-flower-park-813.webp': (1200, 800),
               'dist/images/licensed/shizuoka-moa-museum-817.webp': (1200, 800),
@@ -54,11 +64,21 @@ jobs:
                       raise SystemExit(f'Generated image too small: {filename} {image.size}')
           PY
 
-      - name: Commit selected Shizuoka photos
+      - name: Commit selected photos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
+            dist/images/licensed/tokyo-ghibli-museum-210.webp \
+            dist/images/licensed/niigata-echigo-yuzawa-4608.webp \
+            dist/images/official/toyama-shomyo-falls-4706.webp \
+            dist/images/licensed/toyama-kurobe-dam-4723.webp \
+            dist/images/official/fukui-obama-port-4919.webp \
+            dist/images/licensed/gifu-gujo-hachiman-castle-906.webp \
+            dist/images/official/mie-iga-ninja-show-3717.webp \
+            dist/images/official/mie-nagashima-overview-3711.webp \
+            dist/images/official/mie-matsusaka-castle-3721.webp \
+            dist/images/official/mie-gojobanyashiki-3722.webp \
             dist/images/licensed/shizuoka-kanzanji-ropeway-807.webp \
             dist/images/licensed/shizuoka-hamamatsu-flower-park-813.webp \
             dist/images/licensed/shizuoka-moa-museum-817.webp \
@@ -68,6 +88,6 @@ jobs:
             echo "No selected photo changes to commit."
             exit 0
           fi
-          git commit -m "Commit final Shizuoka selected photos"
+          git commit -m "Commit selected representative photos"
           git pull --rebase origin main
           git push
