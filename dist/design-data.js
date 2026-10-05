@@ -23,7 +23,36 @@ const areaIntros={
 '아자부다이·롯폰기':['AZABUDAI · ROPPONGI','현대미술과 디지털아트, 고층 도시 풍경을 함께 즐길 수 있는 남부 문화 지역입니다.']};
 const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINETSU','TOKAI','HOKURIKU','KINKI','SANIN · SANYO','SHIKOKU','KYUSHU','OKINAWA'];
 function photoForPlace(p){return tokyoPhotos[p.id]||designPhotos[p.name]||null}
-function photoForArea(a){return designPhotos[a]||tokyoPhotos[tokyoPlaces.find(p=>p.area===a)?.id]||null}
+function photoForArea(a){
+ const catalog=typeof regionalByPref!=='undefined'&&state?.pref?regionalByPref.get(state.pref):null;
+ const heroId=catalog?.heroes?.[a];
+ if(heroId!=null){
+  const live=tokyoPhotos[heroId]||catalog?.photos?.[heroId];
+  if(live)return live;
+ }
+ return designPhotos[a]||tokyoPhotos[tokyoPlaces.find(p=>p.area===a)?.id]||null
+}
+function currentScopeHeroPlace(){
+ if(typeof state==='undefined'||state.view!=='explore'||!state.pref||typeof samples==='undefined')return null;
+ const withPhoto=p=>!!photoForPlace(p);
+ const order=items=>typeof orderedPlaces==='function'?orderedPlaces(items,state.pref):items;
+ if(state.town&&state.town!=='전체'){
+  return order(samples.filter(p=>p.pref===state.pref&&p.town===state.town&&withPhoto(p)))[0]||null;
+ }
+ const municipality=typeof selectedMunicipality==='function'?selectedMunicipality(state.pref,state.area):null;
+ if(municipality){
+  return order(samples.filter(p=>p.pref===state.pref&&placeInScope(p)&&withPhoto(p)))[0]||null;
+ }
+ if(state.area&&state.area!=='전체'){
+  const catalog=typeof regionalByPref!=='undefined'?regionalByPref.get(state.pref):null;
+  const heroId=catalog?.heroes?.[state.area];
+  if(heroId!=null){
+   const hero=samples.find(p=>p.pref===state.pref&&String(p.id)===String(heroId));
+   if(hero&&withPhoto(hero))return hero;
+  }
+ }
+ return null;
+}
 function showTheme(pref,theme){if(theme==='벚꽃'){eventMonth=3;contentTab='events';go(pref)}else{contentTab='places';go(pref);placeTheme=theme;render()}}
 function placeMatches(p){if(placeTheme==='전체')return true;const patterns={'산책':/공원|정원|산책|옛|거리|골목|숲|수변|해변/,'역사':/사찰|신사|역사|성|성터|유적|고분|문화재|전통|교회|성당|사적/,'전망':/전망|랜드마크|타워|야경|로프웨이|전망대|스카이라인/,'자연':/자연|등산|화산|섬|호수|계곡|폭포|해안|바다|동굴|고원|습지/,'전시·체험':/박물관|미술관|과학|전시|테마파크|수족관|체험|기념관|자료관/,'쇼핑':/쇼핑|먹거리|시장|상점가|아케이드|백화점|몰|상업|중화가|차이나타운|마르셰|기념품/};const hay=(p.name||'')+' '+(p.tag||'');return (patterns[placeTheme]||/.*/).test(hay)}
 function renderDesign(){
@@ -33,7 +62,7 @@ function renderDesign(){
  $('#overviewSummary').textContent=nationalRegion?'도도부현을 선택하세요.':'지역을 선택하세요.';
  if(state.view==='explore'){
  $('#title').textContent=area;$('#placeEnglish').textContent=areaIntros[area]?.[0]||'';$('#summary').textContent=areaIntros[area]?.[1]||'지역과 가까운 장소를 함께 살펴보세요.';
- const pic=photoForArea(area);$('#areaHero').parentElement.hidden=!pic;if(pic){$('#areaHero').src=pic.src;$('#areaHero').alt=pic.alt;$('#heroCaption').textContent=pic.alt}
+ const scopeHero=currentScopeHeroPlace(),pic=scopeHero?photoForPlace(scopeHero):photoForArea(area);$('#areaHero').parentElement.hidden=!pic;if(pic){$('#areaHero').src=pic.src;$('#areaHero').alt=scopeHero?.name||pic.alt;$('#heroCaption').textContent=scopeHero?.name||pic.alt}
  $('#themeFilters').replaceChildren(...['전체','산책','역사','전망','자연','전시·체험','쇼핑'].map((t,i)=>button(['✧','♧','⛩','◉','△','▣','◇'][i]+' '+t,()=>{placeTheme=t;contentTab='places';close();render()},placeTheme===t?'active':'')));
  $('#themeFilters').hidden=!completePrefs.includes(state.pref)||contentTab!=='places';
  }
