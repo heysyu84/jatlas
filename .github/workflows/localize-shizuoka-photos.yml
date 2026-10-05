@@ -31,18 +31,15 @@ jobs:
           python -m pip install Pillow==11.3.0
           python tools/prepare-official-photos.py
 
-      - name: Verify Shizuoka batch 3 files
+      - name: Verify corrected Shizuoka files
         run: |
           python - <<'PY'
           from pathlib import Path
           from PIL import Image
 
           files = [
-              'dist/images/official/shizuoka-dogashima-tensodo-804.webp',
               'dist/images/official/shizuoka-perry-road-812.webp',
               'dist/images/official/shizuoka-joren-falls-816.webp',
-              'dist/images/official/shizuoka-moa-museum-817.webp',
-              'dist/images/official/shizuoka-mishima-skywalk-822.webp',
           ]
           for filename in files:
               path = Path(filename)
@@ -52,27 +49,20 @@ jobs:
                   print(filename, image.size)
                   if image.width < 900 or image.height < 500:
                       raise SystemExit(f'Generated image too small: {filename} {image.size}')
-
-          with Image.open(files[-1]) as image:
-              ratio = image.width / image.height
-              if abs(ratio - 1.5) > 0.02:
-                  raise SystemExit(f'Skywalk crop ratio is not 3:2: {image.size}')
           PY
 
-      - name: Commit five localized Shizuoka batch 3 photos
+      - name: Commit corrected Shizuoka photos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
-            dist/images/official/shizuoka-dogashima-tensodo-804.webp \
             dist/images/official/shizuoka-perry-road-812.webp \
-            dist/images/official/shizuoka-joren-falls-816.webp \
-            dist/images/official/shizuoka-moa-museum-817.webp \
-            dist/images/official/shizuoka-mishima-skywalk-822.webp
+            dist/images/official/shizuoka-joren-falls-816.webp
+          git rm -f --ignore-unmatch dist/images/official/shizuoka-moa-museum-817.webp
           if git diff --cached --quiet; then
-            echo "No localized photo changes to commit."
+            echo "No corrected photo changes to commit."
             exit 0
           fi
-          git commit -m "Commit five Shizuoka Hello Navi batch 3 photos"
+          git commit -m "Correct Perry Road and Joren Falls photos"
           git pull --rebase origin main
           git push
