@@ -42,6 +42,10 @@ jobs:
           from PIL import Image
 
           expected = {
+              'dist/images/licensed/miyazaki-takachiho-gorge-3410.webp': (900, 600),
+              'dist/images/licensed/kagoshima-takachiho-gawara-3513.webp': (900, 600),
+              'dist/images/licensed/okinawa-sefa-utaki-3605.webp': (900, 600),
+              'dist/images/licensed/okinawa-cape-hedo-3621.webp': (900, 600),
               'dist/images/licensed/saga-nagoya-castle-museum-3007.webp': (900, 600),
               'dist/images/licensed/saga-kyushu-ceramic-museum-3008.webp': (900, 600),
               'dist/images/licensed/saga-okawachiyama-3010.webp': (900, 600),
@@ -114,6 +118,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
+            dist/images/licensed/miyazaki-takachiho-gorge-3410.webp \
+            dist/images/licensed/kagoshima-takachiho-gawara-3513.webp \
+            dist/images/licensed/okinawa-sefa-utaki-3605.webp \
+            dist/images/licensed/okinawa-cape-hedo-3621.webp \
             dist/images/licensed/saga-nagoya-castle-museum-3007.webp \
             dist/images/licensed/saga-kyushu-ceramic-museum-3008.webp \
             dist/images/licensed/saga-okawachiyama-3010.webp \
