@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "baseCommit": "9b7150bb8eb351f2821b75a629668ca524bede71",
-  "reason": "Advance deployment baseline after successful approved-photo restore; preserve current merged photo/map changes.",
+  "baseCommit": "9a49c74656f864f902371e3dd43512cb748932f7",
+  "reason": "Advance deployment baseline after successful approved-photo restore and include latest localized photo assets.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
