@@ -36,10 +36,12 @@
 
   /* Shinhotaka: keep the selected source, but crop from the top so both the
      mountain ridge and ropeway remain inside wide cards/detail frames. */
-  const style=document.createElement('style');
-  style.id='ratio-recheck-final-crops';
-  style.textContent='img[src*="8f65722fc95cc182.webp"]{object-fit:cover!important;object-position:center top!important}';
-  document.head.append(style);
+  if(typeof document!=='undefined'&&document.head?.append&&document.createElement){
+    const style=document.createElement('style');
+    style.id='ratio-recheck-final-crops';
+    style.textContent='img[src*="8f65722fc95cc182.webp"]{object-fit:cover!important;object-position:center top!important}';
+    document.head.append(style);
+  }
 
   if(typeof render==='function')render();
 })();
