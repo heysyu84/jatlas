@@ -781,26 +781,6 @@
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
     },
     {
-      "placeId": 3101,
-      "commonsFilename": "Nagasaki church.jpg",
-      "allowUnpinned": true,
-      "minWidth": 1200,
-      "minHeight": 800,
-      "output": "images/licensed/nagasaki-oura-church-3101.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:Nagasaki_church.jpg",
-      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "placeId": 3109,
-      "commonsFilename": "二十六聖人殉教地 26 Martyrs Museum and Monument - panoramio.jpg",
-      "allowUnpinned": true,
-      "minWidth": 1200,
-      "minHeight": 800,
-      "output": "images/licensed/nagasaki-26-martyrs-3109.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:二十六聖人殉教地_26_Martyrs_Museum_and_Monument_-_panoramio.jpg",
-      "terms": "https://creativecommons.org/licenses/by/3.0/"
-    },
-    {
       "placeId": 210,
       "commonsFilename": "Ghibli Museum 2024.JPG",
       "allowUnpinned": true,
@@ -1231,6 +1211,110 @@
       "minWidth": 900,
       "minHeight": 600,
       "terms": "https://commons.wikimedia.org/wiki/File:Nijinomatsubara.jpg"
+    },
+    {
+      "placeId": 3007,
+      "commonsFilename": "Saga Prefectural Nagoya Castle Museum 240812.jpg",
+      "output": "images/licensed/saga-nagoya-castle-museum-3007.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Saga_Prefectural_Nagoya_Castle_Museum_240812.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Saga_Prefectural_Nagoya_Castle_Museum_240812.jpg"
+    },
+    {
+      "placeId": 3008,
+      "commonsFilename": "The Kyushu Ceramic Museum - 52125636824.jpg",
+      "output": "images/licensed/saga-kyushu-ceramic-museum-3008.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Kyushu_Ceramic_Museum_-_52125636824.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:The_Kyushu_Ceramic_Museum_-_52125636824.jpg"
+    },
+    {
+      "placeId": 3010,
+      "commonsFilename": "Nabeshimayaki Okawachiyama Imari-shi Saga-ken PB110083.jpg",
+      "output": "images/licensed/saga-okawachiyama-3010.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Nabeshimayaki_Okawachiyama_Imari-shi_Saga-ken_PB110083.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Nabeshimayaki_Okawachiyama_Imari-shi_Saga-ken_PB110083.jpg"
+    },
+    {
+      "placeId": 3101,
+      "commonsFilename": "Former the archbishop hall of the Roman Catholic Archdiocese of Nagasaki01s3.jpg",
+      "output": "images/licensed/nagasaki-oura-church-3101.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Former_the_archbishop_hall_of_the_Roman_Catholic_Archdiocese_of_Nagasaki01s3.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Former_the_archbishop_hall_of_the_Roman_Catholic_Archdiocese_of_Nagasaki01s3.jpg"
+    },
+    {
+      "placeId": 3109,
+      "commonsFilename": "26 Martyrs Shrine and Museum and St. Phillip Church.jpg",
+      "output": "images/licensed/nagasaki-26-martyrs-3109.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:26_Martyrs_Shrine_and_Museum_and_St._Phillip_Church.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:26_Martyrs_Shrine_and_Museum_and_St._Phillip_Church.jpg"
+    },
+    {
+      "placeId": 3115,
+      "commonsFilename": "East meets west in hirado.jpg",
+      "output": "images/licensed/nagasaki-hirado-east-west-3115.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:East_meets_west_in_hirado.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:East_meets_west_in_hirado.jpg"
+    },
+    {
+      "placeId": 3124,
+      "imagePage": "https://www.nagasaki-tabinet.com/guide/348",
+      "imageAltContains": "福江城（石田城）-1",
+      "preferLargest": true,
+      "allowAnyRatio": true,
+      "upscaleWidth": 960,
+      "minWidth": 900,
+      "minHeight": 500,
+      "output": "images/official/nagasaki-fukue-castle-3124.webp",
+      "source": "https://www.nagasaki-tabinet.com/guide/348",
+      "terms": "https://www.nagasaki-tabinet.com/guide/348",
+      "allowUnpinned": true
+    },
+    {
+      "placeId": 3310,
+      "commonsFilename": "Mount Yufudake from Yunotsubo Street.JPG",
+      "output": "images/licensed/oita-yunotsubo-street-3310.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Yufudake_from_Yunotsubo_Street.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Mount_Yufudake_from_Yunotsubo_Street.JPG"
+    },
+    {
+      "placeId": 3315,
+      "commonsFilename": "RamuneOnsenExterior.JPG",
+      "output": "images/licensed/oita-ramune-onsen-3315.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:RamuneOnsenExterior.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:RamuneOnsenExterior.JPG"
+    },
+    {
+      "placeId": 3316,
+      "commonsFilename": "Oka Castle's Main Gate Ruin.jpg",
+      "output": "images/licensed/oita-oka-castle-3316.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Oka_Castle%27s_Main_Gate_Ruin.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Oka_Castle%27s_Main_Gate_Ruin.jpg"
     }
   ]
 }
