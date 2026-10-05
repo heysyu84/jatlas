@@ -869,47 +869,43 @@
     },
     {
       "placeId": 3717,
-      "imagePage": "https://www.kankomie.or.jp/media/photo_free/3201",
-      "imageAltContains": "伊賀流忍者博物館",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
       "output": "images/official/mie-iga-ninja-show-3717.webp",
       "source": "https://www.kankomie.or.jp/media/photo_free/3201",
-      "terms": "https://www.kankomie.or.jp/media/photo_free/3201"
+      "terms": "https://www.kankomie.or.jp/media/photo_free/3201",
+      "download": "https://www.kankomie.or.jp/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclJ4IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--695bcdff8284b7feb829aa1b72cc3dddca1478b8/3377_1_org.jpg"
     },
     {
       "placeId": 3711,
-      "imagePage": "https://www.kankomie.or.jp/media/photo_free/451",
-      "imageAltContains": "ナガシマスパーランド",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
       "output": "images/official/mie-nagashima-overview-3711.webp",
       "source": "https://www.kankomie.or.jp/media/photo_free/451",
-      "terms": "https://www.kankomie.or.jp/media/photo_free/451"
+      "terms": "https://www.kankomie.or.jp/media/photo_free/451",
+      "download": "https://www.kankomie.or.jp/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTFvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9e35a259a3842f947aff03bc591e1a3f83981f92/107_1_org.jpg"
     },
     {
       "placeId": 3721,
-      "imagePage": "https://www.kankomie.or.jp/media/photo_free/4846",
-      "imageAltContains": "松坂城跡",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
       "output": "images/official/mie-matsusaka-castle-3721.webp",
       "source": "https://www.kankomie.or.jp/media/photo_free/4846",
-      "terms": "https://www.kankomie.or.jp/media/photo_free/4846"
+      "terms": "https://www.kankomie.or.jp/media/photo_free/4846",
+      "download": "https://www.kankomie.or.jp/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjk2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c71f1ae4d8f6e663294a6e853e01e93ae7ab5489/5791_1_org.jpg"
     },
     {
       "placeId": 3722,
-      "imagePage": "https://www.kankomie.or.jp/media/photo_free/4848",
-      "imageAltContains": "御城番屋敷",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
       "output": "images/official/mie-gojobanyashiki-3722.webp",
       "source": "https://www.kankomie.or.jp/media/photo_free/4848",
-      "terms": "https://www.kankomie.or.jp/media/photo_free/4848"
+      "terms": "https://www.kankomie.or.jp/media/photo_free/4848",
+      "download": "https://www.kankomie.or.jp/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0Y3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a900c57baaa6a78b70f8b6189ed51fa1dfd8c14d/5793_1_org.jpg"
     },
     {
       "placeId": 1614,
