@@ -832,7 +832,8 @@
       "source": "https://visit-toyama-japan.com/ko/image-gallery/51",
       "terms": "https://visit-toyama-japan.com/ko/image-gallery/guide",
       "imagePage": "https://visit-toyama-japan.com/ko/image-gallery/51",
-      "imageAltContains": "ShoMyo Falls(5)"
+      "imageAltContains": "ShoMyo Falls(5)",
+      "upscaleWidth": 960
     },
     {
       "placeId": 4723,
@@ -853,7 +854,8 @@
       "source": "https://www.fuku-e.com/photo/detail_2544.html",
       "terms": "https://www.fuku-e.com/photo/detail_2544.html",
       "imagePage": "https://www.fuku-e.com/photo/detail_2544.html",
-      "imageAltContains": "小浜港"
+      "imageAltContains": "小浜港",
+      "upscaleWidth": 960
     },
     {
       "placeId": 906,
