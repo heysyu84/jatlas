@@ -1137,17 +1137,14 @@
     },
     {
       "placeId": 2602,
-      "imagePage": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
-      "preferLargest": true,
-      "allowAnyRatio": true,
       "upscaleWidth": 960,
       "minWidth": 900,
-      "minHeight": 450,
+      "minHeight": 600,
       "output": "images/official/kagawa-yashimaru-2602.webp",
       "source": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
       "terms": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
       "allowUnpinned": true,
-      "debugImages": true
+      "download": "https://www.yashima-navi.jp/media/001/202208/mode3_w840-847b2388149c9e58b2f25e47534cb98a.jpg"
     },
     {
       "placeId": 2616,
