@@ -48,6 +48,8 @@ for(const [id,[src,source]] of Object.entries(helloNaviPhotos)){
  r.credits.push({label:p.name,source,author:"静岡県観光協会",license:"公式フォトライブラリー",licenseUrl:"https://hellonavi.jp/photo/guide"});
 }
 const selectedCommonsPhotos={
+807:{src:"images/licensed/shizuoka-kanzanji-ropeway-807.webp?v=20261005-selected2",source:"https://commons.wikimedia.org/wiki/File:Kanzanjiropeway.jpg",author:"ふせごげ",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"},
+813:{src:"images/licensed/shizuoka-hamamatsu-flower-park-813.webp?v=20261005-selected2",source:"https://commons.wikimedia.org/wiki/File:Flower_park_1.JPG",author:"Jfr0595",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"},
 817:{src:"images/licensed/shizuoka-moa-museum-817.webp?v=20261005-selected1",source:"https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg",author:"663highland",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"},
 820:{src:"images/licensed/shizuoka-kawazu-shokeidaru-820.webp?v=20261005-selected1",source:"https://commons.wikimedia.org/wiki/File:河津七滝～初景滝_-_panoramio.jpg",author:"shinohal",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}
 };
