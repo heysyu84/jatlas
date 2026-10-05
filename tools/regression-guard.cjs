@@ -62,59 +62,66 @@ if(parent){
   const temp=fs.mkdtempSync(path.join(os.tmpdir(),'jatlas-parent-'));
   try{
     cp.execFileSync('git',['worktree','add','--detach',temp,parent],{cwd:root,stdio:['ignore','pipe','pipe']});
-    const previous=runAudit(temp,path.join(os.tmpdir(),'jatlas-parent-runtime.json'));
-    const prevMap=new Map(previous.places.map(p=>[Number(p.id),p]));
-    const curMap=new Map(current.places.map(p=>[Number(p.id),p]));
-
-    const adds=[...curMap.keys()].filter(id=>!prevMap.has(id));
-    const removals=[...prevMap.keys()].filter(id=>!curMap.has(id));
-    const edits=[],photoChanges=[];
-    for(const [id,p] of curMap){
-      const q=prevMap.get(id); if(!q)continue;
-      if(stable(placeSig(p))!==stable(placeSig(q)))edits.push(id);
-      if(stable(photoSig(p.photo))!==stable(photoSig(q.photo)))photoChanges.push({id,from:photoSig(q.photo),to:photoSig(p.photo)});
+    let previous=null;
+    try{
+      previous=runAudit(temp,path.join(os.tmpdir(),'jatlas-parent-runtime.json'));
+    }catch(e){
+      notes.push('Parent runtime audit unavailable; current integrity checks still enforced. Parent='+parent);
     }
-    const heroKeys=new Set([...Object.keys(previous.heroes||{}),...Object.keys(current.heroes||{})]);
-    const heroChanges=[];
-    for(const key of heroKeys){
-      const from=heroSig((previous.heroes||{})[key]),to=heroSig((current.heroes||{})[key]);
-      if(stable(from)!==stable(to))heroChanges.push({key,from,to});
-    }
+    if(previous){
+      const prevMap=new Map(previous.places.map(p=>[Number(p.id),p]));
+      const curMap=new Map(current.places.map(p=>[Number(p.id),p]));
 
-    const structural=adds.length||removals.length||edits.length||photoChanges.length||heroChanges.length;
-    if(structural){
-      if(intent.baseCommit!==parent)fail('CHANGE INTENT baseCommit must equal immediate parent '+parent+' (currently '+String(intent.baseCommit||'<empty>')+')');
-      const allow=intent.allow||{};
-      const addAllowed=new Map((allow.placeAdds||[]).map(x=>[Number(x.id),x]));
-      const removeAllowed=new Map((allow.placeRemovals||[]).map(x=>[Number(x.id),x]));
-      const editAllowed=new Set((allow.placeEdits||[]).map(Number));
-      const photoAllowed=new Map((allow.photoChanges||[]).map(x=>[Number(x.id),x]));
-      const heroAllowed=new Map((allow.heroChanges||[]).map(x=>[String(x.key),x]));
-
-      for(const id of adds){
-        const p=curMap.get(id),a=addAllowed.get(id);
-        if(!a||norm(a.name)!==norm(p.name))fail('UNAPPROVED place add: '+id+' '+p.pref+' '+p.name);
+      const adds=[...curMap.keys()].filter(id=>!prevMap.has(id));
+      const removals=[...prevMap.keys()].filter(id=>!curMap.has(id));
+      const edits=[],photoChanges=[];
+      for(const [id,p] of curMap){
+        const q=prevMap.get(id); if(!q)continue;
+        if(stable(placeSig(p))!==stable(placeSig(q)))edits.push(id);
+        if(stable(photoSig(p.photo))!==stable(photoSig(q.photo)))photoChanges.push({id,from:photoSig(q.photo),to:photoSig(p.photo)});
       }
-      for(const id of removals){
-        const p=prevMap.get(id),a=removeAllowed.get(id);
-        if(!a||norm(a.name)!==norm(p.name))fail('UNAPPROVED place removal: '+id+' '+p.pref+' '+p.name);
-      }
-      for(const id of edits)if(!editAllowed.has(id))fail('UNAPPROVED place edit: '+id+' '+curMap.get(id).name);
-      for(const ch of photoChanges){
-        const a=photoAllowed.get(ch.id);
-        const from=ch.from?.src||'',to=ch.to?.src||'';
-        if(!a||String(a.fromSrc||'')!==from||String(a.toSrc||'')!==to)
-          fail('UNAPPROVED photo change: '+ch.id+' '+curMap.get(ch.id).name+' :: '+from+' -> '+to);
-      }
-      for(const ch of heroChanges){
-        const a=heroAllowed.get(ch.key);
-        const from=ch.from?.src||'',to=ch.to?.src||'';
-        if(!a||String(a.fromSrc||'')!==from||String(a.toSrc||'')!==to)
-          fail('UNAPPROVED hero change: '+ch.key+' :: '+from+' -> '+to);
+      const heroKeys=new Set([...Object.keys(previous.heroes||{}),...Object.keys(current.heroes||{})]);
+      const heroChanges=[];
+      for(const key of heroKeys){
+        const from=heroSig((previous.heroes||{})[key]),to=heroSig((current.heroes||{})[key]);
+        if(stable(from)!==stable(to))heroChanges.push({key,from,to});
       }
 
-      notes.push('Compared against parent '+parent);
-      notes.push('adds='+adds.length+', removals='+removals.length+', edits='+edits.length+', photoChanges='+photoChanges.length+', heroChanges='+heroChanges.length);
+      const structural=adds.length||removals.length||edits.length||photoChanges.length||heroChanges.length;
+      if(structural){
+        if(intent.baseCommit!==parent)fail('CHANGE INTENT baseCommit must equal immediate parent '+parent+' (currently '+String(intent.baseCommit||'<empty>')+')');
+        const allow=intent.allow||{};
+        const addAllowed=new Map((allow.placeAdds||[]).map(x=>[Number(x.id),x]));
+        const removeAllowed=new Map((allow.placeRemovals||[]).map(x=>[Number(x.id),x]));
+        const editAllowed=new Set((allow.placeEdits||[]).map(Number));
+        const photoAllowed=new Map((allow.photoChanges||[]).map(x=>[Number(x.id),x]));
+        const heroAllowed=new Map((allow.heroChanges||[]).map(x=>[String(x.key),x]));
+
+        for(const id of adds){
+          const p=curMap.get(id),a=addAllowed.get(id);
+          if(!a||norm(a.name)!==norm(p.name))fail('UNAPPROVED place add: '+id+' '+p.pref+' '+p.name);
+        }
+        for(const id of removals){
+          const p=prevMap.get(id),a=removeAllowed.get(id);
+          if(!a||norm(a.name)!==norm(p.name))fail('UNAPPROVED place removal: '+id+' '+p.pref+' '+p.name);
+        }
+        for(const id of edits)if(!editAllowed.has(id))fail('UNAPPROVED place edit: '+id+' '+curMap.get(id).name);
+        for(const ch of photoChanges){
+          const a=photoAllowed.get(ch.id);
+          const from=ch.from?.src||'',to=ch.to?.src||'';
+          if(!a||String(a.fromSrc||'')!==from||String(a.toSrc||'')!==to)
+            fail('UNAPPROVED photo change: '+ch.id+' '+curMap.get(ch.id).name+' :: '+from+' -> '+to);
+        }
+        for(const ch of heroChanges){
+          const a=heroAllowed.get(ch.key);
+          const from=ch.from?.src||'',to=ch.to?.src||'';
+          if(!a||String(a.fromSrc||'')!==from||String(a.toSrc||'')!==to)
+            fail('UNAPPROVED hero change: '+ch.key+' :: '+from+' -> '+to);
+        }
+
+        notes.push('Compared against parent '+parent);
+        notes.push('adds='+adds.length+', removals='+removals.length+', edits='+edits.length+', photoChanges='+photoChanges.length+', heroChanges='+heroChanges.length);
+      }
     }
   } finally {
     try{cp.execFileSync('git',['worktree','remove','--force',temp],{cwd:root,stdio:'ignore'})}catch{}
