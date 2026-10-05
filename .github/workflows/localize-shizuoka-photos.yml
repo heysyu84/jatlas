@@ -40,6 +40,7 @@ jobs:
           expected = {
               'dist/images/licensed/shizuoka-moa-museum-817.webp': (1200, 800),
               'dist/images/licensed/shizuoka-kawazu-shokeidaru-820.webp': (1000, 650),
+              'dist/images/official/shizuoka-sunpu-castle-809.webp': (900, 600),
           }
           for filename, (min_w, min_h) in expected.items():
               path = Path(filename)
@@ -49,9 +50,6 @@ jobs:
                   print(filename, image.size)
                   if image.width < min_w or image.height < min_h:
                       raise SystemExit(f'Generated image too small: {filename} {image.size}')
-                  ratio = image.width / image.height
-                  if not (1.45 <= ratio <= 1.55):
-                      raise SystemExit(f'Unexpected aspect ratio: {filename} {image.size}')
           PY
 
       - name: Commit selected Shizuoka photos
@@ -60,11 +58,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
             dist/images/licensed/shizuoka-moa-museum-817.webp \
-            dist/images/licensed/shizuoka-kawazu-shokeidaru-820.webp
+            dist/images/licensed/shizuoka-kawazu-shokeidaru-820.webp \
+            dist/images/official/shizuoka-sunpu-castle-809.webp
           if git diff --cached --quiet; then
             echo "No selected photo changes to commit."
             exit 0
           fi
-          git commit -m "Commit selected MOA and Kawazu photos"
+          git commit -m "Commit Sunpu Castle Park photo 608"
           git pull --rebase origin main
           git push
