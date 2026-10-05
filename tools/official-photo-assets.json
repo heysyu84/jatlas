@@ -463,26 +463,6 @@
       "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     {
-      "placeId": 3711,
-      "commonsFilename": "Overview of Nagashima Spa Land 1.jpg",
-      "allowUnpinned": true,
-      "minWidth": 900,
-      "minHeight": 600,
-      "output": "images/licensed/mie-nagashima-3711.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:Overview_of_Nagashima_Spa_Land_1.jpg",
-      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
-    {
-      "placeId": 3717,
-      "commonsFilename": "伊贺流忍者博物馆 - panoramio.jpg",
-      "allowUnpinned": true,
-      "minWidth": 900,
-      "minHeight": 600,
-      "output": "images/licensed/mie-iga-ninja-museum-3717.webp",
-      "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B4%BA%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A6%86_-_panoramio.jpg",
-      "terms": "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B4%BA%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A6%86_-_panoramio.jpg"
-    },
-    {
       "placeId": 4809,
       "commonsFilename": "260719 Natadera Komatsu Ishikawa pref Japan16s4.jpg",
       "allowUnpinned": true,
@@ -819,6 +799,115 @@
       "output": "images/licensed/nagasaki-26-martyrs-3109.webp",
       "source": "https://commons.wikimedia.org/wiki/File:二十六聖人殉教地_26_Martyrs_Museum_and_Monument_-_panoramio.jpg",
       "terms": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "placeId": 210,
+      "commonsFilename": "Ghibli Museum 2024.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/tokyo-ghibli-museum-210.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Ghibli_Museum_2024.JPG",
+      "terms": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "placeId": 4608,
+      "commonsFilename": "Entrance to Echigo-Yuzawa Onsen.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/niigata-echigo-yuzawa-4608.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_Echigo-Yuzawa_Onsen.JPG",
+      "terms": "https://commons.wikimedia.org/wiki/File:Entrance_to_Echigo-Yuzawa_Onsen.JPG"
+    },
+    {
+      "placeId": 4706,
+      "imagePage": "https://visit-toyama-japan.com/ko/image-gallery/51",
+      "imageAltContains": "ShoMyo Falls(5)",
+      "allowUnpinned": true,
+      "cropRatio": 1.5,
+      "cropX": 0.5,
+      "cropY": 0.35,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/toyama-shomyo-falls-4706.webp",
+      "source": "https://visit-toyama-japan.com/ko/image-gallery/51",
+      "terms": "https://visit-toyama-japan.com/ko/image-gallery/guide"
+    },
+    {
+      "placeId": 4723,
+      "commonsFilename": "黒部ダム02.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/toyama-kurobe-dam-4723.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%83%A8%E3%83%80%E3%83%A002.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 4919,
+      "imagePage": "https://www.fuku-e.com/photo/detail_2544.html",
+      "imageAltContains": "小浜港",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/fukui-obama-port-4919.webp",
+      "source": "https://www.fuku-e.com/photo/detail_2544.html",
+      "terms": "https://www.fuku-e.com/photo/detail_2544.html"
+    },
+    {
+      "placeId": 906,
+      "commonsFilename": "Gujo hachiman castle in autumn.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/gifu-gujo-hachiman-castle-906.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Gujo_hachiman_castle_in_autumn.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 3717,
+      "imagePage": "https://www.kankomie.or.jp/media/photo_free/3201",
+      "imageAltContains": "伊賀流忍者博物館",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/mie-iga-ninja-show-3717.webp",
+      "source": "https://www.kankomie.or.jp/media/photo_free/3201",
+      "terms": "https://www.kankomie.or.jp/media/photo_free/3201"
+    },
+    {
+      "placeId": 3711,
+      "imagePage": "https://www.kankomie.or.jp/media/photo_free/451",
+      "imageAltContains": "ナガシマスパーランド",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/mie-nagashima-overview-3711.webp",
+      "source": "https://www.kankomie.or.jp/media/photo_free/451",
+      "terms": "https://www.kankomie.or.jp/media/photo_free/451"
+    },
+    {
+      "placeId": 3721,
+      "imagePage": "https://www.kankomie.or.jp/media/photo_free/4846",
+      "imageAltContains": "松坂城跡",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/mie-matsusaka-castle-3721.webp",
+      "source": "https://www.kankomie.or.jp/media/photo_free/4846",
+      "terms": "https://www.kankomie.or.jp/media/photo_free/4846"
+    },
+    {
+      "placeId": 3722,
+      "imagePage": "https://www.kankomie.or.jp/media/photo_free/4848",
+      "imageAltContains": "御城番屋敷",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/mie-gojobanyashiki-3722.webp",
+      "source": "https://www.kankomie.or.jp/media/photo_free/4848",
+      "terms": "https://www.kankomie.or.jp/media/photo_free/4848"
     }
   ]
 }
