@@ -1,51 +1,96 @@
 {
   "version": 1,
-  "baseCommit": "407abb152b7324c709b1ab810fcbdc060f04a9a8",
-  "reason": "User-approved first representative-photo batch, Asukadera replacement, and Okadera attraction addition.",
+  "baseCommit": "5d68117395ffb81bb616c84783e9bae6e3543ebd",
+  "reason": "User-selected representative photos for items 11-28; unspecified items use the previously proposed candidates.",
   "allow": {
-    "placeAdds": [
-      {
-        "id": 1622,
-        "name": "오카데라"
-      }
-    ],
+    "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 210,
-        "fromSrc": "images/tokyo-210.webp",
-        "toSrc": "images/licensed/tokyo-ghibli-museum-210.webp"
+        "id": 401,
+        "fromSrc": "images/osaka/401.webp",
+        "toSrc": "images/licensed/osaka-kuromon-401.webp"
       },
       {
-        "id": 906,
-        "fromSrc": "images/commons/1f9ae56f8a6af473.webp",
-        "toSrc": "images/licensed/gifu-gujo-hachiman-castle-906.webp"
+        "id": 406,
+        "fromSrc": "images/osaka/406.webp",
+        "toSrc": "images/licensed/osaka-castle-406.webp"
       },
       {
-        "id": 1614,
-        "fromSrc": "images/commons/a465478a1b89d74d.webp",
-        "toSrc": "images/licensed/nara-asukadera-1614.webp"
+        "id": 408,
+        "fromSrc": "images/osaka/408.webp",
+        "toSrc": "images/licensed/osaka-shitennoji-408.webp"
       },
       {
-        "id": 4608,
-        "fromSrc": "images/commons/a56851b608dc9bee.webp",
-        "toSrc": "images/licensed/niigata-echigo-yuzawa-4608.webp"
+        "id": 412,
+        "fromSrc": "images/osaka/412.webp",
+        "toSrc": "images/licensed/osaka-usj-412.webp"
       },
       {
-        "id": 4706,
-        "fromSrc": "images/commons/de00c483f53bfc7a.webp",
-        "toSrc": "images/official/toyama-shomyo-falls-4706.webp"
+        "id": 1108,
+        "fromSrc": "images/commons/9ccab1948f28f715.webp",
+        "toSrc": "images/licensed/mie-okage-yokocho-1108.webp"
       },
       {
-        "id": 4723,
-        "fromSrc": "images/commons/7b66446b95beb859.webp",
-        "toSrc": "images/licensed/toyama-kurobe-dam-4723.webp"
+        "id": 7,
+        "fromSrc": "images/commons/4e6832d36280e5af.webp",
+        "toSrc": "images/licensed/kyoto-arashiyama-bamboo-7.webp"
       },
       {
-        "id": 4919,
-        "fromSrc": "images/commons/013d8277abd4d591.webp",
-        "toSrc": "images/official/fukui-obama-port-4919.webp"
+        "id": 1511,
+        "fromSrc": "images/commons/5d1cadfc2804784c.webp",
+        "toSrc": "images/licensed/kyoto-ginkakuji-1511.webp"
+      },
+      {
+        "id": 1609,
+        "fromSrc": "images/commons/edb7d0ec419f7fb0.webp",
+        "toSrc": "images/licensed/nara-yoshinoyama-1609.webp"
+      },
+      {
+        "id": 1619,
+        "fromSrc": "images/commons/f6c86a9b5f858ae9.webp",
+        "toSrc": "images/licensed/nara-tanzan-jinja-1619.webp"
+      },
+      {
+        "id": 1707,
+        "fromSrc": "images/commons/cb08e305eeb0ce5f.webp",
+        "toSrc": "images/licensed/hyogo-kinosaki-onsen-1707.webp"
+      },
+      {
+        "id": 1717,
+        "fromSrc": "images/commons/d74f6a59d8871699.webp",
+        "toSrc": "images/licensed/hyogo-awaji-hanasajiki-1717.webp"
+      },
+      {
+        "id": 1719,
+        "fromSrc": "images/commons/9b6aed10ec3bb2b6.webp",
+        "toSrc": "images/licensed/hyogo-akashi-castle-1719.webp"
+      },
+      {
+        "id": 1722,
+        "fromSrc": "images/commons/2e86e6c38fa6f272.webp",
+        "toSrc": "images/licensed/hyogo-kobe-port-tower-1722.webp"
+      },
+      {
+        "id": 1907,
+        "fromSrc": "images/commons/99666f2f4624e0f2.webp",
+        "toSrc": "images/licensed/wakayama-oyunohara-1907.webp"
+      },
+      {
+        "id": 1911,
+        "fromSrc": "images/commons/3d4234d1442fcf18.webp",
+        "toSrc": "images/licensed/wakayama-nachi-falls-1911.webp"
+      },
+      {
+        "id": 2013,
+        "fromSrc": "images/commons/35b6954211ab4133.webp",
+        "toSrc": "images/licensed/tottori-kaike-onsen-2013.webp"
+      },
+      {
+        "id": 2103,
+        "fromSrc": "images/commons/3b3bfb97123cc0c9.webp",
+        "toSrc": "images/licensed/shimane-adachi-museum-2103.webp"
       }
     ],
     "heroChanges": []
