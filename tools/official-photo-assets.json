@@ -97,6 +97,7 @@
       "cropRatio": 1.7777777778,
       "cropX": 0.5,
       "cropY": 0.5,
+      "minHeight": 576,
       "output": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Okiku_Daibutsu_Cherry_Blossoms.jpg",
       "terms": "https://creativecommons.org/publicdomain/zero/1.0/"
