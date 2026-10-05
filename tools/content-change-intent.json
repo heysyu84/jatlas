@@ -1,16 +1,26 @@
 {
   "version": 1,
-  "baseCommit": "5d9edb3f510073f72096b67cb09ca13bb9899e6f",
-  "reason": "Replace the user's Ghibli Park SVG composite and damaged Amanoyasugawara image bytes with clean single WebP files converted directly from the re-uploaded original photos.",
+  "baseCommit": "0b5853bd7fa185edfe60c42aef042503f2fe65dc",
+  "reason": "Apply the user's selected replacement photos to the three canonical Mie runtime place IDs (Iga Ninja Museum, Kumano Kodo Iseji Magose Pass, and Nagashima Spa Land) and refresh their image cache keys.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 1017,
-        "fromSrc": "images/user/aichi-ghibli-park-1017.svg",
-        "toSrc": "images/user/aichi-ghibli-park-1017.webp"
+        "id": 1104,
+        "fromSrc": "images/commons/8882efbf65679476.webp",
+        "toSrc": "images/licensed/approved/mie-iga-ninja-3717.webp"
+      },
+      {
+        "id": 1106,
+        "fromSrc": "images/commons/dee95da228ccb44e.webp",
+        "toSrc": "images/licensed/approved/mie-magose-pass-3726.webp"
+      },
+      {
+        "id": 1113,
+        "fromSrc": "images/commons/363eacacf09adda3.webp",
+        "toSrc": "images/licensed/approved/mie-nagashima-3711.webp"
       }
     ],
     "heroChanges": []

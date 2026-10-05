@@ -488,9 +488,9 @@
   const replacements={
     "4623":{src:"images/licensed/approved/niigata-oyashirazu-4623.webp",alt:"오야시라즈",source:"https://commons.wikimedia.org/wiki/File:Oyashirazu,_enkei.jpg"},
     "502":{src:"images/licensed/approved/saitama-kawagoe-hikawa-502.webp",alt:"가와고에 히카와 신사",source:"https://commons.wikimedia.org/wiki/File:Furin_tunnel_at_Kawagoe_Hikawa_Shrine_01.jpg"},
-    "3717":{src:"images/licensed/approved/mie-iga-ninja-3717.webp",alt:"이가류 닌자박물관",source:"https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG"},
-    "3726":{src:"images/licensed/approved/mie-magose-pass-3726.webp",alt:"구마노고도 이세지 마고세토게",source:"https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg"},
-    "3711":{src:"images/licensed/approved/mie-nagashima-3711.webp",alt:"나가시마 스파랜드",source:"https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg"}
+    "1104":{src:"images/licensed/approved/mie-iga-ninja-3717.webp",alt:"이가류 닌자박물관",source:"https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG"},
+    "1106":{src:"images/licensed/approved/mie-magose-pass-3726.webp",alt:"구마노 고도 이세지 마고세 고개",source:"https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg"},
+    "1113":{src:"images/licensed/approved/mie-nagashima-3711.webp",alt:"나가시마 스파랜드",source:"https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg"}
   };
   for(const [id,pic] of Object.entries(replacements)){
     if(typeof photoQaPendingPlaces!=="undefined")photoQaPendingPlaces.delete(Number(id));
