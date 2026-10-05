@@ -80,9 +80,21 @@ def image_from_page(photo):
         source = attrs.get('data-src') or attrs.get('data-original') or attrs.get('src')
         srcset = attrs.get('data-srcset') or attrs.get('srcset')
         if srcset:
-            parts = [part.strip().split()[0] for part in srcset.split(',') if part.strip()]
-            if parts:
-                source = parts[-1]
+            entries = [part.strip().split() for part in srcset.split(',') if part.strip()]
+            if entries:
+                def srcset_rank(entry):
+                    if len(entry) > 1 and entry[1].endswith('w'):
+                        try:
+                            return float(entry[1][:-1])
+                        except ValueError:
+                            pass
+                    if len(entry) > 1 and entry[1].endswith('x'):
+                        try:
+                            return float(entry[1][:-1]) * 10000
+                        except ValueError:
+                            pass
+                    return 0
+                source = max(entries, key=srcset_rank)[0]
         if source and not str(source).startswith('data:'):
             resolved = urllib.parse.urljoin(page, html_module.unescape(str(source)))
             if src_needle and src_needle not in resolved.casefold():
