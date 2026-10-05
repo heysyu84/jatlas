@@ -412,6 +412,11 @@
       alt:"헤도곶",
       source:"https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg"
     },
+    "1017":{
+      src:"images/user/aichi-ghibli-park-1017.svg",
+      alt:"지브리 파크",
+      source:"images/user/aichi-ghibli-park-1017.svg"
+    },
     "3413":{
       src:"images/user/miyazaki-amanoyasugawara-3413.webp",
       alt:"아마노야스가와라",
