@@ -34,6 +34,9 @@ const errors=[];
 const notes=[];
 const fail=m=>errors.push(m);
 
+for(const x of current.safety?.tombstones||[])fail('RUNTIME SAFETY removed tombstoned place from source: '+x.id+' '+x.pref+' '+x.name);
+for(const x of current.safety?.duplicates||[])fail('RUNTIME SAFETY removed duplicate place from source: '+x.dropId+' duplicates '+x.keepId+' / '+x.pref+' / '+x.name);
+
 for(const t of policy.tombstones||[]){
   const bad=current.places.filter(p=>Number(p.id)===Number(t.id)||(p.pref===t.pref&&[t.name,...(t.aliases||[])].some(n=>norm(p.name)===norm(n))));
   if(bad.length)fail('TOMBSTONE resurrected: '+t.id+' '+t.pref+' '+t.name);
