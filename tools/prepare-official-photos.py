@@ -70,6 +70,7 @@ def image_from_page(photo):
     parser = ImagePageParser()
     parser.feed(fetch_text(page))
     needle = str(photo.get('imageAltContains', '')).casefold()
+    src_needle = str(photo.get('imageSrcContains', '')).casefold()
     candidates = []
     for attrs in parser.images:
         alt = str(attrs.get('alt', '')).casefold()
@@ -82,7 +83,10 @@ def image_from_page(photo):
             if parts:
                 source = parts[-1]
         if source and not str(source).startswith('data:'):
-            candidates.append(urllib.parse.urljoin(page, html_module.unescape(str(source))))
+            resolved = urllib.parse.urljoin(page, html_module.unescape(str(source)))
+            if src_needle and src_needle not in resolved.casefold():
+                continue
+            candidates.append(resolved)
     if not candidates:
         raise ValueError(f"No matching image found on source page: {page}")
     return candidates[0]
