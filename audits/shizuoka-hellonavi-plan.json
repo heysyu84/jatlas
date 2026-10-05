@@ -233,5 +233,42 @@
       "status": "selected-and-applied"
     }
   ],
-  "batch1Note": "Review/download in a group of five even though Hello Navi allows up to 20 photos per application. Do not use preview URLs as the licensed source file."
+  "batch1Note": "Review/download in a group of five even though Hello Navi allows up to 20 photos per application. Do not use preview URLs as the licensed source file.",
+  "batch2": [
+    {
+      "placeId": 806,
+      "name": "가케가와성",
+      "photoId": 616,
+      "url": "https://hellonavi.jp/photo/616",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 808,
+      "name": "슈젠지 온천",
+      "photoId": 489,
+      "url": "https://hellonavi.jp/photo/489",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 810,
+      "name": "구노잔 도쇼구",
+      "photoId": 795,
+      "url": "https://hellonavi.jp/photo/795",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 811,
+      "name": "조가사키 해안",
+      "photoId": 707,
+      "url": "https://hellonavi.jp/photo/707",
+      "status": "selected-and-applied"
+    },
+    {
+      "placeId": 821,
+      "name": "니라야마 반사로",
+      "photoId": 594,
+      "url": "https://hellonavi.jp/photo/594",
+      "status": "selected-and-applied"
+    }
+  ]
 }
