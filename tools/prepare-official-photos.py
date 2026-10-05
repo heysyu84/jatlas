@@ -73,6 +73,7 @@ def image_from_page(photo):
     needle = str(photo.get('imageAltContains', '')).casefold()
     src_needle = str(photo.get('imageSrcContains', '')).casefold()
     candidates = []
+    prefer_largest = bool(photo.get('preferLargest'))
     for attrs in parser.images:
         alt = str(attrs.get('alt', '')).casefold()
         if needle and needle not in alt:
@@ -99,11 +100,20 @@ def image_from_page(photo):
             resolved = urllib.parse.urljoin(page, html_module.unescape(str(source)))
             if src_needle and src_needle not in resolved.casefold():
                 continue
-            candidates.append(resolved)
+            rank = 0
+            if srcset:
+                entries = [part.strip().split() for part in srcset.split(',') if part.strip()]
+                for entry in entries:
+                    if len(entry) > 1 and entry[1].endswith('w'):
+                        try:
+                            rank = max(rank, float(entry[1][:-1]))
+                        except ValueError:
+                            pass
+            candidates.append((resolved, rank))
     if not candidates:
         raise ValueError(f"No matching image found on source page: {page}")
 
-    chosen = candidates[0]
+    chosen = (max(candidates, key=lambda item: item[1]) if prefer_largest else candidates[0])[0]
     parsed = urllib.parse.urlsplit(chosen)
 
     # Kanko Mie pages expose resized Active Storage representations in <img>.
@@ -216,7 +226,7 @@ def prepare():
             if upscale_width and image.width < upscale_width:
                 upscale_height = max(1, int(round(image.height * upscale_width / image.width)))
                 image = image.resize((upscale_width, upscale_height), Image.Resampling.LANCZOS)
-            if not (1.25 <= image.width / image.height <= 1.85):
+            if not photo.get('allowAnyRatio') and not (1.25 <= image.width / image.height <= 1.85):
                 raise ValueError(f"Licensed photo must be a moderate landscape: {photo['source']}")
             min_width = int(photo.get('minWidth', 900))
             min_height = int(photo.get('minHeight', 600))
