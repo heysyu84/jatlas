@@ -17,7 +17,7 @@ jobs:
           script: |
             const https=require('https');
             function get(url){return new Promise((resolve,reject)=>https.get(url,{headers:{'User-Agent':'Jatlas-photo-search/1.0'}},res=>{let d='';res.setEncoding('utf8');res.on('data',x=>d+=x);res.on('end',()=>resolve(d));}).on('error',reject));}
-            const base='https://commons.wikimedia.org/w/api.php?action=query&generator=geosearch&ggsprimary=all&ggsnamespace=6&ggsradius=5000&ggscoord=36.7794%7C137.3290&ggslimit=100&prop=imageinfo%7Ccoordinates&iiprop=url%7Csize%7Cextmetadata&format=json&origin=*';
+            const base='https://commons.wikimedia.org/w/api.php?action=query&generator=geosearch&ggsprimary=all&ggsnamespace=6&ggsradius=1500&ggscoord=36.7794%7C137.3290&ggslimit=100&prop=imageinfo%7Ccoordinates&iiprop=url%7Csize%7Cextmetadata&format=json&origin=*';
             const raw=await get(base);
             const j=JSON.parse(raw);
             const rows=Object.values(j.query?.pages||{}).map(p=>{
