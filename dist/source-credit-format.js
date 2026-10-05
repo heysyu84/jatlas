@@ -113,6 +113,8 @@
   }
 
   formatAll();
-  new MutationObserver(()=>formatAll()).observe(root,{childList:true,subtree:false});
-  new MutationObserver(()=>formatAll()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  if(typeof MutationObserver!=='undefined'){
+    new MutationObserver(()=>formatAll()).observe(root,{childList:true,subtree:false});
+    new MutationObserver(()=>formatAll()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  }
 })();
