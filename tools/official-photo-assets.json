@@ -799,6 +799,36 @@
       "output": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
       "source": "https://commons.wikimedia.org/wiki/File:Flower_park_1.JPG",
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 4722,
+      "download": "https://namerikawa-kanko.jp/wpndt/wp-content/uploads/2026/03/78871f8f868660529179c070aa7367d9-840x559.jpg",
+      "allowUnpinned": true,
+      "minWidth": 800,
+      "minHeight": 500,
+      "output": "images/official/toyama-namerikawa-coast-4722.webp",
+      "source": "https://namerikawa-kanko.jp/photolibrary/photo-cat/umi/",
+      "terms": "https://namerikawa-kanko.jp/data/photo-kiyaku.pdf"
+    },
+    {
+      "placeId": 3101,
+      "commonsFilename": "Nagasaki church.jpg",
+      "allowUnpinned": true,
+      "minWidth": 1200,
+      "minHeight": 800,
+      "output": "images/licensed/nagasaki-oura-church-3101.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Nagasaki_church.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 3109,
+      "commonsFilename": "二十六聖人殉教地 26 Martyrs Museum and Monument - panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 1200,
+      "minHeight": 800,
+      "output": "images/licensed/nagasaki-26-martyrs-3109.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:二十六聖人殉教地_26_Martyrs_Museum_and_Monument_-_panoramio.jpg",
+      "terms": "https://creativecommons.org/licenses/by/3.0/"
     }
   ]
 }
