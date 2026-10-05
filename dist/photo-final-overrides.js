@@ -377,6 +377,11 @@
       alt:"헤도곶",
       source:"https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg"
     },
+    "3413":{
+      src:"images/user/miyazaki-amanoyasugawara-3413.webp",
+      alt:"아마노야스가와라",
+      source:"images/user/miyazaki-amanoyasugawara-3413.webp"
+    },
   };
   for(const [id,pic] of Object.entries(replacements)){
     tokyoPhotos[id]={...pic};

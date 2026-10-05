@@ -1,7 +1,7 @@
 {
   "version": 1,
   "baseCommit": "3fe57f59d8ae7fa5bd089a6b4d4117d71de0fb1d",
-  "reason": "Preserve intentional changes made after the last successful deployment and restore previously user-approved photo locks/source metadata.",
+  "reason": "Apply the user-selected Takachiho/Kagoshima/Okinawa photos, the user's own Amanoyasugawara photo, and the corrected Amanoiwato Shrine West Main Sanctuary map location.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
@@ -33,6 +33,11 @@
         "id": 3621,
         "fromSrc": "images/commons/dd86f8a4c4a77536.webp",
         "toSrc": "images/licensed/okinawa-cape-hedo-3621.webp"
+      },
+      {
+        "id": 3413,
+        "fromSrc": "images/commons/601805456c031bf5.webp",
+        "toSrc": "images/user/miyazaki-amanoyasugawara-3413.webp"
       }
     ],
     "heroChanges": []
