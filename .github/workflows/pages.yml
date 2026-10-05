@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -28,6 +29,8 @@ jobs:
           fetch-depth: 2
 
       - name: Run content regression guard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node tools/regression-guard.cjs
 
       - name: Setup Python for licensed website assets
