@@ -64,19 +64,19 @@ function drawRegionLabels(map,layer){
 }
 function insidePolygon(x,y,ring){let on=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])on=!on}return on}
 function labelAnchor(f,view){let best=null;for(const [ring]of f.geometry.coordinates){const xs=ring.map(p=>p[0]),ys=ring.map(p=>p[1]),l=Math.max(Math.min(...xs),view.getWest()),r=Math.min(Math.max(...xs),view.getEast()),b=Math.max(Math.min(...ys),view.getSouth()),t=Math.min(Math.max(...ys),view.getNorth());if(l>=r||b>=t)continue;const area=(r-l)*(t-b);if(best&&area<best.area)continue;for(let j=0;j<7;j++)for(let i=0;i<7;i++){const x=l+(r-l)*(i+.5)/7,y=b+(t-b)*(j+.5)/7;if(!insidePolygon(x,y,ring))continue;const score=Math.hypot((x-(l+r)/2)/(r-l),(y-(b+t)/2)/(t-b));if(!best||area>best.area||area===best.area&&score<best.score)best={area,score,lat:y,lon:x}}}return best?[best.lat,best.lon]:null}
-function selectRegion(name){if(name==='오키나와'){go('오키나와');return}nationalRegion=name;state.view='home';close();render()}
+function selectRegion(name){nationalRegion=name;state.view='home';close();render()}
 // A cartographic cutaway on the same sea surface; source coordinates stay intact.
 function drawOkinawaCutaway(map){
  const original=prefectureFeatures.find(f=>f.properties.id===47);
  const display={...original,geometry:{type:'MultiPolygon',coordinates:original.geometry.coordinates.map(poly=>poly.map(ring=>ring.map(([x,y])=>[129+(x-122.8)*.78,40.0+(y-24)*.78])))}};
- L.geoJSON(display,{style:{color:'#ab5d26',weight:1.2,fillColor:pastelRegions['오키나와'],fillOpacity:1},onEachFeature:(f,layer)=>layer.on('click',()=>go('오키나와'))}).addTo(map);
+ L.geoJSON(display,{style:{color:'#ab5d26',weight:1.2,fillColor:pastelRegions['오키나와'],fillOpacity:1},onEachFeature:(f,layer)=>layer.on('click',()=>selectRegion('오키나와'))}).addTo(map);
  L.polyline([[42.9,136.2],[40.7,136.2],[38.55,134.0],[38.55,128.7]],{className:'islandSeparator',color:'#8aacc2',weight:1.4,opacity:.85,interactive:false}).addTo(map);
- L.marker([43.1,132.0],{icon:L.divIcon({className:'regionMapLabel okinawaCutawayLabel',html:'<span>오키나와</span>',iconSize:[86,30],iconAnchor:[43,15]}),keyboard:true,title:'오키나와'}).addTo(map).on('click',()=>go('오키나와'));
+ L.marker([43.1,132.0],{icon:L.divIcon({className:'regionMapLabel okinawaCutawayLabel',html:'<span>오키나와</span>',iconSize:[86,30],iconAnchor:[43,15]}),keyboard:true,title:'오키나와'}).addTo(map).on('click',()=>selectRegion('오키나와'));
 }
 function renderMaps(force=false){const key=[state.view,state.pref,state.area,state.town,nationalRegion,placeTheme,contentTab].join('|');if(key===mapKey&&!force){syncMapSelection();return}mapKey=key;markerInstances.clear();
  if(state.view==='home'){
   const selectedRegion=regions.find(r=>r[0]===nationalRegion),prefs=selectedRegion?selectedRegion[1].split(' '):[];
-  const mainFeatures=prefectureFeatures.filter(f=>f.properties.id!==47).map(f=>({...f,geometry:{...f.geometry,coordinates:f.geometry.coordinates.filter(r=>r[0].some(p=>p[1]>=(f.properties.id===13?35:30.8)))}})).filter(f=>f.geometry.coordinates.length);
+  const mainFeatures=prefectureFeatures.filter(f=>f.properties.id!==47||nationalRegion==='오키나와').map(f=>f.properties.id===47?f:({...f,geometry:{...f.geometry,coordinates:f.geometry.coordinates.filter(r=>r[0].some(p=>p[1]>=(f.properties.id===13?35:30.8)))}})).filter(f=>f.geometry.coordinates.length);
   const regionFeatures=selectedRegion?mainFeatures.filter(f=>prefs.includes(f.properties.name)):mainFeatures;
   const bounds=L.geoJSON(regionFeatures).getBounds();
   const nationalMap=createMap('nationalMap',bounds,{mode:nationalRegion?'region':'national',features:regionFeatures});
