@@ -493,16 +493,6 @@
       "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
-      "placeId": 803,
-      "download": "https://hellonavi.jp/storage/photos/802/responsive_images/sGaTUBTGaHQYzzOONawkQrpyndO3IbpNUzB2KPy4__576_384.jpg",
-      "allowUnpinned": true,
-      "minWidth": 576,
-      "minHeight": 384,
-      "output": "images/official/shizuoka-nihondaira-yume-803.webp",
-      "source": "https://hellonavi.jp/photo/802",
-      "terms": "https://hellonavi.jp/photo/guide"
-    },
-    {
       "placeId": 4819,
       "download": "https://www.hot-ishikawa.jp/lsc/api/photo/?src=1111114178",
       "allowUnpinned": true,
