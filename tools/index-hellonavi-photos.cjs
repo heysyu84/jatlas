@@ -21,6 +21,15 @@ async function get(url){
  for(const id of ['489','795','616','707','594']){
    try{
      const html=await get('https://hellonavi.jp/photo/'+id);
+     const needle='storage/photos/'+id+'/';
+     const p=html.indexOf(needle);
+     console.log('BATCH2_STORAGE_SNIP',id,JSON.stringify(p>=0?html.slice(Math.max(0,p-300),p+2200):'NOT_FOUND'));
+   }catch(e){console.log('BATCH2_STORAGE_SNIP_ERROR',id,String(e))}
+ }
+
+ for(const id of ['489','795','616','707','594']){
+   try{
+     const html=await get('https://hellonavi.jp/photo/'+id);
      const re1=new RegExp('srcset="([^"]*storage\\\\/photos\\\\/'+id+'\\\\/responsive_images\\\\/[^"]+)"','i');
      const re2=new RegExp('src="([^"]*storage\\\\/photos\\\\/'+id+'\\\\/responsive_images\\\\/[^"]+)"','i');
      const m=html.match(re1),im=html.match(re2);
