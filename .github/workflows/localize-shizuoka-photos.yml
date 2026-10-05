@@ -42,6 +42,23 @@ jobs:
           from PIL import Image
 
           expected = {
+              'dist/images/licensed/mie-okage-yokocho-1108.webp': (900, 600),
+              'dist/images/licensed/kyoto-arashiyama-bamboo-7.webp': (900, 600),
+              'dist/images/licensed/kyoto-ginkakuji-1511.webp': (900, 600),
+              'dist/images/licensed/osaka-kuromon-401.webp': (900, 600),
+              'dist/images/licensed/osaka-castle-406.webp': (900, 600),
+              'dist/images/licensed/osaka-shitennoji-408.webp': (900, 600),
+              'dist/images/licensed/osaka-usj-412.webp': (900, 600),
+              'dist/images/licensed/hyogo-kinosaki-onsen-1707.webp': (900, 600),
+              'dist/images/licensed/hyogo-awaji-hanasajiki-1717.webp': (900, 600),
+              'dist/images/licensed/hyogo-akashi-castle-1719.webp': (900, 600),
+              'dist/images/licensed/hyogo-kobe-port-tower-1722.webp': (900, 600),
+              'dist/images/licensed/nara-yoshinoyama-1609.webp': (900, 600),
+              'dist/images/licensed/nara-tanzan-jinja-1619.webp': (900, 600),
+              'dist/images/licensed/wakayama-oyunohara-1907.webp': (900, 600),
+              'dist/images/licensed/wakayama-nachi-falls-1911.webp': (900, 600),
+              'dist/images/licensed/tottori-kaike-onsen-2013.webp': (900, 600),
+              'dist/images/licensed/shimane-adachi-museum-2103.webp': (900, 600),
               'dist/images/licensed/nara-asukadera-1614.webp': (900, 500),
               'dist/images/licensed/nara-okadera-1622.webp': (900, 600),
               'dist/images/licensed/tokyo-ghibli-museum-210.webp': (900, 600),
@@ -75,6 +92,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f \
+            dist/images/licensed/mie-okage-yokocho-1108.webp \
+            dist/images/licensed/kyoto-arashiyama-bamboo-7.webp \
+            dist/images/licensed/kyoto-ginkakuji-1511.webp \
+            dist/images/licensed/osaka-kuromon-401.webp \
+            dist/images/licensed/osaka-castle-406.webp \
+            dist/images/licensed/osaka-shitennoji-408.webp \
+            dist/images/licensed/osaka-usj-412.webp \
+            dist/images/licensed/hyogo-kinosaki-onsen-1707.webp \
+            dist/images/licensed/hyogo-awaji-hanasajiki-1717.webp \
+            dist/images/licensed/hyogo-akashi-castle-1719.webp \
+            dist/images/licensed/hyogo-kobe-port-tower-1722.webp \
+            dist/images/licensed/nara-yoshinoyama-1609.webp \
+            dist/images/licensed/nara-tanzan-jinja-1619.webp \
+            dist/images/licensed/wakayama-oyunohara-1907.webp \
+            dist/images/licensed/wakayama-nachi-falls-1911.webp \
+            dist/images/licensed/tottori-kaike-onsen-2013.webp \
+            dist/images/licensed/shimane-adachi-museum-2103.webp \
             dist/images/licensed/nara-asukadera-1614.webp \
             dist/images/licensed/nara-okadera-1622.webp \
             dist/images/licensed/tokyo-ghibli-museum-210.webp \
