@@ -6,6 +6,7 @@ build so Pages retains its previously successful deployment instead of a broken 
 import hashlib
 import io
 import json
+import re
 import time
 import html as html_module
 from html.parser import HTMLParser
@@ -89,7 +90,28 @@ def image_from_page(photo):
             candidates.append(resolved)
     if not candidates:
         raise ValueError(f"No matching image found on source page: {page}")
-    return candidates[0]
+
+    chosen = candidates[0]
+    parsed = urllib.parse.urlsplit(chosen)
+
+    # Kanko Mie pages expose resized Active Storage representations in <img>.
+    # Convert that URL to the original blob so the website derivative is built
+    # from the full-resolution photograph selected by the user.
+    if parsed.netloc.endswith('kankomie.or.jp') and '/rails/active_storage/representations/proxy/' in parsed.path:
+        tail = parsed.path.split('/rails/active_storage/representations/proxy/', 1)[1]
+        parts = tail.split('/')
+        if len(parts) >= 3:
+            blob_id = parts[0]
+            filename = parts[-1]
+            return urllib.parse.urlunsplit((
+                parsed.scheme,
+                parsed.netloc,
+                f'/rails/active_storage/blobs/redirect/{blob_id}/{filename}',
+                '',
+                '',
+            ))
+
+    return chosen
 
 
 def crop_to_ratio(image, ratio, anchor_x=0.5, anchor_y=0.5):
