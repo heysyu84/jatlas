@@ -1142,7 +1142,7 @@
       "allowAnyRatio": true,
       "upscaleWidth": 960,
       "minWidth": 900,
-      "minHeight": 500,
+      "minHeight": 450,
       "output": "images/official/kagawa-yashimaru-2602.webp",
       "source": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
       "terms": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
