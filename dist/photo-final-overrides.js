@@ -268,6 +268,56 @@
       alt:"니지노마쓰바라",
       source:"https://commons.wikimedia.org/wiki/File:Nijinomatsubara.jpg"
     },
+    "3007":{
+      src:"images/licensed/saga-nagoya-castle-museum-3007.webp",
+      alt:"히젠 나고야성터·사가현립 나고야성박물관",
+      source:"https://commons.wikimedia.org/wiki/File:Saga_Prefectural_Nagoya_Castle_Museum_240812.jpg"
+    },
+    "3008":{
+      src:"images/licensed/saga-kyushu-ceramic-museum-3008.webp",
+      alt:"사가현립 규슈도자문화관",
+      source:"https://commons.wikimedia.org/wiki/File:The_Kyushu_Ceramic_Museum_-_52125636824.jpg"
+    },
+    "3010":{
+      src:"images/licensed/saga-okawachiyama-3010.webp",
+      alt:"오카와치야마",
+      source:"https://commons.wikimedia.org/wiki/File:Nabeshimayaki_Okawachiyama_Imari-shi_Saga-ken_PB110083.jpg"
+    },
+    "3101":{
+      src:"images/licensed/nagasaki-oura-church-3101.webp",
+      alt:"오우라 천주당",
+      source:"https://commons.wikimedia.org/wiki/File:Former_the_archbishop_hall_of_the_Roman_Catholic_Archdiocese_of_Nagasaki01s3.jpg"
+    },
+    "3109":{
+      src:"images/licensed/nagasaki-26-martyrs-3109.webp",
+      alt:"일본26성인 순교지·니시자카",
+      source:"https://commons.wikimedia.org/wiki/File:26_Martyrs_Shrine_and_Museum_and_St._Phillip_Church.jpg"
+    },
+    "3115":{
+      src:"images/licensed/nagasaki-hirado-east-west-3115.webp",
+      alt:"히라도 자비에르기념교회·사원과 교회가 보이는 풍경",
+      source:"https://commons.wikimedia.org/wiki/File:East_meets_west_in_hirado.jpg"
+    },
+    "3124":{
+      src:"images/official/nagasaki-fukue-castle-3124.webp",
+      alt:"후쿠에성터·이시다성",
+      source:"https://www.nagasaki-tabinet.com/guide/348"
+    },
+    "3310":{
+      src:"images/licensed/oita-yunotsubo-street-3310.webp",
+      alt:"유노쓰보거리",
+      source:"https://commons.wikimedia.org/wiki/File:Mount_Yufudake_from_Yunotsubo_Street.JPG"
+    },
+    "3315":{
+      src:"images/licensed/oita-ramune-onsen-3315.webp",
+      alt:"나가유온천·라무네온천관",
+      source:"https://commons.wikimedia.org/wiki/File:RamuneOnsenExterior.JPG"
+    },
+    "3316":{
+      src:"images/licensed/oita-oka-castle-3316.webp",
+      alt:"오카성터",
+      source:"https://commons.wikimedia.org/wiki/File:Oka_Castle%27s_Main_Gate_Ruin.jpg"
+    },
   };
   for(const [id,pic] of Object.entries(replacements)){
     tokyoPhotos[id]={...pic};
