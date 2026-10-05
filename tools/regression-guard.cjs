@@ -13,8 +13,8 @@ const intent=JSON.parse(fs.readFileSync(path.join(root,'tools/content-change-int
 const sh=(cmd,opts={})=>cp.execFileSync(cmd[0],cmd.slice(1),{encoding:'utf8',stdio:['ignore','pipe','pipe'],...opts}).trim();
 const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\s·・･\-–—_\/().（）【】「」『』［］\[\],，、:：'"]/g,'');
 const stable=x=>JSON.stringify(x,Object.keys(x||{}).sort());
-const photoSig=p=>p?{src:p.src||'',source:p.source||'',alt:p.alt||'',fit:p.fit||''}:null;
-const heroSig=p=>p?{src:p.src||'',source:p.source||'',alt:p.alt||'',fit:p.fit||''}:null;
+const photoSig=p=>p?{src:p.src||'',alt:p.alt||'',fit:p.fit||''}:null;
+const heroSig=p=>p?{src:p.src||'',alt:p.alt||'',fit:p.fit||''}:null;
 const placeSig=p=>({
   pref:p.pref||'',area:p.area||'',town:p.town||'',name:p.name||'',tag:p.tag||'',
   description:p.description||'',activity:p.activity||'',duration:p.duration||'',
@@ -54,9 +54,31 @@ function lastSuccessfulDeploy(){
 const baseline=lastSuccessfulDeploy()||parent;
 const current=runAudit(root,path.join(os.tmpdir(),'jatlas-current-runtime.json'));
 
+/* PHOTO SOURCE REGISTRY: local image path is the identity; source metadata follows it. */
+const photoManifest=JSON.parse(fs.readFileSync(path.join(root,'tools/official-photo-assets.json'),'utf8'));
+const sourceRegistryText=fs.readFileSync(path.join(root,'dist/photo-source-registry.js'),'utf8').trim();
+const sourceRegistryPrefix='globalThis.JATLAS_PHOTO_SOURCE_REGISTRY=';
+let sourceRegistry={};
+if(sourceRegistryText.startsWith(sourceRegistryPrefix))sourceRegistry=JSON.parse(sourceRegistryText.slice(sourceRegistryPrefix.length).replace(/;\s*$/,''));
+const cleanPhotoSrc=s=>String(s||'').replace(/^\.\//,'').split(/[?#]/)[0];
+const expectedRegistry={};
+for(const x of photoManifest.photos||[]){
+  if(!x.output||!x.source)continue;
+  expectedRegistry[cleanPhotoSrc(x.output)]={source:x.source,terms:x.terms||'',author:x.author||'',placeId:x.placeId??null,foodName:x.foodName||''};
+}
+
 const errors=[];
 const notes=[];
 const fail=m=>errors.push(m);
+
+for(const [src,expected] of Object.entries(expectedRegistry)){
+  const actual=sourceRegistry[src];
+  if(!actual||actual.source!==expected.source||String(actual.terms||'')!==String(expected.terms||''))fail('PHOTO SOURCE registry stale: '+src);
+}
+for(const p of current.places||[]){
+  const src=cleanPhotoSrc(p.photo?.src),expected=expectedRegistry[src];
+  if(expected&&String(p.photo?.source||'')!==String(expected.source||''))fail('PHOTO SOURCE mismatch: '+p.id+' '+p.name+' :: '+src);
+}
 
 for(const x of current.safety?.tombstones||[])fail('RUNTIME SAFETY removed tombstoned place from source: '+x.id+' '+x.pref+' '+x.name);
 for(const x of current.safety?.duplicates||[])fail('RUNTIME SAFETY removed duplicate place from source: '+x.dropId+' duplicates '+x.keepId+' / '+x.pref+' / '+x.name);
