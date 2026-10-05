@@ -779,6 +779,26 @@
       "output": "images/official/shizuoka-sunpu-castle-809.webp",
       "source": "https://hellonavi.jp/photo/608",
       "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 807,
+      "commonsFilename": "Kanzanjiropeway.jpg",
+      "allowUnpinned": true,
+      "minWidth": 1200,
+      "minHeight": 800,
+      "output": "images/licensed/shizuoka-kanzanji-ropeway-807.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Kanzanjiropeway.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "placeId": 813,
+      "commonsFilename": "Flower park 1.JPG",
+      "allowUnpinned": true,
+      "minWidth": 1200,
+      "minHeight": 800,
+      "output": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Flower_park_1.JPG",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   ]
 }
