@@ -212,6 +212,10 @@ def prepare():
                     photo.get('cropX', 0.5),
                     photo.get('cropY', 0.5),
                 )
+            upscale_width = int(photo.get('upscaleWidth', 0) or 0)
+            if upscale_width and image.width < upscale_width:
+                upscale_height = max(1, int(round(image.height * upscale_width / image.width)))
+                image = image.resize((upscale_width, upscale_height), Image.Resampling.LANCZOS)
             if not (1.25 <= image.width / image.height <= 1.85):
                 raise ValueError(f"Licensed photo must be a moderate landscape: {photo['source']}")
             min_width = int(photo.get('minWidth', 900))
