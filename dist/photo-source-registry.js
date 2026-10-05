@@ -17,3 +17,12 @@ Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
   "images/licensed/approved/mie-magose-pass-3726.webp":{"source":"https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg","author":"","placeId":3726,"foodName":""},
   "images/licensed/approved/mie-nagashima-3711.webp":{"source":"https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg","terms":"https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg","author":"","placeId":3711,"foodName":""}
 });
+
+/* User-selected Commons batch 2026-10-06 C */
+Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
+  "images/licensed/approved/toyama-murodo-4705.webp":{"source":"https://commons.wikimedia.org/wiki/File:%E3%81%BF%E3%81%8F%E3%82%8A%E3%81%8C%E6%B1%A001.jpg","terms":"https://commons.wikimedia.org/wiki/File:%E3%81%BF%E3%81%8F%E3%82%8A%E3%81%8C%E6%B1%A001.jpg","author":"","placeId":4705,"foodName":""},
+  "images/licensed/approved/toyama-uozu-mirage-4719.webp":{"source":"https://commons.wikimedia.org/wiki/File:Uozu_mirage_winter_1.jpg","terms":"https://commons.wikimedia.org/wiki/File:Uozu_mirage_winter_1.jpg","author":"","placeId":4719,"foodName":""},
+  "images/licensed/approved/fukui-maruoka-castle-4907.webp":{"source":"https://commons.wikimedia.org/wiki/File:Maruoka_Castle_Keep_Tower,_Maruoka-cho_Sakai_2013.jpg","terms":"https://commons.wikimedia.org/wiki/File:Maruoka_Castle_Keep_Tower,_Maruoka-cho_Sakai_2013.jpg","author":"","placeId":4907,"foodName":""},
+  "images/licensed/approved/kyoto-kiyomizudera-6.webp":{"source":"https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg","author":"","placeId":6,"foodName":""},
+  "images/licensed/approved/osaka-namba-yasaka-420.webp":{"source":"https://commons.wikimedia.org/wiki/File:Namba_Yasaka_jinja_(Osaka_Naniwa-ku)_Shrine_hdsr_S5_g06.jpg","terms":"https://commons.wikimedia.org/wiki/File:Namba_Yasaka_jinja_(Osaka_Naniwa-ku)_Shrine_hdsr_S5_g06.jpg","author":"","placeId":420,"foodName":""}
+});
