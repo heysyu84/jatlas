@@ -1,7 +1,7 @@
 {
   "version": 1,
   "baseCommit": "6c2cf2d2ab2ff328e83d7f04b9f4da89252648fe",
-  "reason": "Apply the seven approved representative photos and source links missing from the user's 61-photo batch.",
+  "reason": "Apply and localize the seven approved representative photos and source links missing from the user's 61-photo batch.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
