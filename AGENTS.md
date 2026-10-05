@@ -6,8 +6,8 @@ These rules are mandatory for every edit, including edits made from another chat
 2. Modify only files required by the user's current request. Do not regenerate an entire prefecture/photo module to change a few entries.
 3. Never re-add a place listed in `tools/content-guard-policy.json` tombstones.
 4. Never create a second tourist spot for an attraction that already exists. Reuse/edit the existing ID.
-5. Existing runtime photo mappings are protected against silent changes. Any intentional place/photo/hero change must be declared in `tools/content-change-intent.json` against the exact current parent commit.
-6. `tools/content-change-intent.json` is commit-scoped. Set `baseCommit` to the immediate parent SHA and list only the IDs/scopes intentionally changed in that commit. Do not use wildcards or bulk approvals.
+5. Existing runtime photo mappings are protected against silent changes. Any intentional place/photo/hero change must be declared in `tools/content-change-intent.json` against the last successfully deployed GitHub Pages commit.
+6. `tools/content-change-intent.json` is deployment-baseline scoped. Set `baseCommit` to the SHA of the last successfully deployed GitHub Pages commit and list only the IDs/scopes intentionally changed since that baseline. Do not use wildcards or bulk approvals. A failed/unapproved commit never becomes the next baseline just because another commit is pushed.
 7. Do not remove or rewrite `dist/content-safety.js`, the regression guard, tombstones, or final photo override files as part of unrelated work.
 8. Before claiming deployment is complete, verify the GitHub Pages workflow for the final commit completed successfully. Source committed != live deployment.
 9. If a guard fails, fix the underlying change. Do not weaken/disable the guard to make a deployment pass.
