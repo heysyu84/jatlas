@@ -1315,6 +1315,46 @@
       "minWidth": 900,
       "minHeight": 600,
       "terms": "https://commons.wikimedia.org/wiki/File:Oka_Castle%27s_Main_Gate_Ruin.jpg"
+    },
+    {
+      "placeId": 3410,
+      "commonsFilename": "秋色の高千穂峡 (Autumn Colored Takachiho Gorge) 24 Nov, 2012 - panoramio.jpg",
+      "output": "images/licensed/miyazaki-takachiho-gorge-3410.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E8%89%B2%E3%81%AE%E9%AB%98%E5%8D%83%E7%A9%82%E5%B3%A1_(Autumn_Colored_Takachiho_Gorge)_24_Nov,_2012_-_panoramio.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E8%89%B2%E3%81%AE%E9%AB%98%E5%8D%83%E7%A9%82%E5%B3%A1_(Autumn_Colored_Takachiho_Gorge)_24_Nov,_2012_-_panoramio.jpg"
+    },
+    {
+      "placeId": 3513,
+      "commonsFilename": "Takachiho-gawara Kirishima City Kagoshima Pref02n4050.jpg",
+      "output": "images/licensed/kagoshima-takachiho-gawara-3513.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Takachiho-gawara_Kirishima_City_Kagoshima_Pref02n4050.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Takachiho-gawara_Kirishima_City_Kagoshima_Pref02n4050.jpg"
+    },
+    {
+      "placeId": 3605,
+      "commonsFilename": "Okinawa Nanjo Sefa-utaki Gusuku site Yuinchi 06.jpg",
+      "output": "images/licensed/okinawa-sefa-utaki-3605.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Okinawa_Nanjo_Sefa-utaki_Gusuku_site_Yuinchi_06.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Okinawa_Nanjo_Sefa-utaki_Gusuku_site_Yuinchi_06.jpg"
+    },
+    {
+      "placeId": 3621,
+      "commonsFilename": "Cape Hedo 202011.jpg",
+      "output": "images/licensed/okinawa-cape-hedo-3621.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "terms": "https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg"
     }
   ]
 }
