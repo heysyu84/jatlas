@@ -29,7 +29,12 @@ const helloNaviPhotos={
 801:["images/official/shizuoka-sengen-801.webp?v=20261005-b1","https://hellonavi.jp/photo/585"],
 802:["images/official/shizuoka-miho-802.webp?v=20261005-b1","https://hellonavi.jp/photo/627"],
 803:["images/official/shizuoka-nihondaira-yume-803.webp?v=20261005-b1","https://hellonavi.jp/photo/802"],
-805:["images/official/shizuoka-hamamatsu-castle-805.webp?v=20261005-b1","https://hellonavi.jp/photo/498"]
+805:["images/official/shizuoka-hamamatsu-castle-805.webp?v=20261005-b1","https://hellonavi.jp/photo/498"],
+806:["images/official/shizuoka-kakegawa-castle-806.webp?v=20261005-b2","https://hellonavi.jp/photo/616"],
+808:["images/official/shizuoka-shuzenji-808.webp?v=20261005-b2","https://hellonavi.jp/photo/489"],
+810:["images/official/shizuoka-kunozan-810.webp?v=20261005-b2","https://hellonavi.jp/photo/795"],
+811:["images/official/shizuoka-jogasaki-811.webp?v=20261005-b2","https://hellonavi.jp/photo/707"],
+821:["images/official/shizuoka-nirayama-821.webp?v=20261005-b2","https://hellonavi.jp/photo/594"]
 };
 for(const [id,[src,source]] of Object.entries(helloNaviPhotos)){
  const p=r.places.find(x=>String(x.id)===id);if(!p)continue;
