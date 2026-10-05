@@ -112,6 +112,8 @@ def image_from_page(photo):
             candidates.append((resolved, rank))
     if not candidates:
         raise ValueError(f"No matching image found on source page: {page}")
+    if photo.get('debugImages'):
+        print("IMAGE CANDIDATES", photo.get('placeId'), candidates, flush=True)
 
     chosen = (max(candidates, key=lambda item: item[1]) if prefer_largest else candidates[0])[0]
     parsed = urllib.parse.urlsplit(chosen)
