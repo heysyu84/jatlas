@@ -768,6 +768,17 @@
       "output": "images/licensed/shizuoka-kawazu-shokeidaru-820.webp",
       "source": "https://commons.wikimedia.org/wiki/File:河津七滝～初景滝_-_panoramio.jpg",
       "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 809,
+      "imagePage": "https://hellonavi.jp/photo/608",
+      "imageSrcContains": "/storage/photos/608/",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-sunpu-castle-809.webp",
+      "source": "https://hellonavi.jp/photo/608",
+      "terms": "https://hellonavi.jp/photo/guide"
     }
   ]
 }
