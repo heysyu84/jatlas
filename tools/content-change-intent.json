@@ -1,46 +1,16 @@
 {
   "version": 1,
-  "baseCommit": "6c2cf2d2ab2ff328e83d7f04b9f4da89252648fe",
-  "reason": "Apply and localize the seven approved representative photos and source links missing from the user's 61-photo batch.",
+  "baseCommit": "74609fafd36b3b38d9096a98087617ab5e78d213",
+  "reason": "Restore and permanently lock the user's own Ghibli Park photo while preserving the existing Amanoyasugawara user photo; also normalize cache handling for user-supplied images.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 3319,
-        "fromSrc": "images/commons/5db5b1b8d8dd572c.webp",
-        "toSrc": "images/licensed/oita-usa-jingu-3319.webp"
-      },
-      {
-        "id": 3415,
-        "fromSrc": "images/commons/76fda5c203585ff9.webp",
-        "toSrc": "images/licensed/miyazaki-umagase-3415.webp"
-      },
-      {
-        "id": 3522,
-        "fromSrc": "images/commons/fe743b1b32497a02.webp",
-        "toSrc": "images/licensed/kagoshima-shiratani-unsuikyo-3522.webp"
-      },
-      {
-        "id": 3523,
-        "fromSrc": "images/commons/1262a2669c955f24.webp",
-        "toSrc": "images/licensed/kagoshima-jomonsugi-3523.webp"
-      },
-      {
-        "id": 3524,
-        "fromSrc": "images/commons/7d738b9e513b831c.webp",
-        "toSrc": "images/licensed/kagoshima-oko-falls-3524.webp"
-      },
-      {
-        "id": 3606,
-        "fromSrc": "images/commons/43c6f3dee4ff500f.webp",
-        "toSrc": "images/licensed/okinawa-gyokusendo-3606.webp"
-      },
-      {
-        "id": 3637,
-        "fromSrc": "images/commons/e6aa4e4004c3bbc6.webp",
-        "toSrc": "images/licensed/okinawa-euglena-mall-3637.webp"
+        "id": 1017,
+        "fromSrc": "images/qa/f37c9c6fcb1cf8444572.webp",
+        "toSrc": "images/user/aichi-ghibli-park-1017.svg"
       }
     ],
     "heroChanges": []
