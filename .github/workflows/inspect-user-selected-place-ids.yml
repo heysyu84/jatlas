@@ -20,12 +20,11 @@ jobs:
           python - <<'PY'
           import json
           data=json.load(open('/tmp/runtime.json',encoding='utf-8'))
-          ids={3711,3717,3726}
           for p in data.get('places',[]):
-              if int(p.get('id',-1)) in ids:
-                  print('RUNTIME_PHOTO',p.get('id'),p.get('name'),json.dumps(p.get('photo'),ensure_ascii=False))
+              name=str(p.get('name',''))
+              if any(s in name for s in ['닌자','나가시마','마고세','馬越','ナガシマ','忍者']):
+                  print('RUNTIME_PHOTO',p.get('id'),p.get('pref'),name,json.dumps(p.get('photo'),ensure_ascii=False))
           for k,v in (data.get('heroes') or {}).items():
-              s=json.dumps(v,ensure_ascii=False)
-              if any(x in s for x in ['3711','3717','3726','mie-iga','mie-nagashima','mie-magose']):
-                  print('RUNTIME_HERO',k,s)
+              if any(s in str(k) for s in ['이가','북세','히가시']) or any(s in json.dumps(v,ensure_ascii=False) for s in ['mie-iga','mie-nagashima','mie-magose','닌자','나가시마','마고세']):
+                  print('RUNTIME_HERO',k,json.dumps(v,ensure_ascii=False))
           PY
