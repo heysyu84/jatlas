@@ -413,9 +413,9 @@
       source:"https://commons.wikimedia.org/wiki/File:Cape_Hedo_202011.jpg"
     },
     "1017":{
-      src:"images/user/aichi-ghibli-park-1017.svg",
+      src:"images/user/aichi-ghibli-park-1017.webp",
       alt:"지브리 파크",
-      source:"images/user/aichi-ghibli-park-1017.svg"
+      source:"images/user/aichi-ghibli-park-1017.webp"
     },
     "3413":{
       src:"images/user/miyazaki-amanoyasugawara-3413.webp",
