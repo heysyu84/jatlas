@@ -24,6 +24,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Run content regression guard
+        run: node tools/regression-guard.cjs
 
       - name: Setup Python for licensed website assets
         uses: actions/setup-python@v5
