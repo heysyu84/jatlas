@@ -1,12 +1,20 @@
 {
   "version": 1,
-  "baseCommit": "e1ed13209aad6cc408e1509c2b311abfdcc8888c",
-  "reason": "Unify visible photo/source credit formatting without changing photo selections, source URLs, authorship, or license data.",
+  "baseCommit": "6c2cf2d2ab2ff328e83d7f04b9f4da89252648fe",
+  "reason": "Apply the seven approved representative photos and source links missing from the user's 61-photo batch.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
-    "photoChanges": [],
+    "photoChanges": [
+      3319,
+      3415,
+      3522,
+      3523,
+      3524,
+      3606,
+      3637
+    ],
     "heroChanges": []
   }
 }
