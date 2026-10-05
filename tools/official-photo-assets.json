@@ -822,8 +822,6 @@
     },
     {
       "placeId": 4706,
-      "imagePage": "https://visit-toyama-japan.com/ko/image-gallery/51",
-      "imageAltContains": "ShoMyo Falls(5)",
       "allowUnpinned": true,
       "cropRatio": 1.5,
       "cropX": 0.5,
@@ -832,7 +830,8 @@
       "minHeight": 600,
       "output": "images/official/toyama-shomyo-falls-4706.webp",
       "source": "https://visit-toyama-japan.com/ko/image-gallery/51",
-      "terms": "https://visit-toyama-japan.com/ko/image-gallery/guide"
+      "terms": "https://visit-toyama-japan.com/ko/image-gallery/guide",
+      "download": "https://visit-toyama-japan.com/ko/image-gallery/image/51"
     },
     {
       "placeId": 4723,
@@ -846,14 +845,13 @@
     },
     {
       "placeId": 4919,
-      "imagePage": "https://www.fuku-e.com/photo/detail_2544.html",
-      "imageAltContains": "小浜港",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
       "output": "images/official/fukui-obama-port-4919.webp",
       "source": "https://www.fuku-e.com/photo/detail_2544.html",
-      "terms": "https://www.fuku-e.com/photo/detail_2544.html"
+      "terms": "https://www.fuku-e.com/photo/detail_2544.html",
+      "download": "https://www.fuku-e.com/lsc/api/photo/?src=2544"
     },
     {
       "placeId": 906,
@@ -908,6 +906,26 @@
       "output": "images/official/mie-gojobanyashiki-3722.webp",
       "source": "https://www.kankomie.or.jp/media/photo_free/4848",
       "terms": "https://www.kankomie.or.jp/media/photo_free/4848"
+    },
+    {
+      "placeId": 1614,
+      "commonsFilename": "Asuka Temple.JPG",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 500,
+      "output": "images/licensed/nara-asukadera-1614.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Asuka_Temple.JPG",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "placeId": 1622,
+      "commonsFilename": "Okadera Asuka Nara pref06n3900.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/licensed/nara-okadera-1622.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Okadera_Asuka_Nara_pref06n3900.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   ]
 }
