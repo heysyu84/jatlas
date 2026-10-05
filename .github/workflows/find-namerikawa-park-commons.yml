@@ -22,7 +22,7 @@ jobs:
               return await res.json();
             }
 
-            const nq = encodeURIComponent('滑川海浜公園 富山県滑川市高塚');
+            const nq = encodeURIComponent('936-0011 富山県滑川市高塚');
             const nom = await getJson('https://nominatim.openstreetmap.org/search?format=json&limit=5&q='+nq, {'Accept-Language':'ja'});
             console.log('NOMINATIM', JSON.stringify(nom, null, 2));
             if(!nom.length) throw new Error('No geocode result');
