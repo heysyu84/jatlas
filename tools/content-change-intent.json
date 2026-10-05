@@ -1,174 +1,18 @@
 {
   "version": 1,
-  "baseCommit": "4c848e470c55933d372aad44ecef6d8404a9b8dc",
-  "reason": "Apply the user's 26 selected Wikimedia Commons representative photos as localized WebP files with matching photo-source attribution, including the corresponding regional hero images where those places are the configured hero, while preserving the approved Ghibli Park user-photo change.",
+  "baseCommit": "5d9edb3f510073f72096b67cb09ca13bb9899e6f",
+  "reason": "Replace the user's Ghibli Park SVG composite and damaged Amanoyasugawara image bytes with clean single WebP files converted directly from the re-uploaded original photos.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 6,
-        "fromSrc": "images/commons/f194050f337e1f09.webp",
-        "toSrc": "images/licensed/approved/kyoto-kiyomizudera-6.webp"
-      },
-      {
-        "id": 420,
-        "fromSrc": "images/commons/2c51ad0a3a987de5.webp",
-        "toSrc": "images/licensed/approved/osaka-namba-yasaka-420.webp"
-      },
-      {
-        "id": 423,
-        "fromSrc": "images/commons/2b6ebc4d0e63c1ea.webp",
-        "toSrc": "images/licensed/approved/osaka-housing-living-423.webp"
-      },
-      {
-        "id": 502,
-        "fromSrc": "images/commons/b05e169dd182e61f.webp",
-        "toSrc": "images/licensed/approved/saitama-kawagoe-hikawa-502.webp"
-      },
-      {
         "id": 1017,
-        "fromSrc": "images/qa/f37c9c6fcb1cf8444572.webp",
-        "toSrc": "images/user/aichi-ghibli-park-1017.svg"
-      },
-      {
-        "id": 1305,
-        "fromSrc": "images/commons/709c7ce35ca191d4.webp",
-        "toSrc": "images/licensed/approved/tochigi-oya-history-1305.webp"
-      },
-      {
-        "id": 1704,
-        "fromSrc": "images/commons/1e75df6e7dcb1290.webp",
-        "toSrc": "images/licensed/approved/hyogo-himeji-castle-1704.webp"
-      },
-      {
-        "id": 2405,
-        "fromSrc": "images/commons/49444a9b580cdd01.webp",
-        "toSrc": "images/licensed/approved/yamaguchi-akiyoshido-2405.webp"
-      },
-      {
-        "id": 2605,
-        "fromSrc": "images/commons/0c921d9922e41065.webp",
-        "toSrc": "images/licensed/approved/kagawa-marugame-castle-2605.webp"
-      },
-      {
-        "id": 3114,
-        "fromSrc": "images/commons/52a343638bb84abb.webp",
-        "toSrc": "images/licensed/approved/nagasaki-hirado-castle-3114.webp"
-      },
-      {
-        "id": 3218,
-        "fromSrc": "images/commons/03d53083d669292e.webp",
-        "toSrc": "images/licensed/approved/kumamoto-sakitsu-3218.webp"
-      },
-      {
-        "id": 3317,
-        "fromSrc": "images/commons/f41fe48a89ae6a24.webp",
-        "toSrc": "images/licensed/approved/oita-usuki-stone-buddhas-3317.webp"
-      },
-      {
-        "id": 3325,
-        "fromSrc": "images/commons/404eab295eb2b830.webp",
-        "toSrc": "images/licensed/approved/oita-harajiri-3325.webp"
-      },
-      {
-        "id": 3422,
-        "fromSrc": "images/commons/6eabbcaba27cff1f.webp",
-        "toSrc": "images/licensed/approved/miyazaki-sekinoo-falls-3422.webp"
-      },
-      {
-        "id": 3603,
-        "fromSrc": "images/commons/38ad18702a416a2f.webp",
-        "toSrc": "images/licensed/approved/okinawa-makishi-market-3603.webp"
-      },
-      {
-        "id": 3607,
-        "fromSrc": "images/commons/249beb308c06a250.webp",
-        "toSrc": "images/licensed/approved/okinawa-peace-memorial-3607.webp"
-      },
-      {
-        "id": 3611,
-        "fromSrc": "images/commons/7a2857bde8178e8c.webp",
-        "toSrc": "images/licensed/approved/okinawa-zanpa-3611.webp"
-      },
-      {
-        "id": 4129,
-        "fromSrc": "images/commons/bd2e52578d249314.webp",
-        "toSrc": "images/licensed/approved/aomori-hotokegaura-4129.webp"
-      },
-      {
-        "id": 4420,
-        "fromSrc": "images/commons/3d0381c6ff58902b.webp",
-        "toSrc": "images/licensed/approved/akita-korakukan-4420.webp"
-      },
-      {
-        "id": 4623,
-        "fromSrc": "images/commons/7c22b905cdfd7d99.webp",
-        "toSrc": "images/licensed/approved/niigata-oyashirazu-4623.webp"
-      },
-      {
-        "id": 4705,
-        "fromSrc": "images/commons/3e1f0eb336ca11c9.webp",
-        "toSrc": "images/licensed/approved/toyama-murodo-4705.webp"
-      },
-      {
-        "id": 4719,
-        "fromSrc": "images/commons/cd7d370e7f99ffe6.webp",
-        "toSrc": "images/licensed/approved/toyama-uozu-mirage-4719.webp"
-      },
-      {
-        "id": 4907,
-        "fromSrc": "images/commons/61abe7fa9be6dc6f.webp",
-        "toSrc": "images/licensed/approved/fukui-maruoka-castle-4907.webp"
-      },
-      {
-        "id": 5221,
-        "fromSrc": "images/commons/10066774b2017d7f.webp",
-        "toSrc": "images/licensed/approved/fukushima-matsukawaura-5221.webp"
+        "fromSrc": "images/user/aichi-ghibli-park-1017.svg",
+        "toSrc": "images/user/aichi-ghibli-park-1017.webp"
       }
     ],
-    "heroChanges": [
-      {
-        "key": "우쓰노미야",
-        "fromSrc": "images/commons/709c7ce35ca191d4.webp",
-        "toSrc": "images/licensed/approved/tochigi-oya-history-1305.webp"
-      },
-      {
-        "key": "교토",
-        "fromSrc": "images/commons/f194050f337e1f09.webp",
-        "toSrc": "images/licensed/approved/kyoto-kiyomizudera-6.webp"
-      },
-      {
-        "key": "히가시야마",
-        "fromSrc": "images/commons/f194050f337e1f09.webp",
-        "toSrc": "images/licensed/approved/kyoto-kiyomizudera-6.webp"
-      },
-      {
-        "key": "히메지",
-        "fromSrc": "images/commons/1e75df6e7dcb1290.webp",
-        "toSrc": "images/licensed/approved/hyogo-himeji-castle-1704.webp"
-      },
-      {
-        "key": "마루가메",
-        "fromSrc": "images/commons/0c921d9922e41065.webp",
-        "toSrc": "images/licensed/approved/kagawa-marugame-castle-2605.webp"
-      },
-      {
-        "key": "히라도·마쓰우라",
-        "fromSrc": "images/commons/52a343638bb84abb.webp",
-        "toSrc": "images/licensed/approved/nagasaki-hirado-castle-3114.webp"
-      },
-      {
-        "key": "아마쿠사",
-        "fromSrc": "images/commons/03d53083d669292e.webp",
-        "toSrc": "images/licensed/approved/kumamoto-sakitsu-3218.webp"
-      },
-      {
-        "key": "우스키·분고오노",
-        "fromSrc": "images/commons/f41fe48a89ae6a24.webp",
-        "toSrc": "images/licensed/approved/oita-usuki-stone-buddhas-3317.webp"
-      }
-    ]
+    "heroChanges": []
   }
 }
