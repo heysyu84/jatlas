@@ -25,17 +25,25 @@ function scopeHasContent(pref,area='전체',town='전체',tab=contentTab){
  if(tab==='routes'&&typeof routesForPref==='function')return (routesForPref(pref)||[]).some(r=>(area==='전체'||r.area===area)&&(town==='전체'||r.town===town));
  return true;
 }
+function scopeHasAnyTravelContent(pref,area='전체',town='전체'){
+ const municipality=typeof selectedMunicipality==='function'?selectedMunicipality(pref,area):null;
+ if(municipality&&town==='전체')return municipalityHasAnyTravelContent(pref,municipality);
+ const scopeArea=municipality?'전체':area;
+ return ['places','foods','events'].some(tab=>scopeHasContent(pref,scopeArea,town,tab));
+}
 function markScopeAvailability(){
  if(state.view!=='explore')return;
  for(const b of document.querySelectorAll('#areas button')){
-  const empty=b.textContent!=='전체'&&!scopeHasContent(state.pref,b.textContent,'전체',contentTab);
+  const area=b.dataset.pref;
+  const empty=area!=='전체'&&!scopeHasAnyTravelContent(state.pref,area);
   b.classList.toggle('noContent',empty);
-  if(empty)b.setAttribute('aria-description','현재 메뉴에 등록된 내용 없음');else b.removeAttribute('aria-description');
+  if(empty)b.setAttribute('aria-description','등록된 관광·음식·계절행사 정보 없음');else b.removeAttribute('aria-description');
  }
  for(const b of document.querySelectorAll('#towns button')){
-  const empty=b.textContent!=='전체'&&!scopeHasContent(state.pref,state.area,b.textContent,contentTab);
+  const town=b.dataset.pref;
+  const empty=town!=='전체'&&!scopeHasAnyTravelContent(state.pref,state.area,town);
   b.classList.toggle('noContent',empty);
-  if(empty)b.setAttribute('aria-description','현재 메뉴에 등록된 내용 없음');else b.removeAttribute('aria-description');
+  if(empty)b.setAttribute('aria-description','등록된 관광·음식·계절행사 정보 없음');else b.removeAttribute('aria-description');
  }
 }
 
