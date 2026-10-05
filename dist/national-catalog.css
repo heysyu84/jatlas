@@ -1,0 +1,6 @@
+/* Keep nationwide lists responsive while deferring off-screen card painting. */
+#nationalCatalog{min-width:0}
+#nationalCatalog>.cards,#nationalCatalog>.foodGrid{margin-top:24px}
+#nationalCatalog .card,#nationalCatalog .foodCard{content-visibility:auto;contain-intrinsic-size:auto 400px}
+#nationalCatalog .foodCard{contain-intrinsic-size:auto 600px}
+#siteMenu .menuLinks button[aria-current="page"]{background:#edf5fd;border-color:#1f60ba}
