@@ -35,6 +35,23 @@ function runAudit(repo,out){
 const head=sh(['git','rev-parse','HEAD'],{cwd:root});
 let parent='';
 try{parent=sh(['git','rev-parse','HEAD^'],{cwd:root})}catch{}
+function lastSuccessfulDeploy(){
+  const repo=process.env.GITHUB_REPOSITORY,token=process.env.GITHUB_TOKEN;
+  if(!repo||!token)return '';
+  try{
+    const url='https://api.github.com/repos/'+repo+'/actions/runs?branch=main&status=success&per_page=50';
+    const raw=cp.execFileSync('curl',['-fsSL',
+      '-H','Authorization: Bearer '+token,
+      '-H','Accept: application/vnd.github+json',
+      '-H','X-GitHub-Api-Version: 2022-11-28',url],{encoding:'utf8'});
+    const runs=JSON.parse(raw).workflow_runs||[];
+    const run=runs.find(r=>r.name==='Deploy Jatlas to GitHub Pages'&&r.conclusion==='success'&&r.head_sha&&r.head_sha!==head);
+    return run?.head_sha||'';
+  }catch(e){
+    return '';
+  }
+}
+const baseline=lastSuccessfulDeploy()||parent;
 const current=runAudit(root,path.join(os.tmpdir(),'jatlas-current-runtime.json'));
 
 const errors=[];
@@ -65,15 +82,16 @@ for(const arr of byMap.values()){
   if(ids.length>1)fail('DUPLICATE mapQuery: '+arr[0].pref+' / '+(arr[0].mapQuery||'')+' / ids='+ids.join(','));
 }
 
-if(parent){
-  const temp=fs.mkdtempSync(path.join(os.tmpdir(),'jatlas-parent-'));
+if(baseline){
+  const temp=fs.mkdtempSync(path.join(os.tmpdir(),'jatlas-baseline-'));
   try{
-    cp.execFileSync('git',['worktree','add','--detach',temp,parent],{cwd:root,stdio:['ignore','pipe','pipe']});
+    cp.execFileSync('git',['worktree','add','--detach',temp,baseline],{cwd:root,stdio:['ignore','pipe','pipe']});
     let previous=null;
     try{
-      previous=runAudit(temp,path.join(os.tmpdir(),'jatlas-parent-runtime.json'));
+      previous=runAudit(temp,path.join(os.tmpdir(),'jatlas-baseline-runtime.json'));
     }catch(e){
-      notes.push('Parent runtime audit unavailable; current integrity checks still enforced. Parent='+parent);
+      if(baseline===parent)notes.push('Fallback parent runtime audit unavailable; current integrity checks still enforced. Parent='+parent);
+      else fail('Last successful deployment cannot be audited: '+baseline);
     }
     if(previous){
       const prevMap=new Map(previous.places.map(p=>[Number(p.id),p]));
@@ -96,7 +114,7 @@ if(parent){
 
       const structural=adds.length||removals.length||edits.length||photoChanges.length||heroChanges.length;
       if(structural){
-        if(intent.baseCommit!==parent)fail('CHANGE INTENT baseCommit must equal immediate parent '+parent+' (currently '+String(intent.baseCommit||'<empty>')+')');
+        if(intent.baseCommit!==baseline)fail('CHANGE INTENT baseCommit must equal last successful deployment '+baseline+' (currently '+String(intent.baseCommit||'<empty>')+')');
         const allow=intent.allow||{};
         const addAllowed=new Map((allow.placeAdds||[]).map(x=>[Number(x.id),x]));
         const removeAllowed=new Map((allow.placeRemovals||[]).map(x=>[Number(x.id),x]));
@@ -126,7 +144,7 @@ if(parent){
             fail('UNAPPROVED hero change: '+ch.key+' :: '+from+' -> '+to);
         }
 
-        notes.push('Compared against parent '+parent);
+        notes.push('Compared against last successful deployment '+baseline);
         notes.push('adds='+adds.length+', removals='+removals.length+', edits='+edits.length+', photoChanges='+photoChanges.length+', heroChanges='+heroChanges.length);
       }
     }
@@ -138,7 +156,7 @@ if(parent){
 if(errors.length){
   console.error('\nJATLAS REGRESSION GUARD FAILED');
   for(const e of errors)console.error('- '+e);
-  console.error('\nFor an intentional change, update tools/content-change-intent.json in the SAME commit with the exact parent SHA and exact IDs/fromSrc/toSrc. Never disable this guard.');
+  console.error('\nFor an intentional change, update tools/content-change-intent.json with baseCommit set to the LAST SUCCESSFUL DEPLOY SHA and exact IDs/fromSrc/toSrc. Never disable this guard.');
   process.exit(1);
 }
-console.log(JSON.stringify({ok:true,head,parent,places:current.places.length,fingerprint:fingerprint(current),notes},null,2));
+console.log(JSON.stringify({ok:true,head,parent,baseline,places:current.places.length,fingerprint:fingerprint(current),notes},null,2));
