@@ -831,7 +831,8 @@
       "output": "images/official/toyama-shomyo-falls-4706.webp",
       "source": "https://visit-toyama-japan.com/ko/image-gallery/51",
       "terms": "https://visit-toyama-japan.com/ko/image-gallery/guide",
-      "download": "https://visit-toyama-japan.com/ko/image-gallery/image/51"
+      "imagePage": "https://visit-toyama-japan.com/ko/image-gallery/51",
+      "imageAltContains": "ShoMyo Falls(5)"
     },
     {
       "placeId": 4723,
@@ -851,7 +852,8 @@
       "output": "images/official/fukui-obama-port-4919.webp",
       "source": "https://www.fuku-e.com/photo/detail_2544.html",
       "terms": "https://www.fuku-e.com/photo/detail_2544.html",
-      "download": "https://www.fuku-e.com/lsc/api/photo/?src=2544"
+      "imagePage": "https://www.fuku-e.com/photo/detail_2544.html",
+      "imageAltContains": "小浜港"
     },
     {
       "placeId": 906,
