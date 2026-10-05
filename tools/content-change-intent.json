@@ -1,96 +1,71 @@
 {
   "version": 1,
-  "baseCommit": "5d68117395ffb81bb616c84783e9bae6e3543ebd",
-  "reason": "User-selected representative photos for items 11-28; unspecified items use the previously proposed candidates.",
+  "baseCommit": "5ff0a93fab98c796c128aeb5cfcbf31b38c67db7",
+  "reason": "User-approved representative photo batch 29-40. User-selected photos are used where supplied; remaining entries use the previously reviewed candidates.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 401,
-        "fromSrc": "images/osaka/401.webp",
-        "toSrc": "images/licensed/osaka-kuromon-401.webp"
+        "id": 2108,
+        "fromSrc": "images/commons/07234e3f7a0e1aa6.webp",
+        "toSrc": "images/licensed/shimane-ryugenji-mabu-2108.webp"
       },
       {
-        "id": 406,
-        "fromSrc": "images/osaka/406.webp",
-        "toSrc": "images/licensed/osaka-castle-406.webp"
+        "id": 2302,
+        "fromSrc": "images/commons/39565eaaa6ebb0ec.webp",
+        "toSrc": "images/licensed/hiroshima-castle-2302.webp"
       },
       {
-        "id": 408,
-        "fromSrc": "images/osaka/408.webp",
-        "toSrc": "images/licensed/osaka-shitennoji-408.webp"
+        "id": 2400,
+        "fromSrc": "images/commons/73bb1e050d504eb4.webp",
+        "toSrc": "images/licensed/yamaguchi-karato-market-2400.webp"
       },
       {
-        "id": 412,
-        "fromSrc": "images/osaka/412.webp",
-        "toSrc": "images/licensed/osaka-usj-412.webp"
+        "id": 2602,
+        "fromSrc": "images/commons/7a3b3a8f24f6e4e3.webp",
+        "toSrc": "images/official/kagawa-yashimaru-2602.webp"
       },
       {
-        "id": 1108,
-        "fromSrc": "images/commons/9ccab1948f28f715.webp",
-        "toSrc": "images/licensed/mie-okage-yokocho-1108.webp"
+        "id": 2616,
+        "fromSrc": "images/commons/4b44ed89723671cf.webp",
+        "toSrc": "images/licensed/kagawa-shodoshima-olive-park-2616.webp"
       },
       {
-        "id": 7,
-        "fromSrc": "images/commons/4e6832d36280e5af.webp",
-        "toSrc": "images/licensed/kyoto-arashiyama-bamboo-7.webp"
+        "id": 2619,
+        "fromSrc": "images/commons/27b73979708bcbfd.webp",
+        "toSrc": "images/licensed/kagawa-marugamemachi-2619.webp"
       },
       {
-        "id": 1511,
-        "fromSrc": "images/commons/5d1cadfc2804784c.webp",
-        "toSrc": "images/licensed/kyoto-ginkakuji-1511.webp"
+        "id": 2703,
+        "fromSrc": "images/commons/fa04a82d34462228.webp",
+        "toSrc": "images/licensed/ehime-bansuiso-2703.webp"
       },
       {
-        "id": 1609,
-        "fromSrc": "images/commons/edb7d0ec419f7fb0.webp",
-        "toSrc": "images/licensed/nara-yoshinoyama-1609.webp"
+        "id": 2712,
+        "fromSrc": "images/commons/3ef189d049dc426c.webp",
+        "toSrc": "images/licensed/ehime-garyu-sanso-2712.webp"
       },
       {
-        "id": 1619,
-        "fromSrc": "images/commons/f6c86a9b5f858ae9.webp",
-        "toSrc": "images/licensed/nara-tanzan-jinja-1619.webp"
+        "id": 2800,
+        "fromSrc": "images/commons/a55106613fd583b5.webp",
+        "toSrc": "images/licensed/kochi-castle-2800.webp"
       },
       {
-        "id": 1707,
-        "fromSrc": "images/commons/cb08e305eeb0ce5f.webp",
-        "toSrc": "images/licensed/hyogo-kinosaki-onsen-1707.webp"
+        "id": 2913,
+        "fromSrc": "images/commons/b8ff773e5bc63d4a.webp",
+        "toSrc": "images/licensed/fukuoka-kokura-castle-2913.webp"
       },
       {
-        "id": 1717,
-        "fromSrc": "images/commons/d74f6a59d8871699.webp",
-        "toSrc": "images/licensed/hyogo-awaji-hanasajiki-1717.webp"
+        "id": 2922,
+        "fromSrc": "images/commons/5cf59f89768e4f6e.webp",
+        "toSrc": "images/licensed/fukuoka-canal-city-2922.webp"
       },
       {
-        "id": 1719,
-        "fromSrc": "images/commons/9b6aed10ec3bb2b6.webp",
-        "toSrc": "images/licensed/hyogo-akashi-castle-1719.webp"
-      },
-      {
-        "id": 1722,
-        "fromSrc": "images/commons/2e86e6c38fa6f272.webp",
-        "toSrc": "images/licensed/hyogo-kobe-port-tower-1722.webp"
-      },
-      {
-        "id": 1907,
-        "fromSrc": "images/commons/99666f2f4624e0f2.webp",
-        "toSrc": "images/licensed/wakayama-oyunohara-1907.webp"
-      },
-      {
-        "id": 1911,
-        "fromSrc": "images/commons/3d4234d1442fcf18.webp",
-        "toSrc": "images/licensed/wakayama-nachi-falls-1911.webp"
-      },
-      {
-        "id": 2013,
-        "fromSrc": "images/commons/35b6954211ab4133.webp",
-        "toSrc": "images/licensed/tottori-kaike-onsen-2013.webp"
-      },
-      {
-        "id": 2103,
-        "fromSrc": "images/commons/3b3bfb97123cc0c9.webp",
-        "toSrc": "images/licensed/shimane-adachi-museum-2103.webp"
+        "id": 3004,
+        "fromSrc": "images/commons/cb10e523d1aeaa91.webp",
+        "toSrc": "images/licensed/saga-nijinomatsubara-3004.webp"
       }
     ],
     "heroChanges": []
