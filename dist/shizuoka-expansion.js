@@ -32,6 +32,7 @@ const helloNaviPhotos={
 805:["images/official/shizuoka-hamamatsu-castle-805.webp?v=20261005-local1","https://hellonavi.jp/photo/498"],
 806:["images/official/shizuoka-kakegawa-castle-806.webp?v=20261005-local1","https://hellonavi.jp/photo/616"],
 808:["images/official/shizuoka-shuzenji-808.webp?v=20261005-local1","https://hellonavi.jp/photo/489"],
+809:["images/official/shizuoka-sunpu-castle-809.webp?v=20261005-sunpu608","https://hellonavi.jp/photo/608"],
 810:["images/official/shizuoka-kunozan-810.webp?v=20261005-local1","https://hellonavi.jp/photo/795"],
 811:["images/official/shizuoka-jogasaki-811.webp?v=20261005-local1","https://hellonavi.jp/photo/707"],
 821:["images/official/shizuoka-nirayama-821.webp?v=20261005-local1","https://hellonavi.jp/photo/594"],
