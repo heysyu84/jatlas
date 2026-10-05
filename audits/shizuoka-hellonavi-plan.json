@@ -137,9 +137,9 @@
       "placeId": 812,
       "name": "페리 로드",
       "photoIds": [
-        574
+        715
       ],
-      "preferred": 574,
+      "preferred": 715,
       "status": "selected-and-applied"
     },
     {
@@ -153,19 +153,17 @@
       "placeId": 816,
       "name": "조렌 폭포",
       "photoIds": [
-        715
+        579
       ],
-      "preferred": 715,
+      "preferred": 579,
       "status": "selected-and-applied"
     },
     {
       "placeId": 817,
       "name": "MOA 미술관",
-      "photoIds": [
-        579
-      ],
-      "preferred": 579,
-      "status": "selected-and-applied"
+      "photoIds": [],
+      "preferred": null,
+      "status": "reverted-to-existing-correct-photo-after-id-mismatch"
     },
     {
       "placeId": 819,
@@ -289,23 +287,23 @@
     {
       "placeId": 812,
       "name": "페리 로드",
-      "photoId": 574,
-      "url": "https://hellonavi.jp/photo/574",
-      "status": "selected-and-applied"
-    },
-    {
-      "placeId": 816,
-      "name": "조렌 폭포",
       "photoId": 715,
       "url": "https://hellonavi.jp/photo/715",
       "status": "selected-and-applied"
     },
     {
-      "placeId": 817,
-      "name": "MOA 미술관",
+      "placeId": 816,
+      "name": "조렌 폭포",
       "photoId": 579,
       "url": "https://hellonavi.jp/photo/579",
       "status": "selected-and-applied"
+    },
+    {
+      "placeId": 817,
+      "name": "MOA 미술관",
+      "photoId": null,
+      "url": null,
+      "status": "reverted-to-existing-correct-photo"
     },
     {
       "placeId": 822,
@@ -316,5 +314,6 @@
       "crop": "3:2 center crop; preserve bridge and Mt. Fuji"
     }
   ],
-  "batch3Note": "User-approved 2026-10-05. Photo 641 is intentionally cropped from portrait to a 3:2 landscape derivative while retaining Mishima Skywalk and Mt. Fuji."
+  "batch3Note": "User-approved 2026-10-05. Photo 641 is intentionally cropped from portrait to a 3:2 landscape derivative while retaining Mishima Skywalk and Mt. Fuji.",
+  "batch3Correction": "Corrected after visual verification: 715 is Perry Road, 579 is Joren Falls. The mistaken MOA override was removed and MOA reverted to its prior correct photo."
 }
