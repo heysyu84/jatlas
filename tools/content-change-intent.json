@@ -1,45 +1,14 @@
 {
   "version": 1,
   "baseCommit": "9a49c74656f864f902371e3dd43512cb748932f7",
-  "reason": "Advance deployment baseline after successful approved-photo restore and include latest localized photo assets.",
+  "reason": "Correct Amanoiwato Shrine West Main Sanctuary map pin to the official map location and label the user-provided Amanoyasugawara photograph.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [
       3412
     ],
-    "photoChanges": [
-      {
-        "id": 1409,
-        "fromSrc": "images/licensed/gunma-takasaki-kannon-1409.webp",
-        "toSrc": "images/licensed/gunma-takasaki-kannon-1409.webp"
-      },
-      {
-        "id": 3410,
-        "fromSrc": "images/commons/1883f6ddf43d11e2.webp",
-        "toSrc": "images/licensed/miyazaki-takachiho-gorge-3410.webp"
-      },
-      {
-        "id": 3513,
-        "fromSrc": "images/commons/ee09932bb9941eb0.webp",
-        "toSrc": "images/licensed/kagoshima-takachiho-gawara-3513.webp"
-      },
-      {
-        "id": 3605,
-        "fromSrc": "images/commons/9330e5ee1459bab0.webp",
-        "toSrc": "images/licensed/okinawa-sefa-utaki-3605.webp"
-      },
-      {
-        "id": 3621,
-        "fromSrc": "images/commons/dd86f8a4c4a77536.webp",
-        "toSrc": "images/licensed/okinawa-cape-hedo-3621.webp"
-      },
-      {
-        "id": 3413,
-        "fromSrc": "images/commons/601805456c031bf5.webp",
-        "toSrc": "images/user/miyazaki-amanoyasugawara-3413.webp"
-      }
-    ],
+    "photoChanges": [],
     "heroChanges": []
   }
 }
