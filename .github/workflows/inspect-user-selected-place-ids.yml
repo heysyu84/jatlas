@@ -14,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Resolve place IDs from runtime
+      - name: Inspect Mie runtime photos
         run: |
           node tools/audit-content.cjs /tmp/runtime.json
           python - <<'PY'
           import json
           data=json.load(open('/tmp/runtime.json',encoding='utf-8'))
-          needles=[
-            '아키요시도','히메지성','오사카 주거박물관','사키쓰','마루가메성',
-            '하라지리','히라도성','우스키 마애불','세키노오','평화기념','마키시 공설시장'
-          ]
+          ids={3711,3717,3726}
           for p in data.get('places',[]):
-              name=str(p.get('name',''))
-              if any(n in name for n in needles):
-                  print('PLACE_ID',p.get('id'),p.get('pref'),name)
+              if int(p.get('id',-1)) in ids:
+                  print('RUNTIME_PHOTO',p.get('id'),p.get('name'),json.dumps(p.get('photo'),ensure_ascii=False))
+          for k,v in (data.get('heroes') or {}).items():
+              s=json.dumps(v,ensure_ascii=False)
+              if any(x in s for x in ['3711','3717','3726','mie-iga','mie-nagashima','mie-magose']):
+                  print('RUNTIME_HERO',k,s)
           PY
