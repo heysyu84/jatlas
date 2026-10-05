@@ -62,7 +62,7 @@ for(const [id,photo] of Object.entries(selectedCommonsPhotos)){
 r.intros['시즈오카·시미즈']=['','후지산과 스루가만 전망, 도쿠가와 이에야스의 역사와 해안 풍경을 함께 즐길 수 있는 중부 여행 지역입니다.'];
 r.intros['이즈']=['','온천과 해식 절벽, 폭포, 개항 역사와 미술관까지 반도 곳곳의 서로 다른 풍경을 즐길 수 있는 지역입니다.'];
 r.intros['하마마쓰·가케가와']=['','성곽과 하마나호, 계절 꽃과 지역 식문화를 함께 즐길 수 있는 시즈오카 서부 지역입니다.'];
-Object.assign(r.heroes,{'후지산 기슭':800,'시즈오카·시미즈':810,'이즈':811,'하마마쓰·가케가와':813});
+Object.assign(r.heroes,{'후지산 기슭':800,'시즈오카·시미즈':810,'이즈':811,'하마마쓰·가케가와':813});if(r.photos[800])r.hero={...r.photos[800]};
 const foodSrc='https://hellonavi.jp/feature/food';
 for(const x of [{name:'시즈오카 차',area:'시즈오카 전역',kind:'지역 특산',where:'시즈오카 전역',description:'향과 감칠맛이 좋은 녹차로, 차밭이 넓게 펼쳐진 시즈오카를 대표하는 특산품입니다.',source:foodSrc},{name:'스루가만 사쿠라에비',area:'시즈오카·시미즈',kind:'지역 특산',where:'유이·시미즈 등',description:'스루가만에서 잡히는 작은 분홍 새우로, 생식·가마아게·가키아게 등 다양한 방식으로 즐기는 지역 별미입니다.',source:foodSrc},{name:'하마나코 장어',area:'하마마쓰·가케가와',kind:'향토·지역 대표',where:'하마마쓰·하마나코 일대',description:'하마나코와 하마마쓰에서 오래 사랑받아 온 장어 요리로, 가바야키와 우나주 형태로 즐기기 좋습니다.',source:foodSrc},{name:'이즈 와사비 요리',area:'이즈',kind:'지역 특산',where:'이즈·아마기 일대',description:'맑은 용수를 이용해 재배한 생와사비를 밥·소바·절임 등에 곁들여 향과 알싸함을 즐기는 이즈의 특산 음식입니다.',source:foodSrc}])if(!r.foods.some(f=>f.name===x.name))r.foods.push(x);
 for(const f of r.foods){if(f.name==='시즈오카 오뎅')f.description='진한 국물에 재료를 오래 끓이고 다시 가루와 아오노리를 뿌려 먹는 시즈오카의 대표 오뎅입니다.';if(f.name==='하마마쓰 교자')f.description='채소 비중이 높은 속을 넣어 굽고 가운데에 숙주나물을 곁들이는 하마마쓰의 대표 교자입니다.';if(f.name==='후지노미야 야키소바')f.description='탄력 있는 전용 면에 고기 찌꺼기와 생선가루를 더해 볶는 후지노미야의 대표 야키소바입니다.'}
