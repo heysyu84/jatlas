@@ -44,3 +44,8 @@ Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
   "images/licensed/approved/miyazaki-sekinoo-falls-3422.webp":{"source":"https://commons.wikimedia.org/wiki/File:Sekinoo_Falls_02.jpg","terms":"https://commons.wikimedia.org/wiki/File:Sekinoo_Falls_02.jpg","author":"","placeId":3422,"foodName":""},
   "images/licensed/approved/okinawa-peace-memorial-3607.webp":{"source":"https://commons.wikimedia.org/wiki/File:Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg","terms":"https://commons.wikimedia.org/wiki/File:Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg","author":"","placeId":3607,"foodName":""}
 });
+
+/* User-selected Commons batch 2026-10-06 F */
+Object.assign(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY,{
+  "images/licensed/approved/okinawa-makishi-market-3603.webp":{"source":"https://commons.wikimedia.org/wiki/File:Makishi_market_temporary_building_20200105.jpg","terms":"https://commons.wikimedia.org/wiki/File:Makishi_market_temporary_building_20200105.jpg","author":"","placeId":3603,"foodName":""}
+});
