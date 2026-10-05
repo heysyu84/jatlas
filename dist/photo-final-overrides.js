@@ -61,7 +61,7 @@
       src:"images/official/kumamoto-josaien-selected-03-3201.webp",
       alt:"사쿠라노바바 조사이엔",
       source:"https://kumamoto.guide/photogallery/"
-    }
+    },
     "210":{
       src:"images/licensed/tokyo-ghibli-museum-210.webp",
       alt:"미타카의 숲 지브리 미술관",
@@ -111,6 +111,16 @@
       src:"images/official/mie-gojobanyashiki-3722.webp",
       alt:"고조반야시키",
       source:"https://www.kankomie.or.jp/media/photo_free/4848"
+    },
+    "1614":{
+      src:"images/licensed/nara-asukadera-1614.webp",
+      alt:"아스카데라",
+      source:"https://commons.wikimedia.org/wiki/File:Asuka_Temple.JPG"
+    },
+    "1622":{
+      src:"images/licensed/nara-okadera-1622.webp",
+      alt:"오카데라",
+      source:"https://commons.wikimedia.org/wiki/File:Okadera_Asuka_Nara_pref06n3900.jpg"
     },
   };
   for(const [id,pic] of Object.entries(replacements)){
