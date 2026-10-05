@@ -453,3 +453,31 @@
 })();
 
 /* Selected photo batch 11-28 verified local and locked. */
+
+
+/* User-selected Commons batch 2026-10-06 A */
+(()=>{
+  const replacements={
+    "3611":{src:"images/licensed/approved/okinawa-zanpa-3611.webp",alt:"잔파곶",source:"https://commons.wikimedia.org/wiki/File:500px_photo_(188688269).jpeg"},
+    "4420":{src:"images/licensed/approved/akita-korakukan-4420.webp",alt:"고라쿠칸",source:"https://commons.wikimedia.org/wiki/File:Korakukan_2025-07_ac_(2).jpg"},
+    "4129":{src:"images/licensed/approved/aomori-hotokegaura-4129.webp",alt:"호토케가우라",source:"https://commons.wikimedia.org/wiki/File:Aomori-Hotokegaura-xl.jpg"},
+    "5221":{src:"images/licensed/approved/fukushima-matsukawaura-5221.webp",alt:"마쓰카와우라",source:"https://commons.wikimedia.org/wiki/File:20091011%E6%9D%BE%E5%B7%9D%E6%B5%A6.jpg"},
+    "1305":{src:"images/licensed/approved/tochigi-oya-history-1305.webp",alt:"오야 자료관",source:"https://commons.wikimedia.org/wiki/File:Oya_History_Museum_entrance_2016-05-12.jpg"}
+  };
+  for(const [id,pic] of Object.entries(replacements)){
+    if(typeof photoQaPendingPlaces!=="undefined")photoQaPendingPlaces.delete(Number(id));
+    const place=typeof samples!=="undefined"?samples.find(p=>String(p.id)===id):null;
+    const previous=place&&typeof photoForPlace==="function"?photoForPlace(place):null;
+    if(typeof tokyoPhotos!=="undefined")tokyoPhotos[id]={...pic};
+    if(typeof regionalCatalog!=="undefined")for(const r of regionalCatalog){
+      if(r.photos?.[id])r.photos[id]={...pic};
+      if(previous?.src&&r.hero?.src===previous.src)r.hero={...pic};
+    }
+    if(place&&previous?.src&&typeof designPhotos!=="undefined"){
+      for(const [key,hero] of Object.entries(designPhotos)){
+        if(hero?.src===previous.src&&[place.pref,place.area,place.town,place.name].includes(key))designPhotos[key]={...pic};
+      }
+    }
+  }
+  if(typeof render==="function")render();
+})();
