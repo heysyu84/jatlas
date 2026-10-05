@@ -163,7 +163,7 @@
       "name": "MOA 미술관",
       "photoIds": [],
       "preferred": null,
-      "status": "reverted-to-existing-correct-photo-after-id-mismatch"
+      "status": "commons-selected-and-applied"
     },
     {
       "placeId": 819,
@@ -177,7 +177,7 @@
       "name": "가와즈 나나다루",
       "photoIds": [],
       "preferred": null,
-      "status": "no-photo-library-match-found-yet"
+      "status": "commons-selected-and-applied"
     },
     {
       "placeId": 821,
@@ -315,5 +315,21 @@
     }
   ],
   "batch3Note": "User-approved 2026-10-05. Photo 641 is intentionally cropped from portrait to a 3:2 landscape derivative while retaining Mishima Skywalk and Mt. Fuji.",
-  "batch3Correction": "Corrected after visual verification: 715 is Perry Road, 579 is Joren Falls. The mistaken MOA override was removed and MOA reverted to its prior correct photo."
+  "batch3Correction": "Corrected after visual verification: 715 is Perry Road, 579 is Joren Falls. The mistaken MOA override was removed and MOA reverted to its prior correct photo.",
+  "commonsSelections": {
+    "817": {
+      "name": "MOA 미술관",
+      "source": "https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg",
+      "author": "663highland",
+      "license": "CC BY-SA 4.0",
+      "status": "selected-and-applied"
+    },
+    "820": {
+      "name": "가와즈 나나다루",
+      "source": "https://commons.wikimedia.org/wiki/File:河津七滝～初景滝_-_panoramio.jpg",
+      "author": "shinohal",
+      "license": "CC BY-SA 3.0",
+      "status": "selected-and-applied"
+    }
+  }
 }
