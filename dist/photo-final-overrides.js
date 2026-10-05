@@ -565,3 +565,31 @@
   }
   if(typeof render==="function")render();
 })();
+
+
+/* User-selected Commons batch 2026-10-06 E */
+(()=>{
+  const replacements={
+    "3325":{src:"images/licensed/approved/oita-harajiri-3325.webp",alt:"하라지리폭포",source:"https://commons.wikimedia.org/wiki/File:Oita-Harajiri_Falls,_echoing_in_the_countryside-xl.jpg"},
+    "3114":{src:"images/licensed/approved/nagasaki-hirado-castle-3114.webp",alt:"히라도성",source:"https://commons.wikimedia.org/wiki/File:Hirado_Castle_Keep.jpg"},
+    "3317":{src:"images/licensed/approved/oita-usuki-stone-buddhas-3317.webp",alt:"우스키 마애불",source:"https://commons.wikimedia.org/wiki/File:Usuki_Stone_Buddas55.jpg"},
+    "3422":{src:"images/licensed/approved/miyazaki-sekinoo-falls-3422.webp",alt:"세키노오 폭포",source:"https://commons.wikimedia.org/wiki/File:Sekinoo_Falls_02.jpg"},
+    "3607":{src:"images/licensed/approved/okinawa-peace-memorial-3607.webp",alt:"오키나와 평화기념공원",source:"https://commons.wikimedia.org/wiki/File:Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg"}
+  };
+  for(const [id,pic] of Object.entries(replacements)){
+    if(typeof photoQaPendingPlaces!=="undefined")photoQaPendingPlaces.delete(Number(id));
+    const place=typeof samples!=="undefined"?samples.find(p=>String(p.id)===id):null;
+    const previous=place&&typeof photoForPlace==="function"?photoForPlace(place):null;
+    if(typeof tokyoPhotos!=="undefined")tokyoPhotos[id]={...pic};
+    if(typeof regionalCatalog!=="undefined")for(const r of regionalCatalog){
+      if(r.photos?.[id])r.photos[id]={...pic};
+      if(previous?.src&&r.hero?.src===previous.src)r.hero={...pic};
+    }
+    if(place&&previous?.src&&typeof designPhotos!=="undefined"){
+      for(const [key,hero] of Object.entries(designPhotos)){
+        if(hero?.src===previous.src&&[place.pref,place.area,place.town,place.name].includes(key))designPhotos[key]={...pic};
+      }
+    }
+  }
+  if(typeof render==="function")render();
+})();
