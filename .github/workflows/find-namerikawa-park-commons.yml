@@ -1,0 +1,56 @@
+name: Find Namerikawa park Commons photos
+
+on:
+  push:
+    paths:
+      - '.github/workflows/find-namerikawa-park-commons.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            async function getJson(url, headers={}) {
+              const res = await fetch(url, {headers:{'User-Agent':'Jatlas-photo-QA/1.0',...headers}});
+              if(!res.ok) throw new Error(url+' '+res.status);
+              return await res.json();
+            }
+
+            const nq = encodeURIComponent('滑川海浜公園 富山県滑川市高塚');
+            const nom = await getJson('https://nominatim.openstreetmap.org/search?format=json&limit=5&q='+nq, {'Accept-Language':'ja'});
+            console.log('NOMINATIM', JSON.stringify(nom, null, 2));
+            if(!nom.length) throw new Error('No geocode result');
+            const lat = Number(nom[0].lat), lon = Number(nom[0].lon);
+
+            for (const radius of [500,1000,2000,5000]) {
+              const url = new URL('https://commons.wikimedia.org/w/api.php');
+              url.searchParams.set('action','query');
+              url.searchParams.set('format','json');
+              url.searchParams.set('generator','geosearch');
+              url.searchParams.set('ggsprimary','all');
+              url.searchParams.set('ggsnamespace','6');
+              url.searchParams.set('ggslimit','100');
+              url.searchParams.set('ggsradius',String(radius));
+              url.searchParams.set('ggscoord',lat+'|'+lon);
+              url.searchParams.set('prop','imageinfo|coordinates');
+              url.searchParams.set('iiprop','url|extmetadata|size');
+              const data = await getJson(url.toString());
+              const pages = Object.values(data.query?.pages||{}).map(p=>({
+                title:p.title,
+                coords:p.coordinates?.[0],
+                width:p.imageinfo?.[0]?.width,
+                height:p.imageinfo?.[0]?.height,
+                url:p.imageinfo?.[0]?.descriptionurl,
+                artist:p.imageinfo?.[0]?.extmetadata?.Artist?.value,
+                license:p.imageinfo?.[0]?.extmetadata?.LicenseShortName?.value,
+                desc:p.imageinfo?.[0]?.extmetadata?.ImageDescription?.value
+              }));
+              console.log('RADIUS',radius,'COUNT',pages.length);
+              console.log(JSON.stringify(pages, null, 2));
+            }
