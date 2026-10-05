@@ -33,24 +33,8 @@ jobs:
 
           assets = [
               (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Oita-Harajiri_Falls%2C_echoing_in_the_countryside-xl.jpg/960px-Oita-Harajiri_Falls%2C_echoing_in_the_countryside-xl.jpg",
-                  "dist/images/licensed/approved/oita-harajiri-3325.webp",
-              ),
-              (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Hirado_Castle_Keep.jpg/960px-Hirado_Castle_Keep.jpg",
-                  "dist/images/licensed/approved/nagasaki-hirado-castle-3114.webp",
-              ),
-              (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Usuki_Stone_Buddas55.jpg/960px-Usuki_Stone_Buddas55.jpg",
-                  "dist/images/licensed/approved/oita-usuki-stone-buddhas-3317.webp",
-              ),
-              (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Sekinoo_Falls_02.jpg/960px-Sekinoo_Falls_02.jpg",
-                  "dist/images/licensed/approved/miyazaki-sekinoo-falls-3422.webp",
-              ),
-              (
-                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg/960px-Okinawa_Itoman_Peace_Hill_Heiwakinen_Memorial_park_hdsr_VLux5_01.jpg",
-                  "dist/images/licensed/approved/okinawa-peace-memorial-3607.webp",
+                  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Makishi_market_temporary_building_20200105.jpg/960px-Makishi_market_temporary_building_20200105.jpg",
+                  "dist/images/licensed/approved/okinawa-makishi-market-3603.webp",
               ),
           ]
 
@@ -86,7 +70,6 @@ jobs:
                   im.save(dest, "WEBP", quality=88, method=6)
               tmp.unlink(missing_ok=True)
               print(dest, dest.stat().st_size)
-              time.sleep(1.5)
           PY
 
       - name: Commit localized images
@@ -98,6 +81,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/images/licensed/approved
-          git commit -m "Localize user-selected Commons photos batch E"
+          git commit -m "Localize user-selected Commons photo batch F"
           git pull --rebase origin main
           git push origin HEAD:main
