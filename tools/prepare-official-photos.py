@@ -36,12 +36,17 @@ def download_bytes(request):
                 pass
             print(f'Photo source returned HTTP {error.code}; retrying in {delay}s', flush=True)
             time.sleep(delay)
+        except (TimeoutError, urllib.error.URLError) as error:
+            if attempt == 2:
+                raise
+            delay = (3, 8)[attempt]
+            print(f'Photo source network timeout/error; retrying in {delay}s: {error}', flush=True)
+            time.sleep(delay)
 
 
 def fetch_json(url):
     request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-    with urllib.request.urlopen(request, timeout=45) as response:
-        return json.loads(response.read(1024 * 1024).decode('utf-8'))
+    return json.loads(download_bytes(request).decode('utf-8'))
 
 
 def fetch_text(url):
@@ -52,8 +57,8 @@ def fetch_text(url):
             'Accept-Language': 'ja,en;q=0.8',
         },
     )
-    with urllib.request.urlopen(request, timeout=45) as response:
-        return response.read(5 * 1024 * 1024).decode(response.headers.get_content_charset() or 'utf-8', errors='replace')
+    raw = download_bytes(request)
+    return raw.decode('utf-8', errors='replace')
 
 
 class ImagePageParser(HTMLParser):
