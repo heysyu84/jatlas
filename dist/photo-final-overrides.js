@@ -207,6 +207,67 @@
       alt:"아다치 미술관",
       source:"https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Garden_03.jpg"
     },
+    "2108":{
+      src:"images/licensed/shimane-ryugenji-mabu-2108.webp",
+      alt:"류겐지 마부",
+      source:"https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine,_Ryugenji_Mabu_Mine_Shaft_002.JPG"
+    },
+    "2302":{
+      src:"images/licensed/hiroshima-castle-2302.webp",
+      alt:"히로시마성",
+      source:"https://commons.wikimedia.org/wiki/File:20181111_Hiroshima_Castle_statue.jpg"
+    },
+    "2400":{
+      src:"images/licensed/yamaguchi-karato-market-2400.webp",
+      alt:"가라토 시장",
+      source:"https://commons.wikimedia.org/wiki/File:Karato_Piers_and_Karato_Market.jpg"
+    },
+    "2602":{
+      src:"images/official/kagawa-yashimaru-2602.webp",
+      alt:"야시마·야시마루",
+      source:"https://www.yashima-navi.jp/jp/gallery/entry-538.html",
+      fit:"contain"
+    },
+    "2616":{
+      src:"images/licensed/kagawa-shodoshima-olive-park-2616.webp",
+      alt:"쇼도시마 올리브공원",
+      source:"https://commons.wikimedia.org/wiki/File:Shodoshima_Olive_Park_Shodo_Island_Japan01s3.jpg"
+    },
+    "2619":{
+      src:"images/licensed/kagawa-marugamemachi-2619.webp",
+      alt:"다카마쓰 마루가메마치 상점가",
+      source:"https://commons.wikimedia.org/wiki/File:Marugamemachi_Shopping_Street_2021-08_ac_(4).jpg"
+    },
+    "2703":{
+      src:"images/licensed/ehime-bansuiso-2703.webp",
+      alt:"반스이소",
+      source:"https://commons.wikimedia.org/wiki/File:Bansui-so_2016-04-30.jpg"
+    },
+    "2712":{
+      src:"images/licensed/ehime-garyu-sanso-2712.webp",
+      alt:"가류산소",
+      source:"https://commons.wikimedia.org/wiki/File:%E8%87%A5%E9%BE%8D%E5%B1%B1%E8%8D%98_-_garyuu_sanso_-_panoramio.jpg"
+    },
+    "2800":{
+      src:"images/licensed/kochi-castle-2800.webp",
+      alt:"고치성",
+      source:"https://commons.wikimedia.org/wiki/File:Kochi_Castle09.JPG"
+    },
+    "2913":{
+      src:"images/licensed/fukuoka-kokura-castle-2913.webp",
+      alt:"고쿠라성",
+      source:"https://commons.wikimedia.org/wiki/File:Kokura-jo-teien.jpg"
+    },
+    "2922":{
+      src:"images/licensed/fukuoka-canal-city-2922.webp",
+      alt:"캐널시티 하카타",
+      source:"https://commons.wikimedia.org/wiki/File:Dancing_fountains,_Canal_City,_Fukuoka,_Japan.jpg"
+    },
+    "3004":{
+      src:"images/licensed/saga-nijinomatsubara-3004.webp",
+      alt:"니지노마쓰바라",
+      source:"https://commons.wikimedia.org/wiki/File:Nijinomatsubara.jpg"
+    },
   };
   for(const [id,pic] of Object.entries(replacements)){
     tokyoPhotos[id]={...pic};
