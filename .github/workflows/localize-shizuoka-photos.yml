@@ -56,6 +56,13 @@ jobs:
               'dist/images/licensed/oita-yunotsubo-street-3310.webp': (900, 600),
               'dist/images/licensed/oita-ramune-onsen-3315.webp': (900, 600),
               'dist/images/licensed/oita-oka-castle-3316.webp': (900, 600),
+              'dist/images/licensed/oita-usa-jingu-3319.webp': (900, 600),
+              'dist/images/licensed/miyazaki-umagase-3415.webp': (900, 600),
+              'dist/images/licensed/kagoshima-shiratani-unsuikyo-3522.webp': (900, 600),
+              'dist/images/licensed/kagoshima-jomonsugi-3523.webp': (900, 600),
+              'dist/images/licensed/kagoshima-oko-falls-3524.webp': (900, 600),
+              'dist/images/licensed/okinawa-gyokusendo-3606.webp': (900, 600),
+              'dist/images/licensed/okinawa-euglena-mall-3637.webp': (900, 600),
               'dist/images/licensed/shimane-ryugenji-mabu-2108.webp': (900, 600),
               'dist/images/licensed/hiroshima-castle-2302.webp': (900, 600),
               'dist/images/licensed/yamaguchi-karato-market-2400.webp': (900, 600),
@@ -132,6 +139,13 @@ jobs:
             dist/images/licensed/oita-yunotsubo-street-3310.webp \
             dist/images/licensed/oita-ramune-onsen-3315.webp \
             dist/images/licensed/oita-oka-castle-3316.webp \
+            dist/images/licensed/oita-usa-jingu-3319.webp \
+            dist/images/licensed/miyazaki-umagase-3415.webp \
+            dist/images/licensed/kagoshima-shiratani-unsuikyo-3522.webp \
+            dist/images/licensed/kagoshima-jomonsugi-3523.webp \
+            dist/images/licensed/kagoshima-oko-falls-3524.webp \
+            dist/images/licensed/okinawa-gyokusendo-3606.webp \
+            dist/images/licensed/okinawa-euglena-mall-3637.webp \
             dist/images/licensed/shimane-ryugenji-mabu-2108.webp \
             dist/images/licensed/hiroshima-castle-2302.webp \
             dist/images/licensed/yamaguchi-karato-market-2400.webp \
