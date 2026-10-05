@@ -1,12 +1,53 @@
 {
   "version": 1,
-  "baseCommit": "",
-  "reason": "",
+  "baseCommit": "407abb152b7324c709b1ab810fcbdc060f04a9a8",
+  "reason": "User-approved first representative-photo batch, Asukadera replacement, and Okadera attraction addition.",
   "allow": {
-    "placeAdds": [],
+    "placeAdds": [
+      {
+        "id": 1622,
+        "name": "오카데라"
+      }
+    ],
     "placeRemovals": [],
     "placeEdits": [],
-    "photoChanges": [],
+    "photoChanges": [
+      {
+        "id": 210,
+        "fromSrc": "images/tokyo-210.webp",
+        "toSrc": "images/licensed/tokyo-ghibli-museum-210.webp"
+      },
+      {
+        "id": 906,
+        "fromSrc": "images/commons/1f9ae56f8a6af473.webp",
+        "toSrc": "images/licensed/gifu-gujo-hachiman-castle-906.webp"
+      },
+      {
+        "id": 1614,
+        "fromSrc": "images/commons/a465478a1b89d74d.webp",
+        "toSrc": "images/licensed/nara-asukadera-1614.webp"
+      },
+      {
+        "id": 4608,
+        "fromSrc": "images/commons/a56851b608dc9bee.webp",
+        "toSrc": "images/licensed/niigata-echigo-yuzawa-4608.webp"
+      },
+      {
+        "id": 4706,
+        "fromSrc": "images/commons/de00c483f53bfc7a.webp",
+        "toSrc": "images/official/toyama-shomyo-falls-4706.webp"
+      },
+      {
+        "id": 4723,
+        "fromSrc": "images/commons/7b66446b95beb859.webp",
+        "toSrc": "images/licensed/toyama-kurobe-dam-4723.webp"
+      },
+      {
+        "id": 4919,
+        "fromSrc": "images/commons/013d8277abd4d591.webp",
+        "toSrc": "images/official/fukui-obama-port-4919.webp"
+      }
+    ],
     "heroChanges": []
   }
 }
