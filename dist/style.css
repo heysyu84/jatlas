@@ -226,3 +226,12 @@ img[data-photo-fit="contain"]{object-fit:contain!important;background:#eaf0f4}
 .floatingNavigation button:hover{background:#edf5fb;border-color:#a9c1d6}
 .floatingNavigation button:focus-visible{outline:3px solid #4c91c5;outline-offset:3px}
 @media(max-width:760px){.floatingNavigation{right:max(12px,env(safe-area-inset-right));bottom:calc(82px + env(safe-area-inset-bottom));gap:8px}.floatingNavigation button{width:44px;height:44px}.floatingNavigation svg{width:21px;height:21px}}
+
+/* Unified photo/source credit presentation. */
+#photoCreditList .creditRow{font-size:.75rem;line-height:1.65;overflow-wrap:anywhere;color:var(--muted,#657b91);margin:.42rem 0}
+#photoCreditList .creditSubject{font-weight:700;color:inherit;text-decoration-thickness:1px;text-underline-offset:2px}
+#photoCreditList .creditMeta{font-weight:400}
+#photoCreditList .creditProvider{font-weight:600}
+#photoCreditList .creditLicense{white-space:normal}
+#photoCreditList h3{margin:1rem 0 .45rem;font-size:.8rem;line-height:1.4}
+@media(max-width:760px){#photoCreditList .creditRow{font-size:.72rem;line-height:1.7}}

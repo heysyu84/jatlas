@@ -1,13 +1,11 @@
 {
   "version": 1,
-  "baseCommit": "9a49c74656f864f902371e3dd43512cb748932f7",
-  "reason": "Correct Amanoiwato Shrine West Main Sanctuary map pin to the official map location and label the user-provided Amanoyasugawara photograph.",
+  "baseCommit": "e1ed13209aad6cc408e1509c2b311abfdcc8888c",
+  "reason": "Unify visible photo/source credit formatting without changing photo selections, source URLs, authorship, or license data.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
-    "placeEdits": [
-      3412
-    ],
+    "placeEdits": [],
     "photoChanges": [],
     "heroChanges": []
   }
