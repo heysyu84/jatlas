@@ -46,6 +46,16 @@ for(const [id,[src,source]] of Object.entries(helloNaviPhotos)){
  r.credits=r.credits.filter(c=>c.label!==p.name);
  r.credits.push({label:p.name,source,author:"静岡県観光協会",license:"公式フォトライブラリー",licenseUrl:"https://hellonavi.jp/photo/guide"});
 }
+const selectedCommonsPhotos={
+817:{src:"images/licensed/shizuoka-moa-museum-817.webp?v=20261005-selected1",source:"https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg",author:"663highland",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"},
+820:{src:"images/licensed/shizuoka-kawazu-shokeidaru-820.webp?v=20261005-selected1",source:"https://commons.wikimedia.org/wiki/File:河津七滝～初景滝_-_panoramio.jpg",author:"shinohal",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/"}
+};
+for(const [id,photo] of Object.entries(selectedCommonsPhotos)){
+ const p=r.places.find(x=>String(x.id)===id);if(!p)continue;
+ r.photos[id]={src:photo.src,alt:p.name,source:photo.source};
+ r.credits=r.credits.filter(c=>c.label!==p.name);
+ r.credits.push({label:p.name,source:photo.source,author:photo.author,license:photo.license,licenseUrl:photo.licenseUrl});
+}
 r.intros['시즈오카·시미즈']=['','후지산과 스루가만 전망, 도쿠가와 이에야스의 역사와 해안 풍경을 함께 즐길 수 있는 중부 여행 지역입니다.'];
 r.intros['이즈']=['','온천과 해식 절벽, 폭포, 개항 역사와 미술관까지 반도 곳곳의 서로 다른 풍경을 즐길 수 있는 지역입니다.'];
 r.intros['하마마쓰·가케가와']=['','성곽과 하마나호, 계절 꽃과 지역 식문화를 함께 즐길 수 있는 시즈오카 서부 지역입니다.'];
