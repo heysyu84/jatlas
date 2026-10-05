@@ -537,3 +537,31 @@
   }
   if(typeof render==="function")render();
 })();
+
+
+/* User-selected Commons batch 2026-10-06 D */
+(()=>{
+  const replacements={
+    "2405":{src:"images/licensed/approved/yamaguchi-akiyoshido-2405.webp",alt:"아키요시도",source:"https://commons.wikimedia.org/wiki/File:USMC-090419-M-8097K-001.jpg"},
+    "1704":{src:"images/licensed/approved/hyogo-himeji-castle-1704.webp",alt:"히메지성",source:"https://commons.wikimedia.org/wiki/File:Himeji_Castle_with_cherry_blossoms_from_Himeji_Zoo.jpg"},
+    "423":{src:"images/licensed/approved/osaka-housing-living-423.webp",alt:"오사카 주거박물관",source:"https://commons.wikimedia.org/wiki/File:Museum_of_Housing_and_Living_(Osaka_Kita-ku)_hdsr_S5_05.jpg"},
+    "3218":{src:"images/licensed/approved/kumamoto-sakitsu-3218.webp",alt:"사키쓰 집락",source:"https://commons.wikimedia.org/wiki/File:Sakitsu.jpg"},
+    "2605":{src:"images/licensed/approved/kagawa-marugame-castle-2605.webp",alt:"마루가메성",source:"https://commons.wikimedia.org/wiki/File:Marugame_Castle,_Tenshu_002.jpg"}
+  };
+  for(const [id,pic] of Object.entries(replacements)){
+    if(typeof photoQaPendingPlaces!=="undefined")photoQaPendingPlaces.delete(Number(id));
+    const place=typeof samples!=="undefined"?samples.find(p=>String(p.id)===id):null;
+    const previous=place&&typeof photoForPlace==="function"?photoForPlace(place):null;
+    if(typeof tokyoPhotos!=="undefined")tokyoPhotos[id]={...pic};
+    if(typeof regionalCatalog!=="undefined")for(const r of regionalCatalog){
+      if(r.photos?.[id])r.photos[id]={...pic};
+      if(previous?.src&&r.hero?.src===previous.src)r.hero={...pic};
+    }
+    if(place&&previous?.src&&typeof designPhotos!=="undefined"){
+      for(const [key,hero] of Object.entries(designPhotos)){
+        if(hero?.src===previous.src&&[place.pref,place.area,place.town,place.name].includes(key))designPhotos[key]={...pic};
+      }
+    }
+  }
+  if(typeof render==="function")render();
+})();
