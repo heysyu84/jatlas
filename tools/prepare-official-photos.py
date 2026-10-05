@@ -162,7 +162,7 @@ def crop_to_ratio(image, ratio, anchor_x=0.5, anchor_y=0.5):
 def resolve_download(photo):
     if photo.get('commonsFilename'):
         filename = urllib.parse.quote(photo['commonsFilename'], safe='')
-        return f'https://commons.wikimedia.org/wiki/Special:Redirect/file/{filename}?width=1600'
+        return f'https://commons.wikimedia.org/wiki/Special:Redirect/file/{filename}?width=1280'
     if photo.get('imagePage'):
         return image_from_page(photo)
 
@@ -210,6 +210,9 @@ def prepare():
         download = resolve_download(photo)
         request = urllib.request.Request(download, headers={'User-Agent': USER_AGENT})
         raw = download_bytes(request)
+        if photo.get('commonsFilename'):
+            # Wikimedia rate-limits rapid image fetches; keep deploys polite and reliable.
+            time.sleep(0.8)
         if len(raw) > 20 * 1024 * 1024:
             raise ValueError('Licensed photo exceeds download size limit')
 
