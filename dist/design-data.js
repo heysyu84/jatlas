@@ -22,6 +22,13 @@ const areaIntros={
 '도요스·쓰키시마':['TOYOSU · TSUKISHIMA','대형 수산시장과 디지털아트, 도쿄만 수변 풍경을 함께 즐길 수 있는 지역입니다.'],
 '아자부다이·롯폰기':['AZABUDAI · ROPPONGI','현대미술과 디지털아트, 고층 도시 풍경을 함께 즐길 수 있는 남부 문화 지역입니다.']};
 const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINETSU','TOKAI','HOKURIKU','KINKI','SANIN · SANYO','SHIKOKU','KYUSHU','OKINAWA'];
+const JATLAS_PHOTO_RENDER_VERSION='20261006-approved61-1';
+function photoDisplaySrc(value){
+ const src=typeof value==='string'?value:(value?.src||'');
+ if(!/^images\/(?:licensed|official)\//.test(src))return src;
+ if(/[?&]jatlasPhoto=/.test(src))return src;
+ return src+(src.includes('?')?'&':'?')+'jatlasPhoto='+JATLAS_PHOTO_RENDER_VERSION;
+}
 function photoForPlace(p){return tokyoPhotos[p.id]||designPhotos[p.name]||null}
 function photoForArea(a){
  const catalog=typeof regionalByPref!=='undefined'&&state?.pref?regionalByPref.get(state.pref):null;
@@ -77,7 +84,7 @@ function renderDesign(){
  $('#overviewSummary').textContent=nationalRegion?'도도부현을 선택하세요.':'지역을 선택하세요.';
  if(state.view==='explore'){
  $('#title').textContent=area;$('#placeEnglish').textContent=areaIntros[area]?.[0]||'';$('#summary').textContent=areaIntros[area]?.[1]||'지역과 가까운 장소를 함께 살펴보세요.';
- const scopeHero=currentScopeHeroPlace(),pic=scopeHero?photoForPlace(scopeHero):photoForArea(area);$('#areaHero').parentElement.hidden=!pic;if(pic){$('#areaHero').src=pic.src;$('#areaHero').alt=scopeHero?.name||pic.alt;$('#heroCaption').textContent=scopeHero?.name||pic.alt}
+ const scopeHero=currentScopeHeroPlace(),pic=scopeHero?photoForPlace(scopeHero):photoForArea(area);$('#areaHero').parentElement.hidden=!pic;if(pic){$('#areaHero').src=photoDisplaySrc(pic);$('#areaHero').alt=scopeHero?.name||pic.alt;$('#heroCaption').textContent=scopeHero?.name||pic.alt}
  $('#themeFilters').replaceChildren(...['전체','산책','역사','전망','자연','전시·체험','쇼핑'].map((t,i)=>button(['✧','♧','⛩','◉','△','▣','◇'][i]+' '+t,()=>{placeTheme=t;contentTab='places';close();render()},placeTheme===t?'active':'')));
  $('#themeFilters').hidden=!completePrefs.includes(state.pref)||contentTab!=='places';
  }
