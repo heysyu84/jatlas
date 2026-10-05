@@ -1146,7 +1146,8 @@
       "output": "images/official/kagawa-yashimaru-2602.webp",
       "source": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
       "terms": "https://www.yashima-navi.jp/jp/gallery/entry-538.html",
-      "allowUnpinned": true
+      "allowUnpinned": true,
+      "debugImages": true
     },
     {
       "placeId": 2616,
