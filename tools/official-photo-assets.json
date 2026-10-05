@@ -651,6 +651,56 @@
       "output": "images/official/shizuoka-hamamatsu-castle-805.webp",
       "source": "https://hellonavi.jp/photo/498",
       "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 806,
+      "download": "https://hellonavi.jp/storage/photos/616/responsive_images/MbXH7iSH9xoqac77kDilgejgZHlq3DPXOGyKuT25__1680_1260.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-kakegawa-castle-806.webp",
+      "source": "https://hellonavi.jp/photo/616",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 808,
+      "download": "https://hellonavi.jp/storage/photos/489/responsive_images/SjVhsDxIbeWaLVpd4mWa51pfk9hd7uEb6kwWoMjl__1711_1140.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-shuzenji-808.webp",
+      "source": "https://hellonavi.jp/photo/489",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 810,
+      "download": "https://hellonavi.jp/storage/photos/795/responsive_images/zOGca5CTjbwjZENZYUrRPhqzHWvhgs9GNxVvmLoK__1680_1120.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-kunozan-810.webp",
+      "source": "https://hellonavi.jp/photo/795",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 811,
+      "download": "https://hellonavi.jp/storage/photos/707/responsive_images/YI7f8vKKZT8JBxLCuVIygNtzAquOABjCNrnVNdkw__1756_1172.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-jogasaki-811.webp",
+      "source": "https://hellonavi.jp/photo/707",
+      "terms": "https://hellonavi.jp/photo/guide"
+    },
+    {
+      "placeId": 821,
+      "download": "https://hellonavi.jp/storage/photos/594/responsive_images/QLot3iC3AHrarInptmbafqolMj55iGzU3ywNXGFn__1680_1260.jpg",
+      "allowUnpinned": true,
+      "minWidth": 900,
+      "minHeight": 600,
+      "output": "images/official/shizuoka-nirayama-821.webp",
+      "source": "https://hellonavi.jp/photo/594",
+      "terms": "https://hellonavi.jp/photo/guide"
     }
   ]
 }
