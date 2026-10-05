@@ -5,6 +5,11 @@
     "507":{src:"images/licensed/saitama-railway-museum-507.webp",alt:"철도박물관",source:"https://commons.wikimedia.org/wiki/File:The_Railway_Museum_20080614.jpg"},
     "518":{src:"images/licensed/saitama-g-cans-518.webp",alt:"수도권 외곽방수로",source:"https://commons.wikimedia.org/wiki/File:首都圏外郭放水路(調圧水槽と立坑).jpg"},
     "711":{src:"images/licensed/kanagawa-hakone-heiwa-711.webp",alt:"하코네 신사",source:"https://commons.wikimedia.org/wiki/File:%E7%AE%B1%E6%A0%B9%E7%A5%9E%E7%A4%BE_%E5%B9%B3%E5%92%8C%E3%81%AE%E9%B3%A5%E5%B1%85,_%E7%AE%B1%E6%A0%B9%E7%94%BA,_Japan_(Unsplash).jpg"},
+    "807":{src:"images/licensed/shizuoka-kanzanji-ropeway-807.webp",alt:"간잔지 로프웨이",source:"https://commons.wikimedia.org/wiki/File:Kanzanjiropeway.jpg"},
+    "809":{src:"images/official/shizuoka-sunpu-castle-809.webp",alt:"슨푸성 공원",source:"https://hellonavi.jp/photo/608"},
+    "813":{src:"images/licensed/shizuoka-hamamatsu-flower-park-813.webp",alt:"하마마쓰 플라워파크",source:"https://commons.wikimedia.org/wiki/File:Flower_park_1.JPG"},
+    "817":{src:"images/licensed/shizuoka-moa-museum-817.webp",alt:"MOA 미술관",source:"https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg"},
+    "820":{src:"images/licensed/shizuoka-kawazu-shokeidaru-820.webp",alt:"가와즈 나나다루·쇼케이다루",source:"https://commons.wikimedia.org/wiki/File:河津七滝～初景滝_-_panoramio.jpg"},
     "1208":{src:"images/licensed/ibaraki-ushiku-daibutsu-1208.webp",alt:"우시쿠 대불",source:"https://commons.wikimedia.org/wiki/File:Okiku_Daibutsu_Cherry_Blossoms.jpg"},
     "2601":{src:"images/licensed/kagawa-takamatsu-castle-2601.webp",alt:"다카마쓰성터·다마모공원",source:"https://commons.wikimedia.org/wiki/File:Takamatsu_Castle_-_Tamamo_Park_20211125_08.jpg"},
     "2608":{src:"images/licensed/kagawa-takaya-shrine-2608.webp",alt:"다카야 신사·천공의 도리이",source:"https://commons.wikimedia.org/wiki/File:Takayajinja_20200407_02.jpg"},
@@ -390,6 +395,21 @@
     }
   }
   if(typeof designPhotos!=="undefined"){
+    const byAlt=new Map(Object.values(replacements).filter(pic=>pic?.alt).map(pic=>[pic.alt,pic]));
+    for(const [key,pic] of Object.entries(designPhotos)){
+      const approved=pic?.alt?byAlt.get(pic.alt):null;
+      if(approved)designPhotos[key]={...approved};
+    }
+    if(typeof regionalCatalog!=="undefined"){
+      for(const r of regionalCatalog){
+        if(r.hero?.alt&&byAlt.has(r.hero.alt))r.hero={...byAlt.get(r.hero.alt)};
+        for(const [area,id] of Object.entries(r.heroes||{})){
+          const approved=replacements[String(id)];
+          if(approved)designPhotos[area]={...approved};
+        }
+        if(r.hero)designPhotos[r.pref]=r.hero;
+      }
+    }
     designPhotos["시마 온천"]={...replacements["1408"]};
     designPhotos["세키가하라·요로"]={...replacements["911"]};
     designPhotos["세키가하라"]={...replacements["923"]};
