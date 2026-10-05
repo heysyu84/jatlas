@@ -3,7 +3,9 @@ name: Localize selected photos
 on:
   push:
     paths:
-      - '.github/workflows/localize-shizuoka-photos.yml'\n      - 'tools/official-photo-assets.json'\n      - 'dist/photo-final-overrides.js'
+      - '.github/workflows/localize-shizuoka-photos.yml'
+      - 'tools/official-photo-assets.json'
+      - 'dist/photo-final-overrides.js'
   workflow_dispatch:
 
 permissions:
