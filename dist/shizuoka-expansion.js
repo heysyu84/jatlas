@@ -25,11 +25,11 @@ for(const p of r.places)r.facts[String(p.id)]=[r.guides[String(p.id)]?.duration|
 const pf={'801':'Fujisan Hongū Sengen Taisha.jpg','802':'Miho-no Matsubara.jpg','803':'Nihondaira Digital Tower (2).jpg','804':'Tensodo.jpg','805':'Hamamatsu Castle, tenshu.jpg','806':'Kakegawa Castle.jpg','807':'Kanzanji ropeway.JPG','808':'Shuzenji.jpg','820':'Kawazu Seven Falls - 2024 Nov 4 various 17 43 29 101000.jpeg','821':'Reverberatory furnace of Nirayama.jpg','822':'Mishima sky walk.jpg','816':'Joren Falls (28892387935).jpg','817':'Entrance to MOA Museum of Art.JPG','819':'Gotemba premium outlets1.jpg'}
 for(const [id,file] of Object.entries(pf)){const p=r.places.find(x=>String(x.id)===id);r.photos[id]={src:cf(file),alt:p?.name||'',source:cp(file)};if(p&&!r.credits.some(c=>c.source===cp(file)))r.credits.push({label:p.name,source:cp(file),author:'Wikimedia Commons contributor',license:'Commons license',licenseUrl:cp(file)})}
 const helloNaviPhotos={
-800:["images/official/shizuoka-shiraito-800.webp","https://hellonavi.jp/photo/605"],
-801:["images/official/shizuoka-sengen-801.webp","https://hellonavi.jp/photo/585"],
-802:["images/official/shizuoka-miho-802.webp","https://hellonavi.jp/photo/627"],
-803:["images/official/shizuoka-nihondaira-yume-803.webp","https://hellonavi.jp/photo/802"],
-805:["images/official/shizuoka-hamamatsu-castle-805.webp","https://hellonavi.jp/photo/498"]
+800:["images/official/shizuoka-shiraito-800.webp?v=20261005-b1","https://hellonavi.jp/photo/605"],
+801:["images/official/shizuoka-sengen-801.webp?v=20261005-b1","https://hellonavi.jp/photo/585"],
+802:["images/official/shizuoka-miho-802.webp?v=20261005-b1","https://hellonavi.jp/photo/627"],
+803:["images/official/shizuoka-nihondaira-yume-803.webp?v=20261005-b1","https://hellonavi.jp/photo/802"],
+805:["images/official/shizuoka-hamamatsu-castle-805.webp?v=20261005-b1","https://hellonavi.jp/photo/498"]
 };
 for(const [id,[src,source]] of Object.entries(helloNaviPhotos)){
  const p=r.places.find(x=>String(x.id)===id);if(!p)continue;
