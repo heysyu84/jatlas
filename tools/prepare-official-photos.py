@@ -207,6 +207,13 @@ def prepare():
         (ROOT / 'dist/images/licensed').resolve(),
     ]
     for photo in manifest['photos']:
+        output = (ROOT / 'dist' / photo['output']).resolve()
+        if not any(output.is_relative_to(root) for root in allowed_roots):
+            raise ValueError('Output must remain in an ignored licensed photo folder')
+        if output.exists():
+            print(f"Using committed {photo.get('placeId', photo.get('foodName'))}: {photo['output']}")
+            continue
+
         download = resolve_download(photo)
         request = urllib.request.Request(download, headers={'User-Agent': USER_AGENT})
         raw = download_bytes(request)
