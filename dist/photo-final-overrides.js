@@ -509,3 +509,31 @@
   }
   if(typeof render==="function")render();
 })();
+
+
+/* User-selected Commons batch 2026-10-06 C */
+(()=>{
+  const replacements={
+    "4705":{src:"images/licensed/approved/toyama-murodo-4705.webp",alt:"무로도",source:"https://commons.wikimedia.org/wiki/File:%E3%81%BF%E3%81%8F%E3%82%8A%E3%81%8C%E6%B1%A001.jpg"},
+    "4719":{src:"images/licensed/approved/toyama-uozu-mirage-4719.webp",alt:"우오즈 신기루 전망지",source:"https://commons.wikimedia.org/wiki/File:Uozu_mirage_winter_1.jpg"},
+    "4907":{src:"images/licensed/approved/fukui-maruoka-castle-4907.webp",alt:"마루오카성",source:"https://commons.wikimedia.org/wiki/File:Maruoka_Castle_Keep_Tower,_Maruoka-cho_Sakai_2013.jpg"},
+    "6":{src:"images/licensed/approved/kyoto-kiyomizudera-6.webp",alt:"기요미즈데라",source:"https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg"},
+    "420":{src:"images/licensed/approved/osaka-namba-yasaka-420.webp",alt:"난바 야사카 신사",source:"https://commons.wikimedia.org/wiki/File:Namba_Yasaka_jinja_(Osaka_Naniwa-ku)_Shrine_hdsr_S5_g06.jpg"}
+  };
+  for(const [id,pic] of Object.entries(replacements)){
+    if(typeof photoQaPendingPlaces!=="undefined")photoQaPendingPlaces.delete(Number(id));
+    const place=typeof samples!=="undefined"?samples.find(p=>String(p.id)===id):null;
+    const previous=place&&typeof photoForPlace==="function"?photoForPlace(place):null;
+    if(typeof tokyoPhotos!=="undefined")tokyoPhotos[id]={...pic};
+    if(typeof regionalCatalog!=="undefined")for(const r of regionalCatalog){
+      if(r.photos?.[id])r.photos[id]={...pic};
+      if(previous?.src&&r.hero?.src===previous.src)r.hero={...pic};
+    }
+    if(place&&previous?.src&&typeof designPhotos!=="undefined"){
+      for(const [key,hero] of Object.entries(designPhotos)){
+        if(hero?.src===previous.src&&[place.pref,place.area,place.town,place.name].includes(key))designPhotos[key]={...pic};
+      }
+    }
+  }
+  if(typeof render==="function")render();
+})();
