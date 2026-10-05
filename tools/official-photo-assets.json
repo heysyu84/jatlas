@@ -715,34 +715,23 @@
     },
     {
       "placeId": 812,
-      "imagePage": "https://hellonavi.jp/photo/574",
-      "imageSrcContains": "/storage/photos/574/",
-      "allowUnpinned": true,
-      "minWidth": 900,
-      "minHeight": 600,
-      "output": "images/official/shizuoka-perry-road-812.webp",
-      "source": "https://hellonavi.jp/photo/574",
-      "terms": "https://hellonavi.jp/photo/guide"
-    },
-    {
-      "placeId": 816,
       "imagePage": "https://hellonavi.jp/photo/715",
       "imageSrcContains": "/storage/photos/715/",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
-      "output": "images/official/shizuoka-joren-falls-816.webp",
+      "output": "images/official/shizuoka-perry-road-812.webp",
       "source": "https://hellonavi.jp/photo/715",
       "terms": "https://hellonavi.jp/photo/guide"
     },
     {
-      "placeId": 817,
+      "placeId": 816,
       "imagePage": "https://hellonavi.jp/photo/579",
       "imageSrcContains": "/storage/photos/579/",
       "allowUnpinned": true,
       "minWidth": 900,
       "minHeight": 600,
-      "output": "images/official/shizuoka-moa-museum-817.webp",
+      "output": "images/official/shizuoka-joren-falls-816.webp",
       "source": "https://hellonavi.jp/photo/579",
       "terms": "https://hellonavi.jp/photo/guide"
     },
