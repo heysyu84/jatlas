@@ -1,16 +1,38 @@
 {
   "version": 1,
-  "baseCommit": "ef9aea21ca9253b369f6d410a5aa49f16d7815aa",
-  "reason": "Restore and lock previously user-approved representative photo mappings from retained source records; correct Takasaki Kannon source metadata. No new photo selection.",
+  "baseCommit": "3fe57f59d8ae7fa5bd089a6b4d4117d71de0fb1d",
+  "reason": "Preserve intentional changes made after the last successful deployment and restore previously user-approved photo locks/source metadata.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
-    "placeEdits": [],
+    "placeEdits": [
+      3412
+    ],
     "photoChanges": [
       {
         "id": 1409,
         "fromSrc": "images/licensed/gunma-takasaki-kannon-1409.webp",
         "toSrc": "images/licensed/gunma-takasaki-kannon-1409.webp"
+      },
+      {
+        "id": 3410,
+        "fromSrc": "images/commons/1883f6ddf43d11e2.webp",
+        "toSrc": "images/licensed/miyazaki-takachiho-gorge-3410.webp"
+      },
+      {
+        "id": 3513,
+        "fromSrc": "images/commons/ee09932bb9941eb0.webp",
+        "toSrc": "images/licensed/kagoshima-takachiho-gawara-3513.webp"
+      },
+      {
+        "id": 3605,
+        "fromSrc": "images/commons/9330e5ee1459bab0.webp",
+        "toSrc": "images/licensed/okinawa-sefa-utaki-3605.webp"
+      },
+      {
+        "id": 3621,
+        "fromSrc": "images/commons/dd86f8a4c4a77536.webp",
+        "toSrc": "images/licensed/okinawa-cape-hedo-3621.webp"
       }
     ],
     "heroChanges": []
