@@ -1,0 +1,72 @@
+name: Localize current photo fixes
+
+on:
+  push:
+    paths:
+      - '.github/workflows/localize-current-photo-fixes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jatlas-localize-current-photo-fixes
+  cancel-in-progress: true
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Prepare licensed website photos
+        run: |
+          python -m pip install Pillow==11.3.0
+          python tools/prepare-official-photos.py
+
+      - name: Verify Namerikawa and Nagasaki fixes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+
+          expected = {
+              'dist/images/official/toyama-namerikawa-coast-4722.webp': (800, 500),
+              'dist/images/licensed/nagasaki-oura-church-3101.webp': (1200, 800),
+              'dist/images/licensed/nagasaki-26-martyrs-3109.webp': (1200, 800),
+          }
+          for filename, (min_w, min_h) in expected.items():
+              path = Path(filename)
+              if not path.exists():
+                  raise SystemExit(f'Missing generated file: {filename}')
+              with Image.open(path) as image:
+                  ratio = image.width / image.height
+                  print(filename, image.size, ratio)
+                  if image.width < min_w or image.height < min_h:
+                      raise SystemExit(f'Generated image too small: {filename} {image.size}')
+                  if not (1.45 <= ratio <= 1.55):
+                      raise SystemExit(f'Unexpected landscape ratio: {filename} {image.size}')
+          PY
+
+      - name: Commit generated photo fixes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f \
+            dist/images/official/toyama-namerikawa-coast-4722.webp \
+            dist/images/licensed/nagasaki-oura-church-3101.webp \
+            dist/images/licensed/nagasaki-26-martyrs-3109.webp
+          if git diff --cached --quiet; then
+            echo "No generated photo changes to commit."
+            exit 0
+          fi
+          git commit -m "Commit Namerikawa and Nagasaki photo fixes"
+          git pull --rebase origin main
+          git push
