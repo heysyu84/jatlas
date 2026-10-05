@@ -10,3 +10,16 @@
 .nationalCategoryFilters button.active{background:#1f60ba;border-color:#1f60ba;color:#fff}
 .nationalCategoryFilters button:focus-visible{outline:2px solid #1f60ba;outline-offset:3px}
 #nationalCatalog .card[hidden],#nationalCatalog .foodCard[hidden]{display:none}
+
+/* Use the available catalog width, with at most four cards per row. */
+#nationalCatalog{container-type:inline-size}
+#nationalCatalog>.cards,#nationalCatalog>.foodGrid{display:grid;grid-template-columns:minmax(0,1fr)}
+@container (min-width:560px){
+ #nationalCatalog>.cards,#nationalCatalog>.foodGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@container (min-width:840px){
+ #nationalCatalog>.cards,#nationalCatalog>.foodGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@container (min-width:1120px){
+ #nationalCatalog>.cards,#nationalCatalog>.foodGrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
