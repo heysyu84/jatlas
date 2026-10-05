@@ -4,6 +4,7 @@ const fs=require('node:fs');
 const os=require('node:os');
 const path=require('node:path');
 const cp=require('node:child_process');
+const crypto=require('node:crypto');
 
 const root=path.resolve(__dirname,'..');
 const policy=JSON.parse(fs.readFileSync(path.join(root,'tools/content-guard-policy.json'),'utf8'));
@@ -19,6 +20,12 @@ const placeSig=p=>({
   description:p.description||'',activity:p.activity||'',duration:p.duration||'',
   source:p.source||'',checked:p.checked||'',mapQuery:p.mapQuery||'',mapUrl:p.mapUrl||''
 });
+const hash=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
+const fingerprint=result=>({
+  placesHash:hash((result.places||[]).slice().sort((a,b)=>Number(a.id)-Number(b.id)).map(p=>({id:Number(p.id),place:placeSig(p),photo:photoSig(p.photo)}))),
+  heroesHash:hash(Object.entries(result.heroes||{}).sort(([a],[b])=>a.localeCompare(b,'ko')).map(([key,p])=>[key,heroSig(p)]))
+});
+
 
 function runAudit(repo,out){
   cp.execFileSync(process.execPath,[path.join(repo,'tools/audit-content.cjs'),out],{cwd:repo,stdio:['ignore','pipe','pipe']});
@@ -134,4 +141,4 @@ if(errors.length){
   console.error('\nFor an intentional change, update tools/content-change-intent.json in the SAME commit with the exact parent SHA and exact IDs/fromSrc/toSrc. Never disable this guard.');
   process.exit(1);
 }
-console.log(JSON.stringify({ok:true,head,parent,places:current.places.length,notes},null,2));
+console.log(JSON.stringify({ok:true,head,parent,places:current.places.length,fingerprint:fingerprint(current),notes},null,2));
