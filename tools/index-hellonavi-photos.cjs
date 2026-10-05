@@ -18,6 +18,16 @@ async function get(url){
 }
 
 (async()=>{
+ for(const id of ['489','795','616','707','594']){
+   try{
+     const html=await get('https://hellonavi.jp/photo/'+id);
+     const re1=new RegExp('srcset="([^"]*storage\\\\/photos\\\\/'+id+'\\\\/responsive_images\\\\/[^"]+)"','i');
+     const re2=new RegExp('src="([^"]*storage\\\\/photos\\\\/'+id+'\\\\/responsive_images\\\\/[^"]+)"','i');
+     const m=html.match(re1),im=html.match(re2);
+     console.log('BATCH2_SRCSET',id,JSON.stringify({srcset:m?.[1]||'',src:im?.[1]||''}));
+   }catch(e){console.log('BATCH2_SRCSET_ERROR',id,String(e))}
+ }
+
  const detail802=await get('https://hellonavi.jp/photo/802');
  for(const needle of ['<form','cart','カート','利用目的','メール','氏名','会社','団体','download']){
    const i=detail802.toLowerCase().indexOf(needle.toLowerCase());
