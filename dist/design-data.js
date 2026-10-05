@@ -25,7 +25,7 @@ const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINET
 const JATLAS_PHOTO_RENDER_VERSION='20261006-approved61-1';
 function photoDisplaySrc(value){
  const src=typeof value==='string'?value:(value?.src||'');
- if(!/^images\/(?:licensed|official)\//.test(src))return src;
+ if(!/^images\/(?:licensed|official|user)\//.test(src))return src;
  if(/[?&]jatlasPhoto=/.test(src))return src;
  return src+(src.includes('?')?'&':'?')+'jatlasPhoto='+JATLAS_PHOTO_RENDER_VERSION;
 }
