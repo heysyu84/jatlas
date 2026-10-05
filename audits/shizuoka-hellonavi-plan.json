@@ -1,0 +1,198 @@
+{
+  "updatedAt": "2026-10-05",
+  "policy": {
+    "source": "https://hellonavi.jp/photo",
+    "terms": "https://hellonavi.jp/photo/guide",
+    "note": "Hello Navi grants photo-use rights to users who enter their intended use and download under the terms. Do not deploy preview URLs as substitutes for an approved download. One application can include up to 20 photos."
+  },
+  "currentStatus": {
+    "nationwideExactDuplicateNameGroups": 0,
+    "nationwideExactDuplicateMapQueryGroups": 0,
+    "nationwideNearCoordinateDuplicateCandidates": 0,
+    "nihondairaDuplicateResolved": true,
+    "nihondairaCanonicalPlaceId": 803
+  },
+  "applicationPurposeJa": "訪日旅行情報サイト「Jatlas」（https://heysyu84.github.io/jatlas/）にて、静岡県への誘客を目的とした観光地紹介に使用します。観光地一覧・詳細ページ・同スポットに連動する旅程サムネイルに掲載予定です。サイト表示用に縮小・WebP変換し、画面比率に応じて必要最小限のトリミングを行います。原本の再配布・販売は行いません。",
+  "candidates": [
+    {
+      "placeId": 800,
+      "name": "시라이토 폭포",
+      "photoIds": [
+        657,
+        655,
+        525
+      ],
+      "preferred": 657,
+      "status": "application-required"
+    },
+    {
+      "placeId": 801,
+      "name": "후지산 혼구 센겐타이샤",
+      "photoIds": [
+        546,
+        771
+      ],
+      "preferred": 546,
+      "status": "application-required"
+    },
+    {
+      "placeId": 802,
+      "name": "미호노마쓰바라",
+      "photoIds": [
+        789,
+        787,
+        786,
+        788,
+        666,
+        627
+      ],
+      "preferred": 789,
+      "status": "application-required"
+    },
+    {
+      "placeId": 803,
+      "name": "니혼다이라 유메테라스",
+      "photoIds": [
+        802,
+        670,
+        810
+      ],
+      "preferred": 802,
+      "status": "already-applied"
+    },
+    {
+      "placeId": 804,
+      "name": "도가시마 덴소도",
+      "photoIds": [
+        625
+      ],
+      "preferred": 625,
+      "status": "application-required"
+    },
+    {
+      "placeId": 805,
+      "name": "하마마쓰성",
+      "photoIds": [
+        518
+      ],
+      "preferred": 518,
+      "status": "application-required"
+    },
+    {
+      "placeId": 806,
+      "name": "가케가와성",
+      "photoIds": [
+        616
+      ],
+      "preferred": 616,
+      "status": "application-required"
+    },
+    {
+      "placeId": 807,
+      "name": "간잔지 로프웨이",
+      "photoIds": [],
+      "preferred": null,
+      "status": "no-photo-library-match-found-yet"
+    },
+    {
+      "placeId": 808,
+      "name": "슈젠지 온천",
+      "photoIds": [
+        745
+      ],
+      "preferred": 745,
+      "status": "application-required"
+    },
+    {
+      "placeId": 809,
+      "name": "슨푸성 공원",
+      "photoIds": [],
+      "preferred": null,
+      "status": "listed-in-library-search-but-detail-id-not-resolved-yet"
+    },
+    {
+      "placeId": 810,
+      "name": "구노잔 도쇼구",
+      "photoIds": [
+        871,
+        795,
+        797,
+        798,
+        796,
+        799
+      ],
+      "preferred": 871,
+      "status": "application-required"
+    },
+    {
+      "placeId": 811,
+      "name": "조가사키 해안",
+      "photoIds": [
+        707
+      ],
+      "preferred": 707,
+      "status": "application-required"
+    },
+    {
+      "placeId": 812,
+      "name": "페리 로드",
+      "photoIds": [],
+      "preferred": null,
+      "status": "no-photo-library-match-found-yet"
+    },
+    {
+      "placeId": 813,
+      "name": "하마마쓰 플라워파크",
+      "photoIds": [],
+      "preferred": null,
+      "status": "listed-in-Hello-Navi-but-photo-id-not-resolved-yet"
+    },
+    {
+      "placeId": 816,
+      "name": "조렌 폭포",
+      "photoIds": [],
+      "preferred": null,
+      "status": "no-photo-library-match-found-yet"
+    },
+    {
+      "placeId": 817,
+      "name": "MOA 미술관",
+      "photoIds": [],
+      "preferred": null,
+      "status": "no-photo-library-match-found-yet"
+    },
+    {
+      "placeId": 819,
+      "name": "고텐바 프리미엄 아울렛",
+      "photoIds": [],
+      "preferred": null,
+      "status": "no-photo-library-match-found-yet"
+    },
+    {
+      "placeId": 820,
+      "name": "가와즈 나나다루",
+      "photoIds": [],
+      "preferred": null,
+      "status": "no-photo-library-match-found-yet"
+    },
+    {
+      "placeId": 821,
+      "name": "니라야마 반사로",
+      "photoIds": [
+        594
+      ],
+      "preferred": 594,
+      "status": "application-required"
+    },
+    {
+      "placeId": 822,
+      "name": "미시마 스카이워크",
+      "photoIds": [
+        521,
+        539
+      ],
+      "preferred": 521,
+      "status": "application-required"
+    }
+  ]
+}
