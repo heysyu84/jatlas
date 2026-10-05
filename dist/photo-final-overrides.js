@@ -62,6 +62,56 @@
       alt:"사쿠라노바바 조사이엔",
       source:"https://kumamoto.guide/photogallery/"
     }
+    "210":{
+      src:"images/licensed/tokyo-ghibli-museum-210.webp",
+      alt:"미타카의 숲 지브리 미술관",
+      source:"https://commons.wikimedia.org/wiki/File:Ghibli_Museum_2024.JPG"
+    },
+    "4608":{
+      src:"images/licensed/niigata-echigo-yuzawa-4608.webp",
+      alt:"에치고유자와 온천",
+      source:"https://commons.wikimedia.org/wiki/File:Entrance_to_Echigo-Yuzawa_Onsen.JPG"
+    },
+    "4706":{
+      src:"images/official/toyama-shomyo-falls-4706.webp",
+      alt:"쇼묘 폭포",
+      source:"https://visit-toyama-japan.com/ko/image-gallery/51"
+    },
+    "4723":{
+      src:"images/licensed/toyama-kurobe-dam-4723.webp",
+      alt:"구로베댐",
+      source:"https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%83%A8%E3%83%80%E3%83%A002.jpg"
+    },
+    "4919":{
+      src:"images/official/fukui-obama-port-4919.webp",
+      alt:"오바마 어항",
+      source:"https://www.fuku-e.com/photo/detail_2544.html"
+    },
+    "906":{
+      src:"images/licensed/gifu-gujo-hachiman-castle-906.webp",
+      alt:"구조하치만성",
+      source:"https://commons.wikimedia.org/wiki/File:Gujo_hachiman_castle_in_autumn.jpg"
+    },
+    "3717":{
+      src:"images/official/mie-iga-ninja-show-3717.webp",
+      alt:"이가류 닌자박물관",
+      source:"https://www.kankomie.or.jp/media/photo_free/3201"
+    },
+    "3711":{
+      src:"images/official/mie-nagashima-overview-3711.webp",
+      alt:"나가시마 스파랜드",
+      source:"https://www.kankomie.or.jp/media/photo_free/451"
+    },
+    "3721":{
+      src:"images/official/mie-matsusaka-castle-3721.webp",
+      alt:"마쓰사카성터",
+      source:"https://www.kankomie.or.jp/media/photo_free/4846"
+    },
+    "3722":{
+      src:"images/official/mie-gojobanyashiki-3722.webp",
+      alt:"고조반야시키",
+      source:"https://www.kankomie.or.jp/media/photo_free/4848"
+    },
   };
   for(const [id,pic] of Object.entries(replacements)){
     tokyoPhotos[id]={...pic};
