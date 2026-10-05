@@ -45,7 +45,7 @@ jobs:
               'dist/images/licensed/shimane-ryugenji-mabu-2108.webp': (900, 600),
               'dist/images/licensed/hiroshima-castle-2302.webp': (900, 600),
               'dist/images/licensed/yamaguchi-karato-market-2400.webp': (900, 600),
-              'dist/images/official/kagawa-yashimaru-2602.webp': (900, 500),
+              'dist/images/official/kagawa-yashimaru-2602.webp': (900, 450),
               'dist/images/licensed/kagawa-shodoshima-olive-park-2616.webp': (900, 600),
               'dist/images/licensed/kagawa-marugamemachi-2619.webp': (900, 600),
               'dist/images/licensed/ehime-bansuiso-2703.webp': (900, 600),
