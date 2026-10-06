@@ -57,12 +57,53 @@
     "evidence": "Official AQUAS address 1117-2 Kushiro, Hamada matches named aquarium result.",
     "reviewedAt": "2026-10-02"
   },
+  "2115": {
+    "status": "official-destination-reviewed",
+    "name": "구니가 해안",
+    "officialSource": "https://www.kankou-shimane.com/destination/20276",
+    "resolvedName": "쿠니가 국가해변",
+    "resolvedAddress": "Mita, Nishinoshima, Oki District, Shimane 684-0303",
+    "lat": 36.0984221,
+    "lon": 132.9645655,
+    "cid": "2938587808993617095",
+    "evidence": "Shimane official tourism identifies Kuniga Coast on Nishinoshima's west coast. The named map entity is the intended Kuniga Coast destination; the prior stored point was another representative point within the broad coastal area.",
+    "reviewedAt": "2026-10-07"
+  },
   "2116": {
-    "status": "name-address-reviewed",
+    "status": "official-destination-reviewed",
     "name": "촛불섬(로소쿠지마)",
     "officialSource": "https://www.e-oki.net/spots/5999/",
-    "evidence": "Google named island result in Shiro, Okinoshima matches official 島根県隠岐郡隠岐の島町代. Corrected regional pin by 19.376 km; island pin is not the cruise boarding point.",
-    "reviewedAt": "2026-10-02"
+    "resolvedName": "Rosoku-jima (Candle Island)",
+    "resolvedAddress": "Shiro, Okinoshima, Oki District, Shimane 685-0304",
+    "lat": 36.3124156,
+    "lon": 133.2096663,
+    "cid": "9942554067653742526",
+    "evidence": "Oki official tourism identifies Rosoku-jima in Okinoshima and distinguishes the island itself from cruise boarding points and the observation deck. The named island entity is the intended attraction.",
+    "reviewedAt": "2026-10-07"
+  },
+  "2213": {
+    "status": "official-name-address-reviewed",
+    "name": "비젠 오사후네 도검박물관",
+    "officialSource": "https://www.city.setouchi.lg.jp/site/token/",
+    "resolvedName": "비젠 오사후네 도검 박물관",
+    "resolvedAddress": "966 Osafunecho Osafune, Setouchi, Okayama 701-4271",
+    "lat": 34.7216189,
+    "lon": 134.1069109,
+    "cid": "16974160137209212921",
+    "evidence": "Setouchi City gives the museum address as Osafunecho Osafune 966; the named map entity matches the official museum and exact address.",
+    "reviewedAt": "2026-10-07"
+  },
+  "2307": {
+    "status": "official-name-address-reviewed",
+    "name": "다이쇼인",
+    "officialSource": "https://daisho-in.com/access.html",
+    "resolvedName": "다이쇼인(대성원)",
+    "resolvedAddress": "210 Miyajimacho, Hatsukaichi, Hiroshima 739-0588",
+    "lat": 34.2920462,
+    "lon": 132.3184934,
+    "cid": "13420191868827204671",
+    "evidence": "Daisho-in's official access page gives Miyajimacho 210; the named map entity matches the temple and official address.",
+    "reviewedAt": "2026-10-07"
   },
   "2314": {
     "status": "official-map-identity-reviewed",
@@ -96,6 +137,30 @@
     "lon": 133.2062795,
     "evidence": "Upper Taishaku district result matches official map point 34.862512790264,133.20627760846 to within 3 m. Long gorge has several entrances.",
     "reviewedAt": "2026-10-02"
+  },
+  "2404": {
+    "status": "official-destination-reviewed",
+    "name": "아키요시다이",
+    "officialSource": "https://karusuto.com/",
+    "resolvedName": "아키요시다이",
+    "resolvedAddress": "11237-862 Shuhocho Akiyoshi, Mine, Yamaguchi 754-0511",
+    "lat": 34.234894,
+    "lon": 131.3058647,
+    "cid": "4252924666949418538",
+    "evidence": "Mine City Tourism Association identifies Akiyoshidai as the core karst destination. The named map entity is Akiyoshidai itself; the prior stored point was another representative point within the broad plateau.",
+    "reviewedAt": "2026-10-07"
+  },
+  "2414": {
+    "status": "official-destination-reviewed",
+    "name": "오미지마",
+    "officialSource": "https://visit-nagato.com/special/ja/",
+    "resolvedName": "오미 섬",
+    "resolvedAddress": "Omi Island, Nagato, Yamaguchi",
+    "lat": 34.4086733,
+    "lon": 131.1954609,
+    "cid": "8156920284738431744",
+    "evidence": "Nagato's official tourism site lists Omijima as a signature Nagato destination. The named map entity is the island itself; the prior stored point was another representative point on the same island.",
+    "reviewedAt": "2026-10-07"
   },
   "2508": {
     "status": "official-map-identity-reviewed",
