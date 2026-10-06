@@ -1,19 +1,19 @@
 (()=>{
 const data=globalThis.JATLAS_PHOTO_REGISTRY_DATA;if(!data)return;globalThis.JATLAS_PHOTO_REGISTRY=data;
-const state=globalThis.JATLAS_PHOTO_REGISTRY_STATE||(globalThis.JATLAS_PHOTO_REGISTRY_STATE={});
+const registryState=globalThis.JATLAS_PHOTO_REGISTRY_STATE||(globalThis.JATLAS_PHOTO_REGISTRY_STATE={});
 const sr=globalThis.JATLAS_PHOTO_SOURCE_REGISTRY||(globalThis.JATLAS_PHOTO_SOURCE_REGISTRY={});
-const pb=state.placeByLegacy||(state.placeByLegacy=new Map(Object.values(data.places||{}).map(r=>[Number(r.legacyId),r]))),old=new Map();
+const pb=registryState.placeByLegacy||(registryState.placeByLegacy=new Map(Object.values(data.places||{}).map(r=>[Number(r.legacyId),r]))),old=new Map();
 const pic=r=>({src:r.image,alt:r.name,source:r.source||'',author:r.author||'',licenseUrl:r.terms||'',canonicalId:r.canonicalId,revision:r.revision,userPhoto:!!r.userPhoto});
 for(const r of Object.values(data.places||{})){const q=pic(r);old.set(r.legacyImage,q);sr[r.image]={source:r.source||'',terms:r.terms||'',author:r.author||'',placeId:r.legacyId,foodName:'',canonicalId:r.canonicalId,userPhoto:!!r.userPhoto};if(typeof tokyoPhotos!=='undefined')tokyoPhotos[r.legacyId]={...q};if(typeof regionalCatalog!=='undefined')for(const c of regionalCatalog){if(c.pref!==r.pref)continue;if(c.photos?.[r.legacyId])c.photos[r.legacyId]={...q};const p=c.places?.find(x=>Number(x.id)===Number(r.legacyId));if(p)p.canonicalId=r.canonicalId;if(c.hero?.src===r.legacyImage)c.hero={...q}}if(typeof samples!=='undefined'){const p=samples.find(x=>Number(x.id)===Number(r.legacyId));if(p)p.canonicalId=r.canonicalId}}
 for(const r of Object.values(data.foods||{})){const q=pic(r);old.set(r.legacyImage,q);sr[r.image]={source:r.source||'',terms:r.terms||'',author:r.author||'',placeId:null,foodName:r.name,canonicalId:r.canonicalId,userPhoto:false};if(typeof addedFoodPhotos!=='undefined')addedFoodPhotos[r.name]={...q};if(typeof foodDetails!=='undefined'){foodDetails[r.name]??={kind:'',taste:'',how:''};foodDetails[r.name].image=typeof photoDisplaySrc==='function'?photoDisplaySrc(q):r.image}if(typeof regionalCatalog!=='undefined')for(const c of regionalCatalog){if(c.pref!==r.pref)continue;if(c.foodPhotos?.[r.name])c.foodPhotos[r.name]={...q};const f=c.foods?.find(x=>x.name===r.name);if(f)f.canonicalId=r.canonicalId;if(c.foodDetails?.[r.name])c.foodDetails[r.name].image=r.image}}
 if(typeof designPhotos!=='undefined')for(const [k,v] of Object.entries(designPhotos)){const q=old.get(String(v?.src||'').split(/[?#]/)[0]);if(q)designPhotos[k]={...q}}
 if(typeof routeTemplates!=='undefined')for(const r of routeTemplates){const q=old.get(String(r.image||'').split(/[?#]/)[0]);if(q){r.image=typeof photoDisplaySrc==='function'?photoDisplaySrc(q):q.src;r.imageAlt=q.alt}}
-const P=state.prefectures||(state.prefectures=new Set(data.scope.prefectures)),cache=state.heroCache||(state.heroCache=new Map());
-if(!state.heroWrapped&&typeof currentScopeHeroPlace==='function'&&typeof photoForArea==='function'){
+const P=registryState.prefectures||(registryState.prefectures=new Set(data.scope.prefectures)),cache=registryState.heroCache||(registryState.heroCache=new Map());
+if(!registryState.heroWrapped&&typeof currentScopeHeroPlace==='function'&&typeof photoForArea==='function'){
  const eligible=()=>{if(typeof state==='undefined'||typeof samples==='undefined'||!P.has(state.pref))return null;let a=samples.filter(p=>p.pref===state.pref&&pb.get(Number(p.id))?.heroEligible&&photoForPlace(p));if(state.town&&state.town!=='전체')a=a.filter(p=>p.town===state.town);else{const m=typeof selectedMunicipality==='function'?selectedMunicipality(state.pref,state.area):null;if(m&&typeof placeInScope==='function')a=a.filter(p=>placeInScope(p));else if(state.area&&state.area!=='전체')a=a.filter(p=>p.area===state.area)}return a};
  const orig=currentScopeHeroPlace;currentScopeHeroPlace=function(){if(typeof state==='undefined'||!P.has(state.pref))return orig?orig():null;const a=eligible()||[];if(!a.length)return null;if(a.length===1)return a[0];const k=[state.pref,state.area||'전체',state.town||'전체'].join('|'),id=cache.get(k),hit=a.find(p=>Number(p.id)===id);if(hit)return hit;const q=a[Math.floor(Math.random()*a.length)];cache.set(k,Number(q.id));return q};
  const opa=photoForArea;photoForArea=function(a){if(typeof state!=='undefined'&&P.has(state.pref)){const p=currentScopeHeroPlace();return p?photoForPlace(p):null}return opa?opa(a):null};
- state.heroWrapped=true;
+ registryState.heroWrapped=true;
 }
 globalThis.JATLAS_TOKAI_CANONICAL={placeByLegacy:pb,heroCache:cache};if(typeof render==='function')render();
 })();
