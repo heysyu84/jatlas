@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# north-kanto-canonical-migration-20261007
+# north-kanto-canonical-migration-20261007-r2
 import hashlib, importlib.util, io, json, re, shutil, subprocess, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
