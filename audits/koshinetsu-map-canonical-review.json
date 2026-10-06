@@ -3,21 +3,21 @@
   "region": "고신에쓰",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 79,
-  "cidTargets": 65,
-  "coordinateOnlyTargets": 14,
+  "cidTargets": 64,
+  "coordinateOnlyTargets": 15,
   "preservedManualTargets": 0,
   "identityReviewTargets": 0,
-  "sourceCoordinateTargets": 0,
-  "auditEntityTargets": 65,
+  "sourceCoordinateTargets": 1,
+  "auditEntityTargets": 64,
   "auditCameraTargets": 14,
   "riskFlags": [
     {
       "id": 318,
       "name": "사루하시",
-      "reason": "stored-vs-query-entity-distance",
+      "reason": "forced/broad-query-entity-conflict",
       "km": 3.729,
       "resolvedName": "일본",
-      "chosen": "query-entity"
+      "chosen": "stored-coordinate"
     }
   ]
 }

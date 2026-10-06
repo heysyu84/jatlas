@@ -6,17 +6,9 @@
   "cidTargets": 56,
   "coordinateOnlyTargets": 27,
   "preservedManualTargets": 0,
-  "identityReviewTargets": 0,
+  "identityReviewTargets": 1,
   "sourceCoordinateTargets": 0,
-  "auditEntityTargets": 57,
+  "auditEntityTargets": 56,
   "auditCameraTargets": 26,
-  "riskFlags": [
-    {
-      "id": 910,
-      "name": "구조하치만 성하마을",
-      "reason": "broad-query-entity-no-source-coordinate",
-      "resolvedName": "구조시",
-      "chosen": "query-coordinate"
-    }
-  ]
+  "riskFlags": []
 }
