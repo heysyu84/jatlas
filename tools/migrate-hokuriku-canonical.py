@@ -3,7 +3,7 @@
 import hashlib, importlib.util, io, json, re, shutil, subprocess, unicodedata, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
-from unidecode import unidecode
+from canonical_slug_policy import place_slug,food_slug
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
@@ -76,10 +76,6 @@ def clean_src(src):
     if s.startswith(('http://','https://')):return s
     return s.split('?',1)[0].split('#',1)[0].removeprefix('./')
 
-def slug_name(name):
-    s=unidecode(unicodedata.normalize('NFKC',str(name or '')).strip()).lower()
-    s=re.sub(r'[^0-9a-z]+','-',s)
-    return re.sub(r'-+','-',s).strip('-') or 'item'
 
 def load_prepare_module():
     p=ROOT/'tools/prepare-official-photos.py'
@@ -125,6 +121,7 @@ def main():
     manifest_by_output={x.get('output'):x for x in manifest.get('photos',[]) if x.get('output')}
     manifest_by_place={int(x['placeId']):x for x in manifest.get('photos',[]) if x.get('placeId') is not None}
     idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
+    map_audit=json.loads((ROOT/'audits/map-audit.json').read_text())
     baseline=json.loads((ROOT/'audits/structure-migration-baseline.json').read_text())
     baseline_places={int(x['legacyId']):x for x in baseline['places']}
     food_ids={(x['pref'],x['name']):x['newId'] for x in idmap['foods'] if x.get('pref') in PREFSET}
@@ -172,7 +169,7 @@ def main():
             if asset is None:asset=manifest_by_output.get(raw)
             if asset:meta.update({k:asset.get(k,'') for k in ('source','terms','author')})
             meta.update({k:v for k,v in pic.items() if k in ('source','author','terms','licenseUrl') and v})
-            canonical=f'images/regions/hokuriku/{prefslug}/places/{cid}-{slug_name(maprow["name"])}.webp'
+            canonical=f'images/regions/hokuriku/{prefslug}/places/{cid}-{place_slug(cid,(map_audit.get(str(ident)) or {}).get('query') or '')}.webp'
             dest=DIST/canonical;was_nonwebp=legacy.suffix.lower()!='.webp';write_canonical(legacy,dest)
             if was_nonwebp:converted.append(raw)
             registry['places'][cid]={
@@ -200,7 +197,7 @@ def main():
             if raw in manifest_by_output:
                 m=manifest_by_output[raw];meta.update({k:m.get(k,'') for k in ('source','terms','author')})
             meta.update({k:v for k,v in pic.items() if k in ('source','author','terms','licenseUrl') and v})
-            canonical=f'images/regions/hokuriku/{prefslug}/foods/{cid}-{slug_name(name)}.webp'
+            canonical=f'images/regions/hokuriku/{prefslug}/foods/{cid}-{food_slug(cid)}.webp'
             dest=DIST/canonical;write_canonical(legacy,dest)
             registry['foods'][cid]={
               'canonicalId':cid,'legacyId':None,'pref':pref,'name':name,'image':canonical,'legacyImage':raw,
