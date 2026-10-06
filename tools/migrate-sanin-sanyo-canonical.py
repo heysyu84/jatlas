@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# sanin-sanyo-canonical-migration-20261007
-import hashlib,io,json,re,subprocess,unicodedata,urllib.parse,urllib.request
+# sanin-sanyo-canonical-migration-20261007-r2
+import hashlib,importlib.util,io,json,re,subprocess,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image,ImageOps
 from canonical_slug_policy import place_slug,food_slug
@@ -15,6 +15,37 @@ PREFS=[
 PREFSET={x[0] for x in PREFS}
 EXPECTED={'돗토리':(15,5),'시마네':(17,5),'오카야마':(18,6),'히로시마':(20,7),'야마구치':(18,6)}
 USER_AGENT='Mozilla/5.0 Jatlas canonical migration'
+
+def load_prepare_module():
+    p=ROOT/'tools/prepare-official-photos.py'
+    spec=importlib.util.spec_from_file_location('jatlas_prepare_official',p)
+    mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
+    return mod
+PREP=load_prepare_module()
+
+def materialize_manifest_asset(photo):
+    output=(DIST/photo['output']).resolve()
+    if output.exists():return
+    download=PREP.resolve_download(photo)
+    req=urllib.request.Request(download,headers={'User-Agent':PREP.USER_AGENT})
+    raw=PREP.download_bytes(req)
+    if len(raw)>25*1024*1024:raise ValueError('Photo exceeds size limit: '+photo['output'])
+    expected=photo.get('sha256')
+    if expected and hashlib.sha256(raw).hexdigest()!=expected:
+        raise ValueError('Source changed; review required: '+photo.get('source',''))
+    if not expected and not photo.get('allowUnpinned'):
+        raise ValueError('Unpinned source requires review: '+photo.get('source',''))
+    with Image.open(io.BytesIO(raw)) as original:
+        image=ImageOps.exif_transpose(original).convert('RGB')
+        if photo.get('cropRatio'):
+            image=PREP.crop_to_ratio(image,photo['cropRatio'],photo.get('cropX',.5),photo.get('cropY',.5))
+        upscale=int(photo.get('upscaleWidth',0) or 0)
+        if upscale and image.width<upscale:
+            image=image.resize((upscale,max(1,round(image.height*upscale/image.width))),Image.Resampling.LANCZOS)
+        image.thumbnail((1280,960),Image.Resampling.LANCZOS)
+        output.parent.mkdir(parents=True,exist_ok=True)
+        image.save(output,format='WEBP',quality=88)
+
 
 
 def clean_local(src):
@@ -47,6 +78,10 @@ def main():
     runtime=json.loads(RUNTIME.read_text())
     idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
     map_audit=json.loads((ROOT/'audits/map-audit.json').read_text())
+    manifest=json.loads((ROOT/'tools/official-photo-assets.json').read_text())
+    manifest_by_output={x.get('output'):x for x in manifest.get('photos',[]) if x.get('output')}
+    manifest_by_place={int(x['placeId']):x for x in manifest.get('photos',[]) if x.get('placeId') is not None}
+    manifest_by_food={x.get('foodName'):x for x in manifest.get('photos',[]) if x.get('foodName')}
     place_map={int(x['legacyId']):x for x in idmap['places'] if x.get('pref') in PREFSET}
     food_map={(x['pref'],x['name']):x for x in idmap['foods'] if x.get('pref') in PREFSET}
     places={int(x['id']):x for x in runtime['places'] if x.get('pref') in PREFSET}
@@ -75,7 +110,12 @@ def main():
             if not p:raise ValueError(f'Missing runtime place {pref} {ident}')
             photo=p.get('photo') or {};src=photo.get('src') or ''
             if not src:raise ValueError(f'Missing active place photo {pref} {ident} {row["name"]}')
-            cid=row['newId'];canonical=f'images/regions/sanin-sanyo/{prefslug}/places/{cid}-{place_slug(cid,(map_audit.get(str(ident)) or {}).get('query') or p.get('mapQuery') or '')}.webp'
+            cid=row['newId']
+            if not str(src).startswith(('http://','https://')) and not (DIST/clean_local(src)).is_file():
+                asset=manifest_by_output.get(clean_local(src)) or manifest_by_place.get(ident)
+                if not asset:raise FileNotFoundError(f'Missing approved place photo without recovery manifest: {pref} {ident} {src}')
+                materialize_manifest_asset(asset)
+            canonical=f'images/regions/sanin-sanyo/{prefslug}/places/{cid}-{place_slug(cid,(map_audit.get(str(ident)) or {}).get('query') or p.get('mapQuery') or '')}.webp'
             dest=DIST/canonical;legacy=write_webp(src,dest)
             if str(src).startswith(('http://','https://')):external.append({'id':ident,'src':src})
             registry['places'][cid]={
@@ -90,7 +130,12 @@ def main():
             if not f:raise ValueError(f'Missing runtime food {pref} {name}')
             photo=f.get('photo') or {};src=photo.get('src') or f.get('image') or ''
             if not src:raise ValueError(f'Missing active food photo {pref} {name}')
-            cid=row['newId'];canonical=f'images/regions/sanin-sanyo/{prefslug}/foods/{cid}-{food_slug(cid)}.webp'
+            cid=row['newId']
+            if not str(src).startswith(('http://','https://')) and not (DIST/clean_local(src)).is_file():
+                asset=manifest_by_output.get(clean_local(src)) or manifest_by_food.get(name)
+                if not asset:raise FileNotFoundError(f'Missing approved food photo without recovery manifest: {pref} {name} {src}')
+                materialize_manifest_asset(asset)
+            canonical=f'images/regions/sanin-sanyo/{prefslug}/foods/{cid}-{food_slug(cid)}.webp'
             dest=DIST/canonical;legacy=write_webp(src,dest)
             if str(src).startswith(('http://','https://')):external.append({'food':pref+'|'+name,'src':src})
             registry['foods'][cid]={
