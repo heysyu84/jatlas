@@ -95,6 +95,7 @@ jobs:
           PY
           node tools/test-dom.cjs
           node tools/test-map-photo.cjs
+          node tools/test-national-canonical-completion.cjs
 
       - name: Commit cleanup
         run: |

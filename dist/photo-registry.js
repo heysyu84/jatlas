@@ -14,6 +14,8 @@ globalThis.JATLAS_SYNC_CANONICAL_FOOD_SCOPE=syncFoodScope;
 if(!registryState.foodRenderWrapped&&typeof renderFoods==='function'){const originalRenderFoods=renderFoods;renderFoods=function(){if(typeof state!=='undefined')syncFoodScope(state.pref);return originalRenderFoods.apply(this,arguments)};registryState.foodRenderWrapped=true}
 if(typeof state!=='undefined')syncFoodScope(state.pref);
 if(typeof syncRegionalDesignPhotos==='function')syncRegionalDesignPhotos();
+// Aichi legacy area heroes historically used Inuyama Castle and Korankei.
+if(typeof designPhotos!=='undefined'){for(const [area,id] of Object.entries({'오와리':1003,'미카와':1006})){const rec=pb.get(id);if(rec)designPhotos[area]=pic(rec)}}
 if(typeof designPhotos!=='undefined')for(const [k,v] of Object.entries(designPhotos)){const q=old.get(String(v?.src||'').split(/[?#]/)[0]);if(q)designPhotos[k]={...q}}
 if(typeof routeTemplates!=='undefined')for(const r of routeTemplates){const raw=String(r.image||'').split(/[?#]/)[0],q=old.get(raw)||canonical.get(raw);if(q){r.image=typeof photoDisplaySrc==='function'?photoDisplaySrc(q):q.src;r.imageAlt=q.alt}}
 const P=registryState.prefectures||(registryState.prefectures=new Set(data.scope.prefectures)),cache=registryState.heroCache||(registryState.heroCache=new Map());
