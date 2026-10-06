@@ -1,11 +1,11 @@
 /* Map-only regression test for migrated regions. Deliberately excludes photo/file QA. */
 const assert=require('node:assert/strict'),vm=require('node:vm');
 const {ctx,result}=require('./audit-content.cjs');
-const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','도야마','이시카와','후쿠이','시가','교토','오사카','효고','나라','와카야마','사이타마','지바','도쿄','가나가와'];
-const expected={'기후':22,'시즈오카':20,'아이치':20,'미에':21,'아오모리':31,'이와테':33,'미야기':24,'아키타':24,'야마가타':24,'후쿠시마':24,'홋카이도':42,'이바라키':16,'도치기':19,'군마':16,'니가타':24,'야마나시':31,'나가노':24,'도야마':23,'이시카와':24,'후쿠이':24,'시가':16,'교토':26,'오사카':29,'효고':23,'나라':23,'와카야마':17,'사이타마':23,'지바':27,'도쿄':54,'가나가와':28};
+const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','도야마','이시카와','후쿠이','시가','교토','오사카','효고','나라','와카야마','돗토리','시마네','오카야마','히로시마','야마구치','사이타마','지바','도쿄','가나가와'];
+const expected={'기후':22,'시즈오카':20,'아이치':20,'미에':21,'아오모리':31,'이와테':33,'미야기':24,'아키타':24,'야마가타':24,'후쿠시마':24,'홋카이도':42,'이바라키':16,'도치기':19,'군마':16,'니가타':24,'야마나시':31,'나가노':24,'도야마':23,'이시카와':24,'후쿠이':24,'시가':16,'교토':26,'오사카':29,'효고':23,'나라':23,'와카야마':17,'돗토리':15,'시마네':17,'오카야마':18,'히로시마':20,'야마구치':18,'사이타마':23,'지바':27,'도쿄':54,'가나가와':28};
 const canonical=vm.runInContext('globalThis.JATLAS_MAP_CANONICAL||{}',ctx);
 const migrated=result.places.filter(p=>migratedPrefs.includes(p.pref));
-assert.equal(migrated.length,752,'migrated place count');
+assert.equal(migrated.length,840,'migrated place count');
 for(const [pref,count] of Object.entries(expected))assert.equal(migrated.filter(p=>p.pref===pref).length,count,pref+' place count');
 for(const p of migrated){
  const c=canonical[p.id];
