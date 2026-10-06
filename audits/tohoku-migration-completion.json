@@ -64,5 +64,11 @@
     "Previously approved missing assets are recovered from their pinned source manifest before canonical copy.",
     "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
     "No legacy image file is deleted during regional migration."
-  ]
+  ],
+  "verifiedCanonicalCommit": "76c0df2b921cd5abdff2c1ef8012371cc61963c6",
+  "verification": {
+    "canonicalFilesChecked": 210,
+    "missingCanonicalFiles": 0,
+    "verifiedAt": "2026-10-06"
+  }
 }
