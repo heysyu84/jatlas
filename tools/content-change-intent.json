@@ -119,82 +119,82 @@
       },
       {
         "id": 800,
-        "fromSrc": "images/official/shizuoka-shiraito-800.webp",
+        "fromSrc": "images/official/shizuoka-shiraito-800.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp"
       },
       {
         "id": 801,
-        "fromSrc": "images/official/shizuoka-sengen-801.webp",
+        "fromSrc": "images/official/shizuoka-sengen-801.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0002-fujisan-hongu-sengen-taisha.webp"
       },
       {
         "id": 802,
-        "fromSrc": "images/official/shizuoka-miho-802.webp",
+        "fromSrc": "images/official/shizuoka-miho-802.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0003-miho-no-matsubara.webp"
       },
       {
         "id": 803,
-        "fromSrc": "images/official/shizuoka-nihondaira-yume-803.webp",
+        "fromSrc": "images/official/shizuoka-nihondaira-yume-803.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0004-nihondaira-yume-terrace.webp"
       },
       {
         "id": 804,
-        "fromSrc": "images/official/shizuoka-dogashima-tensodo-804.webp",
+        "fromSrc": "images/official/shizuoka-dogashima-tensodo-804.webp?v=20261005-local3",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0005-dogashima-tensodo-cave.webp"
       },
       {
         "id": 805,
-        "fromSrc": "images/official/shizuoka-hamamatsu-castle-805.webp",
+        "fromSrc": "images/official/shizuoka-hamamatsu-castle-805.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0006-hamamatsu-castle.webp"
       },
       {
         "id": 806,
-        "fromSrc": "images/official/shizuoka-kakegawa-castle-806.webp",
+        "fromSrc": "images/official/shizuoka-kakegawa-castle-806.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0007-kakegawa-castle.webp"
       },
       {
         "id": 807,
-        "fromSrc": "images/licensed/shizuoka-kanzanji-ropeway-807.webp",
+        "fromSrc": "images/licensed/shizuoka-kanzanji-ropeway-807.webp?v=20261005-selected2",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0008-kanzanji-ropeway.webp"
       },
       {
         "id": 808,
-        "fromSrc": "images/official/shizuoka-shuzenji-808.webp",
+        "fromSrc": "images/official/shizuoka-shuzenji-808.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0009-shuzenji-onsen.webp"
       },
       {
         "id": 809,
-        "fromSrc": "images/official/shizuoka-sunpu-castle-809.webp",
+        "fromSrc": "images/official/shizuoka-sunpu-castle-809.webp?v=20261005-sunpu608",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0010-sunpu-castle-park.webp"
       },
       {
         "id": 810,
-        "fromSrc": "images/official/shizuoka-kunozan-810.webp",
+        "fromSrc": "images/official/shizuoka-kunozan-810.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0011-kunozan-toshogu.webp"
       },
       {
         "id": 811,
-        "fromSrc": "images/official/shizuoka-jogasaki-811.webp",
+        "fromSrc": "images/official/shizuoka-jogasaki-811.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0012-jogasaki-coast.webp"
       },
       {
         "id": 812,
-        "fromSrc": "images/official/shizuoka-perry-road-812.webp",
+        "fromSrc": "images/official/shizuoka-perry-road-812.webp?v=20261005-correct1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0013-perry-road.webp"
       },
       {
         "id": 813,
-        "fromSrc": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
+        "fromSrc": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp?v=20261005-selected2",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0014-hamamatsu-flower-park.webp"
       },
       {
         "id": 816,
-        "fromSrc": "images/official/shizuoka-joren-falls-816.webp",
+        "fromSrc": "images/official/shizuoka-joren-falls-816.webp?v=20261005-correct1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0015-joren-falls.webp"
       },
       {
         "id": 817,
-        "fromSrc": "images/licensed/shizuoka-moa-museum-817.webp",
+        "fromSrc": "images/licensed/shizuoka-moa-museum-817.webp?v=20261005-selected1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0016-moa-museum-of-art.webp"
       },
       {
@@ -204,17 +204,17 @@
       },
       {
         "id": 820,
-        "fromSrc": "images/licensed/shizuoka-kawazu-shokeidaru-820.webp",
+        "fromSrc": "images/licensed/shizuoka-kawazu-shokeidaru-820.webp?v=20261005-selected1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0018-kawazu-nanadaru.webp"
       },
       {
         "id": 821,
-        "fromSrc": "images/official/shizuoka-nirayama-821.webp",
+        "fromSrc": "images/official/shizuoka-nirayama-821.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0019-nirayama-reverberatory-furnace.webp"
       },
       {
         "id": 822,
-        "fromSrc": "images/official/shizuoka-mishima-skywalk-822.webp",
+        "fromSrc": "images/official/shizuoka-mishima-skywalk-822.webp?v=20261005-local3",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0020-mishima-skywalk.webp"
       },
       {
@@ -419,7 +419,7 @@
       },
       {
         "id": 1129,
-        "fromSrc": "images/commons/2cc3cd11e5d85632.webp",
+        "fromSrc": "images/commons/2cc3cd11e5d85632.webp?width=960",
         "toSrc": "images/regions/tokai/mie/places/24-P0021-hananoiwaya-shrine.webp"
       }
     ],
@@ -461,27 +461,27 @@
       },
       {
         "key": "시즈오카",
-        "fromSrc": "images/official/shizuoka-shiraito-800.webp",
+        "fromSrc": "images/official/shizuoka-shiraito-800.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp"
       },
       {
         "key": "후지산 기슭",
-        "fromSrc": "images/official/shizuoka-shiraito-800.webp",
+        "fromSrc": "images/official/shizuoka-shiraito-800.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp"
       },
       {
         "key": "시즈오카·시미즈",
-        "fromSrc": "images/official/shizuoka-kunozan-810.webp",
+        "fromSrc": "images/official/shizuoka-kunozan-810.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0011-kunozan-toshogu.webp"
       },
       {
         "key": "이즈",
-        "fromSrc": "images/official/shizuoka-jogasaki-811.webp",
+        "fromSrc": "images/official/shizuoka-jogasaki-811.webp?v=20261005-local1",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0012-jogasaki-coast.webp"
       },
       {
         "key": "하마마쓰·가케가와",
-        "fromSrc": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
+        "fromSrc": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp?v=20261005-selected2",
         "toSrc": "images/regions/tokai/shizuoka/places/22-P0014-hamamatsu-flower-park.webp"
       },
       {
