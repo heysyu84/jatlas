@@ -53,16 +53,16 @@ CANONICAL_SLUGS={
   "01-P0040": "lake-mashu",
   "01-P0041": "lake-kussharo",
   "01-P0042": "obihiro-banei-racecourse",
-  "01-F0001": "sapporo-miso-ramen",
-  "01-F0002": "jingisukan",
-  "01-F0003": "seafood-bowl",
+  "01-F0001": "letao-otaru-dessert",
+  "01-F0002": "butadon",
+  "01-F0003": "sapporo-miso-ramen",
   "01-F0004": "soup-curry",
-  "01-F0005": "butadon",
-  "01-F0006": "zangi",
+  "01-F0005": "shiretoko-eastern-hokkaido-seafood",
+  "01-F0006": "dairy-soft-serve",
   "01-F0007": "ika-somen",
-  "01-F0008": "dairy-soft-serve",
-  "01-F0009": "shiretoko-eastern-hokkaido-seafood",
-  "01-F0010": "letao-otaru-dessert"
+  "01-F0008": "zangi",
+  "01-F0009": "jingisukan",
+  "01-F0010": "seafood-bowl"
 }
 
 def extract_object(text, marker, start=0):
@@ -180,6 +180,8 @@ def main():
     sr_text=(DIST/'photo-source-registry.js').read_text().strip()
     source_registry=json.loads(sr_text.removeprefix('globalThis.JATLAS_PHOTO_SOURCE_REGISTRY=').rstrip(';'))
     manifest=json.loads((ROOT/'tools/official-photo-assets.json').read_text())
+    idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
+    food_id_by_name={(x['pref'],x['name']):x['newId'] for x in idmap['foods'] if x.get('pref') in PREFSET}
     manifest_by_output={x.get('output'):x for x in manifest.get('photos',[]) if x.get('output')}
 
     reg_path=DIST/'photo-registry-data.js'
@@ -253,7 +255,8 @@ def main():
                 asset=manifest_by_output.get(src)
                 if not asset:raise FileNotFoundError(f'Missing approved food photo without manifest recovery: {src}')
                 materialize_manifest_asset(asset); recovered.append(src)
-            cid=f'{code}-F{idx:04d}'
+            cid=food_id_by_name.get((pref,f['name']))
+            if not cid:raise KeyError(f'No permanent canonical food ID for {pref} {f["name"]}')
             slug=CANONICAL_SLUGS.get(cid,slugify(filename or pic.get("filename"),"food",idx))
             canonical=f'images/regions/hokkaido/{prefslug}/foods/{cid}-{slug}.webp'
             dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)

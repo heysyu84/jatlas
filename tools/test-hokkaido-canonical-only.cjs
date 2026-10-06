@@ -1,6 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),dist=path.join(root,'dist');
+const idmap=JSON.parse(fs.readFileSync(path.join(root,'audits/id-migration-map.json'),'utf8'));
 const text=fs.readFileSync(path.join(dist,'photo-registry-data.js'),'utf8').trim(),prefix='globalThis.JATLAS_PHOTO_REGISTRY_DATA=';
 if(!text.startsWith(prefix))throw Error('Bad photo registry format');
 const registry=JSON.parse(text.slice(prefix.length).replace(/;\s*$/,''));
@@ -9,6 +10,11 @@ const places=Object.values(registry.places||{}).filter(r=>prefs.has(r.pref));
 const foods=Object.values(registry.foods||{}).filter(r=>prefs.has(r.pref));
 if(places.length!==42)throw Error('Hokkaido place count mismatch: '+places.length);
 if(foods.length!==10)throw Error('Hokkaido food count mismatch: '+foods.length);
+const expectedFoods=idmap.foods.filter(x=>x.pref==='홋카이도');
+for(const row of expectedFoods){
+ const r=(registry.foods||{})[row.newId];
+ if(!r||r.pref!==row.pref||r.name!==row.name)throw Error('Hokkaido food permanent ID mismatch '+row.newId+' expected '+row.name+' got '+(r?.name||'MISSING'));
+}
 for(const r of [...places,...foods]){
  const file=path.join(dist,r.image); if(!fs.existsSync(file))throw Error('Missing canonical '+r.canonicalId+' '+r.image);
  const sha=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
