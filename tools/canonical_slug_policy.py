@@ -160,6 +160,15 @@ PLACE_OVERRIDES={
 '46-P0002':'sakurajima-lava-nagisa-park-footbath','46-P0004':'shiroyama-observatory','46-P0005':'tenmonkan','46-P0006':'ioworld-kagoshima-aquarium','46-P0007':'sand-bath-hall-saraku','46-P0008':'cape-nagasakibana','46-P0009':'lake-ikeda',
 '46-P0010':'chiran-samurai-residences','46-P0011':'chiran-peace-museum','46-P0013':'kirishima-onsen-market','46-P0016':'izumi-fumoto-samurai-residences','46-P0017':'izumi-crane-observation-center','46-P0020':'cape-sata','46-P0021':'kanoya-rose-garden',
 '46-P0023':'shiratani-unsuikyo','46-P0024':'jomon-sugi','46-P0025':'okono-taki','46-P0026':'yakusugi-land','46-P0028':'tomori-beach','46-P0029':'kinsakubaru-primeval-forest','46-P0030':'kuroshio-no-mori-mangrove-park','46-P0031':'honohoshi-beach',
+# Okinawa curated English slugs. Do not derive filenames from the Korean UI label.
+'47-P0001':'shurijo-castle-park','47-P0002':'shikinaen','47-P0003':'kokusai-dori','47-P0004':'makishi-public-market','47-P0005':'tsuboya-yachimun-street',
+'47-P0006':'sefa-utaki','47-P0007':'okinawa-world-gyokusendo','47-P0008':'okinawa-peace-memorial-park','47-P0009':'himeyuri-peace-museum','47-P0010':'mihama-american-village',
+'47-P0011':'zakimi-castle-ruins','47-P0012':'cape-zanpa','47-P0013':'nakagusuku-castle-ruins','47-P0014':'katsuren-castle-ruins','47-P0015':'kaichu-road',
+'47-P0016':'koza-gate-street-eisa-museum','47-P0017':'okinawa-churaumi-aquarium','47-P0018':'bise-fukugi-tree-road','47-P0019':'nakijin-castle-ruins','47-P0020':'kouri-bridge-kouri-island',
+'47-P0021':'cape-manzamo','47-P0022':'cape-hedo','47-P0023':'daisekirinzan','47-P0024':'hiji-falls','47-P0025':'furuzamami-beach',
+'47-P0026':'aharen-beach','47-P0027':'yonaha-maehama-beach','47-P0028':'irabu-bridge','47-P0029':'higashi-hennazaki','47-P0030':'sunayama-beach',
+'47-P0031':'toriike-pond','47-P0032':'kabira-bay','47-P0033':'tamatorizaki-observatory','47-P0034':'taketomi-traditional-village','47-P0035':'pinaisara-falls',
+'47-P0036':'yubu-island','47-P0037':'hateruma-nishihama','47-P0038':'euglena-mall-ishigaki-public-market',
 }
 
 FOOD_SLUGS={
@@ -192,6 +201,8 @@ FOOD_SLUGS={
 '44-F0001':'nakatsu-karaage','44-F0002':'ryukyu','44-F0003':'beppu-reimen','44-F0004':'bungo-beef','44-F0005':'seki-aji-seki-saba','44-F0006':'yaseuma','44-F0007':'jigoku-mushi','44-F0008':'toriten','44-F0009':'hita-yakisoba',
 '45-F0001':'nikumaki-onigiri','45-F0002':'miyazaki-karamen','45-F0003':'miyazaki-mango','45-F0004':'miyazaki-beef','45-F0005':'obiten','45-F0006':'cheese-manju','45-F0007':'chicken-nanban','45-F0008':'hyuganatsu','45-F0009':'hiyajiru',
 '46-F0001':'kagoshima-ramen','46-F0002':'kagoshima-kurobuta','46-F0003':'karukan','46-F0004':'keihan','46-F0005':'makurazaki-katsuo','46-F0006':'satsuma-age','46-F0007':'shirokuma','46-F0008':'yakushima-tobiuo','46-F0009':'chiran-cha','46-F0010':'kibinago-sashimi',
+'47-F0001':'goya-champuru','47-F0002':'rafute','47-F0003':'miyako-soba','47-F0004':'sata-andagi','47-F0005':'yaeyama-soba',
+'47-F0006':'okinawa-soba','47-F0007':'umi-budo','47-F0008':'ishigaki-beef','47-F0009':'jimami-tofu','47-F0010':'taco-rice',
 }
 
 BRAND_REPLACEMENTS={
