@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "baseCommit": "59baebb89aecd4f4271b1c418bdf3c7959fc852f",
+  "baseCommit": "c00a1b626d0ad68d790187bdb6f66025927bb69b",
   "reason": "Migrate Tohoku to canonical IDs/paths and recover previously approved missing photo assets without changing place content.",
   "allow": {
     "placeAdds": [],

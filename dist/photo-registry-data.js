@@ -19,7 +19,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "미에"
     ]
   },
-  "generatedFrom": "59baebb89aecd4f4271b1c418bdf3c7959fc852f",
+  "generatedFrom": "c00a1b626d0ad68d790187bdb6f66025927bb69b",
   "policy": {
     "canonicalId": "official prefecture code + permanent type serial",
     "replacement": "keep canonical path; replace bytes/source atomically and bump revision",

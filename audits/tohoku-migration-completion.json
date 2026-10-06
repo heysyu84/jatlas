@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "region": "도호쿠",
   "status": "COMPLETE_CANONICAL",
-  "sourceCommit": "59baebb89aecd4f4271b1c418bdf3c7959fc852f",
+  "sourceCommit": "c00a1b626d0ad68d790187bdb6f66025927bb69b",
   "prefectures": {
     "아오모리": {
       "places": 31,
