@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "region": "긴키",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 134,
+  "cidTargets": 107,
+  "coordinateOnlyTargets": 27,
+  "preservedManualTargets": 0,
+  "identityReviewTargets": 0,
+  "sourceCoordinateTargets": 13,
+  "auditEntityTargets": 107,
+  "auditCameraTargets": 14,
+  "riskFlags": []
+}
