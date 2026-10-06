@@ -11,9 +11,10 @@ REGIONS={
  '홋카이도':['홋카이도'],
  '북간토':['이바라키','도치기','군마'],
  '고신에쓰':['니가타','야마나시','나가노'],
+ '호쿠리쿠':['도야마','이시카와','후쿠이'],
  '수도권':['사이타마','지바','도쿄','가나가와'],
 }
-EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'수도권':132}
+EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'호쿠리쿠':71,'수도권':132}
 FORCE_COORDINATE={910}
 
 runtime=json.loads((AUD/'runtime-inventory.json').read_text())
@@ -96,6 +97,6 @@ for i,pid in enumerate(ids):
 lines.append('});')
 canon_path.write_text('\n'.join(lines)+'\n')
 for region,report in region_reports.items():
- slug={'도카이':'tokai','도호쿠':'tohoku','홋카이도':'hokkaido','북간토':'north-kanto','고신에쓰':'koshinetsu','수도권':'greater-tokyo'}[region]
+ slug={'도카이':'tokai','도호쿠':'tohoku','홋카이도':'hokkaido','북간토':'north-kanto','고신에쓰':'koshinetsu','호쿠리쿠':'hokuriku','수도권':'greater-tokyo'}[region]
  (AUD/f'{slug}-map-canonical-review.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'canonicalTargets':len(out),'regions':region_reports},ensure_ascii=False))

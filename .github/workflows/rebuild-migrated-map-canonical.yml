@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/rebuild-migrated-map-canonical.yml'
       - 'tools/build-migrated-map-canonical.py'
+      - 'dist/photo-registry-data.js'
 
 permissions:
   contents: write
