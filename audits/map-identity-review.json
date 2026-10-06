@@ -1,4 +1,16 @@
 {
+  "117": {
+    "status": "official-name-address-reviewed",
+    "name": "오쿠타마호",
+    "officialSource": "https://www.gotokyo.org/jp/spot/53/index.html",
+    "resolvedName": "오쿠타마 호수",
+    "resolvedAddress": "東京都奥多摩町原",
+    "lat": 35.7798056,
+    "lon": 139.0375259,
+    "cid": "298821568719778711",
+    "evidence": "GO TOKYO identifies Lake Okutama in Hara, Okutama-machi. The named map entity is Lake Okutama itself; the prior stored point was another representative point within the same large reservoir.",
+    "reviewedAt": "2026-10-07"
+  },
   "318": {
     "status": "official-destination-reviewed",
     "name": "사루하시",
