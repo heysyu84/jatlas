@@ -108,7 +108,10 @@ jobs:
           from pathlib import Path
           report=json.loads(Path('audits/photo-cleanup-report.json').read_text())
           for path in report['removedFiles']:
-              subprocess.run(['git','add','-u','--','dist/'+path],check=True)
+              target='dist/'+path
+              tracked=subprocess.run(['git','ls-files','--error-unmatch','--',target],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
+              if tracked:
+                  subprocess.run(['git','add','-u','--',target],check=True)
           PY
           if git diff --cached --quiet; then
             echo "No cleanup changes"
