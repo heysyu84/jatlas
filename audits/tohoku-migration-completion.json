@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "region": "도호쿠",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "52c61e72590bc7acc9fc605312c3133f26f07ca8",
+  "prefectures": {
+    "아오모리": {
+      "places": 31,
+      "foods": 9,
+      "canonicalFiles": 40
+    },
+    "이와테": {
+      "places": 33,
+      "foods": 9,
+      "canonicalFiles": 42
+    },
+    "미야기": {
+      "places": 24,
+      "foods": 8,
+      "canonicalFiles": 32
+    },
+    "아키타": {
+      "places": 24,
+      "foods": 8,
+      "canonicalFiles": 32
+    },
+    "야마가타": {
+      "places": 24,
+      "foods": 8,
+      "canonicalFiles": 32
+    },
+    "후쿠시마": {
+      "places": 24,
+      "foods": 8,
+      "canonicalFiles": 32
+    }
+  },
+  "totals": {
+    "places": 160,
+    "foods": 50,
+    "canonicalRecords": 210,
+    "canonicalFiles": 210,
+    "missingCanonicalFiles": 0
+  },
+  "recoveredLegacyAssets": [
+    "images/licensed/akita-aoyagi-house-4408.webp",
+    "images/licensed/akita-inu-kaikan-4417.webp",
+    "images/licensed/akita-oyasukyo-steam-4414.webp",
+    "images/licensed/fukushima-jododaira-5201.webp",
+    "images/licensed/fukushima-sazaedo-5205.webp",
+    "images/licensed/fukushima-shioyasaki-5219.webp",
+    "images/licensed/iwate-geibikei-4214.webp",
+    "images/licensed/iwate-hoonji-rakan-4203.webp",
+    "images/licensed/iwate-kappabuchi-4221.webp",
+    "images/licensed/iwate-ryusendo-lake-4224.webp",
+    "images/licensed/yamagata-zao-ice-monsters-4504.webp",
+    "images/official/aomori-hirosaki-apple-4113.webp",
+    "images/official/aomori-sannai-4103.webp",
+    "images/official/yamagata-imoni-154.webp"
+  ],
+  "recoveredLegacyAssetCount": 14,
+  "guarantees": [
+    "Canonical IDs and paths are authoritative for Tohoku.",
+    "Previously approved missing assets are recovered from their pinned source manifest before canonical copy.",
+    "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
+    "No legacy image file is deleted during regional migration."
+  ]
+}

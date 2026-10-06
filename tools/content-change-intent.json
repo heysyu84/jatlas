@@ -1,13 +1,1060 @@
 {
   "version": 1,
-  "baseCommit": "73e9441eda610867e1d94af051909476700b051e",
-  "reason": "No content change. Align the deployment guard baseline after the successful Tokai canonical migration, hardening, and audit refresh.",
+  "baseCommit": "52c61e72590bc7acc9fc605312c3133f26f07ca8",
+  "reason": "Migrate Tohoku to canonical IDs/paths and recover previously approved missing photo assets without changing place content.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
-    "photoChanges": [],
-    "heroChanges": [],
+    "photoChanges": [
+      {
+        "id": 4100,
+        "fromSrc": "images/commons/12b883dcf41c52e3.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0001-nebuta-museum-wa-rasse-aomori.webp"
+      },
+      {
+        "id": 4101,
+        "fromSrc": "images/commons/9c004fa8dd35f9c1.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0002-a-factory-aomori.webp"
+      },
+      {
+        "id": 4102,
+        "fromSrc": "images/commons/e773c950f5fbd227.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0003-aspam-20250112.webp"
+      },
+      {
+        "id": 4103,
+        "fromSrc": "images/official/aomori-sannai-4103.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0004-sannai-maruyama-site-aomori.webp"
+      },
+      {
+        "id": 4104,
+        "fromSrc": "images/commons/0d20ed0f92a9029b.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0005-aomori-museum-of-art.webp"
+      },
+      {
+        "id": 4105,
+        "fromSrc": "images/commons/8bd8c6c5719b1443.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0006-asamushi-onsen-aomori.webp"
+      },
+      {
+        "id": 4106,
+        "fromSrc": "images/commons/5672e8276400821e.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0007-hakkoda-ropeway-aomori.webp"
+      },
+      {
+        "id": 4107,
+        "fromSrc": "images/commons/7af1a3a6bd6185e8.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0008-sukayu-onsen-aomori.webp"
+      },
+      {
+        "id": 4108,
+        "fromSrc": "images/commons/5cdaa150b4851c11.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0009-jogakura-bridge-aomori.webp"
+      },
+      {
+        "id": 4109,
+        "fromSrc": "images/commons/329b3a2206eb2561.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0010-oirase-stream-aomori.webp"
+      },
+      {
+        "id": 4110,
+        "fromSrc": "images/commons/051990fbac380bf5.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0011-lake-towada-towada7032.webp"
+      },
+      {
+        "id": 4111,
+        "fromSrc": "images/commons/3c3343f0a0b69639.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0012-hirosaki-castle-cherry-blossoms.webp"
+      },
+      {
+        "id": 4112,
+        "fromSrc": "images/commons/b1d872f45379b36f.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0013-fujita-memorial-garden-hirosaki.webp"
+      },
+      {
+        "id": 4113,
+        "fromSrc": "images/official/aomori-hirosaki-apple-4113.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0014-panoramio.webp"
+      },
+      {
+        "id": 4114,
+        "fromSrc": "images/commons/1eb4ffada8794cc1.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0015-iwakiyama-shrine-aomori.webp"
+      },
+      {
+        "id": 4115,
+        "fromSrc": "images/commons/dcdab77cb0b2bf58.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0016-tsuruno-maihashi.webp"
+      },
+      {
+        "id": 4116,
+        "fromSrc": "images/commons/ac6481ae0b32c542.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0017-tachineputa-hall.webp"
+      },
+      {
+        "id": 4117,
+        "fromSrc": "images/commons/752f16de3f543a76.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0018-rail-tracks-and-cherry-trees-in-ashino-park.webp"
+      },
+      {
+        "id": 4118,
+        "fromSrc": "images/commons/c902b84556d54f9e.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0019-takayama-inari-shrine-aomori.webp"
+      },
+      {
+        "id": 4119,
+        "fromSrc": "images/commons/e5b140ced9cf2780.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0020-inakadate-rice-paddy-art.webp"
+      },
+      {
+        "id": 4120,
+        "fromSrc": "images/commons/284f0556f47a3c85.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0021-aoike-juniko-aomori.webp"
+      },
+      {
+        "id": 4121,
+        "fromSrc": "images/commons/85c9858fde9eb256.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0022-shirakami-sanchi.webp"
+      },
+      {
+        "id": 4122,
+        "fromSrc": "images/commons/5507993ff0647f06.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0023-senjojiki-coast-aomori.webp"
+      },
+      {
+        "id": 4123,
+        "fromSrc": "images/commons/bf5dc1886a7a9f0c.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0024-place-0024.webp"
+      },
+      {
+        "id": 4124,
+        "fromSrc": "images/commons/5241cc7c5eedc830.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0025-kabushima-shrine-aomori.webp"
+      },
+      {
+        "id": 4125,
+        "fromSrc": "images/commons/7800bf2f2ed9d684.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0026-tanesashi-coast-nakasuka.webp"
+      },
+      {
+        "id": 4126,
+        "fromSrc": "images/commons/5775b3ebb457d350.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0027-miroku-yokocho-hachinohe.webp"
+      },
+      {
+        "id": 4127,
+        "fromSrc": "images/commons/2202ebae1d8bd702.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0028-osorezan-aomori.webp"
+      },
+      {
+        "id": 4128,
+        "fromSrc": "images/commons/06bb2c4e9723a7a2.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0029-cape-oma-aomori.webp"
+      },
+      {
+        "id": 4129,
+        "fromSrc": "images/licensed/approved/aomori-hotokegaura-4129.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0030-hotokegaura-aomori.webp"
+      },
+      {
+        "id": 4130,
+        "fromSrc": "images/commons/306fce328bab94d2.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0031-towada-art-center-aomori.webp"
+      },
+      {
+        "id": 4200,
+        "fromSrc": "images/commons/5e112c686954933b.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0001-morioka-castle-iwate.webp"
+      },
+      {
+        "id": 4201,
+        "fromSrc": "images/commons/ab5c1195d05df572.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0002-iwate-bank-red-brick-building.webp"
+      },
+      {
+        "id": 4202,
+        "fromSrc": "images/commons/aae761015d515e80.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0003-morioka-history-and-culture-museum.webp"
+      },
+      {
+        "id": 4203,
+        "fromSrc": "images/licensed/iwate-hoonji-rakan-4203.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0004-hoonji-temple-morioka.webp"
+      },
+      {
+        "id": 4204,
+        "fromSrc": "images/commons/0626ed92c280e1d7.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0005-morioka-handi-works-square.webp"
+      },
+      {
+        "id": 4205,
+        "fromSrc": "images/commons/e919e420308c0039.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0006-tsunagi-onsen-iwate.webp"
+      },
+      {
+        "id": 4206,
+        "fromSrc": "images/commons/b4a9667f0da038ae.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0007-koiwai-farm-iwate.webp"
+      },
+      {
+        "id": 4207,
+        "fromSrc": "images/commons/ca403ebb63198e65.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0008-hachimantai-aspite-line.webp"
+      },
+      {
+        "id": 4208,
+        "fromSrc": "images/commons/fe11955616782e49.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0009-hachimantai-hachiman-numa.webp"
+      },
+      {
+        "id": 4209,
+        "fromSrc": "images/commons/e581d25202a62da9.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0010-hachimantai-dragon-eye.webp"
+      },
+      {
+        "id": 4210,
+        "fromSrc": "images/commons/43c54f45530e807a.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0011-matsukawa-onsen-iwate.webp"
+      },
+      {
+        "id": 4211,
+        "fromSrc": "images/commons/676b9a5566fa4126.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0012-chusonji-konjikido-iwate.webp"
+      },
+      {
+        "id": 4212,
+        "fromSrc": "images/commons/efaf60ead2cfd4b1.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0013-motsuji-temple-iwate.webp"
+      },
+      {
+        "id": 4213,
+        "fromSrc": "images/commons/7ee5d7835e661e89.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0014-takkoku-no-iwaya-bishamondo.webp"
+      },
+      {
+        "id": 4214,
+        "fromSrc": "images/licensed/iwate-geibikei-4214.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0015-geibikei-ichinoseki.webp"
+      },
+      {
+        "id": 4215,
+        "fromSrc": "images/commons/9037b96c02ef653c.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0016-230727-genbikei-ichinoseki-iwate-pref-japan01s3.webp"
+      },
+      {
+        "id": 4216,
+        "fromSrc": "images/commons/1880491512dea2fc.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0017-esashi-fujiwara-no-sato.webp"
+      },
+      {
+        "id": 4217,
+        "fromSrc": "images/licensed/miyazawa-kenji-museum-yoshihide-14909320636.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0018-place-0018.webp"
+      },
+      {
+        "id": 4218,
+        "fromSrc": "images/commons/2b68133bbee4f199.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0019-miyazawa-kenji-fairy-tale-village.webp"
+      },
+      {
+        "id": 4219,
+        "fromSrc": "images/commons/ec393ab555c4e840.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0020-hanamaki-onsen-iwate.webp"
+      },
+      {
+        "id": 4220,
+        "fromSrc": "images/commons/20ca7fa84f3313ec.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0021-tono-furusato-village.webp"
+      },
+      {
+        "id": 4221,
+        "fromSrc": "images/licensed/iwate-kappabuchi-4221.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0022-kappa-buchi04s3200.webp"
+      },
+      {
+        "id": 4222,
+        "fromSrc": "images/commons/ff96073e5d41d19d.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0023-denshoen-tono.webp"
+      },
+      {
+        "id": 4223,
+        "fromSrc": "images/commons/ec80da0dea77055d.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0024-jodogahama-iwate.webp"
+      },
+      {
+        "id": 4224,
+        "fromSrc": "images/licensed/iwate-ryusendo-lake-4224.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0025-ryusendo-cave-iwate.webp"
+      },
+      {
+        "id": 4225,
+        "fromSrc": "images/commons/be0a8232fd3b2839.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0026-place-0026.webp"
+      },
+      {
+        "id": 4226,
+        "fromSrc": "images/commons/74c5c89467fa1d8f.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0027-unosu-01.webp"
+      },
+      {
+        "id": 4227,
+        "fromSrc": "images/commons/ff1d006ebea3d72f.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0028-kuji-amber-museum.webp"
+      },
+      {
+        "id": 4228,
+        "fromSrc": "images/commons/8fab4c397d9952dd.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0029-hashino-iron-mine-3.webp"
+      },
+      {
+        "id": 4229,
+        "fromSrc": "images/commons/ca5fa28f41dbb7a5.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0030-iwate-tsunami-memorial.webp"
+      },
+      {
+        "id": 4230,
+        "fromSrc": "images/commons/ffe6e0a2659a4595.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0031-miracle-pine-rikuzentakata.webp"
+      },
+      {
+        "id": 4231,
+        "fromSrc": "images/commons/88c91a66786b11f7.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0032-goisi10.webp"
+      },
+      {
+        "id": 4232,
+        "fromSrc": "images/commons/25b501dec5e19029.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0033-kitakami-tenshochi.webp"
+      },
+      {
+        "id": 4300,
+        "fromSrc": "images/commons/616fe234d051dcd0.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0001-sendai-castle02s3200.webp"
+      },
+      {
+        "id": 4301,
+        "fromSrc": "images/commons/850e5f9287ec0c76.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0002-zuiho-den06s3200.webp"
+      },
+      {
+        "id": 4302,
+        "fromSrc": "images/commons/ddd521ef4c4a14f4.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0003-osaki-hachiman-gu-nagatoko.webp"
+      },
+      {
+        "id": 4303,
+        "fromSrc": "images/commons/a01b5beb961a15df.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0004-sendai-city-bus-jozenjidori.webp"
+      },
+      {
+        "id": 4304,
+        "fromSrc": "images/commons/5c0d0338f8b103a2.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0005-exterior-view-of-sendai-mediatheque-from-jozenji-street-20220910c.webp"
+      },
+      {
+        "id": 4305,
+        "fromSrc": "images/commons/f80780f7eb2919a5.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0006-sendai-asaichi-02.webp"
+      },
+      {
+        "id": 4306,
+        "fromSrc": "images/commons/b0f557cdc4b74931.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0007-matsushima.webp"
+      },
+      {
+        "id": 4307,
+        "fromSrc": "images/commons/782df9f8808c3ac9.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0008-zuiganji.webp"
+      },
+      {
+        "id": 4308,
+        "fromSrc": "images/commons/e9d5e9328fda6f8d.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0009-211030-entsu-in-matsushima-miyagi-pref-japan13s3.webp"
+      },
+      {
+        "id": 4309,
+        "fromSrc": "images/commons/2768d1cd0e6e9e90.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0010-matsushima-godaido-3.webp"
+      },
+      {
+        "id": 4310,
+        "fromSrc": "images/commons/8196a0ec6e40d6ab.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0011-shiogama-shrine-romon.webp"
+      },
+      {
+        "id": 4311,
+        "fromSrc": "images/commons/259be105680ef7eb.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0012-sanjuanbautista.webp"
+      },
+      {
+        "id": 4312,
+        "fromSrc": "images/commons/031f81c45a9ca535.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0013-mangattan-museum-2025.webp"
+      },
+      {
+        "id": 4313,
+        "fromSrc": "images/commons/bdf1f658e8166a2b.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0014-seapal-pier-onagawa.webp"
+      },
+      {
+        "id": 4314,
+        "fromSrc": "images/commons/bc1adf61466f3944.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0015-koganeyama-jinja-haiden.webp"
+      },
+      {
+        "id": 4315,
+        "fromSrc": "images/commons/92fca8457e0d403c.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0016-okama-lake-zao.webp"
+      },
+      {
+        "id": 4316,
+        "fromSrc": "images/commons/cc4fead25996075c.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0017-zao-fox-51901884935.webp"
+      },
+      {
+        "id": 4317,
+        "fromSrc": "images/commons/9d9c5d7c1d29ccbf.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0018-shiroishi-castle.webp"
+      },
+      {
+        "id": 4318,
+        "fromSrc": "images/commons/7b546ef08cc6ee50.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0019-hotspring-kamasaki-miyagi-01.webp"
+      },
+      {
+        "id": 4319,
+        "fromSrc": "images/commons/c78c94d7e52dc5e6.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0020-narukotakinoyu.webp"
+      },
+      {
+        "id": 4320,
+        "fromSrc": "images/commons/5929391a3ad37b10.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0021-naruko-gorge-naruko6266.webp"
+      },
+      {
+        "id": 4321,
+        "fromSrc": "images/commons/334168172b9f7105.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0022-japan-kokeshi-museum-exterior.webp"
+      },
+      {
+        "id": 4322,
+        "fromSrc": "images/commons/e81bc0e164ad6fda.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0023-kesennuma-uminoiti.webp"
+      },
+      {
+        "id": 4323,
+        "fromSrc": "images/commons/7fe1f193b633a455.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0024-kesennuma-oshima-seen-from-karakuwa-peninsula-5-nov-2009-a.webp"
+      },
+      {
+        "id": 4400,
+        "fromSrc": "images/commons/208b56db22614ac0.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0001-senshu-park-akita.webp"
+      },
+      {
+        "id": 4401,
+        "fromSrc": "images/commons/7cc84935359b6614.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0002-akita-museum-of-art.webp"
+      },
+      {
+        "id": 4402,
+        "fromSrc": "images/commons/a96581b298afe91a.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0003-akita-city-folk-performing-arts-heritage-center-20210802a.webp"
+      },
+      {
+        "id": 4403,
+        "fromSrc": "images/commons/89f1d1d8c7137d35.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0004-namahage-museum.webp"
+      },
+      {
+        "id": 4404,
+        "fromSrc": "images/commons/42d2f5230773d140.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0005-thatched-roof-with-snow-in-oga-city-akita-prefecture-march-2017.webp"
+      },
+      {
+        "id": 4405,
+        "fromSrc": "images/commons/9e1cc2e1b127bace.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0006-kanpuzan-2.webp"
+      },
+      {
+        "id": 4406,
+        "fromSrc": "images/commons/dd2995cd73df9843.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0007-nyudozaki.webp"
+      },
+      {
+        "id": 4407,
+        "fromSrc": "images/commons/61619afd1f71445b.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0008-old-samurai-house-street-panoramio.webp"
+      },
+      {
+        "id": 4408,
+        "fromSrc": "images/licensed/akita-aoyagi-house-4408.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0009-aoyagi-house-kakunodate.webp"
+      },
+      {
+        "id": 4409,
+        "fromSrc": "images/commons/71461aea6f4962bd.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0010-view-of-mt-akita-komagatake-from-lake-tazawa.webp"
+      },
+      {
+        "id": 4410,
+        "fromSrc": "images/commons/2b1f48f7cfaf3e94.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0011-nyuto-onsen-tsuru-no-yu.webp"
+      },
+      {
+        "id": 4411,
+        "fromSrc": "images/commons/bed2b47f1a2874ff.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0012-dakigaeri-gorge.webp"
+      },
+      {
+        "id": 4412,
+        "fromSrc": "images/commons/a7f909126c8a2d96.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0013-yokote-castle.webp"
+      },
+      {
+        "id": 4413,
+        "fromSrc": "images/commons/03b0eea0e4cdcc7f.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0014-akita-furusato-village.webp"
+      },
+      {
+        "id": 4414,
+        "fromSrc": "images/licensed/akita-oyasukyo-steam-4414.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0015-koyasukyou-2008.webp"
+      },
+      {
+        "id": 4415,
+        "fromSrc": "images/commons/34c88c0083efb3ec.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0016-kawarage-jigoku.webp"
+      },
+      {
+        "id": 4416,
+        "fromSrc": "images/commons/18c707b496252471.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0017-kawarage-oyutaki.webp"
+      },
+      {
+        "id": 4417,
+        "fromSrc": "images/licensed/akita-inu-kaikan-4417.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0018-akita-inu-kaikan-110827.webp"
+      },
+      {
+        "id": 4418,
+        "fromSrc": "images/commons/e6bc580bdef3b570.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0019-akita-dog-visitor-center-20200613.webp"
+      },
+      {
+        "id": 4419,
+        "fromSrc": "images/commons/6064ced5dbe335bc.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0020-kosaka-mine-office-20180916a.webp"
+      },
+      {
+        "id": 4420,
+        "fromSrc": "images/licensed/approved/akita-korakukan-4420.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0021-korakukan-kosaka.webp"
+      },
+      {
+        "id": 4421,
+        "fromSrc": "images/commons/eaa14c4aecbf2f2a.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0022-sirakami-santi.webp"
+      },
+      {
+        "id": 4422,
+        "fromSrc": "images/commons/e31bb423de484caf.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0023-exterior-of-the-kaneyu-20200607b.webp"
+      },
+      {
+        "id": 4423,
+        "fromSrc": "images/commons/5183d4755485fe1c.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0024-hatahata-kan-akita.webp"
+      },
+      {
+        "id": 4500,
+        "fromSrc": "images/commons/5c10b75cabe1ebea.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0001-view-of-yamadera-from-risshaku-ji.webp"
+      },
+      {
+        "id": 4501,
+        "fromSrc": "images/commons/4e61ad3a37c80805.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0002-kajo-park-yamagata.webp"
+      },
+      {
+        "id": 4502,
+        "fromSrc": "images/commons/fd95043a478dccfe.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0003-yamagata-prefectural-museum.webp"
+      },
+      {
+        "id": 4503,
+        "fromSrc": "images/commons/90c8c6307053424f.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0004-zao-onsen.webp"
+      },
+      {
+        "id": 4504,
+        "fromSrc": "images/licensed/yamagata-zao-ice-monsters-4504.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0005-zao-snow-monsters.webp"
+      },
+      {
+        "id": 4505,
+        "fromSrc": "images/commons/006a874e54653baa.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0006-kaminoyama-castle.webp"
+      },
+      {
+        "id": 4506,
+        "fromSrc": "images/commons/f1001fce6b022758.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0007-ginzan-onsen.webp"
+      },
+      {
+        "id": 4507,
+        "fromSrc": "images/commons/d17c78e97632938a.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0008-shirogane-falls-ginzan.webp"
+      },
+      {
+        "id": 4508,
+        "fromSrc": "images/commons/96bd5b9c2038e215.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0009-uesugi-shrine.webp"
+      },
+      {
+        "id": 4509,
+        "fromSrc": "images/commons/dff8080a5d3aa8b3.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0010-yonezawa-uesugi-museum.webp"
+      },
+      {
+        "id": 4510,
+        "fromSrc": "images/commons/4275e474fc8cd9e6.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp"
+      },
+      {
+        "id": 4511,
+        "fromSrc": "images/commons/abcf50102dd78a24.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0012-tengendai-ski.webp"
+      },
+      {
+        "id": 4512,
+        "fromSrc": "images/commons/53a14cdcb8d6a506.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0013-haguro-five-story-pagoda.webp"
+      },
+      {
+        "id": 4513,
+        "fromSrc": "images/commons/a6c2ab57d35a297f.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0014-sanjin-gassaiden-dewa-sanzan-shrine.webp"
+      },
+      {
+        "id": 4514,
+        "fromSrc": "images/commons/af87dd12082e93e6.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0015-yudonosan-shrine.webp"
+      },
+      {
+        "id": 4515,
+        "fromSrc": "images/commons/0c9b795c8d598e28.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0016-kamo-aquarium-jellyfish.webp"
+      },
+      {
+        "id": 4516,
+        "fromSrc": "images/commons/a6f27df9cdbe67f9.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0017-chidokan-tsuruoka.webp"
+      },
+      {
+        "id": 4517,
+        "fromSrc": "images/commons/ac3eaa9131b37092.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0018-sankyo-warehouse-in-sakata-yamagata-9-august-2009-01.webp"
+      },
+      {
+        "id": 4518,
+        "fromSrc": "images/commons/9d177bca1449b038.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0019-homma-museum-of-art.webp"
+      },
+      {
+        "id": 4519,
+        "fromSrc": "images/commons/60fd7435e77bd20c.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0020-former-the-honma-residence-001.webp"
+      },
+      {
+        "id": 4520,
+        "fromSrc": "images/commons/a75a43314c606d10.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0021-chokaisan-omonoimi-shrine-fukura.webp"
+      },
+      {
+        "id": 4521,
+        "fromSrc": "images/commons/459402136af6211c.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0022-maruike-sama.webp"
+      },
+      {
+        "id": 4522,
+        "fromSrc": "images/commons/747203692dd89e1b.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0023-shinjo-furusato-history-center.webp"
+      },
+      {
+        "id": 4523,
+        "fromSrc": "images/commons/8adb493910af9319.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0024-mogami-river-basho-line.webp"
+      },
+      {
+        "id": 5200,
+        "fromSrc": "images/commons/d1ba81ea524170e5.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0001-hanamiyama-park-fukushima.webp"
+      },
+      {
+        "id": 5201,
+        "fromSrc": "images/licensed/fukushima-jododaira-5201.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0002-bandai-azuma-skyline-jododaira.webp"
+      },
+      {
+        "id": 5202,
+        "fromSrc": "images/commons/6a7ae2ed4731b079.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0003-takayu-onsen-fukushima.webp"
+      },
+      {
+        "id": 5203,
+        "fromSrc": "images/commons/ebd36672245c3e6b.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0004-nihonmatsu-castle-ruins.webp"
+      },
+      {
+        "id": 5204,
+        "fromSrc": "images/commons/770a697d4da47a78.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0005-tsuruga-castle-aizuwakamatsu.webp"
+      },
+      {
+        "id": 5205,
+        "fromSrc": "images/licensed/fukushima-sazaedo-5205.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0006-sazaedo-aizuwakamatsu.webp"
+      },
+      {
+        "id": 5206,
+        "fromSrc": "images/commons/e2a40e2e46149827.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0007-oyakuen-aizuwakamatsu.webp"
+      },
+      {
+        "id": 5207,
+        "fromSrc": "images/commons/5bae5cfce03a82b1.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0008-mukaitaki-7477750568.webp"
+      },
+      {
+        "id": 5208,
+        "fromSrc": "images/commons/3fd5a63ec15a8437.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0009-ouchi-juku-fukushima.webp"
+      },
+      {
+        "id": 5209,
+        "fromSrc": "images/commons/9f54a705ecdd2b86.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0010-to-no-hetsuri-fukushima-01.webp"
+      },
+      {
+        "id": 5210,
+        "fromSrc": "images/commons/7bf2467fae7e6160.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0011-find47-fukushima-autumn-leaves-train-no-1-tadami-river-bridge-mishima-to.webp"
+      },
+      {
+        "id": 5211,
+        "fromSrc": "images/commons/bbd99ae88fd75847.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0012-goshikinuma-fukushima.webp"
+      },
+      {
+        "id": 5212,
+        "fromSrc": "images/commons/af4d8cba0b0f11c9.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0013-lake-inawashiro-mount-bandai.webp"
+      },
+      {
+        "id": 5213,
+        "fromSrc": "images/commons/7843fd154949a300.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0014-hideyo-noguchi-memorial-hall.webp"
+      },
+      {
+        "id": 5214,
+        "fromSrc": "images/commons/cb1ae51b1ecfe825.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0015-morohashi-museum-of-modern-art.webp"
+      },
+      {
+        "id": 5215,
+        "fromSrc": "images/commons/a0712aa669a57ee9.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0016-miharu-takizakura.webp"
+      },
+      {
+        "id": 5216,
+        "fromSrc": "images/commons/41bc44fefb3d6cc1.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0017-abukuma-cave-fukushima.webp"
+      },
+      {
+        "id": 5217,
+        "fromSrc": "images/commons/7f222a79c152ca49.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0018-aquamarine-fukushima.webp"
+      },
+      {
+        "id": 5218,
+        "fromSrc": "images/commons/256965087f51d524.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0019-spa-resort-hawaiians.webp"
+      },
+      {
+        "id": 5219,
+        "fromSrc": "images/licensed/fukushima-shioyasaki-5219.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0020-shioyasaki-lighthouse.webp"
+      },
+      {
+        "id": 5220,
+        "fromSrc": "images/commons/0e0200687bdbbce3.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0021-soma-nakamura-shrine.webp"
+      },
+      {
+        "id": 5221,
+        "fromSrc": "images/licensed/approved/fukushima-matsukawaura-5221.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0022-matsukawaura-fukushima.webp"
+      },
+      {
+        "id": 5222,
+        "fromSrc": "images/commons/06b8f05787d45676.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0023-the-great-east-japan-earthquake-and-nuclear-disaster-memorial-museum.webp"
+      },
+      {
+        "id": 5223,
+        "fromSrc": "images/commons/7f8995ca86e18840.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0024-ukedo-elementary-school-namie-fukushima-01.webp"
+      }
+    ],
+    "heroChanges": [
+      {
+        "key": "게센누마",
+        "fromSrc": "images/commons/e81bc0e164ad6fda.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0023-kesennuma-uminoiti.webp"
+      },
+      {
+        "key": "고리야마·아부쿠마",
+        "fromSrc": "images/commons/a0712aa669a57ee9.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0016-miharu-takizakura.webp"
+      },
+      {
+        "key": "긴잔·오바나자와",
+        "fromSrc": "images/commons/f1001fce6b022758.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0007-ginzan-onsen.webp"
+      },
+      {
+        "key": "나루코·오사키",
+        "fromSrc": "images/commons/c78c94d7e52dc5e6.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0020-narukotakinoyu.webp"
+      },
+      {
+        "key": "다자와코·가쿠노다테",
+        "fromSrc": "images/commons/61619afd1f71445b.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0008-old-samurai-house-street-panoramio.webp"
+      },
+      {
+        "key": "도노",
+        "fromSrc": "images/commons/20ca7fa84f3313ec.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0021-tono-furusato-village.webp"
+      },
+      {
+        "key": "도와다·오이라세",
+        "fromSrc": "images/commons/329b3a2206eb2561.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0010-oirase-stream-aomori.webp"
+      },
+      {
+        "key": "마쓰시마·시오가마",
+        "fromSrc": "images/commons/b0f557cdc4b74931.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0007-matsushima.webp"
+      },
+      {
+        "key": "모가미",
+        "fromSrc": "images/commons/747203692dd89e1b.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0023-shinjo-furusato-history-center.webp"
+      },
+      {
+        "key": "모리오카",
+        "fromSrc": "images/commons/5e112c686954933b.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0001-morioka-castle-iwate.webp"
+      },
+      {
+        "key": "모리오카·시즈쿠이시",
+        "fromSrc": "images/commons/b4a9667f0da038ae.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0007-koiwai-farm-iwate.webp"
+      },
+      {
+        "key": "미나미아이즈·다다미",
+        "fromSrc": "images/commons/3fd5a63ec15a8437.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0009-ouchi-juku-fukushima.webp"
+      },
+      {
+        "key": "미야기",
+        "fromSrc": "images/commons/616fe234d051dcd0.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0001-sendai-castle02s3200.webp"
+      },
+      {
+        "key": "반다이·이나와시로",
+        "fromSrc": "images/commons/bbd99ae88fd75847.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0012-goshikinuma-fukushima.webp"
+      },
+      {
+        "key": "사카타·조카이",
+        "fromSrc": "images/commons/ac3eaa9131b37092.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0018-sankyo-warehouse-in-sakata-yamagata-9-august-2009-01.webp"
+      },
+      {
+        "key": "산리쿠 남부",
+        "fromSrc": "images/commons/ca5fa28f41dbb7a5.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0030-iwate-tsunami-memorial.webp"
+      },
+      {
+        "key": "산리쿠 북부",
+        "fromSrc": "images/commons/ec80da0dea77055d.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0024-jodogahama-iwate.webp"
+      },
+      {
+        "key": "산리쿠 중부",
+        "fromSrc": "images/commons/8fab4c397d9952dd.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0029-hashino-iron-mine-3.webp"
+      },
+      {
+        "key": "센다이",
+        "fromSrc": "images/commons/616fe234d051dcd0.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0001-sendai-castle02s3200.webp"
+      },
+      {
+        "key": "소마·후타바",
+        "fromSrc": "images/commons/0e0200687bdbbce3.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0021-soma-nakamura-shrine.webp"
+      },
+      {
+        "key": "시라카미·노시로",
+        "fromSrc": "images/commons/eaa14c4aecbf2f2a.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0022-sirakami-santi.webp"
+      },
+      {
+        "key": "시라카미·후카우라",
+        "fromSrc": "images/commons/284f0556f47a3c85.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0021-aoike-juniko-aomori.webp"
+      },
+      {
+        "key": "시모키타",
+        "fromSrc": "images/commons/2202ebae1d8bd702.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0028-osorezan-aomori.webp"
+      },
+      {
+        "key": "쓰가루 서부",
+        "fromSrc": "images/commons/dcdab77cb0b2bf58.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0016-tsuruno-maihashi.webp"
+      },
+      {
+        "key": "쓰루오카·데와산잔",
+        "fromSrc": "images/commons/53a14cdcb8d6a506.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0013-haguro-five-story-pagoda.webp"
+      },
+      {
+        "key": "아오모리",
+        "fromSrc": "images/commons/12b883dcf41c52e3.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0001-nebuta-museum-wa-rasse-aomori.webp"
+      },
+      {
+        "key": "아오모리시",
+        "fromSrc": "images/commons/12b883dcf41c52e3.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0001-nebuta-museum-wa-rasse-aomori.webp"
+      },
+      {
+        "key": "아이즈와카마쓰",
+        "fromSrc": "images/commons/770a697d4da47a78.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0005-tsuruga-castle-aizuwakamatsu.webp"
+      },
+      {
+        "key": "아키타",
+        "fromSrc": "images/commons/208b56db22614ac0.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0001-senshu-park-akita.webp"
+      },
+      {
+        "key": "아키타시",
+        "fromSrc": "images/commons/208b56db22614ac0.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0001-senshu-park-akita.webp"
+      },
+      {
+        "key": "야마가타",
+        "fromSrc": "images/commons/5c10b75cabe1ebea.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0001-view-of-yamadera-from-risshaku-ji.webp"
+      },
+      {
+        "key": "야마가타시·자오",
+        "fromSrc": "images/commons/5c10b75cabe1ebea.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0001-view-of-yamadera-from-risshaku-ji.webp"
+      },
+      {
+        "key": "오가반도",
+        "fromSrc": "images/commons/89f1d1d8c7137d35.webp",
+        "toSrc": "images/regions/tohoku/akita/places/05-P0004-namahage-museum.webp"
+      },
+      {
+        "key": "오다테·고사카",
+        "fromSrc": "images/licensed/akita-inu-kaikan-4417.webp",
+        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Akita-Inu-Kaikan%20110827.jpg?width=960"
+      },
+      {
+        "key": "오슈·기타카미",
+        "fromSrc": "images/commons/25b501dec5e19029.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0033-kitakami-tenshochi.webp"
+      },
+      {
+        "key": "요네자와",
+        "fromSrc": "images/commons/96bd5b9c2038e215.webp",
+        "toSrc": "images/regions/tohoku/yamagata/places/06-P0009-uesugi-shrine.webp"
+      },
+      {
+        "key": "요코테·유자와",
+        "fromSrc": "images/licensed/akita-oyasukyo-steam-4414.webp",
+        "toSrc": "images/commons/a9928b9c03353b4c.webp"
+      },
+      {
+        "key": "이시노마키·오나가와",
+        "fromSrc": "images/commons/031f81c45a9ca535.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0013-mangattan-museum-2025.webp"
+      },
+      {
+        "key": "이와키·하마도리",
+        "fromSrc": "images/commons/7f222a79c152ca49.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0018-aquamarine-fukushima.webp"
+      },
+      {
+        "key": "이와테",
+        "fromSrc": "images/commons/5e112c686954933b.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0001-morioka-castle-iwate.webp"
+      },
+      {
+        "key": "자오·시로이시",
+        "fromSrc": "images/commons/92fca8457e0d403c.webp",
+        "toSrc": "images/regions/tohoku/miyagi/places/04-P0016-okama-lake-zao.webp"
+      },
+      {
+        "key": "하나마키",
+        "fromSrc": "images/licensed/miyazawa-kenji-museum-yoshihide-14909320636.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0018-place-0018.webp"
+      },
+      {
+        "key": "하치노헤",
+        "fromSrc": "images/commons/bf5dc1886a7a9f0c.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0024-place-0024.webp"
+      },
+      {
+        "key": "하치만타이",
+        "fromSrc": "images/commons/fe11955616782e49.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0009-hachimantai-hachiman-numa.webp"
+      },
+      {
+        "key": "핫코다·스카유",
+        "fromSrc": "images/commons/5672e8276400821e.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0007-hakkoda-ropeway-aomori.webp"
+      },
+      {
+        "key": "후쿠시마",
+        "fromSrc": "images/commons/770a697d4da47a78.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0005-tsuruga-castle-aizuwakamatsu.webp"
+      },
+      {
+        "key": "후쿠시마·니혼마쓰",
+        "fromSrc": "images/commons/d1ba81ea524170e5.webp",
+        "toSrc": "images/regions/tohoku/fukushima/places/07-P0001-hanamiyama-park-fukushima.webp"
+      },
+      {
+        "key": "히라이즈미·이치노세키",
+        "fromSrc": "images/commons/676b9a5566fa4126.webp",
+        "toSrc": "images/regions/tohoku/iwate/places/03-P0012-chusonji-konjikido-iwate.webp"
+      },
+      {
+        "key": "히로사키",
+        "fromSrc": "images/commons/3c3343f0a0b69639.webp",
+        "toSrc": "images/regions/tohoku/aomori/places/02-P0012-hirosaki-castle-cherry-blossoms.webp"
+      }
+    ],
     "canonicalPhotoChanges": []
   }
 }
