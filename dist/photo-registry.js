@@ -13,6 +13,7 @@ globalThis.JATLAS_CANONICAL_FOOD_PHOTO=canonicalFoodPhoto;
 globalThis.JATLAS_SYNC_CANONICAL_FOOD_SCOPE=syncFoodScope;
 if(!registryState.foodRenderWrapped&&typeof renderFoods==='function'){const originalRenderFoods=renderFoods;renderFoods=function(){if(typeof state!=='undefined')syncFoodScope(state.pref);return originalRenderFoods.apply(this,arguments)};registryState.foodRenderWrapped=true}
 if(typeof state!=='undefined')syncFoodScope(state.pref);
+if(typeof syncRegionalDesignPhotos==='function')syncRegionalDesignPhotos();
 if(typeof designPhotos!=='undefined')for(const [k,v] of Object.entries(designPhotos)){const q=old.get(String(v?.src||'').split(/[?#]/)[0]);if(q)designPhotos[k]={...q}}
 if(typeof routeTemplates!=='undefined')for(const r of routeTemplates){const q=old.get(String(r.image||'').split(/[?#]/)[0]);if(q){r.image=typeof photoDisplaySrc==='function'?photoDisplaySrc(q):q.src;r.imageAlt=q.alt}}
 const P=registryState.prefectures||(registryState.prefectures=new Set(data.scope.prefectures)),cache=registryState.heroCache||(registryState.heroCache=new Map());
