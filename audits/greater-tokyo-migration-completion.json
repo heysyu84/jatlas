@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "region": "수도권",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "905fe1f212ed8ea4f5f0d336f57b3d8f86e75dee",
+  "prefectures": {
+    "사이타마": {
+      "places": 23,
+      "foods": 6,
+      "canonicalFiles": 29
+    },
+    "지바": {
+      "places": 27,
+      "foods": 6,
+      "canonicalFiles": 33
+    },
+    "도쿄": {
+      "places": 54,
+      "foods": 20,
+      "canonicalFiles": 74
+    },
+    "가나가와": {
+      "places": 28,
+      "foods": 7,
+      "canonicalFiles": 35
+    }
+  },
+  "totals": {
+    "places": 132,
+    "foods": 39,
+    "canonicalRecords": 171,
+    "canonicalFiles": 171,
+    "missingCanonicalFiles": 0
+  },
+  "recoveredLegacyAssets": [
+    "images/licensed/kanagawa-engakuji-720.webp",
+    "images/licensed/kanagawa-hakone-heiwa-711.webp",
+    "images/licensed/kanagawa-marine-tower-717.webp",
+    "images/licensed/kanagawa-pola-02-726.webp",
+    "images/licensed/saitama-g-cans-518.webp",
+    "images/licensed/saitama-railway-museum-507.webp",
+    "images/official/tokyo-oshima-milk-soft.webp"
+  ],
+  "recoveredLegacyAssetCount": 7,
+  "guarantees": [
+    "Canonical IDs and paths are authoritative for Greater Tokyo.",
+    "Current runtime photo selections are preserved before canonical copy.",
+    "Missing approved assets are recovered from their existing source manifest.",
+    "Reserved IDs from audits/id-migration-map.json are preserved exactly.",
+    "Canonical filenames contain only canonical ID plus normalized place/food name.",
+    "No legacy image file is deleted during regional migration."
+  ]
+}

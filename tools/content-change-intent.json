@@ -1,513 +1,783 @@
 {
   "version": 1,
-  "baseCommit": "312fccc26c5dde5fa6b00c932a5efce761c67d4b",
-  "reason": "Migrate Koshinetsu to canonical IDs/paths, preserve deduplicated Yamanashi IDs, and recover approved missing photo assets.",
+  "baseCommit": "905fe1f212ed8ea4f5f0d336f57b3d8f86e75dee",
+  "reason": "Migrate Greater Tokyo to canonical IDs/paths and recover approved missing assets without changing place content.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 302,
-        "fromSrc": "images/external/82056cde337432fd.jpg",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0001-kai-zenkoji.webp"
+        "id": 100,
+        "fromSrc": "images/tokyo-100.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0001-센소지.webp"
       },
       {
-        "id": 304,
-        "fromSrc": "images/external/7a74adcb02168134.jpg",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0002-senga-falls.webp"
+        "id": 101,
+        "fromSrc": "images/tokyo-101.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0002-도쿄-스카이트리.webp"
       },
       {
-        "id": 316,
-        "fromSrc": "images/external/517141cad378a5c3.jpg",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0003-ojiragawa-gorge.webp"
+        "id": 102,
+        "fromSrc": "images/tokyo-102.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0003-우에노-공원.webp"
       },
       {
-        "id": 318,
-        "fromSrc": "images/external/aaf228d9fd59b691.jpg",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0004-saruhashi.webp"
+        "id": 103,
+        "fromSrc": "images/tokyo-103.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0004-도쿄국립박물관.webp"
       },
       {
-        "id": 319,
-        "fromSrc": "images/commons/765ac91e3815d4b3.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0005-mt-fuji-panoramic-ropeway.webp"
+        "id": 104,
+        "fromSrc": "images/tokyo-104.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0005-네즈-신사.webp"
       },
       {
-        "id": 320,
-        "fromSrc": "images/commons/386bf46ed8db8d7b.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0006-fuji-q-highland.webp"
+        "id": 105,
+        "fromSrc": "images/tokyo-105.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0006-지도리가후치.webp"
       },
       {
-        "id": 321,
-        "fromSrc": "images/commons/9768430d446cdaae.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0007-fujisan-world-heritage-center.webp"
+        "id": 106,
+        "fromSrc": "images/tokyo-106.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0007-고이시카와-고라쿠엔.webp"
       },
       {
-        "id": 4600,
-        "fromSrc": "images/commons/abd96f3778c73bc4.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0001-bandai-bridge.webp"
+        "id": 107,
+        "fromSrc": "images/tokyo-107.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0008-신주쿠교엔.webp"
       },
       {
-        "id": 4601,
-        "fromSrc": "images/commons/ba4ad18d0ea04686.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0002-niigata-city-history-museum-minatopia.webp"
+        "id": 108,
+        "fromSrc": "images/tokyo-108.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0009-도쿄도청-전망실.webp"
       },
       {
-        "id": 4602,
-        "fromSrc": "images/commons/b2f0db3dbed90ad7.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0003-toki-messe-observation-room.webp"
+        "id": 109,
+        "fromSrc": "images/tokyo-109.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0010-시부야-스크램블-교차로.webp"
       },
       {
-        "id": 4603,
-        "fromSrc": "images/commons/4db67ee1a5df20f2.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0004-pia-bandai.webp"
+        "id": 110,
+        "fromSrc": "images/tokyo-110.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0011-메이지-신궁.webp"
       },
       {
-        "id": 4604,
-        "fromSrc": "images/commons/9e0f0cd70db14bd6.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0005-yamamoto-isoroku-memorial-museum.webp"
+        "id": 111,
+        "fromSrc": "images/tokyo-111.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0012-시부야-스카이.webp"
       },
       {
-        "id": 4605,
-        "fromSrc": "images/commons/0e6324829e4f2502.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0006-echigo-hillside-park.webp"
+        "id": 112,
+        "fromSrc": "images/tokyo-112.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0013-도쿄-타워.webp"
       },
       {
-        "id": 4606,
-        "fromSrc": "images/commons/8a8f821c2ef40b80.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0007-kiyotsu-gorge-tunnel.webp"
+        "id": 113,
+        "fromSrc": "images/tokyo-113.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0014-오다이바-해변공원.webp"
       },
       {
-        "id": 4607,
-        "fromSrc": "images/commons/a15ad7c98c5e7987.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0008-hoshitoge-rice-terraces.webp"
+        "id": 114,
+        "fromSrc": "images/tokyo-114.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0015-이노카시라-공원.webp"
       },
       {
-        "id": 4608,
-        "fromSrc": "images/licensed/niigata-echigo-yuzawa-4608.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0009-echigo-yuzawa-onsen.webp"
+        "id": 115,
+        "fromSrc": "images/tokyo-115.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0016-쇼와-기념공원.webp"
       },
       {
-        "id": 4609,
-        "fromSrc": "images/commons/8a4dd9b62ca31ea9.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0010-yuzawa-kogen-ropeway.webp"
+        "id": 116,
+        "fromSrc": "images/tokyo-116.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0017-다카오산.webp"
       },
       {
-        "id": 4610,
-        "fromSrc": "images/commons/501cd0942db40d28.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0011-untoan-temple.webp"
+        "id": 117,
+        "fromSrc": "images/tokyo-117.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0018-오쿠타마호.webp"
       },
       {
-        "id": 4611,
-        "fromSrc": "images/commons/7a2f5c89aa9024e0.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0012-hakkaisan-ropeway.webp"
+        "id": 118,
+        "fromSrc": "images/tokyo-118.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0019-미하라산.webp"
       },
       {
-        "id": 4612,
-        "fromSrc": "images/commons/4db91be30f39269a.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0013-sado-gold-mine.webp"
+        "id": 119,
+        "fromSrc": "images/tokyo-119.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0020-오가미야마-공원.webp"
       },
       {
-        "id": 4613,
-        "fromSrc": "images/commons/ae5011d0710bb9a3.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0014-kitazawa-flotation-plant.webp"
+        "id": 200,
+        "fromSrc": "images/tokyo-200.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0021-일본과학미래관.webp"
       },
       {
-        "id": 4614,
-        "fromSrc": "images/commons/3caf649c80ffd379.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0015-shukunegi.webp"
+        "id": 201,
+        "fromSrc": "images/tokyo-201.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0022-도쿄-빅사이트.webp"
       },
       {
-        "id": 4615,
-        "fromSrc": "images/commons/67fbe9b5d25ce62a.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0016-senkaku-bay-ageshima.webp"
+        "id": 202,
+        "fromSrc": "images/tokyo-202.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0023-다이버시티-도쿄-플라자.webp"
       },
       {
-        "id": 4616,
-        "fromSrc": "images/commons/4f95257ae701f5c6.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0017-toki-no-mori-park.webp"
+        "id": 203,
+        "fromSrc": "images/tokyo-203.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0024-도쿄-조이폴리스.webp"
       },
       {
-        "id": 4617,
-        "fromSrc": "images/commons/c6c2ec62ca0d9f5c.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0018-myoko-kogen-imori-pond.webp"
+        "id": 204,
+        "fromSrc": "images/tokyo-204.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0025-신주쿠-골든가이.webp"
       },
       {
-        "id": 4618,
-        "fromSrc": "images/commons/d0c8395d79722d28.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0019-akakura-onsen.webp"
+        "id": 205,
+        "fromSrc": "images/tokyo-205.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0026-오모이데-요코초.webp"
       },
       {
-        "id": 4619,
-        "fromSrc": "images/commons/82b4a691747da375.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0020-takada-castle-site-park.webp"
+        "id": 206,
+        "fromSrc": "images/tokyo-206.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0027-국립과학박물관.webp"
       },
       {
-        "id": 4620,
-        "fromSrc": "images/commons/be0477020b05e6d7.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0021-kasugayama-castle-ruins.webp"
+        "id": 207,
+        "fromSrc": "images/tokyo-207.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0028-네즈-미술관.webp"
       },
       {
-        "id": 4621,
-        "fromSrc": "images/commons/39850c1f23448640.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0022-fossa-magna-museum.webp"
+        "id": 208,
+        "fromSrc": "images/tokyo-208.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0029-다케시타-거리.webp"
       },
       {
-        "id": 4622,
-        "fromSrc": "images/commons/cde6380412189fcb.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0023-kotakigawa-jade-gorge.webp"
+        "id": 209,
+        "fromSrc": "images/tokyo-209.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0030-조조지.webp"
       },
       {
-        "id": 4623,
-        "fromSrc": "images/licensed/approved/niigata-oyashirazu-4623.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0024-oyashirazu.webp"
+        "id": 210,
+        "fromSrc": "images/licensed/tokyo-ghibli-museum-210.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0031-미타카의-숲-지브리-미술관.webp"
       },
       {
-        "id": 5000,
-        "fromSrc": "images/commons/f50d8d206f1c6b36.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0001-zenkoji.webp"
+        "id": 211,
+        "fromSrc": "images/tokyo-211.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0032-닛파라-종유동.webp"
       },
       {
-        "id": 5001,
-        "fromSrc": "images/commons/6eca4503cfe4c714.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0002-togakushi-shrine-okusha.webp"
+        "id": 212,
+        "fromSrc": "images/tokyo-212.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0033-하부항.webp"
       },
       {
-        "id": 5002,
-        "fromSrc": "images/commons/102a98128a3a6adf.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0003-togakushi-folk-ninja-museum.webp"
+        "id": 213,
+        "fromSrc": "images/tokyo-213.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0034-고미나토-해변.webp"
       },
       {
-        "id": 5003,
-        "fromSrc": "images/licensed/nagano-jigokudani-hotspring-5003.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0004-jigokudani-monkey-park.webp"
+        "id": 214,
+        "fromSrc": "images/tokyo-214.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0035-다카오산-야쿠오인.webp"
       },
       {
-        "id": 5004,
-        "fromSrc": "images/licensed/nagano-shibu-kanaguya-5004.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0005-shibu-onsen.webp"
+        "id": 215,
+        "fromSrc": "images/tokyo-215.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0036-간다묘진.webp"
       },
       {
-        "id": 5005,
-        "fromSrc": "images/commons/a0b69003fa5d1923.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0006-matsumoto-castle.webp"
+        "id": 216,
+        "fromSrc": "images/tokyo-216.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0037-히에-신사.webp"
       },
       {
-        "id": 5006,
-        "fromSrc": "images/commons/d0edd0f890747518.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0007-nawate-street.webp"
+        "id": 217,
+        "fromSrc": "images/tokyo-217.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0038-가사이-임해공원.webp"
       },
       {
-        "id": 5007,
-        "fromSrc": "images/licensed/nagano-kamikochi-5007.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0008-kamikochi.webp"
+        "id": 218,
+        "fromSrc": "images/tokyo-218.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0039-도쿄-돔-시티.webp"
       },
       {
-        "id": 5008,
-        "fromSrc": "images/commons/7efa77aec8428769.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0009-daio-wasabi-farm.webp"
+        "id": 219,
+        "fromSrc": "images/commons/21a5d948e3755795.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0040-도쿄역-마루노우치-역사.webp"
       },
       {
-        "id": 5009,
-        "fromSrc": "images/commons/5ab542be3229a459.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0010-hotaka-shrine.webp"
+        "id": 220,
+        "fromSrc": "images/commons/e1827f6550afe57e.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0041-고쿄-히가시교엔.webp"
       },
       {
-        "id": 5010,
-        "fromSrc": "images/commons/ebc6a728209347d2.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0011-old-karuizawa-ginza.webp"
+        "id": 221,
+        "fromSrc": "images/commons/4fc531488aad20bd.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0042-긴자도리.webp"
       },
       {
-        "id": 5011,
-        "fromSrc": "images/commons/6977463a639520ec.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp"
+        "id": 222,
+        "fromSrc": "images/commons/a3276435d39d5b12.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0043-쓰키지-장외시장.webp"
       },
       {
-        "id": 5012,
-        "fromSrc": "images/commons/07728b377a93c88a.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0013-karuizawa-taliesin.webp"
+        "id": 223,
+        "fromSrc": "images/commons/5740ad8ea2ff7d7a.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0044-하마리큐-은사정원.webp"
       },
       {
-        "id": 5013,
-        "fromSrc": "images/commons/cf629a64be1789ba.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0014-komoro-castle-kaikoen.webp"
+        "id": 224,
+        "fromSrc": "images/commons/d4493df888b544aa.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0045-리쿠기엔.webp"
       },
       {
-        "id": 5014,
-        "fromSrc": "images/commons/bc1b46ab941d3419.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0015-suwa-taisha-kamisha-honmiya.webp"
+        "id": 225,
+        "fromSrc": "images/commons/2c218ae16288baf8.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0046-야나카-긴자.webp"
       },
       {
-        "id": 5015,
-        "fromSrc": "images/commons/b4465b136f068e9c.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp"
+        "id": 226,
+        "fromSrc": "images/commons/0e5d8d2019946167.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0047-스미다-호쿠사이-미술관.webp"
       },
       {
-        "id": 5016,
-        "fromSrc": "images/commons/fe800e16666ba8e0.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0017-kirigamine-highland.webp"
+        "id": 227,
+        "fromSrc": "images/commons/b4175a0b8f49e2a8.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0048-에도-도쿄-박물관.webp"
       },
       {
-        "id": 5017,
-        "fromSrc": "images/commons/da8a20beadf6e73d.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0018-tateshina-highland-mishaka-pond.webp"
+        "id": 228,
+        "fromSrc": "images/commons/e176cf78c586db36.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0049-팀랩-플래닛-도쿄.webp"
       },
       {
-        "id": 5018,
-        "fromSrc": "images/commons/e70afdf883eb06b8.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0019-hakuba-happo-pond.webp"
+        "id": 229,
+        "fromSrc": "images/commons/fb8c8f2a055fb5c5.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0050-팀랩-보더리스.webp"
       },
       {
-        "id": 5019,
-        "fromSrc": "images/commons/09f78abf4f4fe6b2.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0020-tateyama-kurobe-ogizawa.webp"
+        "id": 230,
+        "fromSrc": "images/commons/e64d12074dd84816.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0051-아키하바라-전기-상점가.webp"
       },
       {
-        "id": 5020,
-        "fromSrc": "images/commons/f5541964cca729ce.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0021-lake-kizaki.webp"
+        "id": 231,
+        "fromSrc": "images/commons/9e79428a892babc5.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0052-도요스-시장.webp"
       },
       {
-        "id": 5021,
-        "fromSrc": "images/commons/100acc32d3074dc8.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0022-tsumago-juku.webp"
+        "id": 232,
+        "fromSrc": "images/commons/f7fb8cb9d64cdbc9.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0053-모리-미술관.webp"
       },
       {
-        "id": 5022,
-        "fromSrc": "images/commons/1e23f22f942ddaaf.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0023-narai-juku.webp"
+        "id": 233,
+        "fromSrc": "images/commons/548a7d17a459da3f.webp",
+        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0054-니혼바시.webp"
       },
       {
-        "id": 5023,
-        "fromSrc": "images/commons/55eeaf5b59db1042.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0024-mount-ontake-otaki-trailhead.webp"
+        "id": 500,
+        "fromSrc": "images/commons/43ebe0f42744b888.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0001-가와고에-구라즈쿠리-거리.webp"
       },
       {
-        "id": 5100,
-        "fromSrc": "images/commons/0e62adda8c9e1396.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0008-takeda-shrine.webp"
+        "id": 501,
+        "fromSrc": "images/qa/616ff8ae71a835e38473.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0002-기타인.webp"
       },
       {
-        "id": 5101,
-        "fromSrc": "images/commons/ebdb012d1192b48a.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0009-maizuru-castle-park.webp"
+        "id": 502,
+        "fromSrc": "images/licensed/approved/saitama-kawagoe-hikawa-502.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0003-가와고에-히카와-신사.webp"
       },
       {
-        "id": 5102,
-        "fromSrc": "images/commons/a7589c1ea66afc25.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0010-koshu-yume-koji.webp"
+        "id": 503,
+        "fromSrc": "images/commons/7be363035df59008.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0004-나가토로-이와다타미.webp"
       },
       {
-        "id": 5103,
-        "fromSrc": "images/commons/f8ab42cbba437a9f.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0011-isawa-onsen.webp"
+        "id": 504,
+        "fromSrc": "images/commons/3c5d8474d2c355a6.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0005-호도산-신사.webp"
       },
       {
-        "id": 5104,
-        "fromSrc": "images/commons/9ccd4556b60d720c.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0012-lake-kawaguchi.webp"
+        "id": 505,
+        "fromSrc": "images/commons/7c129eef6f6493e0.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0006-히쓰지야마-공원.webp"
       },
       {
-        "id": 5105,
-        "fromSrc": "images/commons/5ebe581158b2d8f2.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0013-oishi-park.webp"
+        "id": 506,
+        "fromSrc": "images/commons/72bfc94f84bed9b7.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0007-오미야-분재미술관.webp"
       },
       {
-        "id": 5106,
-        "fromSrc": "images/commons/3a7f7fcd85e76dd1.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0014-kawaguchi-asama-shrine.webp"
+        "id": 507,
+        "fromSrc": "images/licensed/saitama-railway-museum-507.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0008-철도박물관.webp"
       },
       {
-        "id": 5107,
-        "fromSrc": "images/licensed/yamanashi-iyashinosato-5107.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0015-saiko-iyashi-no-sato-nenba.webp"
+        "id": 508,
+        "fromSrc": "images/qa/f51d509b0263207cf8c8.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0009-무사시-이치노미야-히카와-신사.webp"
       },
       {
-        "id": 5108,
-        "fromSrc": "images/commons/68b2fecfcc1beefa.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0016-kitaguchi-hongu-fuji-sengen-shrine.webp"
+        "id": 509,
+        "fromSrc": "images/commons/dca30fa2931edfcf.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0010-오시성터-교다-향토박물관.webp"
       },
       {
-        "id": 5109,
-        "fromSrc": "images/commons/565ebec4b29fad1f.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0017-arakurayama-sengen-park.webp"
+        "id": 510,
+        "fromSrc": "images/commons/8c8ee6dcdefe3a21.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0011-사키타마-고분공원.webp"
       },
       {
-        "id": 5110,
-        "fromSrc": "images/commons/3ebf4489377fab8a.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0018-oshino-hakkai.webp"
+        "id": 511,
+        "fromSrc": "images/commons/8c3902154dfd9622.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0012-긴차쿠다-만주샤게-공원.webp"
       },
       {
-        "id": 5111,
-        "fromSrc": "images/commons/c2cc9914d93d1c08.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0019-lake-yamanaka.webp"
+        "id": 512,
+        "fromSrc": "images/commons/b245661044910f43.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0013-도키노카네.webp"
       },
       {
-        "id": 5112,
-        "fromSrc": "images/licensed/yamanashi-shosenkyo-5112.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0020-shosenkyo.webp"
+        "id": 513,
+        "fromSrc": "images/commons/64776863778920d5.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0014-가시야-요코초.webp"
       },
       {
-        "id": 5113,
-        "fromSrc": "images/commons/6db90476a875a9c0.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0021-shosenkyo-ropeway.webp"
+        "id": 514,
+        "fromSrc": "images/regional/Kawagoe-Castle.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0015-가와고에성-혼마루-고텐.webp"
       },
       {
-        "id": 5114,
-        "fromSrc": "images/commons/cb51100e7a50e349.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0022-seisenryo.webp"
+        "id": 515,
+        "fromSrc": "images/commons/b6ea711b1c3ab99a.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0016-지치부-신사.webp"
       },
       {
-        "id": 5115,
-        "fromSrc": "images/commons/450ad9d289d9c1e6.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0023-kiyosato-highland.webp"
+        "id": 516,
+        "fromSrc": "images/commons/c80f40dd8deccfef.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0017-미쓰미네-신사.webp"
       },
       {
-        "id": 5116,
-        "fromSrc": "images/commons/41fbeac7179c5014.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0024-katsunuma-grape-town.webp"
+        "id": 517,
+        "fromSrc": "images/commons/b9935d5939e281fd.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0018-곤겐도-공원-벚꽃-제방.webp"
       },
       {
-        "id": 5117,
-        "fromSrc": "images/commons/25a370a45a683726.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0025-chateau-mercian-katsunuma-winery.webp"
+        "id": 518,
+        "fromSrc": "images/licensed/saitama-g-cans-518.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0019-수도권-외곽방수로.webp"
       },
       {
-        "id": 5118,
-        "fromSrc": "images/commons/362bea890ec2f6a7.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0026-erinji.webp"
+        "id": 519,
+        "fromSrc": "images/commons/e194629d6f6f942c.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0020-도코로자와-사쿠라타운.webp"
       },
       {
-        "id": 5119,
-        "fromSrc": "images/commons/e8238ca3f3025b3d.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0027-fuefukigawa-fruit-park.webp"
+        "id": 520,
+        "fromSrc": "images/qa/2f6c58e90470b84c197b.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0021-오미야-공원.webp"
       },
       {
-        "id": 5120,
-        "fromSrc": "images/commons/fd1bf295f5122acb.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0028-minobusan-kuonji.webp"
+        "id": 521,
+        "fromSrc": "images/commons/74bbbd33de38f579.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0022-도코로자와-항공기념공원.webp"
       },
       {
-        "id": 5121,
-        "fromSrc": "images/commons/47f85bd1aa5ebcd1.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0029-minobusan-ropeway.webp"
+        "id": 522,
+        "fromSrc": "images/commons/e4c2ee16316f9d43.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0023-도부동물공원.webp"
       },
       {
-        "id": 5122,
-        "fromSrc": "images/commons/b7af1aa7d797534d.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0030-narada-onsen.webp"
+        "id": 600,
+        "fromSrc": "images/regional/Narita-san.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp"
       },
       {
-        "id": 5123,
-        "fromSrc": "images/commons/d44a0513a8caa997.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0031-lake-motosu.webp"
+        "id": 601,
+        "fromSrc": "images/qa/ba823ab05abb0c755eda.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0002-히요도리자카.webp"
+      },
+      {
+        "id": 602,
+        "fromSrc": "images/commons/e65798285e48af93.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0003-국립역사민속박물관.webp"
+      },
+      {
+        "id": 603,
+        "fromSrc": "images/commons/25fe6131d14a583d.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0004-사와라-옛-거리.webp"
+      },
+      {
+        "id": 604,
+        "fromSrc": "images/commons/ebf1da688ac8987a.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0005-가토리-신궁.webp"
+      },
+      {
+        "id": 605,
+        "fromSrc": "images/regional/Inub-saki-Lighthouse.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0006-이누보사키-등대.webp"
+      },
+      {
+        "id": 606,
+        "fromSrc": "images/commons/e49de1e882cd50a7.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0007-우라야스-향토박물관.webp"
+      },
+      {
+        "id": 607,
+        "fromSrc": "images/commons/9aa5d1a4ec2fe6e9.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0008-미하마엔.webp"
+      },
+      {
+        "id": 608,
+        "fromSrc": "images/commons/3939ec2b082402ac.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0009-노코기리야마.webp"
+      },
+      {
+        "id": 609,
+        "fromSrc": "images/commons/01d2c9ddfd1300f2.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0010-오야마-센마이다.webp"
+      },
+      {
+        "id": 610,
+        "fromSrc": "images/commons/78e11b9c711a1b70.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0011-다테야마성.webp"
+      },
+      {
+        "id": 611,
+        "fromSrc": "images/commons/9ed7cf30c6c4c37e.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0012-노지마사키-등대.webp"
+      },
+      {
+        "id": 612,
+        "fromSrc": "images/commons/4237a96ae8367169.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0013-도쿄-디즈니랜드.webp"
+      },
+      {
+        "id": 613,
+        "fromSrc": "images/qa/297ea368943d9bc9fefa.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0014-도쿄-디즈니씨.webp"
+      },
+      {
+        "id": 614,
+        "fromSrc": "images/qa/33c232f4dc1a5db28562.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0015-나리타산-오모테산도.webp"
+      },
+      {
+        "id": 615,
+        "fromSrc": "images/commons/c14b9d065b0e802f.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0016-마더-목장.webp"
+      },
+      {
+        "id": 616,
+        "fromSrc": "images/commons/d851f8bb319e5d17.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0017-가모가와-씨월드.webp"
+      },
+      {
+        "id": 617,
+        "fromSrc": "images/commons/cd53729b2f61f047.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0018-가쓰우라-아침시장.webp"
+      },
+      {
+        "id": 618,
+        "fromSrc": "images/commons/939a18e72b707413.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0019-지바-포트타워.webp"
+      },
+      {
+        "id": 619,
+        "fromSrc": "images/commons/67b0a5042b83e580.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0020-도쿄-독일마을.webp"
+      },
+      {
+        "id": 620,
+        "fromSrc": "images/commons/3816ba011458de7f.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0021-요로계곡.webp"
+      },
+      {
+        "id": 621,
+        "fromSrc": "images/commons/f084769811799ec4.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0022-후나바시-안데르센-공원.webp"
+      },
+      {
+        "id": 622,
+        "fromSrc": "images/qa/3cf3bbfb4accaf7438ae.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0023-우미호타루-pa.webp"
+      },
+      {
+        "id": 623,
+        "fromSrc": "images/commons/68753126074363db.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0024-사쿠라-무가저택.webp"
+      },
+      {
+        "id": 624,
+        "fromSrc": "images/commons/9b40b0995d614666.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0025-뵤부가우라.webp"
+      },
+      {
+        "id": 625,
+        "fromSrc": "images/commons/b4996d47970fddeb.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0026-지바-신사.webp"
+      },
+      {
+        "id": 626,
+        "fromSrc": "images/commons/f5a5128574a9425c.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0027-지바현립-보소노무라.webp"
+      },
+      {
+        "id": 700,
+        "fromSrc": "images/commons/c58b42eeb699c5a8.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0001-요코하마-아카렌가-창고.webp"
+      },
+      {
+        "id": 701,
+        "fromSrc": "images/commons/5a327abbfa79bf1a.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0002-야마시타-공원.webp"
+      },
+      {
+        "id": 702,
+        "fromSrc": "images/commons/2bcb8431b7393e10.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0003-요코하마-차이나타운.webp"
+      },
+      {
+        "id": 703,
+        "fromSrc": "images/commons/bf8d18a389bbc8d9.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0004-산케이엔.webp"
+      },
+      {
+        "id": 704,
+        "fromSrc": "images/regional/K-toku-in.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp"
+      },
+      {
+        "id": 705,
+        "fromSrc": "images/commons/ef0337cd2522790e.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0006-하세데라.webp"
+      },
+      {
+        "id": 706,
+        "fromSrc": "images/commons/d326440208680a40.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0007-쓰루가오카-하치만구.webp"
+      },
+      {
+        "id": 707,
+        "fromSrc": "images/commons/0b206e9a2649e6e8.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0008-에노시마.webp"
+      },
+      {
+        "id": 708,
+        "fromSrc": "images/commons/60f382af819246c0.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0009-에노시마-시캔들.webp"
+      },
+      {
+        "id": 709,
+        "fromSrc": "images/commons/2cdf0c66f5503398.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0010-신에노시마-수족관.webp"
+      },
+      {
+        "id": 710,
+        "fromSrc": "images/commons/e3b042bda6cdde48.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0011-오와쿠다니.webp"
+      },
+      {
+        "id": 711,
+        "fromSrc": "images/licensed/kanagawa-hakone-heiwa-711.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0012-하코네-신사.webp"
+      },
+      {
+        "id": 712,
+        "fromSrc": "images/regional/Lake-Ashi.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0013-아시노코.webp"
+      },
+      {
+        "id": 713,
+        "fromSrc": "images/commons/5fa3324859479cee.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0014-오다와라성.webp"
+      },
+      {
+        "id": 714,
+        "fromSrc": "images/commons/0d62b860d5c571e3.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0015-조가시마.webp"
+      },
+      {
+        "id": 715,
+        "fromSrc": "images/commons/42809f022379c9ec.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0016-우라리-마르셰.webp"
+      },
+      {
+        "id": 716,
+        "fromSrc": "images/commons/79d1850614681e30.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0017-컵누들-뮤지엄-요코하마.webp"
+      },
+      {
+        "id": 717,
+        "fromSrc": "images/licensed/kanagawa-marine-tower-717.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0018-요코하마-마린타워.webp"
+      },
+      {
+        "id": 718,
+        "fromSrc": "images/commons/8772c472e9909777.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0019-호코쿠지.webp"
+      },
+      {
+        "id": 719,
+        "fromSrc": "images/commons/a7ae98fe7edd0cb5.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0020-겐초지.webp"
+      },
+      {
+        "id": 720,
+        "fromSrc": "images/licensed/kanagawa-engakuji-720.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0021-엔가쿠지.webp"
+      },
+      {
+        "id": 721,
+        "fromSrc": "images/commons/04ac11aee7e5b825.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0022-하코네-조각의-숲-미술관.webp"
+      },
+      {
+        "id": 722,
+        "fromSrc": "images/commons/de68f82b84e9597c.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0023-하코네-세키쇼.webp"
+      },
+      {
+        "id": 723,
+        "fromSrc": "images/commons/612bc28f0e9831f9.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0024-가와사키-다이시.webp"
+      },
+      {
+        "id": 724,
+        "fromSrc": "images/commons/c683b416ccf648f5.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0025-사루시마.webp"
+      },
+      {
+        "id": 725,
+        "fromSrc": "images/commons/5a078ce8ecd8075b.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0026-요코하마-핫케이지마-시파라다이스.webp"
+      },
+      {
+        "id": 726,
+        "fromSrc": "images/licensed/kanagawa-pola-02-726.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0027-폴라-미술관.webp"
+      },
+      {
+        "id": 727,
+        "fromSrc": "images/commons/05695cf2b3393214.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0028-기념함-미카사.webp"
       }
     ],
     "heroChanges": [
       {
-        "key": "가루이자와·고모로",
-        "fromSrc": "images/commons/ebc6a728209347d2.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0011-old-karuizawa-ginza.webp"
+        "key": "가나가와",
+        "fromSrc": "images/regional/K-toku-in.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp"
       },
       {
-        "key": "가쓰누마·고슈",
-        "fromSrc": "images/commons/41fbeac7179c5014.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0024-katsunuma-grape-town.webp"
+        "key": "가마쿠라",
+        "fromSrc": "images/regional/K-toku-in.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp"
       },
       {
-        "key": "가와구치코·후지북부",
-        "fromSrc": "images/commons/9ccd4556b60d720c.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0012-lake-kawaguchi.webp"
+        "key": "가와고에",
+        "fromSrc": "images/qa/616ff8ae71a835e38473.webp",
+        "toSrc": "images/regional/Kita-in.webp"
       },
       {
-        "key": "고후·이사와",
-        "fromSrc": "images/commons/0e62adda8c9e1396.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0008-takeda-shrine.webp"
+        "key": "가와사키",
+        "fromSrc": "images/commons/612bc28f0e9831f9.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0024-가와사키-다이시.webp"
       },
       {
-        "key": "기소·나카센도",
-        "fromSrc": "images/commons/100acc32d3074dc8.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0022-tsumago-juku.webp"
+        "key": "교다·히다카",
+        "fromSrc": "images/commons/dca30fa2931edfcf.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0010-오시성터-교다-향토박물관.webp"
       },
       {
-        "key": "나가노",
-        "fromSrc": "images/commons/a0b69003fa5d1923.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0006-matsumoto-castle.webp"
+        "key": "나리타·사쿠라",
+        "fromSrc": "images/regional/Narita-san.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp"
       },
       {
-        "key": "나가노·도구시",
-        "fromSrc": "images/commons/f50d8d206f1c6b36.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0001-zenkoji.webp"
+        "key": "도코로자와",
+        "fromSrc": "images/commons/e194629d6f6f942c.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0020-도코로자와-사쿠라타운.webp"
       },
       {
-        "key": "나가오카·주에쓰",
-        "fromSrc": "images/commons/8a8f821c2ef40b80.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0007-kiyotsu-gorge-tunnel.webp"
+        "key": "동부 사이타마",
+        "fromSrc": "images/commons/b9935d5939e281fd.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0018-곤겐도-공원-벚꽃-제방.webp"
       },
       {
-        "key": "니가타",
-        "fromSrc": "images/commons/abd96f3778c73bc4.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0001-bandai-bridge.webp"
+        "key": "미사키·미우라",
+        "fromSrc": "images/commons/0d62b860d5c571e3.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0015-조가시마.webp"
       },
       {
-        "key": "니가타시",
-        "fromSrc": "images/commons/abd96f3778c73bc4.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0001-bandai-bridge.webp"
+        "key": "보소반도",
+        "fromSrc": "images/commons/3939ec2b082402ac.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0009-노코기리야마.webp"
       },
       {
-        "key": "마쓰모토·아즈미노",
-        "fromSrc": "images/commons/a0b69003fa5d1923.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0006-matsumoto-castle.webp"
+        "key": "사와라·조시",
+        "fromSrc": "images/regional/Inub-saki-Lighthouse.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0006-이누보사키-등대.webp"
       },
       {
-        "key": "묘코·조에쓰",
-        "fromSrc": "images/commons/c6c2ec62ca0d9f5c.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0018-myoko-kogen-imori-pond.webp"
+        "key": "사이타마",
+        "fromSrc": "images/qa/616ff8ae71a835e38473.webp",
+        "toSrc": "images/regional/Kita-in.webp"
       },
       {
-        "key": "미노부·후지카와",
-        "fromSrc": "images/commons/fd1bf295f5122acb.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0028-minobusan-kuonji.webp"
+        "key": "에노시마·쇼난",
+        "fromSrc": "images/commons/0b206e9a2649e6e8.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0008-에노시마.webp"
       },
       {
-        "key": "사도",
-        "fromSrc": "images/commons/4db91be30f39269a.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0013-sado-gold-mine.webp"
+        "key": "오미야",
+        "fromSrc": "images/commons/72bfc94f84bed9b7.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0007-오미야-분재미술관.webp"
       },
       {
-        "key": "쇼센쿄·호쿠토",
-        "fromSrc": "images/licensed/yamanashi-shosenkyo-5112.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0020-shosenkyo.webp"
+        "key": "요코스카",
+        "fromSrc": "images/commons/c683b416ccf648f5.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0025-사루시마.webp"
       },
       {
-        "key": "스와·기리가미네",
-        "fromSrc": "images/commons/bc1b46ab941d3419.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0015-suwa-taisha-kamisha-honmiya.webp"
+        "key": "요코하마",
+        "fromSrc": "images/commons/c58b42eeb699c5a8.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0001-요코하마-아카렌가-창고.webp"
       },
       {
-        "key": "야마나시",
-        "fromSrc": "images/commons/9ccd4556b60d720c.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0012-lake-kawaguchi.webp"
+        "key": "우라야스·마쿠하리",
+        "fromSrc": "images/commons/e49de1e882cd50a7.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0007-우라야스-향토박물관.webp"
       },
       {
-        "key": "오쓰키",
-        "fromSrc": "images/external/aaf228d9fd59b691.jpg",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0004-saruhashi.webp"
+        "key": "지바",
+        "fromSrc": "images/regional/Narita-san.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp"
       },
       {
-        "key": "이토이가와",
-        "fromSrc": "images/commons/cde6380412189fcb.webp",
-        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0023-kotakigawa-jade-gorge.webp"
+        "key": "지바시·가즈사",
+        "fromSrc": "images/commons/939a18e72b707413.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0019-지바-포트타워.webp"
       },
       {
-        "key": "하쿠바·오마치",
-        "fromSrc": "images/commons/e70afdf883eb06b8.webp",
-        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0019-hakuba-happo-pond.webp"
+        "key": "지치부·나가토로",
+        "fromSrc": "images/commons/7be363035df59008.webp",
+        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0004-나가토로-이와다타미.webp"
       },
       {
-        "key": "후지요시다·오시노",
-        "fromSrc": "images/commons/565ebec4b29fad1f.webp",
-        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0017-arakurayama-sengen-park.webp"
+        "key": "하코네·오다와라",
+        "fromSrc": "images/regional/Lake-Ashi.webp",
+        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0013-아시노코.webp"
+      },
+      {
+        "key": "후나바시",
+        "fromSrc": "images/commons/f084769811799ec4.webp",
+        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0022-후나바시-안데르센-공원.webp"
       }
     ],
     "canonicalPhotoChanges": []
