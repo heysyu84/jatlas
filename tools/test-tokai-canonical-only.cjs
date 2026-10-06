@@ -31,10 +31,16 @@ const clean=s=>String(s||'').replace(/^\.\//,'').split(/[?#]/)[0];
 const byLegacy=new Map(places.map(r=>[Number(r.legacyId),r]));
 const tokaiPlaces=result.places.filter(p=>prefs.has(p.pref));
 if(tokaiPlaces.length!==83)throw Error('Runtime Tokai place count mismatch: '+tokaiPlaces.length);
+let mapChecks=0;
 for(const p of tokaiPlaces){
   const r=byLegacy.get(Number(p.id)); if(!r)throw Error('Missing registry place '+p.id+' '+p.name);
   if(clean(p.photo?.src)!==r.image)throw Error('Legacy/noncanonical runtime place photo '+p.id+' '+p.name+' :: '+clean(p.photo?.src));
   if(!fs.existsSync(path.join(dist,r.image)))throw Error('Runtime canonical place file missing '+r.image);
+  const embed=new URL(p.mapEmbed),external=new URL(p.mapExternal);
+  if(embed.searchParams.get('q')!==p.mapQuery)throw Error('Tokai map query mismatch '+p.id);
+  if(external.searchParams.get('q')!==p.mapQuery)throw Error('Tokai external map query mismatch '+p.id);
+  if(embed.searchParams.get('output')!=='embed'||external.searchParams.has('output'))throw Error('Tokai map mode mismatch '+p.id);
+  mapChecks++;
 }
 let runtimeFoods=0;
 const foodByKey=new Map(foods.map(r=>[r.pref+'|'+r.name,r]));
@@ -48,17 +54,23 @@ for(const prefRow of result.prefectures.filter(x=>prefs.has(x.pref))){
   }
 }
 if(runtimeFoods!==26)throw Error('Runtime Tokai food count mismatch: '+runtimeFoods);
-const areaChecks=[];
+const areaChecks=[],townChecks=[];
+const heroFor=(pref,area,town)=>vm.runInContext(`state={view:'explore',pref:${JSON.stringify(pref)},area:${JSON.stringify(area)},town:${JSON.stringify(town)}};globalThis.JATLAS_TOKAI_CANONICAL.heroCache.clear();(()=>{const p=currentScopeHeroPlace();return p?{id:p.id,pref:p.pref,area:p.area,town:p.town,src:photoForPlace(p)?.src||''}:null})()`,ctx);
 for(const pref of prefs){
   const ps=tokaiPlaces.filter(p=>p.pref===pref);
   for(const area of new Set(ps.map(p=>p.area))){
-    const code=`state={view:'explore',pref:${JSON.stringify(pref)},area:${JSON.stringify(area)},town:'전체'};globalThis.JATLAS_TOKAI_CANONICAL.heroCache.clear();currentScopeHeroPlace()`;
-    const h=vm.runInContext(code,ctx);
-    if(!h)continue;
+    const h=heroFor(pref,area,'전체');
+    if(!h)throw Error('Missing hero candidate '+pref+' / '+area);
     if(h.pref!==pref||h.area!==area)throw Error('Hero scope leak '+pref+' / '+area+' -> '+h.pref+' / '+h.area);
-    const r=byLegacy.get(Number(h.id));
-    if(!r||clean(h.photo?.src||'')&&clean(h.photo?.src)!==r.image)throw Error('Hero registry mismatch '+h.id);
+    const r=byLegacy.get(Number(h.id)); if(!r||clean(h.src)!==r.image)throw Error('Hero registry mismatch '+h.id);
     areaChecks.push(pref+'|'+area);
+    for(const town of new Set(ps.filter(p=>p.area===area).map(p=>p.town))){
+      const t=heroFor(pref,area,town);
+      if(!t)throw Error('Missing town hero candidate '+pref+' / '+area+' / '+town);
+      if(t.pref!==pref||t.area!==area||t.town!==town)throw Error('Town hero scope leak '+pref+' / '+area+' / '+town+' -> '+t.pref+' / '+t.area+' / '+t.town);
+      const tr=byLegacy.get(Number(t.id)); if(!tr||clean(t.src)!==tr.image)throw Error('Town hero registry mismatch '+t.id);
+      townChecks.push(pref+'|'+area+'|'+town);
+    }
   }
 }
 const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');
@@ -71,4 +83,4 @@ for(let i=0;i<registryIndex;i++){
   if(/(^|\n)\s*render\(\);?\s*(?:$|\n)/m.test(src))renderBefore.push(file);
 }
 if(renderBefore.length)throw Error('Pre-registry top-level render calls may request legacy images: '+renderBefore.join(', '));
-console.log(JSON.stringify({ok:true,places:tokaiPlaces.length,foods:runtimeFoods,canonicalFiles:records.length,legacyFilesRemovedInSandbox:deleted,areaHeroScopesChecked:areaChecks.length,preRegistryRenderCalls:renderBefore},null,2));
+console.log(JSON.stringify({ok:true,places:tokaiPlaces.length,foods:runtimeFoods,canonicalFiles:records.length,legacyFilesRemovedInSandbox:deleted,mapChecks,areaHeroScopesChecked:areaChecks.length,townHeroScopesChecked:townChecks.length,preRegistryRenderCalls:renderBefore},null,2));
