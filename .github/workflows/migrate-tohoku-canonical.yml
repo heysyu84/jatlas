@@ -1,10 +1,6 @@
 name: Migrate Tohoku canonical photos
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - tools/migrate-tohoku-canonical.py
   workflow_dispatch:
 
 permissions:

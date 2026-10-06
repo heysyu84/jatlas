@@ -239,6 +239,8 @@ def main():
     source_registry=json.loads(sr_text.removeprefix('globalThis.JATLAS_PHOTO_SOURCE_REGISTRY=').rstrip(';'))
     manifest=json.loads((ROOT/'tools/official-photo-assets.json').read_text())
     manifest_by_output={x.get('output'):x for x in manifest.get('photos',[]) if x.get('output')}
+    idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
+    food_id_by_name={(x['pref'],x['name']):x['newId'] for x in idmap['foods'] if x.get('pref') in PREFSET}
 
     reg_path=DIST/'photo-registry-data.js'
     prefix='globalThis.JATLAS_PHOTO_REGISTRY_DATA='
@@ -311,7 +313,8 @@ def main():
                 asset=manifest_by_output.get(src)
                 if not asset:raise FileNotFoundError(f'Missing approved food photo without manifest recovery: {src}')
                 materialize_manifest_asset(asset); recovered.append(src)
-            cid=f'{code}-F{idx:04d}'
+            cid=food_id_by_name.get((pref,f['name']))
+            if not cid:raise KeyError(f'No permanent canonical food ID for {pref} {f["name"]}')
             slug=CANONICAL_SLUGS.get(cid,slugify(filename or pic.get("filename"),"food",idx))
             canonical=f'images/regions/tohoku/{prefslug}/foods/{cid}-{slug}.webp'
             dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)

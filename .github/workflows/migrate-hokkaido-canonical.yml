@@ -1,10 +1,6 @@
 name: Migrate Hokkaido canonical photos
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - tools/migrate-hokkaido-canonical.py
   workflow_dispatch:
 
 permissions:
