@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "region": "산인·산요",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 88,
+  "cidTargets": 68,
+  "coordinateOnlyTargets": 20,
+  "preservedManualTargets": 0,
+  "identityReviewTargets": 4,
+  "sourceCoordinateTargets": 16,
+  "auditEntityTargets": 68,
+  "auditCameraTargets": 0,
+  "riskFlags": [
+    {
+      "id": 2115,
+      "name": "구니가 해안",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.736,
+      "resolvedName": "쿠니가 국가해변",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 2116,
+      "name": "촛불섬(로소쿠지마)",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 19.376,
+      "resolvedName": "Rosoku-jima (Candle Island)",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 2213,
+      "name": "비젠 오사후네 도검박물관",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.447,
+      "resolvedName": "비젠 오사후네 도검 박물관",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 2307,
+      "name": "다이쇼인",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.076,
+      "resolvedName": "다이쇼인(대성원)",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 2404,
+      "name": "아키요시다이",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.029,
+      "resolvedName": "아키요시다이",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 2414,
+      "name": "오미지마",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.421,
+      "resolvedName": "오미 섬",
+      "chosen": "query-entity"
+    }
+  ]
+}
