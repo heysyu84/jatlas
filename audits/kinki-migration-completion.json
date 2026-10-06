@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "region": "긴키",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "e8cec0d6542c42acb78e0e665f42a750a1651b7f",
+  "prefectures": {
+    "시가": {
+      "places": 16,
+      "foods": 6,
+      "canonicalFiles": 22
+    },
+    "교토": {
+      "places": 26,
+      "foods": 6,
+      "canonicalFiles": 32
+    },
+    "오사카": {
+      "places": 29,
+      "foods": 7,
+      "canonicalFiles": 36
+    },
+    "효고": {
+      "places": 23,
+      "foods": 6,
+      "canonicalFiles": 29
+    },
+    "나라": {
+      "places": 23,
+      "foods": 5,
+      "canonicalFiles": 28
+    },
+    "와카야마": {
+      "places": 17,
+      "foods": 6,
+      "canonicalFiles": 23
+    }
+  },
+  "totals": {
+    "places": 134,
+    "foods": 36,
+    "canonicalRecords": 170,
+    "canonicalFiles": 170,
+    "missingCanonicalFiles": 0
+  },
+  "externalActiveAssets": [],
+  "externalActiveAssetCount": 0,
+  "guarantees": [
+    "Runtime-visible approved photos are the migration source of truth.",
+    "Canonical IDs follow Japanese prefecture codes 25-30.",
+    "Canonical filenames contain only the fixed ID and normalized place/food name.",
+    "Legacy files are not deleted by this migration."
+  ]
+}
