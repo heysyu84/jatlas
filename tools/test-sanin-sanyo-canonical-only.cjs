@@ -12,7 +12,7 @@ if(foods.length!==29)throw Error('Sanin-Sanyo food count mismatch: '+foods.lengt
 for(const r of [...places,...foods]){
  const file=path.join(dist,r.image);if(!fs.existsSync(file))throw Error('Missing canonical '+r.canonicalId+' '+r.image);
  const sha=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');if(sha!==r.sha256)throw Error('Canonical hash mismatch '+r.canonicalId);
- if(!/^(31|32|33|34|35)-[PF]\d{4}$/.test(r.canonicalId))throw Error('Bad Sanin-Sanyo canonical ID '+r.canonicalId);
+ if(!/^(31|32|33|34|35)-[PF][0-9]{4}$/.test(r.canonicalId))throw Error('Bad Sanin-Sanyo canonical ID '+r.canonicalId);
  if(!path.basename(r.image,'.webp').startsWith(r.canonicalId+'-'))throw Error('Bad canonical filename '+r.image);
  const sig=fs.readFileSync(file).subarray(0,12);if(sig.subarray(0,4).toString()!=='RIFF'||sig.subarray(8,12).toString()!=='WEBP')throw Error('Not WebP '+r.image);
 }
