@@ -203,6 +203,19 @@
     "cid": "345118280497089968",
     "reverifiedAt": "2026-10-07"
   },
+  "3008": {
+    "status": "official-name-address-reviewed",
+    "name": "사가현립 규슈도자문화관",
+    "officialSource": "https://saga-museum.jp/ceramic/information/",
+    "resolvedName": "현립 규슈 도자기 문화관",
+    "resolvedAddress": "현립 규슈 도자기 문화관 Otsu-3100-1 Toshaku, Arita, Nishimatsuura District, Saga 844-8585 일본",
+    "lat": 33.1790161,
+    "lon": 129.8806334,
+    "cid": "6849286775982855991",
+    "evidence": "Saga Prefectural Kyushu Ceramic Museum official address Arita-cho Toshaku Otsu 3100-1 matches the named map destination.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
+  },
   "3010": {
     "status": "official-map-identity-reviewed",
     "name": "오카와치야마",
@@ -212,7 +225,22 @@
     "lat": 33.2347871,
     "lon": 129.8933866,
     "evidence": "Official pottery village cooperative address 1806 and named result 1848 are in Okawachichootsu, Imari. Represents village center rather than a specific individual kiln.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "223804348733926127",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3125": {
+    "status": "official-name-address-reviewed",
+    "name": "사루이와",
+    "officialSource": "https://www.ikikankou.com/spot/10093",
+    "resolvedName": "사루이와 (원숭이 바위)",
+    "resolvedAddress": "사루이와 (원숭이 바위) Gonouracho Shindenfure, Iki, Nagasaki 811-5103 일본",
+    "lat": 33.812446,
+    "lon": 129.6544235,
+    "cid": "8035258222079094440",
+    "evidence": "Iki Tourism identifies Saruiwa at the tip of Kurosaki Peninsula; the named map destination in Gonouracho Shindenfure is the intended rock.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "3126": {
     "status": "official-map-identity-reviewed",
@@ -223,7 +251,9 @@
     "lat": 33.7840762,
     "lon": 129.7874337,
     "evidence": "Official Harahoge Jizo address Moroyoshihonmurafure 1342, Iki matches named result 1342-102.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "6051419940227679537",
+    "reverifiedAt": "2026-10-07"
   },
   "3210": {
     "status": "official-name-address-reviewed",
@@ -233,7 +263,9 @@
     "lat": 32.8253719,
     "lon": 131.0953099,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "1241976217527336090",
+    "reverifiedAt": "2026-10-07"
   },
   "3219": {
     "status": "official-map-identity-reviewed",
@@ -244,7 +276,22 @@
     "lat": 32.5454877,
     "lon": 130.1306939,
     "evidence": "Official Amakusa Dolphin Center address Futae 4689-20 matches named result. Pin represents departure/booking center, not offshore dolphins.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "15330330719175154675",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3303": {
+    "status": "official-name-address-reviewed",
+    "name": "벳푸 로프웨이·쓰루미다케",
+    "officialSource": "https://www.beppu-ropeway.co.jp/",
+    "resolvedName": "벳푸 로프웨이",
+    "resolvedAddress": "일본 〒874-0000 Oita, Beppu, Minamitateishi, 벳푸 로프웨이 字寒原１０−７",
+    "lat": 33.2779012,
+    "lon": 131.4487593,
+    "cid": "14464809749134863795",
+    "evidence": "Beppu Ropeway destination at Minamitateishi Kanbara 10-7 matches the facility address; pin represents the lower ropeway station for Mt. Tsurumi access.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "3313": {
     "status": "official-name-address-reviewed",
@@ -254,7 +301,9 @@
     "lat": 33.0482542,
     "lon": 131.243794,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "778998061631365254",
+    "reverifiedAt": "2026-10-07"
   },
   "3317": {
     "status": "official-name-address-reviewed",
@@ -264,7 +313,9 @@
     "lat": 33.0915527,
     "lon": 131.7623068,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "17615027090253423590",
+    "reverifiedAt": "2026-10-07"
   },
   "3324": {
     "status": "official-name-address-reviewed",
@@ -274,7 +325,9 @@
     "lat": 33.42774,
     "lon": 130.9110508,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "2648222464760892825",
+    "reverifiedAt": "2026-10-07"
   },
   "3326": {
     "status": "official-name-address-reviewed",
@@ -284,7 +337,22 @@
     "lat": 33.4987788,
     "lon": 131.1730998,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "1177556365622479273",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3402": {
+    "status": "official-name-address-reviewed",
+    "name": "호리키리토게·미치노에키 피닉스",
+    "officialSource": "https://www.kanko-miyazaki.jp/spot/1210",
+    "resolvedName": "미야자키미치노에키피닉스",
+    "resolvedAddress": "미야자키미치노에키피닉스 381-1 Uchiumi, Miyazaki, 889-2301 일본",
+    "lat": 31.768937,
+    "lon": 131.4782957,
+    "cid": "5242124869351076552",
+    "evidence": "Miyazaki official tourism gives Roadside Station Phoenix at Uchiumi 381-1; the named map result matches that address. Composite spot uses the roadside station as the stable map target near Horikiri Pass.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "3408": {
     "status": "official-map-identity-reviewed",
@@ -295,13 +363,67 @@
     "lat": 31.5031645,
     "lon": 131.3789331,
     "evidence": "Official Nango address Nienami 3220-24, Nichinan, Miyazaki matches named result. Explicitly excludes the Aomori homonym.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "14066797687238158545",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3416": {
+    "status": "official-name-address-reviewed",
+    "name": "크루스의 바다",
+    "officialSource": "https://hyuga.or.jp/app/spots/view/7",
+    "resolvedName": "The Sea Cross",
+    "resolvedAddress": "The Sea Cross, Hososhima, Hyuga, Miyazaki 883-0001 일본",
+    "lat": 32.4171111,
+    "lon": 131.677187,
+    "cid": "4453361784911240192",
+    "evidence": "Hyuga Tourism identifies Sea Cross in Hososhima; the named map destination is the intended Sea Cross viewpoint area.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3417": {
+    "status": "official-name-address-reviewed",
+    "name": "오미신사",
+    "officialSource": "https://oomijinja.or.jp/",
+    "resolvedName": "오미 신사",
+    "resolvedAddress": "오미 신사 1 Hichiya, Hyuga, Miyazaki 883-0062 일본",
+    "lat": 32.4110516,
+    "lon": 131.6493415,
+    "cid": "5494189962066308002",
+    "evidence": "Omi Shrine official site gives Hyuga-shi Hichiya 1; named map result matches the shrine at that address.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "3419": {
     "status": "live-map-and-photo-reviewed",
     "name": "아야 데루하 대현수교",
     "evidence": "Deployed desktop detail page displayed the suspension bridge photo and Google map labeled 綾の照葉大吊橋 at 32.0286342,131.1944103. Checked in browser after commit 46b2a0d.",
     "reviewedAt": "2026-10-02"
+  },
+  "3423": {
+    "status": "official-name-address-reviewed",
+    "name": "다카치호 목장",
+    "officialSource": "https://www.takachiho-bokujou.co.jp/access/",
+    "resolvedName": "Takachiho Farm",
+    "resolvedAddress": "Takachiho Farm, 5265-103 Yoshinomotocho, Miyakonojo, Miyazaki 885-0223 일본",
+    "lat": 31.8442529,
+    "lon": 130.8769039,
+    "cid": "8425352687367510378",
+    "evidence": "Takachiho Farm official site gives Miyakonojo-shi Yoshinomotocho 5265-103; named map result matches exactly.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3500": {
+    "status": "official-name-address-reviewed",
+    "name": "유노히라 전망소",
+    "officialSource": "https://www.kagoshima-yokanavi.jp/souvenir/10025",
+    "resolvedName": "유노히라 전망대",
+    "resolvedAddress": "유노히라 전망대 1025 Sakurajimakoikecho, Kagoshima, 891-1418 일본",
+    "lat": 31.5914807,
+    "lon": 130.6299912,
+    "cid": "13701894705625070971",
+    "evidence": "Kagoshima City official tourism gives Yunohira Observatory at Sakurajimakoikecho 1025; named map result matches exactly.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "3518": {
     "status": "official-map-identity-reviewed",
@@ -312,7 +434,35 @@
     "lat": 31.2000204,
     "lon": 130.8257426,
     "evidence": "Named waterfall point is within 52 m of official map 31.200293,130.82529. Access to the pool is from downstream parking (31.2044043,130.8158277) and 1.2 km trail; pin is the fall, not parking or upper viewpoint.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "9163697729190490276",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3520": {
+    "status": "official-name-address-reviewed",
+    "name": "가노야 장미원",
+    "officialSource": "https://www.city.kanoya.lg.jp/kouhou/shisetsu/kanko/001.html",
+    "resolvedName": "Kanoya Rose Garden",
+    "resolvedAddress": "Kanoya Rose Garden, 1250 Hamadacho, Kanoya, Kagoshima 893-0053 일본",
+    "lat": 31.3457734,
+    "lon": 130.8166831,
+    "cid": "17841851048825372509",
+    "evidence": "Kanoya City gives Kanoya Rose Garden at Hamadacho 1250; named map result matches exactly.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3521": {
+    "status": "official-name-address-reviewed",
+    "name": "아라히라텐진",
+    "officialSource": "https://www.city.kanoya.lg.jp/kankou/bunka/kanko/kanko/11.html",
+    "resolvedName": "스가하라 신사 (아라히라 텐진)",
+    "resolvedAddress": "스가하라 신사 (아라히라 텐진) 4014 Tenjincho, Kanoya, Kagoshima 891-2313 일본",
+    "lat": 31.3795937,
+    "lon": 130.7774017,
+    "cid": "7788997161371292816",
+    "evidence": "Kanoya City gives Sugawara Shrine (Arahira Tenjin) at Tenjincho 4014; named map result matches exactly.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "3524": {
     "status": "official-name-address-reviewed",
@@ -322,7 +472,9 @@
     "lat": 30.2998495,
     "lon": 130.4137052,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "14459924411367445762",
+    "reverifiedAt": "2026-10-07"
   },
   "3525": {
     "status": "official-map-identity-reviewed",
@@ -333,7 +485,35 @@
     "lat": 30.3047864,
     "lon": 130.5752613,
     "evidence": "Official Yakushima Tourism embedded map gives 30.304786,130.575261 and entity 0x590d81d30f0a788d, matching named Yakusugi Land destination in Anbo forest.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "6416927787563251853",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3528": {
+    "status": "official-name-address-reviewed",
+    "name": "긴사쿠바루 원생림",
+    "officialSource": "https://www.kagoshima-kankou.com/guide/10199",
+    "resolvedName": "Kinsakubaru Old-growth Forest",
+    "resolvedAddress": "Kinsakubaru Old-growth Forest, Naze Oaza Asato, Amami, Kagoshima 894-0773 일본",
+    "lat": 28.3419211,
+    "lon": 129.4466044,
+    "cid": "8475293374220036182",
+    "evidence": "Kagoshima official tourism identifies Kinsakubaru in Naze Asato, Amami; named map destination is within the intended old-growth forest area.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
+  },
+  "3529": {
+    "status": "official-name-address-reviewed",
+    "name": "구로시오노모리 맹그로브파크",
+    "officialSource": "https://www.mangrovepark.com/",
+    "resolvedName": "Kuroshio Forest Mangrove Park.",
+    "resolvedAddress": "Kuroshio Forest Mangrove Park., 石原-478 住用町 Amami, Kagoshima 894-1202 일본",
+    "lat": 28.2596215,
+    "lon": 129.4087553,
+    "cid": "1411361342552211030",
+    "evidence": "Mangrove Park official site gives Amami-shi Sumiyocho Ishihara 478; named map result matches exactly.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "4812": {
     "status": "official-name-address-reviewed",
