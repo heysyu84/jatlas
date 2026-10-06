@@ -6,18 +6,9 @@
   "cidTargets": 102,
   "coordinateOnlyTargets": 30,
   "preservedManualTargets": 0,
-  "identityReviewTargets": 1,
+  "identityReviewTargets": 2,
   "sourceCoordinateTargets": 18,
-  "auditEntityTargets": 101,
+  "auditEntityTargets": 100,
   "auditCameraTargets": 12,
-  "riskFlags": [
-    {
-      "id": 117,
-      "name": "오쿠타마호",
-      "reason": "stored-vs-query-entity-distance",
-      "km": 1.61,
-      "resolvedName": "오쿠타마 호수",
-      "chosen": "query-entity"
-    }
-  ]
+  "riskFlags": []
 }
