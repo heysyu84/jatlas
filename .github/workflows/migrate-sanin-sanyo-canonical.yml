@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - name: Install dependencies
-        run: python -m pip install Pillow==11.3.0
+        run: python -m pip install Pillow==11.3.0 Unidecode==1.4.0
       - name: Capture current runtime
         run: node tools/audit-content.cjs /tmp/sanin-sanyo-before.json
       - name: Migrate Sanin-Sanyo photos
