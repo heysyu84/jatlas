@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# greater-tokyo-canonical-migration-20261007-r2
+# greater-tokyo-canonical-migration-20261007-r3
 import hashlib, importlib.util, io, json, re, shutil, subprocess, unicodedata, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
@@ -68,7 +68,11 @@ def main():
     runtime=json.loads(before_path.read_text())
     idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
     place_ids={int(x['legacyId']):x['newId'] for x in idmap['places'] if x.get('pref') in PREFSET}
-    food_ids={(x['pref'],x['name']):x['newId'] for x in idmap['foods'] if x.get('pref') in PREFSET}
+    food_ids={}
+    for x in idmap['foods']:
+        if x.get('pref') in PREFSET:
+            food_ids.setdefault((x['pref'],x['name']),[]).append(x['newId'])
+    food_seen={}
 
     manifest=json.loads((ROOT/'tools/official-photo-assets.json').read_text())
     manifest_by_output={x.get('output'):x for x in manifest.get('photos',[]) if x.get('output')}
@@ -144,8 +148,10 @@ def main():
             if asset is None: asset=manifest_by_output.get(src)
             if asset: meta.update({k:asset.get(k,'') for k in ('source','terms','author')})
             meta.update({k:v for k,v in pic.items() if k in ('source','author','terms','licenseUrl') and v})
-            cid=food_ids.get((pref,name))
-            if not cid: raise ValueError(f'Missing reserved food ID {pref} {name}')
+            key=(pref,name); ids=food_ids.get(key) or []
+            ordinal=food_seen.get(key,0)
+            if ordinal>=len(ids): raise ValueError(f'Missing reserved food ID {pref} {name} occurrence {ordinal+1}')
+            cid=ids[ordinal]; food_seen[key]=ordinal+1
             canonical=f'images/regions/greater-tokyo/{PREFSLUG[pref]}/foods/{cid}-{name_slug(name)}.webp'
             dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)
             registry['foods'][cid]={
