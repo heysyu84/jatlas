@@ -1,44 +1,13 @@
 {
   "schemaVersion": 1,
   "region": "홋카이도",
-  "status": "CANONICAL_MAP_TARGETS_ADDED",
-  "canonicalTargetCount": 42,
-  "policy": {
-    "internalEmbed": "fixed coordinates",
-    "externalGoogleMaps": "Google Place ID or CID when exact; verified representative target otherwise",
-    "freeTextSearch": "fallback only outside canonical registry"
-  },
-  "correctedCases": [
-    {
-      "id": 4000,
-      "name": "오도리 공원",
-      "issue": "search results instead of a stable park target"
-    },
-    {
-      "id": 4003,
-      "name": "홋카이도 신궁",
-      "issue": "embed camera drifted toward central Sapporo / wrong area"
-    },
-    {
-      "id": 4012,
-      "name": "도야호",
-      "issue": "resolved to Toyako town rather than Lake Toya"
-    },
-    {
-      "id": 4019,
-      "name": "모토마치·하치만자카",
-      "issue": "resolved to Western Hakodate district instead of Hachimanzaka"
-    },
-    {
-      "id": 4037,
-      "name": "구시로 습원",
-      "issue": "broad wetland target replaced with representative visitor viewpoint"
-    }
-  ],
-  "regressionGuards": [
-    "All Hokkaido place IDs 4000-4041 have canonical coordinates.",
-    "Hachimanzaka external link uses exact Google Place ID.",
-    "Hokkaido Shrine embed uses shrine coordinates.",
-    "Lake Toya external link uses the lake Google Place ID."
-  ]
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 42,
+  "cidTargets": 41,
+  "coordinateOnlyTargets": 1,
+  "preservedManualTargets": 42,
+  "sourceCoordinateTargets": 0,
+  "auditEntityTargets": 0,
+  "auditCameraTargets": 0,
+  "riskFlags": []
 }

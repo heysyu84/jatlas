@@ -10074,20 +10074,20 @@
     "id": 2809,
     "pref": "고치",
     "name": "무로토곶",
-    "query": "室戸岬",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AE%A4%E6%88%B8%E5%B2%AC&z=16",
+    "query": "室戸岬 海岸 遊歩道",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AE%A4%E6%88%B8%E5%B2%AC+%E6%B5%B7%E5%B2%B8+%E9%81%8A%E6%AD%A9%E9%81%93&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 33.30303495,
-      "lon": 134.16873015
+      "lat": 33.2476582,
+      "lon": 134.1731605
     },
     "status": "entity-result",
-    "resolvedName": "무로토미사키초",
-    "address": "일본 〒781-7101 고치현 무로토시 무로토미사키초",
-    "lat": 33.2776617,
-    "lon": 134.1672804,
-    "cid": "16975129200286666429",
-    "distanceFromStoredKm": 3.407
+    "resolvedName": "室戸岬遊歩道西側",
+    "address": "일본 〒781-7101 Kochi, Muroto, Murotomisakicho, 室戸岬遊歩道西側",
+    "lat": 33.2476582,
+    "lon": 134.1731605,
+    "cid": "11042309133914743119",
+    "distanceFromStoredKm": 0.0
   },
   "2810": {
     "id": 2810,
@@ -12667,12 +12667,12 @@
     "id": 3412,
     "pref": "미야자키",
     "name": "아마노이와토신사",
-    "query": "天岩戸神社",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%A4%A9%E5%B2%A9%E6%88%B8%E7%A5%9E%E7%A4%BE&z=16",
+    "query": "天岩戸神社 西本宮",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%A4%A9%E5%B2%A9%E6%88%B8%E7%A5%9E%E7%A4%BE+%E8%A5%BF%E6%9C%AC%E5%AE%AE&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 32.73484440000001,
-      "lon": 131.3510966
+      "lat": 32.73391285,
+      "lon": 131.3503182
     },
     "status": "search-or-area-result"
   },
@@ -14069,706 +14069,588 @@
     "pref": "홋카이도",
     "name": "오도리 공원",
     "query": "北海道 大通公園",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%A4%A7%E9%80%9A%E5%85%AC%E5%9C%92&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.0598309%2C141.347055&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.06078145,
-      "lon": 141.3541318
+      "lat": 43.0598309,
+      "lon": 141.347055
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4001": {
     "id": 4001,
     "pref": "홋카이도",
     "name": "삿포로 TV타워",
     "query": "北海道 さっぽろテレビ塔",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D%E3%83%86%E3%83%AC%E3%83%93%E5%A1%94&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.0611047%2C141.3564246&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.06110470000001,
       "lon": 141.3564246
     },
-    "status": "entity-result",
-    "resolvedName": "삿포로 TV 타워",
-    "address": "삿포로 TV 타워 1 Chome Odorinishi, Chuo Ward, Sapporo, Hokkaido 060-0042 일본",
-    "lat": 43.0611047,
-    "lon": 141.3564246,
-    "cid": "16286171258450747441"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4002": {
     "id": 4002,
     "pref": "홋카이도",
     "name": "모이와산",
     "query": "北海道 藻岩山",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E8%97%BB%E5%B2%A9%E5%B1%B1&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.0187933%2C141.3236163&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.01910914999999,
-      "lon": 141.32070665
+      "lat": 43.01879330000001,
+      "lon": 141.3236163
     },
-    "status": "entity-result",
-    "resolvedName": "모이와야마",
-    "address": "일본 〒005-0041 홋카이도 삿포로시 미나미구 모이와야마",
-    "lat": 43.0187933,
-    "lon": 141.3236163,
-    "cid": "11943274244522031910"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4003": {
     "id": 4003,
     "pref": "홋카이도",
     "name": "홋카이도 신궁",
     "query": "北海道 北海道神宮",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%8C%97%E6%B5%B7%E9%81%93%E7%A5%9E%E5%AE%AE&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.05505%2C141.307587&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.0571583,
-      "lon": 141.33461755
+      "lat": 43.05505,
+      "lon": 141.307587
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4004": {
     "id": 4004,
     "pref": "홋카이도",
     "name": "삿포로 맥주 박물관",
     "query": "北海道 サッポロビール博物館",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD%E3%83%93%E3%83%BC%E3%83%AB%E5%8D%9A%E7%89%A9%E9%A4%A8&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.0714671%2C141.3689124&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.0714671,
       "lon": 141.3689124
     },
-    "status": "entity-result",
-    "resolvedName": "삿포로 맥주 박물관",
-    "address": "삿포로 맥주 박물관 9 Chome-1-1 Kita 7 Johigashi, Higashi Ward, Sapporo, Hokkaido 065-8633 일본",
-    "lat": 43.0714671,
-    "lon": 141.3689124,
-    "cid": "1396334665551701963"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4005": {
     "id": 4005,
     "pref": "홋카이도",
     "name": "시로이 고이비토 파크",
     "query": "北海道 白い恋人パーク",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%99%BD%E3%81%84%E6%81%8B%E4%BA%BA%E3%83%91%E3%83%BC%E3%82%AF&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.0888751%2C141.2717042&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.0888751,
       "lon": 141.2717042
     },
-    "status": "entity-result",
-    "resolvedName": "시로이코이비토 파크",
-    "address": "시로이코이비토 파크 2 Chome-11-36 Miyanosawa 2 Jo, Nishi Ward, Sapporo, Hokkaido 063-0052 일본",
-    "lat": 43.0888751,
-    "lon": 141.2717042,
-    "cid": "13987684257188413841"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4006": {
     "id": 4006,
     "pref": "홋카이도",
     "name": "조잔케이 온천",
     "query": "北海道 定山渓温泉",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%AE%9A%E5%B1%B1%E6%B8%93%E6%B8%A9%E6%B3%89&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.9660653%2C141.1670505&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 42.96918149999999,
-      "lon": 141.16676265
+      "lat": 42.96606529999999,
+      "lon": 141.1670505
     },
-    "status": "entity-result",
-    "resolvedName": "Jozankei Onsen",
-    "address": "Jozankei Onsen, 미나미구 삿포로시 홋카이도 일본",
-    "lat": 42.9660653,
-    "lon": 141.1670505,
-    "cid": "6148931708989145609"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4007": {
     "id": 4007,
     "pref": "홋카이도",
     "name": "오타루 운하",
     "query": "北海道 小樽運河",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%B0%8F%E6%A8%BD%E9%81%8B%E6%B2%B3&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.20419%2C140.99974&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.2020878,
-      "lon": 141.00212995
+      "lat": 43.20419,
+      "lon": 140.99974
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4008": {
     "id": 4008,
     "pref": "홋카이도",
     "name": "오타루 오르골당",
     "query": "北海道 小樽オルゴール堂",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%B0%8F%E6%A8%BD%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB%E5%A0%82&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.190575%2C141.007838&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.19322400000001,
-      "lon": 141.0055838
+      "lat": 43.190575,
+      "lon": 141.007838
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4009": {
     "id": 4009,
     "pref": "홋카이도",
     "name": "오타루 산카쿠 시장",
     "query": "北海道 小樽三角市場",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%B0%8F%E6%A8%BD%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.19903559999999%2C140.993927&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.19903559999999,
       "lon": 140.993927
     },
-    "status": "entity-result",
-    "resolvedName": "삼각 시장",
-    "address": "삼각 시장 三角市場内 3 Chome-10-16 Inaho, Otaru, Hokkaido 047-0032 일본",
-    "lat": 43.19903559999999,
-    "lon": 140.993927,
-    "cid": "18281937072950691954"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4010": {
     "id": 4010,
     "pref": "홋카이도",
     "name": "가무이곶",
     "query": "北海道 神威岬",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%A5%9E%E5%A8%81%E5%B2%AC&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.3343289%2C140.3463741&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.3343284,
+      "lat": 43.3343289,
       "lon": 140.3463741
     },
-    "status": "entity-result",
-    "resolvedName": "가무이 곶",
-    "address": "일본 〒046-0321 고자키초 가무이 곶",
-    "lat": 43.3343289,
-    "lon": 140.3463741,
-    "cid": "17489361769483450703"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4011": {
     "id": 4011,
     "pref": "홋카이도",
     "name": "요테이산 전망권",
     "query": "北海道 羊蹄山",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%BE%8A%E8%B9%84%E5%B1%B1&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.82697599999999%2C140.806821&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 42.82697545,
+      "lat": 42.82697599999999,
       "lon": 140.806821
     },
-    "status": "entity-result",
-    "resolvedName": "요테이 산",
-    "address": "일본 〒044-0131 홋카이도 Abuta District, 교고쿠조 가와니시 요테이 산",
-    "lat": 42.82697599999999,
-    "lon": 140.806821,
-    "cid": "8830867802575264090"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4012": {
     "id": 4012,
     "pref": "홋카이도",
     "name": "도야호",
     "query": "北海道 洞爺湖",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E6%B4%9E%E7%88%BA%E6%B9%96&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.60389%2C140.87028&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 42.61003785,
-      "lon": 140.8487715
+      "lat": 42.60389,
+      "lon": 140.87028
     },
-    "status": "entity-result",
-    "resolvedName": "도야코조",
-    "address": "일본 홋카이도 Abuta District, 도야코조",
-    "lat": 42.54720409999999,
-    "lon": 140.7663242,
-    "cid": "7430749954593280121"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4013": {
     "id": 4013,
     "pref": "홋카이도",
     "name": "우스산 로프웨이",
     "query": "北海道 有珠山ロープウェイ",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E6%9C%89%E7%8F%A0%E5%B1%B1%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.5388913%2C140.8602757&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 42.5388913,
       "lon": 140.8602757
     },
-    "status": "entity-result",
-    "resolvedName": "우스산 로프웨이",
-    "address": "우스산 로프웨이 184-5 Showashinzan, Sobetsu, Usu District, Hokkaido 052-0102 일본",
-    "lat": 42.5388913,
-    "lon": 140.8602757,
-    "cid": "5645424776014375120"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4014": {
     "id": 4014,
     "pref": "홋카이도",
     "name": "노보리베쓰 지고쿠다니",
     "query": "北海道 登別地獄谷",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%99%BB%E5%88%A5%E5%9C%B0%E7%8D%84%E8%B0%B7&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.4976231%2C141.1486602&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 42.4976231,
       "lon": 141.1486602
     },
-    "status": "entity-result",
-    "resolvedName": "지옥계곡",
-    "address": "지옥계곡 無番地 Noboribetsuonsencho, Noboribetsu, Hokkaido 059-0551 일본",
-    "lat": 42.4976231,
-    "lon": 141.1486602,
-    "cid": "14390601882475151052"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4015": {
     "id": 4015,
     "pref": "홋카이도",
     "name": "우포포이",
     "query": "北海道 ウポポイ",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%82%A6%E3%83%9D%E3%83%9D%E3%82%A4&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.55778919999999%2C141.3635063&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 42.55778919999999,
       "lon": 141.3635063
     },
-    "status": "entity-result",
-    "resolvedName": "Upopoy (National Ainu Museum and Park)",
-    "address": "Upopoy (National Ainu Museum and Park), 2 Chome-3 Wakakusacho, Shiraoi, Shiraoi District, Hokkaido 059-0902 일본",
-    "lat": 42.55778919999999,
-    "lon": 141.3635063,
-    "cid": "7599517948496611323"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4016": {
     "id": 4016,
     "pref": "홋카이도",
     "name": "하코다테산",
     "query": "北海道 函館山",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%87%BD%E9%A4%A8%E5%B1%B1&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=41.7594502%2C140.7044467&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 41.75166034999999,
-      "lon": 140.7075784
+      "lat": 41.7594502,
+      "lon": 140.7044467
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4017": {
     "id": 4017,
     "pref": "홋카이도",
     "name": "고료카쿠 공원",
     "query": "北海道 五稜郭公園",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E4%BA%94%E7%A8%9C%E9%83%AD%E5%85%AC%E5%9C%92&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=41.7968814%2C140.7561137&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 41.7968814,
       "lon": 140.7561137
     },
-    "status": "entity-result",
-    "resolvedName": "고료카쿠 공원",
-    "address": "고료카쿠 공원 44-2 Goryokakucho, Hakodate, Hokkaido 040-0001 일본",
-    "lat": 41.7968814,
-    "lon": 140.7561137,
-    "cid": "7784164465363393765"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4018": {
     "id": 4018,
     "pref": "홋카이도",
     "name": "하코다테 아침시장",
     "query": "北海道 函館朝市",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%87%BD%E9%A4%A8%E6%9C%9D%E5%B8%82&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=41.7723692%2C140.7252998&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 41.77025590000001,
-      "lon": 140.7268845
+      "lat": 41.77236920000001,
+      "lon": 140.7252998
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4019": {
     "id": 4019,
     "pref": "홋카이도",
     "name": "모토마치·하치만자카",
     "query": "北海道 元町・八幡坂",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%85%83%E7%94%BA%E3%83%BB%E5%85%AB%E5%B9%A1%E5%9D%82&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=41.7646115%2C140.7126574&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 41.76803645,
-      "lon": 140.71249195
+      "lat": 41.7646115,
+      "lon": 140.7126574
     },
-    "status": "entity-result",
-    "resolvedName": "Western Hakodate",
-    "address": "Western Hakodate, 하코다테시 홋카이도 일본",
-    "lat": 41.7657415,
-    "lon": 140.7138585,
-    "cid": "10849759283057933527"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4020": {
     "id": 4020,
     "pref": "홋카이도",
     "name": "오누마 국정공원",
     "query": "北海道 大沼国定公園",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%A4%A7%E6%B2%BC%E5%9B%BD%E5%AE%9A%E5%85%AC%E5%9C%92&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=41.9838473%2C140.6721442&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 41.98384729999999,
       "lon": 140.6721442
     },
-    "status": "entity-result",
-    "resolvedName": "오누마 국정공원",
-    "address": "오누마 국정공원 Nanae, Kameda District, Hokkaido 041-1354 일본",
-    "lat": 41.9838473,
-    "lon": 140.6721442,
-    "cid": "8656010056954195789"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4021": {
     "id": 4021,
     "pref": "홋카이도",
     "name": "마쓰마에성",
     "query": "北海道 松前城",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E6%9D%BE%E5%89%8D%E5%9F%8E&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=41.4298799%2C140.1084293&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 41.4298799,
       "lon": 140.1084293
     },
-    "status": "entity-result",
-    "resolvedName": "마쓰마에 성",
-    "address": "마쓰마에 성 144 Matsushiro, Matsumae, Matsumae District, Hokkaido 049-1511 일본",
-    "lat": 41.4298799,
-    "lon": 140.1084293,
-    "cid": "9100590044949440672"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4022": {
     "id": 4022,
     "pref": "홋카이도",
     "name": "아사히야마 동물원",
     "query": "北海道 旭山動物園",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E6%97%AD%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.7689713%2C142.4791319&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.7689713,
       "lon": 142.4791319
     },
-    "status": "entity-result",
-    "resolvedName": "아사히야마 동물원",
-    "address": "아사히야마 동물원 Kuranuma Higashiasahikawacho, Asahikawa, Hokkaido 078-8205 일본",
-    "lat": 43.7689713,
-    "lon": 142.4791319,
-    "cid": "14422176086528381907"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4023": {
     "id": 4023,
     "pref": "홋카이도",
     "name": "아사히다케",
     "query": "北海道 旭岳",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E6%97%AD%E5%B2%B3&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.66367229999999%2C142.8543025&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.66367175000001,
+      "lat": 43.6636723,
       "lon": 142.8543025
     },
-    "status": "entity-result",
-    "resolvedName": "아사히 산",
-    "address": "일본 〒071-1471 홋카이도 Kamikawa District, 히가시카와조 노카난 아사히 산",
-    "lat": 43.66367229999999,
-    "lon": 142.8543025,
-    "cid": "3055439217798701927"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4024": {
     "id": 4024,
     "pref": "홋카이도",
     "name": "소운쿄·구로다케 로프웨이",
     "query": "北海道 層雲峡・黒岳ロープウェイ",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%B1%A4%E9%9B%B2%E5%B3%A1%E3%83%BB%E9%BB%92%E5%B2%B3%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.7244944%2C142.9470056&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.71753385,
-      "lon": 142.94360995
+      "lat": 43.7244944,
+      "lon": 142.9470056
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4025": {
     "id": 4025,
     "pref": "홋카이도",
     "name": "팜 도미타",
     "query": "北海道 ファーム富田",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E5%AF%8C%E7%94%B0&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.4182493%2C142.4280407&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.4182493,
       "lon": 142.4280407
     },
-    "status": "entity-result",
-    "resolvedName": "Farm Tomita",
-    "address": "Farm Tomita, 15 Kisenkita, Nakafurano, Sorachi District, Hokkaido 071-0704 일본",
-    "lat": 43.4182493,
-    "lon": 142.4280407,
-    "cid": "13217448091170401682"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4026": {
     "id": 4026,
     "pref": "홋카이도",
     "name": "닝구르 테라스",
     "query": "北海道 ニングルテラス",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%86%E3%83%A9%E3%82%B9&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.3233257%2C142.3558861&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.3233257,
       "lon": 142.3558861
     },
-    "status": "entity-result",
-    "resolvedName": "닝구르 테라스",
-    "address": "닝구르 테라스 Nakagoryo, Furano, Hokkaido 076-8511 일본",
-    "lat": 43.3233257,
-    "lon": 142.3558861,
-    "cid": "12084578554544908332"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4027": {
     "id": 4027,
     "pref": "홋카이도",
     "name": "시로가네 청의 호수",
     "query": "北海道 白金青い池",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%99%BD%E9%87%91%E9%9D%92%E3%81%84%E6%B1%A0&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.4934738%2C142.6142144&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.4934738,
       "lon": 142.6142144
     },
-    "status": "entity-result",
-    "resolvedName": "청의 호수",
-    "address": "청의 호수 Shirogane, Biei, Kamikawa District, Hokkaido 071-0235 일본",
-    "lat": 43.4934738,
-    "lon": 142.6142144,
-    "cid": "345959270472972190"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4028": {
     "id": 4028,
     "pref": "홋카이도",
     "name": "시라히게 폭포",
     "query": "北海道 白ひげの滝",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%99%BD%E3%81%B2%E3%81%92%E3%81%AE%E6%BB%9D&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.4745585%2C142.6393176&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.4745585,
       "lon": 142.6393176
     },
-    "status": "entity-result",
-    "resolvedName": "흰수염 폭포",
-    "address": "흰수염 폭포 Shirogane, Biei, Kamikawa District, Hokkaido 071-0235 일본",
-    "lat": 43.4745585,
-    "lon": 142.6393176,
-    "cid": "362140915972662822"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4029": {
     "id": 4029,
     "pref": "홋카이도",
     "name": "패치워크 로드",
     "query": "北海道 パッチワークの路",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%83%91%E3%83%83%E3%83%81%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E8%B7%AF&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.6306405%2C142.4283172&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 43.6306405,
       "lon": 142.4283172
     },
-    "status": "entity-result",
-    "resolvedName": "패치워크의 길",
-    "address": "패치워크의 길 北海道上川郡美瑛町大久保協生, Biei, Kamikawa District, Hokkaido 071-0216 일본",
-    "lat": 43.6306405,
-    "lon": 142.4283172,
-    "cid": "15789700945580453148"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4030": {
     "id": 4030,
     "pref": "홋카이도",
     "name": "소야곶",
     "query": "北海道 宗谷岬",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%AE%97%E8%B0%B7%E5%B2%AC&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=45.522764%2C141.936531&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 45.5157292,
-      "lon": 141.93983925
+      "lat": 45.522764,
+      "lon": 141.936531
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4031": {
     "id": 4031,
     "pref": "홋카이도",
     "name": "레분섬",
     "query": "北海道 礼文島",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%A4%BC%E6%96%87%E5%B3%B6&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=45.3922768%2C141.0150364&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 45.36878704999999,
-      "lon": 141.01681285
+      "lat": 45.3922768,
+      "lon": 141.0150364
     },
-    "status": "entity-result",
-    "resolvedName": "레분 섬",
-    "address": "일본 홋카이도 Rebun District, 레분조 레분 섬",
-    "lat": 45.3922768,
-    "lon": 141.0150364,
-    "cid": "11661077689701089162"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4032": {
     "id": 4032,
     "pref": "홋카이도",
     "name": "리시리섬·리시리산",
     "query": "北海道 利尻島・利尻山",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%88%A9%E5%B0%BB%E5%B3%B6%E3%83%BB%E5%88%A9%E5%B0%BB%E5%B1%B1&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=45.1805888%2C141.2411722&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 45.18058825,
+      "lat": 45.1805888,
       "lon": 141.2411722
     },
-    "status": "entity-result",
-    "resolvedName": "리시리 산",
-    "address": "일본 〒097-0211 홋카이도 Rishiri District, 리시리후지조 오니와키 리시리 산",
-    "lat": 45.1805888,
-    "lon": 141.2411722,
-    "cid": "3914009142357152605"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4033": {
     "id": 4033,
     "pref": "홋카이도",
     "name": "아바시리 유빙 관광쇄빙선 오로라",
     "query": "北海道 網走流氷観光砕氷船おーろら",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%B6%B2%E8%B5%B0%E6%B5%81%E6%B0%B7%E8%A6%B3%E5%85%89%E7%A0%95%E6%B0%B7%E8%88%B9%E3%81%8A%E3%83%BC%E3%82%8D%E3%82%89&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=44.0220596%2C144.2739072&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 44.02205960000001,
       "lon": 144.2739072
     },
-    "status": "entity-result",
-    "resolvedName": "유빙 관광 쇄빙선 오로라",
-    "address": "유빙 관광 쇄빙선 오로라 4 Chome-５の１ Minami 3 Johigashi, Abashiri, Hokkaido 093-0003 일본",
-    "lat": 44.0220596,
-    "lon": 144.2739072,
-    "cid": "2068827476882281684"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4034": {
     "id": 4034,
     "pref": "홋카이도",
     "name": "박물관 아바시리 감옥",
     "query": "北海道 博物館 網走監獄",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%8D%9A%E7%89%A9%E9%A4%A8+%E7%B6%B2%E8%B5%B0%E7%9B%A3%E7%8D%84&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.996314%2C144.229498&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.995859,
-      "lon": 144.23021275
+      "lat": 43.996314,
+      "lon": 144.229498
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4035": {
     "id": 4035,
     "pref": "홋카이도",
     "name": "시레토코 오호",
     "query": "北海道 知床五湖",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E7%9F%A5%E5%BA%8A%E4%BA%94%E6%B9%96&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=44.1239681%2C145.0828581&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 44.1239676,
+      "lat": 44.1239681,
       "lon": 145.0828581
     },
-    "status": "entity-result",
-    "resolvedName": "Shiretokogo Lake",
-    "address": "Shiretokogo Lake, 온네베쓰무라 샤리조 Shari District, 홋카이도 099-4356 일본",
-    "lat": 44.1239681,
-    "lon": 145.0828581,
-    "cid": "5539715500174231687"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4036": {
     "id": 4036,
     "pref": "홋카이도",
     "name": "오신코신 폭포",
     "query": "北海道 オシンコシンの滝",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%82%AA%E3%82%B7%E3%83%B3%E3%82%B3%E3%82%B7%E3%83%B3%E3%81%AE%E6%BB%9D&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=44.0380013%2C144.9351949&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 44.0380013,
       "lon": 144.9351949
     },
-    "status": "entity-result",
-    "resolvedName": "오신코신 폭포",
-    "address": "오신코신 폭포 Utoronishi, Shari, Shari District, Hokkaido 099-4354 일본",
-    "lat": 44.0380013,
-    "lon": 144.9351949,
-    "cid": "13814390799087991084"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4037": {
     "id": 4037,
     "pref": "홋카이도",
     "name": "구시로 습원",
     "query": "北海道 釧路湿原",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E9%87%A7%E8%B7%AF%E6%B9%BF%E5%8E%9F&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.073969%2C144.320748&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.02254615,
-      "lon": 144.1744239
+      "lat": 43.073969,
+      "lon": 144.320748
     },
-    "status": "search-or-area-result"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4038": {
     "id": 4038,
     "pref": "홋카이도",
     "name": "아칸호",
     "query": "北海道 阿寒湖",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E9%98%BF%E5%AF%92%E6%B9%96&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.45725849999999%2C144.1040147&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.45588255,
-      "lon": 144.0986775
+      "lat": 43.45725849999999,
+      "lon": 144.1040147
     },
-    "status": "entity-result",
-    "resolvedName": "아칸 호",
-    "address": "일본 홋카이도 구시로시 아칸 호",
-    "lat": 43.45725849999999,
-    "lon": 144.1040147,
-    "cid": "1328749705543112073"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4039": {
     "id": 4039,
     "pref": "홋카이도",
     "name": "마슈호",
     "query": "北海道 摩周湖",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E6%91%A9%E5%91%A8%E6%B9%96&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.5872284%2C144.5237617&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.5790432,
-      "lon": 144.53888715
+      "lat": 43.58722839999999,
+      "lon": 144.5237617
     },
-    "status": "entity-result",
-    "resolvedName": "마슈 호",
-    "address": "일본 홋카이도 Kawakami District, 데시카가조 마슈 호",
-    "lat": 43.5872284,
-    "lon": 144.5237617,
-    "cid": "91306158365998954"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4040": {
     "id": 4040,
     "pref": "홋카이도",
     "name": "굿샤로호",
     "query": "北海道 屈斜路湖",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%B1%88%E6%96%9C%E8%B7%AF%E6%B9%96&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=43.603842%2C144.3254063&z=16",
     "identityReview": "pending",
     "camera": {
-      "lat": 43.61654890000001,
-      "lon": 144.3371772
+      "lat": 43.603842,
+      "lon": 144.3254063
     },
-    "status": "entity-result",
-    "resolvedName": "굿샤로 호",
-    "address": "일본 홋카이도 Kawakami District, 데시카가조 굿샤로 호",
-    "lat": 43.603842,
-    "lon": 144.3254063,
-    "cid": "17853058014286200030"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4041": {
     "id": 4041,
     "pref": "홋카이도",
     "name": "오비히로 경마장·반에이 경마",
     "query": "北海道 帯広競馬場・ばんえい競馬",
-    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%8C%97%E6%B5%B7%E9%81%93+%E5%B8%AF%E5%BA%83%E7%AB%B6%E9%A6%AC%E5%A0%B4%E3%83%BB%E3%81%B0%E3%82%93%E3%81%88%E3%81%84%E7%AB%B6%E9%A6%AC&z=16",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=42.9210019%2C143.1823285&z=16",
     "identityReview": "pending",
     "camera": {
       "lat": 42.9210019,
       "lon": 143.1823285
     },
-    "status": "entity-result",
-    "resolvedName": "오비히로 경마장",
-    "address": "오비히로 경마장 9 Chome-１-1 Nishi 13 Jominami, Obihiro, Hokkaido 080-0023 일본",
-    "lat": 42.9210019,
-    "lon": 143.1823285,
-    "cid": "7653286941925976853"
+    "status": "error",
+    "error": "'NoneType' object has no attribute 'split'"
   },
   "4100": {
     "id": 4100,
@@ -16876,5 +16758,3073 @@
       "lon": 140.1325614
     },
     "status": "search-or-area-result"
+  },
+  "1622": {
+    "id": 1622,
+    "pref": "나라",
+    "name": "오카데라",
+    "query": "奈良県明日香村 岡寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%A5%88%E8%89%AF%E7%9C%8C%E6%98%8E%E6%97%A5%E9%A6%99%E6%9D%91+%E5%B2%A1%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 34.4718322,
+      "lon": 135.8282623
+    },
+    "status": "entity-result",
+    "resolvedName": "오카데라",
+    "address": "오카데라 806 Oka, Asuka, Takaichi District, Nara 634-0111 일본",
+    "lat": 34.4718322,
+    "lon": 135.8282623,
+    "cid": "9489125584326573585",
+    "distanceFromStoredKm": 0.011
+  },
+  "4512": {
+    "id": 4512,
+    "pref": "야마가타",
+    "name": "하구로산 오층탑",
+    "query": "山形県 羽黒山 五重塔",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%BE%BD%E9%BB%92%E5%B1%B1+%E4%BA%94%E9%87%8D%E5%A1%94&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.7047357,
+      "lon": 139.967661
+    },
+    "status": "entity-result",
+    "resolvedName": "Hagurosan Gojunoto (Five Story Pagoda)",
+    "address": "Hagurosan Gojunoto (Five Story Pagoda), Haguroyama-33-14 Haguromachi Touge, Tsuruoka, Yamagata 997-0211 일본",
+    "lat": 38.7047357,
+    "lon": 139.967661,
+    "cid": "4032834640612525024"
+  },
+  "4513": {
+    "id": 4513,
+    "pref": "야마가타",
+    "name": "산진고사이덴",
+    "query": "山形県 三神合祭殿",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%B8%89%E7%A5%9E%E5%90%88%E7%A5%AD%E6%AE%BF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.7018972,
+      "lon": 139.9821935
+    },
+    "status": "entity-result",
+    "resolvedName": "Dewasanzan Shrine Sanshingosaiden",
+    "address": "Dewasanzan Shrine Sanshingosaiden, Haguroyama Haguromachi Touge, Tsuruoka, Yamagata 997-0211 일본",
+    "lat": 38.7018977,
+    "lon": 139.9821935,
+    "cid": "1007276100664505397"
+  },
+  "4514": {
+    "id": 4514,
+    "pref": "야마가타",
+    "name": "유도노산 신사",
+    "query": "山形県 湯殿山神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%B9%AF%E6%AE%BF%E5%B1%B1%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.48192915,
+      "lon": 140.1520455
+    },
+    "status": "search-or-area-result"
+  },
+  "4515": {
+    "id": 4515,
+    "pref": "야마가타",
+    "name": "가모 수족관",
+    "query": "山形県 鶴岡市立加茂水族館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%B6%B4%E5%B2%A1%E5%B8%82%E7%AB%8B%E5%8A%A0%E8%8C%82%E6%B0%B4%E6%97%8F%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.76165659999999,
+      "lon": 139.7246678
+    },
+    "status": "entity-result",
+    "resolvedName": "Kamo Aquarium",
+    "address": "Kamo Aquarium, Okubo-657-1 Imaizumi, Tsuruoka, Yamagata 997-1206 일본",
+    "lat": 38.76165659999999,
+    "lon": 139.7246678,
+    "cid": "5568327751054857591"
+  },
+  "4516": {
+    "id": 4516,
+    "pref": "야마가타",
+    "name": "치도칸",
+    "query": "山形県 致道館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E8%87%B4%E9%81%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.72620000000001,
+      "lon": 139.826428
+    },
+    "status": "entity-result",
+    "resolvedName": "Chidōkan",
+    "address": "Chidōkan, 11-45 Babacho, Tsuruoka, Yamagata 997-0035 일본",
+    "lat": 38.7262,
+    "lon": 139.826428,
+    "cid": "13874373268187749956"
+  },
+  "4517": {
+    "id": 4517,
+    "pref": "야마가타",
+    "name": "산쿄창고",
+    "query": "山形県 山居倉庫",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B1%B1%E5%B1%85%E5%80%89%E5%BA%AB&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.91089119999999,
+      "lon": 139.8369957
+    },
+    "status": "entity-result",
+    "resolvedName": "산쿄 창고",
+    "address": "산쿄 창고 1 Chome-1-20 Sankyomachi, Sakata, Yamagata 998-0838 일본",
+    "lat": 38.9108912,
+    "lon": 139.8369957,
+    "cid": "9760542688078162492"
+  },
+  "4518": {
+    "id": 4518,
+    "pref": "야마가타",
+    "name": "혼마 미술관",
+    "query": "山形県 本間美術館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%9C%AC%E9%96%93%E7%BE%8E%E8%A1%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.92341080000001,
+      "lon": 139.8421647
+    },
+    "status": "entity-result",
+    "resolvedName": "Homma Museum of Art",
+    "address": "Homma Museum of Art, 7-7 Onaricho, Sakata, Yamagata 998-0024 일본",
+    "lat": 38.9234108,
+    "lon": 139.8421647,
+    "cid": "1620635723645571492"
+  },
+  "4519": {
+    "id": 4519,
+    "pref": "야마가타",
+    "name": "혼마가 구 본저",
+    "query": "山形県 本間家旧本邸",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%9C%AC%E9%96%93%E5%AE%B6%E6%97%A7%E6%9C%AC%E9%82%B8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.91439935,
+      "lon": 139.8393403
+    },
+    "status": "search-or-area-result"
+  },
+  "4520": {
+    "id": 4520,
+    "pref": "야마가타",
+    "name": "조카이산 오모노이미 신사 후키우라구치노미야",
+    "query": "山形県 鳥海山大物忌神社 吹浦口之宮",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%B3%A5%E6%B5%B7%E5%B1%B1%E5%A4%A7%E7%89%A9%E5%BF%8C%E7%A5%9E%E7%A4%BE+%E5%90%B9%E6%B5%A6%E5%8F%A3%E4%B9%8B%E5%AE%AE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 39.047236,
+      "lon": 139.9636701
+    },
+    "status": "search-or-area-result"
+  },
+  "4521": {
+    "id": 4521,
+    "pref": "야마가타",
+    "name": "마루이케사마",
+    "query": "山形県 丸池様",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%B8%B8%E6%B1%A0%E6%A7%98&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 39.07275609999999,
+      "lon": 139.8915402
+    },
+    "status": "entity-result",
+    "resolvedName": "마루이케",
+    "address": "일본 〒999-8525 Yamagata, Akumi District, Yuza, 마루이케 直世荒川５７",
+    "lat": 39.0727561,
+    "lon": 139.8915402,
+    "cid": "6121524293319748197"
+  },
+  "4522": {
+    "id": 4522,
+    "pref": "야마가타",
+    "name": "신조 후루사토 역사센터",
+    "query": "山形県 新庄ふるさと歴史センター",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%96%B0%E5%BA%84%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E6%AD%B4%E5%8F%B2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.767034,
+      "lon": 140.296506
+    },
+    "status": "entity-result",
+    "resolvedName": "Shinjo Furusato History Center",
+    "address": "Shinjo Furusato History Center, 4-74 Horibatamachi, Shinjo City, Yamagata 996-0085 일본",
+    "lat": 38.767034,
+    "lon": 140.296506,
+    "cid": "18354785835920581970"
+  },
+  "4523": {
+    "id": 4523,
+    "pref": "야마가타",
+    "name": "모가미강 뱃놀이",
+    "query": "山形県 最上川舟下り",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%9C%80%E4%B8%8A%E5%B7%9D%E8%88%9F%E4%B8%8B%E3%82%8A&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.344755,
+      "lon": 140.1225598
+    },
+    "status": "entity-result",
+    "resolvedName": "모가미 강",
+    "address": "일본 야마가타현 모가미 강",
+    "lat": 38.3096841,
+    "lon": 140.1394896,
+    "cid": "13562198517285104424"
+  },
+  "4600": {
+    "id": 4600,
+    "pref": "니가타",
+    "name": "반다이바시",
+    "query": "新潟県 萬代橋",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E8%90%AC%E4%BB%A3%E6%A9%8B&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.9195424,
+      "lon": 139.0531961
+    },
+    "status": "entity-result",
+    "resolvedName": "반다이바시",
+    "address": "반다이바시 2 Chome-4 Bandai, Chuo Ward, Niigata, 950-0088 일본",
+    "lat": 37.9195424,
+    "lon": 139.0531961,
+    "cid": "14213208673160744406"
+  },
+  "4601": {
+    "id": 4601,
+    "pref": "니가타",
+    "name": "니가타시 역사박물관 미나토피아",
+    "query": "新潟県 新潟市歴史博物館 みなとぴあ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E6%96%B0%E6%BD%9F%E5%B8%82%E6%AD%B4%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8+%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%B4%E3%81%82&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.92982320000001,
+      "lon": 139.0577486
+    },
+    "status": "entity-result",
+    "resolvedName": "니가타 시 역사박물관",
+    "address": "니가타 시 역사박물관 2 Chome-10 Yanagishimacho, Chuo Ward, Niigata, 951-8013 일본",
+    "lat": 37.9298232,
+    "lon": 139.0577486,
+    "cid": "366937166019137479"
+  },
+  "4602": {
+    "id": 4602,
+    "pref": "니가타",
+    "name": "도키멧세 전망실",
+    "query": "新潟県 朱鷺メッセ Befcoばかうけ展望室",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E6%9C%B1%E9%B7%BA%E3%83%A1%E3%83%83%E3%82%BB+Befco%E3%81%B0%E3%81%8B%E3%81%86%E3%81%91%E5%B1%95%E6%9C%9B%E5%AE%A4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.9252282,
+      "lon": 139.0595498
+    },
+    "status": "entity-result",
+    "resolvedName": "Befco 바카우케 전망대",
+    "address": "Befco 바카우케 전망대 朱鷺メッセ 万代島ビル 31階 5-1 Bandaijima, Chuo Ward, Niigata, 950-0078 일본",
+    "lat": 37.9252282,
+    "lon": 139.0595498,
+    "cid": "2758707965742410540"
+  },
+  "4603": {
+    "id": 4603,
+    "pref": "니가타",
+    "name": "피아 반다이",
+    "query": "新潟県 ピアBandai",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E3%83%94%E3%82%A2Bandai&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.9233394,
+      "lon": 139.061446
+    },
+    "status": "entity-result",
+    "resolvedName": "피아반다이 시장",
+    "address": "피아반다이 시장 にぎわいマルシェ 2-2 Bandaijima, Chuo Ward, Niigata, 950-0078 일본",
+    "lat": 37.9233394,
+    "lon": 139.061446,
+    "cid": "3245094026004741130"
+  },
+  "4604": {
+    "id": 4604,
+    "pref": "니가타",
+    "name": "나가오카 전쟁자료관·야마모토 이소로쿠 기념관 일대",
+    "query": "新潟県 山本五十六記念館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%B1%B1%E6%9C%AC%E4%BA%94%E5%8D%81%E5%85%AD%E8%A8%98%E5%BF%B5%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.452459,
+      "lon": 138.851666
+    },
+    "status": "entity-result",
+    "resolvedName": "야마모토 이소로쿠 기념관",
+    "address": "야마모토 이소로쿠 기념관 1 Chome-4-1 Gofukumachi, Nagaoka, Niigata 940-0056 일본",
+    "lat": 37.452459,
+    "lon": 138.851666,
+    "cid": "17379515904824500456"
+  },
+  "4605": {
+    "id": 4605,
+    "pref": "니가타",
+    "name": "국영 에치고 구릉공원",
+    "query": "新潟県 国営越後丘陵公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%9B%BD%E5%96%B6%E8%B6%8A%E5%BE%8C%E4%B8%98%E9%99%B5%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.4282119,
+      "lon": 138.7479154
+    },
+    "status": "entity-result",
+    "resolvedName": "국영 에치고 구릉 공원",
+    "address": "국영 에치고 구릉 공원 字三ツ又-1950-1 Miyamotohigashikatamachi, Nagaoka, Niigata 940-2082 일본",
+    "lat": 37.4282119,
+    "lon": 138.7479154,
+    "cid": "610322331822942579"
+  },
+  "4606": {
+    "id": 4606,
+    "pref": "니가타",
+    "name": "기요쓰쿄 협곡 터널",
+    "query": "新潟県 清津峡渓谷トンネル",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E6%B8%85%E6%B4%A5%E5%B3%A1%E6%B8%93%E8%B0%B7%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.9725486,
+      "lon": 138.7499481
+    },
+    "status": "entity-result",
+    "resolvedName": "Kiyotsu Gorge Tunnel / Tunnel of Light",
+    "address": "Kiyotsu Gorge Tunnel / Tunnel of Light, 癸-2119-2 Koide, Tokamachi, Niigata 949-8433 일본",
+    "lat": 36.9725486,
+    "lon": 138.7499481,
+    "cid": "1964096821681389076"
+  },
+  "4607": {
+    "id": 4607,
+    "pref": "니가타",
+    "name": "호시토게 계단식 논",
+    "query": "新潟県 星峠の棚田",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E6%98%9F%E5%B3%A0%E3%81%AE%E6%A3%9A%E7%94%B0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.1242424,
+      "lon": 138.5295277
+    },
+    "status": "entity-result",
+    "resolvedName": "Hoshitouge Terraced Rice Field",
+    "address": "Hoshitouge Terraced Rice Field, Toge, Tokamachi, Niigata 942-1351 일본",
+    "lat": 37.1242424,
+    "lon": 138.5295277,
+    "cid": "15129869846429069837"
+  },
+  "4608": {
+    "id": 4608,
+    "pref": "니가타",
+    "name": "에치고유자와 온천",
+    "query": "新潟県 越後湯沢温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.9379695,
+      "lon": 138.8061317
+    },
+    "status": "entity-result",
+    "resolvedName": "Echigoyuzawa Onsen",
+    "address": "Echigoyuzawa Onsen, 유자와마치 Minamiuonuma District, 니이가타현 949-6101 일본",
+    "lat": 36.9358467,
+    "lon": 138.808722,
+    "cid": "9226161767191002263"
+  },
+  "4609": {
+    "id": 4609,
+    "pref": "니가타",
+    "name": "유자와 고원 로프웨이",
+    "query": "新潟県 湯沢高原ロープウェイ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E6%B9%AF%E6%B2%A2%E9%AB%98%E5%8E%9F%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.93884945,
+      "lon": 138.7973442
+    },
+    "status": "search-or-area-result"
+  },
+  "4610": {
+    "id": 4610,
+    "pref": "니가타",
+    "name": "운토안",
+    "query": "新潟県 雲洞庵",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E9%9B%B2%E6%B4%9E%E5%BA%B5&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.0313311,
+      "lon": 138.8904719
+    },
+    "status": "entity-result",
+    "resolvedName": "긴조산 운토안",
+    "address": "긴조산 운토안 660 Unto, Minamiuonuma, Niigata 949-6542 일본",
+    "lat": 37.0313311,
+    "lon": 138.8904719,
+    "cid": "1768935572744165681"
+  },
+  "4611": {
+    "id": 4611,
+    "pref": "니가타",
+    "name": "하카이산 로프웨이",
+    "query": "新潟県 八海山ロープウェー",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%85%AB%E6%B5%B7%E5%B1%B1%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%83%BC&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.1110792,
+      "lon": 138.9803707
+    },
+    "status": "entity-result",
+    "resolvedName": "핫카이산 로프웨이",
+    "address": "핫카이산 로프웨이 1610 Yamaguchi, Minamiuonuma, Niigata 949-7121 일본",
+    "lat": 37.1110792,
+    "lon": 138.9803707,
+    "cid": "3755602402584760059"
+  },
+  "4612": {
+    "id": 4612,
+    "pref": "니가타",
+    "name": "사도 금산",
+    "query": "新潟県 佐渡金山",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E4%BD%90%E6%B8%A1%E9%87%91%E5%B1%B1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.0416936,
+      "lon": 138.2560014
+    },
+    "status": "entity-result",
+    "resolvedName": "사도광산 (사도금광)",
+    "address": "사도광산 (사도금광) 1305 Shimoaikawa, Sado, Niigata 952-1501 일본",
+    "lat": 38.0416936,
+    "lon": 138.2560014,
+    "cid": "11698450407099760994"
+  },
+  "4613": {
+    "id": 4613,
+    "pref": "니가타",
+    "name": "기타자와 부유선광장",
+    "query": "新潟県 北沢浮遊選鉱場跡",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%8C%97%E6%B2%A2%E6%B5%AE%E9%81%8A%E9%81%B8%E9%89%B1%E5%A0%B4%E8%B7%A1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.0365825,
+      "lon": 138.2416735
+    },
+    "status": "entity-result",
+    "resolvedName": "Site of Kitazawa Flotation Plant",
+    "address": "Site of Kitazawa Flotation Plant, ３-2 Aikawa Kitazawamachi, Sado, Niigata 952-1539 일본",
+    "lat": 38.0365825,
+    "lon": 138.2416735,
+    "cid": "1815666145469172338"
+  },
+  "4614": {
+    "id": 4614,
+    "pref": "니가타",
+    "name": "슈쿠네기",
+    "query": "新潟県 宿根木",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%AE%BF%E6%A0%B9%E6%9C%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.8105389,
+      "lon": 138.24537285
+    },
+    "status": "entity-result",
+    "resolvedName": "슈쿠네기",
+    "address": "일본 〒952-0612 니이가타현 사도시 슈쿠네기",
+    "lat": 37.8112811,
+    "lon": 138.2422119,
+    "cid": "5282701601987620451"
+  },
+  "4615": {
+    "id": 4615,
+    "pref": "니가타",
+    "name": "센카쿠만 아게시마완",
+    "query": "新潟県 尖閣湾揚島遊園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%B0%96%E9%96%A3%E6%B9%BE%E6%8F%9A%E5%B3%B6%E9%81%8A%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.0936961,
+      "lon": 138.2507267
+    },
+    "status": "entity-result",
+    "resolvedName": "센카쿠만 아게시마 유원지",
+    "address": "센카쿠만 아게시마 유원지 1561 Kitaebisu, Sado, Niigata 952-2133 일본",
+    "lat": 38.0936961,
+    "lon": 138.2507267,
+    "cid": "11240526621484560322"
+  },
+  "4616": {
+    "id": 4616,
+    "pref": "니가타",
+    "name": "도키노모리 공원",
+    "query": "新潟県 トキの森公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E3%83%88%E3%82%AD%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 38.0371289,
+      "lon": 138.4208646
+    },
+    "status": "entity-result",
+    "resolvedName": "Tokinomori Park",
+    "address": "Tokinomori Park, 383-2 Niibonagaune, Sado, Niigata 952-0101 일본",
+    "lat": 38.0371289,
+    "lon": 138.4208646,
+    "cid": "11793619746633358038"
+  },
+  "4617": {
+    "id": 4617,
+    "pref": "니가타",
+    "name": "묘코 고원·이모리이케",
+    "query": "新潟県 妙高高原 いもり池",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%A6%99%E9%AB%98%E9%AB%98%E5%8E%9F+%E3%81%84%E3%82%82%E3%82%8A%E6%B1%A0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.86647909999999,
+      "lon": 138.1749769
+    },
+    "status": "entity-result",
+    "resolvedName": "Imori-ike Pond",
+    "address": "Imori-ike Pond, 2264-19 Sekigawa, Myoko, Niigata 949-2112 일본",
+    "lat": 36.8664791,
+    "lon": 138.1749769,
+    "cid": "2273685311260134654"
+  },
+  "4618": {
+    "id": 4618,
+    "pref": "니가타",
+    "name": "아카쿠라 온천",
+    "query": "新潟県 赤倉温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E8%B5%A4%E5%80%89%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.89064119999999,
+      "lon": 138.18192355
+    },
+    "status": "entity-result",
+    "resolvedName": "Akakura Onsen",
+    "address": "Akakura Onsen, 묘코시 니이가타현 일본",
+    "lat": 36.891469,
+    "lon": 138.177443,
+    "cid": "737457864649375992"
+  },
+  "4619": {
+    "id": 4619,
+    "pref": "니가타",
+    "name": "다카다성터공원",
+    "query": "新潟県 高田城址公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E9%AB%98%E7%94%B0%E5%9F%8E%E5%9D%80%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.1078867,
+      "lon": 138.2548332
+    },
+    "status": "entity-result",
+    "resolvedName": "다카다성터공원",
+    "address": "다카다성터공원 ４４-1 Motoshirocho, Joetsu, Niigata 943-0835 일본",
+    "lat": 37.1078867,
+    "lon": 138.2548332,
+    "cid": "7425402579530262405"
+  },
+  "4620": {
+    "id": 4620,
+    "pref": "니가타",
+    "name": "가스가야마성터",
+    "query": "新潟県 春日山城跡",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E6%98%A5%E6%97%A5%E5%B1%B1%E5%9F%8E%E8%B7%A1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.1497283,
+      "lon": 138.2139352
+    },
+    "status": "search-or-area-result"
+  },
+  "4621": {
+    "id": 4621,
+    "pref": "니가타",
+    "name": "포사 마그나 뮤지엄",
+    "query": "新潟県 フォッサマグナミュージアム",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E3%83%95%E3%82%A9%E3%83%83%E3%82%B5%E3%83%9E%E3%82%B0%E3%83%8A%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.0256333,
+      "lon": 137.8705708
+    },
+    "status": "entity-result",
+    "resolvedName": "Fossa Magna Museum",
+    "address": "Fossa Magna Museum, 1313 Ichinomiya, Itoigawa, Niigata 941-0056 일본",
+    "lat": 37.0256333,
+    "lon": 137.8705708,
+    "cid": "7648700073776895048"
+  },
+  "4622": {
+    "id": 4622,
+    "pref": "니가타",
+    "name": "고타키가와 히스이쿄",
+    "query": "新潟県 小滝川ヒスイ峡",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E5%B0%8F%E6%BB%9D%E5%B7%9D%E3%83%92%E3%82%B9%E3%82%A4%E5%B3%A1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.9260053,
+      "lon": 137.82187
+    },
+    "status": "entity-result",
+    "resolvedName": "코타키가와 비취 계곡",
+    "address": "코타키가와 비취 계곡 Kotaki, Itoigawa, Niigata 949-0462 일본",
+    "lat": 36.9260053,
+    "lon": 137.82187,
+    "cid": "4825475466977065954"
+  },
+  "4623": {
+    "id": 4623,
+    "pref": "니가타",
+    "name": "오야시라즈",
+    "query": "新潟県 親不知",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%96%B0%E6%BD%9F%E7%9C%8C+%E8%A6%AA%E4%B8%8D%E7%9F%A5&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.9933161,
+      "lon": 137.6958779
+    },
+    "status": "entity-result",
+    "resolvedName": "오야시라즈",
+    "address": "오야시라즈 Ichiburi, Itoigawa, Niigata 949-0111 일본",
+    "lat": 36.9933161,
+    "lon": 137.6958779,
+    "cid": "1815745460258603282"
+  },
+  "4700": {
+    "id": 4700,
+    "pref": "도야마",
+    "name": "도야마성터공원",
+    "query": "富山県 富山城址公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%AF%8C%E5%B1%B1%E5%9F%8E%E5%9D%80%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.6933039,
+      "lon": 137.2109022
+    },
+    "status": "entity-result",
+    "resolvedName": "도야마 성터 공원",
+    "address": "도야마 성터 공원 1 Honmaru, Toyama, 930-0081 일본",
+    "lat": 36.6933039,
+    "lon": 137.2109022,
+    "cid": "5609076642299788299"
+  },
+  "4701": {
+    "id": 4701,
+    "pref": "도야마",
+    "name": "도야마 유리미술관",
+    "query": "富山県 富山市ガラス美術館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%AF%8C%E5%B1%B1%E5%B8%82%E3%82%AC%E3%83%A9%E3%82%B9%E7%BE%8E%E8%A1%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.6884159,
+      "lon": 137.2151858
+    },
+    "status": "entity-result",
+    "resolvedName": "도야마시 유리 미술관",
+    "address": "도야마시 유리 미술관 5-1 Nishicho, Toyama, 930-0062 일본",
+    "lat": 36.6884159,
+    "lon": 137.2151858,
+    "cid": "531301034515359583"
+  },
+  "4702": {
+    "id": 4702,
+    "pref": "도야마",
+    "name": "간스이 공원",
+    "query": "富山県 富岩運河環水公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%AF%8C%E5%B2%A9%E9%81%8B%E6%B2%B3%E7%92%B0%E6%B0%B4%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.7093769,
+      "lon": 137.2124329
+    },
+    "status": "entity-result",
+    "resolvedName": "후간 운하 간스이 공원",
+    "address": "후간 운하 간스이 공원 1 Minatoirifunecho, Toyama, 930-0805 일본",
+    "lat": 36.7093769,
+    "lon": 137.2124329,
+    "cid": "11685518908316776179"
+  },
+  "4703": {
+    "id": 4703,
+    "pref": "도야마",
+    "name": "도야마현립미술관",
+    "query": "富山県 富山県美術館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%AF%8C%E5%B1%B1%E7%9C%8C%E7%BE%8E%E8%A1%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.69966705,
+      "lon": 137.2126803
+    },
+    "status": "search-or-area-result"
+  },
+  "4704": {
+    "id": 4704,
+    "pref": "도야마",
+    "name": "다테야마 구로베 알펜루트",
+    "query": "立山黒部アルペンルート",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%AB%8B%E5%B1%B1%E9%BB%92%E9%83%A8%E3%82%A2%E3%83%AB%E3%83%9A%E3%83%B3%E3%83%AB%E3%83%BC%E3%83%88&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.58522815,
+      "lon": 137.44629095
+    },
+    "status": "search-or-area-result"
+  },
+  "4705": {
+    "id": 4705,
+    "pref": "도야마",
+    "name": "무로도",
+    "query": "富山県 室堂",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%AE%A4%E5%A0%82&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.58072705,
+      "lon": 137.5989149
+    },
+    "status": "entity-result",
+    "resolvedName": "Murodo",
+    "address": "Murodo, 아시쿠라지 다테야마마치 Nakaniikawa District, 도야마현 930-1406 일본",
+    "lat": 36.5788857,
+    "lon": 137.5995446,
+    "cid": "17599931458310809924"
+  },
+  "4706": {
+    "id": 4706,
+    "pref": "도야마",
+    "name": "쇼묘 폭포",
+    "query": "富山県 称名滝",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E7%A7%B0%E5%90%8D%E6%BB%9D&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5755121,
+      "lon": 137.5238053
+    },
+    "status": "entity-result",
+    "resolvedName": "Shōmyō Falls",
+    "address": "Shōmyō Falls, 아시쿠라지 다테야마마치 Nakaniikawa District, 도야마현 930-1406 일본",
+    "lat": 36.5755126,
+    "lon": 137.5238053,
+    "cid": "594807531966248012"
+  },
+  "4707": {
+    "id": 4707,
+    "pref": "도야마",
+    "name": "구로베 협곡 철도",
+    "query": "富山県 黒部峡谷鉄道",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E9%BB%92%E9%83%A8%E5%B3%A1%E8%B0%B7%E9%89%84%E9%81%93&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.7587233,
+      "lon": 137.6332779
+    },
+    "status": "entity-result",
+    "resolvedName": "Kurobe Gorge Railway",
+    "address": "Kurobe Gorge Railway, Kurobe, Toyama, 일본",
+    "lat": 36.7587233,
+    "lon": 137.6332779,
+    "cid": "2909016342424825121"
+  },
+  "4708": {
+    "id": 4708,
+    "pref": "도야마",
+    "name": "우나즈키 온천",
+    "query": "富山県 宇奈月温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%AE%87%E5%A5%88%E6%9C%88%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.81695345,
+      "lon": 137.58217225
+    },
+    "status": "entity-result",
+    "resolvedName": "Unazuki Onsen",
+    "address": "Unazuki Onsen, 구로베시 도야마현 일본",
+    "lat": 36.8162422,
+    "lon": 137.5827916,
+    "cid": "5418342058239454401"
+  },
+  "4709": {
+    "id": 4709,
+    "pref": "도야마",
+    "name": "다카오카 대불",
+    "query": "富山県 高岡大仏",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E9%AB%98%E5%B2%A1%E5%A4%A7%E4%BB%8F&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.7455815,
+      "lon": 137.0171127
+    },
+    "status": "entity-result",
+    "resolvedName": "다카오카 대불",
+    "address": "다카오카 대불 11-29 Otemachi, Takaoka, Toyama 933-0039 일본",
+    "lat": 36.7455815,
+    "lon": 137.0171127,
+    "cid": "15771689789932142383"
+  },
+  "4710": {
+    "id": 4710,
+    "pref": "도야마",
+    "name": "즈이류지",
+    "query": "富山県 瑞龍寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E7%91%9E%E9%BE%8D%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.7354971,
+      "lon": 137.0124842
+    },
+    "status": "entity-result",
+    "resolvedName": "즈이류지",
+    "address": "즈이류지 ３５ Sekihonmachi, Takaoka, Toyama 933-0863 일본",
+    "lat": 36.7354971,
+    "lon": 137.0124842,
+    "cid": "1094167578718674870"
+  },
+  "4711": {
+    "id": 4711,
+    "pref": "도야마",
+    "name": "아마하라시 해안",
+    "query": "富山県 雨晴海岸",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E9%9B%A8%E6%99%B4%E6%B5%B7%E5%B2%B8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.81486929999999,
+      "lon": 137.0420588
+    },
+    "status": "entity-result",
+    "resolvedName": "아마하라시 해안",
+    "address": "아마하라시 해안 24-74 Ota, Takaoka, Toyama 933-0133 일본",
+    "lat": 36.8148693,
+    "lon": 137.0420588,
+    "cid": "3031196610270833730"
+  },
+  "4712": {
+    "id": 4712,
+    "pref": "도야마",
+    "name": "히미 어항장 외시장 히미반야가이",
+    "query": "富山県 ひみ番屋街",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E3%81%B2%E3%81%BF%E7%95%AA%E5%B1%8B%E8%A1%97&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.8643686,
+      "lon": 136.987247
+    },
+    "status": "entity-result",
+    "resolvedName": "Himi Banya-gai",
+    "address": "Himi Banya-gai, 25-5 Kitaomachi, Himi, Toyama 935-0004 일본",
+    "lat": 36.8643686,
+    "lon": 136.987247,
+    "cid": "6179115565600812672"
+  },
+  "4713": {
+    "id": 4713,
+    "pref": "도야마",
+    "name": "히미 해안·가라시마",
+    "query": "富山県 唐島・氷見海岸",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%94%90%E5%B3%B6%E3%83%BB%E6%B0%B7%E8%A6%8B%E6%B5%B7%E5%B2%B8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.84536725,
+      "lon": 137.09175035
+    },
+    "status": "search-or-area-result"
+  },
+  "4714": {
+    "id": 4714,
+    "pref": "도야마",
+    "name": "스가누마 합장마을",
+    "query": "富山県 菅沼合掌造り集落",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E8%8F%85%E6%B2%BC%E5%90%88%E6%8E%8C%E9%80%A0%E3%82%8A%E9%9B%86%E8%90%BD&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.40381065,
+      "lon": 136.88579845
+    },
+    "status": "search-or-area-result"
+  },
+  "4715": {
+    "id": 4715,
+    "pref": "도야마",
+    "name": "아이노쿠라 합장마을",
+    "query": "富山県 相倉合掌造り集落",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E7%9B%B8%E5%80%89%E5%90%88%E6%8E%8C%E9%80%A0%E3%82%8A%E9%9B%86%E8%90%BD&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.4260061,
+      "lon": 136.9354778
+    },
+    "status": "entity-result",
+    "resolvedName": "엣추 고카야마 아이노쿠라 집락",
+    "address": "엣추 고카야마 아이노쿠라 집락 Ainokura, Nanto, Toyama 939-1915 일본",
+    "lat": 36.4260061,
+    "lon": 136.9354778,
+    "cid": "6132261747819151994"
+  },
+  "4716": {
+    "id": 4716,
+    "pref": "도야마",
+    "name": "고카야마 와시노사토",
+    "query": "富山県 五箇山和紙の里",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E4%BA%94%E7%AE%87%E5%B1%B1%E5%92%8C%E7%B4%99%E3%81%AE%E9%87%8C&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.43598935,
+      "lon": 136.95552985
+    },
+    "status": "search-or-area-result"
+  },
+  "4717": {
+    "id": 4717,
+    "pref": "도야마",
+    "name": "이오젠",
+    "query": "富山県 医王山",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E5%8C%BB%E7%8E%8B%E5%B1%B1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.51277744999999,
+      "lon": 136.7961109
+    },
+    "status": "entity-result",
+    "resolvedName": "이오젠 산",
+    "address": "일본 〒920-1111 이시카와현 가나자와시 오비시케마치 이오젠 산",
+    "lat": 36.512778,
+    "lon": 136.7961109,
+    "cid": "6152319038947004584"
+  },
+  "4718": {
+    "id": 4718,
+    "pref": "도야마",
+    "name": "우오즈 매몰림 박물관",
+    "query": "富山県 魚津埋没林博物館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E9%AD%9A%E6%B4%A5%E5%9F%8B%E6%B2%A1%E6%9E%97%E5%8D%9A%E7%89%A9%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.8224611,
+      "lon": 137.3950101
+    },
+    "status": "entity-result",
+    "resolvedName": "Uozu Buried Forest Museum",
+    "address": "Uozu Buried Forest Museum, 814 Shakado, Uozu, Toyama 937-0067 일본",
+    "lat": 36.8224611,
+    "lon": 137.3950101,
+    "cid": "6867910258934507561"
+  },
+  "4719": {
+    "id": 4719,
+    "pref": "도야마",
+    "name": "우오즈 신기루 전망지",
+    "query": "富山県 魚津 蜃気楼展望地点",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E9%AD%9A%E6%B4%A5+%E8%9C%83%E6%B0%97%E6%A5%BC%E5%B1%95%E6%9C%9B%E5%9C%B0%E7%82%B9&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.82533749999999,
+      "lon": 137.3933974
+    },
+    "status": "entity-result",
+    "resolvedName": "蜃気楼 展望の丘",
+    "address": "일본 〒937-0000 Toyama, Uozu, Muraki, 蜃気楼 展望の丘",
+    "lat": 36.8253375,
+    "lon": 137.3933974,
+    "cid": "6078378434751425321"
+  },
+  "4720": {
+    "id": 4720,
+    "pref": "도야마",
+    "name": "호타루이카 뮤지엄",
+    "query": "富山県 ほたるいかミュージアム",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E3%81%BB%E3%81%9F%E3%82%8B%E3%81%84%E3%81%8B%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.7740842,
+      "lon": 137.3444938
+    },
+    "status": "entity-result",
+    "resolvedName": "호타루이카 뮤지엄",
+    "address": "호타루이카 뮤지엄 410 Nakagawara, Namerikawa, Toyama 936-0021 일본",
+    "lat": 36.7740842,
+    "lon": 137.3444938,
+    "cid": "7887940987957881262"
+  },
+  "4721": {
+    "id": 4721,
+    "pref": "도야마",
+    "name": "호타루이카 해상관광",
+    "query": "富山県 ほたるいか海上観光",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E3%81%BB%E3%81%9F%E3%82%8B%E3%81%84%E3%81%8B%E6%B5%B7%E4%B8%8A%E8%A6%B3%E5%85%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.7743741,
+      "lon": 137.3444592
+    },
+    "status": "entity-result",
+    "resolvedName": "ほたるいか海上観光集合場所",
+    "address": "일본 〒936-0021 Toyama, Namerikawa, Nakagawara, 410 ほたるいか海上観光集合場所",
+    "lat": 36.7743741,
+    "lon": 137.3444592,
+    "cid": "9402925734902510532"
+  },
+  "4723": {
+    "id": 4723,
+    "pref": "도야마",
+    "name": "구로베댐",
+    "query": "富山県 黒部ダム",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%AF%8C%E5%B1%B1%E7%9C%8C+%E9%BB%92%E9%83%A8%E3%83%80%E3%83%A0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5665515,
+      "lon": 137.6625021
+    },
+    "status": "search-or-area-result"
+  },
+  "4800": {
+    "id": 4800,
+    "pref": "이시카와",
+    "name": "겐로쿠엔",
+    "query": "石川県 兼六園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E5%85%BC%E5%85%AD%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.56212779999999,
+      "lon": 136.6626515
+    },
+    "status": "entity-result",
+    "resolvedName": "겐로쿠엔",
+    "address": "겐로쿠엔 1 Kenrokumachi, Kanazawa, Ishikawa 920-0936 일본",
+    "lat": 36.5621278,
+    "lon": 136.6626515,
+    "cid": "10883646955444237028"
+  },
+  "4801": {
+    "id": 4801,
+    "pref": "이시카와",
+    "name": "가나자와성 공원",
+    "query": "石川県 金沢城公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E9%87%91%E6%B2%A2%E5%9F%8E%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5659458,
+      "lon": 136.6588451
+    },
+    "status": "entity-result",
+    "resolvedName": "가나자와성 공원",
+    "address": "가나자와성 공원 1-1 Marunouchi, Kanazawa, Ishikawa 920-0937 일본",
+    "lat": 36.5659458,
+    "lon": 136.6588451,
+    "cid": "12116680391895948874"
+  },
+  "4802": {
+    "id": 4802,
+    "pref": "이시카와",
+    "name": "히가시차야가이",
+    "query": "石川県 ひがし茶屋街",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E3%81%B2%E3%81%8C%E3%81%97%E8%8C%B6%E5%B1%8B%E8%A1%97&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5734678,
+      "lon": 136.6678799
+    },
+    "status": "entity-result",
+    "resolvedName": "히가시야마",
+    "address": "일본 〒920-0831 이시카와현 가나자와시 히가시야마",
+    "lat": 36.5743546,
+    "lon": 136.6674399,
+    "cid": "8240652651516065888"
+  },
+  "4803": {
+    "id": 4803,
+    "pref": "이시카와",
+    "name": "오미초 시장",
+    "query": "石川県 近江町市場",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E8%BF%91%E6%B1%9F%E7%94%BA%E5%B8%82%E5%A0%B4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5717335,
+      "lon": 136.6558651
+    },
+    "status": "entity-result",
+    "resolvedName": "오미초 시장",
+    "address": "오미초 시장 50-1 Kamiomicho, Kanazawa, Ishikawa 920-0905 일본",
+    "lat": 36.5717335,
+    "lon": 136.6558651,
+    "cid": "13831724870425457829"
+  },
+  "4804": {
+    "id": 4804,
+    "pref": "이시카와",
+    "name": "21세기 미술관",
+    "query": "石川県 金沢21世紀美術館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E9%87%91%E6%B2%A221%E4%B8%96%E7%B4%80%E7%BE%8E%E8%A1%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5608713,
+      "lon": 136.6585251
+    },
+    "status": "entity-result",
+    "resolvedName": "가나자와 21세기 미술관",
+    "address": "가나자와 21세기 미술관 1 Chome-2-1 Hirosaka, Kanazawa, Ishikawa 920-8509 일본",
+    "lat": 36.5608713,
+    "lon": 136.6585251,
+    "cid": "5848489108542154945"
+  },
+  "4805": {
+    "id": 4805,
+    "pref": "이시카와",
+    "name": "나가마치 무가저택 거리",
+    "query": "石川県 長町武家屋敷跡",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E9%95%B7%E7%94%BA%E6%AD%A6%E5%AE%B6%E5%B1%8B%E6%95%B7%E8%B7%A1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5637517,
+      "lon": 136.6510146
+    },
+    "status": "entity-result",
+    "resolvedName": "나가마치",
+    "address": "나가마치 1 Chome-3-12-2 Nagamachi, Kanazawa, Ishikawa 920-0865 일본",
+    "lat": 36.5637517,
+    "lon": 136.6510146,
+    "cid": "11384741629417725499"
+  },
+  "4806": {
+    "id": 4806,
+    "pref": "이시카와",
+    "name": "야마시로 온천",
+    "query": "石川県 山代温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E5%B1%B1%E4%BB%A3%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2895842,
+      "lon": 136.3591768
+    },
+    "status": "entity-result",
+    "resolvedName": "Yamashiro Onsen",
+    "address": "Yamashiro Onsen, 가가시 이시카와현 일본",
+    "lat": 36.2888971,
+    "lon": 136.3614694,
+    "cid": "9496255925817066085"
+  },
+  "4807": {
+    "id": 4807,
+    "pref": "이시카와",
+    "name": "야마나카 온천",
+    "query": "石川県 山中温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E5%B1%B1%E4%B8%AD%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2466905,
+      "lon": 136.3739096
+    },
+    "status": "entity-result",
+    "resolvedName": "Yamanaka Onsen",
+    "address": "Yamanaka Onsen, 가가시 이시카와현 일본",
+    "lat": 36.251913,
+    "lon": 136.37429,
+    "cid": "15794141195892334881"
+  },
+  "4808": {
+    "id": 4808,
+    "pref": "이시카와",
+    "name": "가쿠센케이",
+    "query": "石川県 鶴仙渓",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E9%B6%B4%E4%BB%99%E6%B8%93&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.24100749999999,
+      "lon": 136.3716034
+    },
+    "status": "entity-result",
+    "resolvedName": "카쿠센 계곡",
+    "address": "카쿠센 계곡 Yamanakaonsen Shimotanimachi, Kaga, Ishikawa 922-0127 일본",
+    "lat": 36.24100749999999,
+    "lon": 136.3716034,
+    "cid": "9726860792042476294"
+  },
+  "4809": {
+    "id": 4809,
+    "pref": "이시카와",
+    "name": "나타데라",
+    "query": "石川県 那谷寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E9%82%A3%E8%B0%B7%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3135933,
+      "lon": 136.4199847
+    },
+    "status": "entity-result",
+    "resolvedName": "나타데라",
+    "address": "나타데라 Yu-122 Natamachi, Komatsu, Ishikawa 923-0336 일본",
+    "lat": 36.3135933,
+    "lon": 136.4199847,
+    "cid": "12571039060881598436"
+  },
+  "4810": {
+    "id": 4810,
+    "pref": "이시카와",
+    "name": "이시카와 항공플라자",
+    "query": "石川県 石川県立航空プラザ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E7%9F%B3%E5%B7%9D%E7%9C%8C%E7%AB%8B%E8%88%AA%E7%A9%BA%E3%83%97%E3%83%A9%E3%82%B6&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.40401500000001,
+      "lon": 136.4108555
+    },
+    "status": "entity-result",
+    "resolvedName": "이시카와현립 항공 플라자",
+    "address": "이시카와현립 항공 플라자 Hei-９２ Atakashinmachi, Komatsu, Ishikawa 923-0995 일본",
+    "lat": 36.404015,
+    "lon": 136.4108555,
+    "cid": "2525999373419342445"
+  },
+  "4811": {
+    "id": 4811,
+    "pref": "이시카와",
+    "name": "시로요네 센마이다",
+    "query": "石川県 白米千枚田",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E7%99%BD%E7%B1%B3%E5%8D%83%E6%9E%9A%E7%94%B0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.4255423,
+      "lon": 136.9995074
+    },
+    "status": "entity-result",
+    "resolvedName": "시로요네센마이다",
+    "address": "시로요네센마이다 99-5 Shiroyonemachi, Wajima, Ishikawa 928-0256 일본",
+    "lat": 37.4255423,
+    "lon": 136.9995074,
+    "cid": "3972646611846261299"
+  },
+  "4812": {
+    "id": 4812,
+    "pref": "이시카와",
+    "name": "와지마 아침시장(임시 상설시장)",
+    "query": "パワーシティ輪島ワイプラザ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E3%83%91%E3%83%AF%E3%83%BC%E3%82%B7%E3%83%86%E3%82%A3%E8%BC%AA%E5%B3%B6%E3%83%AF%E3%82%A4%E3%83%97%E3%83%A9%E3%82%B6&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.3866121,
+      "lon": 136.9041941
+    },
+    "status": "entity-result",
+    "resolvedName": "Power City",
+    "address": "Power City, ４１ Takudamachi, Wajima, Ishikawa 928-0022 일본",
+    "lat": 37.3866121,
+    "lon": 136.9041941,
+    "cid": "8583493361697156655",
+    "distanceFromStoredKm": 0.0
+  },
+  "4813": {
+    "id": 4813,
+    "pref": "이시카와",
+    "name": "와지마 칠예미술관",
+    "query": "石川県 石川県輪島漆芸美術館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E7%9F%B3%E5%B7%9D%E7%9C%8C%E8%BC%AA%E5%B3%B6%E6%BC%86%E8%8A%B8%E7%BE%8E%E8%A1%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.38986999999999,
+      "lon": 136.89193
+    },
+    "status": "entity-result",
+    "resolvedName": "이시카와현 와지마 칠예미술관",
+    "address": "이시카와현 와지마 칠예미술관 四十苅-１１ Mitomorimachi, Wajima, Ishikawa 928-0063 일본",
+    "lat": 37.38986999999999,
+    "lon": 136.89193,
+    "cid": "694363223143659223"
+  },
+  "4814": {
+    "id": 4814,
+    "pref": "이시카와",
+    "name": "미쓰케지마",
+    "query": "石川県 見附島",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E8%A6%8B%E9%99%84%E5%B3%B6&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.39631085,
+      "lon": 137.2471669
+    },
+    "status": "entity-result",
+    "resolvedName": "미쓰케지마",
+    "address": "일본 〒927-1222 이시카와현 스즈시 호류마치 우카이 미쓰케지마",
+    "lat": 37.3963344,
+    "lon": 137.2471449,
+    "cid": "14499335091493651347"
+  },
+  "4815": {
+    "id": 4815,
+    "pref": "이시카와",
+    "name": "와쿠라 온천",
+    "query": "石川県 和倉温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E5%92%8C%E5%80%89%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.0881608,
+      "lon": 136.9161111
+    },
+    "status": "entity-result",
+    "resolvedName": "Wakura Onsen",
+    "address": "Wakura Onsen, 이시카와현 일본",
+    "lat": 37.0868079,
+    "lon": 136.9185733,
+    "cid": "1312079509049616439"
+  },
+  "4816": {
+    "id": 4816,
+    "pref": "이시카와",
+    "name": "노토지마 수족관",
+    "query": "石川県 のとじま水族館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E3%81%AE%E3%81%A8%E3%81%98%E3%81%BE%E6%B0%B4%E6%97%8F%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.1491624,
+      "lon": 136.9822215
+    },
+    "status": "entity-result",
+    "resolvedName": "노토지마 수족관",
+    "address": "노토지마 수족관 15-40 Notojima Magarimachi, Nanao, Ishikawa 926-0216 일본",
+    "lat": 37.1491624,
+    "lon": 136.9822215,
+    "cid": "12083681129229879185"
+  },
+  "4817": {
+    "id": 4817,
+    "pref": "이시카와",
+    "name": "시라야마히메 신사",
+    "query": "石川県 白山比咩神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E7%99%BD%E5%B1%B1%E6%AF%94%E5%92%A9%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.44142824999999,
+      "lon": 136.64224935
+    },
+    "status": "search-or-area-result"
+  },
+  "4818": {
+    "id": 4818,
+    "pref": "이시카와",
+    "name": "하쿠산 시라카와고 화이트로드",
+    "query": "石川県 白山白川郷ホワイトロード",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E7%99%BD%E5%B1%B1%E7%99%BD%E5%B7%9D%E9%83%B7%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AD%E3%83%BC%E3%83%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2547943,
+      "lon": 136.8140261
+    },
+    "status": "entity-result",
+    "resolvedName": "Hakusan Shirakawago White Rd",
+    "address": "Hakusan Shirakawago White Rd, 일본",
+    "lat": 36.2547943,
+    "lon": 136.8140261,
+    "cid": "9170573530929785364"
+  },
+  "4819": {
+    "id": 4819,
+    "pref": "이시카와",
+    "name": "후쿠베 대폭포",
+    "query": "石川県 ふくべの大滝",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E3%81%B5%E3%81%8F%E3%81%B9%E3%81%AE%E5%A4%A7%E6%BB%9D&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2516654,
+      "lon": 136.8204687
+    },
+    "status": "search-or-area-result"
+  },
+  "4820": {
+    "id": 4820,
+    "pref": "이시카와",
+    "name": "시라미네 전통건조물군",
+    "query": "石川県 白峰 重要伝統的建造物群保存地区",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E7%99%BD%E5%B3%B0+%E9%87%8D%E8%A6%81%E4%BC%9D%E7%B5%B1%E7%9A%84%E5%BB%BA%E9%80%A0%E7%89%A9%E7%BE%A4%E4%BF%9D%E5%AD%98%E5%9C%B0%E5%8C%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.1745438,
+      "lon": 136.6259095
+    },
+    "status": "entity-result",
+    "resolvedName": "하쿠산시 시라미네 중요전통건물군 보존지구",
+    "address": "하쿠산시 시라미네 중요전통건물군 보존지구 Shiramine, Hakusan, Ishikawa 920-2501 일본",
+    "lat": 36.1745438,
+    "lon": 136.6259095,
+    "cid": "2386906454982007241"
+  },
+  "4821": {
+    "id": 4821,
+    "pref": "이시카와",
+    "name": "묘류지 닌자데라",
+    "query": "石川県 妙立寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E5%A6%99%E7%AB%8B%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5553843,
+      "lon": 136.6489974
+    },
+    "status": "entity-result",
+    "resolvedName": "묘류지(닌자절)",
+    "address": "묘류지(닌자절) 1 Chome-2-12 Nomachi, Kanazawa, Ishikawa 921-8031 일본",
+    "lat": 36.5553843,
+    "lon": 136.6489974,
+    "cid": "2163109338024742169"
+  },
+  "4822": {
+    "id": 4822,
+    "pref": "이시카와",
+    "name": "스즈키 다이세쓰관",
+    "query": "石川県 鈴木大拙館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E9%88%B4%E6%9C%A8%E5%A4%A7%E6%8B%99%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5576632,
+      "lon": 136.6609126
+    },
+    "status": "entity-result",
+    "resolvedName": "스즈키 다이세쓰칸",
+    "address": "스즈키 다이세쓰칸 3 Chome-4-20 Hondamachi, Kanazawa, Ishikawa 920-0964 일본",
+    "lat": 36.5576632,
+    "lon": 136.6609126,
+    "cid": "2416929768116691553"
+  },
+  "4823": {
+    "id": 4823,
+    "pref": "이시카와",
+    "name": "니시차야가이",
+    "query": "石川県 にし茶屋街",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%9F%B3%E5%B7%9D%E7%9C%8C+%E3%81%AB%E3%81%97%E8%8C%B6%E5%B1%8B%E8%A1%97&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5569672,
+      "lon": 136.6474386
+    },
+    "status": "entity-result",
+    "resolvedName": "니시차야가이",
+    "address": "니시차야가이 2 Chome-24 Nomachi, Kanazawa, Ishikawa 921-8031 일본",
+    "lat": 36.5569672,
+    "lon": 136.6474386,
+    "cid": "8106326658621499749"
+  },
+  "4900": {
+    "id": 4900,
+    "pref": "후쿠이",
+    "name": "후쿠이성터",
+    "query": "福井県 福井城址",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E7%A6%8F%E4%BA%95%E5%9F%8E%E5%9D%80&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.0655648,
+      "lon": 136.2208788
+    },
+    "status": "entity-result",
+    "resolvedName": "후쿠이 성터",
+    "address": "후쿠이 성터 3 Chome-17-1 Ote, Fukui, 910-0005 일본",
+    "lat": 36.0655648,
+    "lon": 136.2208788,
+    "cid": "7202341876557457908"
+  },
+  "4901": {
+    "id": 4901,
+    "pref": "후쿠이",
+    "name": "요코칸 정원",
+    "query": "福井県 養浩館庭園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E9%A4%8A%E6%B5%A9%E9%A4%A8%E5%BA%AD%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.06860369999999,
+      "lon": 136.2242666
+    },
+    "status": "entity-result",
+    "resolvedName": "요코칸 정원",
+    "address": "요코칸 정원 3 Chome-11-36 Hoei, Fukui, 910-0004 일본",
+    "lat": 36.0686037,
+    "lon": 136.2242666,
+    "cid": "10720802451136759780"
+  },
+  "4902": {
+    "id": 4902,
+    "pref": "후쿠이",
+    "name": "에이헤이지",
+    "query": "曹洞宗 大本山 永平寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E6%9B%B9%E6%B4%9E%E5%AE%97+%E5%A4%A7%E6%9C%AC%E5%B1%B1+%E6%B0%B8%E5%B9%B3%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.05659329999999,
+      "lon": 136.3568759
+    },
+    "status": "entity-result",
+    "resolvedName": "에이헤이지(영평사)",
+    "address": "에이헤이지(영평사) 5-15 Shihi, Eiheiji, Yoshida District, Fukui 910-1228 일본",
+    "lat": 36.0565933,
+    "lon": 136.3568759,
+    "cid": "3194088047498504681"
+  },
+  "4903": {
+    "id": 4903,
+    "pref": "후쿠이",
+    "name": "후쿠이현립 역사박물관",
+    "query": "福井県 福井県立歴史博物館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E7%A6%8F%E4%BA%95%E7%9C%8C%E7%AB%8B%E6%AD%B4%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.07555010000001,
+      "lon": 136.2226104
+    },
+    "status": "search-or-area-result"
+  },
+  "4904": {
+    "id": 4904,
+    "pref": "후쿠이",
+    "name": "도진보",
+    "query": "福井県 東尋坊",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E6%9D%B1%E5%B0%8B%E5%9D%8A&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2376576,
+      "lon": 136.1255242
+    },
+    "status": "entity-result",
+    "resolvedName": "도진보",
+    "address": "도진보 64-1 Mikunicho Anto, Sakai, Fukui 913-0064 일본",
+    "lat": 36.2376576,
+    "lon": 136.1255242,
+    "cid": "4275600695956744902"
+  },
+  "4905": {
+    "id": 4905,
+    "pref": "후쿠이",
+    "name": "오시마",
+    "query": "福井県 雄島",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E9%9B%84%E5%B3%B6&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2518658,
+      "lon": 136.1192677
+    },
+    "status": "entity-result",
+    "resolvedName": "O Island",
+    "address": "O Island, 미쿠니초 안토 사카이시 후쿠이현 913-0064 일본",
+    "lat": 36.2518663,
+    "lon": 136.1192677,
+    "cid": "1584201433686371053"
+  },
+  "4906": {
+    "id": 4906,
+    "pref": "후쿠이",
+    "name": "아와라 온천",
+    "query": "福井県 あわら温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E3%81%82%E3%82%8F%E3%82%89%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.22247875,
+      "lon": 136.19078865
+    },
+    "status": "entity-result",
+    "resolvedName": "Awara Onsen",
+    "address": "Awara Onsen, 아와라시 후쿠이현 일본",
+    "lat": 36.223631,
+    "lon": 136.1941064,
+    "cid": "14095989680640120009"
+  },
+  "4907": {
+    "id": 4907,
+    "pref": "후쿠이",
+    "name": "마루오카성",
+    "query": "福井県 丸岡城",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E4%B8%B8%E5%B2%A1%E5%9F%8E&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.1523744,
+      "lon": 136.2722027
+    },
+    "status": "search-or-area-result"
+  },
+  "4908": {
+    "id": 4908,
+    "pref": "후쿠이",
+    "name": "후쿠이현립 공룡박물관",
+    "query": "福井県 福井県立恐竜博物館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E7%A6%8F%E4%BA%95%E7%9C%8C%E7%AB%8B%E6%81%90%E7%AB%9C%E5%8D%9A%E7%89%A9%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.0822889,
+      "lon": 136.5066612
+    },
+    "status": "entity-result",
+    "resolvedName": "후쿠이현 공룡 박물관",
+    "address": "후쿠이현 공룡 박물관 51-11 Murokocho Terao, Katsuyama, Fukui 911-8601 일본",
+    "lat": 36.0822889,
+    "lon": 136.5066612,
+    "cid": "6184004458633409761"
+  },
+  "4909": {
+    "id": 4909,
+    "pref": "후쿠이",
+    "name": "가쓰야마 공룡숲",
+    "query": "福井県 かつやま恐竜の森",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E3%81%8B%E3%81%A4%E3%82%84%E3%81%BE%E6%81%90%E7%AB%9C%E3%81%AE%E6%A3%AE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.08430490000001,
+      "lon": 136.5076811
+    },
+    "status": "entity-result",
+    "resolvedName": "Katsuyama Dinosaur Forest Nagaoyama Park",
+    "address": "Katsuyama Dinosaur Forest Nagaoyama Park, 51-11 Murokocho Terao, Katsuyama, Fukui 911-0023 일본",
+    "lat": 36.0843049,
+    "lon": 136.5076811,
+    "cid": "3599650246052948209"
+  },
+  "4910": {
+    "id": 4910,
+    "pref": "후쿠이",
+    "name": "에치젠 오노성",
+    "query": "福井県 越前大野城",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E8%B6%8A%E5%89%8D%E5%A4%A7%E9%87%8E%E5%9F%8E&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.98658640000001,
+      "lon": 136.4830622
+    },
+    "status": "entity-result",
+    "resolvedName": "에치젠 오노성",
+    "address": "에치젠 오노성 3-109 Shiromachi, Ono, Fukui 912-0087 일본",
+    "lat": 35.9865864,
+    "lon": 136.4830622,
+    "cid": "659859002049027610"
+  },
+  "4911": {
+    "id": 4911,
+    "pref": "후쿠이",
+    "name": "시치켄 아사이치",
+    "query": "福井県 七間朝市",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E4%B8%83%E9%96%93%E6%9C%9D%E5%B8%82&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.9849871,
+      "lon": 136.4905163
+    },
+    "status": "entity-result",
+    "resolvedName": "Shichiken Morning Market",
+    "address": "Shichiken Morning Market, 8-9 Motomachi, Ono, Fukui 912-0081 일본",
+    "lat": 35.9849871,
+    "lon": 136.4905163,
+    "cid": "4216527591002156363"
+  },
+  "4912": {
+    "id": 4912,
+    "pref": "후쿠이",
+    "name": "오쇼즈 용천수",
+    "query": "御清水",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%BE%A1%E6%B8%85%E6%B0%B4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.9828643,
+      "lon": 136.4864263
+    },
+    "status": "entity-result",
+    "resolvedName": "Oshozu",
+    "address": "Oshozu, 4-4 Izumicho, Ono, Fukui 912-0086 일본",
+    "lat": 35.9828643,
+    "lon": 136.4864263,
+    "cid": "5296853891373907222",
+    "distanceFromStoredKm": 0.0
+  },
+  "4913": {
+    "id": 4913,
+    "pref": "후쿠이",
+    "name": "게히 신궁",
+    "query": "福井県 氣比神宮",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E6%B0%A3%E6%AF%94%E7%A5%9E%E5%AE%AE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.6547802,
+      "lon": 136.0747217
+    },
+    "status": "entity-result",
+    "resolvedName": "게히 신궁",
+    "address": "게히 신궁 11-68 Akebonocho, Tsuruga, Fukui 914-0075 일본",
+    "lat": 35.6547802,
+    "lon": 136.0747217,
+    "cid": "8632576456613738285"
+  },
+  "4914": {
+    "id": 4914,
+    "pref": "후쿠이",
+    "name": "아카렌가 창고",
+    "query": "福井県 敦賀赤レンガ倉庫",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E6%95%A6%E8%B3%80%E8%B5%A4%E3%83%AC%E3%83%B3%E3%82%AC%E5%80%89%E5%BA%AB&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.66202654999999,
+      "lon": 136.07448985
+    },
+    "status": "search-or-area-result"
+  },
+  "4915": {
+    "id": 4915,
+    "pref": "후쿠이",
+    "name": "기비노마쓰바라",
+    "query": "福井県 気比の松原",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E6%B0%97%E6%AF%94%E3%81%AE%E6%9D%BE%E5%8E%9F&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.654796,
+      "lon": 136.0515436
+    },
+    "status": "entity-result",
+    "resolvedName": "게히노 마쓰바라",
+    "address": "게히노 마쓰바라 33 Matsushimacho, Tsuruga, Fukui 914-0801 일본",
+    "lat": 35.654796,
+    "lon": 136.0515436,
+    "cid": "10553057117661755410"
+  },
+  "4916": {
+    "id": 4916,
+    "pref": "후쿠이",
+    "name": "미카타고코",
+    "query": "福井県 三方五湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E4%B8%89%E6%96%B9%E4%BA%94%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5963947,
+      "lon": 135.88301385
+    },
+    "status": "search-or-area-result"
+  },
+  "4917": {
+    "id": 4917,
+    "pref": "후쿠이",
+    "name": "레인보우라인 산정공원",
+    "query": "福井県 レインボーライン山頂公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%B3%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.6011238,
+      "lon": 135.8694552
+    },
+    "status": "entity-result",
+    "resolvedName": "Rainbow Line Summit Park",
+    "address": "Rainbow Line Summit Park, ６ 75-2 Hiruga, Mihama, Mikata District, Fukui 919-1126 일본",
+    "lat": 35.6011238,
+    "lon": 135.8694552,
+    "cid": "8218459788809428231"
+  },
+  "4918": {
+    "id": 4918,
+    "pref": "후쿠이",
+    "name": "오바마 니시구미 전통건조물군",
+    "query": "福井県 小浜西組",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E5%B0%8F%E6%B5%9C%E8%A5%BF%E7%B5%84&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.4911398,
+      "lon": 135.7344901
+    },
+    "status": "entity-result",
+    "resolvedName": "오바마 니시구미 중요전통건물군 보존지구",
+    "address": "오바마 니시구미 중요전통건물군 보존지구 8 Obamaohara, Obama, Fukui 917-0056 일본",
+    "lat": 35.4911398,
+    "lon": 135.7344901,
+    "cid": "12412180911247358875"
+  },
+  "4919": {
+    "id": 4919,
+    "pref": "후쿠이",
+    "name": "오바마 어항",
+    "query": "福井県 小浜漁港",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E5%B0%8F%E6%B5%9C%E6%BC%81%E6%B8%AF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5020762,
+      "lon": 135.7362986
+    },
+    "status": "entity-result",
+    "resolvedName": "Obama Fishing Port",
+    "address": "Obama Fishing Port, 3 Chome Kawasaki, Obama, Fukui 917-0081 일본",
+    "lat": 35.5020762,
+    "lon": 135.7362986,
+    "cid": "6431360024043678116"
+  },
+  "4920": {
+    "id": 4920,
+    "pref": "후쿠이",
+    "name": "소토모 해안·유람선",
+    "query": "福井県 蘇洞門",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E8%98%87%E6%B4%9E%E9%96%80&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5669458,
+      "lon": 135.7126669
+    },
+    "status": "entity-result",
+    "resolvedName": "Sotomo Arch",
+    "address": "Sotomo Arch, Wakasa, Obama, Fukui 917-0114 일본",
+    "lat": 35.5669458,
+    "lon": 135.7126669,
+    "cid": "5213912921937320677"
+  },
+  "4921": {
+    "id": 4921,
+    "pref": "후쿠이",
+    "name": "구마가와주쿠",
+    "query": "福井県 熊川宿",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E7%86%8A%E5%B7%9D%E5%AE%BF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.4358319,
+      "lon": 135.89598055
+    },
+    "status": "search-or-area-result"
+  },
+  "4922": {
+    "id": 4922,
+    "pref": "후쿠이",
+    "name": "와카사 미카타 조몬박물관",
+    "query": "福井県 若狭三方縄文博物館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E8%8B%A5%E7%8B%AD%E4%B8%89%E6%96%B9%E7%B8%84%E6%96%87%E5%8D%9A%E7%89%A9%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5589855,
+      "lon": 135.8965431
+    },
+    "status": "entity-result",
+    "resolvedName": "와카사 미카타 조몬 박물관 도키도키칸",
+    "address": "와카사 미카타 조몬 박물관 도키도키칸 122-12-1 Torihama, Wakasa, Mikatakaminaka District, Fukui 919-1331 일본",
+    "lat": 35.5589855,
+    "lon": 135.8965431,
+    "cid": "489489777798192922"
+  },
+  "4923": {
+    "id": 4923,
+    "pref": "후쿠이",
+    "name": "헤이센지 하쿠산 신사",
+    "query": "福井県 平泉寺白山神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E4%BA%95%E7%9C%8C+%E5%B9%B3%E6%B3%89%E5%AF%BA%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.0438885,
+      "lon": 136.5420051
+    },
+    "status": "entity-result",
+    "resolvedName": "헤이센지 하쿠산 신사",
+    "address": "헤이센지 하쿠산 신사 ５６-63 Heisenjicho Heisenji, Katsuyama, Fukui 911-0822 일본",
+    "lat": 36.0438885,
+    "lon": 136.5420051,
+    "cid": "8953638430045946282"
+  },
+  "5000": {
+    "id": 5000,
+    "pref": "나가노",
+    "name": "젠코지",
+    "query": "長野県 善光寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%96%84%E5%85%89%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.6615752,
+      "lon": 138.1877028
+    },
+    "status": "entity-result",
+    "resolvedName": "젠코지 선광사",
+    "address": "젠코지 선광사 Motoyoshicho-491-イ Nagano, 380-0851 일본",
+    "lat": 36.6615752,
+    "lon": 138.1877028,
+    "cid": "17652590994378723118"
+  },
+  "5001": {
+    "id": 5001,
+    "pref": "나가노",
+    "name": "도구시 신사 오쿠샤",
+    "query": "長野県 戸隠神社 奥社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%88%B8%E9%9A%A0%E7%A5%9E%E7%A4%BE+%E5%A5%A5%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.75405385,
+      "lon": 138.07355855
+    },
+    "status": "search-or-area-result"
+  },
+  "5002": {
+    "id": 5002,
+    "pref": "나가노",
+    "name": "도구시 민속관·닌자자료관",
+    "query": "長野県 戸隠民俗館・忍法資料館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%88%B8%E9%9A%A0%E6%B0%91%E4%BF%97%E9%A4%A8%E3%83%BB%E5%BF%8D%E6%B3%95%E8%B3%87%E6%96%99%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.75637775,
+      "lon": 138.0803952
+    },
+    "status": "search-or-area-result"
+  },
+  "5003": {
+    "id": 5003,
+    "pref": "나가노",
+    "name": "지고쿠다니 야생원숭이공원",
+    "query": "長野県 地獄谷野猿公苑",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%9C%B0%E7%8D%84%E8%B0%B7%E9%87%8E%E7%8C%BF%E5%85%AC%E8%8B%91&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.731427,
+      "lon": 138.453106
+    },
+    "status": "search-or-area-result"
+  },
+  "5004": {
+    "id": 5004,
+    "pref": "나가노",
+    "name": "시부 온천",
+    "query": "長野県 渋温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%B8%8B%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3933187,
+      "lon": 138.3819129
+    },
+    "status": "search-or-area-result"
+  },
+  "5005": {
+    "id": 5005,
+    "pref": "나가노",
+    "name": "마쓰모토성",
+    "query": "長野県 松本城",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%9D%BE%E6%9C%AC%E5%9F%8E&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.238653,
+      "lon": 137.9688674
+    },
+    "status": "entity-result",
+    "resolvedName": "마쓰모토 성",
+    "address": "마쓰모토 성 4-1 Marunouchi, Matsumoto, Nagano 390-0873 일본",
+    "lat": 36.238653,
+    "lon": 137.9688674,
+    "cid": "10388975450222032468"
+  },
+  "5006": {
+    "id": 5006,
+    "pref": "나가노",
+    "name": "나와테도리",
+    "query": "長野県 縄手通り",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E7%B8%84%E6%89%8B%E9%80%9A%E3%82%8A&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.23448940000001,
+      "lon": 137.9710005
+    },
+    "status": "entity-result",
+    "resolvedName": "Nawate St",
+    "address": "Nawate St, Ōte, Matsumoto, Nagano 390-0874 일본",
+    "lat": 36.2344894,
+    "lon": 137.9710005,
+    "cid": "13921825644741637861"
+  },
+  "5007": {
+    "id": 5007,
+    "pref": "나가노",
+    "name": "가미코치",
+    "query": "長野県 上高地",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E4%B8%8A%E9%AB%98%E5%9C%B0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.2487537,
+      "lon": 137.6380649
+    },
+    "status": "entity-result",
+    "resolvedName": "가미코치",
+    "address": "가미코치 上高地 Azumi, Matsumoto, Nagano 390-1516 일본",
+    "lat": 36.2487537,
+    "lon": 137.6380649,
+    "cid": "11127904433132550151"
+  },
+  "5008": {
+    "id": 5008,
+    "pref": "나가노",
+    "name": "다이오 와사비 농장",
+    "query": "長野県 大王わさび農場",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%A4%A7%E7%8E%8B%E3%82%8F%E3%81%95%E3%81%B3%E8%BE%B2%E5%A0%B4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3392598,
+      "lon": 137.9084423
+    },
+    "status": "entity-result",
+    "resolvedName": "다이오 와사비 농장",
+    "address": "다이오 와사비 농장 3640 Hotaka, Azumino, Nagano 399-8303 일본",
+    "lat": 36.3392598,
+    "lon": 137.9084423,
+    "cid": "15613363609043097344"
+  },
+  "5009": {
+    "id": 5009,
+    "pref": "나가노",
+    "name": "호타카 신사",
+    "query": "長野県 穂高神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E7%A9%82%E9%AB%98%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3386833,
+      "lon": 137.8843083
+    },
+    "status": "entity-result",
+    "resolvedName": "호타카 신사",
+    "address": "호타카 신사 6079 Hotaka, Azumino, Nagano 399-8303 일본",
+    "lat": 36.3386833,
+    "lon": 137.8843083,
+    "cid": "3764757908011938741"
+  },
+  "5010": {
+    "id": 5010,
+    "pref": "나가노",
+    "name": "구 가루이자와 긴자",
+    "query": "長野県 旧軽井沢銀座通り",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%97%A7%E8%BB%BD%E4%BA%95%E6%B2%A2%E9%8A%80%E5%BA%A7%E9%80%9A%E3%82%8A&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3574618,
+      "lon": 138.63435
+    },
+    "status": "entity-result",
+    "resolvedName": "가루이자와 긴자 상점가",
+    "address": "가루이자와 긴자 상점가 878 Karuizawa, Kitasaku District, Nagano 389-0102 일본",
+    "lat": 36.3574618,
+    "lon": 138.63435,
+    "cid": "16332352049248058840"
+  },
+  "5011": {
+    "id": 5011,
+    "pref": "나가노",
+    "name": "시라이토 폭포",
+    "query": "長野県 白糸の滝",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E7%99%BD%E7%B3%B8%E3%81%AE%E6%BB%9D&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.410314,
+      "lon": 138.5926257
+    },
+    "status": "entity-result",
+    "resolvedName": "시라이토노타키 폭포",
+    "address": "시라이토노타키 폭포 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111 일본",
+    "lat": 36.410314,
+    "lon": 138.5926257,
+    "cid": "13680438032319675058"
+  },
+  "5012": {
+    "id": 5012,
+    "pref": "나가노",
+    "name": "가루이자와 탈리에신",
+    "query": "長野県 軽井沢タリアセン",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%82%BF%E3%83%AA%E3%82%A2%E3%82%BB%E3%83%B3&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3286264,
+      "lon": 138.5959532
+    },
+    "status": "entity-result",
+    "resolvedName": "Karuizawa Taliesin",
+    "address": "Karuizawa Taliesin, 217 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111 일본",
+    "lat": 36.3286264,
+    "lon": 138.5959532,
+    "cid": "6076374902207708863"
+  },
+  "5013": {
+    "id": 5013,
+    "pref": "나가노",
+    "name": "고모로성터 가이코엔",
+    "query": "長野県 小諸城址 懐古園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%B0%8F%E8%AB%B8%E5%9F%8E%E5%9D%80+%E6%87%90%E5%8F%A4%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.3271098,
+      "lon": 138.4175464
+    },
+    "status": "entity-result",
+    "resolvedName": "고모로성 가이코엔",
+    "address": "고모로성 가이코엔 311 Tei, Komoro, Nagano 384-0804 일본",
+    "lat": 36.3271098,
+    "lon": 138.4175464,
+    "cid": "12367855946808965269"
+  },
+  "5014": {
+    "id": 5014,
+    "pref": "나가노",
+    "name": "스와타이샤 가미샤 혼미야",
+    "query": "長野県 諏訪大社 上社本宮",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E8%AB%8F%E8%A8%AA%E5%A4%A7%E7%A4%BE+%E4%B8%8A%E7%A4%BE%E6%9C%AC%E5%AE%AE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.99827820000001,
+      "lon": 138.1191482
+    },
+    "status": "entity-result",
+    "resolvedName": "스와 대사･가미샤 혼미야",
+    "address": "스와 대사･가미샤 혼미야 宮山-1 Nakasu, Suwa, Nagano 392-0015 일본",
+    "lat": 35.9982782,
+    "lon": 138.1191482,
+    "cid": "1765844210488640364"
+  },
+  "5015": {
+    "id": 5015,
+    "pref": "나가노",
+    "name": "스와호",
+    "query": "長野県 諏訪湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E8%AB%8F%E8%A8%AA%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.0478969,
+      "lon": 138.0827704
+    },
+    "status": "entity-result",
+    "resolvedName": "스와 호",
+    "address": "일본 나가노현 스와 호",
+    "lat": 36.0492617,
+    "lon": 138.0853146,
+    "cid": "14779017808857242485"
+  },
+  "5016": {
+    "id": 5016,
+    "pref": "나가노",
+    "name": "기리가미네 고원",
+    "query": "長野県 霧ヶ峰高原",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E9%9C%A7%E3%83%B6%E5%B3%B0%E9%AB%98%E5%8E%9F&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.1030879,
+      "lon": 138.1966813
+    },
+    "status": "entity-result",
+    "resolvedName": "Mount Kirigamine",
+    "address": "Mount Kirigamine, 시가 스와시 나가노현 392-0012 일본",
+    "lat": 36.1030884,
+    "lon": 138.1966813,
+    "cid": "14786057347915552070"
+  },
+  "5017": {
+    "id": 5017,
+    "pref": "나가노",
+    "name": "다테시나 고원·미샤카이케",
+    "query": "長野県 御射鹿池",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%BE%A1%E5%B0%84%E9%B9%BF%E6%B1%A0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.03329454999999,
+      "lon": 138.29192245
+    },
+    "status": "entity-result",
+    "resolvedName": "Oshaga Pond",
+    "address": "Oshaga Pond, 도요히라 지노시 나가노현 391-0213 일본",
+    "lat": 36.0333178,
+    "lon": 138.2919376,
+    "cid": "1360112928082603637"
+  },
+  "5018": {
+    "id": 5018,
+    "pref": "나가노",
+    "name": "하쿠바 하포이케",
+    "query": "長野県 八方池",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%85%AB%E6%96%B9%E6%B1%A0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.6942149,
+      "lon": 137.7845137
+    },
+    "status": "entity-result",
+    "resolvedName": "핫포이케",
+    "address": "핫포이케 Hokujo, Hakuba, Kitaazumi District, Nagano 399-9301 일본",
+    "lat": 36.6942149,
+    "lon": 137.7845137,
+    "cid": "17937699759305060753"
+  },
+  "5019": {
+    "id": 5019,
+    "pref": "나가노",
+    "name": "다테야마 구로베 알펜루트 오기사와",
+    "query": "長野県 扇沢",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%89%87%E6%B2%A2&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.55871329999999,
+      "lon": 137.7207437
+    },
+    "status": "entity-result",
+    "resolvedName": "오기사와",
+    "address": "오기사와 Taira, Omachi, Nagano 398-0001 일본",
+    "lat": 36.5587133,
+    "lon": 137.7207437,
+    "cid": "113184546354217508"
+  },
+  "5020": {
+    "id": 5020,
+    "pref": "나가노",
+    "name": "기자키호",
+    "query": "長野県 木崎湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E6%9C%A8%E5%B4%8E%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.5556986,
+      "lon": 137.8378319
+    },
+    "status": "entity-result",
+    "resolvedName": "기자키 호수",
+    "address": "일본 〒398-0001 나가노현 오마치시 다이라 기자키 호수",
+    "lat": 36.55907759999999,
+    "lon": 137.8385385,
+    "cid": "1539585595155377184"
+  },
+  "5021": {
+    "id": 5021,
+    "pref": "나가노",
+    "name": "쓰마고주쿠",
+    "query": "長野県 妻籠宿",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%A6%BB%E7%B1%A0%E5%AE%BF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5775876,
+      "lon": 137.5956667
+    },
+    "status": "entity-result",
+    "resolvedName": "나카센도 쓰마고주쿠",
+    "address": "나카센도 쓰마고주쿠 2196-1 Azuma, Nagiso, Kiso District, Nagano 399-5302 일본",
+    "lat": 35.5775876,
+    "lon": 137.5956667,
+    "cid": "9780741097714104054"
+  },
+  "5022": {
+    "id": 5022,
+    "pref": "나가노",
+    "name": "나라이주쿠",
+    "query": "長野県 奈良井宿",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%A5%88%E8%89%AF%E4%BA%95%E5%AE%BF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.9682997,
+      "lon": 137.8145375
+    },
+    "status": "entity-result",
+    "resolvedName": "나카센도 나라이주쿠",
+    "address": "나카센도 나라이주쿠 Narai, Shiojiri, Nagano 399-6303 일본",
+    "lat": 35.9682997,
+    "lon": 137.8145375,
+    "cid": "5152313408496765133"
+  },
+  "5023": {
+    "id": 5023,
+    "pref": "나가노",
+    "name": "온타케산 다나카미샤·오타키구치",
+    "query": "長野県 御嶽山 王滝口",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E9%95%B7%E9%87%8E%E7%9C%8C+%E5%BE%A1%E5%B6%BD%E5%B1%B1+%E7%8E%8B%E6%BB%9D%E5%8F%A3&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.88232604999999,
+      "lon": 137.4485337
+    },
+    "status": "entity-result",
+    "resolvedName": "온타케 산",
+    "address": "일본 〒397-0201 나가노현 Kiso District, 오타키무라 온타케 산",
+    "lat": 35.8823266,
+    "lon": 137.4485337,
+    "cid": "15388176047792066821"
+  },
+  "5100": {
+    "id": 5100,
+    "pref": "야마나시",
+    "name": "다케다 신사",
+    "query": "山梨県 武田神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%AD%A6%E7%94%B0%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.6867838,
+      "lon": 138.5772201
+    },
+    "status": "entity-result",
+    "resolvedName": "다케다 신사",
+    "address": "다케다 신사 2611 Kofuchumachi, Kofu, Yamanashi 400-0014 일본",
+    "lat": 35.6867838,
+    "lon": 138.5772201,
+    "cid": "17485486353067486461"
+  },
+  "5101": {
+    "id": 5101,
+    "pref": "야마나시",
+    "name": "마이즈루성 공원",
+    "query": "山梨県 舞鶴城公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E8%88%9E%E9%B6%B4%E5%9F%8E%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.6647041,
+      "lon": 138.57151
+    },
+    "status": "entity-result",
+    "resolvedName": "마이즈루성 공원",
+    "address": "마이즈루성 공원 1 Chome-5-4 Marunouchi, Kofu, Yamanashi 400-0031 일본",
+    "lat": 35.6647041,
+    "lon": 138.57151,
+    "cid": "5386447699084681614"
+  },
+  "5102": {
+    "id": 5102,
+    "pref": "야마나시",
+    "name": "고슈유메코지",
+    "query": "山梨県 甲州夢小路",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E7%94%B2%E5%B7%9E%E5%A4%A2%E5%B0%8F%E8%B7%AF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.66672529999999,
+      "lon": 138.5715778
+    },
+    "status": "entity-result",
+    "resolvedName": "고슈 유메코지",
+    "address": "고슈 유메코지 1 Chome-1-25 Marunouchi, Kofu, Yamanashi 400-0031 일본",
+    "lat": 35.6667253,
+    "lon": 138.5715778,
+    "cid": "5744880946384384577"
+  },
+  "5103": {
+    "id": 5103,
+    "pref": "야마나시",
+    "name": "이사와 온천",
+    "query": "山梨県 石和温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E7%9F%B3%E5%92%8C%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.65438745,
+      "lon": 138.639232
+    },
+    "status": "entity-result",
+    "resolvedName": "Isawa Onsen",
+    "address": "Isawa Onsen, 야마나시현 일본",
+    "lat": 35.6575975,
+    "lon": 138.6354289,
+    "cid": "13323100201265242973"
+  },
+  "5104": {
+    "id": 5104,
+    "pref": "야마나시",
+    "name": "가와구치호",
+    "query": "山梨県 河口湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%B2%B3%E5%8F%A3%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.4827483,
+      "lon": 138.69611955
+    },
+    "status": "entity-result",
+    "resolvedName": "후지카와구치코마치",
+    "address": "일본 야마나시현 Minamitsuru District, 후지카와구치코마치",
+    "lat": 35.4973138,
+    "lon": 138.7551994,
+    "cid": "6661763332175585862"
+  },
+  "5105": {
+    "id": 5105,
+    "pref": "야마나시",
+    "name": "오이시 공원",
+    "query": "山梨県 大石公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E5%A4%A7%E7%9F%B3%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.522904,
+      "lon": 138.7457522
+    },
+    "status": "entity-result",
+    "resolvedName": "오이시 공원",
+    "address": "일본 〒401-0305 Yamanashi, Minamitsuru District, Fujikawaguchiko, Oishi, 2585-85 오이시 공원 ２５２５番地の１１先",
+    "lat": 35.522904,
+    "lon": 138.7457522,
+    "cid": "11686369390762469636"
+  },
+  "5106": {
+    "id": 5106,
+    "pref": "야마나시",
+    "name": "가와구치 아사마 신사",
+    "query": "山梨県 河口浅間神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%B2%B3%E5%8F%A3%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5327337,
+      "lon": 138.77592945
+    },
+    "status": "search-or-area-result"
+  },
+  "5107": {
+    "id": 5107,
+    "pref": "야마나시",
+    "name": "사이코 이야시노사토 넨바",
+    "query": "山梨県 西湖いやしの里根場",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E8%A5%BF%E6%B9%96%E3%81%84%E3%82%84%E3%81%97%E3%81%AE%E9%87%8C%E6%A0%B9%E5%A0%B4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5050023,
+      "lon": 138.6614772
+    },
+    "status": "entity-result",
+    "resolvedName": "사이코 이야시노사토 넨바",
+    "address": "일본 〒401-0332 Yamanashi, Minamitsuru District, Fujikawaguchiko, Saiko, 사이코 이야시노사토 넨바 根場 ２７１０",
+    "lat": 35.5050023,
+    "lon": 138.6614772,
+    "cid": "16397440285013634023"
+  },
+  "5108": {
+    "id": 5108,
+    "pref": "야마나시",
+    "name": "기타구치혼구 후지센겐 신사",
+    "query": "山梨県 北口本宮冨士浅間神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E5%8C%97%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%86%A8%E5%A3%AB%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.4709017,
+      "lon": 138.7925096
+    },
+    "status": "search-or-area-result"
+  },
+  "5109": {
+    "id": 5109,
+    "pref": "야마나시",
+    "name": "아라쿠라야마 센겐공원",
+    "query": "山梨県 新倉山浅間公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%96%B0%E5%80%89%E5%B1%B1%E6%B5%85%E9%96%93%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5013908,
+      "lon": 138.8016313
+    },
+    "status": "entity-result",
+    "resolvedName": "아라쿠라야마 센겐공원",
+    "address": "아라쿠라야마 센겐공원 2-chome-4-1 Asama, Fujiyoshida, Yamanashi 403-0011 일본",
+    "lat": 35.5013908,
+    "lon": 138.8016313,
+    "cid": "10371357274634952829"
+  },
+  "5110": {
+    "id": 5110,
+    "pref": "야마나시",
+    "name": "오시노핫카이",
+    "query": "山梨県 忍野八海",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.46006740000001,
+      "lon": 138.8324749
+    },
+    "status": "entity-result",
+    "resolvedName": "오시노 핫카이",
+    "address": "오시노 핫카이 Shibokusa, Oshino, Minamitsuru District, Yamanashi 401-0511 일본",
+    "lat": 35.4600674,
+    "lon": 138.8324749,
+    "cid": "1601773399916388209"
+  },
+  "5111": {
+    "id": 5111,
+    "pref": "야마나시",
+    "name": "야마나카호",
+    "query": "山梨県 山中湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E5%B1%B1%E4%B8%AD%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.4198413,
+      "lon": 138.87008275
+    },
+    "status": "entity-result",
+    "resolvedName": "야마나카코무라",
+    "address": "일본 야마나시현 Minamitsuru District, 야마나카코무라",
+    "lat": 35.4106457,
+    "lon": 138.8611439,
+    "cid": "17189721498507637575"
+  },
+  "5112": {
+    "id": 5112,
+    "pref": "야마나시",
+    "name": "쇼센쿄",
+    "query": "山梨県 昇仙峡",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%98%87%E4%BB%99%E5%B3%A1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.7494911,
+      "lon": 138.565943
+    },
+    "status": "search-or-area-result"
+  },
+  "5113": {
+    "id": 5113,
+    "pref": "야마나시",
+    "name": "쇼센쿄 로프웨이",
+    "query": "山梨県 昇仙峡ロープウェイ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%98%87%E4%BB%99%E5%B3%A1%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.7511218,
+      "lon": 138.5596856
+    },
+    "status": "search-or-area-result"
+  },
+  "5114": {
+    "id": 5114,
+    "pref": "야마나시",
+    "name": "세이센료",
+    "query": "山梨県 清泉寮",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%B8%85%E6%B3%89%E5%AF%AE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.9246216,
+      "lon": 138.4187242
+    },
+    "status": "entity-result",
+    "resolvedName": "Seisen-ryo",
+    "address": "Seisen-ryo, 3545 Takanecho Kiyosato, Hokuto, Yamanashi 407-0301 일본",
+    "lat": 35.9246216,
+    "lon": 138.4187242,
+    "cid": "294570461320393507"
+  },
+  "5115": {
+    "id": 5115,
+    "pref": "야마나시",
+    "name": "기요사토 고원",
+    "query": "山梨県 清里高原",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%B8%85%E9%87%8C%E9%AB%98%E5%8E%9F&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.91490295000001,
+      "lon": 138.42413055
+    },
+    "status": "search-or-area-result"
+  },
+  "5116": {
+    "id": 5116,
+    "pref": "야마나시",
+    "name": "가쓰누마 포도향",
+    "query": "山梨県 勝沼ぶどう郷",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E5%8B%9D%E6%B2%BC%E3%81%B6%E3%81%A9%E3%81%86%E9%83%B7&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.6685232,
+      "lon": 138.7376611
+    },
+    "status": "search-or-area-result"
+  },
+  "5117": {
+    "id": 5117,
+    "pref": "야마나시",
+    "name": "샤토 메르샹 가쓰누마 와이너리",
+    "query": "山梨県 シャトー・メルシャン 勝沼ワイナリー",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E3%82%B7%E3%83%A3%E3%83%88%E3%83%BC%E3%83%BB%E3%83%A1%E3%83%AB%E3%82%B7%E3%83%A3%E3%83%B3+%E5%8B%9D%E6%B2%BC%E3%83%AF%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.65974095,
+      "lon": 138.7230743
+    },
+    "status": "search-or-area-result"
+  },
+  "5118": {
+    "id": 5118,
+    "pref": "야마나시",
+    "name": "에린지",
+    "query": "山梨県 恵林寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%81%B5%E6%9E%97%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.7299832,
+      "lon": 138.7137974
+    },
+    "status": "entity-result",
+    "resolvedName": "Erinji",
+    "address": "Erinji, 2280 Enzanoyashiki, Koshu, Yamanashi 404-0053 일본",
+    "lat": 35.7299832,
+    "lon": 138.7137974,
+    "cid": "17055748547743425895"
+  },
+  "5119": {
+    "id": 5119,
+    "pref": "야마나시",
+    "name": "후에후키가와 과일공원",
+    "query": "山梨県 笛吹川フルーツ公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E7%AC%9B%E5%90%B9%E5%B7%9D%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.7024414,
+      "lon": 138.6649312
+    },
+    "status": "entity-result",
+    "resolvedName": "야마나시현 후에후키가와 후르츠 공원",
+    "address": "야마나시현 후에후키가와 후르츠 공원 1488 Ezohara, Yamanashi, 405-0043 일본",
+    "lat": 35.7024414,
+    "lon": 138.6649312,
+    "cid": "8702218034106781822"
+  },
+  "5120": {
+    "id": 5120,
+    "pref": "야마나시",
+    "name": "미노부산 구온지",
+    "query": "山梨県 身延山久遠寺",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E8%BA%AB%E5%BB%B6%E5%B1%B1%E4%B9%85%E9%81%A0%E5%AF%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.3814886,
+      "lon": 138.4260761
+    },
+    "status": "entity-result",
+    "resolvedName": "Minobusan Kuon-ji",
+    "address": "Minobusan Kuon-ji, 3567 Minobu, Minamikoma District, Yamanashi 409-2593 일본",
+    "lat": 35.3814886,
+    "lon": 138.4260761,
+    "cid": "6222619288219023426"
+  },
+  "5121": {
+    "id": 5121,
+    "pref": "야마나시",
+    "name": "미노부산 로프웨이",
+    "query": "山梨県 身延山ロープウェイ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E8%BA%AB%E5%BB%B6%E5%B1%B1%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.3900502,
+      "lon": 138.420767
+    },
+    "status": "entity-result",
+    "resolvedName": "Minobusan Ropeway",
+    "address": "Minobusan Ropeway, Minobu, Minamikoma District, Yamanashi 409-2524 일본",
+    "lat": 35.3900502,
+    "lon": 138.420767,
+    "cid": "16541543353619851331"
+  },
+  "5122": {
+    "id": 5122,
+    "pref": "야마나시",
+    "name": "나라다 온천",
+    "query": "山梨県 奈良田温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E5%A5%88%E8%89%AF%E7%94%B0%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.5772378,
+      "lon": 138.30102045
+    },
+    "status": "search-or-area-result"
+  },
+  "5123": {
+    "id": 5123,
+    "pref": "야마나시",
+    "name": "모토스호",
+    "query": "山梨県 本栖湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E5%B1%B1%E6%A2%A8%E7%9C%8C+%E6%9C%AC%E6%A0%96%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 35.4643889,
+      "lon": 138.58565095
+    },
+    "status": "entity-result",
+    "resolvedName": "모토스호",
+    "address": "일본 야마나시현 모토스호",
+    "lat": 35.4631866,
+    "lon": 138.5837799,
+    "cid": "7192487692118415229"
+  },
+  "5200": {
+    "id": 5200,
+    "pref": "후쿠시마",
+    "name": "하나미야마 공원",
+    "query": "福島県 花見山公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E8%8A%B1%E8%A6%8B%E5%B1%B1%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.7381889,
+      "lon": 140.4959201
+    },
+    "status": "entity-result",
+    "resolvedName": "Hanamiyama Park",
+    "address": "PFQW+8H Hanamiyama Park, Hara-１７ Watari, Fukushima, 960-8141 일본",
+    "lat": 37.7381889,
+    "lon": 140.4959201,
+    "cid": "10469324994589897751"
+  },
+  "5201": {
+    "id": 5201,
+    "pref": "후쿠시마",
+    "name": "반다이아즈마 스카이라인·조도다이라",
+    "query": "福島県 磐梯吾妻スカイライン 浄土平",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E7%A3%90%E6%A2%AF%E5%90%BE%E5%A6%BB%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%B3+%E6%B5%84%E5%9C%9F%E5%B9%B3&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.71266425,
+      "lon": 140.30939375
+    },
+    "status": "search-or-area-result"
+  },
+  "5202": {
+    "id": 5202,
+    "pref": "후쿠시마",
+    "name": "다카유 온천",
+    "query": "福島県 高湯温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E9%AB%98%E6%B9%AF%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.75271875,
+      "lon": 140.3068353
+    },
+    "status": "entity-result",
+    "resolvedName": "Takayu Onsen",
+    "address": "Takayu Onsen, 마치니와사카 후쿠시마시 후쿠시마현 960-2261 일본",
+    "lat": 37.7523787,
+    "lon": 140.304965,
+    "cid": "10221705371409408984"
+  },
+  "5203": {
+    "id": 5203,
+    "pref": "후쿠시마",
+    "name": "가스미가조 공원",
+    "query": "福島県 霞ヶ城公園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E9%9C%9E%E3%83%B6%E5%9F%8E%E5%85%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.5990291,
+      "lon": 140.4294548
+    },
+    "status": "entity-result",
+    "resolvedName": "가스미가조공원",
+    "address": "가스미가조공원 3 Chome Kakunai, Nihommatsu, Fukushima 964-0904 일본",
+    "lat": 37.5990291,
+    "lon": 140.4294548,
+    "cid": "12092359783688475460"
+  },
+  "5204": {
+    "id": 5204,
+    "pref": "후쿠시마",
+    "name": "쓰루가성",
+    "query": "福島県 鶴ヶ城",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E9%B6%B4%E3%83%B6%E5%9F%8E&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.4878198,
+      "lon": 139.9296657
+    },
+    "status": "entity-result",
+    "resolvedName": "쓰루가 성",
+    "address": "쓰루가 성 1-1 Otemachi, Aizuwakamatsu, Fukushima 965-0873 일본",
+    "lat": 37.4878198,
+    "lon": 139.9296657,
+    "cid": "7457046999297240715"
+  },
+  "5205": {
+    "id": 5205,
+    "pref": "후쿠시마",
+    "name": "아이즈 사자에도",
+    "query": "福島県 会津さざえ堂",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E4%BC%9A%E6%B4%A5%E3%81%95%E3%81%96%E3%81%88%E5%A0%82&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.5044973,
+      "lon": 139.9539696
+    },
+    "status": "entity-result",
+    "resolvedName": "Aizu Sazaedō",
+    "address": "Aizu Sazaedō, Bentenshita-1404 Itsukimachi Oaza Yahata, Aizuwakamatsu, Fukushima 965-0003 일본",
+    "lat": 37.5044973,
+    "lon": 139.9539696,
+    "cid": "3009061046704760952"
+  },
+  "5206": {
+    "id": 5206,
+    "pref": "후쿠시마",
+    "name": "오야쿠엔",
+    "query": "福島県 御薬園",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E5%BE%A1%E8%96%AC%E5%9C%92&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.49117270000001,
+      "lon": 139.9439965
+    },
+    "status": "entity-result",
+    "resolvedName": "Oyaku Garden",
+    "address": "Oyaku Garden, 8-1 Hanaharumachi, Aizuwakamatsu, Fukushima 965-0804 일본",
+    "lat": 37.4911727,
+    "lon": 139.9439965,
+    "cid": "7956640881435038600"
+  },
+  "5207": {
+    "id": 5207,
+    "pref": "후쿠시마",
+    "name": "히가시야마 온천",
+    "query": "福島県 東山温泉",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E6%9D%B1%E5%B1%B1%E6%B8%A9%E6%B3%89&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.48152355,
+      "lon": 139.94573
+    },
+    "status": "entity-result",
+    "resolvedName": "Higashiyama Onsen",
+    "address": "Higashiyama Onsen, 아이즈와카마쓰시 후쿠시마현 일본",
+    "lat": 37.4785635,
+    "lon": 139.9605713,
+    "cid": "5815700722074567022"
+  },
+  "5208": {
+    "id": 5208,
+    "pref": "후쿠시마",
+    "name": "오우치주쿠",
+    "query": "福島県 大内宿",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E5%A4%A7%E5%86%85%E5%AE%BF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.3341964,
+      "lon": 139.8606982
+    },
+    "status": "entity-result",
+    "resolvedName": "오우치주쿠",
+    "address": "오우치주쿠 Ouchi, Shimogo, Minamiaizu District, Fukushima 969-5207 일본",
+    "lat": 37.3341964,
+    "lon": 139.8606982,
+    "cid": "7073276916600730160"
+  },
+  "5209": {
+    "id": 5209,
+    "pref": "후쿠시마",
+    "name": "도노헤쓰리",
+    "query": "福島県 塔のへつり",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E5%A1%94%E3%81%AE%E3%81%B8%E3%81%A4%E3%82%8A&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.2740624,
+      "lon": 139.9066719
+    },
+    "status": "entity-result",
+    "resolvedName": "도노헤쓰리",
+    "address": "도노헤쓰리 Shitabayashi-5316 Yagoshima, Shimogo, Minamiaizu District, Fukushima 969-5204 일본",
+    "lat": 37.2740624,
+    "lon": 139.9066719,
+    "cid": "12324832141732702157"
+  },
+  "5210": {
+    "id": 5210,
+    "pref": "후쿠시마",
+    "name": "제1 다다미강 교량 전망대",
+    "query": "福島県 第一只見川橋梁ビューポイント",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E7%AC%AC%E4%B8%80%E5%8F%AA%E8%A6%8B%E5%B7%9D%E6%A9%8B%E6%A2%81%E3%83%93%E3%83%A5%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.4783205,
+      "lon": 139.6720675
+    },
+    "status": "entity-result",
+    "resolvedName": "First Tadami River Bridge Viewpoint",
+    "address": "First Tadami River Bridge Viewpoint, 天屋原 Kawai, Mishima, Onuma District, Fukushima 969-7402 일본",
+    "lat": 37.4783205,
+    "lon": 139.6720675,
+    "cid": "5802283615200991737"
+  },
+  "5211": {
+    "id": 5211,
+    "pref": "후쿠시마",
+    "name": "고시키누마 자연탐승로",
+    "query": "福島県 五色沼自然探勝路",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E4%BA%94%E8%89%B2%E6%B2%BC%E8%87%AA%E7%84%B6%E6%8E%A2%E5%8B%9D%E8%B7%AF&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.65334445,
+      "lon": 140.07837835
+    },
+    "status": "search-or-area-result"
+  },
+  "5212": {
+    "id": 5212,
+    "pref": "후쿠시마",
+    "name": "이나와시로호",
+    "query": "福島県 猪苗代湖",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E7%8C%AA%E8%8B%97%E4%BB%A3%E6%B9%96&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.47335945,
+      "lon": 140.08716195
+    },
+    "status": "entity-result",
+    "resolvedName": "이나와시로 호",
+    "address": "일본 후쿠시마현 이나와시로 호",
+    "lat": 37.4968398,
+    "lon": 140.0620321,
+    "cid": "4899311283552821656"
+  },
+  "5213": {
+    "id": 5213,
+    "pref": "후쿠시마",
+    "name": "노구치 히데요 기념관",
+    "query": "福島県 野口英世記念館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E9%87%8E%E5%8F%A3%E8%8B%B1%E4%B8%96%E8%A8%98%E5%BF%B5%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.5360391,
+      "lon": 140.07373155
+    },
+    "status": "search-or-area-result"
+  },
+  "5214": {
+    "id": 5214,
+    "pref": "후쿠시마",
+    "name": "모로하시 근대미술관",
+    "query": "福島県 諸橋近代美術館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E8%AB%B8%E6%A9%8B%E8%BF%91%E4%BB%A3%E7%BE%8E%E8%A1%93%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.6540137,
+      "lon": 140.0960757
+    },
+    "status": "entity-result",
+    "resolvedName": "Morohashi Museum of Modern Art",
+    "address": "Morohashi Museum of Modern Art, Kengamine-1093-23 Hibara, Kitashiobara, Yama District, Fukushima 969-2701 일본",
+    "lat": 37.6540137,
+    "lon": 140.0960757,
+    "cid": "16100108226459877209"
+  },
+  "5215": {
+    "id": 5215,
+    "pref": "후쿠시마",
+    "name": "미하루 다키자쿠라",
+    "query": "福島県 三春滝桜",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E4%B8%89%E6%98%A5%E6%BB%9D%E6%A1%9C&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.407684,
+      "lon": 140.5000832
+    },
+    "status": "entity-result",
+    "resolvedName": "Miharu Takizakura",
+    "address": "Miharu Takizakura, Sakurakubo-296 Taki, Miharu, Tamura District, Fukushima 963-7714 일본",
+    "lat": 37.407684,
+    "lon": 140.5000832,
+    "cid": "5565164995015828483"
+  },
+  "5216": {
+    "id": 5216,
+    "pref": "후쿠시마",
+    "name": "아부쿠마도",
+    "query": "福島県 あぶくま洞",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E3%81%82%E3%81%B6%E3%81%8F%E3%81%BE%E6%B4%9E&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.3442655,
+      "lon": 140.6737476
+    },
+    "status": "entity-result",
+    "resolvedName": "Abukuma Caves",
+    "address": "Abukuma Caves, Higashikamayama-１ Takinemachi Sugaya, Tamura, Fukushima 963-3601 일본",
+    "lat": 37.3442655,
+    "lon": 140.6737476,
+    "cid": "15347586922871586842"
+  },
+  "5217": {
+    "id": 5217,
+    "pref": "후쿠시마",
+    "name": "아쿠아마린 후쿠시마",
+    "query": "福島県 アクアマリンふくしま",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%9E%E3%83%AA%E3%83%B3%E3%81%B5%E3%81%8F%E3%81%97%E3%81%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.9431029,
+      "lon": 140.901476
+    },
+    "status": "entity-result",
+    "resolvedName": "Aquamarine Fukushima",
+    "address": "Aquamarine Fukushima, Tatsumicho-50 Onahama, Iwaki, Fukushima 971-8101 일본",
+    "lat": 36.9431029,
+    "lon": 140.901476,
+    "cid": "11251755724966108064"
+  },
+  "5218": {
+    "id": 5218,
+    "pref": "후쿠시마",
+    "name": "스파 리조트 하와이안즈",
+    "query": "福島県 スパリゾートハワイアンズ",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E3%82%B9%E3%83%91%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%8F%E3%83%AF%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%BA&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.99343825,
+      "lon": 140.8167759
+    },
+    "status": "search-or-area-result"
+  },
+  "5219": {
+    "id": 5219,
+    "pref": "후쿠시마",
+    "name": "시오야사키 등대",
+    "query": "福島県 塩屋埼灯台",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E5%A1%A9%E5%B1%8B%E5%9F%BC%E7%81%AF%E5%8F%B0&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 36.9950265,
+      "lon": 140.9814762
+    },
+    "status": "entity-result",
+    "resolvedName": "Shioyasaki Lighthouse",
+    "address": "Shioyasaki Lighthouse, Yadozaki-３4 Tairausuiso, Iwaki, Fukushima 970-0223 일본",
+    "lat": 36.9950265,
+    "lon": 140.9814762,
+    "cid": "2198278757748237562"
+  },
+  "5220": {
+    "id": 5220,
+    "pref": "후쿠시마",
+    "name": "소마 나카무라 신사",
+    "query": "福島県 相馬中村神社",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E7%9B%B8%E9%A6%AC%E4%B8%AD%E6%9D%91%E7%A5%9E%E7%A4%BE&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.7977322,
+      "lon": 140.91374765
+    },
+    "status": "search-or-area-result"
+  },
+  "5221": {
+    "id": 5221,
+    "pref": "후쿠시마",
+    "name": "마쓰카와우라",
+    "query": "福島県 松川浦",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E6%9D%BE%E5%B7%9D%E6%B5%A6&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.80243875,
+      "lon": 140.9675238
+    },
+    "status": "entity-result",
+    "resolvedName": "마츠카와 만",
+    "address": "일본 후쿠시마현 소마시 마츠카와 만",
+    "lat": 37.803496,
+    "lon": 140.973218,
+    "cid": "13080206971832640571"
+  },
+  "5222": {
+    "id": 5222,
+    "pref": "후쿠시마",
+    "name": "동일본대지진·원자력재해 전승관",
+    "query": "福島県 東日本大震災・原子力災害伝承館",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%9C%87%E7%81%BD%E3%83%BB%E5%8E%9F%E5%AD%90%E5%8A%9B%E7%81%BD%E5%AE%B3%E4%BC%9D%E6%89%BF%E9%A4%A8&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.45803900000001,
+      "lon": 141.0264269
+    },
+    "status": "entity-result",
+    "resolvedName": "동일본대지진 원자력재해전승관",
+    "address": "동일본대지진 원자력재해전승관 Takada-39 Nakano, Futaba, Futaba District, Fukushima 979-1401 일본",
+    "lat": 37.458039,
+    "lon": 141.0264269,
+    "cid": "12768265339523889266"
+  },
+  "5223": {
+    "id": 5223,
+    "pref": "후쿠시마",
+    "name": "재해유구 나미에정립 우케도소학교",
+    "query": "福島県 震災遺構 浪江町立請戸小学校",
+    "url": "https://www.google.com/maps?hl=ko&gl=kr&output=embed&q=%E7%A6%8F%E5%B3%B6%E7%9C%8C+%E9%9C%87%E7%81%BD%E9%81%BA%E6%A7%8B+%E6%B5%AA%E6%B1%9F%E7%94%BA%E7%AB%8B%E8%AB%8B%E6%88%B8%E5%B0%8F%E5%AD%A6%E6%A0%A1&z=16",
+    "identityReview": "pending",
+    "camera": {
+      "lat": 37.475132,
+      "lon": 141.0346993
+    },
+    "status": "entity-result",
+    "resolvedName": "Ukedo Elementary School Earthquake Ruins",
+    "address": "Ukedo Elementary School Earthquake Ruins, Motsutaira-56 Ukedo, Namie, Futaba District, Fukushima 979-1522 일본",
+    "lat": 37.475132,
+    "lon": 141.0346993,
+    "cid": "744134685961222458"
   }
 }

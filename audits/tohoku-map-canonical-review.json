@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "region": "도호쿠",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 160,
+  "cidTargets": 127,
+  "coordinateOnlyTargets": 33,
+  "preservedManualTargets": 0,
+  "sourceCoordinateTargets": 0,
+  "auditEntityTargets": 127,
+  "auditCameraTargets": 33,
+  "riskFlags": []
+}

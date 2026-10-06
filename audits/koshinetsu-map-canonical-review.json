@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "region": "고신에쓰",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 79,
+  "cidTargets": 65,
+  "coordinateOnlyTargets": 14,
+  "preservedManualTargets": 0,
+  "sourceCoordinateTargets": 4,
+  "auditEntityTargets": 61,
+  "auditCameraTargets": 14,
+  "riskFlags": []
+}
