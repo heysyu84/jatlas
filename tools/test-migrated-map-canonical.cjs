@@ -1,11 +1,11 @@
 /* Map-only regression test for migrated regions. Deliberately excludes photo/file QA. */
 const assert=require('node:assert/strict'),vm=require('node:vm');
 const {ctx,result}=require('./audit-content.cjs');
-const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','도야마','이시카와','후쿠이','시가','교토','오사카','효고','나라','와카야마','돗토리','시마네','오카야마','히로시마','야마구치','도쿠시마','가가와','에히메','고치','사이타마','지바','도쿄','가나가와'];
-const expected={'기후':22,'시즈오카':20,'아이치':20,'미에':21,'아오모리':31,'이와테':33,'미야기':24,'아키타':24,'야마가타':24,'후쿠시마':24,'홋카이도':42,'이바라키':16,'도치기':19,'군마':16,'니가타':24,'야마나시':31,'나가노':24,'도야마':23,'이시카와':24,'후쿠이':24,'시가':16,'교토':26,'오사카':29,'효고':23,'나라':23,'와카야마':17,'돗토리':15,'시마네':17,'오카야마':18,'히로시마':20,'야마구치':18,'도쿠시마':18,'가가와':20,'에히메':19,'고치':19,'사이타마':23,'지바':27,'도쿄':54,'가나가와':28};
+const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','도야마','이시카와','후쿠이','시가','교토','오사카','효고','나라','와카야마','돗토리','시마네','오카야마','히로시마','야마구치','도쿠시마','가가와','에히메','고치','후쿠오카','사가','나가사키','구마모토','오이타','미야자키','가고시마','사이타마','지바','도쿄','가나가와'];
+const expected={'기후':22,'시즈오카':20,'아이치':20,'미에':21,'아오모리':31,'이와테':33,'미야기':24,'아키타':24,'야마가타':24,'후쿠시마':24,'홋카이도':42,'이바라키':16,'도치기':19,'군마':16,'니가타':24,'야마나시':31,'나가노':24,'도야마':23,'이시카와':24,'후쿠이':24,'시가':16,'교토':26,'오사카':29,'효고':23,'나라':23,'와카야마':17,'돗토리':15,'시마네':17,'오카야마':18,'히로시마':20,'야마구치':18,'도쿠시마':18,'가가와':20,'에히메':19,'고치':19,'후쿠오카':27,'사가':18,'나가사키':30,'구마모토':27,'오이타':27,'미야자키':24,'가고시마':31,'사이타마':23,'지바':27,'도쿄':54,'가나가와':28};
 const canonical=vm.runInContext('globalThis.JATLAS_MAP_CANONICAL||{}',ctx);
 const migrated=result.places.filter(p=>migratedPrefs.includes(p.pref));
-assert.equal(migrated.length,916,'migrated place count');
+assert.equal(migrated.length,1100,'migrated place count');
 for(const [pref,count] of Object.entries(expected))assert.equal(migrated.filter(p=>p.pref===pref).length,count,pref+' place count');
 for(const p of migrated){
  const c=canonical[p.id];
@@ -42,4 +42,13 @@ assert.equal(String(canonical[2811].cid),'345118280497089968','Sada Submersible 
 assert.equal(canonical[2805].lat,33.6033924,'Ryugado Cave verified latitude');
 assert.equal(canonical[2805].lon,133.7451653,'Ryugado Cave verified longitude');
 assert.equal(String(canonical[2805].cid),'13648143012896311541','Ryugado Cave exact Google CID');
+assert.equal(canonical[3209].coordinateOnly,true,'Aso Shrine must ignore the wrong search camera and keep source coordinates');
+assert.equal(canonical[3209].lat,32.9474,'Aso Shrine fixed latitude');
+assert.equal(canonical[3209].lon,131.117,'Aso Shrine fixed longitude');
+assert.equal(canonical[2909].coordinateOnly,true,'Munakata Taisha Hetsugu must keep source coordinates when search is not an entity');
+assert.equal(canonical[2909].lat,33.8314,'Munakata Taisha Hetsugu fixed latitude');
+assert.equal(canonical[2909].lon,130.5143,'Munakata Taisha Hetsugu fixed longitude');
+assert.equal(String(canonical[3423].cid),'8425352687367510378','Takachiho Farm exact Google CID');
+assert.equal(String(canonical[3500].cid),'13701894705625070971','Yunohira Observatory exact Google CID');
+assert.equal(String(canonical[3529].cid),'1411361342552211030','Mangrove Park exact Google CID');
 console.log(JSON.stringify({places:migrated.length,canonical:Object.keys(canonical).length,status:'ok'}));
