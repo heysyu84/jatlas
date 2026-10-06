@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "region": "오키나와",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "05ffcce9d63f6a68ebeaf042701689082fe974ae",
+  "prefectures": {
+    "오키나와": {
+      "places": 38,
+      "foods": 10,
+      "canonicalFiles": 48
+    }
+  },
+  "totals": {
+    "places": 38,
+    "foods": 10,
+    "canonicalRecords": 48,
+    "canonicalFiles": 48,
+    "missingCanonicalFiles": 0
+  },
+  "externalActiveAssets": [],
+  "externalActiveAssetCount": 0,
+  "guarantees": [
+    "Runtime-visible approved photos are the migration source of truth.",
+    "Canonical IDs follow Japanese prefecture code 47.",
+    "Canonical filenames contain only the fixed ID and normalized place/food name.",
+    "Legacy files are not deleted by this migration."
+  ]
+}
