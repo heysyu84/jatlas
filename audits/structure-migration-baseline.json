@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "a4d541e5237f56dbb26b674360b3eb88240f16f5",
-  "generatedAt": "2026-10-06T00:20:27.839Z",
+  "sourceCommit": "73e9441eda610867e1d94af051909476700b051e",
+  "generatedAt": "2026-10-06T03:02:57.555Z",
   "purpose": "Freeze the effective current runtime before Jatlas image/data folder migration. No file in OBSOLETE_CANDIDATE is safe to delete until a later post-migration zero-reference verification.",
   "rules": {
     "active": "Effective runtime uses this photo and no source/path conflict was detected for the place.",
@@ -15,11 +15,11 @@
     "foods": 346,
     "placePhotosActive": 1136,
     "placePhotosHold": 2,
-    "imagesTotal": 1635,
-    "imagesActive": 1496,
-    "imagesHold": 134,
+    "imagesTotal": 1742,
+    "imagesActive": 1497,
+    "imagesHold": 240,
     "imagesObsoleteCandidates": 5,
-    "duplicateImageGroups": 2,
+    "duplicateImageGroups": 108,
     "duplicateLegacyIdGroups": 0
   },
   "issues": {
@@ -14507,7 +14507,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/5f25d070115d8e02.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0001-takayama-old-town.webp",
         "sha256": "c0f8ac9330673124f35bf58175e9887c54a37382e7b0b36f2c59c36d69de61c6",
         "source": "https://commons.wikimedia.org/wiki/File:Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_(6156040666).jpg",
         "author": "",
@@ -14534,7 +14534,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/fb8f28601b4b1350.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0002-hida-furukawa-setogawa-shirakabe.webp",
         "sha256": "d0c9a8941365a167930fe97520607129d7c4efe87cbd1771ac302d6667d1089c",
         "source": "https://commons.wikimedia.org/wiki/File:Setogawa_River_flowing_near_Hida-Furukawa_Festival_Hall.JPG",
         "author": "",
@@ -14561,7 +14561,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/regional/File-Gifu-Castle-jpg.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0003-gifu-castle.webp",
         "sha256": "a1a2e6488c559ec48632adbf7bf0aa4a978f08393141afa5cb76eccdc321e313",
         "source": "https://commons.wikimedia.org/wiki/File:Gifu_Castle.jpg",
         "author": "",
@@ -14588,7 +14588,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/68860c7cfa4406da.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0004-takayama-jinya.webp",
         "sha256": "be08c656d107317c94d0f5f4eb7bb6a49d9fe696ccd4525b51a87119b24c130b",
         "source": "https://commons.wikimedia.org/wiki/File:Takayama_Jinya.jpg",
         "author": "",
@@ -14615,7 +14615,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/regional/File-Hida-Folk-Village-jpg.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp",
         "sha256": "4e8ada7adaebca9d7ed02c6224e3b7238ff1f1587aec119e049995e637ea15e5",
         "source": "https://commons.wikimedia.org/wiki/File:Hida_Folk_Village.jpg",
         "author": "",
@@ -14642,7 +14642,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/regional/shirakawago.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0006-shirakawa-go-ogimachi.webp",
         "sha256": "f9eaeab62d26e28a4f82ceb4cb9ddd5983038a5c8a1850c06a929703ee6b2c53",
         "source": "https://commons.wikimedia.org/wiki/File:Ogi_Shirakawa-g%C5%8D,_Gifu,_Japan.jpg",
         "author": "",
@@ -14669,7 +14669,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/4a7660b48ec924c9.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0007-gero-onsen.webp",
         "sha256": "4b8d9323eb982764a23172c280e64f2643789b13aa8b0e6ecd9668e5ed5ab7dd",
         "source": "https://commons.wikimedia.org/wiki/File:Gero_OnsenTown.JPG",
         "author": "",
@@ -14696,7 +14696,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/gifu-gujo-hachiman-castle-906.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0008-gujo-hachiman-castle.webp",
         "sha256": "f1b4dc67d3ff1bd4cade8ea313cf7da0b53bd6efe3ededbc06c098e9d5f802ba",
         "source": "https://commons.wikimedia.org/wiki/File:Gujo_hachiman_castle_in_autumn.jpg",
         "author": "",
@@ -14723,7 +14723,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/76648e0539922b81.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0009-magome-juku.webp",
         "sha256": "c3fb356be9defa00e2caf49344b62401c41878f378e49611c99a3cb47e123ca3",
         "source": "https://commons.wikimedia.org/wiki/File:Magome-juku.JPG",
         "author": "",
@@ -14750,7 +14750,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/34149db52e7c4a10.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0010-miyagawa-morning-market.webp",
         "sha256": "55a297f501a79334ef38189aea50787dba7f865f19d702969423b9d8a9a1174b",
         "source": "https://commons.wikimedia.org/wiki/File:Hida-Takayama_Miyagawa_Morning_Market_(15668520238).jpg",
         "author": "",
@@ -14777,7 +14777,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/8f65722fc95cc182.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0011-shinhotaka-ropeway.webp",
         "sha256": "7ad27bb9d114b59db671f1e642f8bc7c8eb834667bfa6a04c291ea3741180647",
         "source": "https://commons.wikimedia.org/wiki/File:Kiso_Mountains_and_Shinhotaka_Ropeway.jpg",
         "author": "",
@@ -14804,7 +14804,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/2c834003abee116f.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0012-gujo-hachiman-castle-town.webp",
         "sha256": "95231d05b417dacdba3492938e3f5b13047ea545233dc2ad51954f3499457523",
         "source": "https://commons.wikimedia.org/wiki/File:Gujo_from_Gujo_Hachiman_castle.jpg",
         "author": "",
@@ -14831,7 +14831,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/gifu-sekigahara-overview-911.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0013-sekigahara-battlefield.webp",
         "sha256": "c63748c7db86068b75ad482b2e4fe3900e9dec01b2351f1eea20d416ca9f3c0e",
         "source": "https://commons.wikimedia.org/wiki/File:View_of_Sekigahara_from_Sasaoyama,_site_of_Ishida_Mitsunari%27s_headquarters.jpg",
         "author": "",
@@ -14858,7 +14858,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/3bf7330867cc0c9f.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0014-yoro-falls.webp",
         "sha256": "1455c1531a565afed30b50fd0f87728eff8adff60920a90be1bf1a33c78c9035",
         "source": "https://commons.wikimedia.org/wiki/File:Yoro-waterfall.JPG",
         "author": "",
@@ -14885,7 +14885,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/6fb7ba562ac328e7.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0015-ena-gorge.webp",
         "sha256": "83f4a728768a3fe94f1315afc832d2263162b42792be510b7d2437e6db768e52",
         "source": "https://commons.wikimedia.org/wiki/File:Mount_Kasagi_from_Ena_Gorge.jpg",
         "author": "",
@@ -14912,7 +14912,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/978d0ac08599f617.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0016-hida-kokubunji.webp",
         "sha256": "bfce8b17de16a6ecebe97a111ef2f719064ae0a1d6e52b3ce1184016dc45aedd",
         "source": "https://commons.wikimedia.org/wiki/File:2024-10-27_Takayama%2C_Hida-kokubunji.jpg",
         "author": "",
@@ -14939,7 +14939,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/cad1f42f62c00e20.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0017-gero-onsen-gassho-village.webp",
         "sha256": "b436e11922a67c7e0f35a75e80f72e26871c3ad0531a4c5c63d0d82bf7c9cc40",
         "source": "https://commons.wikimedia.org/wiki/File:Gero_Onsen_Gassho-mura_1.jpg",
         "author": "",
@@ -14966,7 +14966,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/gifu-sekigahara-decisive-923.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0018-sekigahara-decisive-battlefield.webp",
         "sha256": "26aa87ec8b99830c55837e8277a559ee2b3746b38a391287852b07291e0cb81e",
         "source": "https://commons.wikimedia.org/wiki/File:The-Battlefield-of-Sekigahara-1.jpg",
         "author": "",
@@ -14993,7 +14993,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/215eab2f669551b2.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0019-gifu-sekigahara-battlefield-memorial-museum.webp",
         "sha256": "7bf6197fa0d54af505618a9949684343270ac90772d6d2e6d2f0c4f1ad01f359",
         "source": "https://commons.wikimedia.org/wiki/File:Gifu_Sekigahara_Battlefield_Memorial_Museum.jpg",
         "author": "",
@@ -15020,7 +15020,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/df35094019ba1fb0.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0020-naegi-castle-ruins.webp",
         "sha256": "cc6af6b5f5145a517e13197f042bcb0c2fe6f59e74de757ddebaddfc04b0af25",
         "source": "https://commons.wikimedia.org/wiki/File:Naegi_Castle_and_Mount_Ena.jpg",
         "author": "",
@@ -15047,7 +15047,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/d3a4cbed927e2a2d.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0021-iwamura-castle-town.webp",
         "sha256": "302016e20f7ff2e3d85dedf1021964e494bd21bd4101b07182240f70b22776b8",
         "source": "https://commons.wikimedia.org/wiki/File:Japan_National_Route_363_at_Iwamura_town%2C_Ena_city.JPG",
         "author": "",
@@ -15074,7 +15074,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/9b8a784212ea2885.webp",
+        "src": "images/regions/tokai/gifu/places/21-P0022-kawaramachi-old-town.webp",
         "sha256": "d27f418a158e178ae23834abfb5fdaacb98fab85a9b241e2bcb82a9d0259428d",
         "source": "https://commons.wikimedia.org/wiki/File:Kawaramachi_Gifu_Japan01-r.jpg",
         "author": "",
@@ -15101,7 +15101,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-shiraito-800.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp",
         "sha256": "3602711fc74f38a26541c9f36f7efdac782576d47a4da3b45ab5eb287732765e",
         "source": "https://hellonavi.jp/photo/605",
         "author": "",
@@ -15128,7 +15128,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-sengen-801.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0002-fujisan-hongu-sengen-taisha.webp",
         "sha256": "771c223ae409f116ddcbdc3cad55497163a4ca10dbaa0f69d9cd18fb46491400",
         "source": "https://hellonavi.jp/photo/585",
         "author": "",
@@ -15155,7 +15155,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-miho-802.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0003-miho-no-matsubara.webp",
         "sha256": "7f0757d92c1d2f4b05fda0ebe07f118472b25fd8e994a5219e3c3f046af1cfea",
         "source": "https://hellonavi.jp/photo/627",
         "author": "",
@@ -15182,7 +15182,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-nihondaira-yume-803.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0004-nihondaira-yume-terrace.webp",
         "sha256": "1ef953fb1667674ab85b5a2a4a295b5ec00aee02209007169f09c6006db944a1",
         "source": "https://hellonavi.jp/photo/802",
         "author": "",
@@ -15209,7 +15209,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-dogashima-tensodo-804.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0005-dogashima-tensodo-cave.webp",
         "sha256": "2be86351167ee9577ebef755fd2ee4f498fbe6e52f8ae982ebf4a70f8e033587",
         "source": "https://hellonavi.jp/photo/625",
         "author": "",
@@ -15236,7 +15236,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-hamamatsu-castle-805.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0006-hamamatsu-castle.webp",
         "sha256": "e88f4725c8ac48a7ead9613cd2ec2c002d4a74d66b6b0dd7bf862be44f33cfd4",
         "source": "https://hellonavi.jp/photo/498",
         "author": "",
@@ -15263,7 +15263,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-kakegawa-castle-806.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0007-kakegawa-castle.webp",
         "sha256": "c9e52c9696929097fce3b1dc263c982fe53aaa4d82eccf1c4c273d3efe2b223e",
         "source": "https://hellonavi.jp/photo/616",
         "author": "",
@@ -15290,7 +15290,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/shizuoka-kanzanji-ropeway-807.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0008-kanzanji-ropeway.webp",
         "sha256": "24c194d41b1a59e6e90abb0015343839ed4995eec6b05df79f286c0b5105ce7f",
         "source": "https://commons.wikimedia.org/wiki/File:Kanzanjiropeway.jpg",
         "author": "",
@@ -15317,7 +15317,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-shuzenji-808.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0009-shuzenji-onsen.webp",
         "sha256": "84cacaa1301f10f59f2c947f3dfb180e7bb5a7ba7b450a9c010953959d56623c",
         "source": "https://hellonavi.jp/photo/489",
         "author": "",
@@ -15344,7 +15344,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-sunpu-castle-809.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0010-sunpu-castle-park.webp",
         "sha256": "7f03bd2ecad0b9cfa1857b5c963438d7d2096604a4691d964a60d13e657b01e1",
         "source": "https://hellonavi.jp/photo/608",
         "author": "",
@@ -15371,7 +15371,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-kunozan-810.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0011-kunozan-toshogu.webp",
         "sha256": "dd38a3028e5204f961db61382a848f05d59b163f956933fdbfc27f868967b542",
         "source": "https://hellonavi.jp/photo/795",
         "author": "",
@@ -15398,7 +15398,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-jogasaki-811.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0012-jogasaki-coast.webp",
         "sha256": "332b3577961cb74118fea8e401f0c580e3b1092e4c5247a69c5eb98d773e1b5f",
         "source": "https://hellonavi.jp/photo/707",
         "author": "",
@@ -15425,7 +15425,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-perry-road-812.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0013-perry-road.webp",
         "sha256": "64dbcef54ca2c875ff9a48b4c54993bb6f1075bf038d54029fb1d41d9885a92d",
         "source": "https://hellonavi.jp/photo/715",
         "author": "",
@@ -15452,7 +15452,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0014-hamamatsu-flower-park.webp",
         "sha256": "aac1e7b43c7ae37ba97c5ef9cbafa4e6c7ecbbe0fc26749108865e117c7145dd",
         "source": "https://commons.wikimedia.org/wiki/File:Flower_park_1.JPG",
         "author": "",
@@ -15479,7 +15479,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-joren-falls-816.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0015-joren-falls.webp",
         "sha256": "210027208be95a3c1c28973b5efc6114b519dfbcba5ba13f5e11a2a03fd27d59",
         "source": "https://hellonavi.jp/photo/579",
         "author": "",
@@ -15506,7 +15506,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/shizuoka-moa-museum-817.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0016-moa-museum-of-art.webp",
         "sha256": "c7fd313a22ad6b1f37c61dc6ad6da572a23eebd975d4944d42bce69fad51d356",
         "source": "https://commons.wikimedia.org/wiki/File:231007_MOA_Museum_of_Art_Atami_Japan12s3.jpg",
         "author": "",
@@ -15533,7 +15533,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/ef53a75b9f9afd79.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0017-gotemba-premium-outlets.webp",
         "sha256": "70df0443452795f677531fc59f6637864d18719bfc77ff6be11d838a894cf43c",
         "source": "https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets1.jpg",
         "author": "",
@@ -15560,7 +15560,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/shizuoka-kawazu-shokeidaru-820.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0018-kawazu-nanadaru.webp",
         "sha256": "8a10bcd3f633c51b7538e8f07636922d7c5519198e5fbdb79d1a40ab8b55b876",
         "source": "https://commons.wikimedia.org/wiki/File:河津七滝~初景滝_-_panoramio.jpg",
         "author": "",
@@ -15587,7 +15587,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-nirayama-821.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0019-nirayama-reverberatory-furnace.webp",
         "sha256": "60d9d8438f6a9d48b325127595582d06c2d95ce9043be0aabed8c587fc92bc8b",
         "source": "https://hellonavi.jp/photo/594",
         "author": "",
@@ -15614,7 +15614,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/official/shizuoka-mishima-skywalk-822.webp",
+        "src": "images/regions/tokai/shizuoka/places/22-P0020-mishima-skywalk.webp",
         "sha256": "384e9986eda459087647ac9cb84455ebf1eb264432ed975e4e378129dc59b9b0",
         "source": "https://hellonavi.jp/photo/641",
         "author": "",
@@ -15641,7 +15641,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/regional/nagoya-castle.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0001-nagoya-castle-honmaru-palace.webp",
         "sha256": "eff33eeae871cfbc793753e5b7e33e0d1e63010ff1f65124523d4e4377f207cf",
         "source": "https://commons.wikimedia.org/wiki/File:Nagoya_Castle_7.jpg",
         "author": "",
@@ -15668,7 +15668,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/regional/File-Atsuta-Shrine-jpg.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0002-atsuta-jingu.webp",
         "sha256": "c783ba0af051ef8f66b50d59221d4493e4412d162d012fe1d0c1cda2a9a1e95b",
         "source": "https://commons.wikimedia.org/wiki/File:Atsuta_Shrine.jpg",
         "author": "",
@@ -15695,7 +15695,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/2a1c543e912e04279f49.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0003-toyota-commemorative-museum-industry-technology.webp",
         "sha256": "38ad3698a074bfd3398c2ae58c86f641ccd840638600d41758c71e8c6578712e",
         "source": "https://commons.wikimedia.org/wiki/File:Toyota_Commemorative_Museum_of_Industry_and_Technology_-_Textile_Machinery_Pavilion.jpg",
         "author": "",
@@ -15722,7 +15722,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/31cc78f6726cec5f3072.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0004-inuyama-castle.webp",
         "sha256": "c37130f22bf6ef101380aeb70141c1c34ea7be72b84df49094122d09f4123ba2",
         "source": "https://commons.wikimedia.org/wiki/File:Inuyama_Castle_Keep_Tower_2018.jpg",
         "author": "",
@@ -15749,7 +15749,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/6eff4efc8d983042.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0005-inuyama-castle-town.webp",
         "sha256": "974d774e9af5e152acc5a511669149f3435869a80823c9f1ae82be0e6a74ae9c",
         "source": "https://commons.wikimedia.org/wiki/File:Inuyamajouka1.jpg",
         "author": "",
@@ -15776,7 +15776,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/04c8295e5871f60a.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0006-tokoname-pottery-footpath.webp",
         "sha256": "c8dbe380f5c64a714c7b73beeeacfb376e008207ef7b0d561975f37162c04657",
         "source": "https://commons.wikimedia.org/wiki/File:Tokoname_Yakimono_Sanpomichi_2020_ac_(3).jpg",
         "author": "",
@@ -15803,7 +15803,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/4797a96e15335d71d32f.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0007-korankei.webp",
         "sha256": "5f8a982c0c4c8d19de986a3c8f9afe845559ecb209130c2d9edc398e13fc8818",
         "source": "https://commons.wikimedia.org/wiki/File:Kourankei.jpg",
         "author": "",
@@ -15830,7 +15830,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/412beb15bea6aa28.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0008-toyokawa-inari.webp",
         "sha256": "0c44bb5936adfe0b1d505fc0e548d5fc7f766916a2e9c7e2b73cc53053c6b5bc",
         "source": "https://commons.wikimedia.org/wiki/File:Toyokawa_Inari.jpg",
         "author": "",
@@ -15857,7 +15857,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/11434127111c5d801633.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0009-scmaglev-and-railway-park.webp",
         "sha256": "8a30b47194eb0846ea23c5e6b2673cb568e3066e761e5762bd5dac9affc7648d",
         "source": "https://commons.wikimedia.org/wiki/File:SCMaglev_and_Railway_Park_Great_Rollingstock_Hall.jpg",
         "author": "",
@@ -15884,7 +15884,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/c064fc4a69235c3c.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0010-nagoya-city-science-museum.webp",
         "sha256": "3ddbf5da76e29e2feea0a9e927d9989c28da7496846a7fd75fecbcd73c50a793",
         "source": "https://commons.wikimedia.org/wiki/File:Nagoya-City-Science-Museum-2.jpg",
         "author": "",
@@ -15911,7 +15911,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/62950828150a326e.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0011-tokugawa-art-museum.webp",
         "sha256": "b53d2c32da74a883ebedb0bb72efc93c9d556854a86048a16040a881680fa197",
         "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Art_Museum.jpg",
         "author": "",
@@ -15938,7 +15938,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/c75b02436a992e1486bd.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0012-tokugawa-garden.webp",
         "sha256": "5614d43c4b4a1232afd957dc554714d5ad65230e327aa52fc44e2a0e5fb024b5",
         "source": "https://commons.wikimedia.org/wiki/File:Ryusenko_in_Tokugawaen,_Tokugawa-cho_Higashi_Ward_Nagoya_2021.jpg",
         "author": "",
@@ -15965,7 +15965,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/31c4cd87eeb6dcae98f4.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp",
         "sha256": "4ce7f48371a87490aecd44a50c2fb8450eec4bfec8d08be97bd0722ef21a1712",
         "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%A0%88%E6%96%B0%E5%A4%A9%E5%9C%B0%E5%95%86%E5%BA%97%E8%A1%97.jpg",
         "author": "",
@@ -15992,7 +15992,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/b6ac3d21058b35f3ea2e.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0014-port-of-nagoya-public-aquarium.webp",
         "sha256": "bc351d7e7e0260c06ec219444e019ac35a1631c6a926617a2ddc3433b263f818",
         "source": "https://commons.wikimedia.org/wiki/File:Port_of_Nagoya_Public_Aquarium_Exterior_(1),_Minato-machi_Minato_Ward_Nagoya_2022.jpg",
         "author": "",
@@ -16019,7 +16019,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/895bd107fcf1ce6e.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0015-arimatsu-historic-townscape.webp",
         "sha256": "d5e4d6b17182b3437c82fb4be7e4a0cf3453e733d4bdea64447750dac0a6a2c7",
         "source": "https://commons.wikimedia.org/wiki/File:Arimatsu_Historic_Townscape%2C_Midori_Ward_Nagoya_2014.JPG",
         "author": "",
@@ -16046,7 +16046,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/2cb79cb8a96bc7b48ca8.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0016-meiji-mura.webp",
         "sha256": "1b9d6bbdee5b8e908b9b7454911964d4ce6bb343fa65eeac17b5889e96ce24ab",
         "source": "https://commons.wikimedia.org/wiki/File:Uji-Yamada_Post_Office_in_Meiji_Mura_2023.jpg",
         "author": "",
@@ -16073,7 +16073,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/qa/2d8587303f9febff5f05.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0017-toyota-automobile-museum.webp",
         "sha256": "0d59c2e2f0d73891e24d3fd2bc4d9fabc8742cf2475b6ad254263bdb8c113c5a",
         "source": "https://commons.wikimedia.org/wiki/File:Toyota_Automobile_Museum_entrance_2013_September.jpg",
         "author": "",
@@ -16100,11 +16100,11 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/user/aichi-ghibli-park-1017.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0018-ghibli-park.webp",
         "sha256": "7c5933af8cf4053a8fd641cfa2330ceffb5ead8650a1619b5761c8b991aa4e56",
-        "source": "images/user/aichi-ghibli-park-1017.webp",
+        "source": "images/regions/tokai/aichi/places/23-P0018-ghibli-park.webp",
         "author": "사용자 직접 촬영",
-        "terms": "images/user/aichi-ghibli-park-1017.webp",
+        "terms": "",
         "userPhoto": true
       },
       "proposed": {
@@ -16127,7 +16127,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/3be469da3c951ddc.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0019-okazaki-castle.webp",
         "sha256": "1eb2026b44c21e8e0b9eb02bdf344e6baa9f51adaeb2039a63f8f5b0342a1c2b",
         "source": "https://commons.wikimedia.org/wiki/File:Okazaki-Castle.jpg",
         "author": "",
@@ -16154,7 +16154,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/e50090a3a9d857fe.webp",
+        "src": "images/regions/tokai/aichi/places/23-P0020-takeshima-yaotomi-shrine.webp",
         "sha256": "91c61a2d3d3013dfbae23ee675c94c6d71b0c93a7c52f8ddf5ab66295e98b33e",
         "source": "https://commons.wikimedia.org/wiki/File:Takeshima_Bridge.jpg",
         "author": "",
@@ -16181,7 +16181,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/99b7ef0707ea114e.webp",
+        "src": "images/regions/tokai/mie/places/24-P0001-ise-jingu-naiku.webp",
         "sha256": "c16c18780abe90c5b9639eb74e8be4aab5bd59178e4ff0066e0d2b5cee5a21d6",
         "source": "https://commons.wikimedia.org/wiki/File:Ise-Shrine_Naiku-Ujibashi-Torii.jpg",
         "author": "",
@@ -16208,7 +16208,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/a31cea8dd766a19d.webp",
+        "src": "images/regions/tokai/mie/places/24-P0002-toba-aquarium.webp",
         "sha256": "529ced31df5a55ccd34a09121a83c36f9628879a41f011828d141d89d6d80d50",
         "source": "https://commons.wikimedia.org/wiki/File:Toba_Aquarium.jpg",
         "author": "",
@@ -16235,7 +16235,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/cd5fac99eefe40de.webp",
+        "src": "images/regions/tokai/mie/places/24-P0003-yokoyama-viewpoint.webp",
         "sha256": "915ef8fb73d6cf361cd3de39880cecb6eaa990b98bdce96241f0d6e335b3623d",
         "source": "https://commons.wikimedia.org/wiki/File:Yokoyama_Viewpoint_001.jpg",
         "author": "",
@@ -16262,7 +16262,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/25d260fb186c4df9.webp",
+        "src": "images/regions/tokai/mie/places/24-P0004-akame-48-waterfalls.webp",
         "sha256": "e39103396658b67e69d87acba8f9bd9c147472c12c3eadc830cf1eeab99c7c89",
         "source": "https://commons.wikimedia.org/wiki/File:Akame_48_Waterfalls%2C_Fudo_Falls.jpg",
         "author": "",
@@ -16289,7 +16289,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/approved/mie-iga-ninja-3717.webp",
+        "src": "images/regions/tokai/mie/places/24-P0005-iga-ryu-ninja-museum.webp",
         "sha256": "66eeccbca17bf6ce2b84bfb5becbb31012f00bbb9fd8b3e3c53fcad4ca4b25b1",
         "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B3%80%E6%B5%81%E5%BF%8D%E8%80%85%E5%8D%9A%E7%89%A9%E9%A4%A8_1.JPG",
         "author": "",
@@ -16316,7 +16316,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/8d3a4ea64b72450c.webp",
+        "src": "images/regions/tokai/mie/places/24-P0006-onigajo.webp",
         "sha256": "058fcc12507a121d08104e177cc7c9f75c521a43ef576c7af72ee9fa3b86c3c6",
         "source": "https://commons.wikimedia.org/wiki/File:Onigajo_Seaside.jpg",
         "author": "",
@@ -16343,7 +16343,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/approved/mie-magose-pass-3726.webp",
+        "src": "images/regions/tokai/mie/places/24-P0007-kumano-kodo-iseji-magose-pass.webp",
         "sha256": "fec4d8056f69f04ef06e663f16637660fb979063399c343d2b857674fdaac0a0",
         "source": "https://commons.wikimedia.org/wiki/File:Magose_Pass_01.jpg",
         "author": "",
@@ -16370,7 +16370,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/d34907762c80b5b2.webp",
+        "src": "images/regions/tokai/mie/places/24-P0008-nabana-no-sato.webp",
         "sha256": "bd8486063c1d806c2a4032354a65b88a728aff5311247c89bf9e5d4dccf7fbf0",
         "source": "https://commons.wikimedia.org/wiki/File:Nabana_no_Sato_Chapel_Illumination.jpg",
         "author": "",
@@ -16397,7 +16397,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/mie-okage-yokocho-1108.webp",
+        "src": "images/regions/tokai/mie/places/24-P0009-okage-yokocho.webp",
         "sha256": "68268f4e1399cebf071273b1966453ec4b5417c9b5041178d18200f13b54fb0a",
         "source": "https://commons.wikimedia.org/wiki/File:Ise_Mie_Okage_Yokocho_15.jpg",
         "author": "",
@@ -16424,7 +16424,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/9017bb9073962854.webp",
+        "src": "images/regions/tokai/mie/places/24-P0010-meoto-iwa-futami-okitama-shrine.webp",
         "sha256": "886674cdc004342ff8d7bd6db892eca1f33b810b4d60599d45c35d8f5f08ff2c",
         "source": "https://commons.wikimedia.org/wiki/File:Meoto-iwa.jpg",
         "author": "",
@@ -16451,7 +16451,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/ade337d0c2e5ddb9.webp",
+        "src": "images/regions/tokai/mie/places/24-P0011-mikimoto-pearl-island.webp",
         "sha256": "2f563c086044c8598b28a95b96275ec80197754fc96a8bbffaa071e723433f4e",
         "source": "https://commons.wikimedia.org/wiki/File:Mikimoto_pearl_islands.jpg",
         "author": "",
@@ -16478,7 +16478,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/60acb5d64ebdc80f.webp",
+        "src": "images/regions/tokai/mie/places/24-P0012-gozaisho-ropeway.webp",
         "sha256": "32afddf3692bfef8b7ed6d5017b06f5ebd9d811b0abdda20c7243140bea2bb5f",
         "source": "https://commons.wikimedia.org/wiki/File:Gozaisho_Ropeway_and_Fujimi-iwa.JPG",
         "author": "",
@@ -16505,7 +16505,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/1212b7b7824d4010.webp",
+        "src": "images/regions/tokai/mie/places/24-P0013-matsusaka-castle-ruins.webp",
         "sha256": "5246075a37c40d4a02acc8691f9e22ced475c95c925e9d7a7c2046e55e38f3f0",
         "source": "https://commons.wikimedia.org/wiki/File:Matsusaka_Castle%2C_Tenshudai.jpg",
         "author": "",
@@ -16532,7 +16532,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/licensed/approved/mie-nagashima-3711.webp",
+        "src": "images/regions/tokai/mie/places/24-P0014-nagashima-spa-land.webp",
         "sha256": "9a5827c5ba3056c8c8a8895da36ae3a958b3b581488702701c5511ee6305682b",
         "source": "https://commons.wikimedia.org/wiki/File:Acrobat_at_Nagashima_Spa_Land_1.jpg",
         "author": "",
@@ -16559,7 +16559,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/43cc67a04489d598.webp",
+        "src": "images/regions/tokai/mie/places/24-P0015-okage-yokocho-oharai-machi.webp",
         "sha256": "59d8a89c0ec8eed8fa0db00e5e9d81416dbddc20bd8b6af63e68b7fe7ff2f6b3",
         "source": "https://commons.wikimedia.org/wiki/File:Okage_Yokocho01.JPG",
         "author": "",
@@ -16586,7 +16586,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/29adf97835f6df15.webp",
+        "src": "images/regions/tokai/mie/places/24-P0016-shima-spain-village.webp",
         "sha256": "2fd90c0538a0d4c257cfb234f6f669cae03497e3bec066db9c10c32351824da1",
         "source": "https://commons.wikimedia.org/wiki/File:La_Villa_Espa%C3%B1ola_de_Shima%2C_Parque_Espa%C3%B1a_-_Avenida_de_Espa%C3%B1a.jpg",
         "author": "",
@@ -16613,7 +16613,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/5c5f58b3c34f19a8.webp",
+        "src": "images/regions/tokai/mie/places/24-P0017-seki-juku.webp",
         "sha256": "8ef2f474c1b0cd08331eb3e7ded2ae10012fcab71f2ef22ad1a7789dda5ff59d",
         "source": "https://commons.wikimedia.org/wiki/File:Tokaido_Seki_Juku_Kameyama_City_Mie_JPN_001.jpg",
         "author": "",
@@ -16640,7 +16640,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/412bfd66cbeda74a.webp",
+        "src": "images/regions/tokai/mie/places/24-P0018-iga-ueno-castle.webp",
         "sha256": "4030f13c0fd954e682ec707884a8e607b912e97e6b9c6e6f1dcc81c406c28aeb",
         "source": "https://commons.wikimedia.org/wiki/File:Iga_Ueno_Castle_ac.jpg",
         "author": "",
@@ -16667,7 +16667,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/46f4fed1ddb46074.webp",
+        "src": "images/regions/tokai/mie/places/24-P0019-matsusaka-castle-gojobanyashiki.webp",
         "sha256": "b7ecf40c97c7077b3ebbcb6a35c3550ff0a30d5d78b828846b48c7f5c61ed7c9",
         "source": "https://commons.wikimedia.org/wiki/File:Matsusaka_Castle%2C_Honmaru.jpg",
         "author": "",
@@ -16694,7 +16694,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/467f56f2c7732ea8.webp",
+        "src": "images/regions/tokai/mie/places/24-P0020-maruyama-senmaida.webp",
         "sha256": "573eea2461a98b22f2f503fd88c35bf3f1e5dd356debb456fd91ce5db9b30b32",
         "source": "https://commons.wikimedia.org/wiki/File:Maruyama_Senmaida(34665016140).jpg",
         "author": "",
@@ -16721,7 +16721,7 @@
       "status": "ACTIVE",
       "flags": [],
       "activePhoto": {
-        "src": "images/commons/2cc3cd11e5d85632.webp",
+        "src": "images/regions/tokai/mie/places/24-P0021-hananoiwaya-shrine.webp",
         "sha256": "7af9862e8bdcf4fe2faa7d098628e8933265c8b48b7972f6fbc315d841be462b",
         "source": "https://commons.wikimedia.org/wiki/File:Hananoiwaya_Shrine_-_May_5,_2011_(2).jpg",
         "author": "",

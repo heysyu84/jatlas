@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "a4d541e5237f56dbb26b674360b3eb88240f16f5",
-  "generatedAt": "2026-10-06T00:20:27.839Z",
+  "sourceCommit": "73e9441eda610867e1d94af051909476700b051e",
+  "generatedAt": "2026-10-06T03:02:57.555Z",
   "strategy": "official prefecture code + permanent type serial; no reuse after deletion",
   "places": [
     {
