@@ -31,11 +31,20 @@ for(const viewport of [1280,390]){
   for(const lang of ['ja','ko']){
    run(`setLanguage('${lang}')`);languages++;
    assert.equal(w.document.documentElement.lang,lang);
-   const ext=w.document.querySelector('#detailBody .officialLinks a:last-child');
-   assert.equal(new URL(ext.href).searchParams.get('q'),run('selected.mapQuery'));
-   assert.equal(new URL(ext.href).searchParams.get('hl'),lang);
+   const ext=w.document.querySelector('#detailBody .officialLinks a:last-child'),extUrl=new URL(ext.href);
+   const canonical=run('globalThis.JATLAS_MAP_CANONICAL?.[selected.id]||null');
+   if(canonical){
+    if(canonical.coordinateOnly)assert.equal(extUrl.searchParams.get('q'),`${canonical.lat},${canonical.lon}`);
+    else if(canonical.placeId)assert.equal(extUrl.searchParams.get('query_place_id'),canonical.placeId);
+    else if(canonical.cid)assert.equal(extUrl.searchParams.get('cid'),String(canonical.cid));
+    else assert.fail('canonical external map strategy missing '+run('selected.id'));
+   }else assert.equal(extUrl.searchParams.get('q'),run('selected.mapQuery'));
+   assert.equal(extUrl.searchParams.get('hl'),lang);
    const frame=w.document.querySelector('.mobileDetailMap iframe');
-   if(viewport===390){assert.ok(frame);assert.equal(new URL(frame.src).searchParams.get('hl'),lang)}
+   if(viewport===390){
+    assert.ok(frame);const frameUrl=new URL(frame.src);assert.equal(frameUrl.searchParams.get('hl'),lang);
+    if(canonical)assert.equal(frameUrl.searchParams.get('q'),`${canonical.lat},${canonical.lon}`);
+   }
   }
  }
  run(`home()`);assert.equal(run('state.view'),'home');assert.equal(run('nationalRegion'),'');
