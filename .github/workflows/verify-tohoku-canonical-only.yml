@@ -1,0 +1,32 @@
+name: Verify Tohoku canonical-only
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/test-tohoku-canonical-only.cjs
+      - .github/workflows/verify-tohoku-canonical-only.yml
+      - dist/index.html
+      - dist/photo-registry.js
+      - dist/photo-registry-data.js
+      - dist/images/regions/tohoku/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify Tohoku without legacy images
+        run: node tools/test-tohoku-canonical-only.cjs
+      - name: Install DOM dependency
+        run: npm install --prefix /tmp/jatlas-jsdom jsdom@26.1.0
+      - name: Run DOM regression
+        env:
+          JATLAS_JSDOM: /tmp/jatlas-jsdom/node_modules/jsdom
+        run: node tools/test-dom.cjs
