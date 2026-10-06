@@ -1426,6 +1426,17 @@
       "minWidth": 900,
       "minHeight": 600,
       "terms": "https://commons.wikimedia.org/wiki/File:Ishigaki_eugrena_mall.jpg"
+    },
+    {
+      "placeId": 1318,
+      "commonsFilename": "Deer's Spa, Nasu-Yumoto.jpg",
+      "allowUnpinned": true,
+      "output": "images/licensed/tochigi-nasu-onsen-1318.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Deer's_Spa%2C_Nasu-Yumoto.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "Miyuki Meinaka",
+      "minWidth": 900,
+      "minHeight": 600
     }
   ]
 }
