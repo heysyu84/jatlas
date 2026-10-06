@@ -63,7 +63,7 @@ globalThis.JATLAS_MAP_CANONICAL=Object.freeze({
   302:{"externalQuery":"山梨 甲斐善光寺","lat":35.666085,"lon":138.5929745,"cid":"5379787458453371813","resolvedName":"가이 젠코지"},
   304:{"externalQuery":"山梨 仙娥滝","lat":35.7496427,"lon":138.5662618,"cid":"10746882981292845423","resolvedName":"Senga Falls"},
   316:{"externalQuery":"山梨 尾白川渓谷","lat":35.7948551,"lon":138.2940437,"cid":"12178982948218346514","resolvedName":"Ojiragawa Canyon"},
-  318:{"externalQuery":"山梨 猿橋","lat":35.61578856734431,"lon":138.98026392791476,"coordinateOnly":true},
+  318:{"externalQuery":"山梨 猿橋","lat":35.61578856734431,"lon":138.98026392791476,"coordinateOnly":true,"resolvedName":"猿橋"},
   319:{"externalQuery":"山梨 富士山パノラマロープウェイ","lat":35.5038024,"lon":138.7743776,"cid":"4171968439096246507","resolvedName":"Mt. Fuji Panoramic Ropeway"},
   320:{"externalQuery":"山梨 富士急ハイランド","lat":35.4869467,"lon":138.7805511,"cid":"5173000043195545392","resolvedName":"후지큐 하이랜드"},
   321:{"externalQuery":"山梨 富士山世界遺産センター","lat":35.4856913,"lon":138.7706531,"cid":"8295123868807351161","resolvedName":"야마나시 현립 후지산 세계유산 센터"},

@@ -6,18 +6,9 @@
   "cidTargets": 64,
   "coordinateOnlyTargets": 15,
   "preservedManualTargets": 0,
-  "identityReviewTargets": 0,
-  "sourceCoordinateTargets": 1,
+  "identityReviewTargets": 1,
+  "sourceCoordinateTargets": 0,
   "auditEntityTargets": 64,
   "auditCameraTargets": 14,
-  "riskFlags": [
-    {
-      "id": 318,
-      "name": "사루하시",
-      "reason": "forced/broad-query-entity-conflict",
-      "km": 3.729,
-      "resolvedName": "일본",
-      "chosen": "stored-coordinate"
-    }
-  ]
+  "riskFlags": []
 }
