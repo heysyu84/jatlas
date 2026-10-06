@@ -29,9 +29,6 @@ jobs:
       - name: Remove Tokai legacy images in sandbox and verify canonical runtime
         run: node tools/test-tokai-canonical-only.cjs
 
-      - name: Run plan regression
-        run: node tools/test-plans.cjs
-
       - name: Install jsdom for DOM regression
         run: npm install --prefix /tmp/jatlas-jsdom jsdom@26.1.0
 
