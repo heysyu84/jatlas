@@ -74,13 +74,41 @@ jobs:
               a=(before.get('heroes',{}).get(key) or {}).get('src','')
               b=(after.get('heroes',{}).get(key) or {}).get('src','')
               if a!=b: hero.append({'key':key,'fromSrc':a,'toSrc':b})
+          import subprocess
+          def read_registry_text(text):
+              prefix='globalThis.JATLAS_PHOTO_REGISTRY_DATA='
+              text=text.strip()
+              if not text.startswith(prefix): raise ValueError('Bad canonical registry format')
+              return json.loads(text[len(prefix):].rstrip().rstrip(';'))
+          before_reg=read_registry_text(subprocess.check_output(['git','show',base+':dist/photo-registry-data.js'],text=True))
+          after_reg=read_registry_text(Path('dist/photo-registry-data.js').read_text())
+          def sig(r):
+              return {
+                'image':str((r or {}).get('image') or '').replace('./','',1).split('?',1)[0].split('#',1)[0],
+                'sha256':str((r or {}).get('sha256') or ''),
+                'source':str((r or {}).get('source') or ''),
+                'revision':int((r or {}).get('revision') or 0),
+              }
+          bmap={str(r.get('canonicalId') or ''):r for r in list(before_reg.get('places',{}).values())+list(before_reg.get('foods',{}).values())}
+          amap={str(r.get('canonicalId') or ''):r for r in list(after_reg.get('places',{}).values())+list(after_reg.get('foods',{}).values())}
+          canonical=[]
+          for cid in sorted(set(bmap)&set(amap)):
+              a,b=sig(bmap[cid]),sig(amap[cid])
+              if a!=b:
+                  canonical.append({
+                    'canonicalId':cid,
+                    'fromImage':a['image'],'toImage':b['image'],
+                    'fromSha256':a['sha256'],'toSha256':b['sha256'],
+                    'fromSource':a['source'],'toSource':b['source'],
+                    'fromRevision':a['revision'],'toRevision':b['revision'],
+                  })
           intent={
             'version':1,'baseCommit':base,
-            'reason':'Migrate Hokkaido to canonical IDs/paths and recover previously approved missing photo assets without changing place content.',
-            'allow':{'placeAdds':[],'placeRemovals':[],'placeEdits':[],'photoChanges':photo,'heroChanges':hero,'canonicalPhotoChanges':[]}
+            'reason':'Repair Hokkaido food canonical IDs to the permanent national ID map while preserving each food photo and its source metadata.',
+            'allow':{'placeAdds':[],'placeRemovals':[],'placeEdits':[],'photoChanges':photo,'heroChanges':hero,'canonicalPhotoChanges':canonical}
           }
           Path('tools/content-change-intent.json').write_text(json.dumps(intent,ensure_ascii=False,indent=2)+'\n')
-          print('Declared photoChanges=',len(photo),'heroChanges=',len(hero))
+          print('Declared photoChanges=',len(photo),'heroChanges=',len(hero),'canonicalPhotoChanges=',len(canonical))
           PY
 
       - name: Validate generated runtime

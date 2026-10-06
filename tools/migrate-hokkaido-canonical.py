@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# hokkaido-canonical-migration-20261007
+# hokkaido-canonical-migration-20261007-r2
 import hashlib, importlib.util, io, json, re, shutil, subprocess, unicodedata, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
@@ -193,6 +193,13 @@ def main():
     registry['foods']={k:v for k,v in registry.get('foods',{}).items() if v.get('pref') not in PREFSET}
 
     recovered=[]; per_pref={}
+    # Remove stale generated Hokkaido food canonical paths before rebuilding from
+    # permanent IDs. Legacy/source assets outside the canonical directory are untouched.
+    fooddir=DIST/'images/regions/hokkaido/hokkaido/foods'
+    if fooddir.exists():
+        for old in fooddir.glob('01-F*.webp'):
+            old.unlink()
+    print('Remove stale generated Hokkaido food canonical paths:', fooddir)
     for pref,code,prefslug,expansion_file in PREFS:
         text=(DIST/expansion_file).read_text()
         data=json.loads(extract_object(text,'const data='))
