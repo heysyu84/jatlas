@@ -60,15 +60,16 @@ def record_for_key(text,key):
     return last
 
 def explicit_place_record(text, ident):
-    pats=[
-      rf"data\\.photos\\[['\\\"]{ident}['\\\"]\\]\\s*=\\s*(\\{{.*?\\}});",
-      rf'data\\.photos\\[{ident}\\]\\s*=\\s*(\\{{.*?\\}});'
-    ]
-    for pat in pats:
-        m=re.search(pat,text,re.S)
-        if m:return parse_fields(m.group(1))
+    for needle in (
+        f"data.photos['{ident}']=",
+        f'data.photos["{ident}"]=',
+        f"data.photos[{ident}]=",
+    ):
+        i=text.find(needle)
+        if i>=0:
+            obj=extract_object(text[i:],needle)
+            if obj:return parse_fields(obj)
     return {}
-
 def commons_source(filename):
     return 'https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(filename.replace(' ','_'),safe='()_,-.')
 
