@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "baseCommit": "8263ed98586d2df7f017352a8b384abb9a13e243",
-  "reason": "No intentional content change. Harden Tokai canonical photo hash/source protection, per-photo cache revisions, migration audit support, and repository documentation after the successful Tokai migration.",
+  "baseCommit": "73e9441eda610867e1d94af051909476700b051e",
+  "reason": "No content change. Align the deployment guard baseline after the successful Tokai canonical migration, hardening, and audit refresh.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
