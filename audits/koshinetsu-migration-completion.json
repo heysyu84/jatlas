@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "region": "고신에쓰",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "312fccc26c5dde5fa6b00c932a5efce761c67d4b",
+  "prefectures": {
+    "니가타": {
+      "places": 24,
+      "foods": 8,
+      "canonicalFiles": 32
+    },
+    "야마나시": {
+      "places": 31,
+      "foods": 8,
+      "canonicalFiles": 39
+    },
+    "나가노": {
+      "places": 24,
+      "foods": 8,
+      "canonicalFiles": 32
+    }
+  },
+  "totals": {
+    "places": 79,
+    "foods": 24,
+    "canonicalRecords": 103,
+    "canonicalFiles": 103,
+    "missingCanonicalFiles": 0
+  },
+  "recoveredLegacyAssets": [
+    "images/licensed/nagano-jigokudani-hotspring-5003.webp",
+    "images/licensed/nagano-kamikochi-5007.webp",
+    "images/licensed/nagano-shibu-kanaguya-5004.webp",
+    "images/licensed/yamanashi-iyashinosato-5107.webp",
+    "images/licensed/yamanashi-shosenkyo-5112.webp"
+  ],
+  "recoveredLegacyAssetCount": 5,
+  "convertedLegacyAssets": [
+    "images/external/517141cad378a5c3.jpg",
+    "images/external/7a74adcb02168134.jpg",
+    "images/external/82056cde337432fd.jpg",
+    "images/external/aaf228d9fd59b691.jpg"
+  ],
+  "convertedLegacyAssetCount": 4,
+  "guarantees": [
+    "Canonical IDs and paths are authoritative for Koshinetsu.",
+    "Reserved IDs from audits/id-migration-map.json are preserved exactly, including deduplicated Yamanashi place selection.",
+    "User-approved QA/final photo overrides take precedence over older baseline mappings.",
+    "Previously approved missing assets are recovered from their source manifest before canonical copy.",
+    "Non-WebP accepted legacy images are converted to WebP during canonicalization.",
+    "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
+    "No legacy image file is deleted during regional migration."
+  ]
+}

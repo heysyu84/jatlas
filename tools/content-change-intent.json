@@ -1,373 +1,513 @@
 {
   "version": 1,
-  "baseCommit": "74c1d6ac89609d4dde3548eb10820ea5b163c85b",
-  "reason": "Migrate North Kanto to canonical IDs/paths and recover approved missing photo assets without changing place content.",
+  "baseCommit": "312fccc26c5dde5fa6b00c932a5efce761c67d4b",
+  "reason": "Migrate Koshinetsu to canonical IDs/paths, preserve deduplicated Yamanashi IDs, and recover approved missing photo assets.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 1200,
-        "fromSrc": "images/commons/2fe4406a36ad6f0d.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0001-kairakuen.webp"
+        "id": 302,
+        "fromSrc": "images/external/82056cde337432fd.jpg",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0001-kai-zenkoji.webp"
       },
       {
-        "id": 1201,
-        "fromSrc": "images/commons/490667d42f6549db.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0002-kodokan.webp"
+        "id": 304,
+        "fromSrc": "images/external/7a74adcb02168134.jpg",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0002-senga-falls.webp"
       },
       {
-        "id": 1202,
-        "fromSrc": "images/commons/f0274bc3069ebb27.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0003-hitachi-seaside-park.webp"
+        "id": 316,
+        "fromSrc": "images/external/517141cad378a5c3.jpg",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0003-ojiragawa-gorge.webp"
       },
       {
-        "id": 1203,
-        "fromSrc": "images/commons/0eb0715eb85c96f9.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0004-oarai-isosaki-shrine.webp"
+        "id": 318,
+        "fromSrc": "images/external/aaf228d9fd59b691.jpg",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0004-saruhashi.webp"
       },
       {
-        "id": 1204,
-        "fromSrc": "images/commons/ed0a5936cafd07f9.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0005-mount-tsukuba.webp"
+        "id": 319,
+        "fromSrc": "images/commons/765ac91e3815d4b3.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0005-mt-fuji-panoramic-ropeway.webp"
       },
       {
-        "id": 1205,
-        "fromSrc": "images/commons/fc2440600831c5aa.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0006-tsukubasan-shrine.webp"
+        "id": 320,
+        "fromSrc": "images/commons/386bf46ed8db8d7b.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0006-fuji-q-highland.webp"
       },
       {
-        "id": 1206,
-        "fromSrc": "images/commons/1a23b0f6237a0101.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0007-fukuroda-falls.webp"
+        "id": 321,
+        "fromSrc": "images/commons/9768430d446cdaae.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0007-fujisan-world-heritage-center.webp"
       },
       {
-        "id": 1207,
-        "fromSrc": "images/qa/ff983684227e20d83694.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0008-kasama-inari-shrine.webp"
+        "id": 4600,
+        "fromSrc": "images/commons/abd96f3778c73bc4.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0001-bandai-bridge.webp"
       },
       {
-        "id": 1208,
-        "fromSrc": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0009-ushiku-daibutsu.webp"
+        "id": 4601,
+        "fromSrc": "images/commons/ba4ad18d0ea04686.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0002-niigata-city-history-museum-minatopia.webp"
       },
       {
-        "id": 1209,
-        "fromSrc": "images/commons/8311852f2aec5148.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0010-ryujin-suspension-bridge.webp"
+        "id": 4602,
+        "fromSrc": "images/commons/b2f0db3dbed90ad7.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0003-toki-messe-observation-room.webp"
       },
       {
-        "id": 1210,
-        "fromSrc": "images/commons/693cbf9251a13b43.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0011-aquaworld-oarai-aquarium.webp"
+        "id": 4603,
+        "fromSrc": "images/commons/4db67ee1a5df20f2.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0004-pia-bandai.webp"
       },
       {
-        "id": 1211,
-        "fromSrc": "images/commons/98978348f1b122f1.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0012-nakaminato-fish-market.webp"
+        "id": 4604,
+        "fromSrc": "images/commons/9e0f0cd70db14bd6.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0005-yamamoto-isoroku-memorial-museum.webp"
       },
       {
-        "id": 1212,
-        "fromSrc": "images/qa/85fea7b124be9bebc46d.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0013-jaxa-tsukuba-space-center.webp"
+        "id": 4605,
+        "fromSrc": "images/commons/0e6324829e4f2502.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0006-echigo-hillside-park.webp"
       },
       {
-        "id": 1213,
-        "fromSrc": "images/commons/4374dd7da377afed.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0014-kashima-jingu.webp"
+        "id": 4606,
+        "fromSrc": "images/commons/8a8f821c2ef40b80.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0007-kiyotsu-gorge-tunnel.webp"
       },
       {
-        "id": 1214,
-        "fromSrc": "images/commons/6a1a57e8260adec9.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0015-ibaraki-flower-park.webp"
+        "id": 4607,
+        "fromSrc": "images/commons/a15ad7c98c5e7987.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0008-hoshitoge-rice-terraces.webp"
       },
       {
-        "id": 1215,
-        "fromSrc": "images/commons/683a26cba0bc4663.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0016-hananuki-gorge.webp"
+        "id": 4608,
+        "fromSrc": "images/licensed/niigata-echigo-yuzawa-4608.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0009-echigo-yuzawa-onsen.webp"
       },
       {
-        "id": 1300,
-        "fromSrc": "images/commons/e60a7f0c9e4efb37.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0001-nikko-toshogu.webp"
+        "id": 4609,
+        "fromSrc": "images/commons/8a4dd9b62ca31ea9.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0010-yuzawa-kogen-ropeway.webp"
       },
       {
-        "id": 1301,
-        "fromSrc": "images/commons/29cc9981b06af036.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0002-kegon-falls.webp"
+        "id": 4610,
+        "fromSrc": "images/commons/501cd0942db40d28.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0011-untoan-temple.webp"
       },
       {
-        "id": 1302,
-        "fromSrc": "images/commons/61103c7eec20e472.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0003-lake-chuzenji.webp"
+        "id": 4611,
+        "fromSrc": "images/commons/7a2f5c89aa9024e0.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0012-hakkaisan-ropeway.webp"
       },
       {
-        "id": 1303,
-        "fromSrc": "images/commons/9b32ae6f8d99ab18.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0004-kinugawa-onsen.webp"
+        "id": 4612,
+        "fromSrc": "images/commons/4db91be30f39269a.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0013-sado-gold-mine.webp"
       },
       {
-        "id": 1304,
-        "fromSrc": "images/commons/22adf043e2aec9f4.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0005-edo-wonderland-nikko-edomura.webp"
+        "id": 4613,
+        "fromSrc": "images/commons/ae5011d0710bb9a3.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0014-kitazawa-flotation-plant.webp"
       },
       {
-        "id": 1305,
-        "fromSrc": "images/licensed/approved/tochigi-oya-history-1305.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0006-oya-history-museum.webp"
+        "id": 4614,
+        "fromSrc": "images/commons/3caf649c80ffd379.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0015-shukunegi.webp"
       },
       {
-        "id": 1306,
-        "fromSrc": "images/commons/55654212b8b45304.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0007-ashikaga-flower-park.webp"
+        "id": 4615,
+        "fromSrc": "images/commons/67fbe9b5d25ce62a.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0016-senkaku-bay-ageshima.webp"
       },
       {
-        "id": 1307,
-        "fromSrc": "images/commons/5a2ab2e9a287760a.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0008-ashikaga-school.webp"
+        "id": 4616,
+        "fromSrc": "images/commons/4f95257ae701f5c6.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0017-toki-no-mori-park.webp"
       },
       {
-        "id": 1308,
-        "fromSrc": "images/commons/25b32ce3e0e09c37.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0009-mount-nasu-nasu-ropeway.webp"
+        "id": 4617,
+        "fromSrc": "images/commons/c6c2ec62ca0d9f5c.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0018-myoko-kogen-imori-pond.webp"
       },
       {
-        "id": 1309,
-        "fromSrc": "images/commons/0dfe504527315e4a.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0010-oyaji-oya-kannon.webp"
+        "id": 4618,
+        "fromSrc": "images/commons/d0c8395d79722d28.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0019-akakura-onsen.webp"
       },
       {
-        "id": 1310,
-        "fromSrc": "images/commons/dc24e97e7728932a.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0011-nikko-futarasan-shrine.webp"
+        "id": 4619,
+        "fromSrc": "images/commons/82b4a691747da375.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0020-takada-castle-site-park.webp"
       },
       {
-        "id": 1311,
-        "fromSrc": "images/commons/1c9354d451c9c159.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0012-shinkyo-bridge.webp"
+        "id": 4620,
+        "fromSrc": "images/commons/be0477020b05e6d7.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0021-kasugayama-castle-ruins.webp"
       },
       {
-        "id": 1312,
-        "fromSrc": "images/commons/dcc3172bd3eab5f1.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0013-rinnoji.webp"
+        "id": 4621,
+        "fromSrc": "images/commons/39850c1f23448640.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0022-fossa-magna-museum.webp"
       },
       {
-        "id": 1313,
-        "fromSrc": "images/commons/da5d5b242246ef2b.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0014-senjogahara.webp"
+        "id": 4622,
+        "fromSrc": "images/commons/cde6380412189fcb.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0023-kotakigawa-jade-gorge.webp"
       },
       {
-        "id": 1314,
-        "fromSrc": "images/licensed/tochigi-ryuzu-1314.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0015-ryuzu-falls.webp"
+        "id": 4623,
+        "fromSrc": "images/licensed/approved/niigata-oyashirazu-4623.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0024-oyashirazu.webp"
       },
       {
-        "id": 1315,
-        "fromSrc": "images/commons/b8d599f3e9235037.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0016-mashiko-jonaisaka-pottery-street.webp"
+        "id": 5000,
+        "fromSrc": "images/commons/f50d8d206f1c6b36.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0001-zenkoji.webp"
       },
       {
-        "id": 1316,
-        "fromSrc": "images/commons/b9750bc1e3385b43.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0017-nikko-tamozawa-imperial-villa.webp"
+        "id": 5001,
+        "fromSrc": "images/commons/6eca4503cfe4c714.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0002-togakushi-shrine-okusha.webp"
       },
       {
-        "id": 1317,
-        "fromSrc": "images/commons/7c684e863d6b1a5a.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0018-lake-yunoko.webp"
+        "id": 5002,
+        "fromSrc": "images/commons/102a98128a3a6adf.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0003-togakushi-folk-ninja-museum.webp"
       },
       {
-        "id": 1318,
-        "fromSrc": "images/commons/fb6f88aeaf3d3c04.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0019-nasu-onsen.webp"
+        "id": 5003,
+        "fromSrc": "images/licensed/nagano-jigokudani-hotspring-5003.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0004-jigokudani-monkey-park.webp"
       },
       {
-        "id": 1400,
-        "fromSrc": "images/commons/107454a76a8379fd.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0001-kusatsu-onsen-yubatake.webp"
+        "id": 5004,
+        "fromSrc": "images/licensed/nagano-shibu-kanaguya-5004.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0005-shibu-onsen.webp"
       },
       {
-        "id": 1401,
-        "fromSrc": "images/commons/c85e8d9e500bb795.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0002-ikaho-onsen-stone-steps.webp"
+        "id": 5005,
+        "fromSrc": "images/commons/a0b69003fa5d1923.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0006-matsumoto-castle.webp"
       },
       {
-        "id": 1402,
-        "fromSrc": "images/commons/428f2d30ec7cc152.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0003-tomioka-silk-mill.webp"
+        "id": 5006,
+        "fromSrc": "images/commons/d0edd0f890747518.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0007-nawate-street.webp"
       },
       {
-        "id": 1403,
-        "fromSrc": "images/commons/f231fdbdbb838b08.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0004-fukiware-falls.webp"
+        "id": 5007,
+        "fromSrc": "images/licensed/nagano-kamikochi-5007.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0008-kamikochi.webp"
       },
       {
-        "id": 1404,
-        "fromSrc": "images/commons/94d62e0087dd4ca9.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0005-oze-national-park.webp"
+        "id": 5008,
+        "fromSrc": "images/commons/7efa77aec8428769.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0009-daio-wasabi-farm.webp"
       },
       {
-        "id": 1405,
-        "fromSrc": "images/commons/dca25b1ef0b51867.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0006-mount-tanigawa.webp"
+        "id": 5009,
+        "fromSrc": "images/commons/5ab542be3229a459.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0010-hotaka-shrine.webp"
       },
       {
-        "id": 1406,
-        "fromSrc": "images/commons/ba24d27337cb8211.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0007-haruna-shrine.webp"
+        "id": 5010,
+        "fromSrc": "images/commons/ebc6a728209347d2.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0011-old-karuizawa-ginza.webp"
       },
       {
-        "id": 1407,
-        "fromSrc": "images/commons/36876cfe151e45eb.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0008-lake-haruna.webp"
+        "id": 5011,
+        "fromSrc": "images/commons/6977463a639520ec.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp"
       },
       {
-        "id": 1408,
-        "fromSrc": "images/licensed/gunma-shima-onsen-1408.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0009-shima-onsen.webp"
+        "id": 5012,
+        "fromSrc": "images/commons/07728b377a93c88a.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0013-karuizawa-taliesin.webp"
       },
       {
-        "id": 1409,
-        "fromSrc": "images/licensed/gunma-takasaki-kannon-1409.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0010-takasaki-byakui-kannon.webp"
+        "id": 5013,
+        "fromSrc": "images/commons/cf629a64be1789ba.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0014-komoro-castle-kaikoen.webp"
       },
       {
-        "id": 1410,
-        "fromSrc": "images/commons/66431854178aedf0.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0011-sainokawara-park.webp"
+        "id": 5014,
+        "fromSrc": "images/commons/bc1b46ab941d3419.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0015-suwa-taisha-kamisha-honmiya.webp"
       },
       {
-        "id": 1411,
-        "fromSrc": "images/commons/3a288085409de488.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0012-mount-akagi-lake-onuma.webp"
+        "id": 5015,
+        "fromSrc": "images/commons/b4465b136f068e9c.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp"
       },
       {
-        "id": 1412,
-        "fromSrc": "images/commons/5f35e9689dfc4441.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0013-shorinzan-daruma-ji.webp"
+        "id": 5016,
+        "fromSrc": "images/commons/fe800e16666ba8e0.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0017-kirigamine-highland.webp"
       },
       {
-        "id": 1413,
-        "fromSrc": "images/commons/c65d1e2b081929f9.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0014-okushima-lake-shima-blue.webp"
+        "id": 5017,
+        "fromSrc": "images/commons/da8a20beadf6e73d.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0018-tateshina-highland-mishaka-pond.webp"
       },
       {
-        "id": 1414,
-        "fromSrc": "images/commons/25e906e534f53865.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0015-netsunoyu-yumomi-show.webp"
+        "id": 5018,
+        "fromSrc": "images/commons/e70afdf883eb06b8.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0019-hakuba-happo-pond.webp"
       },
       {
-        "id": 1415,
-        "fromSrc": "images/commons/538da5ee32e590a9.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0016-kajika-bridge.webp"
+        "id": 5019,
+        "fromSrc": "images/commons/09f78abf4f4fe6b2.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0020-tateyama-kurobe-ogizawa.webp"
+      },
+      {
+        "id": 5020,
+        "fromSrc": "images/commons/f5541964cca729ce.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0021-lake-kizaki.webp"
+      },
+      {
+        "id": 5021,
+        "fromSrc": "images/commons/100acc32d3074dc8.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0022-tsumago-juku.webp"
+      },
+      {
+        "id": 5022,
+        "fromSrc": "images/commons/1e23f22f942ddaaf.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0023-narai-juku.webp"
+      },
+      {
+        "id": 5023,
+        "fromSrc": "images/commons/55eeaf5b59db1042.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0024-mount-ontake-otaki-trailhead.webp"
+      },
+      {
+        "id": 5100,
+        "fromSrc": "images/commons/0e62adda8c9e1396.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0008-takeda-shrine.webp"
+      },
+      {
+        "id": 5101,
+        "fromSrc": "images/commons/ebdb012d1192b48a.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0009-maizuru-castle-park.webp"
+      },
+      {
+        "id": 5102,
+        "fromSrc": "images/commons/a7589c1ea66afc25.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0010-koshu-yume-koji.webp"
+      },
+      {
+        "id": 5103,
+        "fromSrc": "images/commons/f8ab42cbba437a9f.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0011-isawa-onsen.webp"
+      },
+      {
+        "id": 5104,
+        "fromSrc": "images/commons/9ccd4556b60d720c.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0012-lake-kawaguchi.webp"
+      },
+      {
+        "id": 5105,
+        "fromSrc": "images/commons/5ebe581158b2d8f2.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0013-oishi-park.webp"
+      },
+      {
+        "id": 5106,
+        "fromSrc": "images/commons/3a7f7fcd85e76dd1.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0014-kawaguchi-asama-shrine.webp"
+      },
+      {
+        "id": 5107,
+        "fromSrc": "images/licensed/yamanashi-iyashinosato-5107.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0015-saiko-iyashi-no-sato-nenba.webp"
+      },
+      {
+        "id": 5108,
+        "fromSrc": "images/commons/68b2fecfcc1beefa.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0016-kitaguchi-hongu-fuji-sengen-shrine.webp"
+      },
+      {
+        "id": 5109,
+        "fromSrc": "images/commons/565ebec4b29fad1f.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0017-arakurayama-sengen-park.webp"
+      },
+      {
+        "id": 5110,
+        "fromSrc": "images/commons/3ebf4489377fab8a.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0018-oshino-hakkai.webp"
+      },
+      {
+        "id": 5111,
+        "fromSrc": "images/commons/c2cc9914d93d1c08.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0019-lake-yamanaka.webp"
+      },
+      {
+        "id": 5112,
+        "fromSrc": "images/licensed/yamanashi-shosenkyo-5112.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0020-shosenkyo.webp"
+      },
+      {
+        "id": 5113,
+        "fromSrc": "images/commons/6db90476a875a9c0.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0021-shosenkyo-ropeway.webp"
+      },
+      {
+        "id": 5114,
+        "fromSrc": "images/commons/cb51100e7a50e349.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0022-seisenryo.webp"
+      },
+      {
+        "id": 5115,
+        "fromSrc": "images/commons/450ad9d289d9c1e6.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0023-kiyosato-highland.webp"
+      },
+      {
+        "id": 5116,
+        "fromSrc": "images/commons/41fbeac7179c5014.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0024-katsunuma-grape-town.webp"
+      },
+      {
+        "id": 5117,
+        "fromSrc": "images/commons/25a370a45a683726.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0025-chateau-mercian-katsunuma-winery.webp"
+      },
+      {
+        "id": 5118,
+        "fromSrc": "images/commons/362bea890ec2f6a7.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0026-erinji.webp"
+      },
+      {
+        "id": 5119,
+        "fromSrc": "images/commons/e8238ca3f3025b3d.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0027-fuefukigawa-fruit-park.webp"
+      },
+      {
+        "id": 5120,
+        "fromSrc": "images/commons/fd1bf295f5122acb.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0028-minobusan-kuonji.webp"
+      },
+      {
+        "id": 5121,
+        "fromSrc": "images/commons/47f85bd1aa5ebcd1.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0029-minobusan-ropeway.webp"
+      },
+      {
+        "id": 5122,
+        "fromSrc": "images/commons/b7af1aa7d797534d.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0030-narada-onsen.webp"
+      },
+      {
+        "id": 5123,
+        "fromSrc": "images/commons/d44a0513a8caa997.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0031-lake-motosu.webp"
       }
     ],
     "heroChanges": [
       {
-        "key": "가사마·우시쿠",
-        "fromSrc": "images/qa/ff983684227e20d83694.webp",
-        "toSrc": "images/commons/f762d4b706c8092e.webp"
+        "key": "가루이자와·고모로",
+        "fromSrc": "images/commons/ebc6a728209347d2.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0011-old-karuizawa-ginza.webp"
       },
       {
-        "key": "가시마",
-        "fromSrc": "images/commons/4374dd7da377afed.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0014-kashima-jingu.webp"
+        "key": "가쓰누마·고슈",
+        "fromSrc": "images/commons/41fbeac7179c5014.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0024-katsunuma-grape-town.webp"
       },
       {
-        "key": "구사쓰",
-        "fromSrc": "images/commons/107454a76a8379fd.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0001-kusatsu-onsen-yubatake.webp"
+        "key": "가와구치코·후지북부",
+        "fromSrc": "images/commons/9ccd4556b60d720c.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0012-lake-kawaguchi.webp"
       },
       {
-        "key": "군마",
-        "fromSrc": "images/commons/107454a76a8379fd.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0001-kusatsu-onsen-yubatake.webp"
+        "key": "고후·이사와",
+        "fromSrc": "images/commons/0e62adda8c9e1396.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0008-takeda-shrine.webp"
       },
       {
-        "key": "기누가와",
-        "fromSrc": "images/commons/9b32ae6f8d99ab18.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0004-kinugawa-onsen.webp"
+        "key": "기소·나카센도",
+        "fromSrc": "images/commons/100acc32d3074dc8.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0022-tsumago-juku.webp"
       },
       {
-        "key": "나스",
-        "fromSrc": "images/commons/25b32ce3e0e09c37.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0009-mount-nasu-nasu-ropeway.webp"
+        "key": "나가노",
+        "fromSrc": "images/commons/a0b69003fa5d1923.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0006-matsumoto-castle.webp"
       },
       {
-        "key": "닛코",
-        "fromSrc": "images/commons/e60a7f0c9e4efb37.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0001-nikko-toshogu.webp"
+        "key": "나가노·도구시",
+        "fromSrc": "images/commons/f50d8d206f1c6b36.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0001-zenkoji.webp"
       },
       {
-        "key": "도미오카·다카사키",
-        "fromSrc": "images/commons/428f2d30ec7cc152.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0003-tomioka-silk-mill.webp"
+        "key": "나가오카·주에쓰",
+        "fromSrc": "images/commons/8a8f821c2ef40b80.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0007-kiyotsu-gorge-tunnel.webp"
       },
       {
-        "key": "도치기",
-        "fromSrc": "images/commons/e60a7f0c9e4efb37.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0001-nikko-toshogu.webp"
+        "key": "니가타",
+        "fromSrc": "images/commons/abd96f3778c73bc4.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0001-bandai-bridge.webp"
       },
       {
-        "key": "마시코",
-        "fromSrc": "images/commons/b8d599f3e9235037.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0016-mashiko-jonaisaka-pottery-street.webp"
+        "key": "니가타시",
+        "fromSrc": "images/commons/abd96f3778c73bc4.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0001-bandai-bridge.webp"
       },
       {
-        "key": "미나카미·오제",
-        "fromSrc": "images/commons/f231fdbdbb838b08.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0004-fukiware-falls.webp"
+        "key": "마쓰모토·아즈미노",
+        "fromSrc": "images/commons/a0b69003fa5d1923.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0006-matsumoto-castle.webp"
       },
       {
-        "key": "미토",
-        "fromSrc": "images/commons/2fe4406a36ad6f0d.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0001-kairakuen.webp"
+        "key": "묘코·조에쓰",
+        "fromSrc": "images/commons/c6c2ec62ca0d9f5c.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0018-myoko-kogen-imori-pond.webp"
       },
       {
-        "key": "북부 이바라키",
-        "fromSrc": "images/commons/1a23b0f6237a0101.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0007-fukuroda-falls.webp"
+        "key": "미노부·후지카와",
+        "fromSrc": "images/commons/fd1bf295f5122acb.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0028-minobusan-kuonji.webp"
       },
       {
-        "key": "시마 온천",
-        "fromSrc": "images/licensed/gunma-shima-onsen-1408.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0009-shima-onsen.webp"
+        "key": "사도",
+        "fromSrc": "images/commons/4db91be30f39269a.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0013-sado-gold-mine.webp"
       },
       {
-        "key": "쓰쿠바",
-        "fromSrc": "images/commons/ed0a5936cafd07f9.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0005-mount-tsukuba.webp"
+        "key": "쇼센쿄·호쿠토",
+        "fromSrc": "images/licensed/yamanashi-shosenkyo-5112.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0020-shosenkyo.webp"
       },
       {
-        "key": "아시카가",
-        "fromSrc": "images/commons/55654212b8b45304.webp",
-        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0007-ashikaga-flower-park.webp"
+        "key": "스와·기리가미네",
+        "fromSrc": "images/commons/bc1b46ab941d3419.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0015-suwa-taisha-kamisha-honmiya.webp"
       },
       {
-        "key": "아카기",
-        "fromSrc": "images/commons/3a288085409de488.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0012-mount-akagi-lake-onuma.webp"
+        "key": "야마나시",
+        "fromSrc": "images/commons/9ccd4556b60d720c.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0012-lake-kawaguchi.webp"
       },
       {
-        "key": "이바라키",
-        "fromSrc": "images/commons/2fe4406a36ad6f0d.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0001-kairakuen.webp"
+        "key": "오쓰키",
+        "fromSrc": "images/external/aaf228d9fd59b691.jpg",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0004-saruhashi.webp"
       },
       {
-        "key": "이시오카",
-        "fromSrc": "images/commons/6a1a57e8260adec9.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0015-ibaraki-flower-park.webp"
+        "key": "이토이가와",
+        "fromSrc": "images/commons/cde6380412189fcb.webp",
+        "toSrc": "images/regions/koshinetsu/niigata/places/15-P0023-kotakigawa-jade-gorge.webp"
       },
       {
-        "key": "이카호·하루나",
-        "fromSrc": "images/commons/c85e8d9e500bb795.webp",
-        "toSrc": "images/regions/north-kanto/gunma/places/10-P0002-ikaho-onsen-stone-steps.webp"
+        "key": "하쿠바·오마치",
+        "fromSrc": "images/commons/e70afdf883eb06b8.webp",
+        "toSrc": "images/regions/koshinetsu/nagano/places/20-P0019-hakuba-happo-pond.webp"
       },
       {
-        "key": "히타치나카·오아라이",
-        "fromSrc": "images/commons/f0274bc3069ebb27.webp",
-        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0003-hitachi-seaside-park.webp"
+        "key": "후지요시다·오시노",
+        "fromSrc": "images/commons/565ebec4b29fad1f.webp",
+        "toSrc": "images/regions/koshinetsu/yamanashi/places/19-P0017-arakurayama-sengen-park.webp"
       }
     ],
     "canonicalPhotoChanges": []
