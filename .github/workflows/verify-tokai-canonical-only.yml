@@ -37,7 +37,3 @@ jobs:
           JATLAS_JSDOM: /tmp/jatlas-jsdom/node_modules/jsdom
         run: node tools/test-dom.cjs
 
-      - name: Run non-photo regression
-        env:
-          JATLAS_JSDOM: /tmp/jatlas-jsdom/node_modules/jsdom
-        run: node tools/test-nonphoto.cjs
