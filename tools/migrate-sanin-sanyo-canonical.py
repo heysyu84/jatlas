@@ -3,7 +3,7 @@
 import hashlib,io,json,re,subprocess,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image,ImageOps
-from unidecode import unidecode
+from canonical_slug_policy import place_slug,food_slug
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
@@ -16,10 +16,6 @@ PREFSET={x[0] for x in PREFS}
 EXPECTED={'돗토리':(15,5),'시마네':(17,5),'오카야마':(18,6),'히로시마':(20,7),'야마구치':(18,6)}
 USER_AGENT='Mozilla/5.0 Jatlas canonical migration'
 
-def slug_name(name):
-    s=unidecode(unicodedata.normalize('NFKC',str(name or '')).strip()).lower()
-    s=re.sub(r'[^0-9a-z]+','-',s)
-    return re.sub(r'-+','-',s).strip('-') or 'item'
 
 def clean_local(src):
     s=str(src or '').split('?',1)[0].split('#',1)[0]
@@ -50,6 +46,7 @@ def main():
     if not RUNTIME.is_file():raise SystemExit('Run tools/audit-content.cjs /tmp/sanin-sanyo-before.json first')
     runtime=json.loads(RUNTIME.read_text())
     idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
+    map_audit=json.loads((ROOT/'audits/map-audit.json').read_text())
     place_map={int(x['legacyId']):x for x in idmap['places'] if x.get('pref') in PREFSET}
     food_map={(x['pref'],x['name']):x for x in idmap['foods'] if x.get('pref') in PREFSET}
     places={int(x['id']):x for x in runtime['places'] if x.get('pref') in PREFSET}
@@ -78,7 +75,7 @@ def main():
             if not p:raise ValueError(f'Missing runtime place {pref} {ident}')
             photo=p.get('photo') or {};src=photo.get('src') or ''
             if not src:raise ValueError(f'Missing active place photo {pref} {ident} {row["name"]}')
-            cid=row['newId'];canonical=f'images/regions/sanin-sanyo/{prefslug}/places/{cid}-{slug_name(row["name"])}.webp'
+            cid=row['newId'];canonical=f'images/regions/sanin-sanyo/{prefslug}/places/{cid}-{place_slug(cid,(map_audit.get(str(ident)) or {}).get('query') or p.get('mapQuery') or '')}.webp'
             dest=DIST/canonical;legacy=write_webp(src,dest)
             if str(src).startswith(('http://','https://')):external.append({'id':ident,'src':src})
             registry['places'][cid]={
@@ -93,7 +90,7 @@ def main():
             if not f:raise ValueError(f'Missing runtime food {pref} {name}')
             photo=f.get('photo') or {};src=photo.get('src') or f.get('image') or ''
             if not src:raise ValueError(f'Missing active food photo {pref} {name}')
-            cid=row['newId'];canonical=f'images/regions/sanin-sanyo/{prefslug}/foods/{cid}-{slug_name(name)}.webp'
+            cid=row['newId'];canonical=f'images/regions/sanin-sanyo/{prefslug}/foods/{cid}-{food_slug(cid)}.webp'
             dest=DIST/canonical;legacy=write_webp(src,dest)
             if str(src).startswith(('http://','https://')):external.append({'food':pref+'|'+name,'src':src})
             registry['foods'][cid]={
