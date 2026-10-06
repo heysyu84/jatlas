@@ -1,6 +1,7 @@
 // Boundary geometry is sourced, never hand drawn. Coordinates use Web Mercator.
 const prefNames=['','홋카이도','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','이바라키','도치기','군마','사이타마','지바','도쿄','가나가와','니가타','도야마','이시카와','후쿠이','야마나시','나가노','기후','시즈오카','아이치','미에','시가','교토','오사카','효고','나라','와카야마','돗토리','시마네','오카야마','히로시마','야마구치','도쿠시마','가가와','에히메','고치','후쿠오카','사가','나가사키','구마모토','오이타','미야자키','가고시마','오키나와'];
-const pointLocations={3:{lon:137.257,lat:36.142,note:'다카야마 중심부 기준. 관광지 입구와는 다를 수 있습니다.'},4:{lon:137.1863664,lat:36.23568975,note:'히다시 공식 관광 안내 지점.',source:'https://www.hida-kankou.jp/spot/278'},5:{lon:136.7813,lat:35.4339,note:'기후성 일대의 대표 위치. 등산·로프웨이 출발지는 별도로 확인하세요.'}};
+const canonicalMapLocations=globalThis.JATLAS_MAP_CANONICAL||{};
+const pointLocations={3:{lon:137.257,lat:36.142,note:'다카야마 중심부 기준. 관광지 입구와는 다를 수 있습니다.'},4:{lon:137.1863664,lat:36.23568975,note:'히다시 공식 관광 안내 지점.',source:'https://www.hida-kankou.jp/spot/278'},5:{lon:136.7813,lat:35.4339,note:'기후성 일대의 대표 위치. 등산·로프웨이 출발지는 별도로 확인하세요.'},...canonicalMapLocations};
 const mapInstances=new Map(),markerInstances=new Map();let mapKey='',nationalRegion='';
 const prefectureFeatures=geography.map(f=>({type:'Feature',properties:{name:prefNames[f.id],id:f.id},geometry:{type:'MultiPolygon',coordinates:f.rings.map(r=>[[...r,r[0]]])}}));
 const areaBoxes={'기후|히다':[[36.00,136.96],[36.40,137.52]],'기후|기후·나가라가와':[[35.39,136.72],[35.47,136.82]]};
@@ -110,11 +111,28 @@ let googleDetailContext=null;
 function googleMapLanguage(){return localStorage.getItem('japlan-language')==='ja'?'ja':'ko'}
 // Use one destination resolver for desktop, mobile and external links.
 function googlePlaceMapURL(place,embed=true){
+ const canonical=canonicalMapLocations[place.id]||null;
  const params=new URLSearchParams({hl:googleMapLanguage(),gl:'kr'});
- if(embed)params.set('output','embed');
  let cid='',urlQuery='';
  try{const u=new URL(place.mapUrl||'',location.href);cid=u.searchParams.get('cid')||'';urlQuery=u.searchParams.get('query')||u.searchParams.get('q')||''}catch{}
- const loc=pointLocations[place.id];
+ const loc=canonical||pointLocations[place.id];
+ if(canonical&&Number.isFinite(canonical.lat)&&Number.isFinite(canonical.lon)){
+  if(embed){
+   params.set('output','embed');params.set('q',`${canonical.lat},${canonical.lon}`);params.set('z','16');
+   return 'https://www.google.com/maps?'+params.toString();
+  }
+  if(canonical.placeId){
+   const search=new URLSearchParams({api:'1',query:canonical.externalQuery||place.mapQuery||place.name,query_place_id:canonical.placeId,hl:googleMapLanguage()});
+   return 'https://www.google.com/maps/search/?'+search.toString();
+  }
+  if(/^\d+$/.test(String(canonical.cid||''))){
+   params.set('cid',String(canonical.cid));params.set('z','16');
+   return 'https://www.google.com/maps?'+params.toString();
+  }
+  params.set('q',canonical.externalQuery||`${canonical.lat},${canonical.lon}`);params.set('z','16');
+  return 'https://www.google.com/maps?'+params.toString();
+ }
+ if(embed)params.set('output','embed');
  if(place.mapMode==='coordinates'&&Number.isFinite(loc?.lat)&&Number.isFinite(loc?.lon)&&Math.abs(loc.lat)<=90&&Math.abs(loc.lon)<=180)params.set('q',`${loc.lat},${loc.lon}`);
  else if(place.mapQuery?.trim())params.set('q',place.mapQuery.trim());
  else if(/^\d+$/.test(cid))params.set('cid',cid);
