@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "region": "산인·산요",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "0a4f134c8dcdede09926bda9ade0a9a0669da5b5",
+  "prefectures": {
+    "돗토리": {
+      "places": 15,
+      "foods": 5,
+      "canonicalFiles": 20
+    },
+    "시마네": {
+      "places": 17,
+      "foods": 5,
+      "canonicalFiles": 22
+    },
+    "오카야마": {
+      "places": 18,
+      "foods": 6,
+      "canonicalFiles": 24
+    },
+    "히로시마": {
+      "places": 20,
+      "foods": 7,
+      "canonicalFiles": 27
+    },
+    "야마구치": {
+      "places": 18,
+      "foods": 6,
+      "canonicalFiles": 24
+    }
+  },
+  "totals": {
+    "places": 88,
+    "foods": 29,
+    "canonicalRecords": 117,
+    "canonicalFiles": 117,
+    "missingCanonicalFiles": 0
+  },
+  "externalActiveAssets": [],
+  "externalActiveAssetCount": 0,
+  "guarantees": [
+    "Runtime-visible approved photos are the migration source of truth.",
+    "Canonical IDs follow Japanese prefecture codes 31-35.",
+    "Canonical filenames contain only the fixed ID and normalized place/food name.",
+    "Legacy files are not deleted by this migration."
+  ]
+}
