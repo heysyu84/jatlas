@@ -3,18 +3,11 @@
   "region": "도카이",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 83,
-  "cidTargets": 58,
-  "coordinateOnlyTargets": 25,
+  "cidTargets": 0,
+  "coordinateOnlyTargets": 83,
   "preservedManualTargets": 0,
   "sourceCoordinateTargets": 4,
-  "auditEntityTargets": 55,
-  "auditCameraTargets": 24,
-  "riskFlags": [
-    {
-      "id": 910,
-      "name": "구조하치만 성하마을",
-      "reason": "broad-google-entity",
-      "resolvedName": "구조시"
-    }
-  ]
+  "auditEntityTargets": 0,
+  "auditCameraTargets": 79,
+  "riskFlags": []
 }

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "region": "도호쿠",
+  "region": "호쿠리쿠",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
-  "places": 160,
-  "cidTargets": 0,
-  "coordinateOnlyTargets": 160,
+  "places": 71,
+  "cidTargets": 58,
+  "coordinateOnlyTargets": 13,
   "preservedManualTargets": 0,
   "sourceCoordinateTargets": 0,
-  "auditEntityTargets": 0,
-  "auditCameraTargets": 160,
+  "auditEntityTargets": 58,
+  "auditCameraTargets": 13,
   "riskFlags": []
 }

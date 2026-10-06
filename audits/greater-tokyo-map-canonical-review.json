@@ -3,26 +3,11 @@
   "region": "수도권",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 132,
-  "cidTargets": 98,
-  "coordinateOnlyTargets": 34,
+  "cidTargets": 0,
+  "coordinateOnlyTargets": 132,
   "preservedManualTargets": 0,
   "sourceCoordinateTargets": 64,
-  "auditEntityTargets": 54,
-  "auditCameraTargets": 14,
-  "riskFlags": [
-    {
-      "id": 117,
-      "name": "오쿠타마호",
-      "reason": "stored-vs-google-distance",
-      "km": 1.61,
-      "resolvedName": "오쿠타마 호수"
-    },
-    {
-      "id": 602,
-      "name": "국립역사민속박물관",
-      "reason": "stored-vs-google-distance",
-      "km": 3.383,
-      "resolvedName": "국립역사민속박물관"
-    }
-  ]
+  "auditEntityTargets": 0,
+  "auditCameraTargets": 68,
+  "riskFlags": []
 }
