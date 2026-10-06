@@ -237,4 +237,5 @@ img[data-photo-fit="contain"]{object-fit:contain!important;background:#eaf0f4}
 .photoCreditMore:hover{background:#f7fafc}
 @media(max-width:760px){#photoCreditList .creditRow{font-size:.72rem;line-height:1.7}}
 
-@media(max-width:760px) and (pointer:coarse){.photoAttribution a:focus,.photoAttribution a:focus-visible,#photoCreditList a:focus,#photoCreditList a:focus-visible{outline:none}.photoAttribution a,#photoCreditList a{-webkit-tap-highlight-color:transparent}}
+.photoAttribution a,#photoCreditList a{-webkit-tap-highlight-color:transparent}
+.photoAttribution a:focus,.photoAttribution a:focus-visible,#photoCreditList a:focus,#photoCreditList a:focus-visible{outline:none!important;box-shadow:none!important;border-color:transparent!important;background:transparent!important}
