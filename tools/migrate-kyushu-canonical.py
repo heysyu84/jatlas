@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# kyushu-canonical-migration-20261007-r1
+# kyushu-canonical-migration-20261007-r2
 import hashlib,importlib.util,io,json,re,subprocess,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image,ImageOps
