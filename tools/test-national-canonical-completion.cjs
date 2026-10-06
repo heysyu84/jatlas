@@ -76,3 +76,5 @@ if(scopes.size!==47)throw Error('Registry scope prefecture count mismatch '+scop
 console.log(JSON.stringify({ok:true,prefectures:47,places:1138,foods:346,canonicalFiles:1484,canonicalMaps:1138,mapRiskFlags:0,regions:12},null,2));
 
 // national-canonical-rerun-20261007-r2
+
+// national-canonical-rerun-20261007-r3
