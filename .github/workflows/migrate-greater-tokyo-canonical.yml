@@ -84,7 +84,10 @@ jobs:
           t=Path('dist/photo-registry-data.js').read_text(); p='globalThis.JATLAS_PHOTO_REGISTRY_DATA='
           r=json.loads(t[len(p):].rstrip().rstrip(';')); prefs={'사이타마','지바','도쿄','가나가와'}
           ps=[x for x in r['places'].values() if x['pref'] in prefs]; fs=[x for x in r['foods'].values() if x['pref'] in prefs]
-          assert len(ps)==132; assert len(fs)==39
+          print('Generated registry counts:',len(ps),len(fs))
+          from collections import Counter
+          print('Place prefs:',Counter(x['pref'] for x in ps)); print('Food prefs:',Counter(x['pref'] for x in fs))
+          assert len(ps)==132,('places',len(ps)); assert len(fs)==39,('foods',len(fs))
           for x in ps+fs:
               f=Path('dist')/x['image']; assert f.is_file(),x['image']
               assert hashlib.sha256(f.read_bytes()).hexdigest()==x['sha256'],x['canonicalId']
