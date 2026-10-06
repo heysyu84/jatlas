@@ -102,11 +102,10 @@ function openNationalDetail(item,kind){
   document.body.append(nationalDetailDialog);
  }
  const panel=document.createElement('div');panel.className='nationalDetailPanel';
- const dismiss=button('×',closeNationalDetail,'nationalDetailClose');dismiss.setAttribute('aria-label','닫기');
  const hint=document.createElement('p');hint.className='muted';hint.textContent='클릭하거나 터치하면 닫힙니다.';
  const title=document.createElement('h2');title.id='nationalDetailTitle';title.textContent=item.name;
  const location=document.createElement('p');location.className='eyebrow';location.textContent=[item.pref,item.area,item.town].filter(Boolean).join(' · ');
- panel.append(dismiss,hint,location,title);
+ panel.append(hint,location,title);
  if(kind==='foods'){
   const details=nationalFoodCard(item);
   details.querySelector('h3')?.remove();
