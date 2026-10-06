@@ -22,10 +22,10 @@ const areaIntros={
 '도요스·쓰키시마':['TOYOSU · TSUKISHIMA','대형 수산시장과 디지털아트, 도쿄만 수변 풍경을 함께 즐길 수 있는 지역입니다.'],
 '아자부다이·롯폰기':['AZABUDAI · ROPPONGI','현대미술과 디지털아트, 고층 도시 풍경을 함께 즐길 수 있는 남부 문화 지역입니다.']};
 const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINETSU','TOKAI','HOKURIKU','KINKI','SANIN · SANYO','SHIKOKU','KYUSHU','OKINAWA'];
-const JATLAS_PHOTO_RENDER_VERSION='20261006-mie-canonical1';
+const JATLAS_PHOTO_RENDER_VERSION='20261006-tokai-canonical1';
 function photoDisplaySrc(value){
  const src=typeof value==='string'?value:(value?.src||'');
- if(!/^images\/(?:licensed|official|user)\//.test(src))return src;
+ if(!/^images\/(?:licensed|official|user|regions)\//.test(src))return src;
  if(/[?&]jatlasPhoto=/.test(src))return src;
  return src+(src.includes('?')?'&':'?')+'jatlasPhoto='+JATLAS_PHOTO_RENDER_VERSION;
 }

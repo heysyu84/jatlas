@@ -5,8 +5,8 @@
   const registry=globalThis.JATLAS_PHOTO_SOURCE_REGISTRY||{};
   const INITIAL=80,STEP=100;
   const labels={
-    ko:{places:'관광지 사진 출처',other:'음식·대표 이미지 출처',source:'출처',author:'촬영/제공',license:'이용조건',more:'출처 더 보기',left:'개 남음',terms:'원본 페이지 이용조건'},
-    ja:{places:'観光地写真の出典',other:'料理・代表画像の出典',source:'出典',author:'撮影・提供',license:'利用条件',more:'出典をさらに表示',left:'件',terms:'元ページの利用条件'}
+    ko:{places:'관광지 사진 출처',other:'음식·대표 이미지 출처',source:'출처',author:'촬영/제공',license:'이용조건',more:'출처 더 보기',left:'개 남음',terms:'원본 페이지 이용조건',userProvider:'사용자 직접 촬영'},
+    ja:{places:'観光地写真の出典',other:'料理・代表画像の出典',source:'出典',author:'撮影・提供',license:'利用条件',more:'出典をさらに表示',left:'件',terms:'元ページの利用条件',userProvider:'ユーザー撮影'}
   };
   const providerMap=new Map([
     ['commons.wikimedia.org','Wikimedia Commons'],['flickr.com','Flickr'],['www.flickr.com','Flickr'],
@@ -68,7 +68,7 @@
     const rec=registry[normSrc(pic.src)]||{},old=legacyMeta.get(pic.source)||{};
     const terms=rec.terms||pic.licenseUrl||old.licenseUrl||'',inferred=licenseLabel(terms);
     return {kind,label,src:normSrc(pic.src),source:pic.source,provider:provider(pic.source),
-      author:rec.author||pic.author||old.author||'',license:pic.license||old.license||inferred||(terms&&terms!==pic.source?'이용조건 확인':''),
+      author:rec.author||pic.author||old.author||'',userPhoto:!!(rec.userPhoto||pic.userPhoto),license:pic.license||old.license||inferred||(terms&&terms!==pic.source?'이용조건 확인':''),
       licenseUrl:terms};
   }
   function collect(){
@@ -92,7 +92,7 @@
     const lang=document.documentElement.lang==='ja'?'ja':'ko',t=labels[lang],p=document.createElement('p');
     p.className='photoAttribution creditRow';
     const a=document.createElement('a');a.href=data.source;a.target='_blank';a.rel='noopener';a.className='creditSubject';a.textContent=data.label;p.append(a);
-    p.append(document.createTextNode(' · '+t.source+': '+data.provider));
+    p.append(document.createTextNode(' · '+t.source+': '+(data.userPhoto?t.userProvider:data.provider)));
     if(data.author)p.append(document.createTextNode(' · '+t.author+': '+data.author));
     if(data.license){
       p.append(document.createTextNode(' · '+t.license+': '));

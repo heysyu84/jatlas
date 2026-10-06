@@ -1,28 +1,544 @@
 {
   "version": 1,
-  "baseCommit": "0b5853bd7fa185edfe60c42aef042503f2fe65dc",
-  "reason": "Apply the user's selected replacement photos to the three canonical Mie runtime place IDs (Iga Ninja Museum, Kumano Kodo Iseji Magose Pass, and Nagashima Spa Land) and refresh their image cache keys.",
+  "baseCommit": "a4d541e5237f56dbb26b674360b3eb88240f16f5",
+  "reason": "Migrate approved Tokai place and food photos to canonical region/prefecture folders, preserving image bytes and source metadata. Introduce permanent canonical IDs and same-scope random hero selection while retaining legacy numeric IDs for compatibility until nationwide migration completes.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
+        "id": 3,
+        "fromSrc": "images/commons/5f25d070115d8e02.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0001-takayama-old-town.webp"
+      },
+      {
+        "id": 4,
+        "fromSrc": "images/commons/fb8f28601b4b1350.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0002-hida-furukawa-setogawa-shirakabe.webp"
+      },
+      {
+        "id": 5,
+        "fromSrc": "images/regional/File-Gifu-Castle-jpg.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0003-gifu-castle.webp"
+      },
+      {
+        "id": 901,
+        "fromSrc": "images/commons/68860c7cfa4406da.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0004-takayama-jinya.webp"
+      },
+      {
+        "id": 902,
+        "fromSrc": "images/regional/File-Hida-Folk-Village-jpg.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp"
+      },
+      {
+        "id": 904,
+        "fromSrc": "images/regional/shirakawago.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0006-shirakawa-go-ogimachi.webp"
+      },
+      {
+        "id": 905,
+        "fromSrc": "images/commons/4a7660b48ec924c9.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0007-gero-onsen.webp"
+      },
+      {
+        "id": 906,
+        "fromSrc": "images/licensed/gifu-gujo-hachiman-castle-906.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0008-gujo-hachiman-castle.webp"
+      },
+      {
+        "id": 907,
+        "fromSrc": "images/commons/76648e0539922b81.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0009-magome-juku.webp"
+      },
+      {
+        "id": 908,
+        "fromSrc": "images/commons/34149db52e7c4a10.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0010-miyagawa-morning-market.webp"
+      },
+      {
+        "id": 909,
+        "fromSrc": "images/commons/8f65722fc95cc182.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0011-shinhotaka-ropeway.webp"
+      },
+      {
+        "id": 910,
+        "fromSrc": "images/commons/2c834003abee116f.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0012-gujo-hachiman-castle-town.webp"
+      },
+      {
+        "id": 911,
+        "fromSrc": "images/licensed/gifu-sekigahara-overview-911.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0013-sekigahara-battlefield.webp"
+      },
+      {
+        "id": 912,
+        "fromSrc": "images/commons/3bf7330867cc0c9f.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0014-yoro-falls.webp"
+      },
+      {
+        "id": 913,
+        "fromSrc": "images/commons/6fb7ba562ac328e7.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0015-ena-gorge.webp"
+      },
+      {
+        "id": 921,
+        "fromSrc": "images/commons/978d0ac08599f617.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0016-hida-kokubunji.webp"
+      },
+      {
+        "id": 922,
+        "fromSrc": "images/commons/cad1f42f62c00e20.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0017-gero-onsen-gassho-village.webp"
+      },
+      {
+        "id": 923,
+        "fromSrc": "images/licensed/gifu-sekigahara-decisive-923.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0018-sekigahara-decisive-battlefield.webp"
+      },
+      {
+        "id": 924,
+        "fromSrc": "images/commons/215eab2f669551b2.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0019-gifu-sekigahara-battlefield-memorial-museum.webp"
+      },
+      {
+        "id": 925,
+        "fromSrc": "images/commons/df35094019ba1fb0.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0020-naegi-castle-ruins.webp"
+      },
+      {
+        "id": 926,
+        "fromSrc": "images/commons/d3a4cbed927e2a2d.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0021-iwamura-castle-town.webp"
+      },
+      {
+        "id": 927,
+        "fromSrc": "images/commons/9b8a784212ea2885.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0022-kawaramachi-old-town.webp"
+      },
+      {
+        "id": 800,
+        "fromSrc": "images/official/shizuoka-shiraito-800.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp"
+      },
+      {
+        "id": 801,
+        "fromSrc": "images/official/shizuoka-sengen-801.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0002-fujisan-hongu-sengen-taisha.webp"
+      },
+      {
+        "id": 802,
+        "fromSrc": "images/official/shizuoka-miho-802.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0003-miho-no-matsubara.webp"
+      },
+      {
+        "id": 803,
+        "fromSrc": "images/official/shizuoka-nihondaira-yume-803.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0004-nihondaira-yume-terrace.webp"
+      },
+      {
+        "id": 804,
+        "fromSrc": "images/official/shizuoka-dogashima-tensodo-804.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0005-dogashima-tensodo-cave.webp"
+      },
+      {
+        "id": 805,
+        "fromSrc": "images/official/shizuoka-hamamatsu-castle-805.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0006-hamamatsu-castle.webp"
+      },
+      {
+        "id": 806,
+        "fromSrc": "images/official/shizuoka-kakegawa-castle-806.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0007-kakegawa-castle.webp"
+      },
+      {
+        "id": 807,
+        "fromSrc": "images/licensed/shizuoka-kanzanji-ropeway-807.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0008-kanzanji-ropeway.webp"
+      },
+      {
+        "id": 808,
+        "fromSrc": "images/official/shizuoka-shuzenji-808.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0009-shuzenji-onsen.webp"
+      },
+      {
+        "id": 809,
+        "fromSrc": "images/official/shizuoka-sunpu-castle-809.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0010-sunpu-castle-park.webp"
+      },
+      {
+        "id": 810,
+        "fromSrc": "images/official/shizuoka-kunozan-810.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0011-kunozan-toshogu.webp"
+      },
+      {
+        "id": 811,
+        "fromSrc": "images/official/shizuoka-jogasaki-811.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0012-jogasaki-coast.webp"
+      },
+      {
+        "id": 812,
+        "fromSrc": "images/official/shizuoka-perry-road-812.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0013-perry-road.webp"
+      },
+      {
+        "id": 813,
+        "fromSrc": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0014-hamamatsu-flower-park.webp"
+      },
+      {
+        "id": 816,
+        "fromSrc": "images/official/shizuoka-joren-falls-816.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0015-joren-falls.webp"
+      },
+      {
+        "id": 817,
+        "fromSrc": "images/licensed/shizuoka-moa-museum-817.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0016-moa-museum-of-art.webp"
+      },
+      {
+        "id": 819,
+        "fromSrc": "images/commons/ef53a75b9f9afd79.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0017-gotemba-premium-outlets.webp"
+      },
+      {
+        "id": 820,
+        "fromSrc": "images/licensed/shizuoka-kawazu-shokeidaru-820.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0018-kawazu-nanadaru.webp"
+      },
+      {
+        "id": 821,
+        "fromSrc": "images/official/shizuoka-nirayama-821.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0019-nirayama-reverberatory-furnace.webp"
+      },
+      {
+        "id": 822,
+        "fromSrc": "images/official/shizuoka-mishima-skywalk-822.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0020-mishima-skywalk.webp"
+      },
+      {
+        "id": 1000,
+        "fromSrc": "images/regional/nagoya-castle.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0001-nagoya-castle-honmaru-palace.webp"
+      },
+      {
+        "id": 1001,
+        "fromSrc": "images/regional/File-Atsuta-Shrine-jpg.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0002-atsuta-jingu.webp"
+      },
+      {
+        "id": 1002,
+        "fromSrc": "images/qa/2a1c543e912e04279f49.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0003-toyota-commemorative-museum-industry-technology.webp"
+      },
+      {
+        "id": 1003,
+        "fromSrc": "images/qa/31cc78f6726cec5f3072.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0004-inuyama-castle.webp"
+      },
+      {
+        "id": 1004,
+        "fromSrc": "images/commons/6eff4efc8d983042.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0005-inuyama-castle-town.webp"
+      },
+      {
+        "id": 1005,
+        "fromSrc": "images/commons/04c8295e5871f60a.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0006-tokoname-pottery-footpath.webp"
+      },
+      {
+        "id": 1006,
+        "fromSrc": "images/qa/4797a96e15335d71d32f.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0007-korankei.webp"
+      },
+      {
+        "id": 1007,
+        "fromSrc": "images/commons/412beb15bea6aa28.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0008-toyokawa-inari.webp"
+      },
+      {
+        "id": 1008,
+        "fromSrc": "images/qa/11434127111c5d801633.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0009-scmaglev-and-railway-park.webp"
+      },
+      {
+        "id": 1009,
+        "fromSrc": "images/commons/c064fc4a69235c3c.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0010-nagoya-city-science-museum.webp"
+      },
+      {
+        "id": 1010,
+        "fromSrc": "images/commons/62950828150a326e.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0011-tokugawa-art-museum.webp"
+      },
+      {
+        "id": 1011,
+        "fromSrc": "images/qa/c75b02436a992e1486bd.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0012-tokugawa-garden.webp"
+      },
+      {
+        "id": 1012,
+        "fromSrc": "images/qa/31c4cd87eeb6dcae98f4.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp"
+      },
+      {
+        "id": 1013,
+        "fromSrc": "images/qa/b6ac3d21058b35f3ea2e.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0014-port-of-nagoya-public-aquarium.webp"
+      },
+      {
+        "id": 1014,
+        "fromSrc": "images/commons/895bd107fcf1ce6e.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0015-arimatsu-historic-townscape.webp"
+      },
+      {
+        "id": 1015,
+        "fromSrc": "images/qa/2cb79cb8a96bc7b48ca8.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0016-meiji-mura.webp"
+      },
+      {
+        "id": 1016,
+        "fromSrc": "images/qa/2d8587303f9febff5f05.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0017-toyota-automobile-museum.webp"
+      },
+      {
+        "id": 1017,
+        "fromSrc": "images/user/aichi-ghibli-park-1017.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0018-ghibli-park.webp"
+      },
+      {
+        "id": 1018,
+        "fromSrc": "images/commons/3be469da3c951ddc.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0019-okazaki-castle.webp"
+      },
+      {
+        "id": 1019,
+        "fromSrc": "images/commons/e50090a3a9d857fe.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0020-takeshima-yaotomi-shrine.webp"
+      },
+      {
+        "id": 1100,
+        "fromSrc": "images/commons/99b7ef0707ea114e.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0001-ise-jingu-naiku.webp"
+      },
+      {
+        "id": 1101,
+        "fromSrc": "images/commons/a31cea8dd766a19d.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0002-toba-aquarium.webp"
+      },
+      {
+        "id": 1102,
+        "fromSrc": "images/commons/cd5fac99eefe40de.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0003-yokoyama-viewpoint.webp"
+      },
+      {
+        "id": 1103,
+        "fromSrc": "images/commons/25d260fb186c4df9.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0004-akame-48-waterfalls.webp"
+      },
+      {
         "id": 1104,
-        "fromSrc": "images/commons/8882efbf65679476.webp",
-        "toSrc": "images/licensed/approved/mie-iga-ninja-3717.webp"
+        "fromSrc": "images/licensed/approved/mie-iga-ninja-3717.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0005-iga-ryu-ninja-museum.webp"
+      },
+      {
+        "id": 1105,
+        "fromSrc": "images/commons/8d3a4ea64b72450c.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0006-onigajo.webp"
       },
       {
         "id": 1106,
-        "fromSrc": "images/commons/dee95da228ccb44e.webp",
-        "toSrc": "images/licensed/approved/mie-magose-pass-3726.webp"
+        "fromSrc": "images/licensed/approved/mie-magose-pass-3726.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0007-kumano-kodo-iseji-magose-pass.webp"
+      },
+      {
+        "id": 1107,
+        "fromSrc": "images/commons/d34907762c80b5b2.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0008-nabana-no-sato.webp"
+      },
+      {
+        "id": 1108,
+        "fromSrc": "images/licensed/mie-okage-yokocho-1108.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0009-okage-yokocho.webp"
+      },
+      {
+        "id": 1109,
+        "fromSrc": "images/commons/9017bb9073962854.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0010-meoto-iwa-futami-okitama-shrine.webp"
+      },
+      {
+        "id": 1110,
+        "fromSrc": "images/commons/ade337d0c2e5ddb9.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0011-mikimoto-pearl-island.webp"
+      },
+      {
+        "id": 1111,
+        "fromSrc": "images/commons/60acb5d64ebdc80f.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0012-gozaisho-ropeway.webp"
+      },
+      {
+        "id": 1112,
+        "fromSrc": "images/commons/1212b7b7824d4010.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0013-matsusaka-castle-ruins.webp"
       },
       {
         "id": 1113,
-        "fromSrc": "images/commons/363eacacf09adda3.webp",
-        "toSrc": "images/licensed/approved/mie-nagashima-3711.webp"
+        "fromSrc": "images/licensed/approved/mie-nagashima-3711.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0014-nagashima-spa-land.webp"
+      },
+      {
+        "id": 1120,
+        "fromSrc": "images/commons/43cc67a04489d598.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0015-okage-yokocho-oharai-machi.webp"
+      },
+      {
+        "id": 1123,
+        "fromSrc": "images/commons/29adf97835f6df15.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0016-shima-spain-village.webp"
+      },
+      {
+        "id": 1125,
+        "fromSrc": "images/commons/5c5f58b3c34f19a8.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0017-seki-juku.webp"
+      },
+      {
+        "id": 1126,
+        "fromSrc": "images/commons/412bfd66cbeda74a.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0018-iga-ueno-castle.webp"
+      },
+      {
+        "id": 1127,
+        "fromSrc": "images/commons/46f4fed1ddb46074.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0019-matsusaka-castle-gojobanyashiki.webp"
+      },
+      {
+        "id": 1128,
+        "fromSrc": "images/commons/467f56f2c7732ea8.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0020-maruyama-senmaida.webp"
+      },
+      {
+        "id": 1129,
+        "fromSrc": "images/commons/2cc3cd11e5d85632.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0021-hananoiwaya-shrine.webp"
       }
     ],
-    "heroChanges": []
+    "heroChanges": [
+      {
+        "key": "기후",
+        "fromSrc": "images/regional/File-Gifu-Castle-jpg.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0003-gifu-castle.webp"
+      },
+      {
+        "key": "기후·구조",
+        "fromSrc": "images/regional/File-Gifu-Castle-jpg.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0003-gifu-castle.webp"
+      },
+      {
+        "key": "히다·다카야마",
+        "fromSrc": "images/regional/shirakawago.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0006-shirakawa-go-ogimachi.webp"
+      },
+      {
+        "key": "게로",
+        "fromSrc": "images/commons/4a7660b48ec924c9.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0007-gero-onsen.webp"
+      },
+      {
+        "key": "도노·나카쓰가와",
+        "fromSrc": "images/commons/76648e0539922b81.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0009-magome-juku.webp"
+      },
+      {
+        "key": "세키가하라·요로",
+        "fromSrc": "images/licensed/gifu-sekigahara-overview-911.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0013-sekigahara-battlefield.webp"
+      },
+      {
+        "key": "세키가하라",
+        "fromSrc": "images/licensed/gifu-sekigahara-decisive-923.webp",
+        "toSrc": "images/regions/tokai/gifu/places/21-P0018-sekigahara-decisive-battlefield.webp"
+      },
+      {
+        "key": "시즈오카",
+        "fromSrc": "images/official/shizuoka-shiraito-800.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp"
+      },
+      {
+        "key": "후지산 기슭",
+        "fromSrc": "images/official/shizuoka-shiraito-800.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0001-shiraito-falls.webp"
+      },
+      {
+        "key": "시즈오카·시미즈",
+        "fromSrc": "images/official/shizuoka-kunozan-810.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0011-kunozan-toshogu.webp"
+      },
+      {
+        "key": "이즈",
+        "fromSrc": "images/official/shizuoka-jogasaki-811.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0012-jogasaki-coast.webp"
+      },
+      {
+        "key": "하마마쓰·가케가와",
+        "fromSrc": "images/licensed/shizuoka-hamamatsu-flower-park-813.webp",
+        "toSrc": "images/regions/tokai/shizuoka/places/22-P0014-hamamatsu-flower-park.webp"
+      },
+      {
+        "key": "나고야",
+        "fromSrc": "images/regional/nagoya-castle.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0001-nagoya-castle-honmaru-palace.webp"
+      },
+      {
+        "key": "아이치",
+        "fromSrc": "images/regional/File-Atsuta-Shrine-jpg.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0002-atsuta-jingu.webp"
+      },
+      {
+        "key": "오와리",
+        "fromSrc": "images/qa/31cc78f6726cec5f3072.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0004-inuyama-castle.webp"
+      },
+      {
+        "key": "지타",
+        "fromSrc": "images/commons/04c8295e5871f60a.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0006-tokoname-pottery-footpath.webp"
+      },
+      {
+        "key": "미카와",
+        "fromSrc": "images/qa/4797a96e15335d71d32f.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0007-korankei.webp"
+      },
+      {
+        "key": "나가쿠테",
+        "fromSrc": "images/qa/2d8587303f9febff5f05.webp",
+        "toSrc": "images/regions/tokai/aichi/places/23-P0017-toyota-automobile-museum.webp"
+      },
+      {
+        "key": "이세·도바·시마",
+        "fromSrc": "images/commons/99b7ef0707ea114e.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0001-ise-jingu-naiku.webp"
+      },
+      {
+        "key": "이가·나바리",
+        "fromSrc": "images/commons/25d260fb186c4df9.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0004-akame-48-waterfalls.webp"
+      },
+      {
+        "key": "히가시키슈",
+        "fromSrc": "images/commons/8d3a4ea64b72450c.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0006-onigajo.webp"
+      },
+      {
+        "key": "호쿠세이",
+        "fromSrc": "images/commons/d34907762c80b5b2.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0008-nabana-no-sato.webp"
+      },
+      {
+        "key": "마쓰사카",
+        "fromSrc": "images/commons/46f4fed1ddb46074.webp",
+        "toSrc": "images/regions/tokai/mie/places/24-P0019-matsusaka-castle-gojobanyashiki.webp"
+      }
+    ]
   }
 }

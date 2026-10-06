@@ -60,6 +60,14 @@ const sourceRegistryText=fs.readFileSync(path.join(root,'dist/photo-source-regis
 const sourceRegistryPrefix='globalThis.JATLAS_PHOTO_SOURCE_REGISTRY=';
 let sourceRegistry={};
 if(sourceRegistryText.startsWith(sourceRegistryPrefix))sourceRegistry=JSON.parse(sourceRegistryText.slice(sourceRegistryPrefix.length).replace(/;\s*$/,''));
+const canonicalRegistryFile=path.join(root,'dist/photo-registry-data.js');
+if(fs.existsSync(canonicalRegistryFile)){
+  const canonicalText=fs.readFileSync(canonicalRegistryFile,'utf8').trim(),canonicalPrefix='globalThis.JATLAS_PHOTO_REGISTRY_DATA=';
+  if(canonicalText.startsWith(canonicalPrefix)){
+    const canonical=JSON.parse(canonicalText.slice(canonicalPrefix.length).replace(/;\s*$/,''));
+    for(const r of [...Object.values(canonical.places||{}),...Object.values(canonical.foods||{})])if(r.image)sourceRegistry[String(r.image).replace(/^\.\//,'').split(/[?#]/)[0]]={source:r.source||'',terms:r.terms||'',author:r.author||'',placeId:r.legacyId??null,foodName:r.name||'',canonicalId:r.canonicalId||'',userPhoto:!!r.userPhoto};
+  }
+}
 const cleanPhotoSrc=s=>String(s||'').replace(/^\.\//,'').split(/[?#]/)[0];
 const expectedRegistry={};
 for(const x of photoManifest.photos||[]){

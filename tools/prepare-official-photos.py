@@ -205,11 +205,12 @@ def prepare():
     allowed_roots = [
         (ROOT / 'dist/images/official').resolve(),
         (ROOT / 'dist/images/licensed').resolve(),
+        (ROOT / 'dist/images/regions/tokai').resolve(),
     ]
     for photo in manifest['photos']:
         output = (ROOT / 'dist' / photo['output']).resolve()
         if not any(output.is_relative_to(root) for root in allowed_roots):
-            raise ValueError('Output must remain in an ignored licensed photo folder')
+            raise ValueError('Output must remain in an approved website photo folder')
         if output.exists():
             print(f"Using committed {photo.get('placeId', photo.get('foodName'))}: {photo['output']}")
             continue
@@ -255,7 +256,7 @@ def prepare():
             image.thumbnail((1280, 960), Image.Resampling.LANCZOS)
             output = (ROOT / 'dist' / photo['output']).resolve()
             if not any(output.is_relative_to(root) for root in allowed_roots):
-                raise ValueError('Output must remain in an ignored licensed photo folder')
+                raise ValueError('Output must remain in an approved website photo folder')
             output.parent.mkdir(parents=True, exist_ok=True)
             temporary = output.with_suffix('.tmp')
             image.save(temporary, format='WEBP', quality=84)
