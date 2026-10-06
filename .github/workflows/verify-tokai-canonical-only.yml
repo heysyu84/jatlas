@@ -1,0 +1,55 @@
+name: Verify Tokai canonical-only
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - tools/test-tokai-canonical-only.cjs
+      - .github/workflows/verify-tokai-canonical-only.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Recreate deploy-generated photo assets
+        run: |
+          python -m pip install Pillow==11.3.0
+          python tools/prepare-official-photos.py
+
+      - name: Remove Tokai legacy images in sandbox and verify canonical runtime
+        run: node tools/test-tokai-canonical-only.cjs
+
+      - name: Run map and photo regression
+        run: node tools/test-map-photo.cjs
+
+      - name: Run plan regression
+        run: node tools/test-plans.cjs
+
+      - name: Install jsdom for DOM regression
+        run: npm install --prefix /tmp/jatlas-jsdom jsdom@26.1.0
+
+      - name: Run DOM regression
+        env:
+          JATLAS_JSDOM: /tmp/jatlas-jsdom/node_modules/jsdom
+        run: node tools/test-dom.cjs
+
+      - name: Run non-photo regression
+        env:
+          JATLAS_JSDOM: /tmp/jatlas-jsdom/node_modules/jsdom
+        run: node tools/test-nonphoto.cjs
