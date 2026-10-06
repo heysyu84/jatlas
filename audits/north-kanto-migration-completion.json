@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "region": "북간토",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "74c1d6ac89609d4dde3548eb10820ea5b163c85b",
+  "prefectures": {
+    "이바라키": {
+      "places": 16,
+      "foods": 4,
+      "canonicalFiles": 20
+    },
+    "도치기": {
+      "places": 19,
+      "foods": 4,
+      "canonicalFiles": 23
+    },
+    "군마": {
+      "places": 16,
+      "foods": 4,
+      "canonicalFiles": 20
+    }
+  },
+  "totals": {
+    "places": 51,
+    "foods": 12,
+    "canonicalRecords": 63,
+    "canonicalFiles": 63,
+    "missingCanonicalFiles": 0
+  },
+  "recoveredLegacyAssets": [
+    "images/licensed/gunma-shima-onsen-1408.webp",
+    "images/licensed/gunma-takasaki-kannon-1409.webp",
+    "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
+    "images/licensed/tochigi-nasu-onsen-1318.webp",
+    "images/licensed/tochigi-ryuzu-1314.webp"
+  ],
+  "recoveredLegacyAssetCount": 5,
+  "guarantees": [
+    "Canonical IDs and paths are authoritative for North Kanto.",
+    "Previously approved missing assets are recovered from their pinned source manifest before canonical copy.",
+    "Reserved IDs from audits/id-migration-map.json are preserved exactly.",
+    "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
+    "No legacy image file is deleted during regional migration."
+  ]
+}

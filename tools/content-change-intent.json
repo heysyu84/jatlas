@@ -1,338 +1,373 @@
 {
   "version": 1,
-  "baseCommit": "1bca638f4c6ad8fe8d1cd293acee041b3a4e979c",
-  "reason": "Migrate Hokkaido to canonical IDs/paths and recover previously approved missing photo assets without changing place content.",
+  "baseCommit": "74c1d6ac89609d4dde3548eb10820ea5b163c85b",
+  "reason": "Migrate North Kanto to canonical IDs/paths and recover approved missing photo assets without changing place content.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 4000,
-        "fromSrc": "images/commons/454796bf80a0839a.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0001-odori-park.webp"
+        "id": 1200,
+        "fromSrc": "images/commons/2fe4406a36ad6f0d.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0001-kairakuen.webp"
       },
       {
-        "id": 4001,
-        "fromSrc": "images/commons/a13a4aa4c79dee7b.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0002-sapporo-tv-tower.webp"
+        "id": 1201,
+        "fromSrc": "images/commons/490667d42f6549db.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0002-kodokan.webp"
       },
       {
-        "id": 4002,
-        "fromSrc": "images/qa/a8f44cf2772f70af18ac.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0003-mount-moiwa.webp"
+        "id": 1202,
+        "fromSrc": "images/commons/f0274bc3069ebb27.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0003-hitachi-seaside-park.webp"
       },
       {
-        "id": 4003,
-        "fromSrc": "images/licensed/hokkaido-shrine-4003.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0004-hokkaido-shrine.webp"
+        "id": 1203,
+        "fromSrc": "images/commons/0eb0715eb85c96f9.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0004-oarai-isosaki-shrine.webp"
       },
       {
-        "id": 4004,
-        "fromSrc": "images/commons/c664e655821f643d.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0005-sapporo-beer-museum.webp"
+        "id": 1204,
+        "fromSrc": "images/commons/ed0a5936cafd07f9.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0005-mount-tsukuba.webp"
       },
       {
-        "id": 4005,
-        "fromSrc": "images/commons/f52eb33fb0e68dd7.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0006-shiroi-koibito-park.webp"
+        "id": 1205,
+        "fromSrc": "images/commons/fc2440600831c5aa.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0006-tsukubasan-shrine.webp"
       },
       {
-        "id": 4006,
-        "fromSrc": "images/qa/1eb448ab5486290232c2.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0007-jozankei-onsen.webp"
+        "id": 1206,
+        "fromSrc": "images/commons/1a23b0f6237a0101.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0007-fukuroda-falls.webp"
       },
       {
-        "id": 4007,
-        "fromSrc": "images/commons/fe7e1584bcca05c9.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0008-otaru-canal.webp"
+        "id": 1207,
+        "fromSrc": "images/qa/ff983684227e20d83694.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0008-kasama-inari-shrine.webp"
       },
       {
-        "id": 4008,
-        "fromSrc": "images/commons/3e7f85a7ece9c471.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0009-otaru-music-box-museum.webp"
+        "id": 1208,
+        "fromSrc": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0009-ushiku-daibutsu.webp"
       },
       {
-        "id": 4009,
-        "fromSrc": "images/commons/d732cc46140320d6.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0010-otaru-sankaku-market.webp"
+        "id": 1209,
+        "fromSrc": "images/commons/8311852f2aec5148.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0010-ryujin-suspension-bridge.webp"
       },
       {
-        "id": 4010,
-        "fromSrc": "images/commons/37efaa1ed04f740c.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0011-cape-kamui.webp"
+        "id": 1210,
+        "fromSrc": "images/commons/693cbf9251a13b43.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0011-aquaworld-oarai-aquarium.webp"
       },
       {
-        "id": 4011,
-        "fromSrc": "images/commons/2243907cf6d87923.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0012-mount-yotei.webp"
+        "id": 1211,
+        "fromSrc": "images/commons/98978348f1b122f1.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0012-nakaminato-fish-market.webp"
       },
       {
-        "id": 4012,
-        "fromSrc": "images/commons/0ed1cd26c7dc22e3.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0013-lake-toya.webp"
+        "id": 1212,
+        "fromSrc": "images/qa/85fea7b124be9bebc46d.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0013-jaxa-tsukuba-space-center.webp"
       },
       {
-        "id": 4013,
-        "fromSrc": "images/commons/16f6f386c1a56ba1.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0014-usuzan-ropeway.webp"
+        "id": 1213,
+        "fromSrc": "images/commons/4374dd7da377afed.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0014-kashima-jingu.webp"
       },
       {
-        "id": 4014,
-        "fromSrc": "images/commons/507afcc282fca2d7.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0015-noboribetsu-jigokudani.webp"
+        "id": 1214,
+        "fromSrc": "images/commons/6a1a57e8260adec9.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0015-ibaraki-flower-park.webp"
       },
       {
-        "id": 4015,
-        "fromSrc": "images/qa/94bf25f4107e90f57e4c.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0016-upopoy.webp"
+        "id": 1215,
+        "fromSrc": "images/commons/683a26cba0bc4663.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0016-hananuki-gorge.webp"
       },
       {
-        "id": 4016,
-        "fromSrc": "images/commons/d1d637b49af57efd.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0017-mount-hakodate.webp"
+        "id": 1300,
+        "fromSrc": "images/commons/e60a7f0c9e4efb37.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0001-nikko-toshogu.webp"
       },
       {
-        "id": 4017,
-        "fromSrc": "images/commons/15283acdc5597f4c.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0018-goryokaku-park.webp"
+        "id": 1301,
+        "fromSrc": "images/commons/29cc9981b06af036.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0002-kegon-falls.webp"
       },
       {
-        "id": 4018,
-        "fromSrc": "images/qa/c0510a7a7672dc014037.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0019-hakodate-morning-market.webp"
+        "id": 1302,
+        "fromSrc": "images/commons/61103c7eec20e472.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0003-lake-chuzenji.webp"
       },
       {
-        "id": 4019,
-        "fromSrc": "images/commons/f989a3f2b0af398f.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0020-motomachi-hachimanzaka.webp"
+        "id": 1303,
+        "fromSrc": "images/commons/9b32ae6f8d99ab18.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0004-kinugawa-onsen.webp"
       },
       {
-        "id": 4020,
-        "fromSrc": "images/commons/e4f788c59cbde87a.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0021-onuma-quasi-national-park.webp"
+        "id": 1304,
+        "fromSrc": "images/commons/22adf043e2aec9f4.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0005-edo-wonderland-nikko-edomura.webp"
       },
       {
-        "id": 4021,
-        "fromSrc": "images/commons/98938a62355c005e.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0022-matsumae-castle.webp"
+        "id": 1305,
+        "fromSrc": "images/licensed/approved/tochigi-oya-history-1305.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0006-oya-history-museum.webp"
       },
       {
-        "id": 4022,
-        "fromSrc": "images/qa/743d7030dfe1a368bb11.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0023-asahiyama-zoo.webp"
+        "id": 1306,
+        "fromSrc": "images/commons/55654212b8b45304.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0007-ashikaga-flower-park.webp"
       },
       {
-        "id": 4023,
-        "fromSrc": "images/commons/85d055615a4017e7.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0024-mount-asahidake.webp"
+        "id": 1307,
+        "fromSrc": "images/commons/5a2ab2e9a287760a.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0008-ashikaga-school.webp"
       },
       {
-        "id": 4024,
-        "fromSrc": "images/licensed/hokkaido-kurodake-ropeway-4024.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0025-sounkyo-kurodake-ropeway.webp"
+        "id": 1308,
+        "fromSrc": "images/commons/25b32ce3e0e09c37.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0009-mount-nasu-nasu-ropeway.webp"
       },
       {
-        "id": 4025,
-        "fromSrc": "images/commons/f7eeef920386f76f.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0026-farm-tomita.webp"
+        "id": 1309,
+        "fromSrc": "images/commons/0dfe504527315e4a.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0010-oyaji-oya-kannon.webp"
       },
       {
-        "id": 4026,
-        "fromSrc": "images/commons/00822c034ffe9858.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0027-ningle-terrace.webp"
+        "id": 1310,
+        "fromSrc": "images/commons/dc24e97e7728932a.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0011-nikko-futarasan-shrine.webp"
       },
       {
-        "id": 4027,
-        "fromSrc": "images/commons/52a305aa853d7535.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0028-biei-blue-pond.webp"
+        "id": 1311,
+        "fromSrc": "images/commons/1c9354d451c9c159.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0012-shinkyo-bridge.webp"
       },
       {
-        "id": 4028,
-        "fromSrc": "images/commons/0e7dc026797578bc.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0029-shirahige-falls.webp"
+        "id": 1312,
+        "fromSrc": "images/commons/dcc3172bd3eab5f1.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0013-rinnoji.webp"
       },
       {
-        "id": 4029,
-        "fromSrc": "images/qa/d57c409254be1745dad2.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0030-patchwork-road.webp"
+        "id": 1313,
+        "fromSrc": "images/commons/da5d5b242246ef2b.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0014-senjogahara.webp"
       },
       {
-        "id": 4030,
-        "fromSrc": "images/commons/19cd593bf0420592.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0031-cape-soya.webp"
+        "id": 1314,
+        "fromSrc": "images/licensed/tochigi-ryuzu-1314.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0015-ryuzu-falls.webp"
       },
       {
-        "id": 4031,
-        "fromSrc": "images/commons/84c09021c40f42e0.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0032-rebun-island.webp"
+        "id": 1315,
+        "fromSrc": "images/commons/b8d599f3e9235037.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0016-mashiko-jonaisaka-pottery-street.webp"
       },
       {
-        "id": 4032,
-        "fromSrc": "images/commons/1bd4ac6cfa667cbd.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0033-rishiri-island-mount-rishiri.webp"
+        "id": 1316,
+        "fromSrc": "images/commons/b9750bc1e3385b43.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0017-nikko-tamozawa-imperial-villa.webp"
       },
       {
-        "id": 4033,
-        "fromSrc": "images/commons/016fdd692dfaf12c.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0034-abashiri-drift-icebreaker-aurora.webp"
+        "id": 1317,
+        "fromSrc": "images/commons/7c684e863d6b1a5a.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0018-lake-yunoko.webp"
       },
       {
-        "id": 4034,
-        "fromSrc": "images/commons/0111710387daf5bc.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0035-abashiri-prison-museum.webp"
+        "id": 1318,
+        "fromSrc": "images/commons/fb6f88aeaf3d3c04.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0019-nasu-onsen.webp"
       },
       {
-        "id": 4035,
-        "fromSrc": "images/qa/1537c76179f724ceba66.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0036-shiretoko-five-lakes.webp"
+        "id": 1400,
+        "fromSrc": "images/commons/107454a76a8379fd.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0001-kusatsu-onsen-yubatake.webp"
       },
       {
-        "id": 4036,
-        "fromSrc": "images/qa/2bf14090ceafabcf7c6e.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0037-oshinkoshin-falls.webp"
+        "id": 1401,
+        "fromSrc": "images/commons/c85e8d9e500bb795.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0002-ikaho-onsen-stone-steps.webp"
       },
       {
-        "id": 4037,
-        "fromSrc": "images/commons/7a42477c1c58ee4f.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0038-kushiro-wetland.webp"
+        "id": 1402,
+        "fromSrc": "images/commons/428f2d30ec7cc152.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0003-tomioka-silk-mill.webp"
       },
       {
-        "id": 4038,
-        "fromSrc": "images/qa/0bd428a747f1377eda50.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0039-lake-akan.webp"
+        "id": 1403,
+        "fromSrc": "images/commons/f231fdbdbb838b08.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0004-fukiware-falls.webp"
       },
       {
-        "id": 4039,
-        "fromSrc": "images/commons/fed082688117c7ab.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0040-lake-mashu.webp"
+        "id": 1404,
+        "fromSrc": "images/commons/94d62e0087dd4ca9.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0005-oze-national-park.webp"
       },
       {
-        "id": 4040,
-        "fromSrc": "images/commons/5256a09f6fe86a9f.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0041-lake-kussharo.webp"
+        "id": 1405,
+        "fromSrc": "images/commons/dca25b1ef0b51867.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0006-mount-tanigawa.webp"
       },
       {
-        "id": 4041,
-        "fromSrc": "images/commons/963ab731aca96a06.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0042-obihiro-banei-racecourse.webp"
+        "id": 1406,
+        "fromSrc": "images/commons/ba24d27337cb8211.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0007-haruna-shrine.webp"
+      },
+      {
+        "id": 1407,
+        "fromSrc": "images/commons/36876cfe151e45eb.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0008-lake-haruna.webp"
+      },
+      {
+        "id": 1408,
+        "fromSrc": "images/licensed/gunma-shima-onsen-1408.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0009-shima-onsen.webp"
+      },
+      {
+        "id": 1409,
+        "fromSrc": "images/licensed/gunma-takasaki-kannon-1409.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0010-takasaki-byakui-kannon.webp"
+      },
+      {
+        "id": 1410,
+        "fromSrc": "images/commons/66431854178aedf0.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0011-sainokawara-park.webp"
+      },
+      {
+        "id": 1411,
+        "fromSrc": "images/commons/3a288085409de488.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0012-mount-akagi-lake-onuma.webp"
+      },
+      {
+        "id": 1412,
+        "fromSrc": "images/commons/5f35e9689dfc4441.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0013-shorinzan-daruma-ji.webp"
+      },
+      {
+        "id": 1413,
+        "fromSrc": "images/commons/c65d1e2b081929f9.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0014-okushima-lake-shima-blue.webp"
+      },
+      {
+        "id": 1414,
+        "fromSrc": "images/commons/25e906e534f53865.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0015-netsunoyu-yumomi-show.webp"
+      },
+      {
+        "id": 1415,
+        "fromSrc": "images/commons/538da5ee32e590a9.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0016-kajika-bridge.webp"
       }
     ],
     "heroChanges": [
       {
-        "key": "구시로",
-        "fromSrc": "images/commons/7a42477c1c58ee4f.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0038-kushiro-wetland.webp"
+        "key": "가사마·우시쿠",
+        "fromSrc": "images/qa/ff983684227e20d83694.webp",
+        "toSrc": "images/commons/f762d4b706c8092e.webp"
       },
       {
-        "key": "니세코",
-        "fromSrc": "images/commons/2243907cf6d87923.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0012-mount-yotei.webp"
+        "key": "가시마",
+        "fromSrc": "images/commons/4374dd7da377afed.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0014-kashima-jingu.webp"
       },
       {
-        "key": "다이세쓰산",
-        "fromSrc": "images/commons/85d055615a4017e7.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0024-mount-asahidake.webp"
+        "key": "구사쓰",
+        "fromSrc": "images/commons/107454a76a8379fd.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0001-kusatsu-onsen-yubatake.webp"
       },
       {
-        "key": "도야·노보리베쓰",
-        "fromSrc": "images/commons/0ed1cd26c7dc22e3.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0013-lake-toya.webp"
+        "key": "군마",
+        "fromSrc": "images/commons/107454a76a8379fd.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0001-kusatsu-onsen-yubatake.webp"
       },
       {
-        "key": "도카치",
-        "fromSrc": "images/commons/963ab731aca96a06.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0042-obihiro-banei-racecourse.webp"
+        "key": "기누가와",
+        "fromSrc": "images/commons/9b32ae6f8d99ab18.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0004-kinugawa-onsen.webp"
       },
       {
-        "key": "리시리·레분",
-        "fromSrc": "images/commons/84c09021c40f42e0.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0032-rebun-island.webp"
+        "key": "나스",
+        "fromSrc": "images/commons/25b32ce3e0e09c37.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0009-mount-nasu-nasu-ropeway.webp"
       },
       {
-        "key": "마쓰마에",
-        "fromSrc": "images/commons/98938a62355c005e.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0022-matsumae-castle.webp"
+        "key": "닛코",
+        "fromSrc": "images/commons/e60a7f0c9e4efb37.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0001-nikko-toshogu.webp"
       },
       {
-        "key": "비에이",
-        "fromSrc": "images/commons/52a305aa853d7535.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0028-biei-blue-pond.webp"
+        "key": "도미오카·다카사키",
+        "fromSrc": "images/commons/428f2d30ec7cc152.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0003-tomioka-silk-mill.webp"
       },
       {
-        "key": "삿포로",
-        "fromSrc": "images/commons/454796bf80a0839a.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0001-odori-park.webp"
+        "key": "도치기",
+        "fromSrc": "images/commons/e60a7f0c9e4efb37.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0001-nikko-toshogu.webp"
       },
       {
-        "key": "삿포로·조잔케이",
-        "fromSrc": "images/qa/1eb448ab5486290232c2.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Jozankei%20Onsen%20Hokkaido.jpg?width=960"
+        "key": "마시코",
+        "fromSrc": "images/commons/b8d599f3e9235037.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0016-mashiko-jonaisaka-pottery-street.webp"
       },
       {
-        "key": "샤코탄",
-        "fromSrc": "images/commons/37efaa1ed04f740c.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0011-cape-kamui.webp"
+        "key": "미나카미·오제",
+        "fromSrc": "images/commons/f231fdbdbb838b08.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0004-fukiware-falls.webp"
       },
       {
-        "key": "소운쿄",
-        "fromSrc": "images/licensed/hokkaido-kurodake-ropeway-4024.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Sounkyo%20Kurodake%20Hokkaido.jpg?width=960"
+        "key": "미토",
+        "fromSrc": "images/commons/2fe4406a36ad6f0d.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0001-kairakuen.webp"
       },
       {
-        "key": "시라오이",
-        "fromSrc": "images/qa/94bf25f4107e90f57e4c.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%82%A6%E3%83%9D%E3%83%9D%E3%82%A4.jpg?width=960"
+        "key": "북부 이바라키",
+        "fromSrc": "images/commons/1a23b0f6237a0101.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0007-fukuroda-falls.webp"
       },
       {
-        "key": "시레토코",
-        "fromSrc": "images/qa/1537c76179f724ceba66.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiretoko%20Five%20Lakes%20Hokkaido.jpg?width=960"
+        "key": "시마 온천",
+        "fromSrc": "images/licensed/gunma-shima-onsen-1408.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0009-shima-onsen.webp"
       },
       {
-        "key": "아바시리",
-        "fromSrc": "images/commons/016fdd692dfaf12c.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0034-abashiri-drift-icebreaker-aurora.webp"
+        "key": "쓰쿠바",
+        "fromSrc": "images/commons/ed0a5936cafd07f9.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0005-mount-tsukuba.webp"
       },
       {
-        "key": "아사히카와",
-        "fromSrc": "images/qa/743d7030dfe1a368bb11.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Asahiyama%20zoo.jpg?width=960"
+        "key": "아시카가",
+        "fromSrc": "images/commons/55654212b8b45304.webp",
+        "toSrc": "images/regions/north-kanto/tochigi/places/09-P0007-ashikaga-flower-park.webp"
       },
       {
-        "key": "아칸·마슈",
-        "fromSrc": "images/qa/0bd428a747f1377eda50.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Akan%20Hokkaido.jpg?width=960"
+        "key": "아카기",
+        "fromSrc": "images/commons/3a288085409de488.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0012-mount-akagi-lake-onuma.webp"
       },
       {
-        "key": "오타루",
-        "fromSrc": "images/commons/fe7e1584bcca05c9.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0008-otaru-canal.webp"
+        "key": "이바라키",
+        "fromSrc": "images/commons/2fe4406a36ad6f0d.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0001-kairakuen.webp"
       },
       {
-        "key": "왓카나이",
-        "fromSrc": "images/commons/19cd593bf0420592.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0031-cape-soya.webp"
+        "key": "이시오카",
+        "fromSrc": "images/commons/6a1a57e8260adec9.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0015-ibaraki-flower-park.webp"
       },
       {
-        "key": "하코다테",
-        "fromSrc": "images/commons/d1d637b49af57efd.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0017-mount-hakodate.webp"
+        "key": "이카호·하루나",
+        "fromSrc": "images/commons/c85e8d9e500bb795.webp",
+        "toSrc": "images/regions/north-kanto/gunma/places/10-P0002-ikaho-onsen-stone-steps.webp"
       },
       {
-        "key": "하코다테 근교",
-        "fromSrc": "images/commons/e4f788c59cbde87a.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0021-onuma-quasi-national-park.webp"
-      },
-      {
-        "key": "홋카이도",
-        "fromSrc": "images/commons/454796bf80a0839a.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0001-odori-park.webp"
-      },
-      {
-        "key": "후라노",
-        "fromSrc": "images/commons/f7eeef920386f76f.webp",
-        "toSrc": "images/regions/hokkaido/hokkaido/places/01-P0026-farm-tomita.webp"
+        "key": "히타치나카·오아라이",
+        "fromSrc": "images/commons/f0274bc3069ebb27.webp",
+        "toSrc": "images/regions/north-kanto/ibaraki/places/08-P0003-hitachi-seaside-park.webp"
       }
     ],
     "canonicalPhotoChanges": []
