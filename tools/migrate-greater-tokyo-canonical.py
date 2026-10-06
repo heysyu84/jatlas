@@ -3,7 +3,7 @@
 import hashlib, importlib.util, io, json, re, shutil, subprocess, unicodedata, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
-from unidecode import unidecode
+from canonical_slug_policy import place_slug,food_slug
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
@@ -16,10 +16,6 @@ def clean_src(src):
     if s.startswith('http://') or s.startswith('https://'): return s
     return s.split('?',1)[0].split('#',1)[0].removeprefix('./')
 
-def name_slug(name):
-    s=unidecode(unicodedata.normalize('NFKC',str(name or '')).strip()).lower()
-    s=re.sub(r'[^0-9a-z]+','-',s)
-    return re.sub(r'-+','-',s).strip('-') or 'item'
 
 def load_prepare_module():
     p=ROOT/'tools/prepare-official-photos.py'
@@ -65,6 +61,7 @@ def main():
         subprocess.run(['node','tools/audit-content.cjs',str(before_path)],cwd=ROOT,check=True)
     runtime=json.loads(before_path.read_text())
     idmap=json.loads((ROOT/'audits/id-migration-map.json').read_text())
+    map_audit=json.loads((ROOT/'audits/map-audit.json').read_text())
     place_ids={int(x['legacyId']):x['newId'] for x in idmap['places'] if x.get('pref') in PREFSET}
     food_ids={}
     for x in idmap['foods']:
@@ -112,7 +109,7 @@ def main():
         meta.update({k:v for k,v in pic.items() if k in ('source','author','terms','licenseUrl') and v})
         cid=place_ids.get(ident)
         if not cid: raise ValueError(f'Missing reserved place ID {pref} {ident} {p["name"]}')
-        canonical=f'images/regions/greater-tokyo/{PREFSLUG[pref]}/places/{cid}-{name_slug(p["name"])}.webp'
+        canonical=f'images/regions/greater-tokyo/{PREFSLUG[pref]}/places/{cid}-{place_slug(cid,(map_audit.get(str(ident)) or {}).get('query') or p.get('mapQuery') or '')}.webp'
         dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)
         registry['places'][cid]={
             'canonicalId':cid,'legacyId':ident,'pref':pref,'area':p.get('area',''),'town':p.get('town',''),
@@ -150,7 +147,7 @@ def main():
             ordinal=food_seen.get(key,0)
             if ordinal>=len(ids): raise ValueError(f'Missing reserved food ID {pref} {name} occurrence {ordinal+1}')
             cid=ids[ordinal]; food_seen[key]=ordinal+1
-            canonical=f'images/regions/greater-tokyo/{PREFSLUG[pref]}/foods/{cid}-{name_slug(name)}.webp'
+            canonical=f'images/regions/greater-tokyo/{PREFSLUG[pref]}/foods/{cid}-{food_slug(cid)}.webp'
             dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)
             registry['foods'][cid]={
                 'canonicalId':cid,'legacyId':None,'pref':pref,'name':name,'image':canonical,'legacyImage':src,
