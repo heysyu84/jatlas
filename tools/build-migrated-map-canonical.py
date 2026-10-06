@@ -45,10 +45,13 @@ for region,prefs in REGIONS.items():
  for p in rows:
   pid=int(p['id'])
   if region=='홋카이도' and pid in existing:
-   out[pid]=existing[pid]
+   kept=dict(existing[pid])
+   if not kept.get('coordinateOnly') and not kept.get('cid') and not kept.get('placeId'):
+    kept['coordinateOnly']=True
+   out[pid]=kept
    report['preservedManualTargets']+=1
-   if existing[pid].get('coordinateOnly'): report['coordinateOnlyTargets']+=1
-   elif existing[pid].get('cid') or existing[pid].get('placeId'): report['cidTargets']+=1
+   if kept.get('coordinateOnly'): report['coordinateOnlyTargets']+=1
+   elif kept.get('cid') or kept.get('placeId'): report['cidTargets']+=1
    continue
   a=audit.get(str(pid),{})
   plat,plon=p.get('lat'),p.get('lon')

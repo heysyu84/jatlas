@@ -27,7 +27,7 @@ jobs:
       - name: Build canonical targets for migrated regions
         run: python3 tools/build-migrated-map-canonical.py
       - name: Run map regression tests
-        run: node tools/test-map-photo.cjs
+        run: node tools/test-migrated-map-canonical.cjs
       - name: Commit generated canonical map data
         run: |
           git config user.name "github-actions[bot]"
