@@ -50,6 +50,20 @@ for(const f of runtimeFoods){
   const r=regFoods[cid]; if(clean(f.photo?.src||f.image)!==r.image)throw Error('Runtime food not canonical '+f.pref+' '+f.name);
 }
 
+
+// Every local image exposed by the effective runtime must exist, including
+// route/hero images that are outside the canonical place/food registry.
+const runtimeMissing=[];
+const walkRuntimeImages=(v,trail='root')=>{
+  if(Array.isArray(v)){v.forEach((x,i)=>walkRuntimeImages(x,trail+'['+i+']'));return;}
+  if(v&&typeof v==='object'){for(const [k,x] of Object.entries(v))walkRuntimeImages(x,trail+'.'+k);return;}
+  if(typeof v!=='string'||!v.startsWith('images/'))return;
+  let rel=v.split(/[?#]/)[0];try{rel=decodeURIComponent(rel)}catch{}
+  if(!fs.existsSync(path.join(dist,rel)))runtimeMissing.push({trail,src:v});
+};
+walkRuntimeImages(result);
+if(runtimeMissing.length)throw Error('Missing runtime local image(s): '+JSON.stringify(runtimeMissing.slice(0,40)));
+
 const mapCode=fs.readFileSync(path.join(dist,'map-canonical-data.js'),'utf8');
 const ctx=vm.createContext({globalThis:{}}); vm.runInContext(mapCode,ctx);
 const canonical=ctx.globalThis.JATLAS_MAP_CANONICAL||{};
