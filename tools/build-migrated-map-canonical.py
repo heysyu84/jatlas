@@ -14,9 +14,10 @@ REGIONS={
  '산인·산요':['돗토리','시마네','오카야마','히로시마','야마구치'],
  '시코쿠':['도쿠시마','가가와','에히메','고치'],
  '규슈':['후쿠오카','사가','나가사키','구마모토','오이타','미야자키','가고시마'],
+ '오키나와':['오키나와'],
  '수도권':['사이타마','지바','도쿄','가나가와'],
 }
-EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'호쿠리쿠':71,'긴키':134,'산인·산요':88,'시코쿠':76,'규슈':184,'수도권':132}
+EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'호쿠리쿠':71,'긴키':134,'산인·산요':88,'시코쿠':76,'규슈':184,'오키나와':38,'수도권':132}
 FORCE_COORDINATE={910,2501,2506,2509,2512,2513,2602,2603,2609,2612,2704,2705,2709,2807,2812,2814,2818,2906,2907,2908,2909,2910,2911,2914,2916,3002,3004,3005,3007,3011,3017,3101,3104,3107,3111,3116,3118,3119,3123,3127,3201,3206,3207,3209,3213,3216,3220,3222,3224,3226,3306,3309,3316,3320,3321,3325,3404,3406,3409,3410,3412,3418,3421,3422,3501,3504,3506,3515,3517,3519,3522,3530}
 BROAD_ENTITY_NAMES={'Western Hakodate','구조시','일본','Japan'}
 
@@ -94,6 +95,6 @@ lines=['/* Canonical map targets for migrated regions. Internal embeds always us
 ids=sorted(out)
 for i,pid in enumerate(ids):lines.append(f'  {pid}:'+json.dumps(out[pid],ensure_ascii=False,separators=(',',':'))+(',' if i<len(ids)-1 else ''))
 lines.append('});');canon_path.write_text('\n'.join(lines)+'\n')
-slugs={'도카이':'tokai','도호쿠':'tohoku','홋카이도':'hokkaido','북간토':'north-kanto','고신에쓰':'koshinetsu','호쿠리쿠':'hokuriku','긴키':'kinki','산인·산요':'sanin-sanyo','시코쿠':'shikoku','규슈':'kyushu','수도권':'greater-tokyo'}
+slugs={'도카이':'tokai','도호쿠':'tohoku','홋카이도':'hokkaido','북간토':'north-kanto','고신에쓰':'koshinetsu','호쿠리쿠':'hokuriku','긴키':'kinki','산인·산요':'sanin-sanyo','시코쿠':'shikoku','규슈':'kyushu','오키나와':'okinawa','수도권':'greater-tokyo'}
 for region,report in region_reports.items():(AUD/f'{slugs[region]}-map-canonical-review.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'canonicalTargets':len(out),'regions':region_reports},ensure_ascii=False))
