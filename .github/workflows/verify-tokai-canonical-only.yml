@@ -26,6 +26,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup Python for deploy-generated non-Tokai assets
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Recreate deploy-generated assets
+        run: |
+          python -m pip install Pillow==11.3.0
+          python tools/prepare-official-photos.py
+
       - name: Remove Tokai legacy images in sandbox and verify canonical runtime
         run: node tools/test-tokai-canonical-only.cjs
 
