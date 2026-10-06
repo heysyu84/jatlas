@@ -1,0 +1,133 @@
+name: Migrate Tohoku canonical photos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/migrate-tohoku-canonical.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: jatlas-tohoku-migration
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install Pillow==11.3.0
+          npm install --prefix /tmp/jatlas-jsdom jsdom@26.1.0
+
+      - name: Wait for triggering commit to become the deployment baseline
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BASE="$(git rev-parse HEAD)"
+          echo "$BASE" > /tmp/tohoku-base-sha
+          for i in $(seq 1 90); do
+            RESULT="$(curl -fsSL -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs?branch=main&per_page=30" | jq -r --arg sha "$BASE" '[.workflow_runs[] | select(.name=="Deploy Jatlas to GitHub Pages" and .head_sha==$sha)][0] | if . == null then "pending" else (.conclusion // .status // "pending") end')"
+            echo "Pages baseline $BASE: $RESULT"
+            if [ "$RESULT" = "success" ]; then exit 0; fi
+            if [ "$RESULT" = "failure" ] || [ "$RESULT" = "cancelled" ]; then exit 1; fi
+            sleep 5
+          done
+          echo "Timed out waiting for baseline deployment"
+          exit 1
+
+      - name: Capture pre-migration runtime
+        run: node tools/audit-content.cjs /tmp/tohoku-before.json
+
+      - name: Migrate and recover Tohoku photos
+        run: python tools/migrate-tohoku-canonical.py
+
+      - name: Capture post-migration runtime
+        run: node tools/audit-content.cjs /tmp/tohoku-after.json
+
+      - name: Declare exact runtime changes
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          before=json.loads(Path('/tmp/tohoku-before.json').read_text())
+          after=json.loads(Path('/tmp/tohoku-after.json').read_text())
+          base=Path('/tmp/tohoku-base-sha').read_text().strip()
+          bm={int(x['id']):x for x in before['places']}
+          am={int(x['id']):x for x in after['places']}
+          photo=[]
+          for ident in sorted(set(bm)&set(am)):
+              a=(bm[ident].get('photo') or {}).get('src','')
+              b=(am[ident].get('photo') or {}).get('src','')
+              if a!=b: photo.append({'id':ident,'fromSrc':a,'toSrc':b})
+          hero=[]
+          for key in sorted(set(before.get('heroes',{}))|set(after.get('heroes',{}))):
+              a=(before.get('heroes',{}).get(key) or {}).get('src','')
+              b=(after.get('heroes',{}).get(key) or {}).get('src','')
+              if a!=b: hero.append({'key':key,'fromSrc':a,'toSrc':b})
+          intent={
+            'version':1,'baseCommit':base,
+            'reason':'Migrate Tohoku to canonical IDs/paths and recover previously approved missing photo assets without changing place content.',
+            'allow':{'placeAdds':[],'placeRemovals':[],'placeEdits':[],'photoChanges':photo,'heroChanges':hero,'canonicalPhotoChanges':[]}
+          }
+          Path('tools/content-change-intent.json').write_text(json.dumps(intent,ensure_ascii=False,indent=2)+'\n')
+          print('Declared photoChanges=',len(photo),'heroChanges=',len(hero))
+          PY
+
+      - name: Validate generated runtime
+        env:
+          JATLAS_JSDOM: /tmp/jatlas-jsdom/node_modules/jsdom
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          t=Path('dist/photo-registry-data.js').read_text()
+          p='globalThis.JATLAS_PHOTO_REGISTRY_DATA='
+          r=json.loads(t[len(p):].rstrip().rstrip(';'))
+          prefs={'아오모리','이와테','미야기','아키타','야마가타','후쿠시마'}
+          rows=[x for x in list(r['places'].values())+list(r['foods'].values()) if x['pref'] in prefs]
+          assert len([x for x in r['places'].values() if x['pref'] in prefs])==160
+          assert len([x for x in r['foods'].values() if x['pref'] in prefs])==50
+          for x in rows:
+              f=Path('dist')/x['image']
+              assert f.is_file(),x['image']
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==x['sha256'],x['canonicalId']
+          print('Tohoku canonical files verified:',len(rows))
+          PY
+          node tools/test-map-photo.cjs
+          node tools/test-nonphoto.cjs
+          node tools/test-dom.cjs
+
+      - name: Commit migration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/images/regions/tohoku dist/images/licensed dist/images/official dist/photo-registry-data.js dist/index.html README.md audits/tohoku-migration-completion.json tools/content-change-intent.json
+          if git diff --cached --quiet; then
+            echo "No migration changes"
+            exit 0
+          fi
+          git commit -m "Migrate Tohoku photos to canonical structure"
+
+      - name: Run regression guard on migration commit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node tools/regression-guard.cjs
+
+      - name: Push migration
+        run: |
+          git pull --rebase origin main
+          git push origin HEAD:main
