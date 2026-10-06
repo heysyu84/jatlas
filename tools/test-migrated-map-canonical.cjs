@@ -52,3 +52,10 @@ assert.equal(String(canonical[3423].cid),'8425352687367510378','Takachiho Farm e
 assert.equal(String(canonical[3500].cid),'13701894705625070971','Yunohira Observatory exact Google CID');
 assert.equal(String(canonical[3529].cid),'1411361342552211030','Mangrove Park exact Google CID');
 console.log(JSON.stringify({places:migrated.length,canonical:Object.keys(canonical).length,status:'ok'}));
+
+assert.equal(String(canonical[3608].cid),'6024869158936144081','Himeyuri Peace Museum exact Google CID');
+assert.equal(canonical[3608].lat,26.0964576,'Himeyuri Peace Museum verified latitude');
+assert.equal(canonical[3608].lon,127.6903934,'Himeyuri Peace Museum verified longitude');
+assert.equal(String(canonical[3623].cid),'8163252714765044173','Hiji Falls exact Google CID');
+assert.equal(String(canonical[3624].cid),'3930634228281239457','Furuzamami Beach exact Google CID');
+assert.equal(String(canonical[3635].cid),'9982704389802745912','Yubu Island exact Google CID');

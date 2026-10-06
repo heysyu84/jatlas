@@ -7,6 +7,7 @@ on:
       - '.github/workflows/rebuild-migrated-map-canonical.yml'
       - 'tools/build-migrated-map-canonical.py'
       - 'dist/photo-registry-data.js'
+      - 'audits/map-identity-review.json'
 
 permissions:
   contents: write

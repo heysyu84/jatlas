@@ -515,6 +515,54 @@
     "reviewedAt": "2026-10-07",
     "reverifiedAt": "2026-10-07"
   },
+  "3608": {
+    "status": "official-name-address-reviewed",
+    "name": "히메유리 평화기념자료관",
+    "officialSource": "https://www.himeyuri.or.jp/info/",
+    "resolvedName": "히메유리 평화기념자료관",
+    "resolvedAddress": "ひめゆり平和祈念資料館 671-1 Ihara, Itoman, Okinawa 901-0344",
+    "lat": 26.0964576,
+    "lon": 127.6903934,
+    "cid": "6024869158936144081",
+    "evidence": "Official museum access information gives Itoman-shi Ihara 671-1; the named map entity resolves to the same museum and address.",
+    "reviewedAt": "2026-10-07"
+  },
+  "3623": {
+    "status": "official-destination-reviewed",
+    "name": "히지오타키",
+    "officialSource": "https://kunigami-kanko.com/sightseeing-spots/%E6%AF%94%E5%9C%B0%E5%A4%A7%E6%BB%9D/",
+    "resolvedName": "Hijio Falls",
+    "resolvedAddress": "Hijio Falls, Kunigami, Okinawa",
+    "lat": 26.7105291,
+    "lon": 128.1866108,
+    "cid": "8163252714765044173",
+    "evidence": "Kunigami Tourism officially identifies 比地大滝 and its access facility at Hiji 781-1; the named map entity is the waterfall itself, which is the intended attraction rather than the trailhead.",
+    "reviewedAt": "2026-10-07"
+  },
+  "3624": {
+    "status": "official-name-address-reviewed",
+    "name": "후루자마미비치",
+    "officialSource": "https://www.okinawastory.jp/spot/600006157",
+    "resolvedName": "Furuzamami Beach",
+    "resolvedAddress": "Zamami 1743, Zamami-son, Okinawa 901-3402",
+    "lat": 26.2229863,
+    "lon": 127.308256,
+    "cid": "3930634228281239457",
+    "evidence": "Okinawa official tourism lists Furuzamami Beach at Zamami 1743; the named map entity matches the intended beach.",
+    "reviewedAt": "2026-10-07"
+  },
+  "3635": {
+    "status": "official-destination-reviewed",
+    "name": "유부섬",
+    "officialSource": "https://www.town.taketomi.lg.jp/about/yufu/",
+    "resolvedName": "유부섬",
+    "resolvedAddress": "Yubu Island, Taketomi, Okinawa 907-1432",
+    "lat": 24.3424794,
+    "lon": 123.9324903,
+    "cid": "9982704389802745912",
+    "evidence": "Taketomi Town officially identifies Yubu Island as the small island reached by water-buffalo cart; the named map entity is on that island and matches the intended destination.",
+    "reviewedAt": "2026-10-07"
+  },
   "4812": {
     "status": "official-name-address-reviewed",
     "officialSource": "https://asaichi.info/",
