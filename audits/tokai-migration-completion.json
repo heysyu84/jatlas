@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "region": "도카이",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "f1e9d2a9aeca3d9715e12d70c183811c42c37d40",
+  "lastSuccessfulPagesCommit": "f1e9d2a9aeca3d9715e12d70c183811c42c37d40",
+  "prefectures": {
+    "기후": {
+      "places": 22,
+      "foods": 5,
+      "canonicalFiles": 27
+    },
+    "시즈오카": {
+      "places": 20,
+      "foods": 8,
+      "canonicalFiles": 28
+    },
+    "아이치": {
+      "places": 20,
+      "foods": 7,
+      "canonicalFiles": 27
+    },
+    "미에": {
+      "places": 21,
+      "foods": 6,
+      "canonicalFiles": 27
+    }
+  },
+  "totals": {
+    "places": 83,
+    "foods": 26,
+    "canonicalRecords": 109,
+    "canonicalFiles": 109,
+    "missingCanonicalFiles": 0,
+    "canonicalAuditActive": 109
+  },
+  "guarantees": [
+    "Canonical IDs and paths are authoritative for Tokai.",
+    "Canonical file count exactly matches registry record count.",
+    "All canonical Tokai images are ACTIVE in the latest reference audit.",
+    "Legacy numeric IDs remain compatibility keys until the nationwide ID cutover.",
+    "No legacy image file is deleted during regional migration."
+  ],
+  "legacyCleanup": {
+    "deferred": true,
+    "uniqueLegacyImageEntries": 108,
+    "trackedLegacyFiles": 106,
+    "legacyFilesWithStrongReferences": 106,
+    "deletedNow": 0,
+    "reason": "Repository safety rule 13 requires nationwide canonical migration completion plus a post-migration zero-reference audit before legacy image deletion."
+  },
+  "nextAction": "Continue canonical migration by region. After nationwide completion, run the zero-reference audit and delete only legacy files with zero runtime/registry/tool/workflow references."
+}
