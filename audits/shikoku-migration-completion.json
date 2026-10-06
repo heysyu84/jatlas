@@ -39,5 +39,8 @@
     "Canonical IDs follow Japanese prefecture codes 36-39.",
     "Canonical filenames contain only the fixed ID and normalized place/food name.",
     "Legacy files are not deleted by this migration."
-  ]
+  ],
+  "verificationRequested": true,
+  "verificationTarget": "canonical-only + DOM + deployed runtime",
+  "verificationRequestedAt": "2026-10-07"
 }
