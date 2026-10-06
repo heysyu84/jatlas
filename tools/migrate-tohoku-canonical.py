@@ -42,7 +42,7 @@ def parse_fields(obj):
     except Exception:pass
     out={}
     for key in ('src','source','author','licenseUrl','terms','filename','alt'):
-        m=re.search(r'(?:["\\']?'+re.escape(key)+r'["\\']?)\\s*:\\s*(["\\'])(.*?)\\1',obj,re.S)
+        m=re.search(r"(?:[\\\"']?"+re.escape(key)+r"[\\\"']?)\\s*:\\s*([\\\"'])(.*?)\\1",obj,re.S)
         if m:out[key]=m.group(2)
     return out
 
