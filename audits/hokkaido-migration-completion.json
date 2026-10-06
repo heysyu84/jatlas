@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "region": "홋카이도",
+  "status": "COMPLETE_CANONICAL",
+  "sourceCommit": "1bca638f4c6ad8fe8d1cd293acee041b3a4e979c",
+  "prefectures": {
+    "홋카이도": {
+      "places": 42,
+      "foods": 10,
+      "canonicalFiles": 52
+    }
+  },
+  "totals": {
+    "places": 42,
+    "foods": 10,
+    "canonicalRecords": 52,
+    "canonicalFiles": 52,
+    "missingCanonicalFiles": 0
+  },
+  "recoveredLegacyAssets": [
+    "images/licensed/hokkaido-kurodake-ropeway-4024.webp",
+    "images/licensed/hokkaido-shrine-4003.webp"
+  ],
+  "recoveredLegacyAssetCount": 2,
+  "guarantees": [
+    "Canonical IDs and paths are authoritative for Hokkaido.",
+    "Previously approved missing assets are recovered from their pinned source manifest before canonical copy.",
+    "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
+    "No legacy image file is deleted during regional migration."
+  ]
+}
