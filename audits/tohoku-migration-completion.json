@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "region": "도호쿠",
   "status": "COMPLETE_CANONICAL",
-  "sourceCommit": "52c61e72590bc7acc9fc605312c3133f26f07ca8",
+  "sourceCommit": "59baebb89aecd4f4271b1c418bdf3c7959fc852f",
   "prefectures": {
     "아오모리": {
       "places": 31,
@@ -42,33 +42,12 @@
     "canonicalFiles": 210,
     "missingCanonicalFiles": 0
   },
-  "recoveredLegacyAssets": [
-    "images/licensed/akita-aoyagi-house-4408.webp",
-    "images/licensed/akita-inu-kaikan-4417.webp",
-    "images/licensed/akita-oyasukyo-steam-4414.webp",
-    "images/licensed/fukushima-jododaira-5201.webp",
-    "images/licensed/fukushima-sazaedo-5205.webp",
-    "images/licensed/fukushima-shioyasaki-5219.webp",
-    "images/licensed/iwate-geibikei-4214.webp",
-    "images/licensed/iwate-hoonji-rakan-4203.webp",
-    "images/licensed/iwate-kappabuchi-4221.webp",
-    "images/licensed/iwate-ryusendo-lake-4224.webp",
-    "images/licensed/yamagata-zao-ice-monsters-4504.webp",
-    "images/official/aomori-hirosaki-apple-4113.webp",
-    "images/official/aomori-sannai-4103.webp",
-    "images/official/yamagata-imoni-154.webp"
-  ],
-  "recoveredLegacyAssetCount": 14,
+  "recoveredLegacyAssets": [],
+  "recoveredLegacyAssetCount": 0,
   "guarantees": [
     "Canonical IDs and paths are authoritative for Tohoku.",
     "Previously approved missing assets are recovered from their pinned source manifest before canonical copy.",
     "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
     "No legacy image file is deleted during regional migration."
-  ],
-  "verifiedCanonicalCommit": "76c0df2b921cd5abdff2c1ef8012371cc61963c6",
-  "verification": {
-    "canonicalFilesChecked": 210,
-    "missingCanonicalFiles": 0,
-    "verifiedAt": "2026-10-06"
-  }
+  ]
 }
