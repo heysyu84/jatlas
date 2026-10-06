@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "region": "규슈",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 184,
+  "cidTargets": 129,
+  "coordinateOnlyTargets": 55,
+  "preservedManualTargets": 0,
+  "identityReviewTargets": 24,
+  "sourceCoordinateTargets": 55,
+  "auditEntityTargets": 105,
+  "auditCameraTargets": 0,
+  "riskFlags": []
+}
