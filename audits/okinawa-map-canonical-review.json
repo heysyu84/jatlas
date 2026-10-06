@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "region": "오키나와",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 38,
+  "cidTargets": 27,
+  "coordinateOnlyTargets": 11,
+  "preservedManualTargets": 0,
+  "identityReviewTargets": 0,
+  "sourceCoordinateTargets": 11,
+  "auditEntityTargets": 27,
+  "auditCameraTargets": 0,
+  "riskFlags": [
+    {
+      "id": 3608,
+      "name": "히메유리 평화기념자료관",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.851,
+      "resolvedName": "히메유리 평화기념자료관",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 3623,
+      "name": "히지오타키",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.239,
+      "resolvedName": "Hijio Falls",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 3624,
+      "name": "후루자마미비치",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 1.549,
+      "resolvedName": "Furuzamami Beach",
+      "chosen": "query-entity"
+    },
+    {
+      "id": 3635,
+      "name": "유부섬",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 2.448,
+      "resolvedName": "유부섬",
+      "chosen": "query-entity"
+    }
+  ]
+}
