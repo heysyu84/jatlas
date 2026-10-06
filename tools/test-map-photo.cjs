@@ -8,7 +8,8 @@ for(const p of result.places){
  const canonical=vm.runInContext(`globalThis.JATLAS_MAP_CANONICAL?.[${p.id}]||null`,ctx);
  if(canonical){
   check(embed.searchParams.get('q')===`${canonical.lat},${canonical.lon}`,`canonical embed coordinates: ${p.id}`);
-  if(canonical.placeId)check(external.searchParams.get('query_place_id')===canonical.placeId,`canonical external place id: ${p.id}`);
+  if(canonical.coordinateOnly)check(external.searchParams.get('q')===`${canonical.lat},${canonical.lon}`,`canonical external coordinates: ${p.id}`);
+  else if(canonical.placeId)check(external.searchParams.get('query_place_id')===canonical.placeId,`canonical external place id: ${p.id}`);
   else if(canonical.cid)check(external.searchParams.get('cid')===String(canonical.cid),`canonical external cid: ${p.id}`);
   else check(external.searchParams.get('q')===canonical.externalQuery,`canonical external query: ${p.id}`);
  }else{
@@ -25,6 +26,13 @@ for(const p of result.places){
 const hokkaidoCanonical=vm.runInContext('Object.entries(globalThis.JATLAS_MAP_CANONICAL||{}).filter(([id])=>Number(id)>=4000&&Number(id)<=4041)',ctx);
 check(hokkaidoCanonical.length===42,'all 42 Hokkaido places have canonical map targets');
 check(hokkaidoCanonical.every(([,x])=>Number.isFinite(x.lat)&&Number.isFinite(x.lon)),'all Hokkaido canonical targets have coordinates');
+const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','사이타마','지바','도쿄','가나가와'];
+const migrated=result.places.filter(p=>migratedPrefs.includes(p.pref));
+const migratedCanonical=vm.runInContext('globalThis.JATLAS_MAP_CANONICAL||{}',ctx);
+if(Object.keys(migratedCanonical).length>42){
+ check(migrated.length===547,`migrated place count: ${migrated.length}`);
+ check(migrated.every(p=>migratedCanonical[p.id]&&Number.isFinite(migratedCanonical[p.id].lat)&&Number.isFinite(migratedCanonical[p.id].lon)),'all migrated places have canonical map coordinates');
+}
 check(new URL(vm.runInContext('googlePlaceMapURL(samples.find(p=>p.id===4019),false)',ctx)).searchParams.get('query_place_id')==='ChIJT_xUJ6rznl8RXrmIZ5nBJjY','Hachimanzaka opens exact Google place, not Western Hakodate');
 check(new URL(vm.runInContext('googlePlaceMapURL(samples.find(p=>p.id===4003),true)',ctx)).searchParams.get('q')==='43.05505,141.307587','Hokkaido Shrine embed uses shrine coordinates');
 check(new URL(vm.runInContext('googlePlaceMapURL(samples.find(p=>p.id===4012),false)',ctx)).searchParams.get('query_place_id')==='ChIJNcpkm69XdV8RUa3bjqCTwSE','Lake Toya opens lake, not Toyako town');

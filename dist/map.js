@@ -121,6 +121,10 @@ function googlePlaceMapURL(place,embed=true){
    params.set('output','embed');params.set('q',`${canonical.lat},${canonical.lon}`);params.set('z','16');
    return 'https://www.google.com/maps?'+params.toString();
   }
+  if(canonical.coordinateOnly){
+   params.set('q',`${canonical.lat},${canonical.lon}`);params.set('z','16');
+   return 'https://www.google.com/maps?'+params.toString();
+  }
   if(canonical.placeId){
    const search=new URLSearchParams({api:'1',query:canonical.externalQuery||place.mapQuery||place.name,query_place_id:canonical.placeId,hl:googleMapLanguage()});
    return 'https://www.google.com/maps/search/?'+search.toString();
