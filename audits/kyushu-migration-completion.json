@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "region": "규슈",
   "status": "COMPLETE_CANONICAL",
-  "sourceCommit": "ee7d895f75b9fc67a7842adc124a742c2e388fd0",
+  "sourceCommit": "05ffcce9d63f6a68ebeaf042701689082fe974ae",
   "prefectures": {
     "후쿠오카": {
       "places": 27,
