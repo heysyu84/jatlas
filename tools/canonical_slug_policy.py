@@ -142,6 +142,24 @@ PLACE_OVERRIDES={
 '39-P0017':'kashiwajima',
 '39-P0018':'kochi-sunday-market',
 '39-P0019':'mikurodo-hotsumisakiji',
+# Kyushu curated slugs for branded/composite names and ambiguous query tails.
+'40-P0001':'fukuoka-castle-maizuru-park','40-P0003':'kushida-shrine','40-P0004':'fukuoka-tower','40-P0005':'dazaifu-tenmangu','40-P0006':'kyushu-national-museum','40-P0007':'nanzoin',
+'40-P0010':'munakata-taisha-hetsugu','40-P0012':'munakata-taisha-nakatsugu','40-P0013':'mojiko-retro','40-P0016':'kawachi-wisteria-garden','40-P0017':'yanagawa-river-cruise','40-P0018':'tachibana-tei-ohana','40-P0019':'yame-fukushima-traditional-townscape',
+'40-P0023':'canal-city-hakata','40-P0024':'jr-hakata-city','40-P0025':'tenjin-underground-mall','40-P0026':'one-fukuoka-building','40-P0027':'lalaport-fukuoka',
+'41-P0001':'saga-castle-honmaru-history-museum','41-P0002':'saga-balloon-museum','41-P0003':'yoshinogari-historical-park','41-P0006':'nanatsugama','41-P0007':'yobuko-morning-market','41-P0008':'hizen-nagoya-castle-ruins','41-P0009':'kyushu-ceramic-museum',
+'41-P0010':'tozan-shrine','41-P0012':'takeo-onsen-romon-gate','41-P0014':'takeo-shrine-great-camphor','41-P0016':'yutoku-inari-shrine','41-P0017':'hizen-hamashuku-sake-brewery-street','41-P0018':'ouo-shrine-sea-torii',
+'42-P0001':'glover-garden','42-P0003':'dejima','42-P0004':'nagasaki-peace-park','42-P0005':'nagasaki-atomic-bomb-museum','42-P0006':'mount-inasa-observatory','42-P0007':'spectacles-bridge','42-P0008':'nagasaki-shinchi-chinatown','42-P0009':'gunkanjima-hashima',
+'42-P0010':'twenty-six-martyrs-museum','42-P0011':'kujuku-shima-pearl-sea-resort','42-P0013':'huis-ten-bosch','42-P0014':'hario-radio-towers','42-P0016':'hirado-xavier-memorial-church','42-P0017':'kawachi-pass','42-P0018':'shimabara-castle-samurai-residences',
+'42-P0020':'nita-pass-unzen-ropeway','42-P0021':'obama-onsen-hot-foot-105','42-P0024':'takahama-beach','42-P0025':'fukue-castle-ruins','42-P0026':'saruiwa','42-P0028':'watatsumi-shrine','42-P0029':'eboshidake-observatory','42-P0030':'hamanomachi-arcade',
+'43-P0002':'sakura-no-baba-josaien','43-P0004':'kumamon-square','43-P0005':'kamitori-shimotori-arcades','43-P0006':'sakura-machi-kumamoto','43-P0007':'kusasenrigahama','43-P0008':'aso-nakadake-crater','43-P0017':'yamaga-onsen-yachiyoza',
+'43-P0020':'amakusa-dolphin-center','43-P0021':'amakusa-five-bridges-matsushima-observatory','43-P0022':'amakusa-christian-museum','43-P0026':'kumagawa-river-cruise-hassenba','43-P0027':'reigando-unganzanji',
+'44-P0001':'beppu-hells','44-P0002':'kannawa-onsen-jigoku-mushi-kobo','44-P0004':'beppu-ropeway','44-P0006':'umitamago-aquarium','44-P0008':'jr-oita-city','44-P0009':'oita-prefectural-art-museum-opam','44-P0013':'kokonoe-yume-grand-suspension-bridge',
+'44-P0015':'tadewara-wetlands-chojabaru','44-P0016':'nagayu-onsen-ramune-onsen','44-P0021':'fukiji','44-P0022':'kitsuki-castle-town','44-P0023':'bungotakada-showa-no-machi','44-P0024':'mameda-machi','44-P0027':'aonodomon-yabakei',
+'45-P0001':'aoshima','45-P0003':'horikiri-pass-michinoeki-phoenix','45-P0005':'nishitachi-tachibana-dori','45-P0007':'sun-messe-nichinan','45-P0009':'michinoeki-nango-jacaranda','45-P0011':'takachiho-gorge-manai-falls',
+'45-P0013':'amanoiwato-shrine-west-shrine','45-P0015':'kunimigaoka','45-P0016':'umagase','45-P0017':'sea-cross','45-P0018':'omi-shrine','45-P0020':'aya-teruha-suspension-bridge','45-P0024':'takachiho-farm',
+'46-P0002':'sakurajima-lava-nagisa-park-footbath','46-P0004':'shiroyama-observatory','46-P0005':'tenmonkan','46-P0006':'ioworld-kagoshima-aquarium','46-P0007':'sand-bath-hall-saraku','46-P0008':'cape-nagasakibana','46-P0009':'lake-ikeda',
+'46-P0010':'chiran-samurai-residences','46-P0011':'chiran-peace-museum','46-P0013':'kirishima-onsen-market','46-P0016':'izumi-fumoto-samurai-residences','46-P0017':'izumi-crane-observation-center','46-P0020':'cape-sata','46-P0021':'kanoya-rose-garden',
+'46-P0023':'shiratani-unsuikyo','46-P0024':'jomon-sugi','46-P0025':'okono-taki','46-P0026':'yakusugi-land','46-P0028':'tomori-beach','46-P0029':'kinsakubaru-primeval-forest','46-P0030':'kuroshio-no-mori-mangrove-park','46-P0031':'honohoshi-beach',
 }
 
 FOOD_SLUGS={
@@ -167,6 +185,13 @@ FOOD_SLUGS={
 '37-F0001':'sanuki-udon','37-F0002':'shodoshima-somen','37-F0003':'shoyu-mame','37-F0004':'olive-beef','37-F0005':'wasanbon','37-F0006':'iriko-dashi','37-F0007':'honetsukidori',
 '38-F0001':'matsuyama-tai-meshi','38-F0002':'yawatahama-champon','38-F0003':'ehime-mikan','38-F0004':'uwajima-tai-meshi','38-F0005':'imabari-yakitori','38-F0006':'jakoten',
 '39-F0001':'katsuo-no-tataki','39-F0002':'nabeyaki-ramen','39-F0003':'tosa-akaushi','39-F0004':'tosa-jiro','39-F0005':'sawachi-ryori','39-F0006':'shimanto-unagi','39-F0007':'imo-kenpi',
+'40-F0001':'goma-saba','40-F0002':'mentaiko','40-F0003':'motsunabe','40-F0004':'mojiko-yaki-curry','40-F0005':'mizutaki','40-F0006':'yanagawa-unagi-seiromushi','40-F0007':'yame-cha','40-F0008':'hakata-ramen',
+'41-F0001':'takezaki-gani','41-F0002':'saga-beef','41-F0003':'sicilian-rice','41-F0004':'yobuko-ika-ikizukuri','41-F0005':'ureshino-onsen-yudofu','41-F0006':'ureshino-cha',
+'42-F0001':'castella','42-F0002':'goto-udon','42-F0003':'nagasaki-champon','42-F0004':'lemon-steak','42-F0005':'sara-udon','42-F0006':'sasebo-burger','42-F0007':'shippoku-ryori','42-F0008':'iki-beef','42-F0009':'turkish-rice',
+'43-F0001':'karashi-renkon','43-F0002':'kumamoto-ramen','43-F0003':'dago-jiru','43-F0004':'basashi','43-F0005':'amakusa-seafood','43-F0006':'aso-akaushi','43-F0007':'ikinari-dango','43-F0008':'taipien','43-F0009':'hitoyoshi-ayu',
+'44-F0001':'nakatsu-karaage','44-F0002':'ryukyu','44-F0003':'beppu-reimen','44-F0004':'bungo-beef','44-F0005':'seki-aji-seki-saba','44-F0006':'yaseuma','44-F0007':'jigoku-mushi','44-F0008':'toriten','44-F0009':'hita-yakisoba',
+'45-F0001':'nikumaki-onigiri','45-F0002':'miyazaki-karamen','45-F0003':'miyazaki-mango','45-F0004':'miyazaki-beef','45-F0005':'obiten','45-F0006':'cheese-manju','45-F0007':'chicken-nanban','45-F0008':'hyuganatsu','45-F0009':'hiyajiru',
+'46-F0001':'kagoshima-ramen','46-F0002':'kagoshima-kurobuta','46-F0003':'karukan','46-F0004':'keihan','46-F0005':'makurazaki-katsuo','46-F0006':'satsuma-age','46-F0007':'shirokuma','46-F0008':'yakushima-tobiuo','46-F0009':'chiran-cha','46-F0010':'kibinago-sashimi',
 }
 
 BRAND_REPLACEMENTS={
