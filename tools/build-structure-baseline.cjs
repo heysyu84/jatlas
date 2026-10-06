@@ -166,7 +166,7 @@ for(const file of imageFiles){
   let status='OBSOLETE_CANDIDATE';
   if(effective>0)status='ACTIVE';
   else if(strongRefs.length || registry || manifest)status='HOLD';
-  imageEntries.push({image,sha256,size:fs.statSync(file).size,status,effective:{placeIds,foodKeys,heroKeys},registry:registry?{placeId:registry.placeId??null,foodName:registry.foodName||'',source:registry.source||'',terms:registry.terms||'',author:registry.author||'}:null,manifest:manifest?{placeId:manifest.placeId??null,foodName:manifest.foodName||'',source:manifest.source||'',output:manifest.output||''}:null,references:refs});
+  imageEntries.push({image,sha256,size:fs.statSync(file).size,status,effective:{placeIds,foodKeys,heroKeys},registry:registry?{placeId:registry.placeId??null,foodName:registry.foodName||'',source:registry.source||'',terms:registry.terms||'',author:registry.author||''}:null,manifest:manifest?{placeId:manifest.placeId??null,foodName:manifest.foodName||'',source:manifest.source||'',output:manifest.output||''}:null,references:refs});
 }
 imageEntries.sort((a,b)=>a.image.localeCompare(b.image));
 
