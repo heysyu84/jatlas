@@ -331,7 +331,7 @@ def main():
     reg_path.write_text(prefix+json.dumps(registry,ensure_ascii=False,indent=2)+';\n')
 
     html=(DIST/'index.html').read_text()
-    html=re.sub(r'photo-registry-data\.js\?v=[^"]+','photo-registry-data.js?v=20261006-tohoku1',html)
+    html=re.sub(r'photo-registry-data\.js\?v=[^"]+','photo-registry-data.js?v=20261006-canonical-names1',html)
     html=re.sub(r'photo-registry\.js\?v=[^"]+','photo-registry.js?v=20261006-tohoku1',html)
     (DIST/'index.html').write_text(html)
 
