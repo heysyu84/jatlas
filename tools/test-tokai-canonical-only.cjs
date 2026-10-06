@@ -29,6 +29,7 @@ const {ctx,result}=require('./audit-content.cjs');
 try{fs.unlinkSync(tmp)}catch{}
 const clean=s=>String(s||'').replace(/^\.\//,'').split(/[?#]/)[0];
 const byLegacy=new Map(places.map(r=>[Number(r.legacyId),r]));
+const canonicalMap=vm.runInContext('globalThis.JATLAS_MAP_CANONICAL||{}',ctx);
 const tokaiPlaces=result.places.filter(p=>prefs.has(p.pref));
 if(tokaiPlaces.length!==83)throw Error('Runtime Tokai place count mismatch: '+tokaiPlaces.length);
 let mapChecks=0;
@@ -36,9 +37,16 @@ for(const p of tokaiPlaces){
   const r=byLegacy.get(Number(p.id)); if(!r)throw Error('Missing registry place '+p.id+' '+p.name);
   if(clean(p.photo?.src)!==r.image)throw Error('Legacy/noncanonical runtime place photo '+p.id+' '+p.name+' :: '+clean(p.photo?.src));
   if(!fs.existsSync(path.join(dist,r.image)))throw Error('Runtime canonical place file missing '+r.image);
-  const embed=new URL(p.mapEmbed),external=new URL(p.mapExternal);
-  if(embed.searchParams.get('q')!==p.mapQuery)throw Error('Tokai map query mismatch '+p.id);
-  if(external.searchParams.get('q')!==p.mapQuery)throw Error('Tokai external map query mismatch '+p.id);
+  const embed=new URL(p.mapEmbed),external=new URL(p.mapExternal),c=canonicalMap[p.id];
+  if(!c)throw Error('Missing Tokai canonical map target '+p.id);
+  if(embed.searchParams.get('q')!==`${c.lat},${c.lon}`)throw Error('Tokai canonical map coordinate mismatch '+p.id);
+  if(c.coordinateOnly){
+    if(external.searchParams.get('q')!==`${c.lat},${c.lon}`)throw Error('Tokai external coordinate mismatch '+p.id);
+  }else if(c.placeId){
+    if(external.searchParams.get('query_place_id')!==c.placeId)throw Error('Tokai external place id mismatch '+p.id);
+  }else if(c.cid){
+    if(external.searchParams.get('cid')!==String(c.cid))throw Error('Tokai external cid mismatch '+p.id);
+  }else throw Error('Tokai canonical external strategy missing '+p.id);
   if(embed.searchParams.get('output')!=='embed'||external.searchParams.has('output'))throw Error('Tokai map mode mismatch '+p.id);
   mapChecks++;
 }
