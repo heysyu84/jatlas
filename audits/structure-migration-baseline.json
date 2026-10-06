@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "f4d0e5af49e27613716373747139c6f23199760c",
-  "generatedAt": "2026-10-06T00:17:23.048Z",
+  "sourceCommit": "a4d541e5237f56dbb26b674360b3eb88240f16f5",
+  "generatedAt": "2026-10-06T00:20:27.839Z",
   "purpose": "Freeze the effective current runtime before Jatlas image/data folder migration. No file in OBSOLETE_CANDIDATE is safe to delete until a later post-migration zero-reference verification.",
   "rules": {
     "active": "Effective runtime uses this photo and no source/path conflict was detected for the place.",
@@ -13,11 +13,11 @@
   "counts": {
     "places": 1138,
     "foods": 346,
-    "placePhotosActive": 1084,
-    "placePhotosHold": 54,
-    "imagesTotal": 1574,
-    "imagesActive": 1438,
-    "imagesHold": 131,
+    "placePhotosActive": 1136,
+    "placePhotosHold": 2,
+    "imagesTotal": 1635,
+    "imagesActive": 1496,
+    "imagesHold": 134,
     "imagesObsoleteCandidates": 5,
     "duplicateImageGroups": 2,
     "duplicateLegacyIdGroups": 0
@@ -25,356 +25,6 @@
   "issues": {
     "duplicateLegacyIds": [],
     "holdPlaces": [
-      {
-        "legacyId": 4003,
-        "newId": "01-P0004",
-        "pref": "홋카이도",
-        "name": "홋카이도 신궁",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/hokkaido-shrine-4003.webp"
-      },
-      {
-        "legacyId": 4024,
-        "newId": "01-P0025",
-        "pref": "홋카이도",
-        "name": "소운쿄·구로다케 로프웨이",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/hokkaido-kurodake-ropeway-4024.webp"
-      },
-      {
-        "legacyId": 4103,
-        "newId": "02-P0004",
-        "pref": "아오모리",
-        "name": "산나이마루야마 유적",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/aomori-sannai-4103.webp"
-      },
-      {
-        "legacyId": 4113,
-        "newId": "02-P0014",
-        "pref": "아오모리",
-        "name": "히로사키시 사과공원",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/aomori-hirosaki-apple-4113.webp"
-      },
-      {
-        "legacyId": 4203,
-        "newId": "03-P0004",
-        "pref": "이와테",
-        "name": "호온지 오백나한",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/iwate-hoonji-rakan-4203.webp"
-      },
-      {
-        "legacyId": 4214,
-        "newId": "03-P0015",
-        "pref": "이와테",
-        "name": "게이비케이",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/iwate-geibikei-4214.webp"
-      },
-      {
-        "legacyId": 4221,
-        "newId": "03-P0022",
-        "pref": "이와테",
-        "name": "갓파부치",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/iwate-kappabuchi-4221.webp"
-      },
-      {
-        "legacyId": 4224,
-        "newId": "03-P0025",
-        "pref": "이와테",
-        "name": "류센도",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/iwate-ryusendo-lake-4224.webp"
-      },
-      {
-        "legacyId": 4408,
-        "newId": "05-P0009",
-        "pref": "아키타",
-        "name": "아오야기가",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/akita-aoyagi-house-4408.webp"
-      },
-      {
-        "legacyId": 4414,
-        "newId": "05-P0015",
-        "pref": "아키타",
-        "name": "오야스쿄 대분탕",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/akita-oyasukyo-steam-4414.webp"
-      },
-      {
-        "legacyId": 4417,
-        "newId": "05-P0018",
-        "pref": "아키타",
-        "name": "아키타견 회관",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/akita-inu-kaikan-4417.webp"
-      },
-      {
-        "legacyId": 4504,
-        "newId": "06-P0005",
-        "pref": "야마가타",
-        "name": "자오 로프웨이·수빙",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/yamagata-zao-ice-monsters-4504.webp"
-      },
-      {
-        "legacyId": 5201,
-        "newId": "07-P0002",
-        "pref": "후쿠시마",
-        "name": "반다이아즈마 스카이라인·조도다이라",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/fukushima-jododaira-5201.webp"
-      },
-      {
-        "legacyId": 5205,
-        "newId": "07-P0006",
-        "pref": "후쿠시마",
-        "name": "아이즈 사자에도",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/fukushima-sazaedo-5205.webp"
-      },
-      {
-        "legacyId": 5219,
-        "newId": "07-P0020",
-        "pref": "후쿠시마",
-        "name": "시오야사키 등대",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/fukushima-shioyasaki-5219.webp"
-      },
-      {
-        "legacyId": 1208,
-        "newId": "08-P0009",
-        "pref": "이바라키",
-        "name": "우시쿠 대불",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp"
-      },
-      {
-        "legacyId": 1314,
-        "newId": "09-P0015",
-        "pref": "도치기",
-        "name": "류즈 폭포",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/tochigi-ryuzu-1314.webp"
-      },
-      {
-        "legacyId": 1408,
-        "newId": "10-P0009",
-        "pref": "군마",
-        "name": "시마 온천",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/gunma-shima-onsen-1408.webp"
-      },
-      {
-        "legacyId": 1409,
-        "newId": "10-P0010",
-        "pref": "군마",
-        "name": "다카사키 백의대관음",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/gunma-takasaki-kannon-1409.webp"
-      },
-      {
-        "legacyId": 507,
-        "newId": "11-P0008",
-        "pref": "사이타마",
-        "name": "철도박물관",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/saitama-railway-museum-507.webp"
-      },
-      {
-        "legacyId": 518,
-        "newId": "11-P0019",
-        "pref": "사이타마",
-        "name": "수도권 외곽방수로",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/saitama-g-cans-518.webp"
-      },
-      {
-        "legacyId": 711,
-        "newId": "14-P0012",
-        "pref": "가나가와",
-        "name": "하코네 신사",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kanagawa-hakone-heiwa-711.webp"
-      },
-      {
-        "legacyId": 717,
-        "newId": "14-P0018",
-        "pref": "가나가와",
-        "name": "요코하마 마린타워",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kanagawa-marine-tower-717.webp"
-      },
-      {
-        "legacyId": 720,
-        "newId": "14-P0021",
-        "pref": "가나가와",
-        "name": "엔가쿠지",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kanagawa-engakuji-720.webp"
-      },
-      {
-        "legacyId": 726,
-        "newId": "14-P0027",
-        "pref": "가나가와",
-        "name": "폴라 미술관",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kanagawa-pola-02-726.webp"
-      },
-      {
-        "legacyId": 4721,
-        "newId": "16-P0022",
-        "pref": "도야마",
-        "name": "호타루이카 해상관광",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/toyama-hotaruika-sea-tour-4721.webp"
-      },
-      {
-        "legacyId": 4809,
-        "newId": "17-P0010",
-        "pref": "이시카와",
-        "name": "나타데라",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/ishikawa-natadera-4809.webp"
-      },
-      {
-        "legacyId": 4819,
-        "newId": "17-P0020",
-        "pref": "이시카와",
-        "name": "후쿠베 대폭포",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/ishikawa-fukube-4819.webp"
-      },
-      {
-        "legacyId": 5107,
-        "newId": "19-P0015",
-        "pref": "야마나시",
-        "name": "사이코 이야시노사토 넨바",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/yamanashi-iyashinosato-5107.webp"
-      },
-      {
-        "legacyId": 5112,
-        "newId": "19-P0020",
-        "pref": "야마나시",
-        "name": "쇼센쿄",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/yamanashi-shosenkyo-5112.webp"
-      },
-      {
-        "legacyId": 5003,
-        "newId": "20-P0004",
-        "pref": "나가노",
-        "name": "지고쿠다니 야생원숭이공원",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/nagano-jigokudani-hotspring-5003.webp"
-      },
-      {
-        "legacyId": 5004,
-        "newId": "20-P0005",
-        "pref": "나가노",
-        "name": "시부 온천",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/nagano-shibu-kanaguya-5004.webp"
-      },
-      {
-        "legacyId": 5007,
-        "newId": "20-P0008",
-        "pref": "나가노",
-        "name": "가미코치",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/nagano-kamikochi-5007.webp"
-      },
-      {
-        "legacyId": 911,
-        "newId": "21-P0013",
-        "pref": "기후",
-        "name": "세키가하라 고전장",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/gifu-sekigahara-overview-911.webp"
-      },
-      {
-        "legacyId": 923,
-        "newId": "21-P0018",
-        "pref": "기후",
-        "name": "세키가하라 고전장 결전지",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/gifu-sekigahara-decisive-923.webp"
-      },
       {
         "legacyId": 2314,
         "newId": "34-P0015",
@@ -386,46 +36,6 @@
         "src": "images/commons/f32f14f7388acedd.webp"
       },
       {
-        "legacyId": 2601,
-        "newId": "37-P0002",
-        "pref": "가가와",
-        "name": "다카마쓰성터·다마모공원",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kagawa-takamatsu-castle-2601.webp"
-      },
-      {
-        "legacyId": 2608,
-        "newId": "37-P0009",
-        "pref": "가가와",
-        "name": "다카야 신사·천공의 도리이",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kagawa-takaya-shrine-2608.webp"
-      },
-      {
-        "legacyId": 2612,
-        "newId": "37-P0013",
-        "pref": "가가와",
-        "name": "이에프로젝트·혼무라",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/kagawa-naoshima-haisha-2612.webp"
-      },
-      {
-        "legacyId": 2613,
-        "newId": "37-P0014",
-        "pref": "가가와",
-        "name": "데시마 미술관",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kagawa-teshima-art-2613.webp"
-      },
-      {
         "legacyId": 2704,
         "newId": "38-P0005",
         "pref": "에히메",
@@ -434,136 +44,6 @@
           "shared-active-place-image"
         ],
         "src": "images/commons/f32f14f7388acedd.webp"
-      },
-      {
-        "legacyId": 2802,
-        "newId": "39-P0003",
-        "pref": "고치",
-        "name": "가쓰라하마",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kochi-katsurahama-2802.webp"
-      },
-      {
-        "legacyId": 2906,
-        "newId": "40-P0007",
-        "pref": "후쿠오카",
-        "name": "난조인",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/fukuoka-nanzoin-37986553175.webp"
-      },
-      {
-        "legacyId": 2908,
-        "newId": "40-P0009",
-        "pref": "후쿠오카",
-        "name": "게야노오토",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/fukuoka-keya-oto-424.webp"
-      },
-      {
-        "legacyId": 2911,
-        "newId": "40-P0012",
-        "pref": "후쿠오카",
-        "name": "오시마·무나카타타이샤 나카쓰구",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/fukuoka-nakatsumiya-429.webp"
-      },
-      {
-        "legacyId": 2914,
-        "newId": "40-P0015",
-        "pref": "후쿠오카",
-        "name": "사라쿠라산",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/fukuoka-sarakura-193.webp"
-      },
-      {
-        "legacyId": 3103,
-        "newId": "42-P0004",
-        "pref": "나가사키",
-        "name": "평화공원·평화기념상",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/nagasaki-peace-statue-3103.webp"
-      },
-      {
-        "legacyId": 3201,
-        "newId": "43-P0002",
-        "pref": "구마모토",
-        "name": "사쿠라노바바 조사이엔",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/kumamoto-josaien-selected-03-3201.webp"
-      },
-      {
-        "legacyId": 3202,
-        "newId": "43-P0003",
-        "pref": "구마모토",
-        "name": "스이젠지 조주엔",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kumamoto-suizenji-pond-3202.webp"
-      },
-      {
-        "legacyId": 3203,
-        "newId": "43-P0004",
-        "pref": "구마모토",
-        "name": "구마몬 스퀘어",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kumamoto-kumamon-square-24086051195.webp"
-      },
-      {
-        "legacyId": 3409,
-        "newId": "45-P0010",
-        "pref": "미야자키",
-        "name": "도이미사키",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/official/miyazaki-toi-472.webp"
-      },
-      {
-        "legacyId": 3506,
-        "newId": "46-P0007",
-        "pref": "가고시마",
-        "name": "모래찜회관 사라쿠",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kagoshima-saraku-3506.webp"
-      },
-      {
-        "legacyId": 3525,
-        "newId": "46-P0026",
-        "pref": "가고시마",
-        "name": "야쿠스기랜드",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kagoshima-yakusugi-land-3525.webp"
-      },
-      {
-        "legacyId": 3530,
-        "newId": "46-P0031",
-        "pref": "가고시마",
-        "name": "호노호시해안",
-        "flags": [
-          "missing-local-file"
-        ],
-        "src": "images/licensed/kagoshima-honohoshi-3530.webp"
       }
     ]
   },
@@ -660,13 +140,11 @@
       "town": "삿포로시",
       "name": "홋카이도 신궁",
       "mapQuery": "北海道 北海道神宮",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/hokkaido-shrine-4003.webp",
-        "sha256": "",
+        "sha256": "f643a31be32911d4eb33b6968e716672aa30328efcc6bd542748db3558bbdc95",
         "source": "https://commons.wikimedia.org/wiki/File:(JPN-Hokkaido)_Hokkaido_Shrine_2026-06-06.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/4.0/",
@@ -1229,13 +707,11 @@
       "town": "가미카와정",
       "name": "소운쿄·구로다케 로프웨이",
       "mapQuery": "北海道 層雲峡・黒岳ロープウェイ",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/hokkaido-kurodake-ropeway-4024.webp",
-        "sha256": "",
+        "sha256": "300b0bc7b733ca92ca065e99a3d9eed65adb1ff3906d320a2aa1be7241f2c6b9",
         "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E5%B2%B3%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4_-_panoramio.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/3.0",
@@ -1798,13 +1274,11 @@
       "town": "아오모리시",
       "name": "산나이마루야마 유적",
       "mapQuery": "青森県 三内丸山遺跡",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/aomori-sannai-4103.webp",
-        "sha256": "",
+        "sha256": "5fe52ed0cc92d0d3e7c3ec8b39530f39ad5ce18ac3b05494d6227277ae32b03d",
         "source": "https://www.tohokukanko.jp/photos/detail_2208.html",
         "author": "",
         "terms": "https://www.tohokukanko.jp/photos/detail_2208.html",
@@ -2070,13 +1544,11 @@
       "town": "히로사키시",
       "name": "히로사키시 사과공원",
       "mapQuery": "青森県 弘前市りんご公園",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/aomori-hirosaki-apple-4113.webp",
-        "sha256": "",
+        "sha256": "ae4bacfa572a8fa5191753a722f585c2ea0cbfcfe9dd155dd6a8d59a4e7c2178",
         "source": "https://aomori-tourism.com/photos/detail_7268.html",
         "author": "",
         "terms": "https://aomori-tourism.com/photos/detail_7268.html",
@@ -2639,13 +2111,11 @@
       "town": "모리오카시",
       "name": "호온지 오백나한",
       "mapQuery": "岩手県 報恩寺 五百羅漢",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/iwate-hoonji-rakan-4203.webp",
-        "sha256": "",
+        "sha256": "b580cf0586d0a8282bc7e1396dd8fd32729af159ad4af5df238d93b76ca0f665",
         "source": "https://commons.wikimedia.org/wiki/File:ArhatsMorioka.JPG",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -2938,13 +2408,11 @@
       "town": "이치노세키시",
       "name": "게이비케이",
       "mapQuery": "岩手県 猊鼻渓",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/iwate-geibikei-4214.webp",
-        "sha256": "",
+        "sha256": "fc97f41745df469db1615c8b4fe8868f7648352c5dd10995219ad713305fde55",
         "source": "https://commons.wikimedia.org/wiki/File:230729_Geibikei_Ichinoseki_Iwate_pref_Japan04s3.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -3129,13 +2597,11 @@
       "town": "도노시",
       "name": "갓파부치",
       "mapQuery": "岩手県 カッパ淵",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/iwate-kappabuchi-4221.webp",
-        "sha256": "",
+        "sha256": "ce8afb0689a783bcf4cc76958a7dd4c32f7f02ec67a0864a949ece59b2ca97a9",
         "source": "https://commons.wikimedia.org/wiki/File:Kappa-buchi02s3872.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/2.5/",
@@ -3212,13 +2678,11 @@
       "town": "이와이즈미정",
       "name": "류센도",
       "mapQuery": "岩手県 龍泉洞",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/iwate-ryusendo-lake-4224.webp",
-        "sha256": "",
+        "sha256": "926448f23f0cb4a040bcbbf8d75e2591af6b588ae9a76118e30dd49abcc646fa",
         "source": "https://commons.wikimedia.org/wiki/File:Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg",
         "author": "",
         "terms": "https://commons.wikimedia.org/wiki/File:Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg",
@@ -4321,13 +3785,11 @@
       "town": "센보쿠시",
       "name": "아오야기가",
       "mapQuery": "秋田県 青柳家",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/akita-aoyagi-house-4408.webp",
-        "sha256": "",
+        "sha256": "7e773afb6b7f8edc07d4287f593449bc2a974b56e18a91f13ec49c039ff6ec1a",
         "source": "https://commons.wikimedia.org/wiki/File:Aoyagi_Samurai_House,_Kakunodate,_April_2023_01.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -4485,13 +3947,11 @@
       "town": "유자와시",
       "name": "오야스쿄 대분탕",
       "mapQuery": "秋田県 小安峡大噴湯",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/akita-oyasukyo-steam-4414.webp",
-        "sha256": "",
+        "sha256": "8ba8b0ecd7fec9ad6e29c8df9c7d8e60b46fd2e2740f92f662fa89511b572691",
         "source": "https://commons.wikimedia.org/wiki/File:Oyasukyo3.JPG",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/3.0/",
@@ -4568,13 +4028,11 @@
       "town": "오다테시",
       "name": "아키타견 회관",
       "mapQuery": "秋田県 秋田犬会館",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/akita-inu-kaikan-4417.webp",
-        "sha256": "",
+        "sha256": "cd12b7f15e37c4e8ec73d8700196cc153f97e2902d6b00e50c4d0759f7d8f364",
         "source": "https://commons.wikimedia.org/wiki/File:Akita-Inu-Kaikan_110827.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -4867,13 +4325,11 @@
       "town": "야마가타시",
       "name": "자오 로프웨이·수빙",
       "mapQuery": "山形県 蔵王ロープウェイ 樹氷",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/yamagata-zao-ice-monsters-4504.webp",
-        "sha256": "",
+        "sha256": "51d9c0206c1718564e58d145cda0acd558abc855a6dccf8f3f933274f0362a19",
         "source": "https://commons.wikimedia.org/wiki/File:Mt.Zao_-_Ice_monsters_field_-_panoramio.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -5436,13 +4892,11 @@
       "town": "후쿠시마시",
       "name": "반다이아즈마 스카이라인·조도다이라",
       "mapQuery": "福島県 磐梯吾妻スカイライン 浄土平",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/fukushima-jododaira-5201.webp",
-        "sha256": "",
+        "sha256": "156d909ac6590d6558147405d37b995fbebf5780277b8c324e7d09b29189f255",
         "source": "https://commons.wikimedia.org/wiki/File:Joudodaira.JPG",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/3.0/",
@@ -5546,13 +5000,11 @@
       "town": "아이즈와카마쓰시",
       "name": "아이즈 사자에도",
       "mapQuery": "福島県 会津さざえ堂",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/fukushima-sazaedo-5205.webp",
-        "sha256": "",
+        "sha256": "ad30a783254ef280ecbbd9bf3dc8482434ada04ec3f3b397273b25fb8e4ab963",
         "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%9A%E6%B4%A5%E3%81%95%E3%81%96%E3%81%88%E5%A0%82_(%E5%86%86%E9%80%9A%E4%B8%89%E5%8C%9D%E5%A0%82)20200208-IMG_7847.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/4.0/",
@@ -5926,13 +5378,11 @@
       "town": "이와키시",
       "name": "시오야사키 등대",
       "mapQuery": "福島県 塩屋埼灯台",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/fukushima-shioyasaki-5219.webp",
-        "sha256": "",
+        "sha256": "82fdf554a0e34442aa07bf37d7b3ac2c60a92ae2a7a4315b1029ae76a61ed041",
         "source": "https://commons.wikimedia.org/wiki/File:Shioyasaki_Light_House_(13332232033).jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/2.0/",
@@ -6279,13 +5729,11 @@
       "town": "우시쿠시",
       "name": "우시쿠 대불",
       "mapQuery": "茨城県 牛久市 牛久大仏",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/ibaraki-ushiku-daibutsu-1208.webp",
-        "sha256": "",
+        "sha256": "a6f5dc24efc2d5e85d9304d441f47264fa1acf7ac82eff4a34d095485687e38c",
         "source": "https://commons.wikimedia.org/wiki/File:Okiku_Daibutsu_Cherry_Blossoms.jpg",
         "author": "",
         "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -6875,13 +6323,11 @@
       "town": "닛코시",
       "name": "류즈 폭포",
       "mapQuery": "栃木県日光市 竜頭ノ滝",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/tochigi-ryuzu-1314.webp",
-        "sha256": "",
+        "sha256": "91fe97e096690ce1c6b9db436868220e20097da6647e56b576dadd767cf0bedb",
         "source": "https://commons.wikimedia.org/wiki/File:Ryuzu_Falls_01.JPG",
         "author": "",
         "terms": "https://commons.wikimedia.org/wiki/File:Ryuzu_Falls_01.JPG",
@@ -7228,13 +6674,11 @@
       "town": "나카노조정",
       "name": "시마 온천",
       "mapQuery": "群馬県 中之条町 四万温泉",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/gunma-shima-onsen-1408.webp",
-        "sha256": "",
+        "sha256": "1881a36fcc0c426f91b5bd24fb360c435d065faafb8a138ca22a93cf4eec6f27",
         "source": "https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_(9993444756).jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/2.0/",
@@ -7257,13 +6701,11 @@
       "town": "다카사키시",
       "name": "다카사키 백의대관음",
       "mapQuery": "群馬県 高崎市 白衣大観音",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/gunma-takasaki-kannon-1409.webp",
-        "sha256": "",
+        "sha256": "02ec68bcaa289db9e98617f9d86c0c67647c62513cb50083b353b66f4cd23bf8",
         "source": "https://commons.wikimedia.org/wiki/File:Byakui_Kannon_-_Takasaki_city_-_panoramio.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -7637,13 +7079,11 @@
       "town": "사이타마시",
       "name": "철도박물관",
       "mapQuery": "埼玉県 さいたま市 鉄道博物館",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/saitama-railway-museum-507.webp",
-        "sha256": "",
+        "sha256": "9adcc34cb0b37787aac5e0057647baf5b404d5a4867ee122014c566610956dda",
         "source": "https://commons.wikimedia.org/wiki/File:The_Railway_Museum_20080614.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/2.0/",
@@ -7936,13 +7376,11 @@
       "town": "가스카베시",
       "name": "수도권 외곽방수로",
       "mapQuery": "埼玉県春日部市 首都圏外郭放水路",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/saitama-g-cans-518.webp",
-        "sha256": "",
+        "sha256": "6258683088090f70c0d3ba0b733f83b25ecb89ed135b7e862e827ef367e88266",
         "source": "https://commons.wikimedia.org/wiki/File:首都圏外郭放水路(調圧水槽と立坑).jpg",
         "author": "",
         "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -10557,13 +9995,11 @@
       "town": "하코네마치",
       "name": "하코네 신사",
       "mapQuery": "神奈川 箱根町 箱根神社",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kanagawa-hakone-heiwa-711.webp",
-        "sha256": "",
+        "sha256": "5b40f0cacef87449a2567a5be548d7da359cb0a9e4fefac5820f2deed9945e37",
         "source": "https://commons.wikimedia.org/wiki/File:%E7%AE%B1%E6%A0%B9%E7%A5%9E%E7%A4%BE_%E5%B9%B3%E5%92%8C%E3%81%AE%E9%B3%A5%E5%B1%85,_%E7%AE%B1%E6%A0%B9%E7%94%BA,_Japan_(Unsplash).jpg",
         "author": "",
         "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -10721,13 +10157,11 @@
       "town": "요코하마시",
       "name": "요코하마 마린타워",
       "mapQuery": "横浜マリンタワー",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kanagawa-marine-tower-717.webp",
-        "sha256": "",
+        "sha256": "72afb3447ec06ad6d61cd0791a08c569dfd1e6a45691c94620a976ab289095b6",
         "source": "https://commons.wikimedia.org/wiki/File:Hikawamaru_from_Osanbashi_Pier.JPG",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -10804,13 +10238,11 @@
       "town": "가마쿠라시",
       "name": "엔가쿠지",
       "mapQuery": "鎌倉 円覚寺",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kanagawa-engakuji-720.webp",
-        "sha256": "",
+        "sha256": "098427335882f10e269ea7ed82e6c7c81697d789058ba57e6e8926c6a4714b12",
         "source": "https://commons.wikimedia.org/wiki/File:Engaku-ji_(36530160165).jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/2.0/",
@@ -10968,13 +10400,11 @@
       "town": "하코네마치",
       "name": "폴라 미술관",
       "mapQuery": "神奈川県箱根町 ポーラ美術館",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kanagawa-pola-02-726.webp",
-        "sha256": "",
+        "sha256": "d10c1c340c8269cd1b43a4f9828c1bbbe3eb2951ca368da2a51796a54f1c25f0",
         "source": "https://commons.wikimedia.org/wiki/File:191103_Pola_Museum_of_Art_Hakone_Japan02s3.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/2.5/",
@@ -12239,13 +11669,11 @@
       "town": "나메리카와시",
       "name": "호타루이카 해상관광",
       "mapQuery": "富山県 ほたるいか海上観光",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/toyama-hotaruika-sea-tour-4721.webp",
-        "sha256": "",
+        "sha256": "b22b72246803d9367400b5879933e040dfc49e033564a5b83c8cc43d231d43d3",
         "source": "https://prtimes.jp/main/html/rd/p/000000002.000149148.html",
         "author": "",
         "terms": "https://prtimes.jp/main/html/rd/p/000000002.000149148.html",
@@ -12538,13 +11966,11 @@
       "town": "가가시",
       "name": "나타데라",
       "mapQuery": "石川県 那谷寺",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/ishikawa-natadera-4809.webp",
-        "sha256": "",
+        "sha256": "1aee50fb0e46563f9d39052dc9f1b00809e6107c99966323e8e6fe33bee5ee47",
         "source": "https://commons.wikimedia.org/wiki/File:260719_Natadera_Komatsu_Ishikawa_pref_Japan16s4.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -12810,13 +12236,11 @@
       "town": "하쿠산시",
       "name": "후쿠베 대폭포",
       "mapQuery": "石川県 ふくべの大滝",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/ishikawa-fukube-4819.webp",
-        "sha256": "",
+        "sha256": "ee932e84b046e86c8fea137e55713c7a1225502155f1fe6e49e7e13ff1816113",
         "source": "https://www.hot-ishikawa.jp/photo/detail_1111114178.html",
         "author": "",
         "terms": "https://faq.hot-ishikawa.jp/%E7%9F%B3%E5%B7%9D%E7%9C%8C%E8%A6%B3%E5%85%89%E5%86%99%E7%9C%9F%E3%81%AE%E5%88%A9%E7%94%A8%E3%83%AB%E3%83%BC%E3%83%AB-67efa3b4aa51efad14aee421",
@@ -13973,13 +13397,11 @@
       "town": "후지카와구치코정",
       "name": "사이코 이야시노사토 넨바",
       "mapQuery": "山梨県 西湖いやしの里根場",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/yamanashi-iyashinosato-5107.webp",
-        "sha256": "",
+        "sha256": "160424fb0d7ea0674495c48885ef59f0ec0440efbd66c8209e334326f91a3972",
         "source": "https://commons.wikimedia.org/wiki/File:Iyashinosato_village_04.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -14110,13 +13532,11 @@
       "town": "고후시",
       "name": "쇼센쿄",
       "mapQuery": "山梨県 昇仙峡",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/yamanashi-shosenkyo-5112.webp",
-        "sha256": "",
+        "sha256": "515c95b0ff87954e910038e1086905839f0956fd2ac262539bc2fc2dbb83b985",
         "source": "https://commons.wikimedia.org/wiki/File:Yamanashi_Shosenkyo_xl.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/4.0/",
@@ -14517,13 +13937,11 @@
       "town": "야마노우치정",
       "name": "지고쿠다니 야생원숭이공원",
       "mapQuery": "長野県 地獄谷野猿公苑",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/nagano-jigokudani-hotspring-5003.webp",
-        "sha256": "",
+        "sha256": "73c49d6fa49d76c98d9d78d587333d83ed2eaf26f6550b991b29cea806da08bc",
         "source": "https://commons.wikimedia.org/wiki/File:Jigokudani_hotspring_in_Nagano_Japan_001.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -14546,13 +13964,11 @@
       "town": "야마노우치정",
       "name": "시부 온천",
       "mapQuery": "長野県 渋温泉",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/nagano-shibu-kanaguya-5004.webp",
-        "sha256": "",
+        "sha256": "336c72362ab05fada642cc030473969de4d7a402e080aba2cce9c5d5f53c4991",
         "source": "https://www.flickr.com/photos/clvs7/49453787357/",
         "author": "clvs7",
         "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -14629,13 +14045,11 @@
       "town": "마쓰모토시",
       "name": "가미코치",
       "mapQuery": "長野県 上高地",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/nagano-kamikochi-5007.webp",
-        "sha256": "",
+        "sha256": "4534976f08e4aaecebcfa61f777eeca2b223b5c88422b34a51bb693603b507e6",
         "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E9%AB%98%E5%9C%B0_07.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -15414,13 +14828,11 @@
       "town": "세키가하라정",
       "name": "세키가하라 고전장",
       "mapQuery": "岐阜県関ケ原町 関ケ原古戦場",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/gifu-sekigahara-overview-911.webp",
-        "sha256": "",
+        "sha256": "c63748c7db86068b75ad482b2e4fe3900e9dec01b2351f1eea20d416ca9f3c0e",
         "source": "https://commons.wikimedia.org/wiki/File:View_of_Sekigahara_from_Sasaoyama,_site_of_Ishida_Mitsunari%27s_headquarters.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -15551,13 +14963,11 @@
       "town": "세키가하라정",
       "name": "세키가하라 고전장 결전지",
       "mapQuery": "岐阜県関ケ原町 関ケ原古戦場 決戦地",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/gifu-sekigahara-decisive-923.webp",
-        "sha256": "",
+        "sha256": "26aa87ec8b99830c55837e8277a559ee2b3746b38a391287852b07291e0cb81e",
         "source": "https://commons.wikimedia.org/wiki/File:The-Battlefield-of-Sekigahara-1.jpg",
         "author": "",
         "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -23844,13 +23254,11 @@
       "town": "다카마쓰시",
       "name": "다카마쓰성터·다마모공원",
       "mapQuery": "高松城跡 玉藻公園",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kagawa-takamatsu-castle-2601.webp",
-        "sha256": "",
+        "sha256": "fe1cabc08d61327ea74dcf697d25bd9369218307ebc2d45db966c504e8091891",
         "source": "https://commons.wikimedia.org/wiki/File:Takamatsu_Castle_-_Tamamo_Park_20211125_08.jpg",
         "author": "",
         "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -24035,13 +23443,11 @@
       "town": "간온지시",
       "name": "다카야 신사·천공의 도리이",
       "mapQuery": "高屋神社 天空の鳥居",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kagawa-takaya-shrine-2608.webp",
-        "sha256": "",
+        "sha256": "38cf5f91ec530d7d674f2a1aa596253144fc4f56004d561b6814c729e0b86eed",
         "source": "https://commons.wikimedia.org/wiki/File:Takayajinja_20200407_02.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -24145,13 +23551,11 @@
       "town": "나오시마초",
       "name": "이에프로젝트·혼무라",
       "mapQuery": "直島 家プロジェクト 本村",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/kagawa-naoshima-haisha-2612.webp",
-        "sha256": "",
+        "sha256": "6c36a16403106fa3f7f14da30aa8b40032efed17436c33884be42b005f35d13f",
         "source": "https://www.benesse-artsite.jp/art/arthouse.html",
         "author": "",
         "terms": "https://www.benesse-artsite.jp/",
@@ -24174,13 +23578,11 @@
       "town": "도노쇼초",
       "name": "데시마 미술관",
       "mapQuery": "豊島美術館",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kagawa-teshima-art-2613.webp",
-        "sha256": "",
+        "sha256": "ea3ca656550c2844a3a58d6de52f5d185cd0bddde8e9d940bb43ac4ee6a967fa",
         "source": "https://commons.wikimedia.org/wiki/File:Teshima_Art_Museum_exterior_view_201310.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by/2.0/",
@@ -24934,13 +24336,11 @@
       "town": "고치시",
       "name": "가쓰라하마",
       "mapQuery": "桂浜 高知",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kochi-katsurahama-2802.webp",
-        "sha256": "",
+        "sha256": "d10de13b28320b9ccd19faf64f83f0660057ea53c481444f8d219eac2a7f1e90",
         "source": "https://commons.wikimedia.org/wiki/File:Katsurahama.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -25557,13 +24957,11 @@
       "town": "사사구리마치",
       "name": "난조인",
       "mapQuery": "南蔵院 篠栗",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/fukuoka-nanzoin-37986553175.webp",
-        "sha256": "",
+        "sha256": "f80160b13e0d547a12806ae6015fb0a66a5e356f6228f2f6219d0ba538088ffe",
         "source": "https://www.flickr.com/photos/traveloriented/37986553175/",
         "author": "traveloriented",
         "terms": "https://creativecommons.org/licenses/by-sa/2.0/",
@@ -25613,13 +25011,11 @@
       "town": "이토시마시",
       "name": "게야노오토",
       "mapQuery": "芥屋の大門",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/fukuoka-keya-oto-424.webp",
-        "sha256": "",
+        "sha256": "864826b03b2e767ef635e4c290e973ea5a0f0e871c876aa59e2b0821810ef2a0",
         "source": "https://www.crossroadfukuoka.jp/en/photo/424",
         "author": "",
         "terms": "https://www.crossroadfukuoka.jp/en/photo/guide",
@@ -25696,13 +25092,11 @@
       "town": "무나카타시 오시마",
       "name": "오시마·무나카타타이샤 나카쓰구",
       "mapQuery": "宗像大社 中津宮",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/fukuoka-nakatsumiya-429.webp",
-        "sha256": "",
+        "sha256": "15b951cb84f61d55511de3738d53a513e755050be02dbdc8c6d734b16dec4590",
         "source": "https://www.crossroadfukuoka.jp/en/photo/429",
         "author": "",
         "terms": "https://www.crossroadfukuoka.jp/en/photo/guide",
@@ -25779,13 +25173,11 @@
       "town": "기타큐슈시 야하타히가시구",
       "name": "사라쿠라산",
       "mapQuery": "皿倉山",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/fukuoka-sarakura-193.webp",
-        "sha256": "",
+        "sha256": "c86c61c7cc9343d527e47dcf48cb8aafd9bee423162373d798069615d4db441d",
         "source": "https://www.crossroadfukuoka.jp/en/photo/193",
         "author": "",
         "terms": "https://www.crossroadfukuoka.jp/en/photo/guide",
@@ -26699,13 +26091,11 @@
       "town": "나가사키시",
       "name": "평화공원·평화기념상",
       "mapQuery": "長崎平和公園",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/nagasaki-peace-statue-3103.webp",
-        "sha256": "",
+        "sha256": "1cd603b0cff6756fa952e917b9a90e4cfc1d6c9b43848cc5a99b28b21648c940",
         "source": "https://www.nagasaki-tabinet.com/guide/130/",
         "author": "",
         "terms": "https://www.nagasaki-tabinet.com/houjin/photo/guide",
@@ -27457,13 +26847,11 @@
       "town": "구마모토시 주오구",
       "name": "사쿠라노바바 조사이엔",
       "mapQuery": "桜の馬場 城彩苑",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/kumamoto-josaien-selected-03-3201.webp",
-        "sha256": "",
+        "sha256": "e2211ff2c1236b0f85ac107103975c54364f0ff0675ec30678aea2441ab231ae",
         "source": "https://kumamoto.guide/photogallery/",
         "author": "",
         "terms": "https://kumamoto.guide/ko/photogallery/detail/5562",
@@ -27486,13 +26874,11 @@
       "town": "구마모토시 주오구",
       "name": "스이젠지 조주엔",
       "mapQuery": "水前寺成趣園",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kumamoto-suizenji-pond-3202.webp",
-        "sha256": "",
+        "sha256": "6f4df2a0d33a2c45e843e504de6f2dbad071e7029b6a81264266c8c81afe8c86",
         "source": "https://commons.wikimedia.org/wiki/File:Suizen-ji_J%C5%8Dju-en_20230103-5.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -27515,13 +26901,11 @@
       "town": "구마모토시 주오구",
       "name": "구마몬 스퀘어",
       "mapQuery": "くまモンスクエア",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kumamoto-kumamon-square-24086051195.webp",
-        "sha256": "",
+        "sha256": "18607d7de858a1efb0b676892f6af770b5bd8daa51826c94f15768b6cb1a9a9c",
         "source": "https://www.flickr.com/photos/othree/24086051195/",
         "author": "othree",
         "terms": "https://creativecommons.org/licenses/by/2.0/",
@@ -29137,13 +28521,11 @@
       "town": "구시마시",
       "name": "도이미사키",
       "mapQuery": "都井岬",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/official/miyazaki-toi-472.webp",
-        "sha256": "",
+        "sha256": "88e1581e1d333d71152ba298a0a79907d9008053db6f05579061687860ee737a",
         "source": "https://www.kanko-miyazaki.jp/business/photo/472",
         "author": "",
         "terms": "https://www.kanko-miyazaki.jp/business/photo/guide",
@@ -29706,13 +29088,11 @@
       "town": "이부스키시",
       "name": "모래찜회관 사라쿠",
       "mapQuery": "砂むし会館 砂楽",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kagoshima-saraku-3506.webp",
-        "sha256": "",
+        "sha256": "3d3c366b133233f02192e94d64fd524100be22f309577d187608c4d6b283bab1",
         "source": "https://commons.wikimedia.org/wiki/File:Ibusuki-sand-bath_Saraku.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -30221,13 +29601,11 @@
       "town": "야쿠시마초",
       "name": "야쿠스기랜드",
       "mapQuery": "ヤクスギランド",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kagoshima-yakusugi-land-3525.webp",
-        "sha256": "",
+        "sha256": "6d05b59ddbe9f1616873dbf81c41e913785008e7987e611546430725cf33c7c6",
         "source": "https://commons.wikimedia.org/wiki/File:Suspension_footbridge_in_Yakusugi_Land.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -30358,13 +29736,11 @@
       "town": "세토우치초",
       "name": "호노호시해안",
       "mapQuery": "ホノホシ海岸",
-      "status": "HOLD",
-      "flags": [
-        "missing-local-file"
-      ],
+      "status": "ACTIVE",
+      "flags": [],
       "activePhoto": {
         "src": "images/licensed/kagoshima-honohoshi-3530.webp",
-        "sha256": "",
+        "sha256": "55b9b3c7d18a0192728e58e42c431856ef33b18ab12c5a7d8e205072a8399b1a",
         "source": "https://commons.wikimedia.org/wiki/File:Amami_island_Honohoshi_beach.jpg",
         "author": "",
         "terms": "https://creativecommons.org/licenses/by-sa/4.0/",
