@@ -31,6 +31,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node tools/regression-guard.cjs
 
+      - name: Setup Python for deploy-generated photo assets
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Prepare the same generated photos used by Pages
+        run: |
+          python -m pip install Pillow==11.3.0
+          python tools/prepare-official-photos.py
+
       - name: Build migration baseline
         run: node tools/build-structure-baseline.cjs
 
