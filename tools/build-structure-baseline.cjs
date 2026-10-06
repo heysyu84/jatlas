@@ -82,7 +82,20 @@ function readSourceRegistry() {
   const text = fs.readFileSync(file,'utf8').trim();
   const prefix = 'globalThis.JATLAS_PHOTO_SOURCE_REGISTRY=';
   if (!text.startsWith(prefix)) throw new Error('Unexpected photo-source-registry.js format');
-  return JSON.parse(text.slice(prefix.length).replace(/;\s*$/,''));
+  const registry = JSON.parse(text.slice(prefix.length).replace(/;\s*$/,''));
+  const canonicalFile = path.join(dist,'photo-registry-data.js');
+  if (fs.existsSync(canonicalFile)) {
+    const canonicalText = fs.readFileSync(canonicalFile,'utf8').trim();
+    const canonicalPrefix = 'globalThis.JATLAS_PHOTO_REGISTRY_DATA=';
+    if (canonicalText.startsWith(canonicalPrefix)) {
+      const canonical = JSON.parse(canonicalText.slice(canonicalPrefix.length).replace(/;\s*$/,''));
+      for (const r of [...Object.values(canonical.places||{}),...Object.values(canonical.foods||{})]) {
+        if (!r.image) continue;
+        registry[cleanSrc(r.image)] = {source:r.source||'',terms:r.terms||'',author:r.author||'',placeId:r.legacyId??null,foodName:r.name||'',canonicalId:r.canonicalId||'',userPhoto:!!r.userPhoto};
+      }
+    }
+  }
+  return registry;
 }
 function walk(dir, out=[]) {
   for (const e of fs.readdirSync(dir,{withFileTypes:true})) {

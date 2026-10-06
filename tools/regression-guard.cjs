@@ -60,15 +60,19 @@ const sourceRegistryText=fs.readFileSync(path.join(root,'dist/photo-source-regis
 const sourceRegistryPrefix='globalThis.JATLAS_PHOTO_SOURCE_REGISTRY=';
 let sourceRegistry={};
 if(sourceRegistryText.startsWith(sourceRegistryPrefix))sourceRegistry=JSON.parse(sourceRegistryText.slice(sourceRegistryPrefix.length).replace(/;\s*$/,''));
-const canonicalRegistryFile=path.join(root,'dist/photo-registry-data.js');
-if(fs.existsSync(canonicalRegistryFile)){
-  const canonicalText=fs.readFileSync(canonicalRegistryFile,'utf8').trim(),canonicalPrefix='globalThis.JATLAS_PHOTO_REGISTRY_DATA=';
-  if(canonicalText.startsWith(canonicalPrefix)){
-    const canonical=JSON.parse(canonicalText.slice(canonicalPrefix.length).replace(/;\s*$/,''));
-    for(const r of [...Object.values(canonical.places||{}),...Object.values(canonical.foods||{})])if(r.image)sourceRegistry[String(r.image).replace(/^\.\//,'').split(/[?#]/)[0]]={source:r.source||'',terms:r.terms||'',author:r.author||'',placeId:r.legacyId??null,foodName:r.name||'',canonicalId:r.canonicalId||'',userPhoto:!!r.userPhoto};
-  }
+function readCanonicalRegistry(repoDir){
+  const file=path.join(repoDir,'dist/photo-registry-data.js');
+  if(!fs.existsSync(file))return null;
+  const text=fs.readFileSync(file,'utf8').trim(),prefix='globalThis.JATLAS_PHOTO_REGISTRY_DATA=';
+  if(!text.startsWith(prefix))return null;
+  return JSON.parse(text.slice(prefix.length).replace(/;\s*$/,''));
+}
+const canonicalRegistry=readCanonicalRegistry(root);
+if(canonicalRegistry){
+  for(const r of [...Object.values(canonicalRegistry.places||{}),...Object.values(canonicalRegistry.foods||{})])if(r.image)sourceRegistry[String(r.image).replace(/^\.\//,'').split(/[?#]/)[0]]={source:r.source||'',terms:r.terms||'',author:r.author||'',placeId:r.legacyId??null,foodName:r.name||'',canonicalId:r.canonicalId||'',userPhoto:!!r.userPhoto};
 }
 const cleanPhotoSrc=s=>String(s||'').replace(/^\.\//,'').split(/[?#]/)[0];
+const canonicalSig=r=>r?{image:cleanPhotoSrc(r.image),sha256:String(r.sha256||''),source:String(r.source||''),terms:String(r.terms||''),author:String(r.author||''),userPhoto:!!r.userPhoto,revision:Number(r.revision||0)}:null;
 const expectedRegistry={};
 for(const x of photoManifest.photos||[]){
   if(!x.output||!x.source)continue;
@@ -78,6 +82,21 @@ for(const x of photoManifest.photos||[]){
 const errors=[];
 const notes=[];
 const fail=m=>errors.push(m);
+
+if(canonicalRegistry){
+  const seen=new Set();
+  for(const r of [...Object.values(canonicalRegistry.places||{}),...Object.values(canonicalRegistry.foods||{})]){
+    const id=String(r.canonicalId||'');
+    if(!id)fail('CANONICAL PHOTO missing canonicalId');
+    else if(seen.has(id))fail('CANONICAL PHOTO duplicate canonicalId: '+id);
+    else seen.add(id);
+    const src=cleanPhotoSrc(r.image),file=path.join(root,'dist',src);
+    if(!src||!fs.existsSync(file)){fail('CANONICAL PHOTO missing file: '+id+' :: '+src);continue;}
+    const actual=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+    if(String(r.sha256||'')!==actual)fail('CANONICAL PHOTO hash mismatch: '+id+' :: registry='+String(r.sha256||'')+' actual='+actual);
+    if(!String(r.source||''))fail('CANONICAL PHOTO missing source: '+id+' :: '+src);
+  }
+}
 
 for(const [src,expected] of Object.entries(expectedRegistry)){
   const actual=sourceRegistry[src];
@@ -124,6 +143,15 @@ if(baseline){
       else fail('Last successful deployment cannot be audited: '+baseline);
     }
     if(previous){
+      const previousCanonical=readCanonicalRegistry(temp),canonicalChanges=[];
+      if(previousCanonical&&canonicalRegistry){
+        const prevCanonicalMap=new Map([...Object.values(previousCanonical.places||{}),...Object.values(previousCanonical.foods||{})].map(r=>[String(r.canonicalId||''),r]));
+        const curCanonicalMap=new Map([...Object.values(canonicalRegistry.places||{}),...Object.values(canonicalRegistry.foods||{})].map(r=>[String(r.canonicalId||''),r]));
+        for(const [id,r] of curCanonicalMap){
+          const q=prevCanonicalMap.get(id);if(!q)continue;
+          if(stable(canonicalSig(r))!==stable(canonicalSig(q)))canonicalChanges.push({canonicalId:id,from:canonicalSig(q),to:canonicalSig(r)});
+        }
+      }
       const prevMap=new Map(previous.places.map(p=>[Number(p.id),p]));
       const curMap=new Map(current.places.map(p=>[Number(p.id),p]));
 
@@ -142,7 +170,7 @@ if(baseline){
         if(stable(from)!==stable(to))heroChanges.push({key,from,to});
       }
 
-      const structural=adds.length||removals.length||edits.length||photoChanges.length||heroChanges.length;
+      const structural=adds.length||removals.length||edits.length||photoChanges.length||heroChanges.length||canonicalChanges.length;
       if(structural){
         if(intent.baseCommit!==baseline)fail('CHANGE INTENT baseCommit must equal last successful deployment '+baseline+' (currently '+String(intent.baseCommit||'<empty>')+')');
         const allow=intent.allow||{};
@@ -151,6 +179,7 @@ if(baseline){
         const editAllowed=new Set((allow.placeEdits||[]).map(Number));
         const photoAllowed=new Map((allow.photoChanges||[]).map(x=>[Number(x.id),x]));
         const heroAllowed=new Map((allow.heroChanges||[]).map(x=>[String(x.key),x]));
+        const canonicalAllowed=new Map((allow.canonicalPhotoChanges||[]).map(x=>[String(x.canonicalId),x]));
 
         for(const id of adds){
           const p=curMap.get(id),a=addAllowed.get(id);
@@ -173,9 +202,14 @@ if(baseline){
           if(!a||String(a.fromSrc||'')!==from||String(a.toSrc||'')!==to)
             fail('UNAPPROVED hero change: '+ch.key+' :: '+from+' -> '+to);
         }
+        for(const ch of canonicalChanges){
+          const a=canonicalAllowed.get(ch.canonicalId),from=ch.from||{},to=ch.to||{};
+          if(!a||String(a.fromImage||'')!==String(from.image||'')||String(a.toImage||'')!==String(to.image||'')||String(a.fromSha256||'')!==String(from.sha256||'')||String(a.toSha256||'')!==String(to.sha256||'')||String(a.fromSource||'')!==String(from.source||'')||String(a.toSource||'')!==String(to.source||'')||Number(a.fromRevision||0)!==Number(from.revision||0)||Number(a.toRevision||0)!==Number(to.revision||0))
+            fail('UNAPPROVED canonical photo change: '+ch.canonicalId+' :: '+String(from.sha256||'')+' -> '+String(to.sha256||''));
+        }
 
         notes.push('Compared against last successful deployment '+baseline);
-        notes.push('adds='+adds.length+', removals='+removals.length+', edits='+edits.length+', photoChanges='+photoChanges.length+', heroChanges='+heroChanges.length);
+        notes.push('adds='+adds.length+', removals='+removals.length+', edits='+edits.length+', photoChanges='+photoChanges.length+', heroChanges='+heroChanges.length+', canonicalChanges='+canonicalChanges.length);
       }
     }
   } finally {
@@ -186,7 +220,7 @@ if(baseline){
 if(errors.length){
   console.error('\nJATLAS REGRESSION GUARD FAILED');
   for(const e of errors)console.error('- '+e);
-  console.error('\nFor an intentional change, update tools/content-change-intent.json with baseCommit set to the LAST SUCCESSFUL DEPLOY SHA and exact IDs/fromSrc/toSrc. Never disable this guard.');
+  console.error('\nFor an intentional change, update tools/content-change-intent.json with baseCommit set to the LAST SUCCESSFUL DEPLOY SHA and exact before/after values (including allow.canonicalPhotoChanges for fixed-path canonical photos). Never disable this guard.');
   process.exit(1);
 }
 console.log(JSON.stringify({ok:true,head,parent,baseline,places:current.places.length,fingerprint:fingerprint(current),notes},null,2));

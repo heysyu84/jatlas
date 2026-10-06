@@ -13,3 +13,7 @@ These rules are mandatory for every edit, including edits made from another chat
 9. If a guard fails, fix the underlying change. Do not weaken/disable the guard to make a deployment pass.
 
 The deployment guard intentionally prefers a failed deployment over silently rolling back user-approved photos or reintroducing deleted/duplicate attractions.
+10. For any scope present in `dist/photo-registry-data.js`, the canonical registry plus `dist/images/regions/.../` is authoritative. Legacy `commons/`, `licensed/`, `official/`, `qa/`, `regional/`, `user/` paths and old override entries are compatibility-only for that migrated scope; never edit those legacy copies to change the live photo.
+11. To replace a canonical photo, keep its canonical ID and file path stable. Replace the bytes and update `sha256`, source metadata, and `revision` in `dist/photo-registry-data.js` in the same commit. Declare the exact before/after values in `allow.canonicalPhotoChanges`. Do not create `-new`, `-final`, `-v2`, or similar replacement filenames.
+12. Canonical hero photos are selected only from eligible tourist spots inside the exact currently displayed prefecture/area/town. Never fall back to another area merely to fill a hero image; a one-place scope always keeps that one place.
+13. Do not delete migrated legacy image copies until the nationwide canonical migration is complete and a post-migration reference audit reports zero runtime/registry/tool/workflow references. Git history is the archive; do not create new backup/old image folders.

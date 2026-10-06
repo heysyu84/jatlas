@@ -25,7 +25,12 @@ const regionEnglish=['HOKKAIDO','TOHOKU','NORTH KANTO','GREATER TOKYO','KOSHINET
 const JATLAS_PHOTO_RENDER_VERSION='20261006-tokai-canonical1';
 function photoDisplaySrc(value){
  const src=typeof value==='string'?value:(value?.src||'');
- if(!/^images\/(?:licensed|official|user|regions)\//.test(src))return src;
+ if(/^images\/regions\//.test(src)){
+  if(/[?&]jatlasPhoto=/.test(src))return src;
+  const revision=typeof value==='object'&&value?.revision!=null?value.revision:1;
+  return src+(src.includes('?')?'&':'?')+'jatlasPhoto=r'+encodeURIComponent(String(revision));
+ }
+ if(!/^images\/(?:licensed|official|user)\//.test(src))return src;
  if(/[?&]jatlasPhoto=/.test(src))return src;
  return src+(src.includes('?')?'&':'?')+'jatlasPhoto='+JATLAS_PHOTO_RENDER_VERSION;
 }
