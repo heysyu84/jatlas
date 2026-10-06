@@ -139,7 +139,11 @@ def main():
                 if not asset:raise FileNotFoundError(f'Missing approved food photo without recovery manifest: {pref} {name} {src}')
                 materialize_manifest_asset(asset)
             canonical=f'images/regions/okinawa/{prefslug}/foods/{cid}-{food_slug(cid)}.webp'
-            dest=DIST/canonical;legacy=write_webp(src,dest)
+            dest=DIST/canonical
+            if not str(src).startswith(('http://','https://')) and clean_local(src)==canonical and dest.is_file():
+                legacy=canonical
+            else:
+                legacy=write_webp(src,dest)
             if str(src).startswith(('http://','https://')):external.append({'food':pref+'|'+name,'src':src})
             registry['foods'][cid]={
               'canonicalId':cid,'legacyId':None,'pref':pref,'name':name,'image':canonical,'legacyImage':legacy,

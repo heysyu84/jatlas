@@ -1,11 +1,5 @@
 name: Migrate Okinawa canonical photos
 on:
-  push:
-    branches: [main]
-    paths:
-      - tools/migrate-okinawa-canonical.py
-      - tools/test-okinawa-canonical-only.cjs
-      - .github/workflows/migrate-okinawa-canonical.yml
   workflow_dispatch:
 permissions:
   contents: write

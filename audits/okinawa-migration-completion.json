@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "region": "오키나와",
   "status": "COMPLETE_CANONICAL",
-  "sourceCommit": "34e66a304acf799b6c0e510842246e63f27ae415",
+  "sourceCommit": "05ffcce9d63f6a68ebeaf042701689082fe974ae",
   "prefectures": {
     "오키나와": {
       "places": 38,

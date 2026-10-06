@@ -1,11 +1,5 @@
 name: Migrate Kyushu canonical photos
 on:
-  push:
-    branches: [main]
-    paths:
-      - tools/migrate-kyushu-canonical.py
-      - tools/test-kyushu-canonical-only.cjs
-      - .github/workflows/migrate-kyushu-canonical.yml
   workflow_dispatch:
 permissions:
   contents: write
