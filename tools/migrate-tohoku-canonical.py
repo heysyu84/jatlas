@@ -15,6 +15,113 @@ PREFS=[
  ('후쿠시마','07','fukushima','fukushima-expansion.js'),
 ]
 PREFSET={x[0] for x in PREFS}
+CANONICAL_SLUGS={
+  "02-P0001": "nebuta-museum-wa-rasse",
+  "02-P0002": "a-factory",
+  "02-P0003": "aspam",
+  "02-P0004": "sannai-maruyama-site",
+  "02-P0006": "asamushi-onsen",
+  "02-P0007": "hakkoda-ropeway",
+  "02-P0008": "sukayu-onsen",
+  "02-P0009": "jogakura-bridge",
+  "02-P0010": "oirase-stream",
+  "02-P0011": "lake-towada",
+  "02-P0014": "hirosaki-apple-park",
+  "02-P0015": "iwakiyama-shrine",
+  "02-P0018": "ashino-park",
+  "02-P0019": "takayama-inari-shrine",
+  "02-P0021": "aoike-juniko",
+  "02-P0023": "senjojiki-coast",
+  "02-P0024": "tatehana-wharf-morning-market",
+  "02-P0025": "kabushima-shrine",
+  "02-P0028": "osorezan",
+  "02-P0029": "cape-oma",
+  "02-P0030": "hotokegaura",
+  "02-P0031": "towada-art-center",
+  "03-P0001": "morioka-castle",
+  "03-P0006": "tsunagi-onsen",
+  "03-P0007": "koiwai-farm",
+  "03-P0011": "matsukawa-onsen",
+  "03-P0012": "chusonji-konjikido",
+  "03-P0013": "motsuji-temple",
+  "03-P0016": "genbikei",
+  "03-P0018": "miyazawa-kenji-memorial-museum",
+  "03-P0020": "hanamaki-onsen",
+  "03-P0022": "kappa-buchi",
+  "03-P0024": "jodogahama",
+  "03-P0025": "ryusendo-cave",
+  "03-P0026": "kitayamazaki",
+  "03-P0027": "unosu-cliff",
+  "03-P0029": "hashino-iron-mine",
+  "03-P0032": "goishi-coast",
+  "04-P0001": "sendai-castle-ruins",
+  "04-P0002": "zuihoden",
+  "04-P0004": "jozenji-dori",
+  "04-P0005": "sendai-mediatheque",
+  "04-P0006": "sendai-asaichi",
+  "04-P0009": "entsuin",
+  "04-P0010": "godaido",
+  "04-P0012": "miyagi-keicho-envoy-ship-museum",
+  "04-P0013": "ishinomaki-mangattan-museum",
+  "04-P0017": "miyagi-zao-fox-village",
+  "04-P0019": "kamasaki-onsen",
+  "04-P0020": "naruko-onsen",
+  "04-P0021": "naruko-gorge",
+  "04-P0022": "japan-kokeshi-museum",
+  "04-P0023": "kesennuma-sea-market",
+  "04-P0024": "kesennuma-oshima",
+  "05-P0001": "senshu-park",
+  "05-P0003": "akita-city-folk-performing-arts-heritage-center",
+  "05-P0005": "oga-shinzan-folklore-museum",
+  "05-P0006": "kanpuzan",
+  "05-P0008": "kakunodate-samurai-residence-street",
+  "05-P0010": "lake-tazawa",
+  "05-P0011": "nyuto-onsen",
+  "05-P0015": "oyasukyo-daifunto",
+  "05-P0018": "akita-inu-kaikan",
+  "05-P0019": "akita-inu-no-sato",
+  "05-P0020": "kosaka-mine-office",
+  "05-P0023": "former-kaneyu",
+  "05-P0024": "hatahata-kan",
+  "06-P0001": "yamadera-risshakuji",
+  "06-P0002": "kajo-park",
+  "06-P0018": "sankyo-warehouse",
+  "06-P0020": "honma-former-residence",
+  "07-P0001": "hanamiyama-park",
+  "07-P0003": "takayu-onsen",
+  "07-P0008": "higashiyama-onsen",
+  "07-P0009": "ouchi-juku",
+  "07-P0010": "to-no-hetsuri",
+  "07-P0011": "first-tadami-river-bridge-viewpoint",
+  "07-P0012": "goshikinuma",
+  "07-P0017": "abukuma-cave",
+  "07-P0022": "matsukawaura",
+  "07-P0024": "ukedo-elementary-school",
+  "02-F0001": "nokkedon",
+  "02-F0002": "miso-curry-milk-ramen",
+  "02-F0004": "kuroishi-tsuyu-yakisoba",
+  "02-F0006": "oma-tuna",
+  "02-F0009": "hachinohe-mackerel",
+  "03-F0001": "wanko-soba",
+  "03-F0004": "maezawa-beef",
+  "03-F0005": "fukuda-pan",
+  "03-F0006": "hittsumi",
+  "03-F0007": "mamebu-jiru",
+  "03-F0008": "bin-don",
+  "03-F0009": "sanriku-scallop",
+  "04-F0004": "matsushima-oysters",
+  "04-F0005": "shiogama-sushi",
+  "04-F0007": "kesennuma-shark-fin",
+  "04-F0008": "hoya",
+  "05-F0001": "kiritanpo",
+  "05-F0004": "iburigakko",
+  "05-F0005": "hatahata",
+  "05-F0006": "babahera-ice",
+  "07-F0002": "aizu-sauce-katsudon",
+  "07-F0004": "negi-soba",
+  "07-F0005": "enban-gyoza",
+  "07-F0008": "mamador"
+}
 
 def extract_object(text, marker, start=0):
     i=text.find(marker,start)
@@ -173,9 +280,10 @@ def main():
                 asset=manifest_by_output.get(src)
                 if not asset:raise FileNotFoundError(f'Missing approved legacy photo without manifest recovery: {src}')
                 materialize_manifest_asset(asset); recovered.append(src)
-            canonical=f'images/regions/tohoku/{prefslug}/places/{code}-P{idx:04d}-{slugify(filename or pic.get("filename"),"place",idx)}.webp'
-            dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)
             cid=f'{code}-P{idx:04d}'
+            slug=CANONICAL_SLUGS.get(cid,slugify(filename or pic.get("filename"),"place",idx))
+            canonical=f'images/regions/tohoku/{prefslug}/places/{cid}-{slug}.webp'
+            dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)
             registry['places'][cid]={
                 'canonicalId':cid,'legacyId':p['id'],'pref':pref,'area':p.get('area',''),'town':p.get('town',''),
                 'name':p['name'],'image':canonical,'legacyImage':src,
@@ -204,7 +312,8 @@ def main():
                 if not asset:raise FileNotFoundError(f'Missing approved food photo without manifest recovery: {src}')
                 materialize_manifest_asset(asset); recovered.append(src)
             cid=f'{code}-F{idx:04d}'
-            canonical=f'images/regions/tohoku/{prefslug}/foods/{cid}-{slugify(filename or pic.get("filename"),"food",idx)}.webp'
+            slug=CANONICAL_SLUGS.get(cid,slugify(filename or pic.get("filename"),"food",idx))
+            canonical=f'images/regions/tohoku/{prefslug}/foods/{cid}-{slug}.webp'
             dest=DIST/canonical; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(legacy,dest)
             registry['foods'][cid]={
                 'canonicalId':cid,'legacyId':None,'pref':pref,'name':f['name'],'image':canonical,'legacyImage':src,

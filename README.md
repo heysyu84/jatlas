@@ -51,7 +51,7 @@ JavaScript와 도도부현 데이터의 본격적인 폴더 재배치는 사진�
 - 미에 관광지: `24-P0014`
 - 음식: `21-F0001`
 
-파일명은 `{canonicalId}-{english-slug}.webp` 형식입니다.
+파일명은 `{canonicalId}-{english-slug}.webp` 형식이며, `english-slug`에는 장소·음식 이름만 사용하고 원본 사진의 촬영일·파일번호·사이트명 같은 부가 문자열은 넣지 않습니다.
 
 ```text
 dist/images/regions/tokai/gifu/places/21-P0008-gujo-hachiman-castle.webp
