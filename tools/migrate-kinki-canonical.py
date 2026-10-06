@@ -3,6 +3,7 @@
 import hashlib,io,json,re,subprocess,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image,ImageOps
+from unidecode import unidecode
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
@@ -16,10 +17,9 @@ EXPECTED={'시가':(16,6),'교토':(26,6),'오사카':(29,7),'효고':(23,6),'�
 USER_AGENT='Mozilla/5.0 Jatlas canonical migration'
 
 def slug_name(name):
-    s=unicodedata.normalize('NFKC',str(name)).strip().lower()
-    s=re.sub(r'[\\/／\s·・()（）\[\]【】]+','-',s)
-    s=re.sub(r'[^\w\-가-힣ぁ-んァ-ン一-龥]+','-',s,flags=re.UNICODE)
-    return re.sub(r'-+','-',s).strip('-')
+    s=unidecode(unicodedata.normalize('NFKC',str(name or '')).strip()).lower()
+    s=re.sub(r'[^0-9a-z]+','-',s)
+    return re.sub(r'-+','-',s).strip('-') or 'item'
 
 def clean_local(src):
     s=str(src or '').split('?',1)[0].split('#',1)[0]
