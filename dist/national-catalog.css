@@ -13,10 +13,7 @@
 
 /* Use the available catalog width, with at most four cards per row. */
 #nationalCatalog{container-type:inline-size}
-#nationalCatalog>.cards,#nationalCatalog>.foodGrid{display:grid;grid-template-columns:minmax(0,1fr)}
-@container (min-width:560px){
- #nationalCatalog>.cards,#nationalCatalog>.foodGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
+#nationalCatalog>.cards,#nationalCatalog>.foodGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
 @container (min-width:840px){
  #nationalCatalog>.cards,#nationalCatalog>.foodGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
