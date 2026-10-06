@@ -98,7 +98,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/images/regions/greater-tokyo dist/images/licensed dist/images/official dist/photo-registry-data.js dist/index.html README.md audits/greater-tokyo-migration-completion.json tools/content-change-intent.json
+          git add dist/images/regions/greater-tokyo dist/images/licensed dist/photo-registry-data.js dist/index.html README.md audits/greater-tokyo-migration-completion.json tools/content-change-intent.json
+          git add -f dist/images/official/tokyo-oshima-milk-soft.webp
           if git diff --cached --quiet; then echo "No migration changes"; exit 0; fi
           git commit -m "Migrate Greater Tokyo photos to canonical structure"
       - name: Run regression guard on migration commit
