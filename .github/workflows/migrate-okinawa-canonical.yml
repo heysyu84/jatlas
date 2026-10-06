@@ -5,7 +5,6 @@ on:
     paths:
       - tools/migrate-okinawa-canonical.py
       - tools/test-okinawa-canonical-only.cjs
-      - tools/canonical_slug_policy.py
       - .github/workflows/migrate-okinawa-canonical.yml
   workflow_dispatch:
 permissions:

@@ -115,7 +115,11 @@ def main():
                 if not asset:raise FileNotFoundError(f'Missing approved place photo without recovery manifest: {pref} {ident} {src}')
                 materialize_manifest_asset(asset)
             canonical=f'images/regions/okinawa/{prefslug}/places/{cid}-{place_slug(cid,(map_audit.get(str(ident)) or {}).get('query') or p.get('mapQuery') or '')}.webp'
-            dest=DIST/canonical;legacy=write_webp(src,dest)
+            dest=DIST/canonical
+            if not str(src).startswith(('http://','https://')) and clean_local(src)==canonical and dest.is_file():
+                legacy=canonical
+            else:
+                legacy=write_webp(src,dest)
             if str(src).startswith(('http://','https://')):external.append({'id':ident,'src':src})
             registry['places'][cid]={
               'canonicalId':cid,'legacyId':ident,'pref':pref,'area':p.get('area',''),'town':p.get('town',''),'name':row['name'],
