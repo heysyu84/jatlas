@@ -66,9 +66,12 @@ def explicit_place_record(text, ident):
         f"data.photos[{ident}]=",
     ):
         i=text.find(needle)
-        if i>=0:
-            obj=extract_object(text[i:],needle)
-            if obj:return parse_fields(obj)
+        if i<0:
+            continue
+        body_start=text.find('{',i+len(needle))
+        body_end=text.find('};',body_start)
+        if body_start>=0 and body_end>=0:
+            return parse_fields(text[body_start:body_end+1])
     return {}
 def commons_source(filename):
     return 'https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(filename.replace(' ','_'),safe='()_,-.')
