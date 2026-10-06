@@ -20,6 +20,10 @@ for(const p of migrated){
  else assert.fail('canonical target has no external identity strategy '+p.id);
 }
 assert.equal(canonical[910].coordinateOnly,true,'Gujo Hachiman town must not resolve to Gujo City entity');
+assert.equal(canonical[910].lat,35.7499145,'Gujo Hachiman old town representative latitude');
+assert.equal(canonical[910].lon,136.9592947,'Gujo Hachiman old town representative longitude');
+assert.equal(canonical[318].lat,35.61578856734431,'Saruhashi must keep verified bridge latitude');
+assert.equal(canonical[318].lon,138.98026392791476,'Saruhashi must keep verified bridge longitude');
 assert.equal(canonical[602].lat,35.7243611,'National Museum of Japanese History latitude');
 assert.equal(canonical[602].lon,140.2191306,'National Museum of Japanese History longitude');
 assert.equal(String(canonical[602].cid),'1807054994798992362','National Museum of Japanese History exact Google CID');

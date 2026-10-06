@@ -12,6 +12,17 @@
     "cid": "1807054994798992362",
     "reverifiedAt": "2026-10-07"
   },
+  "910": {
+    "status": "official-representative-point-reviewed",
+    "name": "구조하치만 성하마을",
+    "officialSource": "https://www.kankou-gifu.jp/spot/detail_1154.html",
+    "resolvedName": "郡上八幡の古い町並み",
+    "resolvedAddress": "岐阜県郡上市八幡町鍛冶屋町",
+    "lat": 35.7499145,
+    "lon": 136.9592947,
+    "evidence": "Gifu's official tourism site identifies the old town around Hachiman-cho Kajiyamachi. The previous bare query resolved to Gujo City as a whole; this coordinate is used only as a representative point for the historic streets.",
+    "reviewedAt": "2026-10-07"
+  },
   "2114": {
     "status": "official-map-identity-reviewed",
     "name": "시마네 해양관 AQUAS",

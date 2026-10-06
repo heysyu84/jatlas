@@ -14,7 +14,7 @@ REGIONS={
 }
 EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'호쿠리쿠':71,'수도권':132}
 FORCE_COORDINATE={910}
-BROAD_ENTITY_NAMES={'Western Hakodate','구조시'}
+BROAD_ENTITY_NAMES={'Western Hakodate','구조시','일본','Japan'}
 
 runtime=json.loads((AUD/'runtime-inventory.json').read_text())
 audit=json.loads((AUD/'map-audit.json').read_text())
