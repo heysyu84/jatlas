@@ -1,4 +1,15 @@
 {
+  "318": {
+    "status": "official-destination-reviewed",
+    "name": "사루하시",
+    "officialSource": "https://www.city.otsuki.yamanashi.jp/kanko/highlight/saruhashi.html",
+    "resolvedName": "猿橋",
+    "resolvedAddress": "山梨県大月市猿橋町猿橋",
+    "lat": 35.61578856734431,
+    "lon": 138.98026392791476,
+    "evidence": "Otsuki City identifies the nationally designated Saruhashi bridge in Saruhashimachi Saruhashi. The canonical coordinate is the previously verified bridge coordinate; the search entity resolving only to Japan is rejected as too broad.",
+    "reviewedAt": "2026-10-07"
+  },
   "602": {
     "status": "official-map-identity-reviewed",
     "name": "국립역사민속박물관",
