@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# greater-tokyo-canonical-migration-20261007-r3
+# greater-tokyo-canonical-migration-20261007-r4
 import hashlib, importlib.util, io, json, re, shutil, subprocess, unicodedata, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
