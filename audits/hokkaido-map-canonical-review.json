@@ -1,11 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "region": "홋카이도",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 42,
   "cidTargets": 41,
   "coordinateOnlyTargets": 1,
   "preservedManualTargets": 42,
+  "identityReviewTargets": 0,
   "sourceCoordinateTargets": 0,
   "auditEntityTargets": 0,
   "auditCameraTargets": 0,

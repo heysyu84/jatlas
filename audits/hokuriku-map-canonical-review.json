@@ -1,13 +1,14 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "region": "호쿠리쿠",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 71,
-  "cidTargets": 58,
-  "coordinateOnlyTargets": 13,
+  "cidTargets": 56,
+  "coordinateOnlyTargets": 15,
   "preservedManualTargets": 0,
+  "identityReviewTargets": 2,
   "sourceCoordinateTargets": 0,
-  "auditEntityTargets": 58,
+  "auditEntityTargets": 56,
   "auditCameraTargets": 13,
   "riskFlags": []
 }

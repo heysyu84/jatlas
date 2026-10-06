@@ -1,13 +1,14 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "region": "북간토",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 51,
-  "cidTargets": 0,
-  "coordinateOnlyTargets": 51,
+  "cidTargets": 35,
+  "coordinateOnlyTargets": 16,
   "preservedManualTargets": 0,
-  "sourceCoordinateTargets": 1,
-  "auditEntityTargets": 0,
-  "auditCameraTargets": 50,
+  "identityReviewTargets": 0,
+  "sourceCoordinateTargets": 0,
+  "auditEntityTargets": 35,
+  "auditCameraTargets": 16,
   "riskFlags": []
 }

@@ -1,13 +1,23 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "region": "수도권",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 132,
-  "cidTargets": 0,
-  "coordinateOnlyTargets": 132,
+  "cidTargets": 102,
+  "coordinateOnlyTargets": 30,
   "preservedManualTargets": 0,
-  "sourceCoordinateTargets": 64,
-  "auditEntityTargets": 0,
-  "auditCameraTargets": 68,
-  "riskFlags": []
+  "identityReviewTargets": 1,
+  "sourceCoordinateTargets": 18,
+  "auditEntityTargets": 101,
+  "auditCameraTargets": 12,
+  "riskFlags": [
+    {
+      "id": 117,
+      "name": "오쿠타마호",
+      "reason": "stored-vs-query-entity-distance",
+      "km": 1.61,
+      "resolvedName": "오쿠타마 호수",
+      "chosen": "query-entity"
+    }
+  ]
 }

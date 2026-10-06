@@ -1,13 +1,22 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "region": "도카이",
   "status": "CANONICAL_MAP_TARGETS_COMPLETE",
   "places": 83,
-  "cidTargets": 0,
-  "coordinateOnlyTargets": 83,
+  "cidTargets": 56,
+  "coordinateOnlyTargets": 27,
   "preservedManualTargets": 0,
-  "sourceCoordinateTargets": 4,
-  "auditEntityTargets": 0,
-  "auditCameraTargets": 79,
-  "riskFlags": []
+  "identityReviewTargets": 0,
+  "sourceCoordinateTargets": 0,
+  "auditEntityTargets": 57,
+  "auditCameraTargets": 26,
+  "riskFlags": [
+    {
+      "id": 910,
+      "name": "구조하치만 성하마을",
+      "reason": "broad-query-entity-no-source-coordinate",
+      "resolvedName": "구조시",
+      "chosen": "query-coordinate"
+    }
+  ]
 }
