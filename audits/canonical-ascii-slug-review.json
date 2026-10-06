@@ -1,2183 +1,2068 @@
 {
-  "schemaVersion": 1,
-  "status": "ASCII_CANONICAL_SLUGS",
-  "changed": 435,
+  "schemaVersion": 2,
+  "status": "PROPER_CANONICAL_SLUGS",
+  "changed": 412,
+  "policy": "Place slugs come from official Japanese map names romanized in Hepburn, with explicit official-English overrides where appropriate. Food slugs are explicit curated canonical names. Korean-name transliteration is prohibited.",
   "changes": [
     {
       "id": "13-P0001",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0001-센소지.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0001-sensoji.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0001-sensoji.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0001-sensouji.webp"
     },
     {
       "id": "13-P0002",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0002-도쿄-스카이트리.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0002-dokyo-seukaiteuri.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0002-dokyo-seukaiteuri.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0002-toukyou-sukaitsurii.webp"
     },
     {
       "id": "13-P0003",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0003-우에노-공원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0003-ueno-gongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0003-ueno-gongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0003-uenokouen.webp"
     },
     {
       "id": "13-P0004",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0004-도쿄국립박물관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0004-dokyogugribbagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0004-dokyogugribbagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0004-toukyou-kokuritsu-hakubutsukan.webp"
     },
     {
       "id": "13-P0005",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0005-네즈-신사.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0005-nejeu-sinsa.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0005-nejeu-sinsa.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0005-nezu-jinja.webp"
     },
     {
       "id": "13-P0006",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0006-지도리가후치.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0006-jidorigahuci.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0006-jidorigahuci.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0006-chidorigafuchi.webp"
     },
     {
       "id": "13-P0007",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0007-고이시카와-고라쿠엔.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0007-goisikawa-gorakuen.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0007-goisikawa-gorakuen.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0007-koishikawa-kourakuen.webp"
     },
     {
       "id": "13-P0008",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0008-신주쿠교엔.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0008-sinjukugyoen.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0008-sinjukugyoen.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0008-shinjukugyoen.webp"
     },
     {
       "id": "13-P0009",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0009-도쿄도청-전망실.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0009-dokyodoceong-jeonmangsil.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0009-dokyodoceong-jeonmangsil.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0009-toukyoutochou-tenbou-shitsu.webp"
     },
     {
       "id": "13-P0010",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0010-시부야-스크램블-교차로.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0010-sibuya-seukeuraembeul-gyocaro.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0010-sibuya-seukeuraembeul-gyocaro.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0010-shibuya-sukuranburu-kousaten.webp"
     },
     {
       "id": "13-P0011",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0011-메이지-신궁.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0011-meiji-singung.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0011-meiji-singung.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0011-meijijinguu.webp"
     },
     {
       "id": "13-P0012",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0012-시부야-스카이.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0012-sibuya-seukai.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0012-sibuya-seukai.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0012-sky.webp"
     },
     {
       "id": "13-P0013",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0013-도쿄-타워.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0013-dokyo-taweo.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0013-dokyo-taweo.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0013-toukyou-tawaa.webp"
     },
     {
       "id": "13-P0014",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0014-오다이바-해변공원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0014-odaiba-haebyeongongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0014-odaiba-haebyeongongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0014-o-daiba-kaihin-kouen.webp"
     },
     {
       "id": "13-P0015",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0015-이노카시라-공원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0015-inokasira-gongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0015-inokasira-gongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0015-inogashira-onshi-kouen.webp"
     },
     {
       "id": "13-P0016",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0016-쇼와-기념공원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0016-syowa-ginyeomgongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0016-syowa-ginyeomgongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0016-kokuei-shouwakinenkouen.webp"
     },
     {
       "id": "13-P0017",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0017-다카오산.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0017-dakaosan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0017-dakaosan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0017-takaozan.webp"
     },
     {
       "id": "13-P0018",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0018-오쿠타마호.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0018-okutamaho.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0018-okutamaho.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0018-okutama-mizuumi.webp"
     },
     {
       "id": "13-P0019",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0019-미하라산.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0019-miharasan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0019-miharasan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0019-mihara-yama.webp"
     },
     {
       "id": "13-P0020",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0020-오가미야마-공원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0020-ogamiyama-gongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0020-ogamiyama-gongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0020-daijin-sankou-sono.webp"
     },
     {
       "id": "13-P0021",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0021-일본과학미래관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0021-ilbongwahagmiraegwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0021-ilbongwahagmiraegwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0021-nippon-kagaku-mirai-kan.webp"
     },
     {
       "id": "13-P0022",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0022-도쿄-빅사이트.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0022-dokyo-bigsaiteu.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0022-dokyo-bigsaiteu.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0022-toukyou-biggusaito.webp"
     },
     {
       "id": "13-P0023",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0023-다이버시티-도쿄-플라자.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0023-daibeositi-dokyo-peulraja.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0023-daibeositi-dokyo-peulraja.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0023-puraza.webp"
     },
     {
       "id": "13-P0024",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0024-도쿄-조이폴리스.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0024-dokyo-joipolriseu.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0024-dokyo-joipolriseu.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0024-toukyou-joiporisu.webp"
     },
     {
       "id": "13-P0025",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0025-신주쿠-골든가이.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0025-sinjuku-goldeungai.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0025-sinjuku-goldeungai.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0025-shinjuku-gooruden-machi.webp"
     },
     {
       "id": "13-P0026",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0026-오모이데-요코초.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0026-omoide-yokoco.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0026-omoide-yokoco.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0026-omoide-yokochou.webp"
     },
     {
       "id": "13-P0027",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0027-국립과학박물관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0027-gugribgwahagbagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0027-gugribgwahagbagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0027-kokuritsu-kagakuhakubutsukan.webp"
     },
     {
       "id": "13-P0028",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0028-네즈-미술관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0028-nejeu-misulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0028-nejeu-misulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0028-nezu-bijutsukan.webp"
     },
     {
       "id": "13-P0029",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0029-다케시타-거리.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0029-dakesita-geori.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0029-dakesita-geori.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0029-takeshitadoori.webp"
     },
     {
       "id": "13-P0030",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0030-조조지.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0030-jojoji.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0030-jojoji.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0030-zoujouji.webp"
     },
     {
       "id": "13-P0031",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0031-미타카의-숲-지브리-미술관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0031-mitakayi-sup-jibeuri-misulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0031-mitakayi-sup-jibeuri-misulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0031-mitaka-no-mori-jiburi-bijutsukan.webp"
     },
     {
       "id": "13-P0032",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0032-닛파라-종유동.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0032-nispara-jongyudong.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0032-nispara-jongyudong.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0032-hihara-shounyuudou.webp"
     },
     {
       "id": "13-P0033",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0033-하부항.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0033-habuhang.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0033-habuhang.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0033-habu-minato.webp"
     },
     {
       "id": "13-P0034",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0034-고미나토-해변.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0034-gominato-haebyeon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0034-gominato-haebyeon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0034-kominato-kaigan.webp"
     },
     {
       "id": "13-P0035",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0035-다카오산-야쿠오인.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0035-dakaosan-yakuoin.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0035-dakaosan-yakuoin.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0035-takaozan-yakuou-in.webp"
     },
     {
       "id": "13-P0036",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0036-간다묘진.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0036-gandamyojin.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0036-gandamyojin.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0036-kanda-myoujin.webp"
     },
     {
       "id": "13-P0037",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0037-히에-신사.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0037-hie-sinsa.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0037-hie-sinsa.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0037-hiejinja.webp"
     },
     {
       "id": "13-P0038",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0038-가사이-임해공원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0038-gasai-imhaegongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0038-gasai-imhaegongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0038-kasai-rinkai-kouen.webp"
     },
     {
       "id": "13-P0039",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0039-도쿄-돔-시티.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0039-dokyo-dom-siti.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0039-dokyo-dom-siti.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0039-toukyou-doomushitei.webp"
     },
     {
       "id": "13-P0040",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0040-도쿄역-마루노우치-역사.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0040-dokyoyeog-marunouci-yeogsa.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0040-dokyoyeog-marunouci-yeogsa.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0040-toukyoueki-marunouchi-ekisha.webp"
     },
     {
       "id": "13-P0041",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0041-고쿄-히가시교엔.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0041-gokyo-higasigyoen.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0041-gokyo-higasigyoen.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0041-koukyo-toumi-en.webp"
     },
     {
       "id": "13-P0042",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0042-긴자도리.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0042-ginjadori.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0042-ginjadori.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0042-ginzadoori-ri.webp"
     },
     {
       "id": "13-P0043",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0043-쓰키지-장외시장.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0043-sseukiji-jangoesijang.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0043-sseukiji-jangoesijang.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0043-tsukiji-jougai-shijou.webp"
     },
     {
       "id": "13-P0044",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0044-하마리큐-은사정원.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0044-hamarikyu-eunsajeongweon.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0044-hamarikyu-eunsajeongweon.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0044-hamarikyuu-onshi-teien.webp"
     },
     {
       "id": "13-P0045",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0045-리쿠기엔.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0045-rikugien.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0045-rikugien.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0045-rikugi-sono.webp"
     },
     {
       "id": "13-P0046",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0046-야나카-긴자.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0046-yanaka-ginja.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0046-yanaka-ginja.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0046-yanaka-ginza-shoutengai.webp"
     },
     {
       "id": "13-P0047",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0047-스미다-호쿠사이-미술관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0047-seumida-hokusai-misulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0047-seumida-hokusai-misulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0047-sumida-hokusai-bijutsukan.webp"
     },
     {
       "id": "13-P0048",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0048-에도-도쿄-박물관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0048-edo-dokyo-bagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0048-edo-dokyo-bagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0048-edo-toukyou-hakubutsukan.webp"
     },
     {
       "id": "13-P0049",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0049-팀랩-플래닛-도쿄.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0049-timraeb-peulraenis-dokyo.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0049-timraeb-peulraenis-dokyo.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0049-tokyo.webp"
     },
     {
       "id": "13-P0050",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0050-팀랩-보더리스.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0050-timraeb-bodeoriseu.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0050-timraeb-bodeoriseu.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0050-chiimuraboboodaresu.webp"
     },
     {
       "id": "13-P0051",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0051-아키하바라-전기-상점가.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0051-akihabara-jeongi-sangjeomga.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0051-akihabara-jeongi-sangjeomga.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0051-akihabara-denkigai.webp"
     },
     {
       "id": "13-P0052",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0052-도요스-시장.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0052-doyoseu-sijang.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0052-doyoseu-sijang.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0052-toyosu-shijou.webp"
     },
     {
       "id": "13-P0053",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0053-모리-미술관.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0053-mori-misulgwan.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0053-mori-misulgwan.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0053-mori-bijutsukan.webp"
     },
     {
       "id": "13-P0054",
-      "from": "images/regions/greater-tokyo/tokyo/places/13-P0054-니혼바시.webp",
-      "to": "images/regions/greater-tokyo/tokyo/places/13-P0054-nihonbasi.webp"
+      "from": "images/regions/greater-tokyo/tokyo/places/13-P0054-nihonbasi.webp",
+      "to": "images/regions/greater-tokyo/tokyo/places/13-P0054-nihonbashi.webp"
     },
     {
       "id": "11-P0001",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0001-가와고에-구라즈쿠리-거리.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0001-gawagoe-gurajeukuri-geori.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0001-gawagoe-gurajeukuri-geori.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0001-kura-tsukuri-no-machinami.webp"
     },
     {
       "id": "11-P0002",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0002-기타인.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0002-gitain.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0002-gitain.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0002-kita-in.webp"
     },
     {
       "id": "11-P0003",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0003-가와고에-히카와-신사.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0003-gawagoe-hikawa-sinsa.webp"
-    },
-    {
-      "id": "11-P0004",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0004-나가토로-이와다타미.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0004-nagatoro-iwadatami.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0003-gawagoe-hikawa-sinsa.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0003-kawagoe-hikawajinja.webp"
     },
     {
       "id": "11-P0005",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0005-호도산-신사.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0005-hodosan-sinsa.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0005-hodosan-sinsa.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0005-takara-tozan-jinja.webp"
     },
     {
       "id": "11-P0006",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0006-히쓰지야마-공원.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0006-hisseujiyama-gongweon.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0006-hisseujiyama-gongweon.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0006-hitsujiyama-kouen.webp"
     },
     {
       "id": "11-P0007",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0007-오미야-분재미술관.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0007-omiya-bunjaemisulgwan.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0007-omiya-bunjaemisulgwan.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0007-oomiya-bonsai-bijutsukan.webp"
     },
     {
       "id": "11-P0008",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0008-철도박물관.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0008-ceoldobagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0008-ceoldobagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0008-tetsudouhakubutsukan.webp"
     },
     {
       "id": "11-P0009",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0009-무사시-이치노미야-히카와-신사.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0009-musasi-icinomiya-hikawa-sinsa.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0009-musasi-icinomiya-hikawa-sinsa.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0009-musashi-ichinomiya-hikawajinja.webp"
     },
     {
       "id": "11-P0010",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0010-오시성터-교다-향토박물관.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0010-osiseongteo-gyoda-hyangtobagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0010-osiseongteo-gyoda-hyangtobagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0010-nin-joushi-gyoudashi-kyoudo-hakubutsukan.webp"
     },
     {
       "id": "11-P0011",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0011-사키타마-고분공원.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0011-sakitama-gobungongweon.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0011-sakitama-gobungongweon.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0011-sakitama-kofun-kouen.webp"
     },
     {
       "id": "11-P0012",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0012-긴차쿠다-만주샤게-공원.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0012-gincakuda-manjusyage-gongweon.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0012-gincakuda-manjusyage-gongweon.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0012-kinchaku-ta-manjushage-kouen.webp"
     },
     {
       "id": "11-P0013",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0013-도키노카네.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0013-dokinokane.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0013-dokinokane.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0013-tokino-kane.webp"
     },
     {
       "id": "11-P0014",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0014-가시야-요코초.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0014-gasiya-yokoco.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0014-gasiya-yokoco.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0014-kashiya-yokochou.webp"
     },
     {
       "id": "11-P0015",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0015-가와고에성-혼마루-고텐.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0015-gawagoeseong-honmaru-goten.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0015-gawagoeseong-honmaru-goten.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0015-kawagoe-shiromoto-maru-goten.webp"
     },
     {
       "id": "11-P0016",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0016-지치부-신사.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0016-jicibu-sinsa.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0016-jicibu-sinsa.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0016-chichibu-jinja.webp"
     },
     {
       "id": "11-P0017",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0017-미쓰미네-신사.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0017-misseumine-sinsa.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0017-misseumine-sinsa.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0017-mibu-jinja.webp"
     },
     {
       "id": "11-P0018",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0018-곤겐도-공원-벚꽃-제방.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0018-gongendo-gongweon-beojggoc-jebang.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0018-gongendo-gongweon-beojggoc-jebang.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0018-satte-gongendou-sakurazutsumi.webp"
     },
     {
       "id": "11-P0019",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0019-수도권-외곽방수로.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0019-sudogweon-oegwagbangsuro.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0019-sudogweon-oegwagbangsuro.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0019-shutoken-gaikaku-housuiro.webp"
     },
     {
       "id": "11-P0020",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0020-도코로자와-사쿠라타운.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0020-dokorojawa-sakurataun.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0020-dokorojawa-sakurataun.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0020-tokorozawa-sakurataun.webp"
     },
     {
       "id": "11-P0021",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0021-오미야-공원.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0021-omiya-gongweon.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0021-omiya-gongweon.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0021-oomiya-kouen.webp"
     },
     {
       "id": "11-P0022",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0022-도코로자와-항공기념공원.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0022-dokorojawa-hanggongginyeomgongweon.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0022-dokorojawa-hanggongginyeomgongweon.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0022-tokorozawa-koukuu-kinenkouen.webp"
     },
     {
       "id": "11-P0023",
-      "from": "images/regions/greater-tokyo/saitama/places/11-P0023-도부동물공원.webp",
-      "to": "images/regions/greater-tokyo/saitama/places/11-P0023-dobudongmulgongweon.webp"
+      "from": "images/regions/greater-tokyo/saitama/places/11-P0023-dobudongmulgongweon.webp",
+      "to": "images/regions/greater-tokyo/saitama/places/11-P0023-toubudoubutsukouen.webp"
     },
     {
       "id": "12-P0001",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0001-naritasan-sinsyoji.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0001-naritasan-sinsyoji.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0001-narita-yama-shinshou-tera.webp"
     },
     {
       "id": "12-P0002",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0002-히요도리자카.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0002-hiyodorijaka.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0002-hiyodorijaka.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0002-hiyodori-saka.webp"
     },
     {
       "id": "12-P0003",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0003-국립역사민속박물관.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0003-gugribyeogsaminsogbagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0003-gugribyeogsaminsogbagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0003-national-museum-of-japanese-history.webp"
     },
     {
       "id": "12-P0004",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0004-사와라-옛-거리.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0004-sawara-yes-geori.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0004-sawara-yes-geori.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0004-sawara-no-machinami.webp"
     },
     {
       "id": "12-P0005",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0005-가토리-신궁.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0005-gatori-singung.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0005-gatori-singung.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0005-katori-jinguu.webp"
     },
     {
       "id": "12-P0006",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0006-이누보사키-등대.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0006-inubosaki-deungdae.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0006-inubosaki-deungdae.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0006-inubouzaki-toudai.webp"
     },
     {
       "id": "12-P0007",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0007-우라야스-향토박물관.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0007-urayaseu-hyangtobagmulgwan.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0007-urayaseu-hyangtobagmulgwan.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0007-urayasushi-kyoudo-hakubutsukan.webp"
     },
     {
       "id": "12-P0008",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0008-미하마엔.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0008-mihamaen.webp"
-    },
-    {
-      "id": "12-P0009",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0009-노코기리야마.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0009-nokogiriyama.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0008-mihamaen.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0008-ken-hama-sono.webp"
     },
     {
       "id": "12-P0010",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0010-오야마-센마이다.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0010-oyama-senmaida.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0010-oyama-senmaida.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0010-ooyama-senmaida.webp"
     },
     {
       "id": "12-P0011",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0011-다테야마성.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0011-dateyamaseong.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0011-dateyamaseong.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0011-tateyama-shiro.webp"
     },
     {
       "id": "12-P0012",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0012-노지마사키-등대.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0012-nojimasaki-deungdae.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0012-nojimasaki-deungdae.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0012-nojima-saki-toudai.webp"
     },
     {
       "id": "12-P0013",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0013-도쿄-디즈니랜드.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0013-dokyo-dijeuniraendeu.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0013-dokyo-dijeuniraendeu.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0013-toukyou-dizuniirando.webp"
     },
     {
       "id": "12-P0014",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0014-도쿄-디즈니씨.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0014-dokyo-dijeunissi.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0014-dokyo-dijeunissi.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0014-toukyou-dizuniishii.webp"
     },
     {
       "id": "12-P0015",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0015-나리타산-오모테산도.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0015-naritasan-omotesando.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0015-naritasan-omotesando.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0015-narita-yama-omotesandou.webp"
     },
     {
       "id": "12-P0016",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0016-마더-목장.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0016-madeo-mogjang.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0016-madeo-mogjang.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0016-mazaa-bokujou.webp"
     },
     {
       "id": "12-P0017",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0017-가모가와-씨월드.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0017-gamogawa-ssiweoldeu.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0017-gamogawa-ssiweoldeu.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0017-kamogawa-shiiwaarudo.webp"
     },
     {
       "id": "12-P0018",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0018-가쓰우라-아침시장.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0018-gasseuura-acimsijang.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0018-gasseuura-acimsijang.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0018-katsuura-asaichi.webp"
     },
     {
       "id": "12-P0019",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0019-지바-포트타워.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0019-jiba-poteutaweo.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0019-jiba-poteutaweo.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0019-chiba-poototawaa.webp"
     },
     {
       "id": "12-P0020",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0020-도쿄-독일마을.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0020-dokyo-dogilmaeul.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0020-dokyo-dogilmaeul.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0020-toukyou-doitsu-mura.webp"
     },
     {
       "id": "12-P0021",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0021-요로계곡.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0021-yorogyegog.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0021-yorogyegog.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0021-yourou-keikoku.webp"
     },
     {
       "id": "12-P0022",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0022-후나바시-안데르센-공원.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0022-hunabasi-andereusen-gongweon.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0022-hunabasi-andereusen-gongweon.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0022-funabashi-anderusen-kouen.webp"
     },
     {
       "id": "12-P0023",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0023-우미호타루-pa.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0023-umihotaru-pa.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0023-umihotaru-pa.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0023-umi-hotaru-pa.webp"
     },
     {
       "id": "12-P0024",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0024-사쿠라-무가저택.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0024-sakura-mugajeotaeg.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0024-sakura-mugajeotaeg.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0024-buke-yashiki.webp"
     },
     {
       "id": "12-P0025",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0025-뵤부가우라.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0025-byobugaura.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0025-byobugaura.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0025-byoubu-ke-ura.webp"
     },
     {
       "id": "12-P0026",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0026-지바-신사.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0026-jiba-sinsa.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0026-jiba-sinsa.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0026-chiba-jinja.webp"
     },
     {
       "id": "12-P0027",
-      "from": "images/regions/greater-tokyo/chiba/places/12-P0027-지바현립-보소노무라.webp",
-      "to": "images/regions/greater-tokyo/chiba/places/12-P0027-jibahyeonrib-bosonomura.webp"
+      "from": "images/regions/greater-tokyo/chiba/places/12-P0027-jibahyeonrib-bosonomura.webp",
+      "to": "images/regions/greater-tokyo/chiba/places/12-P0027-bousou-nomura.webp"
     },
     {
       "id": "14-P0001",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0001-요코하마-아카렌가-창고.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0001-yokohama-akarenga-canggo.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0001-yokohama-akarenga-canggo.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0001-yokohama-aka-renga-souko.webp"
     },
     {
       "id": "14-P0002",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0002-야마시타-공원.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0002-yamasita-gongweon.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0002-yamasita-gongweon.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0002-yamashitakouen.webp"
     },
     {
       "id": "14-P0003",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0003-요코하마-차이나타운.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0003-yokohama-cainataun.webp"
-    },
-    {
-      "id": "14-P0004",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0004-산케이엔.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0004-sankeien.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0003-yokohama-cainataun.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0003-yokohama-chuukagai.webp"
     },
     {
       "id": "14-P0005",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0005-gotokuin-gamakura-daebul.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0005-gotokuin-gamakura-daebul.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0005-takanori-in-kamakura-daibutsu.webp"
     },
     {
       "id": "14-P0006",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0006-하세데라.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0006-hasedera.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0006-hasedera.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0006-hase-tera.webp"
     },
     {
       "id": "14-P0007",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0007-쓰루가오카-하치만구.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0007-sseurugaoka-hacimangu.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0007-sseurugaoka-hacimangu.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0007-tsuruoka-hachimanguu.webp"
     },
     {
       "id": "14-P0008",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0008-에노시마.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0008-enosima.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0008-enosima.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0008-kou-no-shima.webp"
     },
     {
       "id": "14-P0009",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0009-에노시마-시캔들.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0009-enosima-sikaendeul.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0009-enosima-sikaendeul.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0009-kou-no-shima-shiikyandoru.webp"
     },
     {
       "id": "14-P0010",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0010-신에노시마-수족관.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0010-sinenosima-sujoggwan.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0010-sinenosima-sujoggwan.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0010-shin-kou-no-shima-suizokukan.webp"
     },
     {
       "id": "14-P0011",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0011-오와쿠다니.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0011-owakudani.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0011-owakudani.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0011-oowakudani.webp"
     },
     {
       "id": "14-P0012",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0012-하코네-신사.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0012-hakone-sinsa.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0012-hakone-sinsa.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0012-hakone-jinja.webp"
     },
     {
       "id": "14-P0013",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0013-아시노코.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0013-asinoko.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0013-asinoko.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0013-ashi-no-mizuumi.webp"
     },
     {
       "id": "14-P0014",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0014-오다와라성.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0014-odawaraseong.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0014-odawaraseong.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0014-odawara-shiro.webp"
     },
     {
       "id": "14-P0015",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0015-조가시마.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0015-jogasima.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0015-jogasima.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0015-shiro-ke-shima.webp"
     },
     {
       "id": "14-P0016",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0016-우라리-마르셰.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0016-urari-mareusye.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0016-urari-mareusye.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0016-urari-marushie.webp"
     },
     {
       "id": "14-P0017",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0017-컵누들-뮤지엄-요코하마.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0017-keobnudeul-myujieom-yokohama.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0017-keobnudeul-myujieom-yokohama.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0017-kappunuudorumyuujiamu.webp"
     },
     {
       "id": "14-P0018",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0018-요코하마-마린타워.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0018-yokohama-marintaweo.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0018-yokohama-marintaweo.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0018-yokohama-marintawaa.webp"
     },
     {
       "id": "14-P0019",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0019-호코쿠지.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0019-hokokuji.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0019-hokokuji.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0019-houkoku-tera.webp"
     },
     {
       "id": "14-P0020",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0020-겐초지.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0020-gencoji.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0020-gencoji.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0020-kenchou-tera.webp"
     },
     {
       "id": "14-P0021",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0021-엔가쿠지.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0021-engakuji.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0021-engakuji.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0021-engaku-tera.webp"
     },
     {
       "id": "14-P0022",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0022-하코네-조각의-숲-미술관.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0022-hakone-jogagyi-sup-misulgwan.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0022-hakone-jogagyi-sup-misulgwan.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0022-choukoku-no-mori-bijutsukan.webp"
     },
     {
       "id": "14-P0023",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0023-하코네-세키쇼.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0023-hakone-sekisyo.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0023-hakone-sekisyo.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0023-hakone-sekisho.webp"
     },
     {
       "id": "14-P0024",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0024-가와사키-다이시.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0024-gawasaki-daisi.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0024-gawasaki-daisi.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0024-hirama-tera.webp"
     },
     {
       "id": "14-P0025",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0025-사루시마.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0025-sarusima.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0025-sarusima.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0025-saru-shima.webp"
     },
     {
       "id": "14-P0026",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0026-요코하마-핫케이지마-시파라다이스.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0026-yokohama-haskeijima-siparadaiseu.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0026-yokohama-haskeijima-siparadaiseu.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0026-yokohama-hakkei-shima-shiiparadaisu.webp"
     },
     {
       "id": "14-P0027",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0027-폴라-미술관.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0027-polra-misulgwan.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0027-polra-misulgwan.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0027-poora-bijutsukan.webp"
     },
     {
       "id": "14-P0028",
-      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0028-기념함-미카사.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0028-ginyeomham-mikasa.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/places/14-P0028-ginyeomham-mikasa.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/places/14-P0028-kinen-kan-mikasa.webp"
     },
     {
       "id": "16-P0001",
-      "from": "images/regions/hokuriku/toyama/places/16-P0001-도야마성터공원.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0001-doyamaseongteogongweon.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0001-doyamaseongteogongweon.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0001-toyama-joushi-kouen.webp"
     },
     {
       "id": "16-P0002",
-      "from": "images/regions/hokuriku/toyama/places/16-P0002-도야마-유리미술관.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0002-doyama-yurimisulgwan.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0002-doyama-yurimisulgwan.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0002-toyamashi-garasu-bijutsukan.webp"
     },
     {
       "id": "16-P0003",
-      "from": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0003-ganseui-gongweon.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0003-ganseui-gongweon.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0003-fugan-unga-kan-mizu-kouen.webp"
     },
     {
       "id": "16-P0004",
-      "from": "images/regions/hokuriku/toyama/places/16-P0004-도야마현립미술관.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0004-doyamahyeonribmisulgwan.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0004-doyamahyeonribmisulgwan.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0004-toyamaken-bijutsukan.webp"
     },
     {
       "id": "16-P0005",
-      "from": "images/regions/hokuriku/toyama/places/16-P0005-다테야마-구로베-알펜루트.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0005-dateyama-gurobe-alpenruteu.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0005-dateyama-gurobe-alpenruteu.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0005-tateyama-kurobe-arupenruuto.webp"
     },
     {
       "id": "16-P0006",
-      "from": "images/regions/hokuriku/toyama/places/16-P0006-무로도.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0006-murodo.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0006-murodo.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0006-shitsudou.webp"
     },
     {
       "id": "16-P0007",
-      "from": "images/regions/hokuriku/toyama/places/16-P0007-쇼묘-폭포.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0007-syomyo-pogpo.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0007-syomyo-pogpo.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0007-shoumyou-taki.webp"
     },
     {
       "id": "16-P0008",
-      "from": "images/regions/hokuriku/toyama/places/16-P0008-구로베-협곡-철도.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0008-gurobe-hyeobgog-ceoldo.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0008-gurobe-hyeobgog-ceoldo.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0008-kurobekyoukokutetsudou.webp"
     },
     {
       "id": "16-P0009",
-      "from": "images/regions/hokuriku/toyama/places/16-P0009-우나즈키-온천.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0009-unajeuki-onceon.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0009-unajeuki-onceon.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0009-unazuki-onsen.webp"
     },
     {
       "id": "16-P0010",
-      "from": "images/regions/hokuriku/toyama/places/16-P0010-다카오카-대불.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0010-dakaoka-daebul.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0010-dakaoka-daebul.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0010-takaoka-daibutsu.webp"
     },
     {
       "id": "16-P0011",
-      "from": "images/regions/hokuriku/toyama/places/16-P0011-즈이류지.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0011-jeuiryuji.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0011-jeuiryuji.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0011-zuiryuu-tera.webp"
     },
     {
       "id": "16-P0012",
-      "from": "images/regions/hokuriku/toyama/places/16-P0012-아마하라시-해안.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0012-amaharasi-haean.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0012-amaharasi-haean.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0012-ame-harumi-kishi.webp"
     },
     {
       "id": "16-P0013",
-      "from": "images/regions/hokuriku/toyama/places/16-P0013-히미-어항장-외시장-히미반야가이.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0013-himi-eohangjang-oesijang-himibanyagai.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0013-himi-eohangjang-oesijang-himibanyagai.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0013-himi-banya-machi.webp"
     },
     {
       "id": "16-P0014",
-      "from": "images/regions/hokuriku/toyama/places/16-P0014-히미-해안-가라시마.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0014-himi-haean-garasima.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0014-himi-haean-garasima.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0014-tou-shima-himi-kaigan.webp"
     },
     {
       "id": "16-P0015",
-      "from": "images/regions/hokuriku/toyama/places/16-P0015-스가누마-합장마을.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0015-seuganuma-habjangmaeul.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0015-seuganuma-habjangmaeul.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0015-sugenuma-gasshouzukuri-shuuraku.webp"
     },
     {
       "id": "16-P0016",
-      "from": "images/regions/hokuriku/toyama/places/16-P0016-아이노쿠라-합장마을.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0016-ainokura-habjangmaeul.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0016-ainokura-habjangmaeul.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0016-ainokura-gasshouzukuri-shuuraku.webp"
     },
     {
       "id": "16-P0017",
-      "from": "images/regions/hokuriku/toyama/places/16-P0017-고카야마-와시노사토.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0017-gokayama-wasinosato.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0017-gokayama-wasinosato.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0017-gokayama-washi-no-sato.webp"
     },
     {
       "id": "16-P0018",
-      "from": "images/regions/hokuriku/toyama/places/16-P0018-이오젠.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0018-iojen.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0018-iojen.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0018-iou-yama.webp"
     },
     {
       "id": "16-P0019",
-      "from": "images/regions/hokuriku/toyama/places/16-P0019-우오즈-매몰림-박물관.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0019-uojeu-maemolrim-bagmulgwan.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0019-uojeu-maemolrim-bagmulgwan.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0019-uozu-maibotsu-hayashi-hakubutsukan.webp"
     },
     {
       "id": "16-P0020",
-      "from": "images/regions/hokuriku/toyama/places/16-P0020-우오즈-신기루-전망지.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0020-uojeu-singiru-jeonmangji.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0020-uojeu-singiru-jeonmangji.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0020-shinkirou-tenbou-chiten.webp"
     },
     {
       "id": "16-P0021",
-      "from": "images/regions/hokuriku/toyama/places/16-P0021-호타루이카-뮤지엄.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0021-hotaruika-myujieom.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0021-hotaruika-myujieom.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0021-hotaruika-myuujiamu.webp"
     },
     {
       "id": "16-P0022",
-      "from": "images/regions/hokuriku/toyama/places/16-P0022-호타루이카-해상관광.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0022-hotaruika-haesanggwangwang.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0022-hotaruika-haesanggwangwang.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0022-hotaruika-kaijou-kankou.webp"
     },
     {
       "id": "16-P0023",
-      "from": "images/regions/hokuriku/toyama/places/16-P0023-구로베댐.webp",
-      "to": "images/regions/hokuriku/toyama/places/16-P0023-gurobedaem.webp"
+      "from": "images/regions/hokuriku/toyama/places/16-P0023-gurobedaem.webp",
+      "to": "images/regions/hokuriku/toyama/places/16-P0023-kurobe-damu.webp"
     },
     {
       "id": "17-P0001",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0001-genrokuen.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0001-genrokuen.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0001-kenrokuen.webp"
     },
     {
       "id": "17-P0002",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0002-가나자와성-공원.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0002-ganajawaseong-gongweon.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0002-ganajawaseong-gongweon.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0002-kanazawa-shiro-kouen.webp"
     },
     {
       "id": "17-P0003",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0003-히가시차야가이.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0003-higasicayagai.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0003-higasicayagai.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0003-higashi-chaya-machi.webp"
     },
     {
       "id": "17-P0004",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0004-오미초-시장.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0004-omico-sijang.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0004-omico-sijang.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0004-oumichoushijou.webp"
     },
     {
       "id": "17-P0005",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0005-21세기-미술관.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0005-21segi-misulgwan.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0005-21segi-misulgwan.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0005-kanazawa-21-seiki-bijutsukan.webp"
     },
     {
       "id": "17-P0006",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0006-나가마치-무가저택-거리.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0006-nagamaci-mugajeotaeg-geori.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0006-nagamaci-mugajeotaeg-geori.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0006-nagamachi-buke-yashikiato.webp"
     },
     {
       "id": "17-P0007",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0007-야마시로-온천.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0007-yamasiro-onceon.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0007-yamasiro-onceon.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0007-yamashiro-onsen.webp"
     },
     {
       "id": "17-P0008",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0008-야마나카-온천.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0008-yamanaka-onceon.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0008-yamanaka-onceon.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0008-sanchuu-onsen.webp"
     },
     {
       "id": "17-P0009",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0009-가쿠센케이.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0009-gakusenkei.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0009-gakusenkei.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0009-tsurusen-kei.webp"
     },
     {
       "id": "17-P0010",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0010-나타데라.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0010-natadera.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0010-natadera.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0010-nata-tera.webp"
     },
     {
       "id": "17-P0011",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0011-이시카와-항공플라자.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0011-isikawa-hanggongpeulraja.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0011-isikawa-hanggongpeulraja.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0011-ishikawaken-ritsu-koukuu-puraza.webp"
     },
     {
       "id": "17-P0012",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0012-시로요네-센마이다.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0012-siroyone-senmaida.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0012-siroyone-senmaida.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0012-hakumai-senmaida.webp"
     },
     {
       "id": "17-P0013",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0013-와지마-아침시장-임시-상설시장.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0013-wajima-acimsijang-imsi-sangseolsijang.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0013-wajima-acimsijang-imsi-sangseolsijang.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0013-pawaashitei-wa-shima-waipuraza.webp"
     },
     {
       "id": "17-P0014",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0014-와지마-칠예미술관.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0014-wajima-cilyemisulgwan.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0014-wajima-cilyemisulgwan.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0014-ishikawaken-wa-shima-shitsugei-bijutsukan.webp"
     },
     {
       "id": "17-P0015",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0015-미쓰케지마.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0015-misseukejima.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0015-misseukejima.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0015-mitsuke-shima.webp"
     },
     {
       "id": "17-P0016",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0016-와쿠라-온천.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0016-wakura-onceon.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0016-wakura-onceon.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0016-wakuraonsen.webp"
     },
     {
       "id": "17-P0017",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0017-노토지마-수족관.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0017-notojima-sujoggwan.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0017-notojima-sujoggwan.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0017-notojima-suizokukan.webp"
     },
     {
       "id": "17-P0018",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0018-시라야마히메-신사.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0018-sirayamahime-sinsa.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0018-sirayamahime-sinsa.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0018-hakusan-hime-jinja.webp"
     },
     {
       "id": "17-P0019",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0019-하쿠산-시라카와고-화이트로드.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0019-hakusan-sirakawago-hwaiteurodeu.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0019-hakusan-sirakawago-hwaiteurodeu.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0019-hakusan-shirakawa-sato-howaitoroodo.webp"
     },
     {
       "id": "17-P0020",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0020-후쿠베-대폭포.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0020-hukube-daepogpo.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0020-hukube-daepogpo.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0020-fukubeno-ootaki.webp"
     },
     {
       "id": "17-P0021",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0021-시라미네-전통건조물군.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0021-siramine-jeontonggeonjomulgun.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0021-siramine-jeontonggeonjomulgun.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0021-juuyou-dentouteki-kenzoubutsu-gun-hozon-chiku.webp"
     },
     {
       "id": "17-P0022",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0022-묘류지-닌자데라.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0022-myoryuji-ninjadera.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0022-myoryuji-ninjadera.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0022-myou-ritsu-tera.webp"
     },
     {
       "id": "17-P0023",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0023-스즈키-다이세쓰관.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0023-seujeuki-daisesseugwan.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0023-seujeuki-daisesseugwan.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0023-suzuki-daisetsu-kan.webp"
     },
     {
       "id": "17-P0024",
-      "from": "images/regions/hokuriku/ishikawa/places/17-P0024-니시차야가이.webp",
-      "to": "images/regions/hokuriku/ishikawa/places/17-P0024-nisicayagai.webp"
+      "from": "images/regions/hokuriku/ishikawa/places/17-P0024-nisicayagai.webp",
+      "to": "images/regions/hokuriku/ishikawa/places/17-P0024-nishi-chaya-machi.webp"
     },
     {
       "id": "18-P0001",
-      "from": "images/regions/hokuriku/fukui/places/18-P0001-후쿠이성터.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0001-hukuiseongteo.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0001-hukuiseongteo.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0001-fukui-joushi.webp"
     },
     {
       "id": "18-P0002",
-      "from": "images/regions/hokuriku/fukui/places/18-P0002-요코칸-정원.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0002-yokokan-jeongweon.webp"
-    },
-    {
-      "id": "18-P0003",
-      "from": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0003-eiheiji.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0002-yokokan-jeongweon.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0002-youkou-kan-teien.webp"
     },
     {
       "id": "18-P0004",
-      "from": "images/regions/hokuriku/fukui/places/18-P0004-후쿠이현립-역사박물관.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0004-hukuihyeonrib-yeogsabagmulgwan.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0004-hukuihyeonrib-yeogsabagmulgwan.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0004-fukuiken-ritsu-rekishi-hakubutsukan.webp"
     },
     {
       "id": "18-P0005",
-      "from": "images/regions/hokuriku/fukui/places/18-P0005-도진보.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0005-dojinbo.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0005-dojinbo.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0005-toujinbou.webp"
     },
     {
       "id": "18-P0006",
-      "from": "images/regions/hokuriku/fukui/places/18-P0006-오시마.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0006-osima.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0006-osima.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0006-osu-shima.webp"
     },
     {
       "id": "18-P0007",
-      "from": "images/regions/hokuriku/fukui/places/18-P0007-아와라-온천.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0007-awara-onceon.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0007-awara-onceon.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0007-awara-onsen.webp"
     },
     {
       "id": "18-P0008",
-      "from": "images/regions/hokuriku/fukui/places/18-P0008-마루오카성.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0008-maruokaseong.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0008-maruokaseong.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0008-maruoka-shiro.webp"
     },
     {
       "id": "18-P0009",
-      "from": "images/regions/hokuriku/fukui/places/18-P0009-후쿠이현립-공룡박물관.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0009-hukuihyeonrib-gongryongbagmulgwan.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0009-hukuihyeonrib-gongryongbagmulgwan.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0009-fukuiken-ritsu-kyouryuu-hakubutsukan.webp"
     },
     {
       "id": "18-P0010",
-      "from": "images/regions/hokuriku/fukui/places/18-P0010-가쓰야마-공룡숲.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0010-gasseuyama-gongryongsup.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0010-gasseuyama-gongryongsup.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0010-katsuyama-kyouryuu-no-mori.webp"
     },
     {
       "id": "18-P0011",
-      "from": "images/regions/hokuriku/fukui/places/18-P0011-에치젠-오노성.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0011-ecijen-onoseong.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0011-ecijen-onoseong.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0011-echizen-oonojou.webp"
     },
     {
       "id": "18-P0012",
-      "from": "images/regions/hokuriku/fukui/places/18-P0012-시치켄-아사이치.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0012-siciken-asaici.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0012-siciken-asaici.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0012-shichi-kan-asaichi.webp"
     },
     {
       "id": "18-P0013",
-      "from": "images/regions/hokuriku/fukui/places/18-P0013-오쇼즈-용천수.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0013-osyojeu-yongceonsu.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0013-osyojeu-yongceonsu.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0013-o-shimizu.webp"
     },
     {
       "id": "18-P0014",
-      "from": "images/regions/hokuriku/fukui/places/18-P0014-게히-신궁.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0014-gehi-singung.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0014-gehi-singung.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0014-kehi-jinguu.webp"
     },
     {
       "id": "18-P0015",
-      "from": "images/regions/hokuriku/fukui/places/18-P0015-아카렌가-창고.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0015-akarenga-canggo.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0015-akarenga-canggo.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0015-tsuruga-aka-renga-souko.webp"
     },
     {
       "id": "18-P0016",
-      "from": "images/regions/hokuriku/fukui/places/18-P0016-기비노마쓰바라.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0016-gibinomasseubara.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0016-gibinomasseubara.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0016-kehi-no-matsubara.webp"
     },
     {
       "id": "18-P0017",
-      "from": "images/regions/hokuriku/fukui/places/18-P0017-미카타고코.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0017-mikatagoko.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0017-mikatagoko.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0017-mikata-go-mizuumi.webp"
     },
     {
       "id": "18-P0018",
-      "from": "images/regions/hokuriku/fukui/places/18-P0018-레인보우라인-산정공원.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0018-reinbourain-sanjeonggongweon.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0018-reinbourain-sanjeonggongweon.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0018-reinboorain-sanchou-kouen.webp"
     },
     {
       "id": "18-P0019",
-      "from": "images/regions/hokuriku/fukui/places/18-P0019-오바마-니시구미-전통건조물군.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0019-obama-nisigumi-jeontonggeonjomulgun.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0019-obama-nisigumi-jeontonggeonjomulgun.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0019-obama-nishigumi.webp"
     },
     {
       "id": "18-P0020",
-      "from": "images/regions/hokuriku/fukui/places/18-P0020-오바마-어항.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0020-obama-eohang.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0020-obama-eohang.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0020-obama-gyokou.webp"
     },
     {
       "id": "18-P0021",
-      "from": "images/regions/hokuriku/fukui/places/18-P0021-소토모-해안-유람선.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0021-sotomo-haean-yuramseon.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0021-sotomo-haean-yuramseon.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0021-sotomo.webp"
     },
     {
       "id": "18-P0022",
-      "from": "images/regions/hokuriku/fukui/places/18-P0022-구마가와주쿠.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0022-gumagawajuku.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0022-gumagawajuku.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0022-kumakawa-yado.webp"
     },
     {
       "id": "18-P0023",
-      "from": "images/regions/hokuriku/fukui/places/18-P0023-와카사-미카타-조몬박물관.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0023-wakasa-mikata-jomonbagmulgwan.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0023-wakasa-mikata-jomonbagmulgwan.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0023-wakasa-mikata-joumon-hakubutsukan.webp"
     },
     {
       "id": "18-P0024",
-      "from": "images/regions/hokuriku/fukui/places/18-P0024-헤이센지-하쿠산-신사.webp",
-      "to": "images/regions/hokuriku/fukui/places/18-P0024-heisenji-hakusan-sinsa.webp"
+      "from": "images/regions/hokuriku/fukui/places/18-P0024-heisenji-hakusan-sinsa.webp",
+      "to": "images/regions/hokuriku/fukui/places/18-P0024-hiraizumi-tera-hakusan-jinja.webp"
     },
     {
       "id": "25-P0001",
-      "from": "images/regions/kinki/shiga/places/25-P0001-히코네성.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0001-hikoneseong.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0001-hikoneseong.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0001-hikone-shiro.webp"
     },
     {
       "id": "25-P0002",
-      "from": "images/regions/kinki/shiga/places/25-P0002-겐큐엔.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0002-genkyuen.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0002-genkyuen.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0002-genkyuu-sono.webp"
     },
     {
       "id": "25-P0003",
-      "from": "images/regions/kinki/shiga/places/25-P0003-히에이잔-엔랴쿠지.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0003-hieijan-enryakuji.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0003-hieijan-enryakuji.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0003-enryaku-tera.webp"
     },
     {
       "id": "25-P0004",
-      "from": "images/regions/kinki/shiga/places/25-P0004-이시야마데라.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0004-isiyamadera.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0004-isiyamadera.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0004-ishiyamadera.webp"
     },
     {
       "id": "25-P0005",
-      "from": "images/regions/kinki/shiga/places/25-P0005-미이데라-온조지.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0005-miidera-onjoji.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0005-miidera-onjoji.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0005-onjou-tera.webp"
     },
     {
       "id": "25-P0006",
-      "from": "images/regions/kinki/shiga/places/25-P0006-비와코-밸리.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0006-biwako-baelri.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0006-biwako-baelri.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0006-biwa-mizuumi-barei.webp"
     },
     {
       "id": "25-P0007",
-      "from": "images/regions/kinki/shiga/places/25-P0007-비와호-박물관.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0007-biwaho-bagmulgwan.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0007-biwaho-bagmulgwan.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0007-biwakohakubutsukan.webp"
     },
     {
       "id": "25-P0008",
-      "from": "images/regions/kinki/shiga/places/25-P0008-하치만보리.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0008-hacimanbori.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0008-hacimanbori.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0008-hachiman-hori.webp"
     },
     {
       "id": "25-P0009",
-      "from": "images/regions/kinki/shiga/places/25-P0009-라-코리나-오미하치만.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0009-ra-korina-omihaciman.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0009-ra-korina-omihaciman.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0009-koriina-oumihachiman.webp"
     },
     {
       "id": "25-P0010",
-      "from": "images/regions/kinki/shiga/places/25-P0010-아즈치성터.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0010-ajeuciseongteo.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0010-ajeuciseongteo.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0010-azuchijou-ato.webp"
     },
     {
       "id": "25-P0011",
-      "from": "images/regions/kinki/shiga/places/25-P0011-구로카베-스퀘어.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0011-gurokabe-seukweeo.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0011-gurokabe-seukweeo.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0011-kurokabe-sukuea.webp"
     },
     {
       "id": "25-P0012",
-      "from": "images/regions/kinki/shiga/places/25-P0012-치쿠부시마.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0012-cikubusima.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0012-cikubusima.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0012-takeo-shima.webp"
     },
     {
       "id": "25-P0013",
-      "from": "images/regions/kinki/shiga/places/25-P0013-시라히게-신사.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0013-sirahige-sinsa.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0013-sirahige-sinsa.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0013-shirahige-jinja.webp"
     },
     {
       "id": "25-P0014",
-      "from": "images/regions/kinki/shiga/places/25-P0014-메타세쿼이아-가로수길.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0014-metasekweoia-garosugil.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0014-metasekweoia-garosugil.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0014-metasekoia-namiki.webp"
     },
     {
       "id": "25-P0015",
-      "from": "images/regions/kinki/shiga/places/25-P0015-고카노사토-닌자술촌.webp",
-      "to": "images/regions/kinki/shiga/places/25-P0015-gokanosato-ninjasulcon.webp"
+      "from": "images/regions/kinki/shiga/places/25-P0015-gokanosato-ninjasulcon.webp",
+      "to": "images/regions/kinki/shiga/places/25-P0015-ninjutsu-mura.webp"
     },
     {
       "id": "26-P0001",
-      "from": "images/regions/kinki/kyoto/places/26-P0001-기요미즈데라.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0001-giyomijeudera.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0001-giyomijeudera.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0001-kiyomizudera.webp"
     },
     {
       "id": "26-P0002",
-      "from": "images/regions/kinki/kyoto/places/26-P0002-아라시야마-대나무숲.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0002-arasiyama-daenamusup.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0002-arasiyama-daenamusup.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0002-chikurin-no-komichi.webp"
     },
     {
       "id": "26-P0003",
-      "from": "images/regions/kinki/kyoto/places/26-P0003-뵤도인.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0003-byodoin.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0003-byodoin.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0003-byoudouin.webp"
     },
     {
       "id": "26-P0004",
-      "from": "images/regions/kinki/kyoto/places/26-P0004-후시미-이나리-타이샤.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0004-husimi-inari-taisya.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0004-husimi-inari-taisya.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0004-fushimi-inari-taisha.webp"
     },
     {
       "id": "26-P0005",
-      "from": "images/regions/kinki/kyoto/places/26-P0005-금각사-킨카쿠지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0005-geumgagsa-kinkakuji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0005-geumgagsa-kinkakuji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0005-kinkakuji.webp"
     },
     {
       "id": "26-P0006",
-      "from": "images/regions/kinki/kyoto/places/26-P0006-니조성.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0006-nijoseong.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0006-nijoseong.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0006-moto-rikyuu-nijou-shiro.webp"
     },
     {
       "id": "26-P0007",
-      "from": "images/regions/kinki/kyoto/places/26-P0007-덴류지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0007-denryuji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0007-denryuji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0007-tenryuu-tera.webp"
     },
     {
       "id": "26-P0008",
-      "from": "images/regions/kinki/kyoto/places/26-P0008-도지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0008-doji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0008-doji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0008-touji.webp"
     },
     {
       "id": "26-P0009",
-      "from": "images/regions/kinki/kyoto/places/26-P0009-아마노하시다테.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0009-amanohasidate.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0009-amanohasidate.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0009-amanohashidate.webp"
     },
     {
       "id": "26-P0010",
-      "from": "images/regions/kinki/kyoto/places/26-P0010-이네-후나야.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0010-ine-hunaya.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0010-ine-hunaya.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0010-ine-no-fune-ya.webp"
     },
     {
       "id": "26-P0011",
-      "from": "images/regions/kinki/kyoto/places/26-P0011-야사카-신사.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0011-yasaka-sinsa.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0011-yasaka-sinsa.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0011-yasakajinja.webp"
     },
     {
       "id": "26-P0012",
-      "from": "images/regions/kinki/kyoto/places/26-P0012-기온-하나미코지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0012-gion-hanamikoji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0012-gion-hanamikoji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0012-hanami-kouji.webp"
     },
     {
       "id": "26-P0013",
-      "from": "images/regions/kinki/kyoto/places/26-P0013-고다이지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0013-godaiji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0013-godaiji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0013-takadai-tera.webp"
     },
     {
       "id": "26-P0014",
-      "from": "images/regions/kinki/kyoto/places/26-P0014-난젠지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0014-nanjenji.webp"
-    },
-    {
-      "id": "26-P0015",
-      "from": "images/regions/kinki/kyoto/places/26-P0015-긴카쿠지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0015-ginkakuji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0014-nanjenji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0014-nanzenji.webp"
     },
     {
       "id": "26-P0016",
-      "from": "images/regions/kinki/kyoto/places/26-P0016-철학의-길.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0016-ceolhagyi-gil.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0016-ceolhagyi-gil.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0016-tetsugaku-no-michi.webp"
     },
     {
       "id": "26-P0017",
-      "from": "images/regions/kinki/kyoto/places/26-P0017-료안지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0017-ryoanji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0017-ryoanji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0017-ryouan-tera.webp"
     },
     {
       "id": "26-P0018",
-      "from": "images/regions/kinki/kyoto/places/26-P0018-니시키-시장.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0018-nisiki-sijang.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0018-nisiki-sijang.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0018-nishiki-shijou.webp"
     },
     {
       "id": "26-P0019",
-      "from": "images/regions/kinki/kyoto/places/26-P0019-도게쓰교.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0019-dogesseugyo.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0019-dogesseugyo.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0019-togetsu-hashi.webp"
     },
     {
       "id": "26-P0020",
-      "from": "images/regions/kinki/kyoto/places/26-P0020-기후네-신사.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0020-gihune-sinsa.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0020-gihune-sinsa.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0020-kifune-jinja.webp"
     },
     {
       "id": "26-P0021",
-      "from": "images/regions/kinki/kyoto/places/26-P0021-교토고쇼.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0021-gyotogosyo.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0021-gyotogosyo.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0021-kyoutogosho.webp"
     },
     {
       "id": "26-P0022",
-      "from": "images/regions/kinki/kyoto/places/26-P0022-산주산겐도.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0022-sanjusangendo.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0022-sanjusangendo.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0022-sanjuusangendou.webp"
     },
     {
       "id": "26-P0023",
-      "from": "images/regions/kinki/kyoto/places/26-P0023-다이고지.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0023-daigoji.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0023-daigoji.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0023-daigo-tera.webp"
     },
     {
       "id": "26-P0024",
-      "from": "images/regions/kinki/kyoto/places/26-P0024-구라마데라.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0024-guramadera.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0024-guramadera.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0024-kurama-tera.webp"
     },
     {
       "id": "26-P0025",
-      "from": "images/regions/kinki/kyoto/places/26-P0025-산젠인.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0025-sanjenin.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0025-sanjenin.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0025-sanzen-in.webp"
     },
     {
       "id": "26-P0026",
-      "from": "images/regions/kinki/kyoto/places/26-P0026-우지가미-신사.webp",
-      "to": "images/regions/kinki/kyoto/places/26-P0026-ujigami-sinsa.webp"
+      "from": "images/regions/kinki/kyoto/places/26-P0026-ujigami-sinsa.webp",
+      "to": "images/regions/kinki/kyoto/places/26-P0026-uji-ue-jinja.webp"
     },
     {
       "id": "27-P0001",
-      "from": "images/regions/kinki/osaka/places/27-P0001-도톤보리.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0001-dotonbori.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0001-dotonbori.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0001-doutonbori.webp"
     },
     {
       "id": "27-P0002",
-      "from": "images/regions/kinki/osaka/places/27-P0002-구로몬-시장.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0002-guromon-sijang.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0002-guromon-sijang.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0002-kuromon-shijou.webp"
     },
     {
       "id": "27-P0003",
-      "from": "images/regions/kinki/osaka/places/27-P0003-호젠지-호젠지-요코초.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0003-hojenji-hojenji-yokoco.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0003-hojenji-hojenji-yokoco.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0003-houzen-tera-houzen-tera-yokochou.webp"
     },
     {
       "id": "27-P0004",
-      "from": "images/regions/kinki/osaka/places/27-P0004-우메다-스카이-빌딩.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0004-umeda-seukai-bilding.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0004-umeda-seukai-bilding.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0004-umeda-sukaibiru.webp"
     },
     {
       "id": "27-P0005",
-      "from": "images/regions/kinki/osaka/places/27-P0005-나카노시마-공원.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0005-nakanosima-gongweon.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0005-nakanosima-gongweon.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0005-naka-yuki-shima-kouen.webp"
     },
     {
       "id": "27-P0006",
-      "from": "images/regions/kinki/osaka/places/27-P0006-오사카-텐만구.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0006-osaka-tenmangu.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0006-osaka-tenmangu.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0006-oosaka-tenmanguu.webp"
     },
     {
       "id": "27-P0007",
-      "from": "images/regions/kinki/osaka/places/27-P0007-오사카성-공원-천수각.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0007-osakaseong-gongweon-ceonsugag.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0007-osakaseong-gongweon-ceonsugag.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0007-oosakajou-kouen-tenshukaku.webp"
     },
     {
       "id": "27-P0008",
-      "from": "images/regions/kinki/osaka/places/27-P0008-오사카-역사박물관.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0008-osaka-yeogsabagmulgwan.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0008-osaka-yeogsabagmulgwan.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0008-oosaka-rekishi-hakubutsukan.webp"
     },
     {
       "id": "27-P0009",
-      "from": "images/regions/kinki/osaka/places/27-P0009-시텐노지.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0009-sitennoji.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0009-sitennoji.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0009-shitennou-tera.webp"
     },
     {
       "id": "27-P0010",
-      "from": "images/regions/kinki/osaka/places/27-P0010-신세카이-쓰텐카쿠.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0010-sinsekai-sseutenkaku.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0010-sinsekai-sseutenkaku.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0010-shinsekai-tsuutenkaku.webp"
     },
     {
       "id": "27-P0011",
-      "from": "images/regions/kinki/osaka/places/27-P0011-아베노-하루카스-300.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0011-abeno-harukaseu-300.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0011-abeno-harukaseu-300.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0011-abeno-harukasu-300.webp"
     },
     {
       "id": "27-P0012",
-      "from": "images/regions/kinki/osaka/places/27-P0012-가이유칸.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0012-gaiyukan.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0012-gaiyukan.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0012-kaiyuukan.webp"
     },
     {
       "id": "27-P0013",
-      "from": "images/regions/kinki/osaka/places/27-P0013-유니버설-스튜디오-재팬.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0013-yunibeoseol-seutyudio-jaepaen.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0013-yunibeoseol-seutyudio-jaepaen.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0013-yunibaasaru-sutajio-japan.webp"
     },
     {
       "id": "27-P0014",
-      "from": "images/regions/kinki/osaka/places/27-P0014-만박기념공원-태양의-탑.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0014-manbagginyeomgongweon-taeyangyi-tab.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0014-manbagginyeomgongweon-taeyangyi-tab.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0014-banpaku-kinenkouen-taiyou-no-tou.webp"
     },
     {
       "id": "27-P0015",
-      "from": "images/regions/kinki/osaka/places/27-P0015-미노오-폭포.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0015-minoo-pogpo.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0015-minoo-pogpo.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0015-minoo-ootaki.webp"
     },
     {
       "id": "27-P0016",
-      "from": "images/regions/kinki/osaka/places/27-P0016-가쓰오지.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0016-gasseuoji.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0016-gasseuoji.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0016-katsuo-tera.webp"
     },
     {
       "id": "27-P0017",
-      "from": "images/regions/kinki/osaka/places/27-P0017-스미요시타이샤.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0017-seumiyositaisya.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0017-seumiyositaisya.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0017-sumiyoshi-taisha.webp"
     },
     {
       "id": "27-P0018",
-      "from": "images/regions/kinki/osaka/places/27-P0018-다이센-고분-다이센-공원.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0018-daisen-gobun-daisen-gongweon.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0018-daisen-gobun-daisen-gongweon.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0018-daisen-kofun-daisen-kouen.webp"
     },
     {
       "id": "27-P0019",
-      "from": "images/regions/kinki/osaka/places/27-P0019-기시와다성.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0019-gisiwadaseong.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0019-gisiwadaseong.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0019-kishiwada-shiro.webp"
     },
     {
       "id": "27-P0020",
-      "from": "images/regions/kinki/osaka/places/27-P0020-린쿠-공원.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0020-rinku-gongweon.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0020-rinku-gongweon.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0020-rinkuu-kouen.webp"
     },
     {
       "id": "27-P0021",
-      "from": "images/regions/kinki/osaka/places/27-P0021-난바-야사카-신사.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0021-nanba-yasaka-sinsa.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0021-nanba-yasaka-sinsa.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0021-nanba-yasaka-jinja.webp"
     },
     {
       "id": "27-P0022",
-      "from": "images/regions/kinki/osaka/places/27-P0022-신사이바시스지-상점가.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0022-sinsaibasiseuji-sangjeomga.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0022-sinsaibasiseuji-sangjeomga.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0022-shinsaibashi-suji-shoutengai.webp"
     },
     {
       "id": "27-P0023",
-      "from": "images/regions/kinki/osaka/places/27-P0023-덴진바시스지-상점가.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0023-denjinbasiseuji-sangjeomga.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0023-denjinbasiseuji-sangjeomga.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0023-tenjinbashi-suji-shoutengai.webp"
     },
     {
       "id": "27-P0024",
-      "from": "images/regions/kinki/osaka/places/27-P0024-오사카-주거박물관.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0024-osaka-jugeobagmulgwan.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0024-osaka-jugeobagmulgwan.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0024-oosaka-kurashino-konjaku-kan.webp"
     },
     {
       "id": "27-P0025",
-      "from": "images/regions/kinki/osaka/places/27-P0025-오사카-나카노시마-미술관.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0025-osaka-nakanosima-misulgwan.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0025-osaka-nakanosima-misulgwan.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0025-oosaka-naka-yuki-shima-bijutsukan.webp"
     },
     {
       "id": "27-P0026",
-      "from": "images/regions/kinki/osaka/places/27-P0026-덴포잔-대관람차.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0026-denpojan-daegwanramca.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0026-denpojan-daegwanramca.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0026-tenpouzan-taikan-ran-kuruma.webp"
     },
     {
       "id": "27-P0027",
-      "from": "images/regions/kinki/osaka/places/27-P0027-컵누들-뮤지엄-오사카-이케다.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0027-keobnudeul-myujieom-osaka-ikeda.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0027-keobnudeul-myujieom-osaka-ikeda.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0027-oosaka-ikeda.webp"
     },
     {
       "id": "27-P0028",
-      "from": "images/regions/kinki/osaka/places/27-P0028-사카이-리쇼노모리.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0028-sakai-risyonomori.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0028-sakai-risyonomori.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0028-sakai-ri-aki-no-mori.webp"
     },
     {
       "id": "27-P0029",
-      "from": "images/regions/kinki/osaka/places/27-P0029-아이젠도-쇼만인.webp",
-      "to": "images/regions/kinki/osaka/places/27-P0029-aijendo-syomanin.webp"
+      "from": "images/regions/kinki/osaka/places/27-P0029-aijendo-syomanin.webp",
+      "to": "images/regions/kinki/osaka/places/27-P0029-aizen-dou-shouman-in.webp"
     },
     {
       "id": "28-P0001",
-      "from": "images/regions/kinki/hyogo/places/28-P0001-메리켄-파크.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0001-meriken-pakeu.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0001-meriken-pakeu.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0001-merikenpaaku.webp"
     },
     {
       "id": "28-P0002",
-      "from": "images/regions/kinki/hyogo/places/28-P0002-기타노-이진칸-가자미도리노야카타.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0002-gitano-ijinkan-gajamidorinoyakata.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0002-gitano-ijinkan-gajamidorinoyakata.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0002-kazamidori-no-kan.webp"
     },
     {
       "id": "28-P0003",
-      "from": "images/regions/kinki/hyogo/places/28-P0003-고베-누노비키-허브원-로프웨이.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0003-gobe-nunobiki-heobeuweon-ropeuwei.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0003-gobe-nunobiki-heobeuweon-ropeuwei.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0003-roopuuei.webp"
     },
     {
       "id": "28-P0004",
-      "from": "images/regions/kinki/hyogo/places/28-P0004-아리마-온천.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0004-arima-onceon.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0004-arima-onceon.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0004-arimaonsen.webp"
     },
     {
       "id": "28-P0005",
-      "from": "images/regions/kinki/hyogo/places/28-P0005-히메지성.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0005-himejiseong.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0005-himejiseong.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0005-himejijou.webp"
     },
     {
       "id": "28-P0006",
-      "from": "images/regions/kinki/hyogo/places/28-P0006-고코엔.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0006-gokoen.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0006-gokoen.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0006-kouko-sono.webp"
     },
     {
       "id": "28-P0007",
-      "from": "images/regions/kinki/hyogo/places/28-P0007-다케다성터.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0007-dakedaseongteo.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0007-dakedaseongteo.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0007-takeda-shiroato.webp"
     },
     {
       "id": "28-P0008",
-      "from": "images/regions/kinki/hyogo/places/28-P0008-기노사키-온천.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0008-ginosaki-onceon.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0008-ginosaki-onceon.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0008-kinosaki-onsen.webp"
     },
     {
       "id": "28-P0009",
-      "from": "images/regions/kinki/hyogo/places/28-P0009-이즈시-성터-성하마을.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0009-ijeusi-seongteo-seonghamaeul.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0009-ijeusi-seongteo-seonghamaeul.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0009-izushi-shiroato.webp"
     },
     {
       "id": "28-P0010",
-      "from": "images/regions/kinki/hyogo/places/28-P0010-아와지-유메부타이.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0010-awaji-yumebutai.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0010-awaji-yumebutai.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0010-awaji-yume-butai.webp"
     },
     {
       "id": "28-P0011",
-      "from": "images/regions/kinki/hyogo/places/28-P0011-난킨마치.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0011-nankinmaci.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0011-nankinmaci.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0011-nankin-machi.webp"
     },
     {
       "id": "28-P0012",
-      "from": "images/regions/kinki/hyogo/places/28-P0012-고베-하버랜드.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0012-gobe-habeoraendeu.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0012-gobe-habeoraendeu.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0012-koube-haabaarando.webp"
     },
     {
       "id": "28-P0013",
-      "from": "images/regions/kinki/hyogo/places/28-P0013-롯코-가든-테라스.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0013-rosko-gadeun-teraseu.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0013-rosko-gadeun-teraseu.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0013-rokkou-gaadenterasu.webp"
     },
     {
       "id": "28-P0014",
-      "from": "images/regions/kinki/hyogo/places/28-P0014-아카시해협대교-마이코-해상산책로.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0014-akasihaehyeobdaegyo-maiko-haesangsancaegro.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0014-akasihaehyeobdaegyo-maiko-haesangsancaegro.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0014-maiko-kaijou-puromunaado.webp"
     },
     {
       "id": "28-P0015",
-      "from": "images/regions/kinki/hyogo/places/28-P0015-쇼샤잔-엔교지.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0015-syosyajan-engyoji.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0015-syosyajan-engyoji.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0015-shosha-yama-engyou-tera.webp"
     },
     {
       "id": "28-P0016",
-      "from": "images/regions/kinki/hyogo/places/28-P0016-기노사키-로프웨이.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0016-ginosaki-ropeuwei.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0016-ginosaki-ropeuwei.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0016-kinosaki-onsen-roopuuei.webp"
     },
     {
       "id": "28-P0017",
-      "from": "images/regions/kinki/hyogo/places/28-P0017-고베-동물왕국.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0017-gobe-dongmulwanggug.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0017-gobe-dongmulwanggug.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0017-koube-doubutsu-oukoku.webp"
     },
     {
       "id": "28-P0018",
-      "from": "images/regions/kinki/hyogo/places/28-P0018-아와지-하나사지키.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0018-awaji-hanasajiki.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0018-awaji-hanasajiki.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0018-awaji-hana-sajiki.webp"
     },
     {
       "id": "28-P0019",
-      "from": "images/regions/kinki/hyogo/places/28-P0019-사사야마성-오쇼인.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0019-sasayamaseong-osyoin.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0019-sasayamaseong-osyoin.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0019-shinoyama-shiro-taisho-in.webp"
     },
     {
       "id": "28-P0020",
-      "from": "images/regions/kinki/hyogo/places/28-P0020-아카시성.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0020-akasiseong.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0020-akasiseong.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0020-akashi-shiro.webp"
     },
     {
       "id": "28-P0021",
-      "from": "images/regions/kinki/hyogo/places/28-P0021-아코성터.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0021-akoseongteo.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0021-akoseongteo.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0021-akou-shiroato.webp"
     },
     {
       "id": "28-P0022",
-      "from": "images/regions/kinki/hyogo/places/28-P0022-다카라즈카-대극장.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0022-dakarajeuka-daegeugjang.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0022-dakarajeuka-daegeugjang.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0022-takarazukadaigekijou.webp"
     },
     {
       "id": "28-P0023",
-      "from": "images/regions/kinki/hyogo/places/28-P0023-고베-포트타워.webp",
-      "to": "images/regions/kinki/hyogo/places/28-P0023-gobe-poteutaweo.webp"
+      "from": "images/regions/kinki/hyogo/places/28-P0023-gobe-poteutaweo.webp",
+      "to": "images/regions/kinki/hyogo/places/28-P0023-koube-poototawaa.webp"
     },
     {
       "id": "29-P0001",
-      "from": "images/regions/kinki/nara/places/29-P0001-도다이지.webp",
-      "to": "images/regions/kinki/nara/places/29-P0001-dodaiji.webp"
+      "from": "images/regions/kinki/nara/places/29-P0001-dodaiji.webp",
+      "to": "images/regions/kinki/nara/places/29-P0001-toudaiji.webp"
     },
     {
       "id": "29-P0002",
-      "from": "images/regions/kinki/nara/places/29-P0002-나라공원.webp",
-      "to": "images/regions/kinki/nara/places/29-P0002-naragongweon.webp"
+      "from": "images/regions/kinki/nara/places/29-P0002-naragongweon.webp",
+      "to": "images/regions/kinki/nara/places/29-P0002-nara-kouen.webp"
     },
     {
       "id": "29-P0003",
-      "from": "images/regions/kinki/nara/places/29-P0003-가스가타이샤.webp",
-      "to": "images/regions/kinki/nara/places/29-P0003-gaseugataisya.webp"
+      "from": "images/regions/kinki/nara/places/29-P0003-gaseugataisya.webp",
+      "to": "images/regions/kinki/nara/places/29-P0003-kasugataisha.webp"
     },
     {
       "id": "29-P0004",
-      "from": "images/regions/kinki/nara/places/29-P0004-고후쿠지.webp",
-      "to": "images/regions/kinki/nara/places/29-P0004-gohukuji.webp"
+      "from": "images/regions/kinki/nara/places/29-P0004-gohukuji.webp",
+      "to": "images/regions/kinki/nara/places/29-P0004-koufuku-tera.webp"
     },
     {
       "id": "29-P0005",
-      "from": "images/regions/kinki/nara/places/29-P0005-나라마치.webp",
-      "to": "images/regions/kinki/nara/places/29-P0005-naramaci.webp"
+      "from": "images/regions/kinki/nara/places/29-P0005-naramaci.webp",
+      "to": "images/regions/kinki/nara/places/29-P0005-naramachi.webp"
     },
     {
       "id": "29-P0006",
-      "from": "images/regions/kinki/nara/places/29-P0006-호류지.webp",
-      "to": "images/regions/kinki/nara/places/29-P0006-horyuji.webp"
+      "from": "images/regions/kinki/nara/places/29-P0006-horyuji.webp",
+      "to": "images/regions/kinki/nara/places/29-P0006-houryuuji.webp"
     },
     {
       "id": "29-P0007",
-      "from": "images/regions/kinki/nara/places/29-P0007-야쿠시지.webp",
-      "to": "images/regions/kinki/nara/places/29-P0007-yakusiji.webp"
+      "from": "images/regions/kinki/nara/places/29-P0007-yakusiji.webp",
+      "to": "images/regions/kinki/nara/places/29-P0007-yakushiji.webp"
     },
     {
       "id": "29-P0008",
-      "from": "images/regions/kinki/nara/places/29-P0008-도쇼다이지.webp",
-      "to": "images/regions/kinki/nara/places/29-P0008-dosyodaiji.webp"
+      "from": "images/regions/kinki/nara/places/29-P0008-dosyodaiji.webp",
+      "to": "images/regions/kinki/nara/places/29-P0008-tou-shoudai-tera.webp"
     },
     {
       "id": "29-P0009",
-      "from": "images/regions/kinki/nara/places/29-P0009-이시부타이-고분.webp",
-      "to": "images/regions/kinki/nara/places/29-P0009-isibutai-gobun.webp"
+      "from": "images/regions/kinki/nara/places/29-P0009-isibutai-gobun.webp",
+      "to": "images/regions/kinki/nara/places/29-P0009-ishi-butai-kofun.webp"
     },
     {
       "id": "29-P0010",
-      "from": "images/regions/kinki/nara/places/29-P0010-요시노산.webp",
-      "to": "images/regions/kinki/nara/places/29-P0010-yosinosan.webp"
+      "from": "images/regions/kinki/nara/places/29-P0010-yosinosan.webp",
+      "to": "images/regions/kinki/nara/places/29-P0010-yoshino-yama.webp"
     },
     {
       "id": "29-P0011",
-      "from": "images/regions/kinki/nara/places/29-P0011-이스이엔.webp",
-      "to": "images/regions/kinki/nara/places/29-P0011-iseuien.webp"
+      "from": "images/regions/kinki/nara/places/29-P0011-iseuien.webp",
+      "to": "images/regions/kinki/nara/places/29-P0011-isui-sono.webp"
     },
     {
       "id": "29-P0012",
-      "from": "images/regions/kinki/nara/places/29-P0012-와카쿠사산.webp",
-      "to": "images/regions/kinki/nara/places/29-P0012-wakakusasan.webp"
+      "from": "images/regions/kinki/nara/places/29-P0012-wakakusasan.webp",
+      "to": "images/regions/kinki/nara/places/29-P0012-wakakusa-yama.webp"
     },
     {
       "id": "29-P0013",
-      "from": "images/regions/kinki/nara/places/29-P0013-헤이조궁터.webp",
-      "to": "images/regions/kinki/nara/places/29-P0013-heijogungteo.webp"
+      "from": "images/regions/kinki/nara/places/29-P0013-heijogungteo.webp",
+      "to": "images/regions/kinki/nara/places/29-P0013-nara-kyuuseki.webp"
     },
     {
       "id": "29-P0014",
-      "from": "images/regions/kinki/nara/places/29-P0014-나라국립박물관.webp",
-      "to": "images/regions/kinki/nara/places/29-P0014-naragugribbagmulgwan.webp"
+      "from": "images/regions/kinki/nara/places/29-P0014-naragugribbagmulgwan.webp",
+      "to": "images/regions/kinki/nara/places/29-P0014-nara-kokuritsu-hakubutsukan.webp"
     },
     {
       "id": "29-P0015",
-      "from": "images/regions/kinki/nara/places/29-P0015-아스카데라.webp",
-      "to": "images/regions/kinki/nara/places/29-P0015-aseukadera.webp"
+      "from": "images/regions/kinki/nara/places/29-P0015-aseukadera.webp",
+      "to": "images/regions/kinki/nara/places/29-P0015-asuka-tera.webp"
     },
     {
       "id": "29-P0016",
-      "from": "images/regions/kinki/nara/places/29-P0016-하세데라.webp",
-      "to": "images/regions/kinki/nara/places/29-P0016-hasedera.webp"
+      "from": "images/regions/kinki/nara/places/29-P0016-hasedera.webp",
+      "to": "images/regions/kinki/nara/places/29-P0016-hase-tera.webp"
     },
     {
       "id": "29-P0017",
-      "from": "images/regions/kinki/nara/places/29-P0017-가시하라-신궁.webp",
-      "to": "images/regions/kinki/nara/places/29-P0017-gasihara-singung.webp"
+      "from": "images/regions/kinki/nara/places/29-P0017-gasihara-singung.webp",
+      "to": "images/regions/kinki/nara/places/29-P0017-kashihara-jinguu.webp"
     },
     {
       "id": "29-P0018",
-      "from": "images/regions/kinki/nara/places/29-P0018-이마이초.webp",
-      "to": "images/regions/kinki/nara/places/29-P0018-imaico.webp"
+      "from": "images/regions/kinki/nara/places/29-P0018-imaico.webp",
+      "to": "images/regions/kinki/nara/places/29-P0018-imai-machi.webp"
     },
     {
       "id": "29-P0019",
-      "from": "images/regions/kinki/nara/places/29-P0019-오미와-신사.webp",
-      "to": "images/regions/kinki/nara/places/29-P0019-omiwa-sinsa.webp"
+      "from": "images/regions/kinki/nara/places/29-P0019-omiwa-sinsa.webp",
+      "to": "images/regions/kinki/nara/places/29-P0019-daijin-jinja.webp"
     },
     {
       "id": "29-P0020",
-      "from": "images/regions/kinki/nara/places/29-P0020-단잔-신사.webp",
-      "to": "images/regions/kinki/nara/places/29-P0020-danjan-sinsa.webp"
+      "from": "images/regions/kinki/nara/places/29-P0020-danjan-sinsa.webp",
+      "to": "images/regions/kinki/nara/places/29-P0020-tanzan-jinja.webp"
     },
     {
       "id": "29-P0021",
-      "from": "images/regions/kinki/nara/places/29-P0021-무로지.webp",
-      "to": "images/regions/kinki/nara/places/29-P0021-muroji.webp"
+      "from": "images/regions/kinki/nara/places/29-P0021-muroji.webp",
+      "to": "images/regions/kinki/nara/places/29-P0021-murou-tera.webp"
     },
     {
       "id": "29-P0022",
-      "from": "images/regions/kinki/nara/places/29-P0022-가스가야마-원시림.webp",
-      "to": "images/regions/kinki/nara/places/29-P0022-gaseugayama-weonsirim.webp"
+      "from": "images/regions/kinki/nara/places/29-P0022-gaseugayama-weonsirim.webp",
+      "to": "images/regions/kinki/nara/places/29-P0022-kasuga-yamahara-shi-hayashi.webp"
     },
     {
       "id": "29-P0023",
-      "from": "images/regions/kinki/nara/places/29-P0023-오카데라.webp",
-      "to": "images/regions/kinki/nara/places/29-P0023-okadera.webp"
+      "from": "images/regions/kinki/nara/places/29-P0023-okadera.webp",
+      "to": "images/regions/kinki/nara/places/29-P0023-oka-tera.webp"
     },
     {
       "id": "30-P0001",
-      "from": "images/regions/kinki/wakayama/places/30-P0001-와카야마성.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0001-wakayamaseong.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0001-wakayamaseong.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0001-wakayama-shiro.webp"
     },
     {
       "id": "30-P0002",
-      "from": "images/regions/kinki/wakayama/places/30-P0002-기미이데라.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0002-gimiidera.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0002-gimiidera.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0002-kimiidera.webp"
     },
     {
       "id": "30-P0003",
-      "from": "images/regions/kinki/wakayama/places/30-P0003-와카야마-마리나시티-구로시오-시장.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0003-wakayama-marinasiti-gurosio-sijang.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0003-wakayama-marinasiti-gurosio-sijang.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0003-kuroshio-shijou.webp"
     },
     {
       "id": "30-P0004",
-      "from": "images/regions/kinki/wakayama/places/30-P0004-고야산-곤고부지.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0004-goyasan-gongobuji.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0004-goyasan-gongobuji.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0004-kongou-mine-tera.webp"
     },
     {
       "id": "30-P0005",
-      "from": "images/regions/kinki/wakayama/places/30-P0005-고야산-오쿠노인.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0005-goyasan-okunoin.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0005-goyasan-okunoin.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0005-oku-yuki-in.webp"
     },
     {
       "id": "30-P0006",
-      "from": "images/regions/kinki/wakayama/places/30-P0006-단조가란.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0006-danjogaran.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0006-danjogaran.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0006-danjou-garan.webp"
     },
     {
       "id": "30-P0007",
-      "from": "images/regions/kinki/wakayama/places/30-P0007-구마노-혼구-타이샤.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0007-gumano-hongu-taisya.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0007-gumano-hongu-taisya.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0007-kumano-motomiya-taisha.webp"
     },
     {
       "id": "30-P0008",
-      "from": "images/regions/kinki/wakayama/places/30-P0008-오유노하라.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0008-oyunohara.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0008-oyunohara.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0008-dai-sai-hara.webp"
     },
     {
       "id": "30-P0009",
-      "from": "images/regions/kinki/wakayama/places/30-P0009-구마노-하야타마-타이샤.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0009-gumano-hayatama-taisya.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0009-gumano-hayatama-taisya.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0009-kumano-hayatama-taisha.webp"
     },
     {
       "id": "30-P0010",
-      "from": "images/regions/kinki/wakayama/places/30-P0010-가미쿠라-신사.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0010-gamikura-sinsa.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0010-gamikura-sinsa.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0010-kami-kura-jinja.webp"
     },
     {
       "id": "30-P0011",
-      "from": "images/regions/kinki/wakayama/places/30-P0011-구마노-나치-타이샤.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0011-gumano-naci-taisya.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0011-gumano-naci-taisya.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0011-kumano-nachi-taisha.webp"
     },
     {
       "id": "30-P0012",
-      "from": "images/regions/kinki/wakayama/places/30-P0012-나치-폭포.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0012-naci-pogpo.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0012-naci-pogpo.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0012-nachi-no-taki.webp"
     },
     {
       "id": "30-P0013",
-      "from": "images/regions/kinki/wakayama/places/30-P0013-시라라하마-해변.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0013-sirarahama-haebyeon.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0013-sirarahama-haebyeon.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0013-shiro-ryou-hama.webp"
     },
     {
       "id": "30-P0014",
-      "from": "images/regions/kinki/wakayama/places/30-P0014-산단베키.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0014-sandanbeki.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0014-sandanbeki.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0014-sandan-kabe.webp"
     },
     {
       "id": "30-P0015",
-      "from": "images/regions/kinki/wakayama/places/30-P0015-어드벤처-월드.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0015-eodeubenceo-weoldeu.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0015-eodeubenceo-weoldeu.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0015-adobenchaawaarudo.webp"
     },
     {
       "id": "30-P0016",
-      "from": "images/regions/kinki/wakayama/places/30-P0016-하시구이이와.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0016-hasiguiiwa.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0016-hasiguiiwa.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0016-hashigui-iwa.webp"
     },
     {
       "id": "30-P0017",
-      "from": "images/regions/kinki/wakayama/places/30-P0017-시오노미사키.webp",
-      "to": "images/regions/kinki/wakayama/places/30-P0017-sionomisaki.webp"
+      "from": "images/regions/kinki/wakayama/places/30-P0017-sionomisaki.webp",
+      "to": "images/regions/kinki/wakayama/places/30-P0017-shionomisaki.webp"
     },
     {
       "id": "11-F0002",
-      "from": "images/regions/greater-tokyo/saitama/foods/11-F0002-무사시노-우동.webp",
-      "to": "images/regions/greater-tokyo/saitama/foods/11-F0002-musasino-udong.webp"
+      "from": "images/regions/greater-tokyo/saitama/foods/11-F0002-musasino-udong.webp",
+      "to": "images/regions/greater-tokyo/saitama/foods/11-F0002-musashino-udon.webp"
     },
     {
       "id": "11-F0003",
-      "from": "images/regions/greater-tokyo/saitama/foods/11-F0003-미소-포테토.webp",
-      "to": "images/regions/greater-tokyo/saitama/foods/11-F0003-miso-poteto.webp"
+      "from": "images/regions/greater-tokyo/saitama/foods/11-F0003-miso-poteto.webp",
+      "to": "images/regions/greater-tokyo/saitama/foods/11-F0003-miso-potato.webp"
     },
     {
       "id": "11-F0004",
-      "from": "images/regions/greater-tokyo/saitama/foods/11-F0004-와라지-가쓰동.webp",
-      "to": "images/regions/greater-tokyo/saitama/foods/11-F0004-waraji-gasseudong.webp"
+      "from": "images/regions/greater-tokyo/saitama/foods/11-F0004-waraji-gasseudong.webp",
+      "to": "images/regions/greater-tokyo/saitama/foods/11-F0004-waraji-katsudon.webp"
     },
     {
       "id": "11-F0001",
-      "from": "images/regions/greater-tokyo/saitama/foods/11-F0001-돼지고기-미소-덮밥.webp",
-      "to": "images/regions/greater-tokyo/saitama/foods/11-F0001-dwaejigogi-miso-deopbab.webp"
+      "from": "images/regions/greater-tokyo/saitama/foods/11-F0001-dwaejigogi-miso-deopbab.webp",
+      "to": "images/regions/greater-tokyo/saitama/foods/11-F0001-buta-miso-don.webp"
     },
     {
       "id": "11-F0006",
-      "from": "images/regions/greater-tokyo/saitama/foods/11-F0006-젤리프라이.webp",
-      "to": "images/regions/greater-tokyo/saitama/foods/11-F0006-jelripeurai.webp"
-    },
-    {
-      "id": "11-F0005",
-      "from": "images/regions/greater-tokyo/saitama/foods/11-F0005-이모코이.webp",
-      "to": "images/regions/greater-tokyo/saitama/foods/11-F0005-imokoi.webp"
-    },
-    {
-      "id": "12-F0003",
-      "from": "images/regions/greater-tokyo/chiba/foods/12-F0003-나메로.webp",
-      "to": "images/regions/greater-tokyo/chiba/foods/12-F0003-namero.webp"
+      "from": "images/regions/greater-tokyo/saitama/foods/11-F0006-jelripeurai.webp",
+      "to": "images/regions/greater-tokyo/saitama/foods/11-F0006-jelly-fry.webp"
     },
     {
       "id": "12-F0004",
-      "from": "images/regions/greater-tokyo/chiba/foods/12-F0004-땅콩-모나카.webp",
-      "to": "images/regions/greater-tokyo/chiba/foods/12-F0004-ddangkong-monaka.webp"
+      "from": "images/regions/greater-tokyo/chiba/foods/12-F0004-ddangkong-monaka.webp",
+      "to": "images/regions/greater-tokyo/chiba/foods/12-F0004-peanut-monaka.webp"
     },
     {
       "id": "12-F0006",
-      "from": "images/regions/greater-tokyo/chiba/foods/12-F0006-후토마키-마쓰리-스시.webp",
-      "to": "images/regions/greater-tokyo/chiba/foods/12-F0006-hutomaki-masseuri-seusi.webp"
+      "from": "images/regions/greater-tokyo/chiba/foods/12-F0006-hutomaki-masseuri-seusi.webp",
+      "to": "images/regions/greater-tokyo/chiba/foods/12-F0006-futomaki-matsuri-zushi.webp"
     },
     {
       "id": "12-F0005",
-      "from": "images/regions/greater-tokyo/chiba/foods/12-F0005-삶은-땅콩.webp",
-      "to": "images/regions/greater-tokyo/chiba/foods/12-F0005-salmeun-ddangkong.webp"
+      "from": "images/regions/greater-tokyo/chiba/foods/12-F0005-salmeun-ddangkong.webp",
+      "to": "images/regions/greater-tokyo/chiba/foods/12-F0005-boiled-peanuts.webp"
     },
     {
       "id": "12-F0001",
-      "from": "images/regions/greater-tokyo/chiba/foods/12-F0001-가쓰우라-탄탄멘.webp",
-      "to": "images/regions/greater-tokyo/chiba/foods/12-F0001-gasseuura-tantanmen.webp"
-    },
-    {
-      "id": "12-F0002",
-      "from": "images/regions/greater-tokyo/chiba/foods/12-F0002-나리타-우나기.webp",
-      "to": "images/regions/greater-tokyo/chiba/foods/12-F0002-narita-unagi.webp"
+      "from": "images/regions/greater-tokyo/chiba/foods/12-F0001-gasseuura-tantanmen.webp",
+      "to": "images/regions/greater-tokyo/chiba/foods/12-F0001-katsuura-tantanmen.webp"
     },
     {
       "id": "13-F0002",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0002-덴푸라-소바.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0002-denpura-soba.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0002-denpura-soba.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0002-tempura-soba.webp"
     },
     {
       "id": "13-F0019",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0019-찬코나베.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0019-cankonabe.webp"
-    },
-    {
-      "id": "13-F0015",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0015-야키토리.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0015-yakitori.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0019-cankonabe.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0019-chankonabe.webp"
     },
     {
       "id": "13-F0010",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0010-소바-덴푸라.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0010-soba-denpura.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0010-soba-denpura.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0010-soba-tempura.webp"
     },
     {
       "id": "13-F0020",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0020-하라주쿠-크레페.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0020-harajuku-keurepe.webp"
-    },
-    {
-      "id": "13-F0009",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0009-소바.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0009-soba.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0020-harajuku-keurepe.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0020-harajuku-crepe.webp"
     },
     {
       "id": "13-F0012",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0012-스시-덴푸라.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0012-seusi-denpura.webp"
-    },
-    {
-      "id": "13-F0008",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0008-몬자야키.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0008-monjayaki.webp"
-    },
-    {
-      "id": "13-F0006",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0006-라멘-돈부리.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0006-ramen-donburi.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0012-seusi-denpura.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0012-sushi-tempura.webp"
     },
     {
       "id": "13-F0007",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0007-멘치카츠.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0007-mencikaceu.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0007-mencikaceu.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0007-menchi-katsu.webp"
     },
     {
       "id": "13-F0004",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0004-도쿄-사야마차-차-디저트.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0004-dokyo-sayamaca-ca-dijeoteu.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0004-dokyo-sayamaca-ca-dijeoteu.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0004-tokyo-sayama-tea-dessert.webp"
     },
     {
       "id": "13-F0003",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0003-도로로-소바.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0003-dororo-soba.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0003-dororo-soba.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0003-tororo-soba.webp"
     },
     {
       "id": "13-F0018",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0018-와사비를-곁들인-소바.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0018-wasabireul-gyeotdeulin-soba.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0018-wasabireul-gyeotdeulin-soba.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0018-wasabi-soba.webp"
     },
     {
       "id": "13-F0017",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0017-오시마-우유-아시타바-간식.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0017-osima-uyu-asitaba-gansig.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0017-osima-uyu-asitaba-gansig.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0017-oshima-milk-ashitaba-snack.webp"
     },
     {
       "id": "13-F0016",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0016-열대과일-과일-디저트.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0016-yeoldaegwail-gwail-dijeoteu.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0016-yeoldaegwail-gwail-dijeoteu.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0016-tropical-fruit-dessert.webp"
     },
     {
       "id": "13-F0001",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0001-간다-소바.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0001-ganda-soba.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0001-ganda-soba.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0001-kanda-soba.webp"
     },
     {
       "id": "13-F0013",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0013-스시-소바.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0013-seusi-soba.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0013-seusi-soba.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0013-sushi-soba.webp"
     },
     {
       "id": "13-F0011",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0011-소바-덴푸라.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-denpura.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-denpura.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-tempura.webp"
     },
     {
       "id": "13-F0014",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0014-쓰키지-해산물-스시.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0014-sseukiji-haesanmul-seusi.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0014-sseukiji-haesanmul-seusi.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0014-tsukiji-seafood-sushi.webp"
     },
     {
       "id": "13-F0005",
-      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0005-돈카츠-덴푸라-라멘.webp",
-      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0005-donkaceu-denpura-ramen.webp"
+      "from": "images/regions/greater-tokyo/tokyo/foods/13-F0005-donkaceu-denpura-ramen.webp",
+      "to": "images/regions/greater-tokyo/tokyo/foods/13-F0005-tonkatsu-tempura-ramen.webp"
     },
     {
       "id": "14-F0002",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0002-쇼난-시라스-덮밥.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0002-syonan-siraseu-deopbab.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0002-syonan-siraseu-deopbab.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0002-shonan-shirasu-don.webp"
     },
     {
       "id": "14-F0005",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0005-요코하마-슈마이.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0005-yokohama-syumai.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0005-yokohama-syumai.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0005-yokohama-shumai.webp"
     },
     {
       "id": "14-F0001",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0001-미사키-참치.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0001-misaki-camci.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0001-misaki-camci.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0001-misaki-tuna.webp"
     },
     {
       "id": "14-F0006",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0006-요코하마-이에케이-라멘.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0006-yokohama-iekei-ramen.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0006-yokohama-iekei-ramen.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0006-yokohama-ie-kei-ramen.webp"
     },
     {
       "id": "14-F0004",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0004-요코스카-해군카레.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0004-yokoseuka-haegunkare.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0004-yokoseuka-haegunkare.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0004-yokosuka-navy-curry.webp"
     },
     {
       "id": "14-F0003",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0003-오다와라-가마보코.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0003-odawara-gamaboko.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0003-odawara-gamaboko.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0003-odawara-kamaboko.webp"
     },
     {
       "id": "14-F0007",
-      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0007-하코네-검은-달걀.webp",
-      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0007-hakone-geomeun-dalgyal.webp"
+      "from": "images/regions/greater-tokyo/kanagawa/foods/14-F0007-hakone-geomeun-dalgyal.webp",
+      "to": "images/regions/greater-tokyo/kanagawa/foods/14-F0007-hakone-black-eggs.webp"
     },
     {
       "id": "16-F0005",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0005-마스즈시.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0005-maseujeusi.webp"
+      "from": "images/regions/hokuriku/toyama/foods/16-F0005-maseujeusi.webp",
+      "to": "images/regions/hokuriku/toyama/foods/16-F0005-masuzushi.webp"
     },
     {
       "id": "16-F0006",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0006-시로에비.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0006-siroebi.webp"
-    },
-    {
-      "id": "16-F0007",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0007-호타루이카.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0007-hotaruika.webp"
-    },
-    {
-      "id": "16-F0008",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0008-히미-부리.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0008-himi-buri.webp"
+      "from": "images/regions/hokuriku/toyama/foods/16-F0006-siroebi.webp",
+      "to": "images/regions/hokuriku/toyama/foods/16-F0006-shiroebi.webp"
     },
     {
       "id": "16-F0004",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0004-도야마-블랙-라멘.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0004-doyama-beulraeg-ramen.webp"
+      "from": "images/regions/hokuriku/toyama/foods/16-F0004-doyama-beulraeg-ramen.webp",
+      "to": "images/regions/hokuriku/toyama/foods/16-F0004-toyama-black-ramen.webp"
     },
     {
       "id": "16-F0003",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0003-다카오카-고로케.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0003-dakaoka-goroke.webp"
+      "from": "images/regions/hokuriku/toyama/foods/16-F0003-dakaoka-goroke.webp",
+      "to": "images/regions/hokuriku/toyama/foods/16-F0003-takaoka-croquette.webp"
     },
     {
       "id": "16-F0001",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0001-고카야마-두부.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0001-gokayama-dubu.webp"
+      "from": "images/regions/hokuriku/toyama/foods/16-F0001-gokayama-dubu.webp",
+      "to": "images/regions/hokuriku/toyama/foods/16-F0001-gokayama-tofu.webp"
     },
     {
       "id": "16-F0002",
-      "from": "images/regions/hokuriku/toyama/foods/16-F0002-곤부지메.webp",
-      "to": "images/regions/hokuriku/toyama/foods/16-F0002-gonbujime.webp"
+      "from": "images/regions/hokuriku/toyama/foods/16-F0002-gonbujime.webp",
+      "to": "images/regions/hokuriku/toyama/foods/16-F0002-kombujime.webp"
     },
     {
       "id": "17-F0003",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0003-가이센동.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0003-gaisendong.webp"
-    },
-    {
-      "id": "17-F0005",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0005-노도구로.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0005-nodoguro.webp"
+      "from": "images/regions/hokuriku/ishikawa/foods/17-F0003-gaisendong.webp",
+      "to": "images/regions/hokuriku/ishikawa/foods/17-F0003-kaisendon.webp"
     },
     {
       "id": "17-F0008",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0008-한톤라이스.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0008-hantonraiseu.webp"
-    },
-    {
-      "id": "17-F0007",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0007-지부니.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0007-jibuni.webp"
+      "from": "images/regions/hokuriku/ishikawa/foods/17-F0008-hantonraiseu.webp",
+      "to": "images/regions/hokuriku/ishikawa/foods/17-F0008-hanton-rice.webp"
     },
     {
       "id": "17-F0001",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0001-가나자와-오뎅.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0001-ganajawa-odeng.webp"
+      "from": "images/regions/hokuriku/ishikawa/foods/17-F0001-ganajawa-odeng.webp",
+      "to": "images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp"
     },
     {
       "id": "17-F0006",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0006-와지마-후구.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0006-wajima-hugu.webp"
+      "from": "images/regions/hokuriku/ishikawa/foods/17-F0006-wajima-hugu.webp",
+      "to": "images/regions/hokuriku/ishikawa/foods/17-F0006-wajima-fugu.webp"
     },
     {
       "id": "17-F0004",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0004-금박-소프트크림.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0004-geumbag-sopeuteukeurim.webp"
+      "from": "images/regions/hokuriku/ishikawa/foods/17-F0004-geumbag-sopeuteukeurim.webp",
+      "to": "images/regions/hokuriku/ishikawa/foods/17-F0004-gold-leaf-soft-serve.webp"
     },
     {
       "id": "17-F0002",
-      "from": "images/regions/hokuriku/ishikawa/foods/17-F0002-가나자와-카레.webp",
-      "to": "images/regions/hokuriku/ishikawa/foods/17-F0002-ganajawa-kare.webp"
+      "from": "images/regions/hokuriku/ishikawa/foods/17-F0002-ganajawa-kare.webp",
+      "to": "images/regions/hokuriku/ishikawa/foods/17-F0002-kanazawa-curry.webp"
     },
     {
       "id": "18-F0007",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0007-에치젠가니.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0007-ecijengani.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0007-ecijengani.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0007-echizen-gani.webp"
     },
     {
       "id": "18-F0003",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0003-세이코가니.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0003-seikogani.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0003-seikogani.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0003-seiko-gani.webp"
     },
     {
       "id": "18-F0006",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0006-에치젠-오로시소바.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0006-ecijen-orosisoba.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0006-ecijen-orosisoba.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0006-echizen-oroshi-soba.webp"
     },
     {
       "id": "18-F0004",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0004-소스카츠동.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0004-soseukaceudong.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0004-soseukaceudong.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0004-sauce-katsudon.webp"
     },
     {
       "id": "18-F0002",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0002-사바-헤시코.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0002-saba-hesiko.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0002-saba-hesiko.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0002-saba-heshiko.webp"
     },
     {
       "id": "18-F0005",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0005-야키사바즈시.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0005-yakisabajeusi.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0005-yakisabajeusi.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0005-yaki-saba-zushi.webp"
     },
     {
       "id": "18-F0008",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0008-와카사규.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0008-wakasagyu.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0008-wakasagyu.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0008-wakasa-beef.webp"
     },
     {
       "id": "18-F0001",
-      "from": "images/regions/hokuriku/fukui/foods/18-F0001-미즈요칸.webp",
-      "to": "images/regions/hokuriku/fukui/foods/18-F0001-mijeuyokan.webp"
+      "from": "images/regions/hokuriku/fukui/foods/18-F0001-mijeuyokan.webp",
+      "to": "images/regions/hokuriku/fukui/foods/18-F0001-mizu-yokan.webp"
     },
     {
       "id": "25-F0001",
-      "from": "images/regions/kinki/shiga/foods/25-F0001-비와마스-요리.webp",
-      "to": "images/regions/kinki/shiga/foods/25-F0001-biwamaseu-yori.webp"
-    },
-    {
-      "id": "25-F0002",
-      "from": "images/regions/kinki/shiga/foods/25-F0002-사바-소멘.webp",
-      "to": "images/regions/kinki/shiga/foods/25-F0002-saba-somen.webp"
+      "from": "images/regions/kinki/shiga/foods/25-F0001-biwamaseu-yori.webp",
+      "to": "images/regions/kinki/shiga/foods/25-F0001-biwamasu.webp"
     },
     {
       "id": "25-F0003",
-      "from": "images/regions/kinki/shiga/foods/25-F0003-아카콘냐쿠.webp",
-      "to": "images/regions/kinki/shiga/foods/25-F0003-akakonnyaku.webp"
+      "from": "images/regions/kinki/shiga/foods/25-F0003-akakonnyaku.webp",
+      "to": "images/regions/kinki/shiga/foods/25-F0003-aka-konnyaku.webp"
     },
     {
       "id": "25-F0004",
-      "from": "images/regions/kinki/shiga/foods/25-F0004-오미-짬뽕.webp",
-      "to": "images/regions/kinki/shiga/foods/25-F0004-omi-jjambbong.webp"
+      "from": "images/regions/kinki/shiga/foods/25-F0004-omi-jjambbong.webp",
+      "to": "images/regions/kinki/shiga/foods/25-F0004-omi-champon.webp"
     },
     {
       "id": "25-F0005",
-      "from": "images/regions/kinki/shiga/foods/25-F0005-오미규.webp",
-      "to": "images/regions/kinki/shiga/foods/25-F0005-omigyu.webp"
+      "from": "images/regions/kinki/shiga/foods/25-F0005-omigyu.webp",
+      "to": "images/regions/kinki/shiga/foods/25-F0005-omi-beef.webp"
     },
     {
       "id": "25-F0006",
-      "from": "images/regions/kinki/shiga/foods/25-F0006-후나즈시.webp",
-      "to": "images/regions/kinki/shiga/foods/25-F0006-hunajeusi.webp"
+      "from": "images/regions/kinki/shiga/foods/25-F0006-hunajeusi.webp",
+      "to": "images/regions/kinki/shiga/foods/25-F0006-funazushi.webp"
     },
     {
       "id": "26-F0001",
-      "from": "images/regions/kinki/kyoto/foods/26-F0001-교즈케모노.webp",
-      "to": "images/regions/kinki/kyoto/foods/26-F0001-gyojeukemono.webp"
+      "from": "images/regions/kinki/kyoto/foods/26-F0001-gyojeukemono.webp",
+      "to": "images/regions/kinki/kyoto/foods/26-F0001-kyo-tsukemono.webp"
     },
     {
       "id": "26-F0002",
-      "from": "images/regions/kinki/kyoto/foods/26-F0002-니신소바.webp",
-      "to": "images/regions/kinki/kyoto/foods/26-F0002-nisinsoba.webp"
+      "from": "images/regions/kinki/kyoto/foods/26-F0002-nisinsoba.webp",
+      "to": "images/regions/kinki/kyoto/foods/26-F0002-nishin-soba.webp"
     },
     {
       "id": "26-F0003",
-      "from": "images/regions/kinki/kyoto/foods/26-F0003-야쓰하시.webp",
-      "to": "images/regions/kinki/kyoto/foods/26-F0003-yasseuhasi.webp"
+      "from": "images/regions/kinki/kyoto/foods/26-F0003-yasseuhasi.webp",
+      "to": "images/regions/kinki/kyoto/foods/26-F0003-yatsuhashi.webp"
     },
     {
       "id": "26-F0004",
-      "from": "images/regions/kinki/kyoto/foods/26-F0004-오반자이.webp",
-      "to": "images/regions/kinki/kyoto/foods/26-F0004-obanjai.webp"
+      "from": "images/regions/kinki/kyoto/foods/26-F0004-obanjai.webp",
+      "to": "images/regions/kinki/kyoto/foods/26-F0004-obanzai.webp"
     },
     {
       "id": "26-F0005",
-      "from": "images/regions/kinki/kyoto/foods/26-F0005-우지-말차-디저트.webp",
-      "to": "images/regions/kinki/kyoto/foods/26-F0005-uji-malca-dijeoteu.webp"
+      "from": "images/regions/kinki/kyoto/foods/26-F0005-uji-malca-dijeoteu.webp",
+      "to": "images/regions/kinki/kyoto/foods/26-F0005-uji-matcha-dessert.webp"
     },
     {
       "id": "26-F0006",
-      "from": "images/regions/kinki/kyoto/foods/26-F0006-유도후.webp",
-      "to": "images/regions/kinki/kyoto/foods/26-F0006-yudohu.webp"
+      "from": "images/regions/kinki/kyoto/foods/26-F0006-yudohu.webp",
+      "to": "images/regions/kinki/kyoto/foods/26-F0006-yudofu.webp"
     },
     {
       "id": "27-F0001",
-      "from": "images/regions/kinki/osaka/foods/27-F0001-기쓰네-우동.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0001-gisseune-udong.webp"
+      "from": "images/regions/kinki/osaka/foods/27-F0001-gisseune-udong.webp",
+      "to": "images/regions/kinki/osaka/foods/27-F0001-kitsune-udon.webp"
     },
     {
       "id": "27-F0002",
-      "from": "images/regions/kinki/osaka/foods/27-F0002-다코야키.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0002-dakoyaki.webp"
-    },
-    {
-      "id": "27-F0003",
-      "from": "images/regions/kinki/osaka/foods/27-F0003-도테야키.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0003-doteyaki.webp"
-    },
-    {
-      "id": "27-F0004",
-      "from": "images/regions/kinki/osaka/foods/27-F0004-부타만.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0004-butaman.webp"
-    },
-    {
-      "id": "27-F0005",
-      "from": "images/regions/kinki/osaka/foods/27-F0005-오코노미야키.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0005-okonomiyaki.webp"
-    },
-    {
-      "id": "27-F0006",
-      "from": "images/regions/kinki/osaka/foods/27-F0006-이카야키.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp"
+      "from": "images/regions/kinki/osaka/foods/27-F0002-dakoyaki.webp",
+      "to": "images/regions/kinki/osaka/foods/27-F0002-takoyaki.webp"
     },
     {
       "id": "27-F0007",
-      "from": "images/regions/kinki/osaka/foods/27-F0007-쿠시카츠.webp",
-      "to": "images/regions/kinki/osaka/foods/27-F0007-kusikaceu.webp"
+      "from": "images/regions/kinki/osaka/foods/27-F0007-kusikaceu.webp",
+      "to": "images/regions/kinki/osaka/foods/27-F0007-kushikatsu.webp"
     },
     {
       "id": "28-F0001",
-      "from": "images/regions/kinki/hyogo/foods/28-F0001-고베-비프.webp",
-      "to": "images/regions/kinki/hyogo/foods/28-F0001-gobe-bipeu.webp"
+      "from": "images/regions/kinki/hyogo/foods/28-F0001-gobe-bipeu.webp",
+      "to": "images/regions/kinki/hyogo/foods/28-F0001-kobe-beef.webp"
     },
     {
       "id": "28-F0002",
-      "from": "images/regions/kinki/hyogo/foods/28-F0002-반슈-라멘.webp",
-      "to": "images/regions/kinki/hyogo/foods/28-F0002-bansyu-ramen.webp"
+      "from": "images/regions/kinki/hyogo/foods/28-F0002-bansyu-ramen.webp",
+      "to": "images/regions/kinki/hyogo/foods/28-F0002-banshu-ramen.webp"
     },
     {
       "id": "28-F0003",
-      "from": "images/regions/kinki/hyogo/foods/28-F0003-아와지시마-양파-요리.webp",
-      "to": "images/regions/kinki/hyogo/foods/28-F0003-awajisima-yangpa-yori.webp"
+      "from": "images/regions/kinki/hyogo/foods/28-F0003-awajisima-yangpa-yori.webp",
+      "to": "images/regions/kinki/hyogo/foods/28-F0003-awajishima-onion.webp"
     },
     {
       "id": "28-F0004",
-      "from": "images/regions/kinki/hyogo/foods/28-F0004-아카시야키.webp",
-      "to": "images/regions/kinki/hyogo/foods/28-F0004-akasiyaki.webp"
+      "from": "images/regions/kinki/hyogo/foods/28-F0004-akasiyaki.webp",
+      "to": "images/regions/kinki/hyogo/foods/28-F0004-akashiyaki.webp"
     },
     {
       "id": "28-F0005",
-      "from": "images/regions/kinki/hyogo/foods/28-F0005-이즈시-사라소바.webp",
-      "to": "images/regions/kinki/hyogo/foods/28-F0005-ijeusi-sarasoba.webp"
+      "from": "images/regions/kinki/hyogo/foods/28-F0005-ijeusi-sarasoba.webp",
+      "to": "images/regions/kinki/hyogo/foods/28-F0005-izushi-sara-soba.webp"
     },
     {
       "id": "28-F0006",
-      "from": "images/regions/kinki/hyogo/foods/28-F0006-히메지-오뎅.webp",
-      "to": "images/regions/kinki/hyogo/foods/28-F0006-himeji-odeng.webp"
+      "from": "images/regions/kinki/hyogo/foods/28-F0006-himeji-odeng.webp",
+      "to": "images/regions/kinki/hyogo/foods/28-F0006-himeji-oden.webp"
     },
     {
       "id": "29-F0001",
-      "from": "images/regions/kinki/nara/foods/29-F0001-가키노하즈시.webp",
-      "to": "images/regions/kinki/nara/foods/29-F0001-gakinohajeusi.webp"
+      "from": "images/regions/kinki/nara/foods/29-F0001-gakinohajeusi.webp",
+      "to": "images/regions/kinki/nara/foods/29-F0001-kakinoha-zushi.webp"
     },
     {
       "id": "29-F0002",
-      "from": "images/regions/kinki/nara/foods/29-F0002-나라-차메시.webp",
-      "to": "images/regions/kinki/nara/foods/29-F0002-nara-camesi.webp"
+      "from": "images/regions/kinki/nara/foods/29-F0002-nara-camesi.webp",
+      "to": "images/regions/kinki/nara/foods/29-F0002-nara-chameshi.webp"
     },
     {
       "id": "29-F0003",
-      "from": "images/regions/kinki/nara/foods/29-F0003-나라즈케.webp",
-      "to": "images/regions/kinki/nara/foods/29-F0003-narajeuke.webp"
-    },
-    {
-      "id": "29-F0004",
-      "from": "images/regions/kinki/nara/foods/29-F0004-미와-소멘.webp",
-      "to": "images/regions/kinki/nara/foods/29-F0004-miwa-somen.webp"
+      "from": "images/regions/kinki/nara/foods/29-F0003-narajeuke.webp",
+      "to": "images/regions/kinki/nara/foods/29-F0003-narazuke.webp"
     },
     {
       "id": "29-F0005",
-      "from": "images/regions/kinki/nara/foods/29-F0005-요모기모치.webp",
-      "to": "images/regions/kinki/nara/foods/29-F0005-yomogimoci.webp"
+      "from": "images/regions/kinki/nara/foods/29-F0005-yomogimoci.webp",
+      "to": "images/regions/kinki/nara/foods/29-F0005-yomogi-mochi.webp"
     },
     {
       "id": "30-F0001",
-      "from": "images/regions/kinki/wakayama/foods/30-F0001-가쓰우라-생참치.webp",
-      "to": "images/regions/kinki/wakayama/foods/30-F0001-gasseuura-saengcamci.webp"
+      "from": "images/regions/kinki/wakayama/foods/30-F0001-gasseuura-saengcamci.webp",
+      "to": "images/regions/kinki/wakayama/foods/30-F0001-katsuura-fresh-tuna.webp"
     },
     {
       "id": "30-F0002",
-      "from": "images/regions/kinki/wakayama/foods/30-F0002-고야산-쇼진요리.webp",
-      "to": "images/regions/kinki/wakayama/foods/30-F0002-goyasan-syojinyori.webp"
+      "from": "images/regions/kinki/wakayama/foods/30-F0002-goyasan-syojinyori.webp",
+      "to": "images/regions/kinki/wakayama/foods/30-F0002-koyasan-shojin-ryori.webp"
     },
     {
       "id": "30-F0003",
-      "from": "images/regions/kinki/wakayama/foods/30-F0003-난코우메-우메보시.webp",
-      "to": "images/regions/kinki/wakayama/foods/30-F0003-nankoume-umebosi.webp"
+      "from": "images/regions/kinki/wakayama/foods/30-F0003-nankoume-umebosi.webp",
+      "to": "images/regions/kinki/wakayama/foods/30-F0003-nanko-ume-umeboshi.webp"
     },
     {
       "id": "30-F0004",
-      "from": "images/regions/kinki/wakayama/foods/30-F0004-메하리즈시.webp",
-      "to": "images/regions/kinki/wakayama/foods/30-F0004-meharijeusi.webp"
+      "from": "images/regions/kinki/wakayama/foods/30-F0004-meharijeusi.webp",
+      "to": "images/regions/kinki/wakayama/foods/30-F0004-mehari-zushi.webp"
     },
     {
       "id": "30-F0005",
-      "from": "images/regions/kinki/wakayama/foods/30-F0005-아리다-미캉.webp",
-      "to": "images/regions/kinki/wakayama/foods/30-F0005-arida-mikang.webp"
-    },
-    {
-      "id": "30-F0006",
-      "from": "images/regions/kinki/wakayama/foods/30-F0006-와카야마-라멘.webp",
-      "to": "images/regions/kinki/wakayama/foods/30-F0006-wakayama-ramen.webp"
+      "from": "images/regions/kinki/wakayama/foods/30-F0005-arida-mikang.webp",
+      "to": "images/regions/kinki/wakayama/foods/30-F0005-arida-mikan.webp"
     }
-  ],
-  "policy": "Canonical photo filenames are canonical ID + ASCII English/romanized slug only."
+  ]
 }
