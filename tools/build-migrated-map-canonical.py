@@ -12,10 +12,11 @@ REGIONS={
  '호쿠리쿠':['도야마','이시카와','후쿠이'],
  '긴키':['시가','교토','오사카','효고','나라','와카야마'],
  '산인·산요':['돗토리','시마네','오카야마','히로시마','야마구치'],
+ '시코쿠':['도쿠시마','가가와','에히메','고치'],
  '수도권':['사이타마','지바','도쿄','가나가와'],
 }
-EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'호쿠리쿠':71,'긴키':134,'산인·산요':88,'수도권':132}
-FORCE_COORDINATE={910}
+EXPECTED={'도카이':83,'도호쿠':160,'홋카이도':42,'북간토':51,'고신에쓰':79,'호쿠리쿠':71,'긴키':134,'산인·산요':88,'시코쿠':76,'수도권':132}
+FORCE_COORDINATE={910,2501,2506,2509,2512,2513,2602,2603,2609,2612,2704,2705,2709,2807,2812,2814,2818}
 BROAD_ENTITY_NAMES={'Western Hakodate','구조시','일본','Japan'}
 
 runtime=json.loads((AUD/'runtime-inventory.json').read_text())
@@ -92,6 +93,6 @@ lines=['/* Canonical map targets for migrated regions. Internal embeds always us
 ids=sorted(out)
 for i,pid in enumerate(ids):lines.append(f'  {pid}:'+json.dumps(out[pid],ensure_ascii=False,separators=(',',':'))+(',' if i<len(ids)-1 else ''))
 lines.append('});');canon_path.write_text('\n'.join(lines)+'\n')
-slugs={'도카이':'tokai','도호쿠':'tohoku','홋카이도':'hokkaido','북간토':'north-kanto','고신에쓰':'koshinetsu','호쿠리쿠':'hokuriku','긴키':'kinki','산인·산요':'sanin-sanyo','수도권':'greater-tokyo'}
+slugs={'도카이':'tokai','도호쿠':'tohoku','홋카이도':'hokkaido','북간토':'north-kanto','고신에쓰':'koshinetsu','호쿠리쿠':'hokuriku','긴키':'kinki','산인·산요':'sanin-sanyo','시코쿠':'shikoku','수도권':'greater-tokyo'}
 for region,report in region_reports.items():(AUD/f'{slugs[region]}-map-canonical-review.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'canonicalTargets':len(out),'regions':region_reports},ensure_ascii=False))

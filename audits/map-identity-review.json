@@ -83,7 +83,9 @@
     "lat": 34.0927703,
     "lon": 134.2072155,
     "evidence": "Official Awa earth pillars address Kitayama 540 matches named Google destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "6694457148335794475",
+    "reverifiedAt": "2026-10-07"
   },
   "2511": {
     "status": "official-map-identity-reviewed",
@@ -94,7 +96,9 @@
     "lat": 33.9235531,
     "lon": 133.8184591,
     "evidence": "Official Peeing Boy destination in Matsuo, Ikedacho matches named Iya statue. Replaced previous source 53, which described Oboke instead.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "12241110780571422110",
+    "reverifiedAt": "2026-10-07"
   },
   "2607": {
     "status": "official-map-identity-reviewed",
@@ -105,7 +109,9 @@
     "lat": 34.1909187,
     "lon": 133.6488583,
     "evidence": "Named beach result in Nio Otsu matches official 1 km beach. Official 203-3 and named result 273-1 describe the same shoreline; aligned representative beach pin.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "10370245911524443297",
+    "reverifiedAt": "2026-10-07"
   },
   "2608": {
     "status": "official-map-identity-reviewed",
@@ -116,14 +122,35 @@
     "lat": 34.1603942,
     "lon": 133.6548423,
     "evidence": "Sky Torii is at the summit Takaya shrine, distinct from lower shrine. Official summit address Takayacho 2800; road closure 2026-09-28 through 2026-12-25 requires walking from lower shrine.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "7979202317745084346",
+    "reverifiedAt": "2026-10-07"
   },
   "2715": {
     "status": "official-map-identity-reviewed",
     "name": "유스미즈가우라 계단밭",
     "officialSource": "https://www.uwajima.org/spot/index8.html",
     "evidence": "Official address 2323-3 Yusu and embedded Google CID 0x3a58d030a8554f55 match named result CID 4204339159551528789. Corrected regional pin by 8.586 km.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "resolvedName": "Yusumizugaura Terraced Fields",
+    "resolvedAddress": "Yusumizugaura Terraced Fields, 2323-3 Yusu, Uwajima, Ehime 798-0103 일본",
+    "lat": 33.2068134,
+    "lon": 132.4553448,
+    "cid": "4204339159551528789",
+    "reverifiedAt": "2026-10-07"
+  },
+  "2805": {
+    "status": "official-map-identity-reviewed",
+    "name": "류가도",
+    "officialSource": "https://ryugadou.or.jp/",
+    "resolvedName": "류가도 동굴",
+    "resolvedAddress": "류가도 동굴 1424 Tosayamadacho Sakakawa, Kami, Kochi 782-0005 일본",
+    "lat": 33.6033924,
+    "lon": 133.7451653,
+    "cid": "13648143012896311541",
+    "evidence": "Ryugado official site gives 〒782-0005 高知県香美市土佐山田町逆川1424; the named Google destination resolves to the same address. The prior stored point was about 1.55 km east.",
+    "reviewedAt": "2026-10-07",
+    "reverifiedAt": "2026-10-07"
   },
   "2806": {
     "status": "official-name-address-reviewed",
@@ -133,7 +160,9 @@
     "lat": 33.7050909,
     "lon": 133.3411744,
     "evidence": "Named Google result and official publisher destination/address compared; regional pin aligned to the intended destination.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "15006104277950167331",
+    "reverifiedAt": "2026-10-07"
   },
   "2808": {
     "status": "official-map-identity-reviewed",
@@ -144,7 +173,9 @@
     "lat": 33.5609852,
     "lon": 133.1296943,
     "evidence": "Official embedded map explicitly points to 33.560985,133.129694; matches named Nakatsu Gorge result. Gorge spans a 2.3 km trail.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "10121000373824852534",
+    "reverifiedAt": "2026-10-07"
   },
   "2809": {
     "status": "official-map-identity-reviewed",
@@ -155,14 +186,22 @@
     "lat": 33.2476582,
     "lon": 134.1731605,
     "evidence": "Bare query 室戸岬 resolved to inland town center. 室戸岬 海岸 遊歩道 resolves to the western cape coastal path, part of the official cape walking route.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "cid": "11042309133914743119",
+    "reverifiedAt": "2026-10-07"
   },
   "2811": {
     "status": "name-address-reviewed",
     "name": "사다 침하교",
     "officialSource": "https://www.shimanto-kankou.com/travel",
     "evidence": "Tourism association explicitly identifies 今成橋 as 佐田沈下橋. Google result is in Sada, Shimanto. Corrected regional pin by 5.890 km.",
-    "reviewedAt": "2026-10-02"
+    "reviewedAt": "2026-10-02",
+    "resolvedName": "今成橋",
+    "resolvedAddress": "일본 〒787-1106 Kochi, Shimanto, Sada, 今成橋",
+    "lat": 33.0153881,
+    "lon": 132.8855292,
+    "cid": "345118280497089968",
+    "reverifiedAt": "2026-10-07"
   },
   "3010": {
     "status": "official-map-identity-reviewed",

@@ -1,11 +1,11 @@
 /* Map-only regression test for migrated regions. Deliberately excludes photo/file QA. */
 const assert=require('node:assert/strict'),vm=require('node:vm');
 const {ctx,result}=require('./audit-content.cjs');
-const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','도야마','이시카와','후쿠이','시가','교토','오사카','효고','나라','와카야마','돗토리','시마네','오카야마','히로시마','야마구치','사이타마','지바','도쿄','가나가와'];
-const expected={'기후':22,'시즈오카':20,'아이치':20,'미에':21,'아오모리':31,'이와테':33,'미야기':24,'아키타':24,'야마가타':24,'후쿠시마':24,'홋카이도':42,'이바라키':16,'도치기':19,'군마':16,'니가타':24,'야마나시':31,'나가노':24,'도야마':23,'이시카와':24,'후쿠이':24,'시가':16,'교토':26,'오사카':29,'효고':23,'나라':23,'와카야마':17,'돗토리':15,'시마네':17,'오카야마':18,'히로시마':20,'야마구치':18,'사이타마':23,'지바':27,'도쿄':54,'가나가와':28};
+const migratedPrefs=['기후','시즈오카','아이치','미에','아오모리','이와테','미야기','아키타','야마가타','후쿠시마','홋카이도','이바라키','도치기','군마','니가타','야마나시','나가노','도야마','이시카와','후쿠이','시가','교토','오사카','효고','나라','와카야마','돗토리','시마네','오카야마','히로시마','야마구치','도쿠시마','가가와','에히메','고치','사이타마','지바','도쿄','가나가와'];
+const expected={'기후':22,'시즈오카':20,'아이치':20,'미에':21,'아오모리':31,'이와테':33,'미야기':24,'아키타':24,'야마가타':24,'후쿠시마':24,'홋카이도':42,'이바라키':16,'도치기':19,'군마':16,'니가타':24,'야마나시':31,'나가노':24,'도야마':23,'이시카와':24,'후쿠이':24,'시가':16,'교토':26,'오사카':29,'효고':23,'나라':23,'와카야마':17,'돗토리':15,'시마네':17,'오카야마':18,'히로시마':20,'야마구치':18,'도쿠시마':18,'가가와':20,'에히메':19,'고치':19,'사이타마':23,'지바':27,'도쿄':54,'가나가와':28};
 const canonical=vm.runInContext('globalThis.JATLAS_MAP_CANONICAL||{}',ctx);
 const migrated=result.places.filter(p=>migratedPrefs.includes(p.pref));
-assert.equal(migrated.length,840,'migrated place count');
+assert.equal(migrated.length,916,'migrated place count');
 for(const [pref,count] of Object.entries(expected))assert.equal(migrated.filter(p=>p.pref===pref).length,count,pref+' place count');
 for(const p of migrated){
  const c=canonical[p.id];
@@ -30,4 +30,16 @@ assert.equal(String(canonical[602].cid),'1807054994798992362','National Museum o
 assert.ok(!Object.values(canonical).some(x=>Object.prototype.hasOwnProperty.call(x,'note')),'canonical map QA notes must not leak into public data');
 assert.equal(canonical[4018].coordinateOnly,true,'Hakodate Morning Market fallback must use fixed coordinates');
 assert.equal(new URL(vm.runInContext('googlePlaceMapURL(samples.find(p=>p.id===4019),false)',ctx)).searchParams.get('query_place_id'),'ChIJT_xUJ6rznl8RXrmIZ5nBJjY','Hachimanzaka exact place identity');
+assert.equal(canonical[2603].coordinateOnly,true,'Kotohiragu must keep verified stored coordinate instead of ambiguous search camera');
+assert.equal(canonical[2603].lat,34.1831,'Kotohiragu representative latitude');
+assert.equal(canonical[2603].lon,133.8094,'Kotohiragu representative longitude');
+assert.equal(canonical[2715].lat,33.2068134,'Yusumizugaura Terraced Fields verified latitude');
+assert.equal(canonical[2715].lon,132.4553448,'Yusumizugaura Terraced Fields verified longitude');
+assert.equal(String(canonical[2715].cid),'4204339159551528789','Yusumizugaura Terraced Fields exact Google CID');
+assert.equal(canonical[2811].lat,33.0153881,'Sada Submersible Bridge verified latitude');
+assert.equal(canonical[2811].lon,132.8855292,'Sada Submersible Bridge verified longitude');
+assert.equal(String(canonical[2811].cid),'345118280497089968','Sada Submersible Bridge exact Google CID');
+assert.equal(canonical[2805].lat,33.6033924,'Ryugado Cave verified latitude');
+assert.equal(canonical[2805].lon,133.7451653,'Ryugado Cave verified longitude');
+assert.equal(String(canonical[2805].cid),'13648143012896311541','Ryugado Cave exact Google CID');
 console.log(JSON.stringify({places:migrated.length,canonical:Object.keys(canonical).length,status:'ok'}));
