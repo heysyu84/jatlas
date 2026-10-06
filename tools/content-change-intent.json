@@ -1,783 +1,453 @@
 {
   "version": 1,
-  "baseCommit": "905fe1f212ed8ea4f5f0d336f57b3d8f86e75dee",
-  "reason": "Migrate Greater Tokyo to canonical IDs/paths and recover approved missing assets without changing place content.",
+  "baseCommit": "",
+  "reason": "Migrate Hokuriku to canonical IDs/paths while preserving approved images.",
   "allow": {
     "placeAdds": [],
     "placeRemovals": [],
     "placeEdits": [],
     "photoChanges": [
       {
-        "id": 100,
-        "fromSrc": "images/tokyo-100.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0001-센소지.webp"
+        "id": 4700,
+        "fromSrc": "images/commons/3a301c166feb1eeb.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0001-도야마성터공원.webp"
       },
       {
-        "id": 101,
-        "fromSrc": "images/tokyo-101.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0002-도쿄-스카이트리.webp"
+        "id": 4701,
+        "fromSrc": "images/commons/0d76d816495bbbca.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0002-도야마-유리미술관.webp"
       },
       {
-        "id": 102,
-        "fromSrc": "images/tokyo-102.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0003-우에노-공원.webp"
+        "id": 4702,
+        "fromSrc": "images/commons/46cfc5bd29cd465a.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp"
       },
       {
-        "id": 103,
-        "fromSrc": "images/tokyo-103.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0004-도쿄국립박물관.webp"
+        "id": 4703,
+        "fromSrc": "images/commons/84043891755600a2.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0004-도야마현립미술관.webp"
       },
       {
-        "id": 104,
-        "fromSrc": "images/tokyo-104.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0005-네즈-신사.webp"
+        "id": 4704,
+        "fromSrc": "images/qa/04cf63d541def45b62e7.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0005-다테야마-구로베-알펜루트.webp"
       },
       {
-        "id": 105,
-        "fromSrc": "images/tokyo-105.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0006-지도리가후치.webp"
+        "id": 4705,
+        "fromSrc": "images/licensed/approved/toyama-murodo-4705.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0006-무로도.webp"
       },
       {
-        "id": 106,
-        "fromSrc": "images/tokyo-106.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0007-고이시카와-고라쿠엔.webp"
+        "id": 4706,
+        "fromSrc": "images/official/toyama-shomyo-falls-4706.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0007-쇼묘-폭포.webp"
       },
       {
-        "id": 107,
-        "fromSrc": "images/tokyo-107.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0008-신주쿠교엔.webp"
+        "id": 4707,
+        "fromSrc": "images/commons/0aef001327af9332.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0008-구로베-협곡-철도.webp"
       },
       {
-        "id": 108,
-        "fromSrc": "images/tokyo-108.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0009-도쿄도청-전망실.webp"
+        "id": 4708,
+        "fromSrc": "images/commons/c4fc2ff4bae8ded7.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0009-우나즈키-온천.webp"
       },
       {
-        "id": 109,
-        "fromSrc": "images/tokyo-109.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0010-시부야-스크램블-교차로.webp"
+        "id": 4709,
+        "fromSrc": "images/commons/44a1d20ba95418f1.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0010-다카오카-대불.webp"
       },
       {
-        "id": 110,
-        "fromSrc": "images/tokyo-110.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0011-메이지-신궁.webp"
+        "id": 4710,
+        "fromSrc": "images/commons/10731aefbeec7f2d.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0011-즈이류지.webp"
       },
       {
-        "id": 111,
-        "fromSrc": "images/tokyo-111.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0012-시부야-스카이.webp"
+        "id": 4711,
+        "fromSrc": "images/commons/df956f4d9dbc0560.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0012-아마하라시-해안.webp"
       },
       {
-        "id": 112,
-        "fromSrc": "images/tokyo-112.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0013-도쿄-타워.webp"
+        "id": 4712,
+        "fromSrc": "images/commons/f1648f0e7a1f2642.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0013-히미-어항장-외시장-히미반야가이.webp"
       },
       {
-        "id": 113,
-        "fromSrc": "images/tokyo-113.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0014-오다이바-해변공원.webp"
+        "id": 4713,
+        "fromSrc": "images/commons/cde4ff175f750567.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0014-히미-해안-가라시마.webp"
       },
       {
-        "id": 114,
-        "fromSrc": "images/tokyo-114.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0015-이노카시라-공원.webp"
+        "id": 4714,
+        "fromSrc": "images/commons/b232c05425894f06.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0015-스가누마-합장마을.webp"
       },
       {
-        "id": 115,
-        "fromSrc": "images/tokyo-115.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0016-쇼와-기념공원.webp"
+        "id": 4715,
+        "fromSrc": "images/commons/46f820a8c7a16543.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0016-아이노쿠라-합장마을.webp"
       },
       {
-        "id": 116,
-        "fromSrc": "images/tokyo-116.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0017-다카오산.webp"
+        "id": 4716,
+        "fromSrc": "images/commons/795d3605d2e7a637.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0017-고카야마-와시노사토.webp"
       },
       {
-        "id": 117,
-        "fromSrc": "images/tokyo-117.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0018-오쿠타마호.webp"
+        "id": 4717,
+        "fromSrc": "images/commons/dffedd0b84782aec.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0018-이오젠.webp"
       },
       {
-        "id": 118,
-        "fromSrc": "images/tokyo-118.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0019-미하라산.webp"
+        "id": 4718,
+        "fromSrc": "images/commons/a107cc2c06ca3353.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0019-우오즈-매몰림-박물관.webp"
       },
       {
-        "id": 119,
-        "fromSrc": "images/tokyo-119.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0020-오가미야마-공원.webp"
+        "id": 4719,
+        "fromSrc": "images/licensed/approved/toyama-uozu-mirage-4719.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0020-우오즈-신기루-전망지.webp"
       },
       {
-        "id": 200,
-        "fromSrc": "images/tokyo-200.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0021-일본과학미래관.webp"
+        "id": 4720,
+        "fromSrc": "images/commons/93c215c7ecb50d8f.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0021-호타루이카-뮤지엄.webp"
       },
       {
-        "id": 201,
-        "fromSrc": "images/tokyo-201.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0022-도쿄-빅사이트.webp"
+        "id": 4721,
+        "fromSrc": "images/official/toyama-hotaruika-sea-tour-4721.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0022-호타루이카-해상관광.webp"
       },
       {
-        "id": 202,
-        "fromSrc": "images/tokyo-202.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0023-다이버시티-도쿄-플라자.webp"
+        "id": 4723,
+        "fromSrc": "images/licensed/toyama-kurobe-dam-4723.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0023-구로베댐.webp"
       },
       {
-        "id": 203,
-        "fromSrc": "images/tokyo-203.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0024-도쿄-조이폴리스.webp"
+        "id": 4800,
+        "fromSrc": "images/commons/4b90148f624a277f.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp"
       },
       {
-        "id": 204,
-        "fromSrc": "images/tokyo-204.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0025-신주쿠-골든가이.webp"
+        "id": 4801,
+        "fromSrc": "images/commons/9ce3fef02a0fa350.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0002-가나자와성-공원.webp"
       },
       {
-        "id": 205,
-        "fromSrc": "images/tokyo-205.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0026-오모이데-요코초.webp"
+        "id": 4802,
+        "fromSrc": "images/commons/6166f3765046afcb.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0003-히가시차야가이.webp"
       },
       {
-        "id": 206,
-        "fromSrc": "images/tokyo-206.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0027-국립과학박물관.webp"
+        "id": 4803,
+        "fromSrc": "images/commons/4b8f0ecdd8bdc577.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0004-오미초-시장.webp"
       },
       {
-        "id": 207,
-        "fromSrc": "images/tokyo-207.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0028-네즈-미술관.webp"
+        "id": 4804,
+        "fromSrc": "images/commons/19febc84ef030e05.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0005-21세기-미술관.webp"
       },
       {
-        "id": 208,
-        "fromSrc": "images/tokyo-208.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0029-다케시타-거리.webp"
+        "id": 4805,
+        "fromSrc": "images/commons/9444d4a31125ccb2.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0006-나가마치-무가저택-거리.webp"
       },
       {
-        "id": 209,
-        "fromSrc": "images/tokyo-209.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0030-조조지.webp"
+        "id": 4806,
+        "fromSrc": "images/commons/d17394af949dfccf.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0007-야마시로-온천.webp"
       },
       {
-        "id": 210,
-        "fromSrc": "images/licensed/tokyo-ghibli-museum-210.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0031-미타카의-숲-지브리-미술관.webp"
+        "id": 4807,
+        "fromSrc": "images/commons/f2bca6ee2477b26d.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0008-야마나카-온천.webp"
       },
       {
-        "id": 211,
-        "fromSrc": "images/tokyo-211.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0032-닛파라-종유동.webp"
+        "id": 4808,
+        "fromSrc": "images/commons/5830304a9c5f3ccc.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0009-가쿠센케이.webp"
       },
       {
-        "id": 212,
-        "fromSrc": "images/tokyo-212.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0033-하부항.webp"
+        "id": 4809,
+        "fromSrc": "images/licensed/ishikawa-natadera-4809.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0010-나타데라.webp"
       },
       {
-        "id": 213,
-        "fromSrc": "images/tokyo-213.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0034-고미나토-해변.webp"
+        "id": 4810,
+        "fromSrc": "images/commons/2b019f92af47dba7.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0011-이시카와-항공플라자.webp"
       },
       {
-        "id": 214,
-        "fromSrc": "images/tokyo-214.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0035-다카오산-야쿠오인.webp"
+        "id": 4811,
+        "fromSrc": "images/commons/807351a7c74059a1.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0012-시로요네-센마이다.webp"
       },
       {
-        "id": 215,
-        "fromSrc": "images/tokyo-215.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0036-간다묘진.webp"
+        "id": 4812,
+        "fromSrc": "images/commons/d752f0d41895ca22.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0013-와지마-아침시장-임시-상설시장.webp"
       },
       {
-        "id": 216,
-        "fromSrc": "images/tokyo-216.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0037-히에-신사.webp"
+        "id": 4813,
+        "fromSrc": "images/commons/0fdd1b988ec1601d.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0014-와지마-칠예미술관.webp"
       },
       {
-        "id": 217,
-        "fromSrc": "images/tokyo-217.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0038-가사이-임해공원.webp"
+        "id": 4814,
+        "fromSrc": "images/commons/2512396025bda700.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0015-미쓰케지마.webp"
       },
       {
-        "id": 218,
-        "fromSrc": "images/tokyo-218.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0039-도쿄-돔-시티.webp"
+        "id": 4815,
+        "fromSrc": "images/commons/f149b37c0ac1d8b4.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0016-와쿠라-온천.webp"
       },
       {
-        "id": 219,
-        "fromSrc": "images/commons/21a5d948e3755795.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0040-도쿄역-마루노우치-역사.webp"
+        "id": 4816,
+        "fromSrc": "images/commons/a48fbedd76e26118.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0017-노토지마-수족관.webp"
       },
       {
-        "id": 220,
-        "fromSrc": "images/commons/e1827f6550afe57e.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0041-고쿄-히가시교엔.webp"
+        "id": 4817,
+        "fromSrc": "images/commons/4c7f368e5f40ac88.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0018-시라야마히메-신사.webp"
       },
       {
-        "id": 221,
-        "fromSrc": "images/commons/4fc531488aad20bd.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0042-긴자도리.webp"
+        "id": 4818,
+        "fromSrc": "images/commons/d1609a6f1011bbe3.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0019-하쿠산-시라카와고-화이트로드.webp"
       },
       {
-        "id": 222,
-        "fromSrc": "images/commons/a3276435d39d5b12.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0043-쓰키지-장외시장.webp"
+        "id": 4819,
+        "fromSrc": "images/official/ishikawa-fukube-4819.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0020-후쿠베-대폭포.webp"
       },
       {
-        "id": 223,
-        "fromSrc": "images/commons/5740ad8ea2ff7d7a.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0044-하마리큐-은사정원.webp"
+        "id": 4820,
+        "fromSrc": "images/commons/c3eaaffb2177b7fa.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0021-시라미네-전통건조물군.webp"
       },
       {
-        "id": 224,
-        "fromSrc": "images/commons/d4493df888b544aa.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0045-리쿠기엔.webp"
+        "id": 4821,
+        "fromSrc": "images/commons/580f6b93d869661e.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0022-묘류지-닌자데라.webp"
       },
       {
-        "id": 225,
-        "fromSrc": "images/commons/2c218ae16288baf8.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0046-야나카-긴자.webp"
+        "id": 4822,
+        "fromSrc": "images/commons/a470e2faa8668f00.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0023-스즈키-다이세쓰관.webp"
       },
       {
-        "id": 226,
-        "fromSrc": "images/commons/0e5d8d2019946167.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0047-스미다-호쿠사이-미술관.webp"
+        "id": 4823,
+        "fromSrc": "images/commons/e5a7b1474ad75c61.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0024-니시차야가이.webp"
       },
       {
-        "id": 227,
-        "fromSrc": "images/commons/b4175a0b8f49e2a8.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0048-에도-도쿄-박물관.webp"
+        "id": 4900,
+        "fromSrc": "images/commons/acc93a8c74004aa3.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0001-후쿠이성터.webp"
       },
       {
-        "id": 228,
-        "fromSrc": "images/commons/e176cf78c586db36.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0049-팀랩-플래닛-도쿄.webp"
+        "id": 4901,
+        "fromSrc": "images/commons/9ab2b2a23a5ab323.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0002-요코칸-정원.webp"
       },
       {
-        "id": 229,
-        "fromSrc": "images/commons/fb8c8f2a055fb5c5.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0050-팀랩-보더리스.webp"
+        "id": 4902,
+        "fromSrc": "images/commons/d3ed9add25bed5f0.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp"
       },
       {
-        "id": 230,
-        "fromSrc": "images/commons/e64d12074dd84816.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0051-아키하바라-전기-상점가.webp"
+        "id": 4903,
+        "fromSrc": "images/commons/8587cef1023e0c31.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0004-후쿠이현립-역사박물관.webp"
       },
       {
-        "id": 231,
-        "fromSrc": "images/commons/9e79428a892babc5.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0052-도요스-시장.webp"
+        "id": 4904,
+        "fromSrc": "images/commons/e601eb370a3df91d.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0005-도진보.webp"
       },
       {
-        "id": 232,
-        "fromSrc": "images/commons/f7fb8cb9d64cdbc9.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0053-모리-미술관.webp"
+        "id": 4905,
+        "fromSrc": "images/commons/3dacf59a7c8231f7.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0006-오시마.webp"
       },
       {
-        "id": 233,
-        "fromSrc": "images/commons/548a7d17a459da3f.webp",
-        "toSrc": "images/regions/greater-tokyo/tokyo/places/13-P0054-니혼바시.webp"
+        "id": 4906,
+        "fromSrc": "images/commons/d2dad55f2c1d1b10.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0007-아와라-온천.webp"
       },
       {
-        "id": 500,
-        "fromSrc": "images/commons/43ebe0f42744b888.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0001-가와고에-구라즈쿠리-거리.webp"
+        "id": 4907,
+        "fromSrc": "images/licensed/approved/fukui-maruoka-castle-4907.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0008-마루오카성.webp"
       },
       {
-        "id": 501,
-        "fromSrc": "images/qa/616ff8ae71a835e38473.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0002-기타인.webp"
+        "id": 4908,
+        "fromSrc": "images/commons/0864caa1afffb8ca.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0009-후쿠이현립-공룡박물관.webp"
       },
       {
-        "id": 502,
-        "fromSrc": "images/licensed/approved/saitama-kawagoe-hikawa-502.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0003-가와고에-히카와-신사.webp"
+        "id": 4909,
+        "fromSrc": "images/commons/7a15cccc4aa49408.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0010-가쓰야마-공룡숲.webp"
       },
       {
-        "id": 503,
-        "fromSrc": "images/commons/7be363035df59008.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0004-나가토로-이와다타미.webp"
+        "id": 4910,
+        "fromSrc": "images/commons/30e4ddde1cd4e15a.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0011-에치젠-오노성.webp"
       },
       {
-        "id": 504,
-        "fromSrc": "images/commons/3c5d8474d2c355a6.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0005-호도산-신사.webp"
+        "id": 4911,
+        "fromSrc": "images/commons/f43623ef330e2150.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0012-시치켄-아사이치.webp"
       },
       {
-        "id": 505,
-        "fromSrc": "images/commons/7c129eef6f6493e0.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0006-히쓰지야마-공원.webp"
+        "id": 4912,
+        "fromSrc": "images/commons/7f9b4213a8e00744.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0013-오쇼즈-용천수.webp"
       },
       {
-        "id": 506,
-        "fromSrc": "images/commons/72bfc94f84bed9b7.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0007-오미야-분재미술관.webp"
+        "id": 4913,
+        "fromSrc": "images/commons/ee84e853e63e96ee.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0014-게히-신궁.webp"
       },
       {
-        "id": 507,
-        "fromSrc": "images/licensed/saitama-railway-museum-507.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0008-철도박물관.webp"
+        "id": 4914,
+        "fromSrc": "images/commons/272b51470d28901a.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0015-아카렌가-창고.webp"
       },
       {
-        "id": 508,
-        "fromSrc": "images/qa/f51d509b0263207cf8c8.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0009-무사시-이치노미야-히카와-신사.webp"
+        "id": 4915,
+        "fromSrc": "images/commons/59d3f0eb830197bd.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0016-기비노마쓰바라.webp"
       },
       {
-        "id": 509,
-        "fromSrc": "images/commons/dca30fa2931edfcf.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0010-오시성터-교다-향토박물관.webp"
+        "id": 4916,
+        "fromSrc": "images/commons/507a5b650ea21606.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0017-미카타고코.webp"
       },
       {
-        "id": 510,
-        "fromSrc": "images/commons/8c8ee6dcdefe3a21.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0011-사키타마-고분공원.webp"
+        "id": 4917,
+        "fromSrc": "images/commons/b17e860342a31014.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0018-레인보우라인-산정공원.webp"
       },
       {
-        "id": 511,
-        "fromSrc": "images/commons/8c3902154dfd9622.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0012-긴차쿠다-만주샤게-공원.webp"
+        "id": 4918,
+        "fromSrc": "images/commons/90aba6c3a2929cfe.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0019-오바마-니시구미-전통건조물군.webp"
       },
       {
-        "id": 512,
-        "fromSrc": "images/commons/b245661044910f43.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0013-도키노카네.webp"
+        "id": 4919,
+        "fromSrc": "images/official/fukui-obama-port-4919.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0020-오바마-어항.webp"
       },
       {
-        "id": 513,
-        "fromSrc": "images/commons/64776863778920d5.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0014-가시야-요코초.webp"
+        "id": 4920,
+        "fromSrc": "images/commons/6ed61ab6692442ce.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0021-소토모-해안-유람선.webp"
       },
       {
-        "id": 514,
-        "fromSrc": "images/regional/Kawagoe-Castle.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0015-가와고에성-혼마루-고텐.webp"
+        "id": 4921,
+        "fromSrc": "images/commons/2d48fd1436d58455.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0022-구마가와주쿠.webp"
       },
       {
-        "id": 515,
-        "fromSrc": "images/commons/b6ea711b1c3ab99a.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0016-지치부-신사.webp"
+        "id": 4922,
+        "fromSrc": "images/commons/da09bab614670bdc.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0023-와카사-미카타-조몬박물관.webp"
       },
       {
-        "id": 516,
-        "fromSrc": "images/commons/c80f40dd8deccfef.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0017-미쓰미네-신사.webp"
-      },
-      {
-        "id": 517,
-        "fromSrc": "images/commons/b9935d5939e281fd.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0018-곤겐도-공원-벚꽃-제방.webp"
-      },
-      {
-        "id": 518,
-        "fromSrc": "images/licensed/saitama-g-cans-518.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0019-수도권-외곽방수로.webp"
-      },
-      {
-        "id": 519,
-        "fromSrc": "images/commons/e194629d6f6f942c.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0020-도코로자와-사쿠라타운.webp"
-      },
-      {
-        "id": 520,
-        "fromSrc": "images/qa/2f6c58e90470b84c197b.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0021-오미야-공원.webp"
-      },
-      {
-        "id": 521,
-        "fromSrc": "images/commons/74bbbd33de38f579.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0022-도코로자와-항공기념공원.webp"
-      },
-      {
-        "id": 522,
-        "fromSrc": "images/commons/e4c2ee16316f9d43.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0023-도부동물공원.webp"
-      },
-      {
-        "id": 600,
-        "fromSrc": "images/regional/Narita-san.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp"
-      },
-      {
-        "id": 601,
-        "fromSrc": "images/qa/ba823ab05abb0c755eda.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0002-히요도리자카.webp"
-      },
-      {
-        "id": 602,
-        "fromSrc": "images/commons/e65798285e48af93.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0003-국립역사민속박물관.webp"
-      },
-      {
-        "id": 603,
-        "fromSrc": "images/commons/25fe6131d14a583d.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0004-사와라-옛-거리.webp"
-      },
-      {
-        "id": 604,
-        "fromSrc": "images/commons/ebf1da688ac8987a.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0005-가토리-신궁.webp"
-      },
-      {
-        "id": 605,
-        "fromSrc": "images/regional/Inub-saki-Lighthouse.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0006-이누보사키-등대.webp"
-      },
-      {
-        "id": 606,
-        "fromSrc": "images/commons/e49de1e882cd50a7.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0007-우라야스-향토박물관.webp"
-      },
-      {
-        "id": 607,
-        "fromSrc": "images/commons/9aa5d1a4ec2fe6e9.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0008-미하마엔.webp"
-      },
-      {
-        "id": 608,
-        "fromSrc": "images/commons/3939ec2b082402ac.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0009-노코기리야마.webp"
-      },
-      {
-        "id": 609,
-        "fromSrc": "images/commons/01d2c9ddfd1300f2.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0010-오야마-센마이다.webp"
-      },
-      {
-        "id": 610,
-        "fromSrc": "images/commons/78e11b9c711a1b70.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0011-다테야마성.webp"
-      },
-      {
-        "id": 611,
-        "fromSrc": "images/commons/9ed7cf30c6c4c37e.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0012-노지마사키-등대.webp"
-      },
-      {
-        "id": 612,
-        "fromSrc": "images/commons/4237a96ae8367169.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0013-도쿄-디즈니랜드.webp"
-      },
-      {
-        "id": 613,
-        "fromSrc": "images/qa/297ea368943d9bc9fefa.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0014-도쿄-디즈니씨.webp"
-      },
-      {
-        "id": 614,
-        "fromSrc": "images/qa/33c232f4dc1a5db28562.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0015-나리타산-오모테산도.webp"
-      },
-      {
-        "id": 615,
-        "fromSrc": "images/commons/c14b9d065b0e802f.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0016-마더-목장.webp"
-      },
-      {
-        "id": 616,
-        "fromSrc": "images/commons/d851f8bb319e5d17.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0017-가모가와-씨월드.webp"
-      },
-      {
-        "id": 617,
-        "fromSrc": "images/commons/cd53729b2f61f047.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0018-가쓰우라-아침시장.webp"
-      },
-      {
-        "id": 618,
-        "fromSrc": "images/commons/939a18e72b707413.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0019-지바-포트타워.webp"
-      },
-      {
-        "id": 619,
-        "fromSrc": "images/commons/67b0a5042b83e580.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0020-도쿄-독일마을.webp"
-      },
-      {
-        "id": 620,
-        "fromSrc": "images/commons/3816ba011458de7f.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0021-요로계곡.webp"
-      },
-      {
-        "id": 621,
-        "fromSrc": "images/commons/f084769811799ec4.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0022-후나바시-안데르센-공원.webp"
-      },
-      {
-        "id": 622,
-        "fromSrc": "images/qa/3cf3bbfb4accaf7438ae.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0023-우미호타루-pa.webp"
-      },
-      {
-        "id": 623,
-        "fromSrc": "images/commons/68753126074363db.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0024-사쿠라-무가저택.webp"
-      },
-      {
-        "id": 624,
-        "fromSrc": "images/commons/9b40b0995d614666.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0025-뵤부가우라.webp"
-      },
-      {
-        "id": 625,
-        "fromSrc": "images/commons/b4996d47970fddeb.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0026-지바-신사.webp"
-      },
-      {
-        "id": 626,
-        "fromSrc": "images/commons/f5a5128574a9425c.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0027-지바현립-보소노무라.webp"
-      },
-      {
-        "id": 700,
-        "fromSrc": "images/commons/c58b42eeb699c5a8.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0001-요코하마-아카렌가-창고.webp"
-      },
-      {
-        "id": 701,
-        "fromSrc": "images/commons/5a327abbfa79bf1a.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0002-야마시타-공원.webp"
-      },
-      {
-        "id": 702,
-        "fromSrc": "images/commons/2bcb8431b7393e10.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0003-요코하마-차이나타운.webp"
-      },
-      {
-        "id": 703,
-        "fromSrc": "images/commons/bf8d18a389bbc8d9.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0004-산케이엔.webp"
-      },
-      {
-        "id": 704,
-        "fromSrc": "images/regional/K-toku-in.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp"
-      },
-      {
-        "id": 705,
-        "fromSrc": "images/commons/ef0337cd2522790e.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0006-하세데라.webp"
-      },
-      {
-        "id": 706,
-        "fromSrc": "images/commons/d326440208680a40.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0007-쓰루가오카-하치만구.webp"
-      },
-      {
-        "id": 707,
-        "fromSrc": "images/commons/0b206e9a2649e6e8.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0008-에노시마.webp"
-      },
-      {
-        "id": 708,
-        "fromSrc": "images/commons/60f382af819246c0.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0009-에노시마-시캔들.webp"
-      },
-      {
-        "id": 709,
-        "fromSrc": "images/commons/2cdf0c66f5503398.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0010-신에노시마-수족관.webp"
-      },
-      {
-        "id": 710,
-        "fromSrc": "images/commons/e3b042bda6cdde48.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0011-오와쿠다니.webp"
-      },
-      {
-        "id": 711,
-        "fromSrc": "images/licensed/kanagawa-hakone-heiwa-711.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0012-하코네-신사.webp"
-      },
-      {
-        "id": 712,
-        "fromSrc": "images/regional/Lake-Ashi.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0013-아시노코.webp"
-      },
-      {
-        "id": 713,
-        "fromSrc": "images/commons/5fa3324859479cee.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0014-오다와라성.webp"
-      },
-      {
-        "id": 714,
-        "fromSrc": "images/commons/0d62b860d5c571e3.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0015-조가시마.webp"
-      },
-      {
-        "id": 715,
-        "fromSrc": "images/commons/42809f022379c9ec.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0016-우라리-마르셰.webp"
-      },
-      {
-        "id": 716,
-        "fromSrc": "images/commons/79d1850614681e30.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0017-컵누들-뮤지엄-요코하마.webp"
-      },
-      {
-        "id": 717,
-        "fromSrc": "images/licensed/kanagawa-marine-tower-717.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0018-요코하마-마린타워.webp"
-      },
-      {
-        "id": 718,
-        "fromSrc": "images/commons/8772c472e9909777.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0019-호코쿠지.webp"
-      },
-      {
-        "id": 719,
-        "fromSrc": "images/commons/a7ae98fe7edd0cb5.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0020-겐초지.webp"
-      },
-      {
-        "id": 720,
-        "fromSrc": "images/licensed/kanagawa-engakuji-720.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0021-엔가쿠지.webp"
-      },
-      {
-        "id": 721,
-        "fromSrc": "images/commons/04ac11aee7e5b825.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0022-하코네-조각의-숲-미술관.webp"
-      },
-      {
-        "id": 722,
-        "fromSrc": "images/commons/de68f82b84e9597c.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0023-하코네-세키쇼.webp"
-      },
-      {
-        "id": 723,
-        "fromSrc": "images/commons/612bc28f0e9831f9.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0024-가와사키-다이시.webp"
-      },
-      {
-        "id": 724,
-        "fromSrc": "images/commons/c683b416ccf648f5.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0025-사루시마.webp"
-      },
-      {
-        "id": 725,
-        "fromSrc": "images/commons/5a078ce8ecd8075b.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0026-요코하마-핫케이지마-시파라다이스.webp"
-      },
-      {
-        "id": 726,
-        "fromSrc": "images/licensed/kanagawa-pola-02-726.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0027-폴라-미술관.webp"
-      },
-      {
-        "id": 727,
-        "fromSrc": "images/commons/05695cf2b3393214.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0028-기념함-미카사.webp"
+        "id": 4923,
+        "fromSrc": "images/commons/b13ab1100d9e6126.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0024-헤이센지-하쿠산-신사.webp"
       }
     ],
     "heroChanges": [
       {
-        "key": "가나가와",
-        "fromSrc": "images/regional/K-toku-in.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp"
+        "key": "가가온천",
+        "fromSrc": "images/commons/f2bca6ee2477b26d.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0008-야마나카-온천.webp"
       },
       {
-        "key": "가마쿠라",
-        "fromSrc": "images/regional/K-toku-in.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0005-고토쿠인-가마쿠라-대불.webp"
+        "key": "가나자와",
+        "fromSrc": "images/commons/4b90148f624a277f.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp"
       },
       {
-        "key": "가와고에",
-        "fromSrc": "images/qa/616ff8ae71a835e38473.webp",
-        "toSrc": "images/regional/Kita-in.webp"
+        "key": "가쓰야마·오노",
+        "fromSrc": "images/commons/0864caa1afffb8ca.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0009-후쿠이현립-공룡박물관.webp"
       },
       {
-        "key": "가와사키",
-        "fromSrc": "images/commons/612bc28f0e9831f9.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0024-가와사키-다이시.webp"
+        "key": "고카야마·난토",
+        "fromSrc": "images/commons/b232c05425894f06.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0015-스가누마-합장마을.webp"
       },
       {
-        "key": "교다·히다카",
-        "fromSrc": "images/commons/dca30fa2931edfcf.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0010-오시성터-교다-향토박물관.webp"
+        "key": "노토",
+        "fromSrc": "images/commons/807351a7c74059a1.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0012-시로요네-센마이다.webp"
       },
       {
-        "key": "나리타·사쿠라",
-        "fromSrc": "images/regional/Narita-san.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp"
+        "key": "다카오카·히미",
+        "fromSrc": "images/commons/df956f4d9dbc0560.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0012-아마하라시-해안.webp"
       },
       {
-        "key": "도코로자와",
-        "fromSrc": "images/commons/e194629d6f6f942c.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0020-도코로자와-사쿠라타운.webp"
+        "key": "다테야마·구로베",
+        "fromSrc": "images/qa/04cf63d541def45b62e7.webp",
+        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Tateyama%20Kurobe%20Alpine%20Route%20-%20AlpineRoute6313.jpg?width=960"
       },
       {
-        "key": "동부 사이타마",
-        "fromSrc": "images/commons/b9935d5939e281fd.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0018-곤겐도-공원-벚꽃-제방.webp"
+        "key": "도야마",
+        "fromSrc": "images/commons/46cfc5bd29cd465a.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp"
       },
       {
-        "key": "미사키·미우라",
-        "fromSrc": "images/commons/0d62b860d5c571e3.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0015-조가시마.webp"
+        "key": "도야마시",
+        "fromSrc": "images/commons/46cfc5bd29cd465a.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp"
       },
       {
-        "key": "보소반도",
-        "fromSrc": "images/commons/3939ec2b082402ac.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0009-노코기리야마.webp"
+        "key": "사카이·아와라",
+        "fromSrc": "images/commons/e601eb370a3df91d.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0005-도진보.webp"
       },
       {
-        "key": "사와라·조시",
-        "fromSrc": "images/regional/Inub-saki-Lighthouse.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0006-이누보사키-등대.webp"
+        "key": "쓰루가·미하마",
+        "fromSrc": "images/commons/507a5b650ea21606.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0017-미카타고코.webp"
       },
       {
-        "key": "사이타마",
-        "fromSrc": "images/qa/616ff8ae71a835e38473.webp",
-        "toSrc": "images/regional/Kita-in.webp"
+        "key": "오바마·와카사",
+        "fromSrc": "images/commons/2d48fd1436d58455.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0022-구마가와주쿠.webp"
       },
       {
-        "key": "에노시마·쇼난",
-        "fromSrc": "images/commons/0b206e9a2649e6e8.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0008-에노시마.webp"
+        "key": "우오즈·나메리카와",
+        "fromSrc": "images/commons/93c215c7ecb50d8f.webp",
+        "toSrc": "images/regions/hokuriku/toyama/places/16-P0021-호타루이카-뮤지엄.webp"
       },
       {
-        "key": "오미야",
-        "fromSrc": "images/commons/72bfc94f84bed9b7.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0007-오미야-분재미술관.webp"
+        "key": "이시카와",
+        "fromSrc": "images/commons/4b90148f624a277f.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp"
       },
       {
-        "key": "요코스카",
-        "fromSrc": "images/commons/c683b416ccf648f5.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0025-사루시마.webp"
+        "key": "하쿠산",
+        "fromSrc": "images/commons/4c7f368e5f40ac88.webp",
+        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0018-시라야마히메-신사.webp"
       },
       {
-        "key": "요코하마",
-        "fromSrc": "images/commons/c58b42eeb699c5a8.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0001-요코하마-아카렌가-창고.webp"
+        "key": "후쿠이",
+        "fromSrc": "images/commons/d3ed9add25bed5f0.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp"
       },
       {
-        "key": "우라야스·마쿠하리",
-        "fromSrc": "images/commons/e49de1e882cd50a7.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0007-우라야스-향토박물관.webp"
-      },
-      {
-        "key": "지바",
-        "fromSrc": "images/regional/Narita-san.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0001-나리타산-신쇼지.webp"
-      },
-      {
-        "key": "지바시·가즈사",
-        "fromSrc": "images/commons/939a18e72b707413.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0019-지바-포트타워.webp"
-      },
-      {
-        "key": "지치부·나가토로",
-        "fromSrc": "images/commons/7be363035df59008.webp",
-        "toSrc": "images/regions/greater-tokyo/saitama/places/11-P0004-나가토로-이와다타미.webp"
-      },
-      {
-        "key": "하코네·오다와라",
-        "fromSrc": "images/regional/Lake-Ashi.webp",
-        "toSrc": "images/regions/greater-tokyo/kanagawa/places/14-P0013-아시노코.webp"
-      },
-      {
-        "key": "후나바시",
-        "fromSrc": "images/commons/f084769811799ec4.webp",
-        "toSrc": "images/regions/greater-tokyo/chiba/places/12-P0022-후나바시-안데르센-공원.webp"
+        "key": "후쿠이시·에이헤이지",
+        "fromSrc": "images/commons/d3ed9add25bed5f0.webp",
+        "toSrc": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp"
       }
     ],
     "canonicalPhotoChanges": []
