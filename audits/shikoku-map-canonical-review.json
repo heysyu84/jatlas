@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "region": "시코쿠",
+  "status": "CANONICAL_MAP_TARGETS_COMPLETE",
+  "places": 76,
+  "cidTargets": 60,
+  "coordinateOnlyTargets": 16,
+  "preservedManualTargets": 0,
+  "identityReviewTargets": 10,
+  "sourceCoordinateTargets": 16,
+  "auditEntityTargets": 50,
+  "auditCameraTargets": 0,
+  "riskFlags": []
+}
