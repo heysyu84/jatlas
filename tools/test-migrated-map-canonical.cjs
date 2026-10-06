@@ -20,6 +20,10 @@ for(const p of migrated){
  else assert.fail('canonical target has no external identity strategy '+p.id);
 }
 assert.equal(canonical[910].coordinateOnly,true,'Gujo Hachiman town must not resolve to Gujo City entity');
+assert.equal(canonical[602].lat,35.7243611,'National Museum of Japanese History latitude');
+assert.equal(canonical[602].lon,140.2191306,'National Museum of Japanese History longitude');
+assert.equal(String(canonical[602].cid),'1807054994798992362','National Museum of Japanese History exact Google CID');
+assert.ok(!Object.values(canonical).some(x=>Object.prototype.hasOwnProperty.call(x,'note')),'canonical map QA notes must not leak into public data');
 assert.equal(canonical[4018].coordinateOnly,true,'Hakodate Morning Market fallback must use fixed coordinates');
 assert.equal(new URL(vm.runInContext('googlePlaceMapURL(samples.find(p=>p.id===4019),false)',ctx)).searchParams.get('query_place_id'),'ChIJT_xUJ6rznl8RXrmIZ5nBJjY','Hachimanzaka exact place identity');
 console.log(JSON.stringify({places:migrated.length,canonical:Object.keys(canonical).length,status:'ok'}));
