@@ -49,5 +49,15 @@
     "Previously approved missing assets are recovered from their pinned source manifest before canonical copy.",
     "Legacy numeric place IDs remain compatibility keys until nationwide ID cutover.",
     "No legacy image file is deleted during regional migration."
-  ]
+  ],
+  "filenameNormalization": {
+    "status": "COMPLETE",
+    "normalizedCanonicalFiles": 105,
+    "unchangedCanonicalFiles": 105,
+    "namingRule": "canonical ID + place/food name slug only; no source dates, sequence numbers, site labels, or generic place/food placeholders",
+    "normalizationCommit": "59baebb89aecd4f4271b1c418bdf3c7959fc852f",
+    "canonicalOnlyVerification": "SUCCESS",
+    "canonicalFilesChecked": 210,
+    "missingCanonicalFiles": 0
+  }
 }

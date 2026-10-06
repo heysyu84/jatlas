@@ -49,5 +49,12 @@
     "deletedNow": 0,
     "reason": "Repository safety rule 13 requires nationwide canonical migration completion plus a post-migration zero-reference audit before legacy image deletion."
   },
-  "nextAction": "Continue canonical migration by region. After nationwide completion, run the zero-reference audit and delete only legacy files with zero runtime/registry/tool/workflow references."
+  "nextAction": "Continue canonical migration by region. After nationwide completion, run the zero-reference audit and delete only legacy files with zero runtime/registry/tool/workflow references.",
+  "filenameNormalization": {
+    "status": "COMPLETE",
+    "canonicalFilesChecked": 109,
+    "renamedCanonicalFiles": 0,
+    "namingRule": "canonical ID + place/food name slug only",
+    "note": "Tokai canonical filenames already conformed; no rename was required."
+  }
 }
