@@ -111,6 +111,37 @@ PLACE_OVERRIDES={
 '35-P0004':'tsunoshima-bridge',
 '35-P0005':'motonosumi-shrine',
 '35-P0008':'kintaikyo-bridge',
+# Shikoku: explicit slugs where the map query has trailing location/context
+# that would otherwise collapse the filename to a prefecture or generic token.
+'36-P0001':'naruto-whirlpools-uzunomichi',
+'36-P0006':'bizan-ropeway',
+'36-P0012':'iya-valley-peeing-boy-statue',
+'36-P0016':'tairyuji-ropeway',
+'37-P0002':'takamatsu-castle-tamamo-park',
+'37-P0003':'yashima-yashimaru',
+'37-P0005':'kanamaruza',
+'37-P0007':'zentsuji',
+'37-P0009':'takaya-shrine-sky-torii',
+'37-P0010':'zenigata-sand-sculpture-kotohiki-park',
+'37-P0013':'art-house-project-honmura',
+'37-P0015':'angel-road',
+'37-P0019':'okuboji',
+'38-P0003':'ishiteji',
+'38-P0005':'shimanami-kaido',
+'38-P0008':'oyamazumi-shrine',
+'38-P0015':'tenshaen',
+'38-P0016':'yusumizugaura-terraced-fields',
+'39-P0003':'katsurahama',
+'39-P0005':'chikurinji',
+'39-P0006':'ryugado-cave',
+'39-P0009':'nakatsu-gorge',
+'39-P0010':'cape-muroto',
+'39-P0011':'monet-garden-marmottan',
+'39-P0013':'shimanto-river-sightseeing-boat',
+'39-P0016':'ashizuri-aquarium-satoumi',
+'39-P0017':'kashiwajima',
+'39-P0018':'kochi-sunday-market',
+'39-P0019':'mikurodo-hotsumisakiji',
 }
 
 FOOD_SLUGS={
@@ -132,6 +163,10 @@ FOOD_SLUGS={
 '33-F0001':'tsuyama-horumon-udon','33-F0002':'okayama-demi-katsudon','33-F0003':'okayama-barazushi','33-F0004':'okayama-white-peach-shine-muscat','33-F0005':'hinase-kakioko','33-F0006':'hiruzen-yakisoba',
 '34-F0001':'kure-navy-curry','34-F0002':'momiji-manju','34-F0003':'setoda-lemon','34-F0004':'anago-meshi','34-F0005':'onomichi-ramen','34-F0006':'hiroshima-oysters','34-F0007':'hiroshima-okonomiyaki',
 '35-F0001':'kawara-soba','35-F0002':'fuku-pufferfish','35-F0003':'senzaki-squid','35-F0004':'yamaguchi-uiro','35-F0005':'iwakuni-zushi','35-F0006':'hagi-natsumikan-sweets',
+'36-F0001':'naruto-kintoki','36-F0002':'tokushima-ramen','36-F0003':'sudachi','36-F0004':'awa-odori-chicken','36-F0005':'iya-soba','36-F0006':'handa-somen',
+'37-F0001':'sanuki-udon','37-F0002':'shodoshima-somen','37-F0003':'shoyu-mame','37-F0004':'olive-beef','37-F0005':'wasanbon','37-F0006':'iriko-dashi','37-F0007':'honetsukidori',
+'38-F0001':'matsuyama-tai-meshi','38-F0002':'yawatahama-champon','38-F0003':'ehime-mikan','38-F0004':'uwajima-tai-meshi','38-F0005':'imabari-yakitori','38-F0006':'jakoten',
+'39-F0001':'katsuo-no-tataki','39-F0002':'nabeyaki-ramen','39-F0003':'tosa-akaushi','39-F0004':'tosa-jiro','39-F0005':'sawachi-ryori','39-F0006':'shimanto-unagi','39-F0007':'imo-kenpi',
 }
 
 BRAND_REPLACEMENTS={
