@@ -3,6 +3,7 @@
 import hashlib, importlib.util, io, json, re, shutil, subprocess, unicodedata, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
+from unidecode import unidecode
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
@@ -76,10 +77,9 @@ def clean_src(src):
     return s.split('?',1)[0].split('#',1)[0].removeprefix('./')
 
 def slug_name(name):
-    s=unicodedata.normalize('NFKC',str(name)).strip().lower()
-    s=re.sub(r'[\s·・/／\\()（）\[\]【】]+','-',s)
-    s=re.sub(r'[^\w\-가-힣ぁ-んァ-ン一-龥]+','-',s,flags=re.UNICODE)
-    return re.sub(r'-+','-',s).strip('-')
+    s=unidecode(unicodedata.normalize('NFKC',str(name or '')).strip()).lower()
+    s=re.sub(r'[^0-9a-z]+','-',s)
+    return re.sub(r'-+','-',s).strip('-') or 'item'
 
 def load_prepare_module():
     p=ROOT/'tools/prepare-official-photos.py'
