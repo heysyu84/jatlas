@@ -1,0 +1,75 @@
+{
+  "reviewedAt": "2026-10-07",
+  "method": "Direct visual inspection of the current canonical WebP blobs on main. Natural night/interior scenes are not rejected solely for low luminance; identity, representativeness, crop safety, and practical card quality are considered.",
+  "places": {
+    "403": {
+      "src": "images/regions/kinki/osaka/places/27-P0004-umeda-sky-building.webp",
+      "decision": "keep",
+      "note": "Night exterior clearly identifies Umeda Sky Building and is suitable as a representative image."
+    },
+    "410": {
+      "src": "images/regions/kinki/osaka/places/27-P0011-abeno-harukasu-300.webp",
+      "decision": "keep",
+      "note": "Abeno Harukas is clearly identifiable in the night skyline; low luminance alone is not a defect."
+    },
+    "507": {
+      "src": "images/regions/greater-tokyo/saitama/places/11-P0008-railway-museum.webp",
+      "decision": "keep",
+      "note": "Current image is a bright, wide overview of the Railway Museum train hall; older held note is stale."
+    },
+    "518": {
+      "src": "images/regions/greater-tokyo/saitama/places/11-P0019-metropolitan-area-outer-underground-discharge-channel.webp",
+      "decision": "keep",
+      "note": "Current image clearly shows the main underground flood-control chamber; older dark/composite warning is stale."
+    },
+    "1107": {
+      "src": "images/regions/tokai/mie/places/24-P0008-nabana-no-sato.webp",
+      "decision": "keep",
+      "note": "Night illumination is a core attraction and remains clearly visible despite low luminance."
+    },
+    "1305": {
+      "src": "images/regions/north-kanto/tochigi/places/09-P0006-oya-history-museum.webp",
+      "decision": "keep",
+      "note": "Interior is naturally dark but the underground quarry space is clearly visible and representative."
+    },
+    "1521": {
+      "src": "images/regions/kinki/kyoto/places/26-P0025-sanzen-in.webp",
+      "decision": "keep",
+      "note": "Dark moss-garden scene is intentional and clearly representative of Sanzen-in."
+    },
+    "2908": {
+      "src": "images/regions/kyushu/fukuoka/places/40-P0009-kai-ya-no-daimon.webp",
+      "decision": "keep",
+      "note": "Current image is a clear landscape overview of Keya no Oto and surrounding coast; older cave-only warning is stale."
+    },
+    "3406": {
+      "src": "images/regions/kyushu/miyazaki/places/45-P0007-sun-messe-nichinan.webp",
+      "decision": "keep",
+      "note": "Moai row is clearly visible and representative; current resolution is acceptable for the site card."
+    },
+    "3413": {
+      "src": "images/regions/kyushu/miyazaki/places/45-P0014-tennan-kawara.webp",
+      "decision": "keep",
+      "note": "Cave interior is naturally dark; current view clearly shows the Amanoyasukawara stone piles and cave opening."
+    },
+    "4003": {
+      "src": "images/regions/hokkaido/hokkaido/places/01-P0004-hokkaido-shrine.webp",
+      "decision": "keep",
+      "note": "Current image is a clear color frontal view of Hokkaido Shrine; older monochrome warning is stale."
+    },
+    "4016": {
+      "src": "images/regions/hokkaido/hokkaido/places/01-P0017-mount-hakodate.webp",
+      "decision": "keep",
+      "note": "Night panorama is the signature Mount Hakodate view and remains detailed enough for the card."
+    },
+    "4403": {
+      "src": "images/regions/tohoku/akita/places/05-P0004-namahage-museum.webp",
+      "decision": "keep",
+      "note": "Museum display is clearly visible and strongly representative; darkness is ambient, not a defect."
+    }
+  },
+  "pending": {
+    "place:4510": "Current image is a hydrangea close-up and does not represent Uesugi Family Mausoleum. Replacement required.",
+    "place:3102": "Current image is a marina/yacht scene and does not represent Dejima historic site. Replacement required."
+  }
+}
