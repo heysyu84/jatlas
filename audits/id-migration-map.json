@@ -9855,18 +9855,18 @@
       "proposedDirectory": "images/regions/greater-tokyo/tokyo/foods"
     },
     {
-      "legacyKey": "도쿄|소바·덴푸라",
+      "legacyKey": "도쿄|덴푸라·소바",
       "newId": "13-F0010",
       "pref": "도쿄",
-      "name": "소바·덴푸라",
+      "name": "덴푸라·소바",
       "region": "수도권",
       "proposedDirectory": "images/regions/greater-tokyo/tokyo/foods"
     },
     {
-      "legacyKey": "도쿄|소바·덴푸라",
+      "legacyKey": "도쿄|덴푸라·소바",
       "newId": "13-F0011",
       "pref": "도쿄",
-      "name": "소바·덴푸라",
+      "name": "덴푸라·소바",
       "region": "수도권",
       "proposedDirectory": "images/regions/greater-tokyo/tokyo/foods"
     },
