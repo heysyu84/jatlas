@@ -27,7 +27,7 @@ for file in audit.glob('*photo-review.json'):
         for key, value in data.get(field, {}).items():
             target = kind + ':' + str(key)
             if value.get('src') and value['src'] == current.get(target, {}).get('src'):
-                reviewed[target] = file.name
+                reviewed[target] = {'file': file.name, 'allowDuplicate': bool(value.get('allowDuplicate'))}
 reasons = collections.defaultdict(set)
 previous_queue_path = audit / 'photo-queue.json'
 previous_queue = json.loads(previous_queue_path.read_text()) if previous_queue_path.exists() else {'items': []}
@@ -73,11 +73,12 @@ for key, flags in reasons.items():
     item = current.get(key)
     if not item:
         continue
-    remaining = sorted(f for f in flags if key not in reviewed or f.startswith('duplicate-group:'))
+    review = reviewed.get(key)
+    remaining = sorted(f for f in flags if not review or (f.startswith('duplicate-group:') and not review.get('allowDuplicate')))
     status = 'resolved-by-reviewed-current-photo' if not remaining else 'needs-review'
     if item['pref'] == '후쿠시마':
         status = 'outside-user-scope'
-    rows.append(dict(key=key, **item, status=status, reasons=remaining, review=reviewed.get(key)))
+    rows.append(dict(key=key, **item, status=status, reasons=remaining, review=(review or {}).get('file')))
 rows.sort(key=lambda r: (r['status'] != 'needs-review', 'missing-photo' not in r['reasons'], r['pref'], r['key']))
 active = [r for r in rows if r['status'] == 'needs-review']
 summary = dict(trackedUniqueCandidates=len(rows), remainingCandidates=len(active), remainingPlaces=sum(r['key'].startswith('place:') for r in active), remainingFoods=sum(r['key'].startswith('food:') for r in active), missingPhotos=sum('missing-photo' in r['reasons'] for r in active), resolvedTrackedCandidates=sum(r['status'] == 'resolved-by-reviewed-current-photo' for r in rows), outsideScope=sum(r['status'] == 'outside-user-scope' for r in rows), currentReviewedItems=len(reviewed), historicalDuplicateGroupsStillMatching=len(duplicates))
