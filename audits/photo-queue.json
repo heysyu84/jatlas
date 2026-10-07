@@ -3,13 +3,13 @@
   "method": "Current runtime photo audit plus historical visual findings only when the photo src is unchanged, minus explicitly reviewed current mappings. Fukushima excluded. Replaced photos do not inherit stale visual reasons.",
   "summary": {
     "trackedUniqueCandidates": 66,
-    "remainingCandidates": 65,
-    "remainingPlaces": 25,
+    "remainingCandidates": 52,
+    "remainingPlaces": 12,
     "remainingFoods": 40,
     "missingPhotos": 0,
-    "resolvedTrackedCandidates": 0,
+    "resolvedTrackedCandidates": 13,
     "outsideScope": 1,
-    "currentReviewedItems": 0,
+    "currentReviewedItems": 13,
     "historicalDuplicateGroupsStillMatching": 11
   },
   "duplicateGroups": [
@@ -151,17 +151,6 @@
       "review": null
     },
     {
-      "key": "place:1521",
-      "name": "산젠인",
-      "pref": "교토",
-      "src": "images/regions/kinki/kyoto/places/26-P0025-sanzen-in.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
       "key": "food:구마모토 라멘",
       "name": "구마모토 라멘",
       "pref": "구마모토",
@@ -223,7 +212,8 @@
       "src": "images/regions/kyushu/nagasaki/places/42-P0003-dejima.webp",
       "status": "needs-review",
       "reasons": [
-        "previous-audit: low-resolution"
+        "previous-audit: low-resolution",
+        "held: Current image is a marina/yacht scene and does not represent Dejima historic site. Replacement required."
       ],
       "review": null
     },
@@ -232,17 +222,6 @@
       "name": "오세자키 등대",
       "pref": "나가사키",
       "src": "images/regions/kyushu/nagasaki/places/42-P0023-ose-saki-todai.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:1305",
-      "name": "오야 자료관",
-      "pref": "도치기",
-      "src": "images/regions/north-kanto/tochigi/places/09-P0006-oya-history-museum.webp",
       "status": "needs-review",
       "reasons": [
         "previous-audit: dark"
@@ -405,17 +384,6 @@
       "review": null
     },
     {
-      "key": "place:3406",
-      "name": "선멧세 니치난",
-      "pref": "미야자키",
-      "src": "images/regions/kyushu/miyazaki/places/45-P0007-sun-messe-nichinan.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
       "key": "place:3409",
       "name": "도이미사키",
       "pref": "미야자키",
@@ -423,50 +391,6 @@
       "status": "needs-review",
       "reasons": [
         "held: Foreground horse legs cut in center crop; follow-up returned no eligible candidates."
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3413",
-      "name": "아마노야스가와라",
-      "pref": "미야자키",
-      "src": "images/regions/kyushu/miyazaki/places/45-P0014-tennan-kawara.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:1107",
-      "name": "나바나노사토",
-      "pref": "미에",
-      "src": "images/regions/tokai/mie/places/24-P0008-nabana-no-sato.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:507",
-      "name": "철도박물관",
-      "pref": "사이타마",
-      "src": "images/regions/greater-tokyo/saitama/places/11-P0008-railway-museum.webp",
-      "status": "needs-review",
-      "reasons": [
-        "held: Saitama candidate carriage interiors too dark; Kyoto museum and pre-museum Omiya workshop candidates rejected."
-      ],
-      "review": null
-    },
-    {
-      "key": "place:518",
-      "name": "수도권 외곽방수로",
-      "pref": "사이타마",
-      "src": "images/regions/greater-tokyo/saitama/places/11-P0019-metropolitan-area-outer-underground-discharge-channel.webp",
-      "status": "needs-review",
-      "reasons": [
-        "held: Dark interior candidates and composite image rejected; sole-shaft image insufficient for main hall."
       ],
       "review": null
     },
@@ -527,17 +451,6 @@
       "review": null
     },
     {
-      "key": "place:4403",
-      "name": "나마하게관",
-      "pref": "아키타",
-      "src": "images/regions/tohoku/akita/places/05-P0004-namahage-museum.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
       "key": "food:이모니",
       "name": "이모니",
       "pref": "야마가타",
@@ -555,7 +468,8 @@
       "src": "images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp",
       "status": "needs-review",
       "reasons": [
-        "previous-audit: dark"
+        "previous-audit: dark",
+        "held: Current image is a hydrangea close-up and does not represent Uesugi Family Mausoleum. Replacement required."
       ],
       "review": null
     },
@@ -611,28 +525,6 @@
       "status": "needs-review",
       "reasons": [
         "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:403",
-      "name": "우메다 스카이 빌딩",
-      "pref": "오사카",
-      "src": "images/regions/kinki/osaka/places/27-P0004-umeda-sky-building.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:410",
-      "name": "아베노 하루카스 300",
-      "pref": "오사카",
-      "src": "images/regions/kinki/osaka/places/27-P0011-abeno-harukasu-300.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
       ],
       "review": null
     },
@@ -715,39 +607,6 @@
       "review": null
     },
     {
-      "key": "place:4003",
-      "name": "홋카이도 신궁",
-      "pref": "홋카이도",
-      "src": "images/regions/hokkaido/hokkaido/places/01-P0004-hokkaido-shrine.webp",
-      "status": "needs-review",
-      "reasons": [
-        "held: Existing monochrome image needs replacement; first candidate roof too close to edge for card crop. No replacement applied."
-      ],
-      "review": null
-    },
-    {
-      "key": "place:4016",
-      "name": "하코다테산",
-      "pref": "홋카이도",
-      "src": "images/regions/hokkaido/hokkaido/places/01-P0017-mount-hakodate.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:2908",
-      "name": "게야노오토",
-      "pref": "후쿠오카",
-      "src": "images/regions/kyushu/fukuoka/places/40-P0009-kai-ya-no-daimon.webp",
-      "status": "needs-review",
-      "reasons": [
-        "held: Both searches returned no eligible landscape candidates. Existing cave interior remains."
-      ],
-      "review": null
-    },
-    {
       "key": "food:미즈요칸",
       "name": "미즈요칸",
       "pref": "후쿠이",
@@ -779,6 +638,123 @@
         "duplicate-group: 8"
       ],
       "review": null
+    },
+    {
+      "key": "place:1521",
+      "name": "산젠인",
+      "pref": "교토",
+      "src": "images/regions/kinki/kyoto/places/26-P0025-sanzen-in.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:1305",
+      "name": "오야 자료관",
+      "pref": "도치기",
+      "src": "images/regions/north-kanto/tochigi/places/09-P0006-oya-history-museum.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:3406",
+      "name": "선멧세 니치난",
+      "pref": "미야자키",
+      "src": "images/regions/kyushu/miyazaki/places/45-P0007-sun-messe-nichinan.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:3413",
+      "name": "아마노야스가와라",
+      "pref": "미야자키",
+      "src": "images/regions/kyushu/miyazaki/places/45-P0014-tennan-kawara.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:1107",
+      "name": "나바나노사토",
+      "pref": "미에",
+      "src": "images/regions/tokai/mie/places/24-P0008-nabana-no-sato.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:507",
+      "name": "철도박물관",
+      "pref": "사이타마",
+      "src": "images/regions/greater-tokyo/saitama/places/11-P0008-railway-museum.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:518",
+      "name": "수도권 외곽방수로",
+      "pref": "사이타마",
+      "src": "images/regions/greater-tokyo/saitama/places/11-P0019-metropolitan-area-outer-underground-discharge-channel.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:4403",
+      "name": "나마하게관",
+      "pref": "아키타",
+      "src": "images/regions/tohoku/akita/places/05-P0004-namahage-museum.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:403",
+      "name": "우메다 스카이 빌딩",
+      "pref": "오사카",
+      "src": "images/regions/kinki/osaka/places/27-P0004-umeda-sky-building.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:410",
+      "name": "아베노 하루카스 300",
+      "pref": "오사카",
+      "src": "images/regions/kinki/osaka/places/27-P0011-abeno-harukasu-300.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:4003",
+      "name": "홋카이도 신궁",
+      "pref": "홋카이도",
+      "src": "images/regions/hokkaido/hokkaido/places/01-P0004-hokkaido-shrine.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:4016",
+      "name": "하코다테산",
+      "pref": "홋카이도",
+      "src": "images/regions/hokkaido/hokkaido/places/01-P0017-mount-hakodate.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:2908",
+      "name": "게야노오토",
+      "pref": "후쿠오카",
+      "src": "images/regions/kyushu/fukuoka/places/40-P0009-kai-ya-no-daimon.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-current-place-photo-review.json"
     },
     {
       "key": "food:마마도르",
