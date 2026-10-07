@@ -19554,12 +19554,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "하마나코 장어",
       "image": "images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp",
       "legacyImage": "images/commons/b402ea27ead1a6df.webp",
-      "sha256": "b785de681879735f620acc8df2d88d9d4e737271bd2c76f0c52682feee9c2510",
-      "source": "https://commons.wikimedia.org/wiki/File:Unagi_Hamamatsu.JPG",
-      "terms": "https://creativecommons.org/licenses/by-sa/3.0",
-      "author": "Jfr0595",
+      "sha256": "cb7dc0472ac464d881a0db39447e62ba9ba1f44c8a1c9c93b789c1b8d0bf2970",
+      "source": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E5%BC%8F%E8%92%B2%E7%87%92%E9%B0%BB%E9%AD%9A%E9%A3%AF_(DSC04153).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Rick888chen",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "22-F0006": {
       "canonicalId": "22-F0006",
@@ -21010,12 +21010,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "가나자와 오뎅",
       "image": "images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp",
       "legacyImage": "images/commons/588913a56031357f.webp",
-      "sha256": "0f5277b7c4ce990eb07afab5fe110abdc0a7bf1e1f7f6bde7da808e428a30933",
-      "source": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E6%B2%A2%E3%81%8A%E3%81%A7%E3%82%93%E5%8B%9D%E4%B8%8020241030_04.jpg",
-      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "author": "経済特区",
+      "sha256": "c789d0c31cf6a7530e52e2ddac1e7b5955daf526528e2f4235e927159bb9f63a",
+      "source": "https://commons.wikimedia.org/wiki/File:Mitsui_Garden_Hotel_Kanazawa_1F_Noukabanzai_Mantei_breakfast_buffet_20200104-001.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "J o",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "17-F0006": {
       "canonicalId": "17-F0006",
