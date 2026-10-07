@@ -34,38 +34,9 @@ jobs:
           root = Path('.')
           dist = root / 'dist'
           targets = {
-            # Places
-            '46-P0012': ('places', 'images/regions/kyushu/kagoshima/places/46-P0012-kiri-shima-jingu.webp', 'Kirishima-Jingu Shrine (52018760308).jpg'),
-            '21-P0005': ('places', 'images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp', 'Hida no Sato (6088104463).jpg'),
-            '20-P0012': ('places', 'images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp', 'Karuizawa shiraito-no-taki02s3872.jpg'),
-            '20-P0016': ('places', 'images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp', 'Lake Suwa in August 2026.jpg'),
-            '42-P0003': ('places', 'images/regions/kyushu/nagasaki/places/42-P0003-dejima.webp', 'Dejima Nagasaki Japan33n.jpg'),
-            '42-P0023': ('places', 'images/regions/kyushu/nagasaki/places/42-P0023-ose-saki-todai.webp', 'Ohsezaki1404.jpg'),
-            '23-P0013': ('places', 'images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp', 'Osu Kannon Street 2021-07 ac (3).jpg'),
-            '06-P0011': ('places', 'images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp', 'Approachway to the mausoleums of Uesugi Family.jpg'),
-            '38-P0010': ('places', 'images/regions/shikoku/ehime/places/38-P0010-shimonada-eki.webp', '下灘駅と瀬戸内海.jpg'),
-            '27-P0016': ('places', 'images/regions/kinki/osaka/places/27-P0016-katsuo-tera.webp', '勝尾寺山門.jpg'),
-            '44-P0005': ('places', 'images/regions/kyushu/oita/places/44-P0005-take-kawara-onsen.webp', 'Takegawara Onsen 20170218.jpg'),
-
-            # Foods
-            '37-F0004': ('foods', 'images/regions/shikoku/kagawa/foods/37-F0004-olive-beef.webp', 'Griddled wagyu beef.jpg'),
-            '37-F0005': ('foods', 'images/regions/shikoku/kagawa/foods/37-F0005-wasanbon.webp', '和菓子1261441.jpg'),
-            '46-F0002': ('foods', 'images/regions/kyushu/kagoshima/foods/46-F0002-kagoshima-kurobuta.webp', 'Kagoshima Kurobuta no Tonkotsu.jpg'),
-            '39-F0006': ('foods', 'images/regions/shikoku/kochi/foods/39-F0006-shimanto-unagi.webp', 'Eel bowl, bowl of eel and rice; 2013.jpg'),
-            '43-F0002': ('foods', 'images/regions/kyushu/kumamoto/foods/43-F0002-kumamoto-ramen.webp', 'Kumamoto ramen 001.jpg'),
-            '13-F0017': ('foods', 'images/regions/greater-tokyo/tokyo/foods/13-F0017-oshima-milk-ashitaba-snack.webp', '築地ペッパーズカフェIMG 20220312 02.jpg'),
-            '31-F0002': ('foods', 'images/regions/sanin-sanyo/tottori/foods/31-F0002-tottori-wagyu.webp', 'Wagyu Beef (173957803).jpeg'),
-            '04-F0004': ('foods', 'images/regions/tohoku/miyagi/foods/04-F0004-sasakamaboko.webp', 'Sasa-Kamaboko 001.jpg'),
-            '32-F0003': ('foods', 'images/regions/sanin-sanyo/shimane/foods/32-F0003-shimane-wagyu.webp', 'Raw-shimanewagyu-20200210.jpg'),
-            '22-F0005': ('foods', 'images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp', 'Unagi Hamamatsu.JPG'),
-            '22-F0006': ('foods', 'images/regions/tokai/shizuoka/foods/22-F0006-hamana-lake-unagi.webp', 'Grilled eel topped on rice (8174690852).jpg'),
-            '27-F0003': ('foods', 'images/regions/kinki/osaka/foods/27-F0003-doteyaki.webp', 'Doteyaki - 2025 Jan 1 various.jpeg'),
-            '27-F0006': ('foods', 'images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp', '阪神百貨店のいか焼きIMG 20211230 113552.jpg'),
-            '44-F0004': ('foods', 'images/regions/kyushu/oita/foods/44-F0004-bungo-beef.webp', 'Wagyu Beef for Shabu-shabu.jpg'),
-            '08-F0002': ('foods', 'images/regions/north-kanto/ibaraki/foods/08-F0002-anko-nabe.webp', 'Nabe of angler fish after.jpg'),
-            '17-F0001': ('foods', 'images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp', '金沢おでん勝一20241030 04.jpg'),
-            '18-F0001': ('foods', 'images/regions/hokuriku/fukui/foods/18-F0001-mizu-yokan.webp', '福井市和菓子司えがわの水羊かん Jan 8, 2024.jpg'),
-          }
+            '22-F0005': ('foods', 'images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp', '日式蒲燒鰻魚飯 (DSC04153).jpg'),
+            '17-F0001': ('foods', 'images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp', 'Mitsui Garden Hotel Kanazawa 1F Noukabanzai Mantei breakfast buffet 20200104-001.jpg'),
+          }}
 
           registry_path = dist / 'photo-registry-data.js'
           raw = registry_path.read_text()
