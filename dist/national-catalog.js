@@ -50,7 +50,7 @@ function nationalFoodCard(food){
  if(info){
   const extra=document.createElement('div');extra.className='foodExtra';
   if(info.kind||info.taste){const p=document.createElement('p');const b=document.createElement('b');b.textContent=info.kind||'';p.append(b,document.createTextNode((info.kind&&info.taste?' · ':'')+(info.taste||'')));extra.append(p)}
-  if(info.how){const p=document.createElement('p');p.textContent=info.how;extra.append(p)}
+  if(info.how&&!/시장·전문점·지역 식당에서 현지 방식으로 맛보세요\.?$/.test(info.how)){const p=document.createElement('p');p.textContent=info.how;extra.append(p)}
   if(info.shop&&info.url){const a=document.createElement('a');a.href=info.url;a.target='_blank';a.rel='noopener';a.textContent=info.shop+' · 공식 안내 ↗';extra.append(a)}
   root.append(extra);
  }
