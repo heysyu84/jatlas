@@ -47,5 +47,7 @@ jobs:
             exit 0
           fi
           git commit -m "Resolve final current photo QA queue"
+          git restore .
+          git clean -fd
           git pull --rebase origin main
           git push origin HEAD:main
