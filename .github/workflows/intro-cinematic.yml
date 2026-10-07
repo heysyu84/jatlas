@@ -1,0 +1,85 @@
+name: Render Jatlas real-footage intro
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/intro-cinematic.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: jatlas-intro-render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Prepare FFmpeg
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
+          ffmpeg -hide_banner -version | head -n 2
+      - name: Download reusable real footage
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/jatlas-video dist/media
+          curl -fLSs --retry 4 --retry-delay 6 --connect-timeout 20 -o /tmp/jatlas-video/tokyo.webm "https://upload.wikimedia.org/wikipedia/commons/4/47/Shibuya_crossing_time-lapse_2019-01-05.webm"
+          curl -fLSs --retry 4 --retry-delay 6 --connect-timeout 20 -o /tmp/jatlas-video/fuji.webm "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mount_Fuji_at_sunset_%28timelapse%29.webm"
+          curl -fLSs --retry 4 --retry-delay 6 --connect-timeout 20 -o /tmp/jatlas-video/onsen.webm "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kusatsu_gunma_yubatake_-_2020_3_1.webm"
+          curl -fLSs --retry 4 --retry-delay 6 --connect-timeout 20 -o /tmp/jatlas-video/sakura.webm "https://upload.wikimedia.org/wikipedia/commons/1/12/JP_Park_Sakura_C_20180330.webm"
+          for x in /tmp/jatlas-video/*.webm; do ffprobe -v error -show_entries format=duration -of default=nw=1 "$x"; done
+      - name: Edit four real-footage scenes into one web-optimized MP4
+        shell: bash
+        run: |
+          set -euo pipefail
+          for entry in "tokyo:4" "fuji:8" "onsen:3" "sakura:1"; do
+            clip="$(echo "$entry" | cut -d: -f1)"
+            seek="$(echo "$entry" | cut -d: -f2)"
+            ffmpeg -hide_banner -loglevel error -y \
+              -ss "$seek" -i "/tmp/jatlas-video/$clip.webm" -t 5 -an \
+              -vf "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,setsar=1,fps=25,eq=contrast=1.035:saturation=0.91,format=yuv420p" \
+              -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p \
+              "/tmp/jatlas-video/$clip.mp4"
+          done
+          ffmpeg -hide_banner -loglevel error -y \
+            -i /tmp/jatlas-video/tokyo.mp4 \
+            -i /tmp/jatlas-video/fuji.mp4 \
+            -i /tmp/jatlas-video/onsen.mp4 \
+            -i /tmp/jatlas-video/sakura.mp4 \
+            -filter_complex "[0:v][1:v]xfade=transition=fade:duration=0.8:offset=4.2[a];[a][2:v]xfade=transition=fade:duration=0.8:offset=8.4[b];[b][3:v]xfade=transition=fade:duration=0.8:offset=12.6[c];[c]format=yuv420p[v]" \
+            -map "[v]" -an -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p \
+            -movflags +faststart dist/media/jatlas-intro-cinematic.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 dist/media/jatlas-intro-cinematic.mp4
+          test -s dist/media/jatlas-intro-cinematic.mp4
+      - name: Commit video asset for future deployments
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/media/jatlas-intro-cinematic.mp4
+          if ! git diff --cached --quiet; then
+            git commit -m "Add edited real Japanese footage for cinematic intro"
+            git push origin HEAD:main
+          fi
+      - name: Prepare GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site with edited intro video
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy video preview to GitHub Pages
+        uses: actions/deploy-pages@v4
