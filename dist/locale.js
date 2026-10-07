@@ -937,7 +937,7 @@ Object.assign(localeSupplemental,{
  "다시 시도":"再試行",
  "예보는 여행 참고용입니다.":"予報は旅行の参考用です。",
  "데이터: Open-Meteo":"データ: Open-Meteo"
-};
+});
 let localeKeys=[],localePattern=/(?!)/g,localeSourceSignature='';
 function refreshLocaleDictionary(force=false){
  const sources=[
