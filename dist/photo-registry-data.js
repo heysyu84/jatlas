@@ -19769,7 +19769,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "アルトクール",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "24-F0006": {
       "canonicalId": "24-F0006",
@@ -19783,7 +19783,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by/2.0",
       "author": "merec0",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "08-F0001": {
       "canonicalId": "08-F0001",
@@ -20049,7 +20049,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "MaedaAkihiko",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "15-F0005": {
       "canonicalId": "15-F0005",
@@ -20063,7 +20063,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "Totti",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "19-F0008": {
       "canonicalId": "19-F0008",
@@ -20119,7 +20119,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "Asturio Cantabrio",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "19-F0004": {
       "canonicalId": "19-F0004",
@@ -20133,7 +20133,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "Ocdp",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "19-F0003": {
       "canonicalId": "19-F0003",
@@ -20287,7 +20287,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "George E. Koronaios",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "11-F0002": {
       "canonicalId": "11-F0002",
@@ -20343,7 +20343,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "Ocdp",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "11-F0006": {
       "canonicalId": "11-F0006",
@@ -20791,7 +20791,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "ウィ貴公子",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "14-F0004": {
       "canonicalId": "14-F0004",
@@ -21043,7 +21043,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "Daderot",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "17-F0002": {
       "canonicalId": "17-F0002",
@@ -21295,7 +21295,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/licenses/by-sa/3.0/",
       "author": "",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "26-F0004": {
       "canonicalId": "26-F0004",
@@ -21323,7 +21323,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "HAGAT hOMSZE",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "26-F0006": {
       "canonicalId": "26-F0006",
@@ -21337,7 +21337,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "ZhengZhou",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "27-F0001": {
       "canonicalId": "27-F0001",
@@ -21421,7 +21421,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/2.0",
       "author": "suri",
       "userPhoto": false,
-      "revision": 3
+      "revision": 4
     },
     "27-F0007": {
       "canonicalId": "27-F0007",
@@ -21505,7 +21505,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Mti",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "28-F0006": {
       "canonicalId": "28-F0006",
@@ -21519,7 +21519,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "漱石の猫",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "29-F0001": {
       "canonicalId": "29-F0001",
@@ -21570,12 +21570,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "미와 소멘",
       "image": "images/regions/kinki/nara/foods/29-F0004-miwa-somen.webp",
       "legacyImage": "images/commons/b1535e6d047b7abc.webp",
-      "sha256": "ff109d14877faa4498b082467b3c753357672a6d32dc2ad436816b024f57b7aa",
+      "sha256": "5d74020a48e9aeda6c2a590bc7019f4d2b04885f7d6b36ed573c44d39a86e75c",
       "source": "https://commons.wikimedia.org/wiki/File:Miwa_somen_01.jpg",
       "terms": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
       "author": "ちぃこ",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "29-F0005": {
       "canonicalId": "29-F0005",
@@ -21715,7 +21715,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://commons.wikimedia.org/wiki/File:Tofutikuwa1.jpg",
       "author": "㭍月例祭",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "31-F0004": {
       "canonicalId": "31-F0004",
@@ -21813,7 +21813,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "J.Yoshiiiiiiii",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "33-F0001": {
       "canonicalId": "33-F0001",
@@ -22079,7 +22079,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "Kykk wiki",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "36-F0001": {
       "canonicalId": "36-F0001",
@@ -22723,7 +22723,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by/3.0",
       "author": "South simabara",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "42-F0007": {
       "canonicalId": "42-F0007",
@@ -23549,7 +23549,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by/2.0",
       "author": "Raita Futo from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "01-F0010": {
       "canonicalId": "01-F0010",
@@ -23773,7 +23773,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/2.0",
       "author": "pelican from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "03-F0007": {
       "canonicalId": "03-F0007",
@@ -23857,7 +23857,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/2.0",
       "author": "pelican from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "04-F0004": {
       "canonicalId": "04-F0004",
@@ -23955,7 +23955,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "くろふね",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "05-F0003": {
       "canonicalId": "05-F0003",
@@ -23969,7 +23969,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "掬茶",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "05-F0004": {
       "canonicalId": "05-F0004",
@@ -24039,7 +24039,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "Totti",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "06-F0001": {
       "canonicalId": "06-F0001",
@@ -24193,7 +24193,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "毒島みるく",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "07-F0004": {
       "canonicalId": "07-F0004",
@@ -24263,7 +24263,7 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "電車(新幹線)でゴー！",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     }
   }
 };
