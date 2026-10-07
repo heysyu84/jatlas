@@ -19764,12 +19764,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "이세 우동",
       "image": "images/regions/tokai/mie/foods/24-F0005-ise-udon.webp",
       "legacyImage": "images/commons/92ed878fcdf1686b.webp",
-      "sha256": "06ba46776f5c1ccf2d00b18d0e641028ce6355bdd5fd6190335d9040487a3780",
-      "source": "https://commons.wikimedia.org/wiki/File:Ise%20Udon%20Yamaguchiya%20ac%20(2).jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "fad3babc6d713bcb465d6282ea2f44e637b9d059235f49a9f4965139210072c6",
+      "source": "https://commons.wikimedia.org/wiki/File:Ise_Udon_by_Kinoko.JPG",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "アルトクール",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "24-F0006": {
       "canonicalId": "24-F0006",
@@ -19778,12 +19778,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "이세에비",
       "image": "images/regions/tokai/mie/foods/24-F0006-ise-ebi.webp",
       "legacyImage": "images/commons/3f0bf241bfa0136a.webp",
-      "sha256": "3818605322abea2f98a9d5d70487b51453355f83aab41600a1fc57887a22fbac",
+      "sha256": "eac0663527eb3dc958f4f98032f107f00f57a1c6364c0b7b6f7f3fea5a4efb1e",
       "source": "https://commons.wikimedia.org/wiki/File:Sashimi_%E4%BC%8A%E5%8B%A2%E3%82%A8%E3%83%93.jpg",
-      "terms": "",
-      "author": "",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "merec0",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "08-F0001": {
       "canonicalId": "08-F0001",
@@ -20044,12 +20044,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "도치오 아부라아게",
       "image": "images/regions/koshinetsu/niigata/foods/15-F0004-tochio-aburaage.webp",
       "legacyImage": "images/commons/8aef5a4a596ade65.webp",
-      "sha256": "353c278f03317d63a5bdfa2577393a5a9bda4662f864a51b9f13e7f4190e6c22",
-      "source": "https://commons.wikimedia.org/wiki/File:Tochio_aburaage.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "bf37fa328c3864d1236f5c2ad1d6f64bd8ba74a7a391aea2e3d3fc79d5e57f10",
+      "source": "https://commons.wikimedia.org/wiki/File:Tochio-aburage.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "MaedaAkihiko",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "15-F0005": {
       "canonicalId": "15-F0005",
@@ -20058,12 +20058,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "무라카미 연어",
       "image": "images/regions/koshinetsu/niigata/foods/15-F0005-murakami-salmon.webp",
       "legacyImage": "images/commons/ea55072d9af73a7e.webp",
-      "sha256": "909eebfbd128e309ddbb0552c0c22ec1b7c372075010ad1a3d527796ecae40ed",
-      "source": "https://commons.wikimedia.org/wiki/File:Murakami_salmon.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "5f55f7112eec1bbb7e3f0177decf2d06d1b18e0b9037d4d64f59a09b843910ce",
+      "source": "https://commons.wikimedia.org/wiki/File:Salmon_Saikyo-Yaki.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Totti",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "19-F0008": {
       "canonicalId": "19-F0008",
@@ -20114,12 +20114,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "고슈 와인",
       "image": "images/regions/koshinetsu/yamanashi/foods/19-F0001-koshu-wine.webp",
       "legacyImage": "images/commons/48c3bef5a46fc8d9.webp",
-      "sha256": "7a48cecb57dff722b636ec77970cf3bef13933d45bae0cf64a635d794689162a",
-      "source": "https://commons.wikimedia.org/wiki/File:Koshu_Grapes.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "9fcf85bafb60755b39b7d0d50d0d20257e0063de8c30cafb8907588c23a7461a",
+      "source": "https://commons.wikimedia.org/wiki/File:Chanmoris_Wine_ac_(2).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Asturio Cantabrio",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "19-F0004": {
       "canonicalId": "19-F0004",
@@ -20128,12 +20128,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "신겐모치",
       "image": "images/regions/koshinetsu/yamanashi/foods/19-F0004-shingen-mochi.webp",
       "legacyImage": "images/commons/42f8b5b5902238f9.webp",
-      "sha256": "6535c354a5bbe98099a548d7d88c04e5bb83439d1fa56546c0a0e7e7709e3def",
-      "source": "https://commons.wikimedia.org/wiki/File:Shingen_mochi.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "bc75fea3c971738927a7f1cc29616c206166382e144193d990eda2e15e7b7f5d",
+      "source": "https://commons.wikimedia.org/wiki/File:Kikyou-shingenmochi_001.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Ocdp",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "19-F0003": {
       "canonicalId": "19-F0003",
@@ -20282,12 +20282,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "신슈 사과",
       "image": "images/regions/koshinetsu/nagano/foods/20-F0005-shinshu-apples.webp",
       "legacyImage": "images/commons/cfbb74b86d4f75a8.webp",
-      "sha256": "ea12f469e1095a1a06e8cec06fbcb38a28d6bbd1dae59c5b3df09fce49d45a2a",
-      "source": "https://commons.wikimedia.org/wiki/File:Nagano_apples.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "25e3493b9052f701c69a42ccc5fcdff74de4f5c4acb169e3c616790c57fd80c0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_apples_in_a_silver_bowl.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "George E. Koronaios",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "11-F0002": {
       "canonicalId": "11-F0002",
@@ -20338,12 +20338,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "돼지고기 미소 덮밥",
       "image": "images/regions/greater-tokyo/saitama/foods/11-F0001-buta-miso-don.webp",
       "legacyImage": "images/commons/54c16a1beecfd3fc.webp",
-      "sha256": "1ecd82cfab399dd2ac13ed522403f900f6bebb41543ca34f511bd61b3cf5a7d9",
-      "source": "https://commons.wikimedia.org/wiki/File:%E9%83%A1%E5%B1%B1%E9%A7%85%E3%81%A7%E8%B2%A9%E5%A3%B2%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%8C%E8%B1%9A%E3%81%BF%E3%81%9D%E4%B8%BC%E3%80%8D_Pcs34560_IMG3984.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "07c29a00e53d2e738b6ef491b879d992a04a29f1514174d9ad0d80c3a51ac3bf",
+      "source": "https://commons.wikimedia.org/wiki/File:Buta-don_001.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Ocdp",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "11-F0006": {
       "canonicalId": "11-F0006",
@@ -20786,12 +20786,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "요코하마 이에케이 라멘",
       "image": "images/regions/greater-tokyo/kanagawa/foods/14-F0006-yokohama-ie-kei-ramen.webp",
       "legacyImage": "images/commons/2bec3c7856b70cd2.webp",
-      "sha256": "32ab9fd722b9503e6e64786d67e22ef148e775df0c4b305551e3f800ba5ff47c",
-      "source": "https://commons.wikimedia.org/wiki/File:%E6%A8%AA%E6%B5%9C%E5%AE%B6%E7%B3%BB%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3_%E5%B1%B1%E5%B4%8E%E5%AE%B6_2026%E5%B9%B41%E6%9C%8825%E6%97%A5%E3%81%AE%E6%A8%AA%E6%B5%9C_202601251524_IMG_4748.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "0e1bfd299ec4b80333d48a4e2e10ecba7d068ea59f10910ce965714e87838991",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E5%B4%8E%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3_%E6%A8%AA%E6%B5%9C%E5%AE%B6%E7%B3%BB%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3_%E5%B1%B1%E5%B4%8E%E5%AE%B6_2026%E5%B9%B41%E6%9C%8825%E6%97%A5%E3%81%AE%E6%A8%AA%E6%B5%9C_202601251535_IMG_4752.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "ウィ貴公子",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "14-F0004": {
       "canonicalId": "14-F0004",
@@ -21038,12 +21038,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "금박 소프트크림",
       "image": "images/regions/hokuriku/ishikawa/foods/17-F0004-gold-leaf-soft-serve.webp",
       "legacyImage": "images/commons/554a93367183f828.webp",
-      "sha256": "4734305e8d892b556850b07eb8ecee5a193191a50747192adfa0ba22663bb828",
-      "source": "https://commons.wikimedia.org/wiki/File:The_famous_Kanazawa_gold_leaf_ice_cream_in_Higashi_Chaya_district.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "7b6975c9cbba632c23428f31dd3894fa9698831b25fae462b107726e202b4de2",
+      "source": "https://commons.wikimedia.org/wiki/File:Gold_leaf_on_soft_ice_cream_-_Kanazawa,_Japan_-_DSC00135.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Daderot",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "17-F0002": {
       "canonicalId": "17-F0002",
@@ -21290,12 +21290,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "야쓰하시",
       "image": "images/regions/kinki/kyoto/foods/26-F0003-yatsuhashi.webp",
       "legacyImage": "images/commons/341f6fd3cc9d3b63.webp",
-      "sha256": "49a8c870798960ab18ab91afafa98bb92e3f0c4dbcc115226bf40d2d7d1dcc58",
-      "source": "https://commons.wikimedia.org/wiki/File:Yatsuhashi_(347613370).jpg",
-      "terms": "",
+      "sha256": "fa1e9e6dd0bf7feeb6daa93a2b83a674fd29e602258be239220a51fd73afb715",
+      "source": "https://commons.wikimedia.org/wiki/File:Yatsuhashi_nama.jpg",
+      "terms": "http://creativecommons.org/licenses/by-sa/3.0/",
       "author": "",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "26-F0004": {
       "canonicalId": "26-F0004",
@@ -21318,12 +21318,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "우지 말차 디저트",
       "image": "images/regions/kinki/kyoto/foods/26-F0005-uji-matcha-dessert.webp",
       "legacyImage": "images/commons/26cc9cf0da6e0389.webp",
-      "sha256": "97adf06a88ded7c8de557385c0f6665c836368dd429ed4379d3071272c88fbb7",
-      "source": "https://commons.wikimedia.org/wiki/File:JP_%E6%97%A5%E6%9C%AC_Japan_%E4%BA%AC%E9%83%BD_Kyoto_%E5%AE%87%E6%B2%BB%E5%9F%8E_Uji-shi_Uji_Myouraku_shop_Nakamura_Tokichi_Honten_Tea_House_cafe_%E7%B6%A0%E8%8C%B6%E7%94%9C%E5%93%81_Matcha_cream_June_2026_N13P_06.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "6ac9ec1321e17ed55f4c824b9eca3049586d59b809d236f7634a22fe35c1ee8e",
+      "source": "https://commons.wikimedia.org/wiki/File:JP_%E6%97%A5%E6%9C%AC_Japan_%E4%BA%AC%E9%83%BD_Kyoto_%E5%AE%87%E6%B2%BB%E5%9F%8E_Uji-shi_Uji_Myouraku_shop_Nakamura_Tokichi_Honten_Tea_House_cafe_%E7%B6%A0%E8%8C%B6%E7%94%9C%E5%93%81_Matcha_cream_June_2026_N13P_08.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "HAGAT hOMSZE",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "26-F0006": {
       "canonicalId": "26-F0006",
@@ -21332,12 +21332,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "유도후",
       "image": "images/regions/kinki/kyoto/foods/26-F0006-yudofu.webp",
       "legacyImage": "images/commons/42e53c28b9582bc3.webp",
-      "sha256": "88ba7ff7491cebc9e316e481980568f01ec5a36342d66d27c03eadd14a1a389e",
-      "source": "https://commons.wikimedia.org/wiki/File:Kyoto_Morning_Yudofu.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "5dc411ddfa225e9be82494dc771b2387fd87d72854456229231654b4b0e52b26",
+      "source": "https://commons.wikimedia.org/wiki/File:Yudofu_meal_set_in_Kyoto.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "ZhengZhou",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "27-F0001": {
       "canonicalId": "27-F0001",
@@ -21416,12 +21416,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "이카야키",
       "image": "images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp",
       "legacyImage": "images/localized/food-photos/2a5a6e359229.webp",
-      "sha256": "7deec0380d2f845aa2031c5e7035b2c2466bb6c68cc68a713728f78b7c0aa104",
-      "source": "https://commons.wikimedia.org/wiki/File:%E9%98%AA%E7%A5%9E%E7%99%BE%E8%B2%A8%E5%BA%97%E3%81%AE%E3%81%84%E3%81%8B%E7%84%BC%E3%81%8DIMG_20211230_113552.jpg",
-      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "経済特区",
+      "sha256": "01abde18a784978735abf708c6ee66a0de2445329d033425785d7ae35f4851c3",
+      "source": "https://commons.wikimedia.org/wiki/File:Ikayaki_(7629347178).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0",
+      "author": "suri",
       "userPhoto": false,
-      "revision": 2
+      "revision": 3
     },
     "27-F0007": {
       "canonicalId": "27-F0007",
@@ -21500,12 +21500,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "이즈시 사라소바",
       "image": "images/regions/kinki/hyogo/foods/28-F0005-izushi-sara-soba.webp",
       "legacyImage": "images/commons/6c40d7ad464a743c.webp",
-      "sha256": "801ccbcb86ddfb98a7d746ca8c27158c8424bfd092101d9406338c1482a1fa61",
+      "sha256": "08ff43e84d588e4e9bfda37b19014a2e0d995b1f83c0872c4801a737415ed0cd",
       "source": "https://commons.wikimedia.org/wiki/File:Izushi_Soba.JPG",
-      "terms": "",
-      "author": "",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Mti",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "28-F0006": {
       "canonicalId": "28-F0006",
@@ -21514,12 +21514,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "히메지 오뎅",
       "image": "images/regions/kinki/hyogo/foods/28-F0006-himeji-oden.webp",
       "legacyImage": "images/commons/b952a989fb3e1fe9.webp",
-      "sha256": "f77c0f6c943041a52882d80be7cee8193ccaaff9f035e0931db5a5409b6972da",
-      "source": "https://commons.wikimedia.org/wiki/File:Store_of_Himeji_oden_May_2026.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "0285742c65e1cccc70a0fb53cd5e25eda648c457d39ff6a170c9547640d31e47",
+      "source": "https://commons.wikimedia.org/wiki/File:Himeji_Oden.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "漱石の猫",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "29-F0001": {
       "canonicalId": "29-F0001",
@@ -21570,12 +21570,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "미와 소멘",
       "image": "images/regions/kinki/nara/foods/29-F0004-miwa-somen.webp",
       "legacyImage": "images/commons/b1535e6d047b7abc.webp",
-      "sha256": "b56373bc2b7e9f9b546e2a4b476d25c3d3808a835e32989dd652bceaeba2793e",
-      "source": "https://commons.wikimedia.org/wiki/File:Nara-miwa_somen-m.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "ff109d14877faa4498b082467b3c753357672a6d32dc2ad436816b024f57b7aa",
+      "source": "https://commons.wikimedia.org/wiki/File:Miwa_somen_01.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
+      "author": "ちぃこ",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "29-F0005": {
       "canonicalId": "29-F0005",
@@ -21710,12 +21710,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "두부 치쿠와",
       "image": "images/regions/sanin-sanyo/tottori/foods/31-F0003-tofu-chikuwa.webp",
       "legacyImage": "images/regions/sanin-sanyo/tottori/foods/31-F0003-tofu-chikuwa.webp",
-      "sha256": "090961b987fa9debb073bf2799a6aa5090e37afc758a543d49334ecc13ffee25",
-      "source": "https://commons.wikimedia.org/wiki/File:Chimura_Tofu_Chikuwa_no_Sato.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "1a4ad01de888c436417badd09c0f0f49aa7c0f7807ac7413cfdf4d846b2d84c8",
+      "source": "https://commons.wikimedia.org/wiki/File:Tofutikuwa1.jpg",
+      "terms": "https://commons.wikimedia.org/wiki/File:Tofutikuwa1.jpg",
+      "author": "㭍月例祭",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "31-F0004": {
       "canonicalId": "31-F0004",
@@ -21808,12 +21808,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "이즈모 소바",
       "image": "images/regions/sanin-sanyo/shimane/foods/32-F0005-izumo-soba.webp",
       "legacyImage": "images/regions/sanin-sanyo/shimane/foods/32-F0005-izumo-soba.webp",
-      "sha256": "e1aedd16caee311f1fc83bd003b84655ba4f6be6d37614bbeb4ff2f662968511",
-      "source": "https://commons.wikimedia.org/wiki/File:Izumo_soba.JPG",
-      "terms": "",
-      "author": "",
+      "sha256": "d3207e9ec14956e275feeed7ada84083c40441132a862fd88109f25a9beaf2a1",
+      "source": "https://commons.wikimedia.org/wiki/File:IzumoSoba_WarigoSoba_5dan.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "J.Yoshiiiiiiii",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "33-F0001": {
       "canonicalId": "33-F0001",
@@ -22074,12 +22074,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "하기 여름귤 과자",
       "image": "images/regions/sanin-sanyo/yamaguchi/foods/35-F0006-hagi-natsumikan-sweets.webp",
       "legacyImage": "images/regions/sanin-sanyo/yamaguchi/foods/35-F0006-hagi-natsumikan-sweets.webp",
-      "sha256": "753ef04897f5ec7dfb70e31016dee8c5e033ed321cc77be69a39905d60ea2aa0",
-      "source": "https://commons.wikimedia.org/wiki/File:Wall_and_Natsumikan_in_Hagi_Castle_Town_-_June_5%2C_2005.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "0d726ac11dce852ba61abd054a5cbe68ded0556ee7fc2e395a3db1d60b430db3",
+      "source": "https://commons.wikimedia.org/wiki/File:NatsuKanTou_Oimatsu.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Kykk wiki",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "36-F0001": {
       "canonicalId": "36-F0001",
@@ -22718,12 +22718,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "사세보 버거",
       "image": "images/regions/kyushu/nagasaki/foods/42-F0006-sasebo-burger.webp",
       "legacyImage": "images/commons/c2030e59b554e684.webp",
-      "sha256": "dd922e25b1b489f64d823d83377187ae62f9cba8fe445c61b70550649ec46ad5",
-      "source": "https://commons.wikimedia.org/wiki/File:Sasebo-Burger.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "508e42ea8a6bd900d84476be09fd14068204e5e09ccd26c2e8efa66e334d71c2",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Sasebo_burger_made_at_The_Logkit.JPG",
+      "terms": "https://creativecommons.org/licenses/by/3.0",
+      "author": "South simabara",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "42-F0007": {
       "canonicalId": "42-F0007",
@@ -23544,12 +23544,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "징기스칸",
       "image": "images/regions/hokkaido/hokkaido/foods/01-F0009-jingisukan.webp",
       "legacyImage": "images/commons/16a1a917d1d3d7c6.webp",
-      "sha256": "ad91929330d9fbcc99d295e044c14f34263f82bcc23efb48b7411a4beedeecb4",
-      "source": "https://commons.wikimedia.org/wiki/File:Jingisukan_Hokkaido.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "d453b3742ced8df058380b6ffea38522add166124040f3cdc25d7870b5e51f25",
+      "source": "https://commons.wikimedia.org/wiki/File:Jingisukan_(46537378761).jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "Raita Futo from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "01-F0010": {
       "canonicalId": "01-F0010",
@@ -23768,12 +23768,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "산리쿠 가리비",
       "image": "images/regions/tohoku/iwate/foods/03-F0006-sanriku-scallop.webp",
       "legacyImage": "images/commons/808713b191515939.webp",
-      "sha256": "92220878cce68ee5c5de5d3b5a4a879a64d8cca8c2497c5242222af6af5bbc3f",
-      "source": "https://commons.wikimedia.org/wiki/File:Koishihama_sta_scallop.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "16ecfe03a34d297272049c64f1b2efd8875c1f27cf7b4cfbdd3b44136885ee83",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_scallop_(5041395406).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0",
+      "author": "pelican from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "03-F0007": {
       "canonicalId": "03-F0007",
@@ -23852,12 +23852,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "마쓰시마 굴",
       "image": "images/regions/tohoku/miyagi/foods/04-F0003-matsushima-oysters.webp",
       "legacyImage": "images/commons/b887d236e57a1407.webp",
-      "sha256": "52e1ff290c2e35137bf300a09d8f7ca19e7473ed8a12dcdacb0b70390f6583bf",
-      "source": "https://commons.wikimedia.org/wiki/File:Matsushima_(2005)_17.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "6187a94b1c2489056c511fa917d74a3ea38721a000083a7c1ff4aa5589c006e7",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_oysters_(14717836398).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0",
+      "author": "pelican from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "04-F0004": {
       "canonicalId": "04-F0004",
@@ -23950,12 +23950,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "바바헤라 아이스",
       "image": "images/regions/tohoku/akita/foods/05-F0002-babahera-ice.webp",
       "legacyImage": "images/commons/eee75c688cefeb14.webp",
-      "sha256": "04abc35fdc12ca520e61c82b0160d6c272c7a21cfabbf9e1ff629c009abc6843",
-      "source": "https://commons.wikimedia.org/wiki/File:Babahera001.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "c637fa5d0bdcc7ffef43092971a2e598b975d0e754fa5924e97aa8b1b0f38678",
+      "source": "https://commons.wikimedia.org/wiki/File:%E3%83%90%E3%83%90%E3%81%95%E3%82%93%E3%82%A2%E3%82%A4%E3%82%B9%EF%BC%88%E5%85%90%E7%8E%89%E5%86%B7%E8%8F%93%EF%BC%89.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "くろふね",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "05-F0003": {
       "canonicalId": "05-F0003",
@@ -23964,12 +23964,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "아키타 소고기",
       "image": "images/regions/tohoku/akita/foods/05-F0003-akita-beef.webp",
       "legacyImage": "images/commons/9b63ce9dab96f994.webp",
-      "sha256": "002108306dbac9f38b184acc69a3f45b3e92b64be13c8858bf2bec6ae695c8ab",
-      "source": "https://commons.wikimedia.org/wiki/File:Akita_beef.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "e826d31093386f28a0c8c38e195eca33cce6d91ca8e5ded238dac8a8a0dd6588",
+      "source": "https://commons.wikimedia.org/wiki/File:Dishes_foresta_Chokai_(10).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "掬茶",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "05-F0004": {
       "canonicalId": "05-F0004",
@@ -24034,12 +24034,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "하타하타",
       "image": "images/regions/tohoku/akita/foods/05-F0008-hatahata.webp",
       "legacyImage": "images/commons/c74b7990d4b3df55.webp",
-      "sha256": "db27e1bd6fbcd5fd3d23a4bc6d81f2d3eb725a28fdbf04b1a357bae3bc57f1f9",
-      "source": "https://commons.wikimedia.org/wiki/File:Hatahata_fish.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "a075d6de16d11a03ae1057c18ce0f46e9eb4d45ff683acd77eb63c7e03785f6e",
+      "source": "https://commons.wikimedia.org/wiki/File:Fried_hatahata.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Totti",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "06-F0001": {
       "canonicalId": "06-F0001",
@@ -24188,12 +24188,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "마마도르",
       "image": "images/regions/tohoku/fukushima/foods/07-F0003-mamador.webp",
       "legacyImage": "images/commons/797ae9b5e2457eea.webp",
-      "sha256": "00479aadaec6b8b74e18f3b2fb02c089f05fc62f46313a20e248b5952192f1fa",
-      "source": "https://commons.wikimedia.org/wiki/File:Mamador_Fukushima.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "ec68b0aaffb93bfc05708dd65c0ccecc83c85eb5486b52bfe8a1b6edf5055aa5",
+      "source": "https://commons.wikimedia.org/wiki/File:Mamadoru_(2).jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "毒島みるく",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "07-F0004": {
       "canonicalId": "07-F0004",
@@ -24258,12 +24258,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "후쿠시마 복숭아",
       "image": "images/regions/tohoku/fukushima/foods/07-F0008-fukushima-peaches.webp",
       "legacyImage": "images/commons/3483f2bdb5cf9384.webp",
-      "sha256": "68f92ebbfb2a867c2b495c8a2707789001d4768d250d861ba29290fdbca719f6",
-      "source": "https://commons.wikimedia.org/wiki/File:Fukushima_peaches.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "9165dc10bde6594b76f42144f2cf06f2470c4204c7a8f8ab1e60efba7da996ba",
+      "source": "https://commons.wikimedia.org/wiki/File:Shinkansen_logistics_system_fair_by_Fukushima_peach.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "電車(新幹線)でゴー！",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     }
   }
 };
