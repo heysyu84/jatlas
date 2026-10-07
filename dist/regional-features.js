@@ -2,6 +2,9 @@
 for(const r of regionalCatalog){
  Object.assign(spotFacts,r.facts);
  Object.assign(foodDetails,r.foodDetails);
+ for(const detail of Object.values(r.foodDetails||{})){
+  if(detail?.how&&/시장·전문점·지역 식당에서 현지 방식으로 맛보세요\.?$/.test(detail.how))detail.how='';
+ }
  Object.assign(addedFoodPhotos,r.foodPhotos);
  for(const [name,pic] of Object.entries(r.foodPhotos||{})){foodDetails[name]??={kind:"",taste:"",how:""};foodDetails[name].image=pic.src;}
  Object.assign(routePlanning,r.routePlanning);
