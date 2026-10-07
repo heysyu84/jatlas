@@ -3,13 +3,14 @@ on:
   push:
     branches: [main]
     paths:
+      - 'dist/index.html'
+      - 'dist/*.js'
+      - 'dist/images/regions/**'
+      - 'tools/audit-content.cjs'
       - 'tools/test-national-canonical-completion.cjs'
       - '.github/workflows/verify-national-canonical-completion.yml'
       - 'audits/id-migration-map.json'
       - 'audits/*-map-canonical-review.json'
-      - 'dist/photo-registry-data.js'
-      - 'dist/map-canonical-data.js'
-      - 'dist/images/regions/**'
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,5 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify runtime script graph
+        run: node tools/audit-content.cjs /tmp/jatlas-runtime.json
       - name: Verify all canonical photos, runtime mappings, and maps
         run: node tools/test-national-canonical-completion.cjs

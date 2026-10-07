@@ -17,5 +17,3 @@ jobs:
         uses: actions/checkout@v4
       - name: Run duplicate tourist spot audit
         run: node tools/audit-duplicates.cjs
-      - name: Index Hello Navi photo library
-        run: node tools/index-hellonavi-photos.cjs

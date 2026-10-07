@@ -8,7 +8,7 @@ previous=(dist/'photo-qa-review.js').read_text() if (dist/'photo-qa-review.js').
 reviewed_tail=review_marker+previous.split(review_marker,1)[1] if review_marker in previous else ''
 
 localized=json.loads((out/'localized-photos.json').read_text());localized={k:v for k,v in localized.items() if 'error' not in v and (dist/v['src']).is_file()}
-aliases=json.loads((dist/'image-migration-report.json').read_text())['fallback_aliases']
+aliases=json.loads((out/'photo-source-aliases.json').read_text())
 metrics=json.loads((out/'photo-audit.json').read_text())['entries']
 contain=set(e['photo']['src'] for e in metrics if e.get('photo') and e.get('width') and (e['width']/e['height']<.8 or e['width']/e['height']>2.5))
 contain.update(v['src'] for v in localized.values() if v['width']/v['height']<.8 or v['width']/v['height']>2.5)
