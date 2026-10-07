@@ -36,7 +36,7 @@ jobs:
           targets = {
             '22-F0005': ('foods', 'images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp', '日式蒲燒鰻魚飯 (DSC04153).jpg'),
             '17-F0001': ('foods', 'images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp', 'Mitsui Garden Hotel Kanazawa 1F Noukabanzai Mantei breakfast buffet 20200104-001.jpg'),
-          }}
+          }
 
           registry_path = dist / 'photo-registry-data.js'
           raw = registry_path.read_text()
