@@ -1,0 +1,283 @@
+{
+  "reviewedAt": "2026-10-07",
+  "method": "Direct visual review of current main canonical WebP files after targeted replacements. Kept items are accepted when the image correctly represents the subject even if an older automatic low-resolution/dark flag exists. Legitimate same-dish reuse is explicitly allowed. Generic substitute photos are labeled representative rather than region-exact.",
+  "places": {
+    "415": {
+      "src": "images/regions/kinki/osaka/places/27-P0016-katsuo-tera.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution daruma shelf replaced by high-resolution Katsuo-ji gate overview."
+    },
+    "902": {
+      "src": "images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution Hida no Sato thatched-house landscape; identity and crop verified."
+    },
+    "1012": {
+      "src": "images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution current Osu shopping arcade streetscape; identity and card crop verified."
+    },
+    "2709": {
+      "src": "images/regions/shikoku/ehime/places/38-P0010-shimonada-eki.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution Shimonada Station platform and Seto Inland Sea view."
+    },
+    "3102": {
+      "src": "images/regions/kyushu/nagasaki/places/42-P0003-dejima.webp",
+      "decision": "replaced-reviewed",
+      "note": "Wrong marina image replaced by restored Dejima historic streetscape; identity verified."
+    },
+    "3122": {
+      "src": "images/regions/kyushu/nagasaki/places/42-P0023-ose-saki-todai.webp",
+      "decision": "replaced-reviewed",
+      "note": "Dark low-resolution lighthouse image replaced by clear daytime cliff-and-lighthouse panorama."
+    },
+    "3304": {
+      "src": "images/regions/kyushu/oita/places/44-P0005-take-kawara-onsen.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution Takegawara Onsen facade; identity verified."
+    },
+    "3409": {
+      "src": "images/regions/kyushu/miyazaki/places/45-P0010-toimisaki.webp",
+      "decision": "keep",
+      "note": "Current official Toimisaki image clearly shows horses, grassland, coast and sea; older crop concern is no longer actionable."
+    },
+    "3511": {
+      "src": "images/regions/kyushu/kagoshima/places/46-P0012-kiri-shima-jingu.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution Kirishima Jingu approach and torii; identity and crop verified."
+    },
+    "4510": {
+      "src": "images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp",
+      "decision": "replaced-reviewed",
+      "note": "Hydrangea close-up was wrong; replaced with clear Uesugi Family Mausoleum precinct view."
+    },
+    "5011": {
+      "src": "images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution Shiraito Falls landscape; waterfall is clear and card-safe."
+    },
+    "5015": {
+      "src": "images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp",
+      "decision": "replaced-reviewed",
+      "note": "High-resolution Lake Suwa scene with lake, sightseeing boat and surrounding hills."
+    }
+  },
+  "foods": {
+    "쇼도시마 소멘": {
+      "src": "images/regions/shikoku/kagawa/foods/37-F0002-shodoshima-somen.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear prepared somen. Same-dish reuse with Handa somen is acceptable until a region-specific reusable image is available."
+    },
+    "올리브 소고기": {
+      "src": "images/regions/shikoku/kagawa/foods/37-F0004-olive-beef.webp",
+      "decision": "replaced-reviewed",
+      "note": "Vertical packaged generic beef replaced by a high-resolution cooked Wagyu representative. Photo illustrates the dish category, not proof of Kagawa provenance."
+    },
+    "와산본": {
+      "src": "images/regions/shikoku/kagawa/foods/37-F0005-wasanbon.webp",
+      "decision": "replaced-reviewed",
+      "note": "Powder-only low-resolution image replaced by molded wasanbon confection."
+    },
+    "가고시마 흑돼지": {
+      "src": "images/regions/kyushu/kagoshima/foods/46-F0002-kagoshima-kurobuta.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution generic pork dish replaced by high-resolution Kagoshima Kurobuta preparation."
+    },
+    "도사 아카우시": {
+      "src": "images/regions/shikoku/kochi/foods/39-F0003-tosa-akaushi.webp",
+      "decision": "keep",
+      "note": "Exact official regional image retained; identity value outweighs its smaller resolution."
+    },
+    "사와치요리": {
+      "src": "images/regions/shikoku/kochi/foods/39-F0005-sawachi-ryori.webp",
+      "decision": "keep",
+      "note": "Current platter correctly conveys the multi-dish sawachi presentation; accepted despite older resolution flag."
+    },
+    "시만토 장어": {
+      "src": "images/regions/shikoku/kochi/foods/39-F0006-shimanto-unagi.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution eel image replaced by high-resolution eel-rice representative. Photo illustrates the dish, not proof of Shimanto provenance."
+    },
+    "구마모토 라멘": {
+      "src": "images/regions/kyushu/kumamoto/foods/43-F0002-kumamoto-ramen.webp",
+      "decision": "replaced-reviewed",
+      "note": "Very low-resolution ramen photo replaced by high-resolution Kumamoto ramen."
+    },
+    "고헤이모치": {
+      "src": "images/regions/tokai/gifu/foods/21-F0002-gohei-mochi.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear high-resolution gohei-mochi; same-dish reuse across nearby regions is legitimate. Canonical ID typo was corrected to 21-F0002."
+    },
+    "간다 소바": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0001-kanda-soba.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear soba photo; intentional same-dish reuse accepted."
+    },
+    "덴푸라·소바": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0002-tempura-soba.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear tempura-soba photo; intentional same-dish reuse accepted."
+    },
+    "돈카츠·덴푸라·라멘": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0005-tonkatsu-tempura-ramen.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Representative Tokyo mixed-food category image; reuse with another mixed category accepted."
+    },
+    "라멘·돈부리": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0006-ramen-donburi.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Representative Tokyo mixed-food category image; reuse accepted."
+    },
+    "소바": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0009-soba.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear soba photo; same-dish reuse accepted."
+    },
+    "소바·덴푸라": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-tempura.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear tempura-soba photo; same-dish reuse accepted."
+    },
+    "스시·덴푸라": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0012-sushi-tempura.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Representative sushi image for a combined category; reuse accepted."
+    },
+    "스시·소바": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0013-sushi-soba.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Representative sushi image for a combined category; reuse accepted."
+    },
+    "쓰키지 해산물·스시": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0014-tsukiji-seafood-sushi.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Representative sushi/seafood image; reuse accepted."
+    },
+    "오시마 우유·아시타바 간식": {
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0017-oshima-milk-ashitaba-snack.webp",
+      "decision": "replaced-reviewed",
+      "note": "Raw ashitaba plant replaced by a prepared ashitaba toast representative. It illustrates the snack component, not Oshima provenance or milk."
+    },
+    "한다 소멘": {
+      "src": "images/regions/shikoku/tokushima/foods/36-F0006-handa-somen.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Clear somen image. Reuse with Shodoshima somen is accepted because a better reusable Handa-specific photo was not found."
+    },
+    "돗토리 와규": {
+      "src": "images/regions/sanin-sanyo/tottori/foods/31-F0002-tottori-wagyu.webp",
+      "decision": "replaced-reviewed",
+      "note": "Duplicated vertical packaged beef replaced by a distinct high-resolution Wagyu representative; not proof of Tottori provenance."
+    },
+    "사사카마보코": {
+      "src": "images/regions/tohoku/miyagi/foods/04-F0004-sasakamaboko.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution item replaced by high-resolution sasa-kamaboko."
+    },
+    "치즈만주": {
+      "src": "images/regions/kyushu/miyazaki/foods/45-F0006-cheese-manju.webp",
+      "decision": "keep",
+      "note": "Current image is small but clearly depicts Miyazaki mango cheese manju; exact subject retained over a generic substitute."
+    },
+    "노도구로": {
+      "src": "images/regions/sanin-sanyo/shimane/foods/32-F0002-nodoguro.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "High-quality grilled nodoguro image; same-dish reuse elsewhere is legitimate."
+    },
+    "시마네 와규": {
+      "src": "images/regions/sanin-sanyo/shimane/foods/32-F0003-shimane-wagyu.webp",
+      "decision": "replaced-reviewed",
+      "note": "Generic duplicate replaced by an exact Shimane Wagyu raw-beef image."
+    },
+    "하마나코 장어": {
+      "src": "images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp",
+      "decision": "replaced-reviewed",
+      "note": "Live-eel/net image replaced by high-resolution grilled eel rice representative; dish-focused, not proof of Hamanako provenance."
+    },
+    "하마나호 장어": {
+      "src": "images/regions/tokai/shizuoka/foods/22-F0006-hamana-lake-unagi.webp",
+      "decision": "replaced-reviewed",
+      "note": "Duplicate live-eel image replaced by a separate high-resolution grilled eel-rice representative."
+    },
+    "이모니": {
+      "src": "images/regions/tohoku/yamagata/foods/06-F0007-imoni.webp",
+      "decision": "keep",
+      "note": "Current official Yamagata imoni photo clearly depicts the dish; older resolution warning is stale."
+    },
+    "이와쿠니즈시": {
+      "src": "images/regions/sanin-sanyo/yamaguchi/foods/35-F0005-iwakuni-zushi.webp",
+      "decision": "keep",
+      "note": "Exact layered Iwakuni-zushi image retained; subject identity is strong despite moderate resolution."
+    },
+    "기쓰네 우동": {
+      "src": "images/regions/kinki/osaka/foods/27-F0001-kitsune-udon.webp",
+      "decision": "keep",
+      "note": "Current kitsune-udon image is clear and sufficiently large; older resolution flag is stale."
+    },
+    "도테야키": {
+      "src": "images/regions/kinki/osaka/foods/27-F0003-doteyaki.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution close-up replaced by high-resolution doteyaki cooking scene."
+    },
+    "이카야키": {
+      "src": "images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp",
+      "decision": "replaced-reviewed",
+      "note": "Very low-resolution image replaced by high-resolution Hanshin-style Osaka ikayaki."
+    },
+    "분고규": {
+      "src": "images/regions/kyushu/oita/foods/44-F0004-bungo-beef.webp",
+      "decision": "replaced-reviewed",
+      "note": "Duplicated vertical packaged beef replaced by a distinct high-resolution Wagyu shabu representative; not proof of Bungo provenance."
+    },
+    "안코나베": {
+      "src": "images/regions/north-kanto/ibaraki/foods/08-F0002-anko-nabe.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution hotpot image replaced by high-resolution anglerfish nabe."
+    },
+    "가나자와 오뎅": {
+      "src": "images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp",
+      "decision": "replaced-reviewed",
+      "note": "Incorrect/non-food representative replaced by a high-resolution Kanazawa breakfast buffet photo whose left pot is explicitly labeled Kanazawa oden."
+    },
+    "한톤라이스": {
+      "src": "images/regions/hokuriku/ishikawa/foods/17-F0008-hanton-rice.webp",
+      "decision": "keep",
+      "note": "Exact Hanton rice image retained; landscape composition is usable despite moderate resolution."
+    },
+    "마에사와규": {
+      "src": "images/regions/tohoku/iwate/foods/03-F0002-maezawa-beef.webp",
+      "decision": "keep",
+      "note": "Exact Maesawa beef image retained; regional identity outweighs moderate resolution."
+    },
+    "미즈요칸": {
+      "src": "images/regions/hokuriku/fukui/foods/18-F0001-mizu-yokan.webp",
+      "decision": "replaced-reviewed",
+      "note": "Low-resolution generic mizuyokan replaced by high-resolution Fukui mizuyokan."
+    },
+    "세이코가니": {
+      "src": "images/regions/hokuriku/fukui/foods/18-F0003-seiko-gani.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Shared source intentionally shows both female and male Echizen snow crabs; valid for Seiko-gani and Echizen-gani entries."
+    },
+    "에치젠가니": {
+      "src": "images/regions/hokuriku/fukui/foods/18-F0007-echizen-gani.webp",
+      "decision": "keep",
+      "allowDuplicate": true,
+      "note": "Shared source intentionally shows both female and male Echizen snow crabs; valid for both crab entries."
+    }
+  }
+}
