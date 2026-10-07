@@ -150,13 +150,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "히다 민속촌 히다노사토",
       "image": "images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp",
       "legacyImage": "images/regional/File-Hida-Folk-Village-jpg.webp",
-      "sha256": "4e8ada7adaebca9d7ed02c6224e3b7238ff1f1587aec119e049995e637ea15e5",
-      "source": "https://commons.wikimedia.org/wiki/File:Hida_Folk_Village.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "afc20ca095d62cdc75c16f426ce3953f5b27227d5a4f581437396d21e3c31de9",
+      "source": "https://commons.wikimedia.org/wiki/File:Hida_no_Sato_(6088104463).jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "rumpleteaser from Nagoya, Japan",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "21-P0006": {
       "canonicalId": "21-P0006",
@@ -1000,13 +1000,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "오스 상점가",
       "image": "images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp",
       "legacyImage": "images/qa/31c4cd87eeb6dcae98f4.webp",
-      "sha256": "4ce7f48371a87490aecd44a50c2fb8450eec4bfec8d08be97bd0722ef21a1712",
-      "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%A0%88%E6%96%B0%E5%A4%A9%E5%9C%B0%E5%95%86%E5%BA%97%E8%A1%97.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "fada95dd237704e29225192a17cd4fecb7cab6789f11552352db3770db00bdd4",
+      "source": "https://commons.wikimedia.org/wiki/File:Osu_Kannon_Street_2021-07_ac_(3).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Asturio Cantabrio",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "23-P0014": {
       "canonicalId": "23-P0014",
@@ -3567,13 +3567,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "우에스기 가문 묘소",
       "image": "images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp",
       "legacyImage": "images/commons/4275e474fc8cd9e6.webp",
-      "sha256": "179cd4442aa376596af1e90a71f240295d6a4a42c2f93dc0ab4c1ab4bccc0933",
-      "source": "https://commons.wikimedia.org/wiki/File:Uesugi_Family_Mausoleum.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "5839f7db7b849a938836592266aa35b3f4bb773d1101883aa948f91256e1d84f",
+      "source": "https://commons.wikimedia.org/wiki/File:Approachway_to_the_mausoleums_of_Uesugi_Family.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "掬茶",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "06-P0012": {
       "canonicalId": "06-P0012",
@@ -6916,13 +6916,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "시라이토 폭포",
       "image": "images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp",
       "legacyImage": "images/commons/6977463a639520ec.webp",
-      "sha256": "b8ede5bd66a2e6e5d186e13b3913e818f83a6828cd3c033be0af318c079d3ab0",
-      "source": "https://commons.wikimedia.org/wiki/File:Shiraito_Falls_Karuizawa.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "e912a92ef421d06497239189e365ddeab55de97e59595a364ded82257e87106e",
+      "source": "https://commons.wikimedia.org/wiki/File:Karuizawa_shiraito-no-taki02s3872.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.5",
+      "author": "663highland",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "20-P0013": {
       "canonicalId": "20-P0013",
@@ -6984,13 +6984,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "스와호",
       "image": "images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp",
       "legacyImage": "images/commons/b4465b136f068e9c.webp",
-      "sha256": "c833056c6bcca04e6726cfc1ca78b8e32c83f51af26bbe52ddc4d63754f33298",
-      "source": "https://commons.wikimedia.org/wiki/File:Lake_Suwa.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "8a8365dd1bca91e7ce489f369fc841a1488e0bfb616a393d2ae35382af29c1de",
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Suwa_in_August_2026.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Syced",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "20-P0017": {
       "canonicalId": "20-P0017",
@@ -11557,13 +11557,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "가쓰오지",
       "image": "images/regions/kinki/osaka/places/27-P0016-katsuo-tera.webp",
       "legacyImage": "images/osaka/415.webp",
-      "sha256": "a0d8b731f4cb981ada4c457594438b1d373df3a093a833f3e09acd7588595e8c",
-      "source": "https://commons.wikimedia.org/wiki/File:Katsuoji-daruma.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "739fdd04c45b7e6cf3b54c3c0d81902b80b3732f24ca3cccf5fb435914170264",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%8B%9D%E5%B0%BE%E5%AF%BA%E5%B1%B1%E9%96%80.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "K3JACK",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "27-P0017": {
       "canonicalId": "27-P0017",
@@ -15161,13 +15161,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "시모나다역",
       "image": "images/regions/shikoku/ehime/places/38-P0010-shimonada-eki.webp",
       "legacyImage": "images/commons/31d9183617ab9824.webp",
-      "sha256": "928741e2c07f3a197221301314f1f953755f681c1670015aa3463ff17731c073",
-      "source": "https://commons.wikimedia.org/wiki/File:Shimonada_Station.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "561b868ed64dd90c5ac1e484728b945153e1a1fb96ef996ebe9a7753d1bdfd57",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%8B%E7%81%98%E9%A7%85%E3%81%A8%E7%80%AC%E6%88%B8%E5%86%85%E6%B5%B7.jpg",
+      "terms": "https://creativecommons.org/licenses/by/3.0",
+      "author": "まるちゃん",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "38-P0011": {
       "canonicalId": "38-P0011",
@@ -16453,13 +16453,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "데지마",
       "image": "images/regions/kyushu/nagasaki/places/42-P0003-dejima.webp",
       "legacyImage": "images/commons/220683978406ee5d.webp",
-      "sha256": "c377f12a82f13642bcd667545d0d2f05f1d9b7f38c61bb797463638a91e3af8b",
-      "source": "https://commons.wikimedia.org/wiki/File:Nagasaki_Dejima_2.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "3148054f060d5987af41cfbf964955f59b3c339e0778fa0c1d0cb214268392af",
+      "source": "https://commons.wikimedia.org/wiki/File:Dejima_Nagasaki_Japan33n.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.5",
+      "author": "663highland",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "42-P0004": {
       "canonicalId": "42-P0004",
@@ -16793,13 +16793,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "오세자키 등대",
       "image": "images/regions/kyushu/nagasaki/places/42-P0023-ose-saki-todai.webp",
       "legacyImage": "images/commons/55b6cf1b0afe681d.webp",
-      "sha256": "76fd1bf94764b8cc8c738ff02cfac7cb810321b28d43720bf62709ef81d16e86",
-      "source": "https://commons.wikimedia.org/wiki/File:Osezaki_lighthouse.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "d1f86c92b602d959e1db9ef7cec405288ca03e51ab9755822656c42d8b74abc0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ohsezaki1404.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "ふうけ",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "42-P0024": {
       "canonicalId": "42-P0024",
@@ -17456,13 +17456,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "다케가와라온천",
       "image": "images/regions/kyushu/oita/places/44-P0005-take-kawara-onsen.webp",
       "legacyImage": "images/commons/38d1fe1c206b4311.webp",
-      "sha256": "8b4bc1deeeeed0005c3cb7ecc181dfed1bd05edcf52b23a08a6da2307586a8d1",
-      "source": "https://commons.wikimedia.org/wiki/File:Takegawara_Onsen.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "6ed48cd5fc699ce638d1c8b1651aa31a8ecb2e9420b922e096af6ed4c20b29ff",
+      "source": "https://commons.wikimedia.org/wiki/File:Takegawara_Onsen_20170218.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Suicasmo",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "44-P0006": {
       "canonicalId": "44-P0006",
@@ -18442,13 +18442,13 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "기리시마신궁",
       "image": "images/regions/kyushu/kagoshima/places/46-P0012-kiri-shima-jingu.webp",
       "legacyImage": "images/commons/43b942b2e37698b8.webp",
-      "sha256": "1d92400bc97686e322e65087c08d52136509a50f804b4d250f0ede1d2ef91124",
-      "source": "https://commons.wikimedia.org/wiki/File:Kirishima_Jingu.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "52e0ce1004f47ec781f30569786484eb25966426e373dc6dd05f6b01e280c963",
+      "source": "https://commons.wikimedia.org/wiki/File:Kirishima-Jingu_Shrine_(52018760308).jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "Raita Futo from Tokyo, Japan",
       "userPhoto": false,
       "heroEligible": true,
-      "revision": 1
+      "revision": 2
     },
     "46-P0013": {
       "canonicalId": "46-P0013",
@@ -19554,12 +19554,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "하마나코 장어",
       "image": "images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp",
       "legacyImage": "images/commons/b402ea27ead1a6df.webp",
-      "sha256": "8724ccd50c443d240a7c5f3e038fc77a147ff28822d71ee27aabecccd21626cc",
-      "source": "https://commons.wikimedia.org/wiki/File:Unagi%20Hamamatsu.JPG",
-      "terms": "",
-      "author": "",
+      "sha256": "b785de681879735f620acc8df2d88d9d4e737271bd2c76f0c52682feee9c2510",
+      "source": "https://commons.wikimedia.org/wiki/File:Unagi_Hamamatsu.JPG",
+      "terms": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Jfr0595",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "22-F0006": {
       "canonicalId": "22-F0006",
@@ -19568,12 +19568,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "하마나호 장어",
       "image": "images/regions/tokai/shizuoka/foods/22-F0006-hamana-lake-unagi.webp",
       "legacyImage": "images/commons/b402ea27ead1a6df.webp",
-      "sha256": "8724ccd50c443d240a7c5f3e038fc77a147ff28822d71ee27aabecccd21626cc",
-      "source": "https://commons.wikimedia.org/wiki/File:Unagi%20Hamamatsu.JPG",
-      "terms": "",
-      "author": "",
+      "sha256": "1f104df98736909532dc7ce46f3d589de7aa32897228d438393295e211622c34",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_eel_topped_on_rice_(8174690852).jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0",
+      "author": "pelican from Tokyo, Japan",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "22-F0007": {
       "canonicalId": "22-F0007",
@@ -19806,12 +19806,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "안코나베",
       "image": "images/regions/north-kanto/ibaraki/foods/08-F0002-anko-nabe.webp",
       "legacyImage": "images/commons/fc7b358d74f19c39.webp",
-      "sha256": "bb754a86536890962aae9627504c2ec9ff285a2fceaac05b956af37860b8431a",
-      "source": "https://commons.wikimedia.org/wiki/File:Ankou-nabe.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "30b09200611d5a750fda4b6cb7e70512f4c184617d31dcd9e2468715c83db63c",
+      "source": "https://commons.wikimedia.org/wiki/File:Nabe_of_angler_fish_after.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/2.0",
+      "author": "Yamaguchi Yoshiaki\n\n\nCamera location36° 19′ 21″ N, 140° 34′ 07.5″ E View this and other nearby images on: OpenStreetMap 36.322500;  140.568750",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "08-F0004": {
       "canonicalId": "08-F0004",
@@ -20646,12 +20646,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "오시마 우유·아시타바 간식",
       "image": "images/regions/greater-tokyo/tokyo/foods/13-F0017-oshima-milk-ashitaba-snack.webp",
       "legacyImage": "images/official/tokyo-oshima-milk-soft.webp",
-      "sha256": "bf3ffc686962509c118a16f9959919a2a793f35108763d3ca1f5d5365fc962e3",
-      "source": "https://oshima-photo.com/type_library/20240313-2/",
-      "terms": "https://oshima-photo.com/",
-      "author": "東京都大島町 / 伊豆大島写真館",
+      "sha256": "661761f8f3352b24df34f60f5101447c2fc8364814de4d3ff17b60ea06ca2473",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%AF%89%E5%9C%B0%E3%83%9A%E3%83%83%E3%83%91%E3%83%BC%E3%82%BA%E3%82%AB%E3%83%95%E3%82%A7IMG_20220312_02.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "経済特区",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "13-F0016": {
       "canonicalId": "13-F0016",
@@ -21010,12 +21010,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "가나자와 오뎅",
       "image": "images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp",
       "legacyImage": "images/commons/588913a56031357f.webp",
-      "sha256": "b62f6f627ab106751aec19ce47785af043ceb45c6533e392daea49bada0eaedc",
-      "source": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E6%B2%A2%E3%81%8A%E3%81%A7%E3%82%93%E5%8B%9D%E4%B8%8020241030_01.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "0f5277b7c4ce990eb07afab5fe110abdc0a7bf1e1f7f6bde7da808e428a30933",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E6%B2%A2%E3%81%8A%E3%81%A7%E3%82%93%E5%8B%9D%E4%B8%8020241030_04.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "経済特区",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "17-F0006": {
       "canonicalId": "17-F0006",
@@ -21164,12 +21164,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "미즈요칸",
       "image": "images/regions/hokuriku/fukui/foods/18-F0001-mizu-yokan.webp",
       "legacyImage": "images/commons/39ac800106e0f18d.webp",
-      "sha256": "63fd25ae115e7ca822a247921da78edec379014d43754214d853ea940cc74e5c",
-      "source": "https://commons.wikimedia.org/wiki/File:Youkan_mizuyoukan.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "650a04fc1b9d64555dd190178200529c3b51afea5d0cfe489c533e3dfa1b2ead",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E4%BA%95%E5%B8%82%E5%92%8C%E8%8F%93%E5%AD%90%E5%8F%B8%E3%81%88%E3%81%8C%E3%82%8F%E3%81%AE%E6%B0%B4%E7%BE%8A%E3%81%8B%E3%82%93_Jan_8,_2024.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "whity",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "25-F0001": {
       "canonicalId": "25-F0001",
@@ -21374,12 +21374,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "도테야키",
       "image": "images/regions/kinki/osaka/foods/27-F0003-doteyaki.webp",
       "legacyImage": "images/localized/food-photos/aae446204b0a.webp",
-      "sha256": "0066e20ca9c89bcb5825f748ec7c54ed0f5173cb068f1db5d73f5c874ec4b769",
-      "source": "https://commons.wikimedia.org/wiki/File:Doteyaki.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "ef3e87dcdeb3fa4a3ccbe18cc5012b2c01480ab9192801bed4484d46dfe56a06",
+      "source": "https://commons.wikimedia.org/wiki/File:Doteyaki_-_2025_Jan_1_various.jpeg",
+      "terms": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Nesnad",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "27-F0004": {
       "canonicalId": "27-F0004",
@@ -21416,12 +21416,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "이카야키",
       "image": "images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp",
       "legacyImage": "images/localized/food-photos/2a5a6e359229.webp",
-      "sha256": "d1b8a3982a4b55cb1de8e83cb18ada8e3ccdd601517b66ba31106c02dc0619e2",
-      "source": "https://commons.wikimedia.org/wiki/File:Ikayaki.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "7deec0380d2f845aa2031c5e7035b2c2466bb6c68cc68a713728f78b7c0aa104",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%98%AA%E7%A5%9E%E7%99%BE%E8%B2%A8%E5%BA%97%E3%81%AE%E3%81%84%E3%81%8B%E7%84%BC%E3%81%8DIMG_20211230_113552.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "経済特区",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "27-F0007": {
       "canonicalId": "27-F0007",
@@ -21696,12 +21696,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "돗토리 와규",
       "image": "images/regions/sanin-sanyo/tottori/foods/31-F0002-tottori-wagyu.webp",
       "legacyImage": "images/regions/sanin-sanyo/tottori/foods/31-F0002-tottori-wagyu.webp",
-      "sha256": "fd33c736af031c18fbb2955dddb673383d163982fedb0e3560c32ded5629338e",
-      "source": "https://commons.wikimedia.org/wiki/File:Wagyu_beef.jpeg",
-      "terms": "",
-      "author": "",
+      "sha256": "aae46e4135054d052399618d06fa9fddbf37e42a3dc4ae50002c46f8aab4c4a1",
+      "source": "https://commons.wikimedia.org/wiki/File:Wagyu_Beef_(173957803).jpeg",
+      "terms": "https://creativecommons.org/licenses/by/3.0",
+      "author": "Benacer At Work",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "31-F0003": {
       "canonicalId": "31-F0003",
@@ -21780,12 +21780,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "시마네 와규",
       "image": "images/regions/sanin-sanyo/shimane/foods/32-F0003-shimane-wagyu.webp",
       "legacyImage": "images/regions/sanin-sanyo/shimane/foods/32-F0003-shimane-wagyu.webp",
-      "sha256": "fd33c736af031c18fbb2955dddb673383d163982fedb0e3560c32ded5629338e",
-      "source": "https://commons.wikimedia.org/wiki/File:Wagyu_beef.jpeg",
-      "terms": "",
-      "author": "",
+      "sha256": "9ec5c381aaf06e37c3b0b238e48cad0fe15313a24503d6d25526015f0e09484b",
+      "source": "https://commons.wikimedia.org/wiki/File:Raw-shimanewagyu-20200210.jpg",
+      "terms": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Nesnad",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "32-F0004": {
       "canonicalId": "32-F0004",
@@ -22214,12 +22214,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "올리브 소고기",
       "image": "images/regions/shikoku/kagawa/foods/37-F0004-olive-beef.webp",
       "legacyImage": "images/commons/b8019163727b0d13.webp",
-      "sha256": "eddd024decce3705de6610d76af9ae5a11dda76c7acd8a89904bda95f3354f3d",
-      "source": "https://commons.wikimedia.org/wiki/File:Wagyu_beef.jpeg",
-      "terms": "",
-      "author": "",
+      "sha256": "c3316cb83a92f5ec8ab3a1ad0a22d6265ab15d4c6d371bb89b8ed0a3fa67c21e",
+      "source": "https://commons.wikimedia.org/wiki/File:Griddled_wagyu_beef.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "T.Tseng",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "37-F0005": {
       "canonicalId": "37-F0005",
@@ -22228,12 +22228,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "와산본",
       "image": "images/regions/shikoku/kagawa/foods/37-F0005-wasanbon.webp",
       "legacyImage": "images/commons/171f010673b9b4e7.webp",
-      "sha256": "b413c858c2e97a89aeeb3d0c13ab8e2f90b17db014c2460e10e5ea1d9f64cd2e",
-      "source": "https://commons.wikimedia.org/wiki/File:Wasanbon.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "c7ba1415579d26b3f91e207e8d166c4e9da405a8da1743aeb7d8f0d3221eed0a",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%92%8C%E8%8F%93%E5%AD%901261441.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "夢の散歩",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "37-F0006": {
       "canonicalId": "37-F0006",
@@ -22424,12 +22424,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "시만토 장어",
       "image": "images/regions/shikoku/kochi/foods/39-F0006-shimanto-unagi.webp",
       "legacyImage": "images/commons/b6584dff9b4777ad.webp",
-      "sha256": "774d5bab4c66c1ed05d76ecbb25b61245078959cb9f80e3961928cb26ad32358",
-      "source": "https://commons.wikimedia.org/wiki/File:Unadon_%E3%81%86%E3%81%AA%E4%B8%BC.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "664343686941d7f5ed89520138ad9d86c524c274f6e9a4e9df2f6e084f274de2",
+      "source": "https://commons.wikimedia.org/wiki/File:Eel_bowl,_bowl_of_eel_and_rice;_2013.jpg",
+      "terms": "https://creativecommons.org/licenses/by/2.0",
+      "author": "Toshihiro Gamo from Yokohama, Kanagawa, Japan",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "39-F0007": {
       "canonicalId": "39-F0007",
@@ -22788,12 +22788,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "구마모토 라멘",
       "image": "images/regions/kyushu/kumamoto/foods/43-F0002-kumamoto-ramen.webp",
       "legacyImage": "images/commons/98eb0dfc9dfa3ceb.webp",
-      "sha256": "44305983dedbacede404e57e5378c04d4966cb176eea82472bc2cd04af572ad3",
-      "source": "https://commons.wikimedia.org/wiki/File:Kumamoto_ramen.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "6700b5b264a4d4f0b052f6a01579b9440c751eb443ce5d669618c5ee0f99cd3d",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumamoto_ramen_001.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Ocdp",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "43-F0003": {
       "canonicalId": "43-F0003",
@@ -22942,12 +22942,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "분고규",
       "image": "images/regions/kyushu/oita/foods/44-F0004-bungo-beef.webp",
       "legacyImage": "images/commons/b8019163727b0d13.webp",
-      "sha256": "eddd024decce3705de6610d76af9ae5a11dda76c7acd8a89904bda95f3354f3d",
-      "source": "https://commons.wikimedia.org/wiki/File:Wagyu_beef.jpeg",
-      "terms": "",
-      "author": "",
+      "sha256": "78aeceda5e75817c5e754b42cec96f513de6b560cc99b2291d7f297415e94f30",
+      "source": "https://commons.wikimedia.org/wiki/File:Wagyu_Beef_for_Shabu-shabu.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Ceeseven",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "44-F0005": {
       "canonicalId": "44-F0005",
@@ -23166,12 +23166,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "가고시마 흑돼지",
       "image": "images/regions/kyushu/kagoshima/foods/46-F0002-kagoshima-kurobuta.webp",
       "legacyImage": "images/commons/5cd9ac25e2967a5e.webp",
-      "sha256": "d1f08e1216008baf4fc7c112ce4988c0a108ec6e5a35682c0f2d0c585e8d9092",
-      "source": "https://commons.wikimedia.org/wiki/File:Shogayaki.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "2884d423d909173bc7317a1e073929bbc896859573903a3e9f8af058823f0d05",
+      "source": "https://commons.wikimedia.org/wiki/File:Kagoshima_Kurobuta_no_Tonkotsu.jpg",
+      "terms": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "聖石大戦ぶぅぶぅ",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "46-F0003": {
       "canonicalId": "46-F0003",
@@ -23866,12 +23866,12 @@ globalThis.JATLAS_PHOTO_REGISTRY_DATA={
       "name": "사사카마보코",
       "image": "images/regions/tohoku/miyagi/foods/04-F0004-sasakamaboko.webp",
       "legacyImage": "images/commons/ebef097c76354ded.webp",
-      "sha256": "1b3ea61b4266bb99f64d4eda375db363d05091fc4fb7e1537fc1165495f205c2",
-      "source": "https://commons.wikimedia.org/wiki/File:Sasakamaboko.jpg",
-      "terms": "",
-      "author": "",
+      "sha256": "48570f05e68f34b072aed46e74739d766e5db9f436651dbbd25d810c603b2d31",
+      "source": "https://commons.wikimedia.org/wiki/File:Sasa-Kamaboko_001.jpg",
+      "terms": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Ocdp",
       "userPhoto": false,
-      "revision": 1
+      "revision": 2
     },
     "04-F0005": {
       "canonicalId": "04-F0005",
