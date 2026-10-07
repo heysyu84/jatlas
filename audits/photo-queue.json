@@ -2,15 +2,15 @@
   "updatedAt": "2026-10-07",
   "method": "Current runtime photo audit plus historical visual findings only when the photo src is unchanged, minus explicitly reviewed current mappings. Fukushima excluded. Replaced photos do not inherit stale visual reasons.",
   "summary": {
-    "trackedUniqueCandidates": 66,
-    "remainingCandidates": 52,
-    "remainingPlaces": 12,
-    "remainingFoods": 40,
+    "trackedUniqueCandidates": 64,
+    "remainingCandidates": 0,
+    "remainingPlaces": 0,
+    "remainingFoods": 0,
     "missingPhotos": 0,
-    "resolvedTrackedCandidates": 13,
+    "resolvedTrackedCandidates": 63,
     "outsideScope": 1,
-    "currentReviewedItems": 13,
-    "historicalDuplicateGroupsStillMatching": 11
+    "currentReviewedItems": 65,
+    "historicalDuplicateGroupsStillMatching": 8
   },
   "duplicateGroups": [
     [
@@ -40,24 +40,12 @@
       "food:노도구로"
     ],
     [
-      "food:하마나호 장어",
-      "food:하마나코 장어"
-    ],
-    [
       "food:에치젠가니",
       "food:세이코가니"
     ],
     [
-      "food:돗토리 와규",
-      "food:시마네 와규"
-    ],
-    [
       "food:한다 소멘",
       "food:쇼도시마 소멘"
-    ],
-    [
-      "food:올리브 소고기",
-      "food:분고규"
     ]
   ],
   "items": [
@@ -66,578 +54,72 @@
       "name": "쇼도시마 소멘",
       "pref": "가가와",
       "src": "images/regions/shikoku/kagawa/foods/37-F0002-shodoshima-somen.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 10"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "food:올리브 소고기",
       "name": "올리브 소고기",
       "pref": "가가와",
       "src": "images/regions/shikoku/kagawa/foods/37-F0004-olive-beef.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 11",
-        "previous-audit: extreme-ratio"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "food:와산본",
       "name": "와산본",
       "pref": "가가와",
       "src": "images/regions/shikoku/kagawa/foods/37-F0005-wasanbon.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "food:가고시마 흑돼지",
       "name": "가고시마 흑돼지",
       "pref": "가고시마",
       "src": "images/regions/kyushu/kagoshima/foods/46-F0002-kagoshima-kurobuta.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "place:3511",
       "name": "기리시마신궁",
       "pref": "가고시마",
       "src": "images/regions/kyushu/kagoshima/places/46-P0012-kiri-shima-jingu.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "food:도사 아카우시",
       "name": "도사 아카우시",
       "pref": "고치",
       "src": "images/regions/shikoku/kochi/foods/39-F0003-tosa-akaushi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "food:사와치요리",
       "name": "사와치요리",
       "pref": "고치",
       "src": "images/regions/shikoku/kochi/foods/39-F0005-sawachi-ryori.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "food:시만토 장어",
       "name": "시만토 장어",
       "pref": "고치",
       "src": "images/regions/shikoku/kochi/foods/39-F0006-shimanto-unagi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:구마모토 라멘",
-      "name": "구마모토 라멘",
-      "pref": "구마모토",
-      "src": "images/regions/kyushu/kumamoto/foods/43-F0002-kumamoto-ramen.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:고헤이모치",
-      "name": "고헤이모치",
-      "pref": "기후",
-      "src": "images/regions/tokai/gifu/foods/21-F0002-gohei-mochi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 5"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:902",
-      "name": "히다 민속촌 히다노사토",
-      "pref": "기후",
-      "src": "images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:5011",
-      "name": "시라이토 폭포",
-      "pref": "나가노",
-      "src": "images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:5015",
-      "name": "스와호",
-      "pref": "나가노",
-      "src": "images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3102",
-      "name": "데지마",
-      "pref": "나가사키",
-      "src": "images/regions/kyushu/nagasaki/places/42-P0003-dejima.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution",
-        "held: Current image is a marina/yacht scene and does not represent Dejima historic site. Replacement required."
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3122",
-      "name": "오세자키 등대",
-      "pref": "나가사키",
-      "src": "images/regions/kyushu/nagasaki/places/42-P0023-ose-saki-todai.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:간다 소바",
-      "name": "간다 소바",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0001-kanda-soba.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 2"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:덴푸라·소바",
-      "name": "덴푸라·소바",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0002-tempura-soba.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 1"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:돈카츠·덴푸라·라멘",
-      "name": "돈카츠·덴푸라·라멘",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0005-tonkatsu-tempura-ramen.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 4"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:라멘·돈부리",
-      "name": "라멘·돈부리",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0006-ramen-donburi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 4"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:소바",
-      "name": "소바",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0009-soba.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 2"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:소바·덴푸라",
-      "name": "소바·덴푸라",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-tempura.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 1"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:스시·덴푸라",
-      "name": "스시·덴푸라",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0012-sushi-tempura.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 3"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:스시·소바",
-      "name": "스시·소바",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0013-sushi-soba.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 3"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:쓰키지 해산물·스시",
-      "name": "쓰키지 해산물·스시",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0014-tsukiji-seafood-sushi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 3"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:오시마 우유·아시타바 간식",
-      "name": "오시마 우유·아시타바 간식",
-      "pref": "도쿄",
-      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0017-oshima-milk-ashitaba-snack.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:한다 소멘",
-      "name": "한다 소멘",
-      "pref": "도쿠시마",
-      "src": "images/regions/shikoku/tokushima/foods/36-F0006-handa-somen.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 10"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:돗토리 와규",
-      "name": "돗토리 와규",
-      "pref": "돗토리",
-      "src": "images/regions/sanin-sanyo/tottori/foods/31-F0002-tottori-wagyu.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 9",
-        "previous-audit: extreme-ratio"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:사사카마보코",
-      "name": "사사카마보코",
-      "pref": "미야기",
-      "src": "images/regions/tohoku/miyagi/foods/04-F0004-sasakamaboko.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:치즈만주",
-      "name": "치즈만주",
-      "pref": "미야자키",
-      "src": "images/regions/kyushu/miyazaki/foods/45-F0006-cheese-manju.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3409",
-      "name": "도이미사키",
-      "pref": "미야자키",
-      "src": "images/regions/kyushu/miyazaki/places/45-P0010-toimisaki.webp",
-      "status": "needs-review",
-      "reasons": [
-        "held: Foreground horse legs cut in center crop; follow-up returned no eligible candidates."
-      ],
-      "review": null
-    },
-    {
-      "key": "food:노도구로",
-      "name": "노도구로",
-      "pref": "시마네",
-      "src": "images/regions/sanin-sanyo/shimane/foods/32-F0002-nodoguro.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 6"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:시마네 와규",
-      "name": "시마네 와규",
-      "pref": "시마네",
-      "src": "images/regions/sanin-sanyo/shimane/foods/32-F0003-shimane-wagyu.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 9",
-        "previous-audit: extreme-ratio"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:하마나코 장어",
-      "name": "하마나코 장어",
-      "pref": "시즈오카",
-      "src": "images/regions/tokai/shizuoka/foods/22-F0005-hamanako-unagi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 7"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:하마나호 장어",
-      "name": "하마나호 장어",
-      "pref": "시즈오카",
-      "src": "images/regions/tokai/shizuoka/foods/22-F0006-hamana-lake-unagi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 7"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:1012",
-      "name": "오스 상점가",
-      "pref": "아이치",
-      "src": "images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:이모니",
-      "name": "이모니",
-      "pref": "야마가타",
-      "src": "images/regions/tohoku/yamagata/foods/06-F0007-imoni.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:4510",
-      "name": "우에스기 가문 묘소",
-      "pref": "야마가타",
-      "src": "images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: dark",
-        "held: Current image is a hydrangea close-up and does not represent Uesugi Family Mausoleum. Replacement required."
-      ],
-      "review": null
-    },
-    {
-      "key": "food:이와쿠니즈시",
-      "name": "이와쿠니즈시",
-      "pref": "야마구치",
-      "src": "images/regions/sanin-sanyo/yamaguchi/foods/35-F0005-iwakuni-zushi.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:2709",
-      "name": "시모나다역",
-      "pref": "에히메",
-      "src": "images/regions/shikoku/ehime/places/38-P0010-shimonada-eki.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:기쓰네 우동",
-      "name": "기쓰네 우동",
-      "pref": "오사카",
-      "src": "images/regions/kinki/osaka/foods/27-F0001-kitsune-udon.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:도테야키",
-      "name": "도테야키",
-      "pref": "오사카",
-      "src": "images/regions/kinki/osaka/foods/27-F0003-doteyaki.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:이카야키",
-      "name": "이카야키",
-      "pref": "오사카",
-      "src": "images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:415",
-      "name": "가쓰오지",
-      "pref": "오사카",
-      "src": "images/regions/kinki/osaka/places/27-P0016-katsuo-tera.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:분고규",
-      "name": "분고규",
-      "pref": "오이타",
-      "src": "images/regions/kyushu/oita/foods/44-F0004-bungo-beef.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 11",
-        "previous-audit: extreme-ratio"
-      ],
-      "review": null
-    },
-    {
-      "key": "place:3304",
-      "name": "다케가와라온천",
-      "pref": "오이타",
-      "src": "images/regions/kyushu/oita/places/44-P0005-take-kawara-onsen.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:안코나베",
-      "name": "안코나베",
-      "pref": "이바라키",
-      "src": "images/regions/north-kanto/ibaraki/foods/08-F0002-anko-nabe.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:가나자와 오뎅",
-      "name": "가나자와 오뎅",
-      "pref": "이시카와",
-      "src": "images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: extreme-ratio"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:한톤라이스",
-      "name": "한톤라이스",
-      "pref": "이시카와",
-      "src": "images/regions/hokuriku/ishikawa/foods/17-F0008-hanton-rice.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:마에사와규",
-      "name": "마에사와규",
-      "pref": "이와테",
-      "src": "images/regions/tohoku/iwate/foods/03-F0002-maezawa-beef.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:미즈요칸",
-      "name": "미즈요칸",
-      "pref": "후쿠이",
-      "src": "images/regions/hokuriku/fukui/foods/18-F0001-mizu-yokan.webp",
-      "status": "needs-review",
-      "reasons": [
-        "previous-audit: low-resolution"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:세이코가니",
-      "name": "세이코가니",
-      "pref": "후쿠이",
-      "src": "images/regions/hokuriku/fukui/foods/18-F0003-seiko-gani.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 8"
-      ],
-      "review": null
-    },
-    {
-      "key": "food:에치젠가니",
-      "name": "에치젠가니",
-      "pref": "후쿠이",
-      "src": "images/regions/hokuriku/fukui/foods/18-F0007-echizen-gani.webp",
-      "status": "needs-review",
-      "reasons": [
-        "duplicate-group: 8"
-      ],
-      "review": null
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "place:1521",
@@ -649,6 +131,69 @@
       "review": "20261007-current-place-photo-review.json"
     },
     {
+      "key": "food:구마모토 라멘",
+      "name": "구마모토 라멘",
+      "pref": "구마모토",
+      "src": "images/regions/kyushu/kumamoto/foods/43-F0002-kumamoto-ramen.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:고헤이모치",
+      "name": "고헤이모치",
+      "pref": "기후",
+      "src": "images/regions/tokai/gifu/foods/21-F0002-gohei-mochi.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:902",
+      "name": "히다 민속촌 히다노사토",
+      "pref": "기후",
+      "src": "images/regions/tokai/gifu/places/21-P0005-hida-folk-village.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:5011",
+      "name": "시라이토 폭포",
+      "pref": "나가노",
+      "src": "images/regions/koshinetsu/nagano/places/20-P0012-shiraito-falls.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:5015",
+      "name": "스와호",
+      "pref": "나가노",
+      "src": "images/regions/koshinetsu/nagano/places/20-P0016-lake-suwa.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:3102",
+      "name": "데지마",
+      "pref": "나가사키",
+      "src": "images/regions/kyushu/nagasaki/places/42-P0003-dejima.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:3122",
+      "name": "오세자키 등대",
+      "pref": "나가사키",
+      "src": "images/regions/kyushu/nagasaki/places/42-P0023-ose-saki-todai.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
       "key": "place:1305",
       "name": "오야 자료관",
       "pref": "도치기",
@@ -658,6 +203,132 @@
       "review": "20261007-current-place-photo-review.json"
     },
     {
+      "key": "food:간다 소바",
+      "name": "간다 소바",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0001-kanda-soba.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:덴푸라·소바",
+      "name": "덴푸라·소바",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0002-tempura-soba.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:돈카츠·덴푸라·라멘",
+      "name": "돈카츠·덴푸라·라멘",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0005-tonkatsu-tempura-ramen.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:라멘·돈부리",
+      "name": "라멘·돈부리",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0006-ramen-donburi.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:소바",
+      "name": "소바",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0009-soba.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:소바·덴푸라",
+      "name": "소바·덴푸라",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-tempura.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:스시·덴푸라",
+      "name": "스시·덴푸라",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0012-sushi-tempura.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:스시·소바",
+      "name": "스시·소바",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0013-sushi-soba.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:쓰키지 해산물·스시",
+      "name": "쓰키지 해산물·스시",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0014-tsukiji-seafood-sushi.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:오시마 우유·아시타바 간식",
+      "name": "오시마 우유·아시타바 간식",
+      "pref": "도쿄",
+      "src": "images/regions/greater-tokyo/tokyo/foods/13-F0017-oshima-milk-ashitaba-snack.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:한다 소멘",
+      "name": "한다 소멘",
+      "pref": "도쿠시마",
+      "src": "images/regions/shikoku/tokushima/foods/36-F0006-handa-somen.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:돗토리 와규",
+      "name": "돗토리 와규",
+      "pref": "돗토리",
+      "src": "images/regions/sanin-sanyo/tottori/foods/31-F0002-tottori-wagyu.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:사사카마보코",
+      "name": "사사카마보코",
+      "pref": "미야기",
+      "src": "images/regions/tohoku/miyagi/foods/04-F0004-sasakamaboko.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:치즈만주",
+      "name": "치즈만주",
+      "pref": "미야자키",
+      "src": "images/regions/kyushu/miyazaki/foods/45-F0006-cheese-manju.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
       "key": "place:3406",
       "name": "선멧세 니치난",
       "pref": "미야자키",
@@ -665,6 +336,15 @@
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "place:3409",
+      "name": "도이미사키",
+      "pref": "미야자키",
+      "src": "images/regions/kyushu/miyazaki/places/45-P0010-toimisaki.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "place:3413",
@@ -703,6 +383,33 @@
       "review": "20261007-current-place-photo-review.json"
     },
     {
+      "key": "food:노도구로",
+      "name": "노도구로",
+      "pref": "시마네",
+      "src": "images/regions/sanin-sanyo/shimane/foods/32-F0002-nodoguro.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:시마네 와규",
+      "name": "시마네 와규",
+      "pref": "시마네",
+      "src": "images/regions/sanin-sanyo/shimane/foods/32-F0003-shimane-wagyu.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:1012",
+      "name": "오스 상점가",
+      "pref": "아이치",
+      "src": "images/regions/tokai/aichi/places/23-P0013-osu-shopping-street.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
       "key": "place:4403",
       "name": "나마하게관",
       "pref": "아키타",
@@ -710,6 +417,69 @@
       "status": "resolved-by-reviewed-current-photo",
       "reasons": [],
       "review": "20261007-current-place-photo-review.json"
+    },
+    {
+      "key": "food:이모니",
+      "name": "이모니",
+      "pref": "야마가타",
+      "src": "images/regions/tohoku/yamagata/foods/06-F0007-imoni.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:4510",
+      "name": "우에스기 가문 묘소",
+      "pref": "야마가타",
+      "src": "images/regions/tohoku/yamagata/places/06-P0011-uesugi-family-mausoleum.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:이와쿠니즈시",
+      "name": "이와쿠니즈시",
+      "pref": "야마구치",
+      "src": "images/regions/sanin-sanyo/yamaguchi/foods/35-F0005-iwakuni-zushi.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:2709",
+      "name": "시모나다역",
+      "pref": "에히메",
+      "src": "images/regions/shikoku/ehime/places/38-P0010-shimonada-eki.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:기쓰네 우동",
+      "name": "기쓰네 우동",
+      "pref": "오사카",
+      "src": "images/regions/kinki/osaka/foods/27-F0001-kitsune-udon.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:도테야키",
+      "name": "도테야키",
+      "pref": "오사카",
+      "src": "images/regions/kinki/osaka/foods/27-F0003-doteyaki.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:이카야키",
+      "name": "이카야키",
+      "pref": "오사카",
+      "src": "images/regions/kinki/osaka/foods/27-F0006-ikayaki.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     },
     {
       "key": "place:403",
@@ -730,6 +500,69 @@
       "review": "20261007-current-place-photo-review.json"
     },
     {
+      "key": "place:415",
+      "name": "가쓰오지",
+      "pref": "오사카",
+      "src": "images/regions/kinki/osaka/places/27-P0016-katsuo-tera.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:분고규",
+      "name": "분고규",
+      "pref": "오이타",
+      "src": "images/regions/kyushu/oita/foods/44-F0004-bungo-beef.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "place:3304",
+      "name": "다케가와라온천",
+      "pref": "오이타",
+      "src": "images/regions/kyushu/oita/places/44-P0005-take-kawara-onsen.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:안코나베",
+      "name": "안코나베",
+      "pref": "이바라키",
+      "src": "images/regions/north-kanto/ibaraki/foods/08-F0002-anko-nabe.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:가나자와 오뎅",
+      "name": "가나자와 오뎅",
+      "pref": "이시카와",
+      "src": "images/regions/hokuriku/ishikawa/foods/17-F0001-kanazawa-oden.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:한톤라이스",
+      "name": "한톤라이스",
+      "pref": "이시카와",
+      "src": "images/regions/hokuriku/ishikawa/foods/17-F0008-hanton-rice.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:마에사와규",
+      "name": "마에사와규",
+      "pref": "이와테",
+      "src": "images/regions/tohoku/iwate/foods/03-F0002-maezawa-beef.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
       "key": "place:4003",
       "name": "홋카이도 신궁",
       "pref": "홋카이도",
@@ -748,6 +581,19 @@
       "review": "20261007-current-place-photo-review.json"
     },
     {
+      "key": "food:마마도르",
+      "name": "마마도르",
+      "pref": "후쿠시마",
+      "src": "images/regions/tohoku/fukushima/foods/07-F0003-mamador.webp",
+      "status": "outside-user-scope",
+      "reasons": [
+        "previous-audit: extreme-ratio",
+        "previous-audit: low-resolution",
+        "visual: narrow package rather than food"
+      ],
+      "review": null
+    },
+    {
       "key": "place:2908",
       "name": "게야노오토",
       "pref": "후쿠오카",
@@ -757,16 +603,31 @@
       "review": "20261007-current-place-photo-review.json"
     },
     {
-      "key": "food:마마도르",
-      "name": "마마도르",
-      "pref": "후쿠시마",
-      "src": "images/regions/tohoku/fukushima/foods/07-F0003-mamador.webp",
-      "status": "outside-user-scope",
-      "reasons": [
-        "previous-audit: extreme-ratio",
-        "previous-audit: low-resolution"
-      ],
-      "review": null
+      "key": "food:미즈요칸",
+      "name": "미즈요칸",
+      "pref": "후쿠이",
+      "src": "images/regions/hokuriku/fukui/foods/18-F0001-mizu-yokan.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:세이코가니",
+      "name": "세이코가니",
+      "pref": "후쿠이",
+      "src": "images/regions/hokuriku/fukui/foods/18-F0003-seiko-gani.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
+    },
+    {
+      "key": "food:에치젠가니",
+      "name": "에치젠가니",
+      "pref": "후쿠이",
+      "src": "images/regions/hokuriku/fukui/foods/18-F0007-echizen-gani.webp",
+      "status": "resolved-by-reviewed-current-photo",
+      "reasons": [],
+      "review": "20261007-final-photo-review.json"
     }
   ]
 }
