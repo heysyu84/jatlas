@@ -1137,5 +1137,22 @@ globalThis.JATLAS_MAP_CANONICAL=Object.freeze({
   5220:{"externalQuery":"福島県 相馬中村神社","lat":37.7977322,"lon":140.91374765,"coordinateOnly":true},
   5221:{"externalQuery":"福島県 松川浦","lat":37.803496,"lon":140.973218,"cid":"13080206971832640571","resolvedName":"마츠카와 만"},
   5222:{"externalQuery":"福島県 東日本大震災・原子力災害伝承館","lat":37.458039,"lon":141.0264269,"cid":"12768265339523889266","resolvedName":"동일본대지진 원자력재해전승관"},
-  5223:{"externalQuery":"福島県 震災遺構 浪江町立請戸小学校","lat":37.475132,"lon":141.0346993,"cid":"744134685961222458","resolvedName":"Ukedo Elementary School Earthquake Ruins"}
+  5223:{"externalQuery":"福島県 震災遺構 浪江町立請戸小学校","lat":37.475132,"lon":141.0346993,"cid":"744134685961222458","resolvedName":"Ukedo Elementary School Earthquake Ruins"},
+  5224:{"externalQuery":"北海道 登別温泉","lat":42.492,"lon":141.144,"resolvedName":"노보리베쓰 온천"},
+  5225:{"externalQuery":"北海道 洞爺湖温泉","lat":42.565371047,"lon":140.823019067,"resolvedName":"도야코 온천"},
+  5226:{"externalQuery":"北海道 層雲峡温泉","lat":43.726173709,"lon":142.948448545,"resolvedName":"소운쿄 온천"},
+  5227:{"externalQuery":"北海道 川湯温泉","lat":43.637823018,"lon":144.438513829,"resolvedName":"가와유 온천"},
+  5228:{"externalQuery":"宮城 秋保温泉","lat":38.228,"lon":140.726,"resolvedName":"아키우 온천"},
+  5229:{"externalQuery":"群馬 水上温泉","lat":36.767,"lon":138.966,"resolvedName":"미나카미 온천"},
+  5230:{"externalQuery":"神奈川 箱根温泉郷","lat":35.2327,"lon":139.1024,"resolvedName":"하코네 온천향"},
+  5231:{"externalQuery":"山梨 富士河口湖温泉郷","lat":35.5056,"lon":138.7622,"resolvedName":"후지카와구치코 온천향"},
+  5232:{"externalQuery":"静岡 熱海温泉","lat":35.098,"lon":139.071,"resolvedName":"아타미 온천"},
+  5233:{"externalQuery":"岐阜 奥飛騨温泉郷","lat":36.1917,"lon":137.5525,"resolvedName":"오쿠히다 온천향"},
+  5234:{"externalQuery":"石川 片山津温泉","lat":36.3295,"lon":136.3715,"resolvedName":"가타야마즈 온천"},
+  5235:{"externalQuery":"和歌山 白浜温泉","lat":33.6812,"lon":135.3444,"resolvedName":"시라하마 온천"},
+  5236:{"externalQuery":"和歌山 龍神温泉","lat":33.9575,"lon":135.563,"resolvedName":"류진 온천"},
+  5237:{"externalQuery":"大分 別府温泉郷","lat":33.279,"lon":131.502,"resolvedName":"벳푸 온천향"},
+  5238:{"externalQuery":"長崎 雲仙温泉","lat":32.7412,"lon":130.2629,"resolvedName":"운젠 온천"},
+  5239:{"externalQuery":"鹿児島 指宿温泉","lat":31.229,"lon":130.65,"resolvedName":"이부스키 온천"},
+  5240:{"externalQuery":"沖縄 瀬長島温泉・龍神の湯","lat":26.175,"lon":127.644,"resolvedName":"세나가지마 온천·류진노유"}
 });

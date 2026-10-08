@@ -1,99 +1,57 @@
 # Jatlas
 
-일본 여행 가이드 정적 웹사이트의 현재 소스 저장소입니다. 실제 서비스 런타임은 `dist/`이며 HTML / CSS / JavaScript + Leaflet으로 동작합니다. 별도 npm 빌드는 필요하지 않습니다.
+사진으로 장소를 발견하고 지도에서 여행을 이어가는 일본 여행 사이트입니다. 정식 배포 파일은 `dist/`에 있으며 GitHub Pages와 Cloudflare Pages에서 그대로 제공합니다.
 
-## 현재 상태
+현재 데이터에는 47개 도도부현, 관광지 1,155곳, 음식 346개, 온천 안내 66곳이 포함됩니다. 영상 없는 인트로의 마지막까지 스크롤하면 전국 탐색 화면으로 연결됩니다. 탐색과 지도, 실시간 검색, 한국어·일본어, 라이트·다크 모드, 저장과 여행 노트를 한 화면에서 이용합니다.
 
-전국 canonical 마이그레이션은 완료되었습니다.
+## 파일 구성
 
-- 도도부현: 47 / 47
-- 관광지 canonical ID: 1,138
-- 음식 canonical ID: 346
-- canonical 사진: 1,484
-- canonical 지도 좌표: 1,138
-- 현재 사진 QA 대기: 0
-- canonical 사진 정본: `dist/photo-registry-data.js` + `dist/images/regions/`
-- canonical 지도 정본: `dist/map-canonical-data.js`
+- `app/`, `components/`, `lib/`: 새 홈페이지의 편집 가능한 화면과 기능 소스
+- `dist/index.html`, `dist/_next/`: 검사 후 커밋한 정적 배포 파일
+- `dist/data/catalog.json`: 기존 관광지와 음식, 코스, 행사, 온천 안내를 통합한 한국어·일본어 콘텐츠
+- `dist/data/geography.json`: 분쟁 지역을 제외한 지도 도형
+- `dist/photo-registry-data.js`: 사진의 canonical ID, 경로, 출처, SHA-256, revision 정본
+- `dist/map-canonical-data.js`: 관광지 좌표 정본
+- `dist/images/regions/<region>/<prefecture>/places|foods/`: 사진 저장 위치
+- `public/images`, `public/data`, `public/fonts`: 위 정본을 빌드에서 읽는 심볼릭 링크. 사진을 중복 보관하지 않습니다.
+- `sources/`: 사진과 콘텐츠의 확인 자료
+- `tools/`, `audits/`: 중복·사진·좌표·배포 전후 보존 검사
+- `.github/workflows/`: GitHub Pages 배포와 무결성 검사
 
-과거 권역별 마이그레이션 스크립트·워크플로·완료 보고서는 현재 작업 트리에서 제거했습니다. 필요하면 Git 기록에서 복구할 수 있습니다.
+기존 화면과 구동 코드는 `backup/legacy-ui-20261008` 브랜치에 격리되어 있습니다. 이 백업에는 이미지가 중복 저장되어 있지 않으며 운영 위치의 공용 사진을 참조합니다. 변경 전 전체 기록도 `backup/pre-editorial-site-20261008`과 `backup/pre-launch-snapshot-20261008`에 남아 있습니다.
 
-## 실행
+## 실행과 빌드
+
+정식 배포 파일은 별도 빌드 없이 로컬 서버로 확인할 수 있습니다.
 
 ```sh
 python -m http.server 8000 --directory dist
 ```
 
-Windows에서 `python` 명령이 없다면 `py -m http.server 8000 --directory dist`를 사용할 수 있습니다. 정적 웹 서버의 웹 루트는 항상 `dist/`입니다.
+소스 편집은 Node.js 22.13 이상과 package.json에 지정한 pnpm 버전을 사용합니다.
 
-## 현재 구조
-
-- `dist/index.html`: 사이트 진입점과 런타임 스크립트 로딩 순서
-- `dist/style.css`, `dist/national-catalog.css`: 화면 스타일
-- `dist/*-expansion.js`, `dist/*-data.js`: 도도부현·지역 콘텐츠 데이터
-- `dist/app.js`, `dist/discovery.js`, `dist/journeys.js`, `dist/national-catalog.js`: 주요 화면 기능
-- `dist/locale.js`: 공통 UI와 지역/기능 번역을 합친 단일 언어 런타임
-- `dist/photo-registry-data.js`: 전국 canonical 사진 경로·출처·SHA-256·revision
-- `dist/photo-registry.js`: canonical 사진을 기존 런타임 객체에 적용하는 호환 계층
-- `dist/images/regions/<region>/<prefecture>/places|foods/`: canonical 사진 저장 위치
-- `dist/map-canonical-data.js`: 전국 관광지 canonical 좌표
-- `dist/boundaries/`: 도도부현별 시구정촌 경계 데이터
-- `dist/vendor/`: Leaflet 등 로컬 라이브러리
-- `audits/`: 현재 검증 상태와 사람이 확인한 QA 기록
-- `sources/`: 콘텐츠·사진·지도 출처 조사 자료
-- `tools/`: 현재도 사용하는 감사·회귀검사·QA 도구
-- `.github/workflows/`: 배포, 중복 관광지 검사, 전국 canonical 검증만 유지
-- `AGENTS.md`: 저장소 수정 시 반드시 지켜야 하는 안전 규칙
-- `CONTENT-GUIDE.md`: 콘텐츠 작성 규칙
-
-## Canonical ID와 파일명
-
-관광지는 일본 공식 도도부현 코드 + 타입 + 영구 일련번호를 사용합니다. 음식은 `F`, 관광지는 `P`입니다.
-
-- 기후 관광지: `21-P0008`
-- 시즈오카 관광지: `22-P0001`
-- 아이치 음식: `23-F0007`
-
-파일명은 `{canonicalId}-{english-slug}.webp` 형식입니다. slug에는 장소·음식 이름만 사용하며 촬영일, 원본 파일번호, 사이트명 같은 부가 문자열을 넣지 않습니다.
-
-```text
-dist/images/regions/tokai/gifu/places/21-P0008-gujo-hachiman-castle.webp
-dist/images/regions/tokai/aichi/foods/23-F0007-hitsumabushi.webp
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+pnpm build
 ```
 
-canonical ID는 표시 순서가 아니며 발급 후 재사용하지 않습니다. 기존 숫자형 place ID는 저장 일정과 기존 데이터 호환을 위한 내부 키로 유지합니다.
+빌드는 정적 파일을 만든 뒤 공유 사진과 데이터를 원래 위치에 유지하며 `dist/`를 갱신합니다. 배포는 커밋된 `dist/`를 사용하므로 운영 서버에 Node.js가 필요하지 않습니다.
 
-## 사진 교체
+## ID와 사진 수정
 
-canonical 사진은 새 파일명을 만들지 않고 기존 canonical 경로의 파일 내용을 교체합니다.
+관광지와 음식의 ID는 공식 도도부현 코드, `P` 또는 `F`, 영구 일련번호로 구성합니다. 예: `21-P0008`, `23-F0007`. 사진 파일명은 `{canonicalId}-{english-slug}.webp`이며 날짜·촬영 번호·교체 버전 접미사를 붙이지 않습니다.
 
-1. 최신 `main`과 마지막 정상 GitHub Pages 배포 SHA를 확인합니다.
-2. `dist/photo-registry-data.js`에서 canonical ID, 경로, SHA-256, 출처를 확인합니다.
-3. 같은 canonical 경로의 WebP를 교체합니다.
-4. 같은 커밋에서 `sha256`, 출처 메타데이터, `revision`을 갱신합니다.
-5. `tools/content-change-intent.json`에 의도한 변경을 정확히 선언합니다.
-6. 회귀검사와 GitHub Pages 배포 성공을 확인합니다.
+사진을 교체할 때는 기존 경로를 유지하고 `dist/photo-registry-data.js`의 해시·출처·revision과 통합 카탈로그의 사진 정보를 함께 갱신합니다. 기존 콘텐츠나 사진을 의도적으로 변경할 때는 마지막 정상 배포 SHA를 기준으로 `tools/content-change-intent.json`에 대상과 변경 값을 명시합니다.
 
-`-new`, `-final`, `-v2` 같은 교체용 파일명은 만들지 않습니다.
+## 검증과 배포
 
-## 언어 데이터
+```sh
+node tools/test-national-canonical-completion.cjs
+node tools/audit-duplicates.cjs
+node tools/regression-guard.cjs
+```
 
-독립적인 언어 패치 파일을 새로 만들지 않습니다. 공통·기능·지역의 별도 번역 패치는 `dist/locale.js`에 통합합니다. 콘텐츠 모듈 자체에서 생성되는 지역 데이터는 기존 `regionalJapanese` 연결 방식을 사용할 수 있지만, 새 `*-locale.js` 파일을 추가하지 않습니다.
+검사는 실제 홈페이지가 읽는 카탈로그와 배포된 스크립트를 확인합니다. 기존 버전과의 비교에서는 Git 기록의 구형 런타임도 그대로 평가합니다. 사진 파일, 고정 ID, 지도 좌표, 삭제한 장소, 중복, 승인하지 않은 정보 변경이 검사 대상입니다. GitHub Pages 배포는 이 검사를 통과한 뒤 진행합니다.
 
-## 검증
-
-현재 핵심 검증은 다음입니다.
-
-- `node tools/audit-content.cjs /tmp/jatlas-runtime.json`: 실제 index 로딩 순서 기준 런타임 데이터 감사
-- `node tools/test-national-canonical-completion.cjs`: 전국 사진·지도 canonical 완전성 검사
-- `node tools/audit-duplicates.cjs`: 중복 관광지 검사
-- `node tools/regression-guard.cjs`: 마지막 정상 배포 대비 의도하지 않은 콘텐츠·사진 변경 차단
-
-GitHub Actions에서는 `pages.yml`, `audit-duplicates.yml`, `verify-national-canonical-completion.yml`만 상시 유지합니다.
-
-## 인터넷 연결과 저장
-
-- 상세 지도는 Google Maps iframe을 사용하므로 인터넷 연결이 필요합니다.
-- 공식 관광 안내·사진 출처·길찾기 링크도 인터넷 연결이 필요합니다.
-- 로컬 이미지, 경계 데이터, JS/CSS 라이브러리는 저장소에 포함됩니다.
-- 내 계획·관심 장소·언어 설정은 브라우저 localStorage에 저장됩니다.
-- API 키, 비밀번호, Git 인증정보는 저장소에 넣지 않습니다.
+정적 자산은 상대 경로로 연결되어 저장소 하위 주소와 도메인 루트에서 모두 동작합니다. 공식 안내, 사진 출처, 날씨, 외부 지도에는 인터넷 연결이 필요합니다. 저장과 여행 노트는 사용자의 브라우저에 보관됩니다.

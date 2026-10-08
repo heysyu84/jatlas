@@ -8,10 +8,10 @@ const raw=fs.readFileSync(path.join(dist,'photo-registry-data.js'),'utf8').trim(
 if(!raw.startsWith(prefix))throw Error('Bad photo registry format');
 const registry=JSON.parse(raw.slice(prefix.length).replace(/;\s*$/,''));
 const placeRows=idmap.places||[],foodRows=idmap.foods||[];
-if(placeRows.length!==1138)throw Error('National place ID count mismatch: '+placeRows.length);
+if(placeRows.length<1138)throw Error('National place ID count below protected baseline: '+placeRows.length);
 if(foodRows.length!==346)throw Error('National food ID count mismatch: '+foodRows.length);
 const regPlaces=registry.places||{},regFoods=registry.foods||{};
-if(Object.keys(regPlaces).length!==1138)throw Error('Registry place count mismatch');
+if(Object.keys(regPlaces).length!==placeRows.length)throw Error('Registry place count mismatch');
 if(Object.keys(regFoods).length!==346)throw Error('Registry food count mismatch');
 
 const ascii=/^[\x00-\x7F]+$/;
@@ -35,7 +35,7 @@ for(const row of foodRows){
 
 const tmp=path.join(os.tmpdir(),'jatlas-national-canonical-'+process.pid+'.json');
 process.argv[2]=tmp; const {result}=require('./audit-content.cjs'); try{fs.unlinkSync(tmp)}catch{}
-if(result.places.length!==1138)throw Error('Runtime place count mismatch '+result.places.length);
+if(result.places.length!==placeRows.length)throw Error('Runtime place count mismatch '+result.places.length);
 const runtimeFoods=result.prefectures.reduce((a,p)=>a.concat((p.foods||[]).map(f=>({pref:p.pref,...f}))),[]);
 if(runtimeFoods.length!==346)throw Error('Runtime food count mismatch '+runtimeFoods.length);
 const clean=s=>String(s||'').replace(/^\.\//,'').split(/[?#]/)[0];
@@ -46,7 +46,7 @@ for(const p of result.places){
 }
 const foodKey=new Map(foodRows.map(x=>[x.pref+'|'+x.name,x.newId]));
 for(const f of runtimeFoods){
-  const cid=foodKey.get(f.pref+'|'+f.name); if(!cid)throw Error('Missing canonical ID mapping for runtime food '+f.pref+' '+f.name);
+  const cid=f.canonicalId||foodKey.get(f.pref+'|'+f.name); if(!cid)throw Error('Missing canonical ID mapping for runtime food '+f.pref+' '+f.name);
   const r=regFoods[cid]; if(clean(f.photo?.src||f.image)!==r.image)throw Error('Runtime food not canonical '+f.pref+' '+f.name);
 }
 
@@ -67,7 +67,7 @@ if(runtimeMissing.length)throw Error('Missing runtime local image(s): '+JSON.str
 const mapCode=fs.readFileSync(path.join(dist,'map-canonical-data.js'),'utf8');
 const ctx=vm.createContext({globalThis:{}}); vm.runInContext(mapCode,ctx);
 const canonical=ctx.globalThis.JATLAS_MAP_CANONICAL||{};
-if(Object.keys(canonical).length!==1138)throw Error('Canonical map count mismatch '+Object.keys(canonical).length);
+if(Object.keys(canonical).length!==placeRows.length)throw Error('Canonical map count mismatch '+Object.keys(canonical).length);
 for(const row of placeRows){
   const c=canonical[row.legacyId]; if(!c)throw Error('Missing canonical map '+row.legacyId+' '+row.name);
   if(!Number.isFinite(c.lat)||!Number.isFinite(c.lon))throw Error('Invalid canonical map coordinate '+row.legacyId);
@@ -87,7 +87,7 @@ for(const [slug,name] of Object.entries(reviews)){
 }
 const scopes=new Set(registry.scope?.prefectures||[]);
 if(scopes.size!==47)throw Error('Registry scope prefecture count mismatch '+scopes.size);
-console.log(JSON.stringify({ok:true,prefectures:47,places:1138,foods:346,canonicalFiles:1484,canonicalMaps:1138,mapRiskFlags:0,regions:12},null,2));
+console.log(JSON.stringify({ok:true,prefectures:47,places:placeRows.length,foods:346,canonicalFiles:placeRows.length+foodRows.length,canonicalMaps:placeRows.length,mapRiskFlags:0,regions:12},null,2));
 
 // national-canonical-rerun-20261007-r2
 

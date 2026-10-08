@@ -24,6 +24,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Verify canonical content, local images, and maps
+        run: node tools/test-national-canonical-completion.cjs
+
+      - name: Reject unapproved content or photo changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/regression-guard.cjs
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

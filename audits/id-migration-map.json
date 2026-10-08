@@ -9107,6 +9107,142 @@
       "name": "유글레나몰·이시가키시 공설시장",
       "region": "오키나와",
       "proposedDirectory": "images/regions/okinawa/okinawa/places"
+    },
+    {
+      "legacyId": 5224,
+      "newId": "01-P0043",
+      "pref": "홋카이도",
+      "name": "노보리베쓰 온천",
+      "region": "홋카이도",
+      "proposedDirectory": "images/regions/hokkaido/hokkaido/places"
+    },
+    {
+      "legacyId": 5225,
+      "newId": "01-P0044",
+      "pref": "홋카이도",
+      "name": "도야코 온천",
+      "region": "홋카이도",
+      "proposedDirectory": "images/regions/hokkaido/hokkaido/places"
+    },
+    {
+      "legacyId": 5226,
+      "newId": "01-P0045",
+      "pref": "홋카이도",
+      "name": "소운쿄 온천",
+      "region": "홋카이도",
+      "proposedDirectory": "images/regions/hokkaido/hokkaido/places"
+    },
+    {
+      "legacyId": 5227,
+      "newId": "01-P0046",
+      "pref": "홋카이도",
+      "name": "가와유 온천",
+      "region": "홋카이도",
+      "proposedDirectory": "images/regions/hokkaido/hokkaido/places"
+    },
+    {
+      "legacyId": 5228,
+      "newId": "04-P0025",
+      "pref": "미야기",
+      "name": "아키우 온천",
+      "region": "도호쿠",
+      "proposedDirectory": "images/regions/tohoku/miyagi/places"
+    },
+    {
+      "legacyId": 5229,
+      "newId": "10-P0017",
+      "pref": "군마",
+      "name": "미나카미 온천",
+      "region": "북간토",
+      "proposedDirectory": "images/regions/north-kanto/gunma/places"
+    },
+    {
+      "legacyId": 5230,
+      "newId": "14-P0029",
+      "pref": "가나가와",
+      "name": "하코네 온천향",
+      "region": "수도권",
+      "proposedDirectory": "images/regions/greater-tokyo/kanagawa/places"
+    },
+    {
+      "legacyId": 5231,
+      "newId": "19-P0032",
+      "pref": "야마나시",
+      "name": "후지카와구치코 온천향",
+      "region": "고신에쓰",
+      "proposedDirectory": "images/regions/koshinetsu/yamanashi/places"
+    },
+    {
+      "legacyId": 5232,
+      "newId": "22-P0021",
+      "pref": "시즈오카",
+      "name": "아타미 온천",
+      "region": "도카이",
+      "proposedDirectory": "images/regions/tokai/shizuoka/places"
+    },
+    {
+      "legacyId": 5233,
+      "newId": "21-P0023",
+      "pref": "기후",
+      "name": "오쿠히다 온천향",
+      "region": "도카이",
+      "proposedDirectory": "images/regions/tokai/gifu/places"
+    },
+    {
+      "legacyId": 5234,
+      "newId": "17-P0025",
+      "pref": "이시카와",
+      "name": "가타야마즈 온천",
+      "region": "호쿠리쿠",
+      "proposedDirectory": "images/regions/hokuriku/ishikawa/places"
+    },
+    {
+      "legacyId": 5235,
+      "newId": "30-P0018",
+      "pref": "와카야마",
+      "name": "시라하마 온천",
+      "region": "긴키",
+      "proposedDirectory": "images/regions/kinki/wakayama/places"
+    },
+    {
+      "legacyId": 5236,
+      "newId": "30-P0019",
+      "pref": "와카야마",
+      "name": "류진 온천",
+      "region": "긴키",
+      "proposedDirectory": "images/regions/kinki/wakayama/places"
+    },
+    {
+      "legacyId": 5237,
+      "newId": "44-P0028",
+      "pref": "오이타",
+      "name": "벳푸 온천향",
+      "region": "규슈",
+      "proposedDirectory": "images/regions/kyushu/oita/places"
+    },
+    {
+      "legacyId": 5238,
+      "newId": "42-P0031",
+      "pref": "나가사키",
+      "name": "운젠 온천",
+      "region": "규슈",
+      "proposedDirectory": "images/regions/kyushu/nagasaki/places"
+    },
+    {
+      "legacyId": 5239,
+      "newId": "46-P0032",
+      "pref": "가고시마",
+      "name": "이부스키 온천",
+      "region": "규슈",
+      "proposedDirectory": "images/regions/kyushu/kagoshima/places"
+    },
+    {
+      "legacyId": 5240,
+      "newId": "47-P0039",
+      "pref": "오키나와",
+      "name": "세나가지마 온천·류진노유",
+      "region": "오키나와",
+      "proposedDirectory": "images/regions/okinawa/okinawa/places"
     }
   ],
   "foods": [

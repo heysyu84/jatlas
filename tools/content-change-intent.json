@@ -1,455 +1,102 @@
 {
   "version": 1,
-  "baseCommit": "",
-  "reason": "Migrate Hokuriku to canonical IDs/paths while preserving approved images.",
+  "baseCommit": "70c3895dfc4969f003506b3bebc29bd2f88a302b",
+  "reason": "Publish the approved editorial homepage and register 17 new hot-spring places while preserving every existing place and photograph.",
   "allow": {
-    "placeAdds": [],
+    "placeAdds": [
+      {
+        "id": 5224,
+        "name": "노보리베쓰 온천"
+      },
+      {
+        "id": 5225,
+        "name": "도야코 온천"
+      },
+      {
+        "id": 5226,
+        "name": "소운쿄 온천"
+      },
+      {
+        "id": 5227,
+        "name": "가와유 온천"
+      },
+      {
+        "id": 5228,
+        "name": "아키우 온천"
+      },
+      {
+        "id": 5229,
+        "name": "미나카미 온천"
+      },
+      {
+        "id": 5230,
+        "name": "하코네 온천향"
+      },
+      {
+        "id": 5231,
+        "name": "후지카와구치코 온천향"
+      },
+      {
+        "id": 5232,
+        "name": "아타미 온천"
+      },
+      {
+        "id": 5233,
+        "name": "오쿠히다 온천향"
+      },
+      {
+        "id": 5234,
+        "name": "가타야마즈 온천"
+      },
+      {
+        "id": 5235,
+        "name": "시라하마 온천"
+      },
+      {
+        "id": 5236,
+        "name": "류진 온천"
+      },
+      {
+        "id": 5237,
+        "name": "벳푸 온천향"
+      },
+      {
+        "id": 5238,
+        "name": "운젠 온천"
+      },
+      {
+        "id": 5239,
+        "name": "이부스키 온천"
+      },
+      {
+        "id": 5240,
+        "name": "세나가지마 온천·류진노유"
+      }
+    ],
     "placeRemovals": [],
     "placeEdits": [],
-    "photoChanges": [
-      {
-        "id": 4700,
-        "fromSrc": "images/commons/3a301c166feb1eeb.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0001-도야마성터공원.webp"
-      },
-      {
-        "id": 4701,
-        "fromSrc": "images/commons/0d76d816495bbbca.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0002-도야마-유리미술관.webp"
-      },
-      {
-        "id": 4702,
-        "fromSrc": "images/commons/46cfc5bd29cd465a.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp"
-      },
-      {
-        "id": 4703,
-        "fromSrc": "images/commons/84043891755600a2.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0004-도야마현립미술관.webp"
-      },
-      {
-        "id": 4704,
-        "fromSrc": "images/qa/04cf63d541def45b62e7.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0005-다테야마-구로베-알펜루트.webp"
-      },
-      {
-        "id": 4705,
-        "fromSrc": "images/licensed/approved/toyama-murodo-4705.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0006-무로도.webp"
-      },
-      {
-        "id": 4706,
-        "fromSrc": "images/official/toyama-shomyo-falls-4706.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0007-쇼묘-폭포.webp"
-      },
-      {
-        "id": 4707,
-        "fromSrc": "images/commons/0aef001327af9332.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0008-구로베-협곡-철도.webp"
-      },
-      {
-        "id": 4708,
-        "fromSrc": "images/commons/c4fc2ff4bae8ded7.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0009-우나즈키-온천.webp"
-      },
-      {
-        "id": 4709,
-        "fromSrc": "images/commons/44a1d20ba95418f1.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0010-다카오카-대불.webp"
-      },
-      {
-        "id": 4710,
-        "fromSrc": "images/commons/10731aefbeec7f2d.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0011-즈이류지.webp"
-      },
-      {
-        "id": 4711,
-        "fromSrc": "images/commons/df956f4d9dbc0560.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0012-아마하라시-해안.webp"
-      },
-      {
-        "id": 4712,
-        "fromSrc": "images/commons/f1648f0e7a1f2642.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0013-히미-어항장-외시장-히미반야가이.webp"
-      },
-      {
-        "id": 4713,
-        "fromSrc": "images/commons/cde4ff175f750567.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0014-히미-해안-가라시마.webp"
-      },
-      {
-        "id": 4714,
-        "fromSrc": "images/commons/b232c05425894f06.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0015-스가누마-합장마을.webp"
-      },
-      {
-        "id": 4715,
-        "fromSrc": "images/commons/46f820a8c7a16543.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0016-아이노쿠라-합장마을.webp"
-      },
-      {
-        "id": 4716,
-        "fromSrc": "images/commons/795d3605d2e7a637.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0017-고카야마-와시노사토.webp"
-      },
-      {
-        "id": 4717,
-        "fromSrc": "images/commons/dffedd0b84782aec.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0018-이오젠.webp"
-      },
-      {
-        "id": 4718,
-        "fromSrc": "images/commons/a107cc2c06ca3353.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0019-우오즈-매몰림-박물관.webp"
-      },
-      {
-        "id": 4719,
-        "fromSrc": "images/licensed/approved/toyama-uozu-mirage-4719.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0020-우오즈-신기루-전망지.webp"
-      },
-      {
-        "id": 4720,
-        "fromSrc": "images/commons/93c215c7ecb50d8f.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0021-호타루이카-뮤지엄.webp"
-      },
-      {
-        "id": 4721,
-        "fromSrc": "images/official/toyama-hotaruika-sea-tour-4721.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0022-호타루이카-해상관광.webp"
-      },
-      {
-        "id": 4723,
-        "fromSrc": "images/licensed/toyama-kurobe-dam-4723.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0023-구로베댐.webp"
-      },
-      {
-        "id": 4800,
-        "fromSrc": "images/commons/4b90148f624a277f.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp"
-      },
-      {
-        "id": 4801,
-        "fromSrc": "images/commons/9ce3fef02a0fa350.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0002-가나자와성-공원.webp"
-      },
-      {
-        "id": 4802,
-        "fromSrc": "images/commons/6166f3765046afcb.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0003-히가시차야가이.webp"
-      },
-      {
-        "id": 4803,
-        "fromSrc": "images/commons/4b8f0ecdd8bdc577.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0004-오미초-시장.webp"
-      },
-      {
-        "id": 4804,
-        "fromSrc": "images/commons/19febc84ef030e05.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0005-21세기-미술관.webp"
-      },
-      {
-        "id": 4805,
-        "fromSrc": "images/commons/9444d4a31125ccb2.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0006-나가마치-무가저택-거리.webp"
-      },
-      {
-        "id": 4806,
-        "fromSrc": "images/commons/d17394af949dfccf.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0007-야마시로-온천.webp"
-      },
-      {
-        "id": 4807,
-        "fromSrc": "images/commons/f2bca6ee2477b26d.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0008-야마나카-온천.webp"
-      },
-      {
-        "id": 4808,
-        "fromSrc": "images/commons/5830304a9c5f3ccc.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0009-가쿠센케이.webp"
-      },
-      {
-        "id": 4809,
-        "fromSrc": "images/licensed/ishikawa-natadera-4809.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0010-나타데라.webp"
-      },
-      {
-        "id": 4810,
-        "fromSrc": "images/commons/2b019f92af47dba7.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0011-이시카와-항공플라자.webp"
-      },
-      {
-        "id": 4811,
-        "fromSrc": "images/commons/807351a7c74059a1.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0012-시로요네-센마이다.webp"
-      },
-      {
-        "id": 4812,
-        "fromSrc": "images/commons/d752f0d41895ca22.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0013-와지마-아침시장-임시-상설시장.webp"
-      },
-      {
-        "id": 4813,
-        "fromSrc": "images/commons/0fdd1b988ec1601d.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0014-와지마-칠예미술관.webp"
-      },
-      {
-        "id": 4814,
-        "fromSrc": "images/commons/2512396025bda700.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0015-미쓰케지마.webp"
-      },
-      {
-        "id": 4815,
-        "fromSrc": "images/commons/f149b37c0ac1d8b4.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0016-와쿠라-온천.webp"
-      },
-      {
-        "id": 4816,
-        "fromSrc": "images/commons/a48fbedd76e26118.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0017-노토지마-수족관.webp"
-      },
-      {
-        "id": 4817,
-        "fromSrc": "images/commons/4c7f368e5f40ac88.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0018-시라야마히메-신사.webp"
-      },
-      {
-        "id": 4818,
-        "fromSrc": "images/commons/d1609a6f1011bbe3.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0019-하쿠산-시라카와고-화이트로드.webp"
-      },
-      {
-        "id": 4819,
-        "fromSrc": "images/official/ishikawa-fukube-4819.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0020-후쿠베-대폭포.webp"
-      },
-      {
-        "id": 4820,
-        "fromSrc": "images/commons/c3eaaffb2177b7fa.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0021-시라미네-전통건조물군.webp"
-      },
-      {
-        "id": 4821,
-        "fromSrc": "images/commons/580f6b93d869661e.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0022-묘류지-닌자데라.webp"
-      },
-      {
-        "id": 4822,
-        "fromSrc": "images/commons/a470e2faa8668f00.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0023-스즈키-다이세쓰관.webp"
-      },
-      {
-        "id": 4823,
-        "fromSrc": "images/commons/e5a7b1474ad75c61.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0024-니시차야가이.webp"
-      },
-      {
-        "id": 4900,
-        "fromSrc": "images/commons/acc93a8c74004aa3.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0001-후쿠이성터.webp"
-      },
-      {
-        "id": 4901,
-        "fromSrc": "images/commons/9ab2b2a23a5ab323.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0002-요코칸-정원.webp"
-      },
-      {
-        "id": 4902,
-        "fromSrc": "images/commons/d3ed9add25bed5f0.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp"
-      },
-      {
-        "id": 4903,
-        "fromSrc": "images/commons/8587cef1023e0c31.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0004-후쿠이현립-역사박물관.webp"
-      },
-      {
-        "id": 4904,
-        "fromSrc": "images/commons/e601eb370a3df91d.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0005-도진보.webp"
-      },
-      {
-        "id": 4905,
-        "fromSrc": "images/commons/3dacf59a7c8231f7.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0006-오시마.webp"
-      },
-      {
-        "id": 4906,
-        "fromSrc": "images/commons/d2dad55f2c1d1b10.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0007-아와라-온천.webp"
-      },
-      {
-        "id": 4907,
-        "fromSrc": "images/licensed/approved/fukui-maruoka-castle-4907.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0008-마루오카성.webp"
-      },
-      {
-        "id": 4908,
-        "fromSrc": "images/commons/0864caa1afffb8ca.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0009-후쿠이현립-공룡박물관.webp"
-      },
-      {
-        "id": 4909,
-        "fromSrc": "images/commons/7a15cccc4aa49408.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0010-가쓰야마-공룡숲.webp"
-      },
-      {
-        "id": 4910,
-        "fromSrc": "images/commons/30e4ddde1cd4e15a.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0011-에치젠-오노성.webp"
-      },
-      {
-        "id": 4911,
-        "fromSrc": "images/commons/f43623ef330e2150.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0012-시치켄-아사이치.webp"
-      },
-      {
-        "id": 4912,
-        "fromSrc": "images/commons/7f9b4213a8e00744.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0013-오쇼즈-용천수.webp"
-      },
-      {
-        "id": 4913,
-        "fromSrc": "images/commons/ee84e853e63e96ee.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0014-게히-신궁.webp"
-      },
-      {
-        "id": 4914,
-        "fromSrc": "images/commons/272b51470d28901a.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0015-아카렌가-창고.webp"
-      },
-      {
-        "id": 4915,
-        "fromSrc": "images/commons/59d3f0eb830197bd.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0016-기비노마쓰바라.webp"
-      },
-      {
-        "id": 4916,
-        "fromSrc": "images/commons/507a5b650ea21606.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0017-미카타고코.webp"
-      },
-      {
-        "id": 4917,
-        "fromSrc": "images/commons/b17e860342a31014.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0018-레인보우라인-산정공원.webp"
-      },
-      {
-        "id": 4918,
-        "fromSrc": "images/commons/90aba6c3a2929cfe.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0019-오바마-니시구미-전통건조물군.webp"
-      },
-      {
-        "id": 4919,
-        "fromSrc": "images/official/fukui-obama-port-4919.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0020-오바마-어항.webp"
-      },
-      {
-        "id": 4920,
-        "fromSrc": "images/commons/6ed61ab6692442ce.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0021-소토모-해안-유람선.webp"
-      },
-      {
-        "id": 4921,
-        "fromSrc": "images/commons/2d48fd1436d58455.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0022-구마가와주쿠.webp"
-      },
-      {
-        "id": 4922,
-        "fromSrc": "images/commons/da09bab614670bdc.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0023-와카사-미카타-조몬박물관.webp"
-      },
-      {
-        "id": 4923,
-        "fromSrc": "images/commons/b13ab1100d9e6126.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0024-헤이센지-하쿠산-신사.webp"
+    "photoChanges": [],
+    "heroChanges": [],
+    "canonicalPhotoChanges": [],
+    "foodCanonicalRepairs": [
+      {
+        "area": "아사쿠사·스미다",
+        "canonicalId": "13-F0002",
+        "image": "images/regions/greater-tokyo/tokyo/foods/13-F0002-tempura-soba.webp",
+        "reason": "Use each existing canonical food ID instead of an area suffix; photo bytes are unchanged."
+      },
+      {
+        "area": "우에노·야나카",
+        "canonicalId": "13-F0010",
+        "image": "images/regions/greater-tokyo/tokyo/foods/13-F0010-soba-tempura.webp",
+        "reason": "Use each existing canonical food ID instead of an area suffix; photo bytes are unchanged."
+      },
+      {
+        "area": "에도가와",
+        "canonicalId": "13-F0011",
+        "image": "images/regions/greater-tokyo/tokyo/foods/13-F0011-soba-tempura.webp",
+        "reason": "Use each existing canonical food ID instead of an area suffix; photo bytes are unchanged."
       }
-    ],
-    "heroChanges": [
-      {
-        "key": "가가온천",
-        "fromSrc": "images/commons/f2bca6ee2477b26d.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0008-야마나카-온천.webp"
-      },
-      {
-        "key": "가나자와",
-        "fromSrc": "images/commons/4b90148f624a277f.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp"
-      },
-      {
-        "key": "가쓰야마·오노",
-        "fromSrc": "images/commons/0864caa1afffb8ca.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0009-후쿠이현립-공룡박물관.webp"
-      },
-      {
-        "key": "고카야마·난토",
-        "fromSrc": "images/commons/b232c05425894f06.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0015-스가누마-합장마을.webp"
-      },
-      {
-        "key": "노토",
-        "fromSrc": "images/commons/807351a7c74059a1.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0012-시로요네-센마이다.webp"
-      },
-      {
-        "key": "다카오카·히미",
-        "fromSrc": "images/commons/df956f4d9dbc0560.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0012-아마하라시-해안.webp"
-      },
-      {
-        "key": "다테야마·구로베",
-        "fromSrc": "images/qa/04cf63d541def45b62e7.webp",
-        "toSrc": "https://commons.wikimedia.org/wiki/Special:FilePath/Tateyama%20Kurobe%20Alpine%20Route%20-%20AlpineRoute6313.jpg?width=960"
-      },
-      {
-        "key": "도야마",
-        "fromSrc": "images/commons/46cfc5bd29cd465a.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp"
-      },
-      {
-        "key": "도야마시",
-        "fromSrc": "images/commons/46cfc5bd29cd465a.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0003-간스이-공원.webp"
-      },
-      {
-        "key": "사카이·아와라",
-        "fromSrc": "images/commons/e601eb370a3df91d.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0005-도진보.webp"
-      },
-      {
-        "key": "쓰루가·미하마",
-        "fromSrc": "images/commons/507a5b650ea21606.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0017-미카타고코.webp"
-      },
-      {
-        "key": "오바마·와카사",
-        "fromSrc": "images/commons/2d48fd1436d58455.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0022-구마가와주쿠.webp"
-      },
-      {
-        "key": "우오즈·나메리카와",
-        "fromSrc": "images/commons/93c215c7ecb50d8f.webp",
-        "toSrc": "images/regions/hokuriku/toyama/places/16-P0021-호타루이카-뮤지엄.webp"
-      },
-      {
-        "key": "이시카와",
-        "fromSrc": "images/commons/4b90148f624a277f.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0001-겐로쿠엔.webp"
-      },
-      {
-        "key": "하쿠산",
-        "fromSrc": "images/commons/4c7f368e5f40ac88.webp",
-        "toSrc": "images/regions/hokuriku/ishikawa/places/17-P0018-시라야마히메-신사.webp"
-      },
-      {
-        "key": "후쿠이",
-        "fromSrc": "images/commons/d3ed9add25bed5f0.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp"
-      },
-      {
-        "key": "후쿠이시·에이헤이지",
-        "fromSrc": "images/commons/d3ed9add25bed5f0.webp",
-        "toSrc": "images/regions/hokuriku/fukui/places/18-P0003-에이헤이지.webp"
-      }
-    ],
-    "canonicalPhotoChanges": []
+    ]
   }
 }

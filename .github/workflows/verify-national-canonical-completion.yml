@@ -5,8 +5,11 @@ on:
     paths:
       - 'dist/index.html'
       - 'dist/*.js'
+      - 'dist/data/**'
+      - 'dist/assets/**'
       - 'dist/images/regions/**'
       - 'tools/audit-content.cjs'
+      - 'tools/audit-catalog.cjs'
       - 'tools/test-national-canonical-completion.cjs'
       - '.github/workflows/verify-national-canonical-completion.yml'
       - 'audits/id-migration-map.json'

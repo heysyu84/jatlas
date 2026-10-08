@@ -2,6 +2,18 @@
    This checks data completeness; it is not a browser or visual QA test. */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),dist=path.join(root,'dist');
+// The editorial release reads this catalog directly. Older commits continue
+// through the script evaluator below so regression comparisons use both real
+// runtimes rather than a copied baseline report.
+if(fs.existsSync(path.join(dist,'data/catalog.json'))){
+  const {auditCatalog}=require('./audit-catalog.cjs');
+  const result=auditCatalog(root);
+  const outfile=process.argv[2]||path.join(root,'audits/runtime-inventory.json');
+  fs.writeFileSync(outfile,JSON.stringify(result,null,2)+'\n');
+  console.log(JSON.stringify({prefectures:result.prefectures.length,places:result.places.length,foods:result.prefectures.reduce((n,p)=>n+p.foods.length,0),routes:result.prefectures.reduce((n,p)=>n+p.routes.length,0),output:outfile}));
+  module.exports={result};
+  return;
+}
 function node(){return {dataset:{},style:{},children:[],textContent:'',value:'',innerHTML:'',classList:{add(){},remove(){},toggle(){},contains(){return false}},append(){},prepend(){},appendChild(){},replaceChildren(){},after(){},remove(){},setAttribute(){},removeAttribute(){},getAttribute(){return ''},hasAttribute(){return false},addEventListener(){},querySelector(){return node()},querySelectorAll(){return []},closest(){return null},getBoundingClientRect(){return {width:1200,height:800}},scrollIntoView(){},showModal(){},close(){}}}
 const nodes=new Map(),get=s=>{if(!nodes.has(s))nodes.set(s,node());return nodes.get(s)};
 const document={querySelector:get,querySelectorAll:()=>[],getElementById:get,createElement:node,createTextNode:node,createTreeWalker:()=>({nextNode:()=>null}),addEventListener(){},body:node(),documentElement:node()};

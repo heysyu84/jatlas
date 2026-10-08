@@ -1,3 +1,19 @@
 
 # Licensed tourism photos are generated for the deployed website, not source distribution.
 /dist/images/official/
+
+/node_modules
+/.next/
+/.vinext/
+/dist/client/
+/dist/server/
+*.tsbuildinfo
+next-env.d.ts
+
+/node_modules
+/.next/
+/.vinext/
+/dist/client/
+/dist/server/
+*.tsbuildinfo
+next-env.d.ts
