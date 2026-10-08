@@ -54,9 +54,12 @@
     },430);
   }
 
-  function openPref(pref){
+  function openPref(pref,area,town){
     showAppDetail();
-    if(core.go)core.go(pref);
+    if(core.go){
+      if(area)core.go(pref,area,town||'전체');
+      else core.go(pref);
+    }
   }
   function openCatalog(kind){
     showAppDetail();
@@ -120,7 +123,7 @@
     magazine.addEventListener('click',e=>{
       const target=e.target.closest('[data-jx-action],[data-jx-pref]');
       if(!target)return;
-      if(target.dataset.jxPref){openPref(target.dataset.jxPref);return}
+      if(target.dataset.jxPref){openPref(target.dataset.jxPref,target.dataset.jxArea,target.dataset.jxTown);return}
       switch(target.dataset.jxAction){
         case 'map':showMap();break;
         case 'places':openCatalog('places');break;
@@ -165,6 +168,22 @@
   if(brand)brand.onclick=e=>{e.preventDefault();showExplore()};
 
   document.querySelectorAll('[data-jx-enter]').forEach(b=>b.addEventListener('click',enterSite));
+  document.querySelectorAll('[data-jx-enter-onsen]').forEach(b=>b.addEventListener('click',()=>{
+    enterSite();
+    window.setTimeout(()=>document.getElementById('jxOnsenFeature')?.scrollIntoView({behavior:'smooth',block:'start'}),500);
+  }));
+  // The intro is a fixed, independently scrolling container.
+  if(intro){
+    let frame=0;
+    intro.addEventListener('scroll',()=>{
+      if(introClosed||frame)return;
+      frame=requestAnimationFrame(()=>{
+        frame=0;
+        const max=intro.scrollHeight-intro.clientHeight;
+        if(max>200&&intro.scrollTop>=max-3)enterSite();
+      });
+    },{passive:true});
+  }
   bindMagazine();
   hydrateCounts();
   refreshExploreContext();
