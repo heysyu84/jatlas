@@ -56,12 +56,9 @@ body[data-jatlas-view="detail"]{background:var(--jx-cream)}
 .jxIntroHero h1{font-size:clamp(70px,11vw,158px);line-height:.86;text-shadow:0 14px 44px #0008}
 .jxIntroHero .jxIntroLead{font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,4vw,56px);margin:26px 0 0;letter-spacing:-.035em}
 .jxIntroHero p{max-width:660px;margin:20px auto 0;color:#ffffffc7;font-size:clamp(15px,1.6vw,20px);line-height:1.8}
-.jxVideoPlaceholder{
-  display:inline-flex;align-items:center;gap:9px;margin-top:22px;padding:8px 12px;border-radius:999px;
-  background:#0b11199e;border:1px solid #ffffff30;color:#ffffffab;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  backdrop-filter:blur(12px)
-}
-.jxVideoPlaceholder i{width:7px;height:7px;border-radius:50%;background:#d77a59;box-shadow:0 0 0 5px #d77a5925}
+.jxIntroPhotoNote{display:block;margin-top:28px;font-size:10px;color:#ffffff98;letter-spacing:.25em}
+.jxIntroOnsenLink{display:inline-flex;margin-top:24px;border:1px solid #ffffff6c;border-radius:999px;background:#ffffff16;color:#fff;padding:13px 20px;cursor:pointer;font-size:13px}
+.jxIntroOnsenLink:hover{background:#ffffff2c}
 .jxScrollCue{position:absolute;bottom:26px;left:50%;translate:-50% 0;text-align:center;color:#ffffffa0;font-size:10px;letter-spacing:.25em;text-transform:uppercase}
 .jxScrollCue::after{content:"";display:block;width:10px;height:10px;margin:10px auto 0;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);animation:jxFloat 1.8s ease-in-out infinite}
 
@@ -261,3 +258,27 @@ body[data-jatlas-view="detail"] .contentTabs button.active{background:#192c3b;bo
   .bottomnav{background:#f8f5f0e8!important;border-color:#ddd5cb!important;backdrop-filter:blur(18px)!important}
   .bottomnav button{color:#53606a!important}.bottomnav button.active{color:#162b3b!important}
 }
+
+/* Onsen magazine, using canonical locally stored WebP photographs */
+.jxOnsenSection{scroll-margin-top:105px}
+.jxOnsenToolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:26px 0 21px}
+.jxOnsenFilters{display:flex;flex-wrap:wrap;gap:8px}
+.jxOnsenFilters button{border:1px solid #c9d0cd;background:#fbf9f5;color:#43505a;border-radius:999px;padding:9px 15px;min-height:40px;font-size:13px;cursor:pointer}
+.jxOnsenFilters button[aria-pressed="true"]{background:#172a36;color:#fff;border-color:#172a36}
+.jxOnsenSummary{font-size:12px;color:#65727b;white-space:nowrap}
+.jxOnsenGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.jxOnsenCard{border-radius:22px;background:#fff;overflow:hidden;border:1px solid var(--jx-line);box-shadow:0 9px 24px #1e303612;min-width:0}
+.jxOnsenOpen{border:0;background:transparent;display:block;width:100%;padding:0;color:inherit;text-align:left;cursor:pointer}
+.jxOnsenOpen img{width:100%;height:198px;object-fit:cover;display:block;background:#d1d8db}
+.jxOnsenCardBody{display:block;padding:18px 18px 12px;min-height:165px}
+.jxOnsenCardPref{font-size:11px;letter-spacing:.1em;color:#7e8c90}
+.jxOnsenCardName{display:block;font-size:21px;letter-spacing:-.04em;margin:8px 0 0;font-family:Georgia,"Apple SD Gothic Neo",serif;font-weight:600}
+.jxOnsenCardJa{display:block;font-size:11px;color:#7e8b90;margin-top:3px}
+.jxOnsenCardDesc{display:block;font-size:13px;line-height:1.65;color:#52606c;margin-top:11px;word-break:keep-all}
+.jxOnsenCardFooter{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 18px 17px;color:#677681;font-size:11px}
+.jxOnsenCardFooter a{font-size:11px;color:#4b6676;text-decoration:underline;text-underline-offset:3px}
+.jxOnsenOpen:hover .jxOnsenCardName{text-decoration:underline;text-underline-offset:5px}
+.jxOnsenNote{margin:24px 0 0;color:#72808b;font-size:12px;line-height:1.7}
+@media(max-width:1120px){.jxOnsenGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.jxOnsenSection{scroll-margin-top:82px}.jxOnsenToolbar{display:block}.jxOnsenFilters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}.jxOnsenFilters button{white-space:nowrap;flex-shrink:0}.jxOnsenSummary{display:block;margin-top:8px}.jxOnsenGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.jxOnsenOpen img{height:150px}.jxOnsenCardBody{padding:12px 12px 10px;min-height:200px}.jxOnsenCardName{font-size:17px}.jxOnsenCardDesc{font-size:12px}.jxOnsenCardFooter{padding:0 12px 12px}.jxOnsenCardFooter span{display:none}}
+@media(max-width:420px){.jxOnsenGrid{grid-template-columns:1fr}.jxOnsenOpen img{height:200px}.jxOnsenCardBody{min-height:auto}.jxOnsenCardFooter span{display:inline}}
