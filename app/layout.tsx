@@ -8,10 +8,11 @@ export const metadata: Metadata = {
   description: "일본의 풍경, 마을, 음식. 사진으로 발견하고 지도에서 이어지는 여행.",
   icons: {
     icon: [
-      { url: "./favicon.ico", sizes: "any" },
-      { url: "./images/common/branding/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "./favicon.svg?v=20261010", type: "image/svg+xml", sizes: "any" },
+      { url: "./images/common/branding/favicon-32.png?v=20261010", sizes: "32x32", type: "image/png" },
+      { url: "./favicon.ico?v=20261010", sizes: "any" },
     ],
-    shortcut: "./favicon.ico",
+    shortcut: "./favicon.ico?v=20261010",
     apple: "./images/common/branding/apple-touch-icon.png",
   },
   manifest: "./site.webmanifest",
