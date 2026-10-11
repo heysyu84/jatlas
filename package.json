@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "node scripts/build-static.mjs",
-    "audit": "node tools/test-national-canonical-completion.cjs && node tools/audit-duplicates.cjs"
+    "audit": "node tools/test-national-canonical-completion.cjs && node tools/audit-duplicates.cjs",
+    "test:weather": "node --test tools/test-weather.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
