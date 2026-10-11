@@ -15,9 +15,9 @@ import {discoveryDestinations,orderDiscoveries} from "@/lib/discovery";
 import {featureTitle} from "@/lib/feature-title";
 import introJSON from "@/lib/intro.json";
 import type {Catalog,ContentKind,Food,Item,OnsenData,Photo,Place,Route,TravelEvent} from "@/lib/jatlas";
-import {categoryMatch,isFood,isPlace,isRoute,itemPhoto,localized,photoURL,sceneImages} from "@/lib/jatlas";
+import {categoryMatch,isFood,isPlace,isRoute,itemPhoto,localized,photoURL} from "@/lib/jatlas";
 
-const intro=introJSON as Place[];
+const introSeed=introJSON as Place[];
 const categories=[
  {id:"all",ko:"전체",ja:"すべて",Icon:Sparkles},
  {id:"nature",ko:"자연",ja:"自然",Icon:Leaf},
@@ -30,7 +30,7 @@ const categories=[
 const kindLabels={places:{ko:"풍경과 장소",ja:"風景と場所",Icon:MapPin},foods:{ko:"지역의 맛",ja:"土地の味",Icon:Utensils},routes:{ko:"여행 코스",ja:"旅のコース",Icon:RouteIcon},events:{ko:"계절과 축제",ja:"季節と祭り",Icon:CalendarDays}};
 const regionEnglish:Record<string,string>={"홋카이도":"HOKKAIDO","도호쿠":"TOHOKU","북간토":"NORTH KANTO","수도권":"GREATER TOKYO","고신에쓰":"KOSHINETSU","도카이":"TOKAI","호쿠리쿠":"HOKURIKU","긴키":"KINKI","산인·산요":"SANIN & SANYO","시코쿠":"SHIKOKU","규슈":"KYUSHU","오키나와":"OKINAWA"};
 const regionPicks:Record<string,string>={"홋카이도":"가무이곶","도호쿠":"긴잔 온천","북간토":"게곤 폭포","수도권":"센소지","고신에쓰":"가미코치","도카이":"다카야마 옛 거리","호쿠리쿠":"겐로쿠엔","긴키":"기요미즈데라","산인·산요":"쓰노시마 대교","시코쿠":"이야 가즈라바시","규슈":"다카치호 협곡","오키나와":"잔파곶"};
-const initial:Catalog={version:"",places:intro,foods:[],routes:[],events:[],prefs:[],regions:[],dict:{}};
+const initial:Catalog={version:"",places:introSeed,foods:[],routes:[],events:[],prefs:[],regions:[],dict:{}};
 type Day={id:string;date:string;stops:{id:string;time:string}[]};
 const dayId=()=>globalThis.crypto?.randomUUID?.()||"day-"+Math.random().toString(36).slice(2);
 const normalized=(s:string)=>s.toLocaleLowerCase().replace(/\s+/g,"");
@@ -46,7 +46,7 @@ const distanceKm=(a:Place,b:Place)=>{
  return 6371*2*Math.asin(Math.sqrt(Math.min(1,h)));
 };
 function Picture({photo,id,alt,className="",eager=false,textOnly=false}:{photo?:Photo;id?:string;alt:string;className?:string;eager?:boolean;textOnly?:boolean}){
- const [failed,setFailed]=useState(0);const src=photoURL(photo?.src,id);
+ const [failed,setFailed]=useState(0);const src=photoURL(photo?.src,id,photo?.revision);
  useEffect(()=>setFailed(0),[src]);
  if(textOnly&&!src)return <div className={"onsen-symbol "+className} aria-hidden="true"><Waves size={22}/></div>;
  if(!src||failed>=2)return <div className={"photo-unavailable "+className}><MapPin size={22}/><span>{alt}</span></div>;
@@ -67,6 +67,8 @@ function Credit({photo,lang}:{photo?:Photo;lang:string}){
 
 export default function Home(){
  const [catalog,setCatalog]=useState<Catalog>(initial),[ready,setReady]=useState(false),[dataError,setDataError]=useState(false);
+ const intro=useMemo(()=>{const ids=catalog.editorial?.introIds||introSeed.map(p=>p.id);const picked=ids.map(id=>catalog.places.find(p=>p.id===id)||introSeed.find(p=>p.id===id)).filter((p):p is Place=>!!p);return picked.length===3?picked:introSeed;},[catalog]);
+ const heading=(catalog.editorial?.titleEn||"Japan,\nat your pace.").split("\n");
  const [view,setView]=useState("intro"),[lang,setLang]=useState("ko"),[theme,setTheme]=useState("light"),[booted,setBooted]=useState(false);
  const [scene,setScene]=useState(0),[region,setRegion]=useState(""),[pref,setPref]=useState(""),[area,setArea]=useState(""),[town,setTown]=useState("");
  const [kind,setKind]=useState<ContentKind>("places"),[category,setCategory]=useState("all"),[query,setQuery]=useState(""),[searchDraft,setSearchDraft]=useState("");
@@ -201,10 +203,10 @@ export default function Home(){
    <div className="intro-scroll-track">
    <section className="intro-hero" aria-label={t("Jatlas 인트로","Jatlas イントロ")}>
     <div className="intro-visual" aria-hidden="true">
-     {intro.map((p,i)=><img key={p.id} src={sceneImages[p.id]} alt="" className={scene===i?"intro-photo active":"intro-photo"} loading={i===0?"eager":"lazy"}/>)}
+     {intro.map((p,i)=><img key={p.id} src={photoURL(p.photo.src,p.id,p.photo.revision)} alt="" className={scene===i?"intro-photo active":"intro-photo"} loading={i===0?"eager":"lazy"}/>)}
      <div className="intro-shade"/>
     </div>
-    <div className="intro-content"><span className="intro-kicker">A JOURNAL OF PLACES & POSSIBILITIES</span><h1>Japan,<br/><em>at your pace.</em></h1><p>{t("익숙한 일본을, 새로운 시선으로.","いつもの日本を、新しいまなざしで。")}</p><button className="intro-enter" onClick={startExplore}>{t("일본 탐색 시작","日本を見つける")}</button></div>
+    <div className="intro-content"><span className="intro-kicker">A JOURNAL OF PLACES & POSSIBILITIES</span><h1>{heading[0]}<br/><em>{heading.slice(1).join(" ")}</em></h1><p>{t(catalog.editorial?.subtitleKo||"익숙한 일본을, 새로운 시선으로.",catalog.editorial?.subtitleJa||"いつもの日本を、新しいまなざしで。")}</p><button className="intro-enter" onClick={startExplore}>{t("일본 탐색 시작","日本を見つける")}</button></div>
     <div className="intro-bottom"><div className="scene-caption"><span className="scene-line"/><div><span className="scene-region">{name(intro[scene].pref)}</span><button onClick={()=>{navigate("explore");setDetail(intro[scene]);}}>{itemName(intro[scene],lang)}</button></div></div>
      <div className="scene-controls" aria-label={t("인트로 풍경 선택","風景を選ぶ")}>{intro.map((p,i)=><button key={p.id} onClick={()=>setScene(i)} aria-label={itemName(p,lang)} aria-pressed={scene===i}><span>{String(i+1).padStart(2,"0")}</span><i className={scene===i?"active":""}/></button>)}</div>
      <span className="intro-coordinate">{intro[scene].lat.toFixed(2)}° N &nbsp; {intro[scene].lon.toFixed(2)}° E</span>
